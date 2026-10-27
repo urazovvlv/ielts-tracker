@@ -41,7 +41,7 @@ h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
 
 /* header */
 .hdr{background:linear-gradient(135deg,var(--navy-deep),#1B3A8C 75%);color:#fff;padding:14px max(16px,env(safe-area-inset-left,0px)) 14px max(16px,env(safe-area-inset-right,0px));position:relative;overflow:hidden}
-.hdr::after{content:var(--target,"7.5");position:absolute;right:-6px;bottom:-40px;font-family:var(--f-display);font-weight:800;font-size:130px;line-height:1;color:rgba(255,255,255,.07);pointer-events:none}
+.hdr::after{content:none;position:absolute;right:-6px;bottom:-40px;font-family:var(--f-display);font-weight:800;font-size:130px;line-height:1;color:rgba(255,255,255,.07);pointer-events:none}
 .hdr-in{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}
 .hdr-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .hdr .eyebrow{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:700}
@@ -325,6 +325,16 @@ h3{font-size:var(--fs-m)}
 /* settings sheet */
 .sheet{gap:16px;padding-top:16px}
 .sugg summary{min-height:44px;justify-content:center}
+.band-now{display:flex;align-items:baseline;gap:10px}
+.band-now b{font-family:var(--f-display);font-size:40px;line-height:1;color:var(--navy)}
+.band-now span{font-size:var(--fs-s);color:var(--muted);font-weight:600}
+.band-bar{height:10px;border-radius:99px;background:var(--navy-soft);overflow:hidden}
+.band-bar i{display:block;height:100%;border-radius:99px;background:var(--gold)}
+.band-parts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.band-parts>span{display:flex;align-items:center;justify-content:center;gap:4px;padding:8px 4px;border:1px solid var(--line);border-radius:12px;background:var(--sunk);font-size:15px}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.stats .stat .note{font-size:var(--fs-xs)}
+.stats .stat .v{font-size:24px}
 </style>
 </head>
 <body>
@@ -338,7 +348,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.20';
+const BUILD='2026-10-27.21';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -603,12 +613,8 @@ function renderHeader(){
   const toExam=PLAN&&PLAN.exam?dayDiff(isoD(new Date()),PLAN.exam):null;
   const dayLine=t<1?`<div class="day">Starts ${short(START)}</div>`:t>DAYS?`<div class="day">${toExam!=null&&toExam>=0?(toExam?'Exam in '+toExam+' day'+(toExam>1?'s':''):'Exam day'):'Plan complete'}</div>`:`<div class="day">Day ${t} <small>of ${DAYS}</small></div>`;
   document.getElementById('hdr').innerHTML=`
-  <div class="hdr-top"><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}Road to ${TARGET.toFixed(1)}</div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>${SETBTN?'':`<button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button>`}</div>
-  <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(toExam!=null?'exam in '+toExam+' days':(DAYS-t)+' days left'):DAYS+'-day plan'}</div></div>
-  <div class="hdr-row">
-    <div class="lvl"><div class="lvl-top"><b>Current band ${cb.band.toFixed(1)}</b><span class="num">Target ${TARGET.toFixed(1)}${cb.band<TARGET?` · ${(TARGET-cb.band).toFixed(1)} to go`:' · reached'}</span></div><div class="hbar"><i style="width:${pct}%"></i></div>
-      <div class="lvl-sub">${cb.m?`From the Day ${cb.day} mock · L ${cb.parts.L} · R ${cb.parts.R} · W ${cb.parts.W} · S ${cb.parts.S}`:'Starting level · log a mock to update it'}</div></div>
-  </div>`;
+  <div class="hdr-top"><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}IELTS tracker</div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>${SETBTN?'':`<button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button>`}</div>
+  <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(DAYS-t)+' day'+(DAYS-t===1?'':'s')+' left':t<1?DAYS+'-day plan · starts in '+(1-t)+' day'+(1-t===1?'':'s'):DAYS+'-day plan'}</div></div>`;
 }
 function renderTabs(){
   const T=[['today','Today'],['prog','Progress'],['mock','Mocks'],['words','Words'],['speak','Speak']];
@@ -670,9 +676,13 @@ function viewProgress(){
   let daysDone=0;for(let n=1;n<=tt;n++)if(dayOk(n))daysDone++;
   const mocksDone=MOCKDAYS.filter(n=>overall(mockDoc(n))!=null).length;
   return `<div class="wrap">
+  <section class="card band-card">${(()=>{const cb=currentBand(),pct=Math.max(3,Math.min(100,(cb.band-4)/(TARGET-4)*100));
+    return `<div class="card-h"><h2>Band</h2><span class="note">Target ${TARGET.toFixed(1)}</span></div>
+    <div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
+    <div class="band-bar"><i style="width:${pct}%"></i></div>
+    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:'<p class="note" style="margin:0">Starting level. Log a full mock in the Mocks tab to update it.</p>'}`;})()}</section>
   <section class="card"><div class="card-h"><h2>Progress</h2></div>
     <div class="stats">
-      <div class="stat hot"><span class="label">Current band</span><span class="v">${currentBand().band.toFixed(1)}<small>/ ${TARGET.toFixed(1)}</small></span><span class="note">${currentBand().m?'From your latest mock':'Until your first mock'}</span></div>
       <div class="stat"><span class="label">Days done</span><span class="v num">${daysDone}<small>/ ${tt}</small></span><span class="note">Days with every task ticked</span></div>
       <div class="stat"><span class="label">Mocks</span><span class="v num">${mocksDone}<small>/ ${MOCKDAYS.length}</small></span><span class="note">Full mocks logged</span></div>
       <div class="stat"><span class="label">Tasks</span><span class="v num">${T.tasks}<small>/ ${due}</small></span><span class="note">Due up to Day ${tt}</span></div>
