@@ -138,7 +138,7 @@ def build(slot, plan, day, today, word):
                      "How is your list going? Finish the tasks you planned for today before the day ends."]
     else:
         lines = [f"<b>Log Day {day}{hi}</b>",
-                 "Tick your tasks, add hours, words and energy, and write one thing to fix tomorrow."]
+                 "Open your tracker and tick the tasks you finished today."]
         if day + 1 in plan.mocks:
             lines.append(f"Tomorrow is a mock day: {e(plan.mocks[day + 1])}. Sleep early.")
         if day == plan.days:

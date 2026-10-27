@@ -257,7 +257,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.6';
+const BUILD='2026-10-27.7';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -460,7 +460,7 @@ function overall(m){
 }
 function totals(){
   let xp=0,hours=0,words=0,tasks=0;
-  for(let n=1;n<=DAYS;n++){const d=dayDoc(n),c=doneCount(n);tasks+=c;hours+=num(d.hours);words+=num(d.words);xp+=c*10+Math.round(num(d.hours)*10)+(d.mood?5:0);}
+  for(let n=1;n<=DAYS;n++){const d=dayDoc(n),c=doneCount(n);tasks+=c;hours+=num(d.hours);words+=num(d.words);xp+=c*10;}
   const WL=weekList();for(let w=1;w<=Math.ceil(DAYS/7);w++){const t=weekDoc(w).t||{};xp+=WL.filter(x=>t[x.k]).length*20;}
   let best=null;for(const n of MOCKDAYS){const o=overall(mockDoc(n));if(o!=null){xp+=50;best=best==null?o:Math.max(best,o);}}
   xp+=S.words.length*2;
@@ -544,15 +544,6 @@ function viewToday(){
     ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+10</span></li>`).join('')}</ul>`}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
-  <section class="card">
-    <div class="grid2">
-      <div class="field"><label class="label" for="hoursIn">Study hours</label><div class="stepper"><button data-step="hours" data-by="-0.5" aria-label="Less">−</button><input id="hoursIn" type="number" inputmode="decimal" min="0" max="16" step="0.5" value="${d.hours??''}" placeholder="0"><button data-step="hours" data-by="0.5" aria-label="More">+</button></div></div>
-      <div class="field"><label class="label" for="wordsIn">New words</label><div class="stepper"><button data-step="words" data-by="-5" aria-label="Fewer">−</button><input id="wordsIn" type="number" inputmode="numeric" min="0" max="500" value="${d.words??''}" placeholder="0"><button data-step="words" data-by="20" aria-label="Add 20" style="font-size:13px">+20</button></div></div>
-    </div>
-    <div class="field"><span class="label">Energy today</span><div class="mood">${MOODS.map((m,i)=>`<button data-mood="${i+1}" class="${d.mood===i+1?'on':''}" aria-pressed="${d.mood===i+1}"><b>${i+1}</b>${m}</button>`).join('')}</div></div>
-    <div class="field"><label class="label" for="noteIn">What to fix tomorrow</label><textarea id="noteIn" maxlength="1500" placeholder="e.g. Lost 4 marks on spelling in Listening Section 1">${esc(d.note||'')}</textarea></div>
-  </section>
-  ${PLAN&&PLAN.profile&&PLAN.profile.rank&&!editDay?suggestCard(n):''}
   ${wotdCard(n)}
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
@@ -568,27 +559,27 @@ function viewProgress(){
   let phase1d=0,phase1a=0;for(let n=1;n<=14;n++){phase1d+=doneCount(n);phase1a+=totalCount(n);}
   const B=[
     ['step','First step','A task on Day 1',doneCount(1)>0],['fire','7-day streak','4+ tasks, 7 days',st.best>=7],['fire','21-day streak','Three weeks unbroken',st.best>=21],
-    ['book','500 words','Words learned',T.words>=500],['book','1,000 words','Words learned',T.words>=1000],['clock','100 hours','Total study time',T.hours>=100],
+    ['book','50 tasks','Tasks completed',T.tasks>=50],['book','150 tasks','Tasks completed',T.tasks>=150],['clock','300 tasks','Tasks completed',T.tasks>=300],
     ['medal','Foundation',`70% of Days 1–${PHASES[0].b}`,phase1a&&phase1d/phase1a>=.7],['medal','C1 mock','Overall 7.0',T.best!=null&&T.best>=7],['star',`Band ${TARGET.toFixed(1)} mock`,'Target hit',T.best!=null&&T.best>=TARGET]
   ];
   let map=`<div></div>${[0,1,2,3,4,5,6].map(k=>`<div class="wd">${WD[(dateOf(k+1).getDay()+6)%7][0]}</div>`).join('')}`;
   for(let w=1;w<=Math.ceil(DAYS/7);w++){map+=`<div class="wk">W${w}</div>`;for(let k=0;k<7;k++){const n=(w-1)*7+k+1;if(n>DAYS){map+='<div class="cell blank"></div>';continue;}
     const f=frac(n),bg=f===0?'var(--sunk)':`color-mix(in srgb, var(--navy) ${Math.round(18+f*72)}%, var(--card))`,ink=f>=.6?'var(--card)':'var(--ink)';
     map+=`<button class="cell ${n>t?'future':''} ${n===t?'today':''}" data-day="${n}" style="background:${bg};color:${ink}" aria-label="Day ${n}, ${doneCount(n)} of ${totalCount(n)} tasks">${n}${MOCKS[n]?'<span class="mk"></span>':''}<span class="ph" style="background:var(${phaseOf(n).c})"></span></button>`;}}
-  const H=[];for(let n=1;n<=DAYS;n++)H.push(num(dayDoc(n).hours));
+  let daysDone=0;for(let n=1;n<=tt;n++)if(dayOk(n))daysDone++;
+  const mocksDone=MOCKDAYS.filter(n=>overall(mockDoc(n))!=null).length;
   return `<div class="wrap">
   <section class="card"><div class="card-h"><h2>Progress</h2><span class="note">${B.filter(b=>b[3]).length}/9 badges</span></div>
     <div class="stats">
       <div class="stat hot"><span class="label">Streak</span><span class="v">${st.cur}<small>days</small></span><span class="note">Best ${st.best} · 4+ tasks a day</span></div>
-      <div class="stat"><span class="label">Hours</span><span class="v num">${T.hours%1?T.hours.toFixed(1):T.hours}<small>/ ${Math.round(DAYS*3.5)}</small></span><span class="note">Aim 3.5 h a day</span></div>
-      <div class="stat"><span class="label">Words</span><span class="v num">${T.words.toLocaleString('en-US')}<small>/ ${(DAYS*20).toLocaleString('en-US')}</small></span><span class="note">20 a day</span></div>
+      <div class="stat"><span class="label">Days done</span><span class="v num">${daysDone}<small>/ ${tt}</small></span><span class="note">Days with 4+ tasks ticked</span></div>
+      <div class="stat"><span class="label">Mocks</span><span class="v num">${mocksDone}<small>/ ${MOCKDAYS.length}</small></span><span class="note">Full mocks logged</span></div>
       <div class="stat"><span class="label">Tasks</span><span class="v num">${T.tasks}<small>/ ${due}</small></span><span class="note">Due up to Day ${tt}</span></div>
     </div></section>
   <section class="card"><div class="card-h"><h2>60-day map</h2><span class="note">Tap a day to open it</span></div>
     <div class="map">${map}</div>
     <div class="legend"><span><i style="background:var(--sunk);border:1px solid var(--line)"></i>None</span><span><i style="background:color-mix(in srgb, var(--navy) 45%, var(--card))"></i>Some</span><span><i style="background:var(--navy)"></i>All</span><span><i style="background:var(--gold);transform:rotate(45deg) scale(.7)"></i>Mock</span></div>
     <div class="legend">${PHASES.map(p=>`<span><i style="background:var(${p.c});height:4px;vertical-align:3px"></i>${p.n} ${p.a}–${p.b}</span>`).join('')}</div></section>
-  <section class="card"><h2>Study hours per day</h2><div class="chart">${hoursChart(H,t)}</div></section>
   <section class="card"><h2>Badges</h2><div class="badges">${B.map(b=>`<div class="bdg ${b[3]?'got':''}"><span style="color:${b[3]?'var(--gold)':'var(--muted)'}">${ico(b[0])}</span><b>${b[1]}</b><span>${b[2]}</span></div>`).join('')}</div></section></div>`;
 }
 function hoursChart(H,t){
