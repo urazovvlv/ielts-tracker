@@ -373,7 +373,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.3';
+const BUILD='2026-10-28.4';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -420,9 +420,9 @@ function buildSchedule(p){
   PLAN=p;START=parseD(p.start);DAYS=planDays(p);TARGET=Number(p.target)||7.5;
   const N=DAYS,f1=Math.round(N*14/60),f2=Math.round(N*35/60),f3=N>=30?N-8:Math.round(N*52/60);
   PHASES=[{n:'Foundation',a:1,b:f1,c:'--ph1'},{n:'Build',a:f1+1,b:f2,c:'--ph2'},{n:'Simulate',a:f2+1,b:f3,c:'--ph3'},{n:'Peak',a:f3+1,b:N,c:'--ph4'}].filter(x=>x.a<=x.b);
-  const days=[1],weeklyEnd=Math.floor(N*0.7);
-  for(let n=2;n<=weeklyEnd;n++)if(dateOf(n).getDay()===0)days.push(n);
-  let d=days[days.length-1],step=3;
+  /* First full mock at the end of week 1 (day 7), then every 3–4 days until 4 days before the end. */
+  const days=[Math.min(7,N)];
+  let d=days[0],step=3;
   while(d+step<=N-4){d+=step;days.push(d);step=step===3?4:3;}
   MOCKS={};let e=0,l=0;
   for(const n of days)MOCKS[n]=n<=f2?(EARLY[e++]||`Practice test ${e}`):(LATE[l++]||EARLY[e++]||`Practice test ${l}`);

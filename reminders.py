@@ -82,10 +82,7 @@ class Plan:
         f3 = N - 8 if N >= 30 else jround(N * 52 / 60)
         self.phases = [(nm, a, b) for nm, a, b in
                        [("Foundation", 1, f1), ("Build", f1 + 1, f2), ("Simulate", f2 + 1, f3), ("Peak", f3 + 1, N)] if a <= b]
-        days = [1]
-        for d in range(2, math.floor(N * 0.7) + 1):
-            if self.date(d).weekday() == 6:
-                days.append(d)
+        days = [min(7, N)]  # first full mock at the end of week 1, then every 3-4 days
         d, step = days[-1], 3
         while d + step <= N - 4:
             d += step
