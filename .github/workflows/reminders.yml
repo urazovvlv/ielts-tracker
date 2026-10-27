@@ -1,0 +1,63 @@
+Claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reminders · YML
+name: IELTS reminders
+ 
+on:
+  schedule:
+    - cron: '40 1 * * *'    # 06:40 Tashkent
+    - cron: '15 14 * * *'   # 19:15 Tashkent
+    - cron: '15 16 * * *'   # 21:15 Tashkent
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Which reminder to send now'
+        type: choice
+        options: [morning, evening, night]
+        default: morning
+ 
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Choose the reminder
+        id: pick
+        run: |
+          if [ -n "${{ inputs.slot }}" ]; then
+            echo "slot=${{ inputs.slot }}" >> "$GITHUB_OUTPUT"
+          else
+            case "${{ github.event.schedule }}" in
+              '40 1 * * *')  echo "slot=morning" >> "$GITHUB_OUTPUT" ;;
+              '15 14 * * *') echo "slot=evening" >> "$GITHUB_OUTPUT" ;;
+              *)             echo "slot=night"   >> "$GITHUB_OUTPUT" ;;
+            esac
+          fi
+      - name: Send it
+        run: python3 reminders.py "${{ steps.pick.outputs.slot }}"
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          APP_URL: ${{ secrets.APP_URL }}
+ 
