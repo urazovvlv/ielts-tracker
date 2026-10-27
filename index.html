@@ -51,6 +51,7 @@ h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
 .iconbtn{width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);display:grid;place-items:center;color:#fff;flex:none}
 .iconbtn svg{width:20px;height:20px}
 .hdr-row{display:flex;gap:8px;align-items:center}
+.lvl-sub{font-size:11.5px;color:rgba(255,255,255,.75)}
 .lvl{flex:1;min-width:0;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:5px}
 .lvl-top{display:flex;justify-content:space-between;font-size:12.5px;gap:8px}
 .lvl-top b{font-family:var(--f-display);font-size:15px}
@@ -257,7 +258,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.9';
+const BUILD='2026-10-27.10';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -443,7 +444,7 @@ const weekList=w=>applyMods(applyMods(WEEKTASKS,S.cfg.week),weekDoc(w));
 const doneCount=n=>{const t=dayDoc(n).t||{};return listFor(n).filter(x=>t[x.k]).length;};
 const totalCount=n=>listFor(n).length;
 const frac=n=>{const t=totalCount(n);return t?doneCount(n)/t:0;};
-const dayOk=n=>{const t=totalCount(n);return t>0&&doneCount(n)>=Math.min(4,t);};
+const dayOk=n=>{const t=totalCount(n);return t>0&&doneCount(n)===t;};
 const num=v=>Number(v)||0;
 function overall(m){
   const L=toBand(m.L,LB),R=toBand(m.R,RB);
@@ -487,18 +488,24 @@ const ico=(n,extra)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 /* ---------- render: header & tabs ---------- */
 function setSync(s){syncState=s;const el=document.getElementById('sync');if(el){el.className='sync '+(s==='ok'?'ok':s==='busy'?'busy':s==='err'?'err':'');el.querySelector('span').textContent=syncText();}}
 const syncText=()=>syncState==='ok'?'Saved to Telegram':syncState==='busy'?'Saving…':syncState==='err'?'Sync problem, retrying':'Saved on this device only';
+/* Current band = overall of the latest mock with all four scores; 5.5 until the first one is logged. */
+function currentBand(){
+  const done=MOCKDAYS.filter(n=>overall(mockDoc(n))!=null);
+  if(!done.length)return {band:5.5,m:null};
+  const day=done[done.length-1],m=mockDoc(day);
+  return {band:overall(m),m,day,parts:{L:toBand(m.L,LB).toFixed(1),R:toBand(m.R,RB).toFixed(1),W:Number(m.W).toFixed(1),S:Number(m.S).toFixed(1)}};
+}
 function renderHeader(){
   if(!PLAN){document.getElementById('hdr').innerHTML=`<div class="hdr-top"><div><div class="eyebrow">IELTS tracker</div><div class="day">Welcome</div><div class="phase">Set up your plan to begin</div></div></div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>`;return;}
-  const T=totals(),st=streaks(),t=todayIdx(),i=levelOf(T.xp),cur=LEVELS[i],nx=LEVELS[i+1];
-  const pct=nx?Math.min(100,(T.xp-cur.x)/(nx.x-cur.x)*100):100;
+  const t=todayIdx(),cb=currentBand(),pct=Math.max(3,Math.min(100,(cb.band-4)/(TARGET-4)*100));
   const toExam=PLAN&&PLAN.exam?dayDiff(isoD(new Date()),PLAN.exam):null;
   const dayLine=t<1?`<div class="day">Starts ${short(START)}</div>`:t>DAYS?`<div class="day">${toExam!=null&&toExam>=0?(toExam?'Exam in '+toExam+' day'+(toExam>1?'s':''):'Exam day'):'Plan complete'}</div>`:`<div class="day">Day ${t} <small>of ${DAYS}</small></div>`;
   document.getElementById('hdr').innerHTML=`
   <div class="hdr-top"><div><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}Road to ${TARGET.toFixed(1)}</div>${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(toExam!=null?'exam in '+toExam+' days':(DAYS-t)+' days left'):DAYS+'-day plan'}</div></div>
   <button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button></div>
   <div class="hdr-row">
-    <div class="lvl"><div class="lvl-top"><b>Band ${cur.b}</b><span class="num">${T.xp.toLocaleString('en-US')} XP${nx?` · ${(nx.x-T.xp).toLocaleString('en-US')} to ${nx.b}`:''}</span></div><div class="hbar"><i style="width:${pct}%"></i></div></div>
-    <div class="streak"><b>${ico('fire')}${st.cur}</b><span>day streak</span></div>
+    <div class="lvl"><div class="lvl-top"><b>Current band ${cb.band.toFixed(1)}</b><span class="num">Target ${TARGET.toFixed(1)}${cb.band<TARGET?` · ${(TARGET-cb.band).toFixed(1)} to go`:' · reached'}</span></div><div class="hbar"><i style="width:${pct}%"></i></div>
+      <div class="lvl-sub">${cb.m?`From the Day ${cb.day} mock · L ${cb.parts.L} · R ${cb.parts.R} · W ${cb.parts.W} · S ${cb.parts.S}`:'Starting level · log a mock to update it'}</div></div>
   </div>
   <div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>`;
 }
@@ -534,13 +541,13 @@ function viewToday(){
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
     <div class="pline"><span class="label">Checklist</span><div class="pbar"><i style="width:${tot?c/tot*100:0}%"></i></div><b class="num">${c}/${tot}</b></div>
-    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+10</span></li>`).join('')}</ul>`}
+    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
-    ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+20</span></li>`).join('')}</ul>`}
+    ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
   </section></div>`;
 }
 
@@ -561,10 +568,10 @@ function viewProgress(){
   let daysDone=0;for(let n=1;n<=tt;n++)if(dayOk(n))daysDone++;
   const mocksDone=MOCKDAYS.filter(n=>overall(mockDoc(n))!=null).length;
   return `<div class="wrap">
-  <section class="card"><div class="card-h"><h2>Progress</h2><span class="note">${B.filter(b=>b[3]).length}/9 badges</span></div>
+  <section class="card"><div class="card-h"><h2>Progress</h2></div>
     <div class="stats">
-      <div class="stat hot"><span class="label">Streak</span><span class="v">${st.cur}<small>days</small></span><span class="note">Best ${st.best} · 4+ tasks a day</span></div>
-      <div class="stat"><span class="label">Days done</span><span class="v num">${daysDone}<small>/ ${tt}</small></span><span class="note">Days with 4+ tasks ticked</span></div>
+      <div class="stat hot"><span class="label">Current band</span><span class="v">${currentBand().band.toFixed(1)}<small>/ ${TARGET.toFixed(1)}</small></span><span class="note">${currentBand().m?'From your latest mock':'Until your first mock'}</span></div>
+      <div class="stat"><span class="label">Days done</span><span class="v num">${daysDone}<small>/ ${tt}</small></span><span class="note">Days with every task ticked</span></div>
       <div class="stat"><span class="label">Mocks</span><span class="v num">${mocksDone}<small>/ ${MOCKDAYS.length}</small></span><span class="note">Full mocks logged</span></div>
       <div class="stat"><span class="label">Tasks</span><span class="v num">${T.tasks}<small>/ ${due}</small></span><span class="note">Due up to Day ${tt}</span></div>
     </div></section>
@@ -572,7 +579,7 @@ function viewProgress(){
     <div class="map">${map}</div>
     <div class="legend"><span><i style="background:var(--sunk);border:1px solid var(--line)"></i>None</span><span><i style="background:color-mix(in srgb, var(--navy) 45%, var(--card))"></i>Some</span><span><i style="background:var(--navy)"></i>All</span><span><i style="background:var(--gold);transform:rotate(45deg) scale(.7)"></i>Mock</span></div>
     <div class="legend">${PHASES.map(p=>`<span><i style="background:var(${p.c});height:4px;vertical-align:3px"></i>${p.n} ${p.a}–${p.b}</span>`).join('')}</div></section>
-  <section class="card"><h2>Badges</h2><div class="badges">${B.map(b=>`<div class="bdg ${b[3]?'got':''}"><span style="color:${b[3]?'var(--gold)':'var(--muted)'}">${ico(b[0])}</span><b>${b[1]}</b><span>${b[2]}</span></div>`).join('')}</div></section></div>`;
+</div>`;
 }
 function hoursChart(H,t){
   const W=360,Ht=150,l=24,r=6,tp=14,b=20,ymax=Math.max(5,Math.ceil(Math.max(...H))),bw=(W-l-r)/DAYS,y=v=>tp+(Ht-tp-b)*(1-v/ymax);
@@ -1068,7 +1075,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-timer]'))){const a=el.dataset.timer;
     if(a==='start')startPhase('prep',60000);else if(a==='speak')startPhase('speak',120000);
     else if(a==='reset'){clearInterval(tick);timer.phase='idle';renderView();}
-    else if(a==='mark'){const n=clampDay(todayIdx());setDay(n,{t:Object.assign({},dayDoc(n).t,{speak:true})});haptic('ok');toast('+10 XP · Speaking done');renderHeader();renderView();}
+    else if(a==='mark'){const n=clampDay(todayIdx());setDay(n,{t:Object.assign({},dayDoc(n).t,{speak:true})});haptic('ok');toast('Speaking task done');renderHeader();renderView();}
     return;}
 });
 document.addEventListener('change',e=>{
@@ -1078,9 +1085,9 @@ document.addEventListener('change',e=>{
   }
   const tk=e.target.dataset.task;
   if(tk){setDay(sel,{t:Object.assign({},dayDoc(sel).t,{[tk]:e.target.checked})});const c=doneCount(sel),tot=totalCount(sel);
-    if(e.target.checked){haptic(c===tot?'ok':'light');toast(c===tot?`Day ${sel} complete`:'+10 XP');}renderHeader();renderView();return;}
+    if(e.target.checked){haptic(c===tot?'ok':'light');if(c===tot)toast(`Day ${sel} complete`);}renderHeader();renderView();return;}
   const wt=e.target.dataset.wtask;
-  if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked){haptic('light');toast('+20 XP');}renderHeader();renderView();return;}
+  if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked)haptic('light');renderHeader();renderView();return;}
 });
 document.addEventListener('input',e=>{
   const t=e.target;
