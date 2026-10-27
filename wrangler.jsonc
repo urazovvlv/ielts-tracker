@@ -4,5 +4,6 @@
   "main": "worker/worker.js",
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
+  "keep_vars": true,
   "kv_namespaces": [{ "binding": "FOCUS", "id": "14379a0c624e4a56a3dfc99b02a3f4f4" }]
 }
