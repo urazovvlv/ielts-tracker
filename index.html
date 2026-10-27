@@ -243,7 +243,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 /* iPhone zooms into fields under 16px */
 input[type=text],input[type=search],input[type=date],input[type=number],select,textarea,.ein,.ein.sm,.sc{font-size:16px}
 /* tabs */
-.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
 .tabs button svg{width:22px;height:22px}
 .tabs button.on{color:var(--navy)}
@@ -335,6 +335,31 @@ h3{font-size:var(--fs-m)}
 .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
 .stats .stat .note{font-size:var(--fs-xs)}
 .stats .stat .v{font-size:24px}
+.dsec{gap:0;padding:0;overflow:hidden}
+.dsec summary{list-style:none;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:14px 16px;min-height:56px}
+.dsec summary::-webkit-details-marker{display:none}
+.dsec[open] summary{border-bottom:1px solid var(--line)}
+.dsec-t{display:flex;align-items:center;gap:4px}
+.dsec-t b{font-size:var(--fs-m)}
+.dsec-ok{margin-left:auto;color:var(--good);font-weight:800}
+.dsec.done{border-color:color-mix(in srgb,var(--good) 50%,var(--line))}
+.dsec>.btn{margin:12px 16px 16px;width:calc(100% - 32px)}
+.dlist{margin:0;padding:4px 16px 0 36px;display:flex;flex-direction:column}
+.di{padding:12px 0;border-bottom:1px solid var(--line);display:list-item}
+.di>*+*{margin-top:4px}
+.di:last-child{border-bottom:0}
+.di::marker{color:var(--muted);font-weight:700;font-size:var(--fs-s)}
+.di-h{display:flex;align-items:flex-start;gap:8px}
+.di-h b{flex:1;font-size:var(--fs-m);line-height:1.35}
+.di-pos{font-size:var(--fs-xs);color:var(--muted);font-style:italic;padding-top:3px}
+.di-btn{flex:none;width:36px;height:36px;margin:-6px -4px -6px 0;border-radius:10px;border:1px solid var(--line);background:var(--sunk);font-size:16px;font-weight:700;color:var(--navy)}
+.di-btn.on{background:var(--navy-soft);color:var(--good)}
+.di-ipa{font-family:ui-monospace,Menlo,monospace;font-size:var(--fs-s);color:var(--navy)}
+.di-syn{font-size:var(--fs-s);color:var(--muted)}
+.di-uz{font-size:15px;font-weight:600}
+.di-ex{font-size:var(--fs-s);font-style:italic;color:var(--muted)}
+.di-use{font-size:var(--fs-xs);color:var(--navy);font-weight:600;background:var(--navy-soft);padding:3px 8px;border-radius:6px;align-self:flex-start}
+.tabs button{font-size:10.5px}
 </style>
 </head>
 <body>
@@ -348,7 +373,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.21';
+const BUILD='2026-10-28.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -583,6 +608,7 @@ const levelOf=xp=>{let i=0;LEVELS.forEach((l,k)=>{if(xp>=l.x)i=k;});return i;};
 /* ---------- icons ---------- */
 const I={
   today:'<path d="M5 12l4 4L19 6" />',
+  daily:'<path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M6.3 17.7l1.4-1.4M16.3 7.7l1.4-1.4"/><circle cx="12" cy="12" r="4"/>',
   prog:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
   mock:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>',
   words:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 5v16"/>',
@@ -617,7 +643,7 @@ function renderHeader(){
   <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(DAYS-t)+' day'+(DAYS-t===1?'':'s')+' left':t<1?DAYS+'-day plan · starts in '+(1-t)+' day'+(1-t===1?'':'s'):DAYS+'-day plan'}</div></div>`;
 }
 function renderTabs(){
-  const T=[['today','Today'],['prog','Progress'],['mock','Mocks'],['words','Words'],['speak','Speak']];
+  const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['mock','Mocks'],['words','Words'],['speak','Speak']];
   document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k)}${l}</button>`).join('');
 }
 
@@ -1113,11 +1139,54 @@ function playListening(){
     if(i===LSCRIPT.length-1)u.onend=()=>{WZ.playing=false;if(WSTEPS[WZ.step]==='test')renderView();};synth.speak(u);});
 }
 
+/* ---------- Daily pack: 6 sections x 10 items, files in /daily ---------- */
+const DSEC=[['idioms','Idioms','S'],['reading','Reading words','R'],['speaking','Speaking phrases','S'],['pron','Pronunciation','S'],['task1','Writing Task 1 words','W'],['task2','Writing Task 2 words','W']];
+let DPACK={},DCOUNT=0,dSel=null,dLoading=false;
+const dOpen=new Set();
+document.addEventListener('toggle',e=>{const d=e.target;if(d&&d.dataset&&d.dataset.dsec){d.open?dOpen.add(d.dataset.dsec):dOpen.delete(d.dataset.dsec);}},true);
+async function loadDailyIndex(){try{const r=await fetch('daily/index.json',{cache:'no-cache'});if(r.ok)DCOUNT=(await r.json()).count||0;}catch(e){}}
+const packNo=n=>DCOUNT?((n-1)%DCOUNT)+1:0;
+async function getPack(n){
+  const k=packNo(n);if(!k)return null;if(DPACK[k])return DPACK[k];
+  try{const r=await fetch(`daily/${pad(k)}.json`,{cache:'no-cache'});if(r.ok){DPACK[k]=await r.json();return DPACK[k];}}catch(e){}
+  return null;
+}
+function dItem(sec,x,i){
+  const save=['idioms','reading','task1','task2'].includes(sec);
+  const head=sec==='idioms'?x.t:sec==='speaking'?x.s:x.w;
+  const saved=save&&S.words.some(w=>w.w.toLowerCase()===String(head).toLowerCase());
+  return `<li class="di"><div class="di-h"><b>${esc(head)}</b>${x.pos?`<span class="di-pos">${esc(x.pos)}</span>`:''}${sec==='pron'&&ttsOK()?`<button class="di-btn" data-say="${esc(head.replace(/ – /g,', '))}" aria-label="Listen">🔊</button>`:''}${save?`<button class="di-btn ${saved?'on':''}" data-dsave="${sec}:${i}" aria-label="Save to my words">${saved?'✓':'+'}</button>`:''}</div>
+    ${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}
+    ${x.syn&&x.syn!=='—'?`<div class="di-syn">≈ ${esc(x.syn)}</div>`:''}
+    <div class="di-uz">${esc(x.uz)}</div>
+    ${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}
+    ${x.use?`<div class="di-use">${esc(x.use)}</div>`:''}${x.tip?`<div class="di-use">${esc(x.tip)}</div>`:''}</li>`;
+}
+function viewDaily(){
+  const today=clampDay(todayIdx());if(dSel==null)dSel=today;
+  const n=clampDay(dSel),k=packNo(n),p=DPACK[k];
+  if(DCOUNT&&!p&&!dLoading){dLoading=true;getPack(n).then(()=>{dLoading=false;if(tab==='daily')renderView();});}
+  const done=(dayDoc(n).dl)||{},cnt=DSEC.filter(([sk])=>done[sk]).length;
+  const review=DCOUNT&&n>DCOUNT;
+  const head=`<section class="card"><div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${n===today?'Today\'s pack':fmt(dateOf(n))}</h2><span class="note">${review?`Review of Day ${k}`:'6 sections · 10 items each'}</span></div></div>
+    <div class="daynav"><button class="btn icon" data-dnav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-dnav="1" aria-label="Next day">›</button></div></div>
+    <div class="pline"><span class="label">Learned</span><div class="pbar"><i style="width:${cnt/6*100}%"></i></div><b class="num">${cnt}/6</b></div>
+    ${n!==today?'<button class="btn" data-dnav="0">Back to today</button>':''}</section>`;
+  if(!DCOUNT)return `<div class="wrap">${head}<section class="card"><p class="note" style="margin:0">Daily packs could not load. Check your internet and reopen the app.</p></section></div>`;
+  if(!p)return `<div class="wrap">${head}<section class="card"><p class="note" style="margin:0">Loading today's pack…</p></section></div>`;
+  const secs=DSEC.map(([sk,title,skill])=>{const sec=p[sk];if(!sec)return '';const th=sec.theme||'';
+    return `<details class="card dsec ${done[sk]?'done':''}" data-dsec="${sk}" ${dOpen.has(sk)?'open':''}><summary><span class="dsec-t"><span class="skb sk-${skill}">${skill}</span><b>${title}</b>${done[sk]?'<span class="dsec-ok">✓</span>':''}</span>${th?`<span class="note">${esc(th)}</span>`:''}</summary>
+      <ol class="dlist">${sec.items.map((x,i)=>dItem(sk,x,i)).join('')}</ol>
+      <button class="btn block ${done[sk]?'':'primary'}" data-dlearn="${sk}">${done[sk]?'Learned ✓ (tap to undo)':'Mark as learned'}</button></details>`;}).join('');
+  return `<div class="wrap">${head}${secs}</div>`;
+}
+function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=0.85;const v=speechSynthesis.getVoices().find(v=>/^en-GB/i.test(v.lang))||speechSynthesis.getVoices().find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+
 /* ---------- render ---------- */
 function renderView(){
   const v=document.getElementById('view');
   if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
-  v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
+  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
   updateBack();
 }
 /* What the Telegram back arrow should close, newest layer first. */
@@ -1192,6 +1261,11 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
   if((el=g('[data-addsk]'))){const kd=el.dataset.addsk,v=el.dataset.val;addSk[kd]=addSk[kd]===v?'':v;const nm=document.getElementById(`add-${kd}-name`),nv=nm?nm.value:'',nt=document.getElementById(`add-${kd}-note`),tv=nt?nt.value:'';renderView();const a=document.getElementById(`add-${kd}-name`);if(a){a.value=nv;document.getElementById(`add-${kd}-note`).value=tv;}return;}
+  if((el=g('[data-dnav]'))){const v=Number(el.dataset.dnav),today=clampDay(todayIdx());dSel=v===0?today:clampDay((dSel||today)+v);dOpen.clear();haptic('sel');renderView();scrollTo(0,0);return;}
+  if((el=g('[data-dlearn]'))){const n=clampDay(dSel||todayIdx()),sk=el.dataset.dlearn,dl=Object.assign({},dayDoc(n).dl);dl[sk]=!dl[sk];setDay(n,{dl});haptic(dl[sk]?'ok':'light');if(dl[sk])toast('Section learned');renderView();return;}
+  if((el=g('[data-say]'))){sayText(el.dataset.say);return;}
+  if((el=g('[data-dsave]'))){const [sec,i]=el.dataset.dsave.split(':'),p=DPACK[packNo(clampDay(dSel||todayIdx()))];const x=p&&p[sec]&&p[sec].items[Number(i)];
+    if(x){const w=sec==='idioms'?x.t:x.w;if(!S.words.some(y=>y.w.toLowerCase()===w.toLowerCase())){S.words.push({id:'w'+Date.now().toString(36),w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}}return;}
   if((el=g('[data-mexp]'))){mockOpen.add(Number(el.dataset.mexp));renderView();return;}
   if((el=g('[data-wscope]'))){editWScope=el.dataset.wscope;renderView();return;}
   if((el=g('[data-scope]'))){editScope=el.dataset.scope;renderView();return;}
@@ -1265,6 +1339,7 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
 (async()=>{
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
+  await loadDailyIndex();
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());

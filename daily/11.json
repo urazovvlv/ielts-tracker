@@ -1,0 +1,401 @@
+{
+ "idioms": {
+  "theme": "Change and new things",
+  "items": [
+   {
+    "t": "turn over a new leaf",
+    "uz": "yangi hayot boshlamoq, yaxshi tomonga o'zgarmoq",
+    "ex": "This year I've turned over a new leaf and wake up early.",
+    "use": "Odatlar o'zgarishi"
+   },
+   {
+    "t": "a change of heart",
+    "uz": "fikrini o'zgartirish",
+    "ex": "He had a change of heart and decided to stay.",
+    "use": "Qaror o'zgarishi"
+   },
+   {
+    "t": "break the habit",
+    "uz": "odatdan voz kechmoq",
+    "ex": "It's hard to break the habit of checking my phone.",
+    "use": "Telefon, odatlar"
+   },
+   {
+    "t": "get used to",
+    "uz": "…ga ko'nikmoq",
+    "ex": "I'm getting used to living alone.",
+    "use": "Grammatika: get used to + -ing"
+   },
+   {
+    "t": "out of your comfort zone",
+    "uz": "odatiy qulay holatdan tashqarida",
+    "ex": "Speaking in public took me out of my comfort zone.",
+    "use": "Yangi tajriba haqida"
+   },
+   {
+    "t": "the new normal",
+    "uz": "yangi odatiy holat",
+    "ex": "Online meetings became the new normal.",
+    "use": "Part 3: jamiyatdagi o'zgarishlar"
+   },
+   {
+    "t": "a fresh start",
+    "uz": "yangi boshlanish",
+    "ex": "Moving cities gave me a fresh start.",
+    "use": "Hayot o'zgarishi"
+   },
+   {
+    "t": "keep up with",
+    "uz": "…dan orqada qolmaslik",
+    "ex": "It's hard to keep up with new technology.",
+    "use": "Texnologiya, yangiliklar"
+   },
+   {
+    "t": "go back to square one",
+    "uz": "boshidan boshlashga majbur bo'lmoq",
+    "ex": "The file was deleted, so we went back to square one.",
+    "use": "Muvaffaqiyatsizlik hikoyasi"
+   },
+   {
+    "t": "a game changer",
+    "uz": "vaziyatni tubdan o'zgartiradigan narsa",
+    "ex": "The metro was a game changer for the city.",
+    "use": "Texnologiya, ixtirolar"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "primary",
+    "pos": "adj",
+    "syn": "main, chief, principal",
+    "uz": "asosiy, birlamchi",
+    "ex": "The primary cause was poor diet."
+   },
+   {
+    "w": "purchase",
+    "pos": "verb/noun",
+    "syn": "buy; acquisition",
+    "uz": "sotib olmoq; xarid",
+    "ex": "Most purchases are now made online."
+   },
+   {
+    "w": "range",
+    "pos": "noun",
+    "syn": "variety, scope, span",
+    "uz": "doira, xilma-xillik",
+    "ex": "The shop sells a wide range of products."
+   },
+   {
+    "w": "region",
+    "pos": "noun",
+    "syn": "area, zone, district",
+    "uz": "mintaqa",
+    "ex": "The northern region is mostly desert."
+   },
+   {
+    "w": "regulate",
+    "pos": "verb",
+    "syn": "control, govern, manage",
+    "uz": "tartibga solmoq",
+    "ex": "The body regulates its own temperature."
+   },
+   {
+    "w": "relevant",
+    "pos": "adj",
+    "syn": "related, pertinent, applicable",
+    "uz": "tegishli, dolzarb",
+    "ex": "Only relevant information was included."
+   },
+   {
+    "w": "resident",
+    "pos": "noun",
+    "syn": "inhabitant, local",
+    "uz": "aholi, yashovchi",
+    "ex": "Local residents opposed the new airport."
+   },
+   {
+    "w": "resource",
+    "pos": "noun",
+    "syn": "supply, asset, material",
+    "uz": "resurs, manba",
+    "ex": "Water is a limited resource."
+   },
+   {
+    "w": "restrict",
+    "pos": "verb",
+    "syn": "limit, control, constrain",
+    "uz": "cheklamoq",
+    "ex": "The law restricts the sale of alcohol."
+   },
+   {
+    "w": "secure",
+    "pos": "adj/verb",
+    "syn": "safe; obtain, get",
+    "uz": "xavfsiz; qo'lga kiritmoq",
+    "ex": "She secured funding for her research."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about the future",
+  "items": [
+   {
+    "s": "I'm planning to …",
+    "uz": "… qilishni rejalashtiryapman",
+    "ex": "I'm planning to open a language centre.",
+    "use": "Aniq reja"
+   },
+   {
+    "s": "I'm hoping to …",
+    "uz": "… qilishga umid qilyapman",
+    "ex": "I'm hoping to get a 7.5 in December.",
+    "use": "Umid, maqsad"
+   },
+   {
+    "s": "I'd love to … one day.",
+    "uz": "Bir kun … qilishni juda xohlardim",
+    "ex": "I'd love to visit Japan one day.",
+    "use": "Orzu"
+   },
+   {
+    "s": "It's likely that …",
+    "uz": "Ehtimol, …",
+    "ex": "It's likely that robots will do most factory jobs.",
+    "use": "Part 3 bashorat"
+   },
+   {
+    "s": "I can't see … happening any time soon.",
+    "uz": "… yaqin orada bo'lishini ko'rmayapman",
+    "ex": "I can't see cash disappearing any time soon.",
+    "use": "Shubha bildirish — tabiiy"
+   },
+   {
+    "s": "In the next ten years or so, …",
+    "uz": "Keyingi o'n yil ichida, …",
+    "ex": "In the next ten years or so, cars will be electric.",
+    "use": "Vaqt ifodasi"
+   },
+   {
+    "s": "There's a good chance that …",
+    "uz": "… ehtimoli katta",
+    "ex": "There's a good chance that prices will rise.",
+    "use": "Ehtimollik"
+   },
+   {
+    "s": "By the time …, I'll have …",
+    "uz": "… bo'lgunga qadar, … qilib bo'lgan bo'laman",
+    "ex": "By the time I'm 25, I'll have finished my master's.",
+    "use": "Future Perfect — yuqori band"
+   },
+   {
+    "s": "I'm thinking of …ing",
+    "uz": "… qilish haqida o'ylayapman",
+    "ex": "I'm thinking of learning Korean next.",
+    "use": "Hali aniq bo'lmagan reja"
+   },
+   {
+    "s": "Who knows? Maybe …",
+    "uz": "Kim biladi? Balki …",
+    "ex": "Who knows? Maybe we'll all live on Mars.",
+    "use": "Hazil aralash noaniq javob"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Final consonants and clusters",
+  "items": [
+   {
+    "w": "texts",
+    "ipa": "/teksts/",
+    "uz": "/ksts/ — 4 undosh ketma-ket",
+    "tip": "Sekin: tek-s-t-s"
+   },
+   {
+    "w": "months",
+    "ipa": "/mʌnθs/",
+    "uz": "/nθs/ birikmasi",
+    "tip": "MANTHS"
+   },
+   {
+    "w": "sixth",
+    "ipa": "/sɪksθ/",
+    "uz": "/ksθ/ — qiyin, lekin muhim (sanalar)",
+    "tip": "SIKS-th"
+   },
+   {
+    "w": "world's",
+    "ipa": "/wɜːldz/",
+    "uz": "/ldz/",
+    "tip": "Oxirini yutmang"
+   },
+   {
+    "w": "result",
+    "ipa": "/rɪˈzʌlt/",
+    "uz": "oxiridagi /lt/ eshitilsin; 's' /z/ deb o'qiladi",
+    "tip": "ri-ZALT"
+   },
+   {
+    "w": "twelfth",
+    "ipa": "/twelfθ/",
+    "uz": "/lfθ/ — sanalarda kerak (the twelfth of May)",
+    "tip": "TWELF-th, oxirini yutmang"
+   },
+   {
+    "w": "helped",
+    "ipa": "/helpt/",
+    "uz": "/lpt/",
+    "tip": "HELPT — 1 bo'g'in"
+   },
+   {
+    "w": "strengths",
+    "ipa": "/streŋθs/",
+    "uz": "ingliz tilidagi eng qiyin so'zlardan biri",
+    "tip": "STRENGTHS — sekin mashq qiling"
+   },
+   {
+    "w": "next day",
+    "ipa": "/neks deɪ/",
+    "uz": "tez nutqda /t/ tushib qoladi",
+    "tip": "Listening'da shunday eshitasiz"
+   },
+   {
+    "w": "rice – rise",
+    "ipa": "/raɪs/ – /raɪz/",
+    "uz": "guruch – ko'tarilmoq; oxiri /s/ va /z/",
+    "tip": "rise da tovush jaranglaydi"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Approximation",
+  "items": [
+   {
+    "w": "approximately",
+    "syn": "about, around, roughly",
+    "uz": "taxminan",
+    "ex": "Approximately 45% of people agreed."
+   },
+   {
+    "w": "just over / just under",
+    "syn": "slightly more / less than",
+    "uz": "sal ko'proq / sal kamroq",
+    "ex": "Just over 200 students took part."
+   },
+   {
+    "w": "well over / well below",
+    "syn": "much more / much less than",
+    "uz": "ancha ko'p / ancha kam",
+    "ex": "Spending was well over $1 million."
+   },
+   {
+    "w": "more or less",
+    "syn": "approximately, roughly",
+    "uz": "taxminan, deyarli (o'zgarmagan holat uchun qulay)",
+    "ex": "The figure remained more or less the same."
+   },
+   {
+    "w": "in the region of",
+    "syn": "around, about",
+    "uz": "… atrofida",
+    "ex": "The cost was in the region of $500."
+   },
+   {
+    "w": "roughly",
+    "syn": "approximately",
+    "uz": "taxminan",
+    "ex": "Roughly half of the energy came from gas."
+   },
+   {
+    "w": "a little over / a little less than",
+    "syn": "slightly above / below",
+    "uz": "biroz ko'proq / kamroq",
+    "ex": "It rose to a little over 60%."
+   },
+   {
+    "w": "the figure stood at",
+    "syn": "was",
+    "uz": "ko'rsatkich … ni tashkil etdi",
+    "ex": "In 2000, the figure stood at 12%."
+   },
+   {
+    "w": "precisely / exactly",
+    "syn": "—",
+    "uz": "aniq (faqat aniq raqam bo'lsa)",
+    "ex": "Precisely 50% of men voted."
+   },
+   {
+    "w": "just shy of",
+    "syn": "just below",
+    "uz": "…ga ozgina yetmay",
+    "ex": "Sales reached just shy of 1,000 units."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Family and ageing",
+  "items": [
+   {
+    "w": "nuclear family",
+    "syn": "parents and children only",
+    "uz": "kichik oila (ota-ona va bolalar)",
+    "ex": "The nuclear family is now common in cities."
+   },
+   {
+    "w": "extended family",
+    "syn": "relatives living together",
+    "uz": "katta oila (bobo-buvilar bilan)",
+    "ex": "In Uzbekistan, the extended family is still important."
+   },
+   {
+    "w": "ageing population",
+    "syn": "growing number of elderly people",
+    "uz": "keksayib borayotgan aholi",
+    "ex": "An ageing population increases pension costs."
+   },
+   {
+    "w": "the elderly",
+    "syn": "older people, senior citizens",
+    "uz": "keksalar",
+    "ex": "Society should respect and support the elderly."
+   },
+   {
+    "w": "generation gap",
+    "syn": "differences between generations",
+    "uz": "avlodlar orasidagi farq",
+    "ex": "Technology has widened the generation gap."
+   },
+   {
+    "w": "upbringing",
+    "syn": "raising, parenting",
+    "uz": "tarbiya",
+    "ex": "A child's upbringing shapes their values."
+   },
+   {
+    "w": "role model",
+    "syn": "example to follow",
+    "uz": "namuna bo'ladigan odam",
+    "ex": "Parents are their children's first role models."
+   },
+   {
+    "w": "childcare",
+    "syn": "looking after children",
+    "uz": "bolaga qarash xizmati",
+    "ex": "Affordable childcare helps mothers return to work."
+   },
+   {
+    "w": "care homes",
+    "syn": "nursing homes",
+    "uz": "qariyalar uyi",
+    "ex": "Many older people prefer living with family to care homes."
+   },
+   {
+    "w": "pension",
+    "syn": "retirement income",
+    "uz": "nafaqa, pensiya",
+    "ex": "The state pension may not be enough to live on."
+   }
+  ]
+ }
+}
