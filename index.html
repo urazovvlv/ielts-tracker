@@ -268,7 +268,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.15';
+const BUILD='2026-10-27.16';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -754,13 +754,13 @@ function openSettings(){
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
    <details class="card sugg"><summary><b>My plan</b><span class="note">${PLAN?`Day 1 ${short(START)} · ${PLAN.exam?'exam '+short(parseD(PLAN.exam)):DAYS+' days'} · target ${TARGET.toFixed(1)}`:''}</span></summary>${planForm(planDefaults(),false)}</details>
-   <section class="card"><h3 style="font-size:16px">Saving</h3><p class="note" style="margin:0">${CLOUD?'Your progress is saved in your own Telegram account, so it is the same on your phone and computer and separate from anyone else who uses this bot.':'You opened the app outside Telegram, so progress is saved on this device only. Open it from the bot to save it in your Telegram account.'}</p><p class="note" style="margin:0">Status: <b>${syncText()}</b> · App version <b>${BUILD}</b></p></section>
    <section class="card"><h3 style="font-size:16px">Backup</h3><p class="note" style="margin:0">Copy all your data as text and keep it in Saved Messages. Paste it back to restore.</p>
     <div class="grid2"><button class="btn block" data-backup="copy">Copy backup</button><button class="btn block" data-backup="open">Restore</button></div>
     ${restoreOpen?'<textarea id="restoreIn" placeholder="Paste your backup text here"></textarea><button class="btn block primary" data-backup="restore">Restore this backup</button>':''}
     </section>
    <section class="card"><h3 style="font-size:16px">Start over from zero</h3><p class="note" style="margin:0">Answer the questions again and get a brand-new plan. When you press <b>Start my plan</b> at the end, all old ticks, words, mock scores and custom tasks are deleted. If you stop halfway, nothing changes.</p>
     <button class="btn block" data-wipe="1" style="color:var(--bad)">${wipeArm?'Tap again to confirm':'Start over from zero'}</button></section>
+   <p class="note" style="margin:0;text-align:center">App version ${BUILD}</p>
   </div></div>`;
 }
 const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;};
