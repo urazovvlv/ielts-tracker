@@ -1,29 +1,5 @@
-Claude
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Reminders · YML
 name: IELTS reminders
- 
+
 on:
   schedule:
     - cron: '40 1 * * *'    # 06:40 Tashkent
@@ -36,7 +12,7 @@ on:
         type: choice
         options: [morning, evening, night]
         default: morning
- 
+
 jobs:
   send:
     runs-on: ubuntu-latest
@@ -60,4 +36,3 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           APP_URL: ${{ secrets.APP_URL }}
- 
