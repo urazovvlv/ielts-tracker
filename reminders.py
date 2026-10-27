@@ -255,7 +255,7 @@ def build_weekly(plan, day, today, doc):
     e = html.escape
     first = today - dt.timedelta(days=6)
     rng = f"{first.day} {first.strftime('%b')} – {today.day} {today.strftime('%b')}"
-    lines = [f"<b>Weekly report · {rng}</b>", f"Day {day} of {plan.days} · {plan.days - day} days left", ""]
+    lines = [f"<b>Week {math.ceil(day / 7)} report · {rng}</b>", f"Day {day} of {plan.days} · {plan.days - day} days left", ""]
     stats = (doc or {}).get("stats") or {}
     if not stats:
         lines.append("I have no data from your tracker for this week yet. Open the tracker once, and next Sunday's report will be full.")
@@ -377,6 +377,9 @@ def main():
         day = (today - plan.start).days + 1
         if not 1 <= day <= plan.days:
             print(f"User ending …{chat[-3:]}: day {day} is outside their {plan.days}-day plan, so no reminder.")
+            continue
+        if slot == "weekly" and day % 7 and day != plan.days and not os.environ.get("FORCE_WEEKLY"):
+            print(f"User ending …{chat[-3:]}: day {day} is not the last day of a plan week, so no report.")
             continue
         if slot == "weekly":
             ok = send(chat, build_weekly(plan, day, today, docs.get(chat)), "#prog")

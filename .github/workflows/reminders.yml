@@ -5,7 +5,7 @@ on:
     - cron: '0 2 * * *'     # 07:00 Tashkent
     - cron: '15 14 * * *'   # 19:15 Tashkent
     - cron: '15 16 * * *'   # 21:15 Tashkent
-    - cron: '30 15 * * 0'   # Sunday 20:30 Tashkent: weekly report
+    - cron: '0 18 * * *'    # 23:00 Tashkent: weekly report, sent only on the last day of each plan week
   workflow_dispatch:
     inputs:
       slot:
@@ -28,7 +28,7 @@ jobs:
             case "${{ github.event.schedule }}" in
               '0 2 * * *')   echo "slot=morning" >> "$GITHUB_OUTPUT" ;;
               '15 14 * * *') echo "slot=evening" >> "$GITHUB_OUTPUT" ;;
-              '30 15 * * 0') echo "slot=weekly"  >> "$GITHUB_OUTPUT" ;;
+              '0 18 * * *')  echo "slot=weekly"  >> "$GITHUB_OUTPUT" ;;
               *)             echo "slot=night"   >> "$GITHUB_OUTPUT" ;;
             esac
           fi
@@ -39,5 +39,6 @@ jobs:
           CHAT_ID: ${{ secrets.CHAT_ID }}
           USERS: ${{ secrets.USERS }}
           APP_URL: ${{ secrets.APP_URL }}
+          FORCE_WEEKLY: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
           FOCUS_URL: ${{ secrets.FOCUS_URL }}
           READ_KEY: ${{ secrets.READ_KEY }}
