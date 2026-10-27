@@ -12,18 +12,24 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
           python3 - <<'PY'
-          import datetime as dt, hashlib, hmac, json, os, sys, urllib.request, urllib.error
+          import datetime as dt, hashlib, hmac, os, urllib.request, urllib.error
           import reminders
           base = reminders.FOCUS_DEFAULT
-          print("Server:", base)
-          with urllib.request.urlopen(base + "/", timeout=20) as r:
-              print("Home page:", r.status, r.read()[:60])
-          key = hmac.new(os.environ["BOT_TOKEN"].encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
+          def get(url, headers=None):
+              req = urllib.request.Request(url, headers={"User-Agent": "ielts-reminders", **(headers or {})})
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      return r.status, r.read()[:120].decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read()[:120].decode("utf-8", "replace")
+              except Exception as e:
+                  return 0, repr(e)[:120]
+          print("::notice::home", *get(base + "/"))
+          tok = os.environ.get("BOT_TOKEN", "")
+          key = hmac.new(tok.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
           today = dt.datetime.now(reminders.TZ).date().isoformat()
-          req = urllib.request.Request(f"{base}/focus?ids=1&date={today}", headers={"X-Key": key, "User-Agent": "check"})
-          try:
-              with urllib.request.urlopen(req, timeout=20) as r:
-                  print("Focus read OK:", r.status, r.read()[:100])
-          except urllib.error.HTTPError as e:
-              sys.exit(f"Focus read refused ({e.code}): BOT_TOKEN in Cloudflare is missing or differs from GitHub's")
+          code, body = get(f"{base}/focus?ids=5020539876&date={today}", {"X-Key": key})
+          print(f"::notice::focus {code} {body}")
+          if code != 200:
+              raise SystemExit(1)
           PY
