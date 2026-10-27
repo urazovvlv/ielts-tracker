@@ -711,7 +711,7 @@ function openSettings(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
-   <section class="card"><h3 style="font-size:16px">Personal tutor check</h3><p class="note" style="margin:0">${PLAN&&PLAN.profile?`Last done ${esc(PLAN.profile.at||'')}. Redo it to update your level, weak skills and daily time. Your progress stays.`:'Answer a few questions and take a short placement test, and the app builds daily tasks around your weak skills and your time.'}</p><button class="btn block primary" data-wstart="1">${PLAN&&PLAN.profile?'Redo the check':'Start the check'}</button></section>
+   <section class="card"><h3 style="font-size:16px">Personal tutor check</h3><p class="note" style="margin:0">${PLAN&&PLAN.profile?`Last done ${esc(PLAN.profile.at||'')}. Redo it to update your level, weak skills and daily time. Your ticks and scores stay.`:'Answer a few questions and take a short placement test, and the app builds daily tasks around your weak skills and your time.'}</p><button class="btn block primary" data-wstart="1">${PLAN&&PLAN.profile?'Update my plan (keep progress)':'Start the check'}</button></section>
    ${planForm(planDefaults(),false)}
    <section class="card"><h3 style="font-size:16px">Reminders from the bot</h3>
     ${code?`<p class="note" style="margin:0">So the bot's daily messages follow <b>your</b> plan, copy this code and send it to the person who manages the bot. Send it again whenever you change your plan.</p>
@@ -724,7 +724,9 @@ function openSettings(){
    <section class="card"><h3 style="font-size:16px">Backup</h3><p class="note" style="margin:0">Copy all your data as text and keep it in Saved Messages. Paste it back to restore.</p>
     <div class="grid2"><button class="btn block" data-backup="copy">Copy backup</button><button class="btn block" data-backup="open">Restore</button></div>
     ${restoreOpen?'<textarea id="restoreIn" placeholder="Paste your backup text here"></textarea><button class="btn block primary" data-backup="restore">Restore this backup</button>':''}
-    <button class="btn block" data-wipe="1" style="color:var(--bad)">${wipeArm?'Tap again: delete everything and start over':'Delete everything and start over'}</button></section>
+    </section>
+   <section class="card"><h3 style="font-size:16px">Start over from zero</h3><p class="note" style="margin:0">Answer the questions again and get a brand-new plan. When you press <b>Start my plan</b> at the end, all old ticks, words, mock scores and custom tasks are deleted. If you stop halfway, nothing changes.</p>
+    <button class="btn block" data-wipe="1" style="color:var(--bad)">${wipeArm?'Tap again to confirm':'Start over from zero'}</button></section>
   </div></div>`;
 }
 const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;};
@@ -740,11 +742,19 @@ function restoreFrom(o){
   if(o.plan&&o.plan.start){buildSchedule(o.plan);touch('plan');}
   allKeys().forEach(k=>touch(k));saveWords();
 }
-function wipe(){
-  const keys=allKeys();S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:S.settings};
-  keys.forEach(k=>{lsSet(k,null);put(k,null);});saveWords();
-  PLAN=null;WZ=null;lsSet('plan',null);put('plan',null);
+/* Deletes every saved key in this device and in the Telegram account, and waits until Telegram confirms. */
+async function fullWipe(){
+  q.clear();for(const k in timers)clearTimeout(timers[k]);
+  while(busy)await sleep(100);
+  for(const k of Object.keys(lsAll()))lsSet(k,null);
+  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{}};wordsN=0;PLAN=null;
+  if(CLOUD){
+    let keys=await cs('getKeys');
+    for(let i=0;i<keys.length;i+=40)await cs('removeItems',keys.slice(i,i+40));
+    keys=await cs('getKeys');if(keys.length)throw new Error('Some data was not deleted');
+  }
 }
+async function waitSaved(ms=10000){const t0=Date.now();while((busy||q.size)&&Date.now()-t0<ms)await sleep(120);return !busy&&!q.size;}
 
 /* ---------- mods (edit list) ---------- */
 const clone=o=>JSON.parse(JSON.stringify(o||{}));
@@ -871,20 +881,21 @@ function estimate(d,t){
 let WZ=null;
 const WSTEPS=['intro','goal','time','history','skills','test','result'];
 function startWizard(){initWizard();tab='today';renderAll();scrollTo(0,0);}
-function initWizard(){
-  const p=PLAN||planDefaults(),pr=(PLAN&&PLAN.profile)||{};
-  WZ={step:0,part:'g',lPlays:0,t:{g:{},r:{},l:{}},d:{
+function initWizard(fresh){
+  const p=PLAN||planDefaults(),pr=fresh?{}:((PLAN&&PLAN.profile)||{});
+  WZ={fresh:!!fresh,step:0,part:'g',lPlays:0,t:{g:{},r:{},l:{}},d:{
     name:p.name||'',purpose:pr.purpose||'',type:pr.type||'Academic',target:p.target||7,minSkill:pr.minSkill||0,
-    start:p.start||isoD(new Date()),exam:p.exam||'',days:p.days||60,mwd:pr.mwd||120,mwe:pr.mwe||180,when:pr.when||'morning',
+    start:fresh?isoD(new Date()):(p.start||isoD(new Date())),exam:fresh?'':(p.exam||''),days:fresh?60:(p.days||60),mwd:pr.mwd||120,mwe:pr.mwe||180,when:pr.when||'morning',
     hasPrev:!!pr.prev,prev:pr.prev||{L:'',R:'',W:'',S:''},conf:pr.conf||{L:3,R:3,W:3,S:3},problems:pr.problems||{L:[],R:[],W:[],S:[]}}};
 }
 const chip=(field,val,label,on)=>`<button type="button" class="chip ${on?'on':''}" data-wchip="${field}" data-val="${esc(val)}" aria-pressed="${on}">${label}</button>`;
-function wzHead(){const i=WZ.step;return `<div class="wz-prog"><div class="pbar"><i style="width:${i/(WSTEPS.length-1)*100}%"></i></div><span class="note">Step ${i+1} of ${WSTEPS.length}</span></div>`;}
+function wzHead(){const i=WZ.step;return `${PLAN?`<div class="card-h"><span class="tag">${WZ.fresh?'Starting over':'Updating your plan'}</span><button class="btn ghost" data-wcancel="1" style="padding:0">Cancel</button></div>`:''}<div class="wz-prog"><div class="pbar"><i style="width:${i/(WSTEPS.length-1)*100}%"></i></div><span class="note">Step ${i+1} of ${WSTEPS.length}</span></div>`;}
 function wzNav(next='Next',back=true){return `<div class="wz-nav">${back&&WZ.step>0?'<button class="btn" data-wnav="-1">Back</button>':'<span></span>'}<button class="btn primary" data-wnav="1">${next}</button></div>`;}
 function viewWizard(){
   const d=WZ.d,s=WSTEPS[WZ.step];let b='';
   if(s==='intro')b=`<h2>Let's build your personal plan</h2>
     <p>I will ask about your goal, your time and your weak points, then give you a short placement test. From your answers I will build a daily plan that fits you.</p>
+    ${WZ.fresh&&PLAN?'<p class="verdict warn" style="margin:0">Your old ticks, words and mock scores are deleted only at the very end, when you press <b>Start my plan</b>. Until then nothing changes.</p>':''}
     <ul class="wz-list"><li>About 10–15 minutes</li><li>The test is optional but makes your plan much more accurate</li><li>You can redo this any time from Settings</li></ul>${wzNav('Start')}`;
   if(s==='goal')b=`<h2>Your goal</h2>
     <div class="field"><label class="label" for="wName">Your name</label><input id="wName" data-w="name" type="text" maxlength="30" value="${esc(d.name)}"></div>
@@ -951,15 +962,20 @@ function viewResult(){
     <h3 style="font-size:16px">A typical weekday for you <span class="note" style="font-weight:500">(${sampleDay})</span></h3>
     <ul class="tasks">${sample.map(x=>`<li class="task"><div class="tx"><b>${esc(x.label)}</b><small>${esc(x.sub)}</small></div></li>`).join('')}</ul>
     <p class="note" style="margin:0">These are estimates from a short test. Your first full mock gives the real numbers, and you can redo this check any time in Settings.</p>
-    ${wzNav('Start my plan')}`;
+    ${WZ.fresh&&PLAN?'<p class="note" style="margin:0;color:var(--bad)">Starting this plan deletes all your old progress.</p>':''}
+    ${wzNav(WZ.busy?'Starting…':'Start my plan')}`;
 }
-function finishWizard(){
+async function finishWizard(){
+  if(WZ.busy)return;
   const d=WZ.d,R=WZ.R||estimate(d,WZ.t);
-  const plan=Object.assign({},PLAN,{name:d.name.trim(),start:d.start,exam:d.exam,days:Number(d.days)||60,target:Number(d.target),
+  const plan=Object.assign({},WZ.fresh?{}:PLAN,{name:d.name.trim(),start:d.start,exam:d.exam,days:Number(d.days)||60,target:Number(d.target),
     profile:{purpose:d.purpose,type:d.type,minSkill:Number(d.minSkill)||0,mwd:Number(d.mwd),mwe:Number(d.mwe),when:d.when,
       prev:d.hasPrev?d.prev:null,conf:d.conf,problems:d.problems,est:R.est,rank:R.rank,test:R.sc,at:isoD(new Date())}});
   const err=planError(plan);if(err){toast(err);WZ.step=2;renderView();return;}
-  buildSchedule(plan);touch('plan');WZ=null;sel=clampDay(todayIdx());haptic('ok');toast('Your plan is ready');tab='today';renderAll();scrollTo(0,0);
+  if(WZ.fresh){WZ.busy=true;renderView();
+    try{await fullWipe();}catch(e){WZ.busy=false;renderView();toast('Could not delete the old data. Check your internet and try again');return;}
+    delete plan._ts;}
+  buildSchedule(plan);touch('plan');renderAll();await waitSaved();WZ=null;sel=clampDay(todayIdx());haptic('ok');toast('Your plan is ready');tab='today';renderAll();scrollTo(0,0);
 }
 function wzValid(){
   const d=WZ.d,s=WSTEPS[WZ.step];
@@ -992,6 +1008,7 @@ const goScopeKind=kind=>kind==='week'?'week':editScope;
 document.addEventListener('click',async e=>{
   const g=s=>e.target.closest(s);let el;
   if((el=g('[data-wstart]'))){closeSheet();startWizard();return;}
+  if((el=g('[data-wcancel]'))){if(window.speechSynthesis)try{speechSynthesis.cancel();}catch(x){}WZ=null;renderAll();scrollTo(0,0);return;}
   if(WZ){
     if((el=g('[data-wnav]'))){const dir=Number(el.dataset.wnav);
       if(dir>0){const err=wzValid();if(err){toast(err);return;}if(WSTEPS[WZ.step]==='result'){finishWizard();return;}}
@@ -1021,7 +1038,7 @@ document.addEventListener('click',async e=>{
     else if(a==='open'){restoreOpen=!restoreOpen;openSettings();}
     else{try{const o=JSON.parse(document.getElementById('restoreIn').value);if(!o||!o.days)throw 0;restoreFrom(o);closeSheet();renderAll();toast('Backup restored');}catch(err){toast('That text is not a valid backup');}}
     return;}
-  if((el=g('[data-wipe]'))){if(!wipeArm){wipeArm=true;openSettings();return;}wipe();closeSheet();tab='today';renderAll();scrollTo(0,0);toast('Everything deleted. Let\'s start again');return;}
+  if((el=g('[data-wipe]'))){if(!wipeArm){wipeArm=true;openSettings();return;}closeSheet();initWizard(true);tab='today';renderAll();scrollTo(0,0);return;}
   if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);haptic('sel');renderView();return;}
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
