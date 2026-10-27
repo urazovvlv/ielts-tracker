@@ -267,7 +267,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.11';
+const BUILD='2026-10-27.12';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -565,7 +565,7 @@ function suggestCard(n){
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
   const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(w),wd=WL.filter(x=>wt[x.k]).length;
-  return `<div class="wrap">${PLAN&&!PLAN.profile?`<section class="card wotd"><b>Make this plan yours</b><span class="note">Take the 10-minute tutor check: your level, weak skills and daily time decide your tasks.</span><button class="btn primary" data-wstart="1">Start the check</button></section>`:''}
+  return `<div class="wrap">
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
@@ -752,7 +752,6 @@ function openSettings(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
-   <section class="card"><h3 style="font-size:16px">Personal tutor check</h3><p class="note" style="margin:0">${PLAN&&PLAN.profile?`Last done ${esc(PLAN.profile.at||'')}. Redo it to update your level, weak skills and daily time. Your ticks and scores stay.`:'Answer a few questions and take a short placement test, and the app builds daily tasks around your weak skills and your time.'}</p><button class="btn block primary" data-wstart="1">${PLAN&&PLAN.profile?'Update my plan (keep progress)':'Start the check'}</button></section>
    ${planForm(planDefaults(),false)}
    <section class="card"><h3 style="font-size:16px">Reminders from the bot</h3>
     ${code?`<p class="note" style="margin:0">So the bot's daily messages follow <b>your</b> plan, copy this code and send it to the person who manages the bot. Send it again whenever you change your plan.</p>
