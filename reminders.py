@@ -35,7 +35,7 @@ FOCUS = ["Writing Task 2 essay", "Reading: full test, 60 min", "Writing Task 1 r
 SKILL_NAMES = {"L": "Listening", "R": "Reading", "W": "Writing", "S": "Speaking", "V": "Vocabulary"}
 PACK_SECTIONS = [("idioms", "Idioms"), ("reading", "Reading words"), ("speaking", "Speaking"),
                  ("pron", "Pronunciation"), ("task1", "Writing Task 1"), ("task2", "Writing Task 2")]
-FOCUS_DEFAULT = ""  # e.g. https://ielts-tracker.<name>.workers.dev
+FOCUS_DEFAULT = "https://ielts-tracker.urazovvlv.workers.dev"
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 

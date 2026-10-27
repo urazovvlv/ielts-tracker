@@ -373,7 +373,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.2';
+const BUILD='2026-10-28.3';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -554,7 +554,7 @@ const mockDoc=n=>S.mocks['m'+pad(n)]||{};
 function setDay(n,patch,later){const k='d'+pad(n);S.days[k]=Object.assign({},S.days[k],patch);touch(k,later);}
 const TAGS=[['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking'],['V','Vocab']];
 /* Focus server (Cloudflare Worker): tells the 07:00 bot message which skill has the most tasks today. Empty = off. */
-const WORKER_URL='';
+const WORKER_URL='https://ielts-tracker.urazovvlv.workers.dev';
 let focusT=null;
 function focusSync(){
   if(!WORKER_URL||!inTG||!PLAN)return;clearTimeout(focusT);
