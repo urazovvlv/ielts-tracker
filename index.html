@@ -257,7 +257,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.7';
+const BUILD='2026-10-27.8';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -324,14 +324,7 @@ function baseTasks(n){
     {k:'log',label:'Mistake log updated',sub:'One line per error, type + fix'}
   ];
 }
-const WEEKTASKS=[
-  {k:'mock',label:'Sunday mock done and scores logged'},
-  {k:'essays',label:'3–4 Task 2 essays marked by Claude'},
-  {k:'task1',label:'2 Task 1 reports written'},
-  {k:'partner',label:'2 Speaking sessions (partner or Claude)'},
-  {k:'vocab',label:'Weekly review of all saved words'},
-  {k:'review',label:'Mistake log reviewed, next week planned'}
-];
+const WEEKTASKS=[]; /* Weekly lists start empty too. */
 const LEVELS=[{b:'5.5',x:0},{b:'6.0',x:400},{b:'6.5',x:1200},{b:'7.0',x:2400},{b:'7.5',x:3800},{b:'8.0',x:5200}];
 const LB=[[39,9],[37,8.5],[35,8],[32,7.5],[30,7],[26,6.5],[23,6],[18,5.5],[16,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[1,1],[0,0]];
 const RB=[[39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],[23,6],[19,5.5],[15,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5],[1,1],[0,0]];
@@ -363,7 +356,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{}};
 let DAILY=[];
-let tab='today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,resetArm=null,syncState=CLOUD?'busy':'local';
+let tab='today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -446,7 +439,7 @@ function applyMods(list,m){
     .map(x=>rn[x.k]?Object.assign({},x,{label:rn[x.k].label??x.label,sub:rn[x.k].sub??x.sub}):x);
 }
 const listFor=n=>applyMods(applyMods(baseTasks(n),S.cfg.day),dayDoc(n));
-const weekList=()=>applyMods(WEEKTASKS,S.cfg.week);
+const weekList=w=>applyMods(applyMods(WEEKTASKS,S.cfg.week),weekDoc(w));
 const doneCount=n=>{const t=dayDoc(n).t||{};return listFor(n).filter(x=>t[x.k]).length;};
 const totalCount=n=>listFor(n).length;
 const frac=n=>{const t=totalCount(n);return t?doneCount(n)/t:0;};
@@ -461,7 +454,7 @@ function overall(m){
 function totals(){
   let xp=0,hours=0,words=0,tasks=0;
   for(let n=1;n<=DAYS;n++){const d=dayDoc(n),c=doneCount(n);tasks+=c;hours+=num(d.hours);words+=num(d.words);xp+=c*10;}
-  const WL=weekList();for(let w=1;w<=Math.ceil(DAYS/7);w++){const t=weekDoc(w).t||{};xp+=WL.filter(x=>t[x.k]).length*20;}
+  for(let w=1;w<=Math.ceil(DAYS/7);w++){const t=weekDoc(w).t||{};xp+=weekList(w).filter(x=>t[x.k]).length*20;}
   let best=null;for(const n of MOCKDAYS){const o=overall(mockDoc(n));if(o!=null){xp+=50;best=best==null?o:Math.max(best,o);}}
   xp+=S.words.length*2;
   return {xp,hours,words,tasks,best};
@@ -516,7 +509,7 @@ function renderTabs(){
 
 /* ---------- Today ---------- */
 function editPanel(list,kind){
-  const scope=kind==='week'?`<p class="note" style="margin:0">Changes apply to every week.</p>`:
+  const scope=kind==='week'?`<div class="field"><span class="label">Changes apply to</span><div class="seg"><button data-wscope="week" class="${editWScope==='week'?'on':''}">Only Week ${Math.ceil(sel/7)}</button><button data-wscope="allweeks" class="${editWScope==='allweeks'?'on':''}">Every week</button></div></div>`:
     `<div class="field"><span class="label">Changes apply to</span><div class="seg"><button data-scope="day" class="${editScope==='day'?'on':''}">Only Day ${sel}</button><button data-scope="all" class="${editScope==='all'?'on':''}">Every day</button></div></div>`;
   return `${scope}<ul class="tasks">${list.length?list.map(x=>`<li class="task editing"><div class="ef"><input class="ein" aria-label="Exercise name" data-ren="${x.k}" data-f="label" data-kind="${kind}" value="${esc(x.label)}" maxlength="80"><input class="ein sm" aria-label="Note" data-ren="${x.k}" data-f="sub" data-kind="${kind}" value="${esc(x.sub||'')}" placeholder="Note (optional)" maxlength="120"></div><button class="rm" data-rm="${x.k}" data-kind="${kind}" aria-label="Remove">×</button></li>`).join(''):'<li class="note">No exercises yet. Add one below.</li>'}</ul>
   <form class="addrow" data-add="${kind}"><input id="add-${kind}-name" type="text" placeholder="New exercise, e.g. Shadowing 10 min" maxlength="80" required><input id="add-${kind}-note" type="text" placeholder="Note (optional)" maxlength="120"><button class="btn primary" type="submit">Add exercise</button></form>
@@ -535,7 +528,7 @@ function suggestCard(n){
 }
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
-  const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(),wd=WL.filter(x=>wt[x.k]).length;
+  const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(w),wd=WL.filter(x=>wt[x.k]).length;
   return `<div class="wrap">${PLAN&&!PLAN.profile?`<section class="card wotd"><b>Make this plan yours</b><span class="note">Take the 10-minute tutor check: your level, weak skills and daily time decide your tasks.</span><button class="btn primary" data-wstart="1">Start the check</button></section>`:''}
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
@@ -548,7 +541,7 @@ function viewToday(){
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
-    ${editWeek?editPanel(WL,'week'):`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+20</span></li>`).join('')}</ul>`}
+    ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+20</span></li>`).join('')}</ul>`}
   </section></div>`;
 }
 
@@ -771,7 +764,8 @@ async function waitSaved(ms=10000){const t0=Date.now();while((busy||q.size)&&Dat
 /* ---------- mods (edit list) ---------- */
 const clone=o=>JSON.parse(JSON.stringify(o||{}));
 function modsRef(scope){
-  if(scope==='week'){const m=clone(S.cfg.week);return {m,commit:later=>{S.cfg.week=m;touch('cfg_week',later);}};}
+  if(scope==='allweeks'){const m=clone(S.cfg.week);return {m,commit:later=>{S.cfg.week=m;touch('cfg_week',later);}};}
+  if(scope==='week'){const k='w'+Math.ceil(sel/7),m=clone(S.weeks[k]);return {m,commit:later=>{S.weeks[k]=m;touch(k,later);}};}
   if(scope==='all'){const m=clone(S.cfg.day);return {m,commit:later=>{S.cfg.day=m;touch('cfg_day',later);}};}
   const k='d'+pad(sel),m=clone(S.days[k]);return {m,commit:later=>{S.days[k]=m;touch(k,later);}};
 }
@@ -1015,7 +1009,7 @@ function renderView(){
 }
 function renderAll(){renderHeader();renderTabs();renderView();document.getElementById('tabs').hidden=!PLAN||!!WZ;document.documentElement.style.setProperty('--target',`"${TARGET.toFixed(1)}"`);}
 let tt0;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt0);tt0=setTimeout(()=>t.classList.remove('show'),1500);}
-const goScopeKind=kind=>kind==='week'?'week':editScope;
+const goScopeKind=kind=>kind==='week'?editWScope:editScope;
 
 /* ---------- events ---------- */
 document.addEventListener('click',async e=>{
@@ -1057,6 +1051,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);haptic('sel');renderView();return;}
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
+  if((el=g('[data-wscope]'))){editWScope=el.dataset.wscope;renderView();return;}
   if((el=g('[data-scope]'))){editScope=el.dataset.scope;renderView();return;}
   if((el=g('[data-rm]'))){const r=modsRef(goScopeKind(el.dataset.kind)),k=el.dataset.rm;if((r.m.extra||[]).some(x=>x.k===k))r.m.extra=r.m.extra.filter(x=>x.k!==k);else r.m.hidden=[...new Set([...(r.m.hidden||[]),k])];r.commit();renderHeader();renderView();toast('Exercise removed');return;}
   if((el=g('[data-reset]'))){const kind=el.dataset.reset;if(resetArm!==kind){resetArm=kind;renderView();return;}resetArm=null;const r=modsRef(goScopeKind(kind));delete r.m.rename;delete r.m.hidden;delete r.m.extra;r.commit();renderHeader();renderView();toast('Default list restored');return;}
@@ -1086,7 +1081,7 @@ document.addEventListener('change',e=>{
   if(tk){setDay(sel,{t:Object.assign({},dayDoc(sel).t,{[tk]:e.target.checked})});const c=doneCount(sel),tot=totalCount(sel);
     if(e.target.checked){haptic(c===tot?'ok':'light');toast(c===tot?`Day ${sel} complete`:'+10 XP');}renderHeader();renderView();return;}
   const wt=e.target.dataset.wtask;
-  if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]={t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})};touch(k);if(e.target.checked){haptic('light');toast('+20 XP');}renderHeader();renderView();return;}
+  if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked){haptic('light');toast('+20 XP');}renderHeader();renderView();return;}
 });
 document.addEventListener('input',e=>{
   const t=e.target;
@@ -1115,7 +1110,7 @@ document.addEventListener('submit',e=>{
     toast(first?'Plan saved. Good luck!':'Plan updated');tab='today';renderAll();scrollTo(0,0);return;}
   if(f.dataset.add){const kind=f.dataset.add,nm=document.getElementById(`add-${kind}-name`),nt=document.getElementById(`add-${kind}-note`),label=nm.value.trim();if(!label)return;
     const r=modsRef(goScopeKind(kind));r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label,sub:nt.value.trim()}];r.commit();haptic('light');
-    toast(kind==='week'?'Added to every week':editScope==='all'?'Added to every day':`Added to Day ${sel}`);renderHeader();renderView();const again=document.getElementById(`add-${kind}-name`);if(again)again.focus();return;}
+    toast(kind==='week'?(editWScope==='allweeks'?'Added to every week':`Added to Week ${Math.ceil(sel/7)}`):editScope==='all'?'Added to every day':`Added to Day ${sel}`);renderHeader();renderView();const again=document.getElementById(`add-${kind}-name`);if(again)again.focus();return;}
   if(f.dataset.addword){const w=document.getElementById('nwW').value.trim();if(!w)return;
     S.words.push({id:'w'+Date.now().toString(36),w,m:document.getElementById('nwM').value.trim(),ex:document.getElementById('nwE').value.trim(),k:0});saveWords();haptic('ok');toast('Word saved');renderHeader();renderView();const again=document.getElementById('nwW');if(again)again.focus();}
 });
