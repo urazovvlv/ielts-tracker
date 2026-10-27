@@ -27,6 +27,7 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
 body{padding-bottom:calc(74px + env(safe-area-inset-bottom,0px))}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -40,7 +41,7 @@ h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
 
 /* header */
 .hdr{background:linear-gradient(135deg,var(--navy-deep),#1B3A8C 75%);color:#fff;padding:14px max(16px,env(safe-area-inset-left,0px)) 14px max(16px,env(safe-area-inset-right,0px));position:relative;overflow:hidden}
-.hdr::after{content:"7.5";position:absolute;right:-6px;bottom:-40px;font-family:var(--f-display);font-weight:800;font-size:130px;line-height:1;color:rgba(255,255,255,.07);pointer-events:none}
+.hdr::after{content:var(--target,"7.5");position:absolute;right:-6px;bottom:-40px;font-family:var(--f-display);font-weight:800;font-size:130px;line-height:1;color:rgba(255,255,255,.07);pointer-events:none}
 .hdr-in{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}
 .hdr-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
 .hdr .eyebrow{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:700}
@@ -231,22 +232,40 @@ applyTheme();
 const haptic=t=>{if(!inTG||!ver('6.1')||!TG.HapticFeedback)return;try{t==='ok'?TG.HapticFeedback.notificationOccurred('success'):t==='sel'?TG.HapticFeedback.selectionChanged():TG.HapticFeedback.impactOccurred(t||'light');}catch(e){}};
 
 /* ---------- challenge data ---------- */
-const DAYS=60,START=new Date(2026,9,19);
+/* Each person's plan (saved in their own Telegram account) decides the dates, length and mock schedule. */
+let PLAN=null,DAYS=60,START=new Date(2026,9,19),MOCKS={},MOCKDAYS=[],PHASES=[],TARGET=7.5;
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],WD=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 const pad=n=>String(n).padStart(2,'0');
-const dateOf=n=>new Date(2026,9,18+n);
+const dateOf=n=>new Date(START.getFullYear(),START.getMonth(),START.getDate()+n-1);
 const fmt=d=>`${WD[(d.getDay()+6)%7]} ${d.getDate()} ${MON[d.getMonth()]}`;
 const short=d=>`${d.getDate()} ${MON[d.getMonth()]}`;
 function todayIdx(){const t=new Date();const m=new Date(t.getFullYear(),t.getMonth(),t.getDate());return Math.round((m-START)/864e5)+1;}
 const clampDay=n=>Math.min(Math.max(n,1),DAYS);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const MOCKS={1:'Cambridge 18 · Test 1',7:'Cambridge 18 · Test 2',14:'Cambridge 18 · Test 3',21:'Cambridge 18 · Test 4',28:'Cambridge 19 · Test 1',35:'Cambridge 19 · Test 2',42:'Cambridge 20 · Test 1',45:'Cambridge 20 · Test 2',49:'Cambridge 20 · Test 3',52:'Cambridge 21 · Test 1',56:'Cambridge 21 · Test 2'};
-const MOCKDAYS=Object.keys(MOCKS).map(Number);
+const parseD=s=>{const [y,m,d]=String(s).split('-').map(Number);return new Date(y,m-1,d);};
+const isoD=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const dayDiff=(a,b)=>Math.round((parseD(b)-parseD(a))/864e5);
+const tests=(books)=>{const o=[];for(const [b,ts] of books)for(const t of ts)o.push(`Cambridge ${b} · Test ${t}`);return o;};
+const EARLY=tests([[18,[1,2,3,4]],[19,[1,2,3,4]],[17,[1,2,3,4]],[16,[1,2,3,4]],[15,[1,2,3,4]]]);
+const LATE=tests([[20,[1,2,3]],[21,[1,2,3,4]],[20,[4]],[19,[3,4]]]);
+function planDays(p){return Math.max(7,Math.min(180,p.exam?dayDiff(p.start,p.exam):Number(p.days)||60));}
+/* Same rules as reminders.py — keep the two in step. */
+function buildSchedule(p){
+  PLAN=p;START=parseD(p.start);DAYS=planDays(p);TARGET=Number(p.target)||7.5;
+  const N=DAYS,f1=Math.round(N*14/60),f2=Math.round(N*35/60),f3=N>=30?N-8:Math.round(N*52/60);
+  PHASES=[{n:'Foundation',a:1,b:f1,c:'--ph1'},{n:'Build',a:f1+1,b:f2,c:'--ph2'},{n:'Simulate',a:f2+1,b:f3,c:'--ph3'},{n:'Peak',a:f3+1,b:N,c:'--ph4'}].filter(x=>x.a<=x.b);
+  const days=[1],weeklyEnd=Math.floor(N*0.7);
+  for(let n=2;n<=weeklyEnd;n++)if(dateOf(n).getDay()===0)days.push(n);
+  let d=days[days.length-1],step=3;
+  while(d+step<=N-4){d+=step;days.push(d);step=step===3?4:3;}
+  MOCKS={};let e=0,l=0;
+  for(const n of days)MOCKS[n]=n<=f2?(EARLY[e++]||`Practice test ${e}`):(LATE[l++]||EARLY[e++]||`Practice test ${l}`);
+  MOCKDAYS=days;
+}
 const FOCUS=['Writing Task 2 essay','Reading: full test, 60 min','Writing Task 1 report','Reading: question types','Writing Task 2 essay','Speaking: full test, recorded','Review the week'];
-const PHASES=[{n:'Foundation',a:1,b:14,c:'--ph1'},{n:'Build',a:15,b:35,c:'--ph2'},{n:'Simulate',a:36,b:52,c:'--ph3'},{n:'Peak',a:53,b:60,c:'--ph4'}];
-const phaseOf=n=>PHASES.find(p=>n>=p.a&&n<=p.b)||(n<1?PHASES[0]:PHASES[3]);
+const phaseOf=n=>PHASES.find(p=>n>=p.a&&n<=p.b)||(n<1?PHASES[0]:PHASES[PHASES.length-1]);
 function baseTasks(n){
-  const wd=(n-1)%7;
+  const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
     {k:'words',label:'20 new words in Anki',sub:'Learn collocations, not single words'},
@@ -320,11 +339,13 @@ async function kick(){
   }finally{busy=false;}
 }
 function getObj(k){
-  if(/^d\d\d$/.test(k))return S.days[k];if(/^w\d$/.test(k))return S.weeks[k];if(/^m\d\d$/.test(k))return S.mocks[k];
+  if(k==='plan')return PLAN;
+  if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];
   if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;return null;
 }
 function setObj(k,o){
-  if(/^d\d\d$/.test(k))S.days[k]=o;else if(/^w\d$/.test(k))S.weeks[k]=o;else if(/^m\d\d$/.test(k))S.mocks[k]=o;
+  if(k==='plan'){if(o&&o.start)PLAN=o;}
+  else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;
   else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;
 }
 const timers={};
@@ -391,7 +412,7 @@ function overall(m){
 function totals(){
   let xp=0,hours=0,words=0,tasks=0;
   for(let n=1;n<=DAYS;n++){const d=dayDoc(n),c=doneCount(n);tasks+=c;hours+=num(d.hours);words+=num(d.words);xp+=c*10+Math.round(num(d.hours)*10)+(d.mood?5:0);}
-  const WL=weekList();for(let w=1;w<=9;w++){const t=weekDoc(w).t||{};xp+=WL.filter(x=>t[x.k]).length*20;}
+  const WL=weekList();for(let w=1;w<=Math.ceil(DAYS/7);w++){const t=weekDoc(w).t||{};xp+=WL.filter(x=>t[x.k]).length*20;}
   let best=null;for(const n of MOCKDAYS){const o=overall(mockDoc(n));if(o!=null){xp+=50;best=best==null?o:Math.max(best,o);}}
   xp+=S.words.length*2;
   return {xp,hours,words,tasks,best};
@@ -425,11 +446,13 @@ const ico=(n,extra)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
 function setSync(s){syncState=s;const el=document.getElementById('sync');if(el){el.className='sync '+(s==='ok'?'ok':s==='busy'?'busy':s==='err'?'err':'');el.querySelector('span').textContent=syncText();}}
 const syncText=()=>syncState==='ok'?'Saved to Telegram':syncState==='busy'?'Saving…':syncState==='err'?'Sync problem, retrying':'Saved on this device only';
 function renderHeader(){
+  if(!PLAN){document.getElementById('hdr').innerHTML=`<div class="hdr-top"><div><div class="eyebrow">IELTS tracker</div><div class="day">Welcome</div><div class="phase">Set up your plan to begin</div></div></div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>`;return;}
   const T=totals(),st=streaks(),t=todayIdx(),i=levelOf(T.xp),cur=LEVELS[i],nx=LEVELS[i+1];
   const pct=nx?Math.min(100,(T.xp-cur.x)/(nx.x-cur.x)*100):100;
-  const dayLine=t<1?`<div class="day">Starts 19 Oct</div>`:t>DAYS?`<div class="day">Exam week</div>`:`<div class="day">Day ${t} <small>of 60</small></div>`;
+  const toExam=PLAN&&PLAN.exam?dayDiff(isoD(new Date()),PLAN.exam):null;
+  const dayLine=t<1?`<div class="day">Starts ${short(START)}</div>`:t>DAYS?`<div class="day">${toExam!=null&&toExam>=0?(toExam?'Exam in '+toExam+' day'+(toExam>1?'s':''):'Exam day'):'Plan complete'}</div>`:`<div class="day">Day ${t} <small>of ${DAYS}</small></div>`;
   document.getElementById('hdr').innerHTML=`
-  <div class="hdr-top"><div><div class="eyebrow">Road to 7.5 · IELTS</div>${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(DAYS-t)+' days left':'60-day intensive'}</div></div>
+  <div class="hdr-top"><div><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}Road to ${TARGET.toFixed(1)}</div>${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(toExam!=null?'exam in '+toExam+' days':(DAYS-t)+' days left'):DAYS+'-day plan'}</div></div>
   <button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button></div>
   <div class="hdr-row">
     <div class="lvl"><div class="lvl-top"><b>Band ${cur.b}</b><span class="num">${T.xp.toLocaleString('en-US')} XP${nx?` · ${(nx.x-T.xp).toLocaleString('en-US')} to ${nx.b}`:''}</span></div><div class="hbar"><i style="width:${pct}%"></i></div></div>
@@ -451,7 +474,7 @@ function editPanel(list,kind){
   <button class="btn ghost" data-reset="${kind}">${resetArm===kind?'Tap again to restore the default list':'Restore default list'}</button>`;
 }
 function wotdCard(n){
-  const w=DAILY[clampDay(n)-1];if(!w)return '';
+  const w=DAILY.length?DAILY[(clampDay(n)-1)%DAILY.length]:null;if(!w)return '';
   return `<section class="card wotd"><div class="label">Word of the day · Day ${clampDay(n)}</div><div class="w">${esc(w.w)}</div><div class="uz">${esc(w.uz)}</div><div class="ex">${esc(w.ex)}</div><button class="btn" data-saveword="${clampDay(n)}">${S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())?'Saved to my words':'Save to my words'}</button></section>`;
 }
 function viewToday(){
@@ -489,10 +512,10 @@ function viewProgress(){
   const B=[
     ['step','First step','A task on Day 1',doneCount(1)>0],['fire','7-day streak','4+ tasks, 7 days',st.best>=7],['fire','21-day streak','Three weeks unbroken',st.best>=21],
     ['book','500 words','Words learned',T.words>=500],['book','1,000 words','Words learned',T.words>=1000],['clock','100 hours','Total study time',T.hours>=100],
-    ['medal','Foundation','70% of Days 1–14',phase1a&&phase1d/phase1a>=.7],['medal','C1 mock','Overall 7.0',T.best!=null&&T.best>=7],['star','Band 7.5 mock','Target hit',T.best!=null&&T.best>=7.5]
+    ['medal','Foundation',`70% of Days 1–${PHASES[0].b}`,phase1a&&phase1d/phase1a>=.7],['medal','C1 mock','Overall 7.0',T.best!=null&&T.best>=7],['star',`Band ${TARGET.toFixed(1)} mock`,'Target hit',T.best!=null&&T.best>=TARGET]
   ];
-  let map=`<div></div>${WD.map(w=>`<div class="wd">${w[0]}</div>`).join('')}`;
-  for(let w=1;w<=9;w++){map+=`<div class="wk">W${w}</div>`;for(let k=0;k<7;k++){const n=(w-1)*7+k+1;if(n>DAYS){map+='<div class="cell blank"></div>';continue;}
+  let map=`<div></div>${[0,1,2,3,4,5,6].map(k=>`<div class="wd">${WD[(dateOf(k+1).getDay()+6)%7][0]}</div>`).join('')}`;
+  for(let w=1;w<=Math.ceil(DAYS/7);w++){map+=`<div class="wk">W${w}</div>`;for(let k=0;k<7;k++){const n=(w-1)*7+k+1;if(n>DAYS){map+='<div class="cell blank"></div>';continue;}
     const f=frac(n),bg=f===0?'var(--sunk)':`color-mix(in srgb, var(--navy) ${Math.round(18+f*72)}%, var(--card))`,ink=f>=.6?'var(--card)':'var(--ink)';
     map+=`<button class="cell ${n>t?'future':''} ${n===t?'today':''}" data-day="${n}" style="background:${bg};color:${ink}" aria-label="Day ${n}, ${doneCount(n)} of ${totalCount(n)} tasks">${n}${MOCKS[n]?'<span class="mk"></span>':''}<span class="ph" style="background:var(${phaseOf(n).c})"></span></button>`;}}
   const H=[];for(let n=1;n<=DAYS;n++)H.push(num(dayDoc(n).hours));
@@ -500,8 +523,8 @@ function viewProgress(){
   <section class="card"><div class="card-h"><h2>Progress</h2><span class="note">${B.filter(b=>b[3]).length}/9 badges</span></div>
     <div class="stats">
       <div class="stat hot"><span class="label">Streak</span><span class="v">${st.cur}<small>days</small></span><span class="note">Best ${st.best} · 4+ tasks a day</span></div>
-      <div class="stat"><span class="label">Hours</span><span class="v num">${T.hours%1?T.hours.toFixed(1):T.hours}<small>/ 200</small></span><span class="note">Aim 3.5 h a day</span></div>
-      <div class="stat"><span class="label">Words</span><span class="v num">${T.words.toLocaleString('en-US')}<small>/ 1,200</small></span><span class="note">20 a day</span></div>
+      <div class="stat"><span class="label">Hours</span><span class="v num">${T.hours%1?T.hours.toFixed(1):T.hours}<small>/ ${Math.round(DAYS*3.5)}</small></span><span class="note">Aim 3.5 h a day</span></div>
+      <div class="stat"><span class="label">Words</span><span class="v num">${T.words.toLocaleString('en-US')}<small>/ ${(DAYS*20).toLocaleString('en-US')}</small></span><span class="note">20 a day</span></div>
       <div class="stat"><span class="label">Tasks</span><span class="v num">${T.tasks}<small>/ ${due}</small></span><span class="note">Due up to Day ${tt}</span></div>
     </div></section>
   <section class="card"><div class="card-h"><h2>60-day map</h2><span class="note">Tap a day to open it</span></div>
@@ -515,7 +538,7 @@ function hoursChart(H,t){
   const W=360,Ht=150,l=24,r=6,tp=14,b=20,ymax=Math.max(5,Math.ceil(Math.max(...H))),bw=(W-l-r)/DAYS,y=v=>tp+(Ht-tp-b)*(1-v/ymax);
   let g='';for(let v=0;v<=ymax;v+=ymax>8?2:1)g+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${l-5}" y="${y(v)+3.5}" text-anchor="end" font-size="9" fill="var(--muted)">${v}</text>`;
   let bars='';H.forEach((h,i)=>{if(h)bars+=`<rect x="${l+i*bw+.6}" y="${y(h)}" width="${Math.max(1,bw-1.2)}" height="${y(0)-y(h)}" rx="1.5" fill="${i+1===t?'var(--gold)':'var(--navy)'}"/>`;});
-  let xl='';for(let n=1;n<=DAYS;n+=14)xl+=`<text x="${l+(n-1)*bw+bw/2}" y="${Ht-5}" text-anchor="middle" font-size="9" fill="var(--muted)">D${n}</text>`;
+  let xl='';for(let n=1;n<=DAYS;n+=Math.max(7,Math.round(DAYS/4/7)*7))xl+=`<text x="${l+(n-1)*bw+bw/2}" y="${Ht-5}" text-anchor="middle" font-size="9" fill="var(--muted)">D${n}</text>`;
   const ty=y(3.5);
   return `<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Study hours per day">${g}${bars}<line x1="${l}" x2="${W-r}" y1="${ty}" y2="${ty}" stroke="var(--gold)" stroke-dasharray="4 3"/><text x="${W-r}" y="${ty-4}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--gold)">Target 3.5 h</text>${xl}${H.some(Boolean)?'':`<text x="${W/2}" y="${y(ymax/2)}" text-anchor="middle" font-size="11" fill="var(--muted)">Log your hours on the Today tab</text>`}</svg>`;
 }
@@ -523,7 +546,7 @@ function hoursChart(H,t){
 /* ---------- Mocks ---------- */
 function viewMocks(){
   const t=todayIdx(),next=MOCKDAYS.find(n=>n>=t&&overall(mockDoc(n))==null);
-  const cards=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m),cls=o==null?'':o>=7.5?'hit':o>=7?'c1':'low';
+  const cards=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m),cls=o==null?'':o>=TARGET?'hit':o>=7?'c1':'low';
     const inp=(k,max,step,ph,tab)=>`<label>${{L:'List.',R:'Read.',W:'Writ.',S:'Speak.'}[k]}<input class="sc" type="number" inputmode="decimal" id="mk-${n}-${k}" data-mock="${n}" data-k="${k}" min="0" max="${max}" step="${step}" value="${m[k]??''}" placeholder="${ph}"><span class="bh" id="bh-${n}-${k}">${tab&&m[k]!==''&&m[k]!=null?'Band '+toBand(m[k],tab):''}</span></label>`;
     return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small></div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div></div>`;}).join('');
   return `<div class="wrap"><section class="card"><h2>Overall band by mock</h2><div class="chart" id="mockChart">${mockChart()}</div><p class="note" style="margin:0">Listening and Reading: type correct answers out of 40, and the band is worked out for you. Writing and Speaking: type the band. Overall uses official IELTS rounding.</p></section>
@@ -534,10 +557,10 @@ function mockChart(){
   let g='';for(let v=5;v<=9;v++)g+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${l-6}" y="${y(v)+3.5}" text-anchor="end" font-size="9.5" fill="var(--muted)">${v.toFixed(1)}</text>`;
   const pts=MOCKDAYS.map(n=>({n,o:overall(mockDoc(n))})).filter(p=>p.o!=null);
   const line=pts.length>1?`<polyline points="${pts.map(p=>`${x(p.n)},${y(p.o)}`).join(' ')}" fill="none" stroke="var(--navy)" stroke-width="2.2" stroke-linejoin="round"/>`:'';
-  const dots=pts.map((p,i)=>`<circle cx="${x(p.n)}" cy="${y(p.o)}" r="${i===pts.length-1?5:3.8}" fill="${p.o>=7.5?'var(--good)':'var(--navy)'}" stroke="var(--card)" stroke-width="1.5"/>`).join('');
+  const dots=pts.map((p,i)=>`<circle cx="${x(p.n)}" cy="${y(p.o)}" r="${i===pts.length-1?5:3.8}" fill="${p.o>=TARGET?'var(--good)':'var(--navy)'}" stroke="var(--card)" stroke-width="1.5"/>`).join('');
   const last=pts.length?`<text x="${x(pts[pts.length-1].n)}" y="${y(pts[pts.length-1].o)-10}" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)">${pts[pts.length-1].o.toFixed(1)}</text>`:'';
-  const xl=[1,14,28,42,56].map(n=>`<text x="${x(n)}" y="${H-6}" text-anchor="middle" font-size="9" fill="var(--muted)">Day ${n}</text>`).join('');
-  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Overall band by mock">${g}<rect x="${l}" y="${y(9)}" width="${W-l-r}" height="${y(7.5)-y(9)}" fill="var(--good)" opacity=".08"/><line x1="${l}" x2="${W-r}" y1="${y(7.5)}" y2="${y(7.5)}" stroke="var(--good)" stroke-width="1.4" stroke-dasharray="5 3"/><text x="${W-r}" y="${y(7.5)-4}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--good)">Target 7.5</text><line x1="${l}" x2="${W-r}" y1="${y(7)}" y2="${y(7)}" stroke="var(--gold)" stroke-dasharray="2 3"/><text x="${W-r}" y="${y(7)+12}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--gold)">C1 floor 7.0</text>${MOCKDAYS.map(n=>`<line x1="${x(n)}" x2="${x(n)}" y1="${H-b}" y2="${H-b+3}" stroke="var(--muted)"/>`).join('')}<line x1="${l}" x2="${W-r}" y1="${H-b}" y2="${H-b}" stroke="var(--muted)"/>${xl}${line}${dots}${last}${pts.length?'':`<text x="${(l+W-r)/2}" y="${y(6.2)}" text-anchor="middle" font-size="11" fill="var(--muted)">Log a full mock to start the line</text>`}</svg>`;
+  const xl=[...new Set([1,...[1,2,3].map(i=>Math.round(DAYS*i/4)),DAYS])].map(n=>`<text x="${x(n)}" y="${H-6}" text-anchor="middle" font-size="9" fill="var(--muted)">Day ${n}</text>`).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Overall band by mock">${g}<rect x="${l}" y="${y(9)}" width="${W-l-r}" height="${y(TARGET)-y(9)}" fill="var(--good)" opacity=".08"/><line x1="${l}" x2="${W-r}" y1="${y(TARGET)}" y2="${y(TARGET)}" stroke="var(--good)" stroke-width="1.4" stroke-dasharray="5 3"/><text x="${W-r}" y="${y(TARGET)-4}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--good)">Target ${TARGET.toFixed(1)}</text><line x1="${l}" x2="${W-r}" y1="${y(7)}" y2="${y(7)}" stroke="var(--gold)" stroke-dasharray="2 3"/><text x="${W-r}" y="${y(7)+12}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--gold)">C1 floor 7.0</text>${MOCKDAYS.map(n=>`<line x1="${x(n)}" x2="${x(n)}" y1="${H-b}" y2="${H-b+3}" stroke="var(--muted)"/>`).join('')}<line x1="${l}" x2="${W-r}" y1="${H-b}" y2="${H-b}" stroke="var(--muted)"/>${xl}${line}${dots}${last}${pts.length?'':`<text x="${(l+W-r)/2}" y="${y(6.2)}" text-anchor="middle" font-size="11" fill="var(--muted)">Log a full mock to start the line</text>`}</svg>`;
 }
 
 /* ---------- Words ---------- */
@@ -602,14 +625,63 @@ function timerTick(){
 }
 
 /* ---------- Settings sheet ---------- */
-function openSettings(){
+function planDefaults(){
+  if(PLAN)return PLAN;
+  const legacy=Object.keys(S.days).length>0;
+  const first=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.first_name:'';
+  return {name:first||'',start:legacy?'2026-10-19':isoD(new Date()),exam:'',days:60,target:7.5};
+}
+function planForm(p,first){
+  const opt=(vals,cur,fmtv)=>vals.map(v=>`<option value="${v}" ${Number(cur)===v?'selected':''}>${fmtv(v)}</option>`).join('');
+  return `<form class="card" data-plan="1" style="gap:12px">
+    ${first?`<div><h2>Set up your plan</h2><p class="note" style="margin:4px 0 0">Your plan and progress are saved in your own Telegram account. Nobody else sees them, even if they use the same bot.</p></div>`:'<h2>My plan</h2>'}
+    <div class="field"><label class="label" for="pName">Your name</label><input id="pName" type="text" maxlength="30" value="${esc(p.name||'')}" placeholder="e.g. Xushnud"></div>
+    <div class="grid2">
+      <div class="field"><label class="label" for="pStart">Day 1</label><input id="pStart" class="ein" type="date" value="${esc(p.start)}" required></div>
+      <div class="field"><label class="label" for="pExam">Exam date</label><input id="pExam" class="ein" type="date" value="${esc(p.exam||'')}"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label class="label" for="pDays">Length if no exam date</label><select id="pDays" class="ein">${opt([30,45,60,75,90,120],p.days||60,v=>v+' days')}</select></div>
+      <div class="field"><label class="label" for="pTarget">Target band</label><select id="pTarget" class="ein">${opt([6,6.5,7,7.5,8,8.5],p.target||7.5,v=>v.toFixed(1))}</select></div>
+    </div>
+    <p class="note" id="pPreview" style="margin:0">${planPreview(p)}</p>
+    ${first?'':'<p class="note" style="margin:0">Your saved days stay attached to their day numbers. If you move Day 1, your ticks move with it.</p>'}
+    <button class="btn block primary" type="submit">${first?'Start my plan':'Save plan'}</button>
+  </form>`;
+}
+function readPlanForm(){
+  const v=id=>document.getElementById(id).value.trim();
+  return {name:v('pName'),start:v('pStart'),exam:v('pExam'),days:Number(v('pDays'))||60,target:Number(v('pTarget'))||7.5};
+}
+function planError(p){
+  if(!/^\d{4}-\d\d-\d\d$/.test(p.start))return 'Choose your Day 1 date';
+  if(p.exam){const d=dayDiff(p.start,p.exam);if(d<7)return 'The exam must be at least 7 days after Day 1';if(d>180)return 'Plans can be up to 180 days long';}
+  return '';
+}
+function planPreview(p){
+  const err=planError(p);if(err)return err;
+  const keep=[PLAN,DAYS,START,MOCKS,MOCKDAYS,PHASES,TARGET];
+  buildSchedule(p);const txt=`${DAYS} days · ${MOCKDAYS.length} full mocks · Day 1 is ${fmt(START)}, last day ${fmt(dateOf(DAYS))}`;
+  [PLAN,DAYS,START,MOCKS,MOCKDAYS,PHASES,TARGET]=keep;return txt;
+}
+function reminderCode(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null;
+  if(!uid||!PLAN)return null;
+  return JSON.stringify({id:uid,name:PLAN.name||'',start:PLAN.start,exam:PLAN.exam||'',days:DAYS,target:TARGET});
+}
+function openSettings(){
+  const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
-   <section class="card"><h3 style="font-size:16px">Your chat ID</h3>
-    ${uid?`<div class="idbox"><code class="num" id="uid">${uid}</code><button class="btn" data-copy="${uid}">Copy</button></div><p class="note" style="margin:0">Paste this into GitHub as the CHAT_ID secret so your bot can send you reminders.</p>`:'<p class="note" style="margin:0">Open the app from your Telegram bot to see your chat ID.</p>'}</section>
-   <section class="card"><h3 style="font-size:16px">Saving</h3><p class="note" style="margin:0">${CLOUD?'Your progress is saved in your Telegram account, so it is the same on your phone and computer. A copy is also kept on this device.':'You opened the app outside Telegram, so progress is saved on this device only. Open it from your bot to save it in your Telegram account.'}</p><p class="note" style="margin:0">Status: <b>${syncText()}</b></p></section>
-   <section class="card"><h3 style="font-size:16px">Reminders</h3><p class="note" style="margin:0">Your bot sends three messages a day, at about 06:40, 19:15 and 21:15 (Tashkent time). They can arrive up to 20 minutes late. To pause them, open your GitHub repository, go to Actions, choose “IELTS reminders” and select Disable workflow.</p></section>
+   ${planForm(planDefaults(),false)}
+   <section class="card"><h3 style="font-size:16px">Reminders from the bot</h3>
+    ${code?`<p class="note" style="margin:0">So the bot's daily messages follow <b>your</b> plan, copy this code and send it to the person who manages the bot. Send it again whenever you change your plan.</p>
+    <div class="idbox"><code style="font-size:12px;word-break:break-all;font-weight:600" id="rcode">${esc(code)}</code></div>
+    <button class="btn block" data-copy-code="1">Copy reminder code</button>
+    <p class="note" style="margin:0">Your chat ID: <b class="num">${uid}</b> <button class="btn" data-copy="${uid}" style="min-height:28px;padding:2px 8px">Copy</button></p>`
+    :'<p class="note" style="margin:0">Open the app from the Telegram bot to get your reminder code.</p>'}
+    <p class="note" style="margin:0">Messages come at about 06:40, 19:15 and 21:15 (Tashkent time) and can be up to 20 minutes late. Press Start in the bot chat once, or the bot cannot message you.</p></section>
+   <section class="card"><h3 style="font-size:16px">Saving</h3><p class="note" style="margin:0">${CLOUD?'Your progress is saved in your own Telegram account, so it is the same on your phone and computer and separate from anyone else who uses this bot.':'You opened the app outside Telegram, so progress is saved on this device only. Open it from the bot to save it in your Telegram account.'}</p><p class="note" style="margin:0">Status: <b>${syncText()}</b></p></section>
    <section class="card"><h3 style="font-size:16px">Backup</h3><p class="note" style="margin:0">Copy all your data as text and keep it in Saved Messages. Paste it back to restore.</p>
     <div class="grid2"><button class="btn block" data-backup="copy">Copy backup</button><button class="btn block" data-backup="open">Restore</button></div>
     ${restoreOpen?'<textarea id="restoreIn" placeholder="Paste your backup text here"></textarea><button class="btn block primary" data-backup="restore">Restore this backup</button>':''}
@@ -617,7 +689,7 @@ function openSettings(){
   </div></div>`;
 }
 const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;};
-function backupText(){return JSON.stringify({v:1,days:S.days,weeks:S.weeks,mocks:S.mocks,cfg:S.cfg,words:S.words});}
+function backupText(){return JSON.stringify({v:1,plan:PLAN,days:S.days,weeks:S.weeks,mocks:S.mocks,cfg:S.cfg,words:S.words});}
 async function copyText(t){
   try{await navigator.clipboard.writeText(t);toast('Copied');return true;}catch(e){}
   try{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();const ok=document.execCommand('copy');ta.remove();if(ok){toast('Copied');return true;}}catch(e){}
@@ -626,6 +698,7 @@ async function copyText(t){
 function allKeys(){return [...Object.keys(S.days),...Object.keys(S.weeks),...Object.keys(S.mocks),'cfg_day','cfg_week'];}
 function restoreFrom(o){
   S.days=o.days||{};S.weeks=o.weeks||{};S.mocks=o.mocks||{};S.cfg={day:(o.cfg&&o.cfg.day)||{},week:(o.cfg&&o.cfg.week)||{}};S.words=Array.isArray(o.words)?o.words:[];
+  if(o.plan&&o.plan.start){buildSchedule(o.plan);touch('plan');}
   allKeys().forEach(k=>touch(k));saveWords();
 }
 function wipe(){
@@ -644,9 +717,10 @@ function modsRef(scope){
 /* ---------- render ---------- */
 function renderView(){
   const v=document.getElementById('view');
+  if(!PLAN){v.innerHTML=`<div class="wrap">${planForm(planDefaults(),true)}</div>`;return;}
   v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
 }
-function renderAll(){renderHeader();renderTabs();renderView();}
+function renderAll(){renderHeader();renderTabs();renderView();document.getElementById('tabs').hidden=!PLAN;document.documentElement.style.setProperty('--target',`"${TARGET.toFixed(1)}"`);}
 let tt0;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt0);tt0=setTimeout(()=>t.classList.remove('show'),1500);}
 const goScopeKind=kind=>kind==='week'?'week':editScope;
 
@@ -657,6 +731,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-open]'))){openSettings();return;}
   if(e.target.matches&&e.target.matches('[data-close]')){closeSheet();return;}
   if((el=g('[data-copy]'))){copyText(el.dataset.copy);return;}
+  if((el=g('[data-copy-code]'))){const c=reminderCode();if(c)copyText(c);return;}
   if((el=g('[data-backup]'))){const a=el.dataset.backup;
     if(a==='copy')copyText(backupText());
     else if(a==='open'){restoreOpen=!restoreOpen;openSettings();}
@@ -671,7 +746,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-reset]'))){const kind=el.dataset.reset;if(resetArm!==kind){resetArm=kind;renderView();return;}resetArm=null;const r=modsRef(goScopeKind(kind));delete r.m.rename;delete r.m.hidden;delete r.m.extra;r.commit();renderHeader();renderView();toast('Default list restored');return;}
   if((el=g('[data-step]'))){const k=el.dataset.step,v=Math.max(0,Math.min(k==='hours'?16:500,num(dayDoc(sel)[k])+Number(el.dataset.by)));setDay(sel,{[k]:v},true);haptic('light');const i=document.getElementById(k==='hours'?'hoursIn':'wordsIn');if(i)i.value=v;renderHeader();return;}
   if((el=g('[data-mood]'))){const v=Number(el.dataset.mood);setDay(sel,{mood:dayDoc(sel).mood===v?0:v});haptic('sel');renderHeader();renderView();return;}
-  if((el=g('[data-saveword]'))){const w=DAILY[Number(el.dataset.saveword)-1];if(w&&!S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())){S.words.push({id:'w'+Date.now().toString(36),w:w.w,m:w.uz,ex:w.ex,k:0});saveWords();haptic('ok');toast('Saved to my words');renderHeader();renderView();}return;}
+  if((el=g('[data-saveword]'))){const w=DAILY[(Number(el.dataset.saveword)-1)%DAILY.length];if(w&&!S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())){S.words.push({id:'w'+Date.now().toString(36),w:w.w,m:w.uz,ex:w.ex,k:0});saveWords();haptic('ok');toast('Saved to my words');renderHeader();renderView();}return;}
   if((el=g('[data-delword]'))){S.words=S.words.filter(w=>w.id!==el.dataset.delword);saveWords();renderHeader();renderView();toast('Word deleted');return;}
   if((el=g('[data-rv]'))){const a=el.dataset.rv;
     if(a==='start')review={id:nextReviewWord(),show:false,done:0};
@@ -695,6 +770,7 @@ document.addEventListener('change',e=>{
 });
 document.addEventListener('input',e=>{
   const t=e.target;
+  if(t.closest&&t.closest('[data-plan]')){const pv=document.getElementById('pPreview');if(pv)pv.textContent=planPreview(readPlanForm());return;}
   if(t.dataset.ren){const r=modsRef(goScopeKind(t.dataset.kind));r.m.rename=r.m.rename||{};r.m.rename[t.dataset.ren]=Object.assign({},r.m.rename[t.dataset.ren],{[t.dataset.f]:t.value});r.commit(true);return;}
   if(t.id==='hoursIn'||t.id==='wordsIn'){const k=t.id==='hoursIn'?'hours':'words';setDay(sel,{[k]:t.value===''?'':Math.max(0,Number(t.value))},true);renderHeader();return;}
   if(t.id==='noteIn'){setDay(sel,{note:t.value},true);return;}
@@ -703,12 +779,15 @@ document.addEventListener('input',e=>{
     const n=Number(t.dataset.mock),k=t.dataset.k,mk='m'+pad(n),v=t.value===''?'':Number(t.value);
     S.mocks[mk]=Object.assign({},S.mocks[mk],{[k]:v});touch(mk,true);
     const tab2=k==='L'?LB:k==='R'?RB:null;if(tab2){const h=document.getElementById(`bh-${n}-${k}`);if(h)h.textContent=v===''?'':'Band '+toBand(v,tab2);}
-    const o=overall(S.mocks[mk]),p=document.getElementById('ov-'+n);if(p){p.textContent=o==null?'—':o.toFixed(1);p.className='pill '+(o==null?'':o>=7.5?'hit':o>=7?'c1':'low');}
+    const o=overall(S.mocks[mk]),p=document.getElementById('ov-'+n);if(p){p.textContent=o==null?'—':o.toFixed(1);p.className='pill '+(o==null?'':o>=TARGET?'hit':o>=7?'c1':'low');}
     document.getElementById('mockChart').innerHTML=mockChart();renderHeader();
   }
 });
 document.addEventListener('submit',e=>{
   const f=e.target;e.preventDefault();
+  if(f.dataset.plan){const p=readPlanForm(),err=planError(p);if(err){toast(err);return;}
+    const first=!PLAN;buildSchedule(Object.assign({},PLAN,p));touch('plan');sel=clampDay(todayIdx());closeSheet();haptic('ok');
+    toast(first?'Plan saved. Good luck!':'Plan updated');tab='today';renderAll();scrollTo(0,0);return;}
   if(f.dataset.add){const kind=f.dataset.add,nm=document.getElementById(`add-${kind}-name`),nt=document.getElementById(`add-${kind}-note`),label=nm.value.trim();if(!label)return;
     const r=modsRef(goScopeKind(kind));r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label,sub:nt.value.trim()}];r.commit();haptic('light');
     toast(kind==='week'?'Added to every week':editScope==='all'?'Added to every day':`Added to Day ${sel}`);renderHeader();renderView();const again=document.getElementById(`add-${kind}-name`);if(again)again.focus();return;}
@@ -722,6 +801,8 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
   await load();
+  if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
+  sel=clampDay(todayIdx());
   renderAll();
   let last=todayIdx();setInterval(()=>{const t=todayIdx();if(t!==last){last=t;sel=clampDay(t);renderAll();}},60000);
 })();
