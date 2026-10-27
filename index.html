@@ -251,6 +251,14 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 <script>
 (function(){
 'use strict';
+/* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
+const BUILD='2026-10-27.5';
+(async()=>{try{
+  const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
+  const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
+  if(v.build&&v.build!==BUILD&&tried!==v.build){try{sessionStorage.setItem('r75:upd',v.build);}catch(e){}
+    location.replace(location.pathname+'?v='+encodeURIComponent(v.build)+location.hash);}
+}catch(e){}})();
 /* ---------- Telegram ---------- */
 const TG=(window.Telegram&&window.Telegram.WebApp)||null;
 const inTG=!!(TG&&TG.initData);
@@ -720,7 +728,7 @@ function openSettings(){
     <p class="note" style="margin:0">Your chat ID: <b class="num">${uid}</b> <button class="btn" data-copy="${uid}" style="min-height:28px;padding:2px 8px">Copy</button></p>`
     :'<p class="note" style="margin:0">Open the app from the Telegram bot to get your reminder code.</p>'}
     <p class="note" style="margin:0">Messages come at about 06:40, 19:15 and 21:15 (Tashkent time) and can be up to 20 minutes late. Press Start in the bot chat once, or the bot cannot message you.</p></section>
-   <section class="card"><h3 style="font-size:16px">Saving</h3><p class="note" style="margin:0">${CLOUD?'Your progress is saved in your own Telegram account, so it is the same on your phone and computer and separate from anyone else who uses this bot.':'You opened the app outside Telegram, so progress is saved on this device only. Open it from the bot to save it in your Telegram account.'}</p><p class="note" style="margin:0">Status: <b>${syncText()}</b></p></section>
+   <section class="card"><h3 style="font-size:16px">Saving</h3><p class="note" style="margin:0">${CLOUD?'Your progress is saved in your own Telegram account, so it is the same on your phone and computer and separate from anyone else who uses this bot.':'You opened the app outside Telegram, so progress is saved on this device only. Open it from the bot to save it in your Telegram account.'}</p><p class="note" style="margin:0">Status: <b>${syncText()}</b> · App version <b>${BUILD}</b></p></section>
    <section class="card"><h3 style="font-size:16px">Backup</h3><p class="note" style="margin:0">Copy all your data as text and keep it in Saved Messages. Paste it back to restore.</p>
     <div class="grid2"><button class="btn block" data-backup="copy">Copy backup</button><button class="btn block" data-backup="open">Restore</button></div>
     ${restoreOpen?'<textarea id="restoreIn" placeholder="Paste your backup text here"></textarea><button class="btn block primary" data-backup="restore">Restore this backup</button>':''}

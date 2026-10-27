@@ -31,3 +31,7 @@ The reminders follow each person's own plan. To add someone:
 | `.github/workflows/reminders.yml` | Runs the reminders at about 06:40, 19:15 and 21:15 Tashkent time |
 
 Never put the bot token in a file. It goes only in the `BOT_TOKEN` secret.
+
+## Updating the app
+
+Telegram caches the page. When you change `index.html`, also change `BUILD` near the top of its script and put the same value in `version.json`. Open copies then reload themselves once with the new version.
