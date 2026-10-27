@@ -8,6 +8,8 @@ GitHub Actions runs this three times a day. Secrets:
              [{"id":111,"name":"Xushnud","start":"2026-10-19","exam":"","days":60,"target":7.5},
               {"id":222,"name":"Ali","start":"2026-10-27","exam":"2026-12-20","days":54,"target":7}]
   CHAT_ID    (older setup) one chat ID; used with the original 60-day plan unless USERS lists it
+  FOCUS_URL  (optional) address of the Cloudflare focus server (worker/worker.js)
+  READ_KEY   (optional) the READ_KEY secret set on that server
 
 Without BOT_TOKEN it only prints the messages, which is handy for testing.
 Usage: python3 reminders.py morning|evening|night
@@ -28,6 +30,10 @@ WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 FOCUS = ["Writing Task 2 essay", "Reading: full test, 60 min", "Writing Task 1 report",
          "Reading: question types", "Writing Task 2 essay", "Speaking: full test, recorded",
          "Review the week"]
+SKILL_NAMES = {"L": "Listening", "R": "Reading", "W": "Writing", "S": "Speaking", "V": "Vocabulary"}
+PACK_SECTIONS = [("idioms", "Idioms"), ("reading", "Reading words"), ("speaking", "Speaking"),
+                 ("pron", "Pronunciation"), ("task1", "Writing Task 1"), ("task2", "Writing Task 2")]
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 def tests(books):
@@ -116,18 +122,36 @@ class Plan:
         return options[min(v, len(options) - 1)]
 
 
-def build(slot, plan, day, today, word):
+def focus_line(counts):
+    """Today's focus = the skill with the most tasks on today's list (ties are shown together)."""
+    if counts is None:
+        return None
+    total = sum(counts.get(k, 0) for k in SKILL_NAMES)
+    top = max((counts.get(k, 0) for k in SKILL_NAMES), default=0)
+    if not top:
+        return "Today's focus: not set yet. Tag your tasks with L, R, W, S or Voc in Edit list."
+    best = [SKILL_NAMES[k] for k in SKILL_NAMES if counts.get(k, 0) == top]
+    return f"🎯 Today's focus: <b>{' + '.join(best)}</b> ({top} of {total} tasks)"
+
+
+def build(slot, plan, day, today, pack, counts=None):
     e = html.escape
     hi = f", {e(plan.name)}" if plan.name else ""
     if slot == "morning":
-        left = f"exam in {(plan.exam - today).days} days" if plan.exam else f"{plan.days - day} days left"
-        lines = [f"<b>Good morning{hi}! Day {day}/{plan.days}</b>",
-                 f"{WEEKDAYS[today.weekday()]} {today.day} {today.strftime('%b')} · {plan.phase(day)} phase · {left}", "",
-                 "Open your tracker and check today's list. Empty? Add your tasks with Edit list."]
+        left = plan.days - day
+        when = f"{left} days left" + (f" · exam in {(plan.exam - today).days} days" if plan.exam else "")
+        lines = [f"<b>Good morning{hi}! Day {day} of {plan.days}</b>",
+                 f"{WEEKDAYS[today.weekday()]} {today.day} {today.strftime('%b')} · {when}"]
+        focus = focus_line(counts)
+        if focus:
+            lines += ["", focus]
         if day in plan.mocks:
-            lines.append(f"Mock day: <b>{e(plan.mocks[day])}</b>. Start at 19:00 in exam conditions, with no pauses.")
-        if word:
-            lines += ["", f"Word of the day: <b>{e(word['w'])}</b> — {e(word['uz'])}", f"<i>{e(word['ex'])}</i>"]
+            lines += ["", f"Mock day: <b>{e(plan.mocks[day])}</b>. Start at 19:00 in exam conditions, with no pauses."]
+        if pack:
+            lines += ["", "<b>Today's pack</b> · 6 × 10, full version in the app (Daily tab):"]
+            for key, title in PACK_SECTIONS:
+                theme = (pack.get(key) or {}).get("theme") or ("10 academic words" if key == "reading" else "")
+                lines.append(f"• {title}" + (f": {e(theme)}" if theme else ""))
     elif slot == "evening":
         if day in plan.mocks:
             lines = [f"<b>Mock time · Day {day}</b>",
@@ -146,7 +170,7 @@ def build(slot, plan, day, today, word):
     return "\n".join(lines)
 
 
-def send(chat, text):
+def send(chat, text, frag=""):
     token = os.environ.get("BOT_TOKEN", "").strip()
     app = os.environ.get("APP_URL", "").strip()
     if not token:
@@ -154,7 +178,7 @@ def send(chat, text):
         return True
     payload = {"chat_id": chat, "text": text, "parse_mode": "HTML", "disable_web_page_preview": "true"}
     if app:
-        payload["reply_markup"] = json.dumps({"inline_keyboard": [[{"text": "Open tracker", "web_app": {"url": app}}]]})
+        payload["reply_markup"] = json.dumps({"inline_keyboard": [[{"text": "Open tracker", "web_app": {"url": app + frag}}]]})
     req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage",
                                  data=urllib.parse.urlencode(payload).encode())
     try:
@@ -185,6 +209,36 @@ def load_users():
     return users
 
 
+def load_pack(day):
+    """The daily pack for this plan day; days past the bank repeat it from the start."""
+    try:
+        with open(os.path.join(HERE, "daily", "index.json"), encoding="utf-8") as f:
+            count = int(json.load(f).get("count", 0))
+        if count < 1:
+            return None
+        with open(os.path.join(HERE, "daily", f"{(day - 1) % count + 1:02d}.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError, AttributeError):
+        return None
+
+
+def load_focus(ids, today):
+    """Skill counts per user for today from the focus server, or {} if it is not set up or unreachable."""
+    base = os.environ.get("FOCUS_URL", "").strip().rstrip("/")
+    key = os.environ.get("READ_KEY", "").strip()
+    if not base or not key:
+        return {}
+    q = urllib.parse.urlencode({"ids": ",".join(ids), "date": today.isoformat()})
+    req = urllib.request.Request(f"{base}/focus?{q}", headers={"X-Key": key, "User-Agent": "ielts-reminders"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.load(r)
+            return data if isinstance(data, dict) else {}
+    except (OSError, ValueError) as err:
+        print(f"Could not read today's focus, so the message goes without it: {err}")
+        return {}
+
+
 def main():
     slot = (sys.argv[1] if len(sys.argv) > 1 else "morning").strip() or "morning"
     if slot not in ("morning", "evening", "night"):
@@ -192,12 +246,8 @@ def main():
     users = load_users()
     if not users:
         sys.exit("No users: add the USERS (or CHAT_ID) secret.")
-    try:
-        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "daily.json"), encoding="utf-8") as f:
-            words = json.load(f)
-    except (OSError, ValueError):
-        words = []
     today = dt.datetime.now(TZ).date()
+    focus = load_focus(list(users), today) if slot == "morning" else {}
     failures = 0
     for chat, raw in users.items():
         try:
@@ -210,8 +260,12 @@ def main():
         if not 1 <= day <= plan.days:
             print(f"User ending …{chat[-3:]}: day {day} is outside their {plan.days}-day plan, so no reminder.")
             continue
-        word = words[(day - 1) % len(words)] if words else None
-        if not send(chat, build(slot, plan, day, today, word)):
+        if slot == "morning":
+            text = build(slot, plan, day, today, load_pack(day), focus.get(chat) if focus else None)
+            ok = send(chat, text, "#daily")
+        else:
+            ok = send(chat, build(slot, plan, day, today, None))
+        if not ok:
             failures += 1
     if failures:
         sys.exit(1)

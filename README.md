@@ -35,3 +35,15 @@ Never put the bot token in a file. It goes only in the `BOT_TOKEN` secret.
 ## Updating the app
 
 Telegram caches the page. When you change `index.html`, also change `BUILD` near the top of its script and put the same value in `version.json`. Open copies then reload themselves once with the new version.
+
+## Today's focus (optional Cloudflare Worker)
+
+The 07:00 message names the skill with the most tasks on today's list. The bot can't read the app's storage, so the app sends only the skill counts (L/R/W/S/Voc per day) to a small free Cloudflare Worker: `worker/worker.js`.
+
+1. Cloudflare → Workers & Pages → Create Worker, paste `worker/worker.js`, deploy.
+2. Storage → KV → create a namespace; in the Worker's Settings → Bindings add it as `FOCUS`.
+3. Worker Settings → Variables and Secrets: secrets `BOT_TOKEN` (same as GitHub) and `READ_KEY` (any long random text).
+4. Put the Worker address in `WORKER_URL` in `index.html` (bump BUILD + version.json).
+5. GitHub secrets: `FOCUS_URL` (the Worker address) and `READ_KEY` (same text).
+
+Without it the morning message is sent without the focus line.

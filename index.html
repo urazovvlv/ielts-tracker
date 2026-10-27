@@ -373,7 +373,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.1';
+const BUILD='2026-10-28.2';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -474,7 +474,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{}};
 let DAILY=[];
-let tab='today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#daily/.test(location.hash)?'daily':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -511,6 +511,7 @@ function setObj(k,o){
 const timers={};
 function touch(k,later){
   const o=getObj(k);if(!o)return;o._ts=Date.now();const v=JSON.stringify(o);lsSet(k,v);
+  if(k==='cfg_day'||/^d\d/.test(k))focusSync();
   clearTimeout(timers[k]);
   if(later)timers[k]=setTimeout(()=>put(k,JSON.stringify(getObj(k))),600);else put(k,v);
 }
@@ -552,6 +553,16 @@ const weekDoc=w=>S.weeks['w'+w]||{};
 const mockDoc=n=>S.mocks['m'+pad(n)]||{};
 function setDay(n,patch,later){const k='d'+pad(n);S.days[k]=Object.assign({},S.days[k],patch);touch(k,later);}
 const TAGS=[['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking'],['V','Vocab']];
+/* Focus server (Cloudflare Worker): tells the 07:00 bot message which skill has the most tasks today. Empty = off. */
+const WORKER_URL='';
+let focusT=null;
+function focusSync(){
+  if(!WORKER_URL||!inTG||!PLAN)return;clearTimeout(focusT);
+  focusT=setTimeout(()=>{const t=Math.max(1,todayIdx()),days={};
+    for(let n=t;n<=Math.min(DAYS,t+7);n++){const c={L:0,R:0,W:0,S:0,V:0};for(const x of listFor(n))if(x.sk in c)c[x.sk]++;days[isoD(dateOf(n))]=c;}
+    fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days}),keepalive:true}).catch(()=>{});
+  },2500);
+}
 const tagName=k=>(TAGS.find(t=>t[0]===k)||[k,k])[1];
 const skb=k=>k?`<span class="skb sk-${k}">${k==='V'?'Voc':k}</span>`:'';
 let addSk={day:'',week:''};
@@ -1343,7 +1354,7 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());
-  renderAll();
+  renderAll();focusSync();
   let last=todayIdx();setInterval(()=>{const t=todayIdx();if(t!==last){last=t;sel=clampDay(t);renderAll();}},60000);
 })();
 })();
