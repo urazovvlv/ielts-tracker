@@ -91,7 +91,7 @@ export default {
       } catch {
         return json({ ok: false, error: "bad json" }, 400, cors);
       }
-      const id = await checkInitData(String(body.initData || ""), env.BOT_TOKEN);
+      const id = await checkInitData(String(body.initData || ""), String(env.BOT_TOKEN || "").trim());
       if (!id) return json({ ok: false, error: "not from Telegram" }, 403, cors);
       const key = "u:" + id;
       const old = (await env.FOCUS.get(key, "json")) || {};
@@ -104,7 +104,8 @@ export default {
 
     if (url.pathname === "/focus" && req.method === "GET") {
       const given = req.headers.get("X-Key") || "";
-      const derived = env.BOT_TOKEN ? hex(await hmac(env.BOT_TOKEN, "ielts-focus-read")) : "";
+      const token = String(env.BOT_TOKEN || "").trim();
+      const derived = token ? hex(await hmac(token, "ielts-focus-read")) : "";
       if (!given || (given !== env.READ_KEY && given !== derived)) return json({ error: "wrong key" }, 403);
       const date = url.searchParams.get("date") || "";
       const ids = (url.searchParams.get("ids") || "").split(",").filter((x) => /^\d+$/.test(x)).slice(0, 50);

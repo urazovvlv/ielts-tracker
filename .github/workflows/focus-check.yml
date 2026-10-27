@@ -25,7 +25,7 @@ jobs:
               except Exception as e:
                   return 0, repr(e)[:120]
           print("::notice::home", *get(base + "/"))
-          tok = os.environ.get("BOT_TOKEN", "")
+          tok = os.environ.get("BOT_TOKEN", "").strip()
           key = hmac.new(tok.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
           today = dt.datetime.now(reminders.TZ).date().isoformat()
           code, body = get(f"{base}/focus?ids=5020539876&date={today}", {"X-Key": key})
