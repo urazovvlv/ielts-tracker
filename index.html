@@ -243,7 +243,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 /* iPhone zooms into fields under 16px */
 input[type=text],input[type=search],input[type=date],input[type=number],select,textarea,.ein,.ein.sm,.sc{font-size:16px}
 /* tabs */
-.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
+.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
 .tabs button svg{width:22px;height:22px}
 .tabs button.on{color:var(--navy)}
@@ -373,7 +373,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.4';
+const BUILD='2026-10-28.5';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -654,7 +654,7 @@ function renderHeader(){
   <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(DAYS-t)+' day'+(DAYS-t===1?'':'s')+' left':t<1?DAYS+'-day plan · starts in '+(1-t)+' day'+(1-t===1?'':'s'):DAYS+'-day plan'}</div></div>`;
 }
 function renderTabs(){
-  const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['mock','Mocks'],['words','Words'],['speak','Speak']];
+  const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['words','Words'],['speak','Speak']];
   document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k)}${l}</button>`).join('');
 }
 
@@ -717,7 +717,8 @@ function viewProgress(){
     return `<div class="card-h"><h2>Band</h2><span class="note">Target ${TARGET.toFixed(1)}</span></div>
     <div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
     <div class="band-bar"><i style="width:${pct}%"></i></div>
-    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:'<p class="note" style="margin:0">Starting level. Log a full mock in the Mocks tab to update it.</p>'}`;})()}</section>
+    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:'<p class="note" style="margin:0">Starting level. Log a full mock below to update it.</p>'}`;})()}</section>
+  ${mockSections()}
   <section class="card"><div class="card-h"><h2>Progress</h2></div>
     <div class="stats">
       <div class="stat"><span class="label">Days done</span><span class="v num">${daysDone}<small>/ ${tt}</small></span><span class="note">Days with every task ticked</span></div>
@@ -741,15 +742,15 @@ function hoursChart(H,t){
 
 /* ---------- Mocks ---------- */
 let mockOpen=new Set();
-function viewMocks(){
+function mockSections(){
   const t=todayIdx(),next=MOCKDAYS.find(n=>n>=t&&overall(mockDoc(n))==null);
   const cards=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m),cls=o==null?'':o>=TARGET?'hit':o>=7?'c1':'low';
     const has=['L','R','W','S'].some(k=>m[k]!==''&&m[k]!=null);
     if(!has&&n!==next&&n>t&&!mockOpen.has(n))return `<button class="mrow" data-mexp="${n}"><span><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}</small></span><span class="mrow-go" aria-hidden="true">›</span></button>`;
     const inp=(k,max,step,ph,tab)=>`<label>${{L:'List.',R:'Read.',W:'Writ.',S:'Speak.'}[k]}<input class="sc" type="number" inputmode="decimal" id="mk-${n}-${k}" data-mock="${n}" data-k="${k}" min="0" max="${max}" step="${step}" value="${m[k]??''}" placeholder="${ph}"><span class="bh" id="bh-${n}-${k}">${tab&&m[k]!==''&&m[k]!=null?'Band '+toBand(m[k],tab):''}</span></label>`;
     return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small></div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div></div>`;}).join('');
-  return `<div class="wrap"><section class="card"><h2>Overall band by mock</h2><div class="chart" id="mockChart">${mockChart()}</div><p class="note" style="margin:0">Listening and Reading: type correct answers out of 40, and the band is worked out for you. Writing and Speaking: type the band. Overall uses official IELTS rounding.</p></section>
-  <section class="card"><h2>Mock scores</h2>${cards}</section></div>`;
+  return `<section class="card"><h2>Overall band by mock</h2><div class="chart" id="mockChart">${mockChart()}</div><p class="note" style="margin:0">Listening and Reading: type correct answers out of 40, and the band is worked out for you. Writing and Speaking: type the band. Overall uses official IELTS rounding.</p></section>
+  <section class="card"><h2>Mock scores</h2>${cards}</section>`;
 }
 function mockChart(){
   const W=360,H=200,l=30,r=10,tp=14,b=24,lo=4.5,hi=9,x=n=>l+(n-1)/(DAYS-1)*(W-l-r),y=v=>tp+(H-tp-b)*(1-(v-lo)/(hi-lo));
@@ -1197,7 +1198,7 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 function renderView(){
   const v=document.getElementById('view');
   if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
-  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
+  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():tab==='words'?viewWords():viewSpeak();
   updateBack();
 }
 /* What the Telegram back arrow should close, newest layer first. */

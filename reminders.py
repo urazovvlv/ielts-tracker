@@ -156,7 +156,7 @@ def build(slot, plan, day, today, pack, counts=None):
         if day in plan.mocks:
             lines = [f"<b>Mock time · Day {day}</b>",
                      f"{e(plan.mocks[day])}: Listening 30 min, Reading 60, Writing 60, Speaking 15.",
-                     "Phone on silent. Type your scores in the Mocks tab when you finish."]
+                     "Phone on silent. Type your scores in the Progress tab when you finish."]
         else:
             lines = [f"<b>Evening check · Day {day}</b>",
                      "How is your list going? Finish the tasks you planned for today before the day ends."]
