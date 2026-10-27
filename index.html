@@ -230,6 +230,15 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .sugg summary{cursor:pointer;display:flex;flex-direction:column;gap:2px;list-style:none}
 .sugg summary::-webkit-details-marker{display:none}
 .sugg[open] summary{margin-bottom:6px}
+.skb{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:1px 6px;border-radius:6px;margin-right:6px;vertical-align:2px;color:#fff;font-family:var(--f-body)}
+.sk-L{background:#2D6BD8}.sk-R{background:#1F8A5B}.sk-W{background:#C98A12}.sk-S{background:#8A4FC8}.sk-V{background:#5B6890}
+.bals{display:flex;flex-wrap:wrap;gap:6px}
+.bal{display:inline-flex;align-items:center;font-size:12.5px;padding:4px 8px 4px 4px;border-radius:99px;border:1px solid var(--line);background:var(--sunk);gap:2px}
+.bal b{margin-left:4px}
+.bal.zero{opacity:.55}
+.bal.full{border-color:var(--good)}
+.warn{list-style:none;margin:0;padding:10px 12px;border-radius:12px;background:var(--gold-soft);display:flex;flex-direction:column;gap:6px;font-size:13px}
+.warn li{display:flex;align-items:flex-start;gap:2px}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
@@ -258,7 +267,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.10';
+const BUILD='2026-10-27.11';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -434,10 +443,30 @@ const dayDoc=n=>S.days['d'+pad(n)]||{};
 const weekDoc=w=>S.weeks['w'+w]||{};
 const mockDoc=n=>S.mocks['m'+pad(n)]||{};
 function setDay(n,patch,later){const k='d'+pad(n);S.days[k]=Object.assign({},S.days[k],patch);touch(k,later);}
+const TAGS=[['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking'],['V','Vocab']];
+const tagName=k=>(TAGS.find(t=>t[0]===k)||[k,k])[1];
+const skb=k=>k?`<span class="skb sk-${k}">${k==='V'?'Voc':k}</span>`:'';
+let addSk={day:'',week:''};
+/* The most recent day (up to n) with a ticked task tagged with this skill, or 0. */
+function lastPractised(sk,n){for(let d=n;d>=1;d--){const t=dayDoc(d).t||{};if(listFor(d).some(x=>x.sk===sk&&t[x.k]))return d;}return 0;}
+function anyTagged(n){for(let d=1;d<=n;d++)if(listFor(d).some(x=>x.sk))return true;return false;}
+function balanceBlock(n){
+  const list=listFor(n),t=dayDoc(n).t||{};
+  if(!list.length)return '';
+  if(!list.some(x=>x.sk))return `<p class="note" style="margin:0">Tip: tag tasks with a skill (Edit list) to see your daily balance.</p>`;
+  const chips=TAGS.map(([k,nm])=>{const all=list.filter(x=>x.sk===k),done=all.filter(x=>t[x.k]).length;
+    return `<span class="bal ${all.length?'':'zero'} ${all.length&&done===all.length?'full':''}">${skb(k)}${nm} <b class="num">${done}/${all.length}</b></span>`;}).join('');
+  const today=todayIdx(),warn=[];
+  if(n===today&&today>=1&&anyTagged(today)){
+    for(const [k,nm] of TAGS.slice(0,4)){const last=lastPractised(k,today),gap=last?today-last:today-1;
+      if(gap>=3)warn.push(`<li>${skb(k)}<span><b>${nm}</b>: ${last?`no practice for ${gap} days (last on ${short(dateOf(last))})`:`not practised yet in this plan`}</span></li>`);}
+  }
+  return `<div class="bals">${chips}</div>${warn.length?`<ul class="warn">${warn.join('')}</ul>`:''}`;
+}
 function applyMods(list,m){
   m=m||{};const hid=new Set(m.hidden||[]);const rn=m.rename||{};
-  return list.concat((m.extra||[]).map(x=>({k:x.k,label:x.label,sub:x.sub||''}))).filter(x=>!hid.has(x.k))
-    .map(x=>rn[x.k]?Object.assign({},x,{label:rn[x.k].label??x.label,sub:rn[x.k].sub??x.sub}):x);
+  return list.concat((m.extra||[]).map(x=>({k:x.k,label:x.label,sub:x.sub||'',sk:x.sk||''}))).filter(x=>!hid.has(x.k))
+    .map(x=>rn[x.k]?Object.assign({},x,{label:rn[x.k].label??x.label,sub:rn[x.k].sub??x.sub,sk:rn[x.k].sk??x.sk}):x);
 }
 const listFor=n=>applyMods(applyMods(baseTasks(n),S.cfg.day),dayDoc(n));
 const weekList=w=>applyMods(applyMods(WEEKTASKS,S.cfg.week),weekDoc(w));
@@ -518,8 +547,8 @@ function renderTabs(){
 function editPanel(list,kind){
   const scope=kind==='week'?`<div class="field"><span class="label">Changes apply to</span><div class="seg"><button data-wscope="week" class="${editWScope==='week'?'on':''}">Only Week ${Math.ceil(sel/7)}</button><button data-wscope="allweeks" class="${editWScope==='allweeks'?'on':''}">Every week</button></div></div>`:
     `<div class="field"><span class="label">Changes apply to</span><div class="seg"><button data-scope="day" class="${editScope==='day'?'on':''}">Only Day ${sel}</button><button data-scope="all" class="${editScope==='all'?'on':''}">Every day</button></div></div>`;
-  return `${scope}<ul class="tasks">${list.length?list.map(x=>`<li class="task editing"><div class="ef"><input class="ein" aria-label="Exercise name" data-ren="${x.k}" data-f="label" data-kind="${kind}" value="${esc(x.label)}" maxlength="80"><input class="ein sm" aria-label="Note" data-ren="${x.k}" data-f="sub" data-kind="${kind}" value="${esc(x.sub||'')}" placeholder="Note (optional)" maxlength="120"></div><button class="rm" data-rm="${x.k}" data-kind="${kind}" aria-label="Remove">×</button></li>`).join(''):'<li class="note">No exercises yet. Add one below.</li>'}</ul>
-  <form class="addrow" data-add="${kind}"><input id="add-${kind}-name" type="text" placeholder="New exercise, e.g. Shadowing 10 min" maxlength="80" required><input id="add-${kind}-note" type="text" placeholder="Note (optional)" maxlength="120"><button class="btn primary" type="submit">Add exercise</button></form>
+  return `${scope}<ul class="tasks">${list.length?list.map(x=>`<li class="task editing"><div class="ef"><input class="ein" aria-label="Exercise name" data-ren="${x.k}" data-f="label" data-kind="${kind}" value="${esc(x.label)}" maxlength="80"><input class="ein sm" aria-label="Note" data-ren="${x.k}" data-f="sub" data-kind="${kind}" value="${esc(x.sub||'')}" placeholder="Note (optional)" maxlength="120"><select class="ein sm" aria-label="Skill" data-ren="${x.k}" data-f="sk" data-kind="${kind}"><option value="">No skill tag</option>${TAGS.map(([k,nm])=>`<option value="${k}" ${x.sk===k?'selected':''}>${nm}</option>`).join('')}</select></div><button class="rm" data-rm="${x.k}" data-kind="${kind}" aria-label="Remove">×</button></li>`).join(''):'<li class="note">No exercises yet. Add one below.</li>'}</ul>
+  <form class="addrow" data-add="${kind}"><input id="add-${kind}-name" type="text" placeholder="New exercise, e.g. Shadowing 10 min" maxlength="80" required><input id="add-${kind}-note" type="text" placeholder="Note (optional)" maxlength="120"><div class="chips" role="group" aria-label="Skill">${TAGS.map(([k,nm])=>`<button type="button" class="chip ${addSk[kind]===k?'on':''}" data-addsk="${kind}" data-val="${k}">${nm}</button>`).join('')}</div><button class="btn primary" type="submit">Add exercise</button></form>
   <button class="btn ghost" data-reset="${kind}">${resetArm===kind?'Tap again to remove all tasks here':'Remove all tasks here'}</button>`;
 }
 function wotdCard(n){
@@ -541,13 +570,14 @@ function viewToday(){
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
     <div class="pline"><span class="label">Checklist</span><div class="pbar"><i style="width:${tot?c/tot*100:0}%"></i></div><b class="num">${c}/${tot}</b></div>
-    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
+    ${editDay?'':balanceBlock(n)}
+    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${skb(x.sk)}${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
-    ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
+    ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${skb(x.sk)}${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
   </section></div>`;
 }
 
@@ -1057,6 +1087,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);haptic('sel');renderView();return;}
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
+  if((el=g('[data-addsk]'))){const kd=el.dataset.addsk,v=el.dataset.val;addSk[kd]=addSk[kd]===v?'':v;const nm=document.getElementById(`add-${kd}-name`),nv=nm?nm.value:'',nt=document.getElementById(`add-${kd}-note`),tv=nt?nt.value:'';renderView();const a=document.getElementById(`add-${kd}-name`);if(a){a.value=nv;document.getElementById(`add-${kd}-note`).value=tv;}return;}
   if((el=g('[data-wscope]'))){editWScope=el.dataset.wscope;renderView();return;}
   if((el=g('[data-scope]'))){editScope=el.dataset.scope;renderView();return;}
   if((el=g('[data-rm]'))){const r=modsRef(goScopeKind(el.dataset.kind)),k=el.dataset.rm;if((r.m.extra||[]).some(x=>x.k===k))r.m.extra=r.m.extra.filter(x=>x.k!==k);else r.m.hidden=[...new Set([...(r.m.hidden||[]),k])];r.commit();renderHeader();renderView();toast('Exercise removed');return;}
@@ -1115,7 +1146,7 @@ document.addEventListener('submit',e=>{
     const first=!PLAN;buildSchedule(Object.assign({},PLAN,p));touch('plan');sel=clampDay(todayIdx());closeSheet();haptic('ok');
     toast(first?'Plan saved. Good luck!':'Plan updated');tab='today';renderAll();scrollTo(0,0);return;}
   if(f.dataset.add){const kind=f.dataset.add,nm=document.getElementById(`add-${kind}-name`),nt=document.getElementById(`add-${kind}-note`),label=nm.value.trim();if(!label)return;
-    const r=modsRef(goScopeKind(kind));r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label,sub:nt.value.trim()}];r.commit();haptic('light');
+    const r=modsRef(goScopeKind(kind));r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label,sub:nt.value.trim(),sk:addSk[kind]||''}];r.commit();haptic('light');
     toast(kind==='week'?(editWScope==='allweeks'?'Added to every week':`Added to Week ${Math.ceil(sel/7)}`):editScope==='all'?'Added to every day':`Added to Day ${sel}`);renderHeader();renderView();const again=document.getElementById(`add-${kind}-name`);if(again)again.focus();return;}
   if(f.dataset.addword){const w=document.getElementById('nwW').value.trim();if(!w)return;
     S.words.push({id:'w'+Date.now().toString(36),w,m:document.getElementById('nwM').value.trim(),ex:document.getElementById('nwE').value.trim(),k:0});saveWords();haptic('ok');toast('Word saved');renderHeader();renderView();const again=document.getElementById('nwW');if(again)again.focus();}
