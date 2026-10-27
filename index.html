@@ -174,6 +174,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .witem b{display:block}
 .witem small{display:block;color:var(--muted);font-size:12.5px}
 .known{font-size:10.5px;font-weight:700;color:var(--good)}
+.wtag{display:inline-block;margin:4px 8px 0 0;font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .flash{border-radius:16px;padding:22px 16px;background:var(--navy);color:#fff;text-align:center;display:flex;flex-direction:column;gap:10px;min-height:170px;justify-content:center;cursor:pointer}
 .flash .fw{font-family:var(--f-display);font-size:26px;font-weight:800}
 .flash .fm{font-size:16px;font-weight:600}
@@ -373,7 +374,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.5';
+const BUILD='2026-10-28.6';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -765,28 +766,53 @@ function mockChart(){
 
 /* ---------- Words ---------- */
 function viewWords(){
-  const qy=wordQuery.trim().toLowerCase();
-  const list=S.words.slice().reverse().filter(w=>!qy||w.w.toLowerCase().includes(qy)||(w.m||'').toLowerCase().includes(qy));
+  const pool=wordPool(),list=searchWords(pool),fName=(WF.find(f=>f[0]===wFilter)||WF[0])[1];
   let rv='';
-  if(review){const w=S.words.find(x=>x.id===review.id);
+  if(review){const w=findWord(review.id);
     rv=w?`<section class="card"><div class="card-h"><h2>Review</h2><span class="note">${review.done} reviewed</span></div>
-      <div class="flash" data-flip="1" role="button" aria-label="Show meaning"><div class="fw">${esc(w.w)}</div>${review.show?`<div class="fm">${esc(w.m||'')}</div>${w.ex?`<div class="fe">${esc(w.ex)}</div>`:''}`:'<div class="hint">Say the meaning, then tap to check</div>'}</div>
+      <div class="flash" data-flip="1" role="button" aria-label="Show meaning"><div class="fw">${esc(w.w)}</div>${w.ipa&&review.show?`<div class="fe">${esc(w.ipa)}</div>`:''}${review.show?`<div class="fm">${esc(w.m||'')}</div>${w.syn?`<div class="fe">≈ ${esc(w.syn)}</div>`:''}${w.ex?`<div class="fe">${esc(w.ex)}</div>`:''}`:'<div class="hint">Say the meaning, then tap to check</div>'}</div>
       ${review.show?`<div class="grid2"><button class="btn block" data-rv="again">Again</button><button class="btn block primary" data-rv="knew">I knew it</button></div>`:''}
       <button class="btn ghost" data-rv="stop">Stop review</button></section>`:'';}
   return `<div class="wrap">${wotdCard(clampDay(todayIdx()))}
   ${rv}
   <section class="card"><div class="card-h"><h2>Add a word</h2><span class="note">${S.words.length} saved</span></div>
     <form class="addrow" data-addword="1"><input id="nwW" type="text" placeholder="Word or collocation, e.g. tackle the problem" maxlength="80" required><input id="nwM" type="text" placeholder="Meaning (Uzbek or English)" maxlength="120"><input id="nwE" type="text" placeholder="Example sentence (optional)" maxlength="200"><button class="btn primary" type="submit">Save word</button></form>
-    ${S.words.length&&!review?'<button class="btn block primary" data-rv="start">Review my words</button>':''}
   </section>
-  <section class="card"><div class="card-h"><h2>My words</h2></div>
-    ${S.words.length?`<div class="field"><input id="wq" type="search" placeholder="Search" value="${esc(wordQuery)}" aria-label="Search words"></div>`:''}
+  <section class="card"><div class="card-h"><h2>My words</h2><span class="note">${pool.length} ${wFilter==='all'?'in total':fName}</span></div>
+    <p class="note" style="margin:0">Every day's Daily pack is added here automatically.</p>
+    <div class="chips" role="group" aria-label="Show">${WF.map(([k,l])=>`<button type="button" class="chip ${wFilter===k?'on':''}" data-wf="${k}">${l}</button>`).join('')}</div>
+    ${pool.length&&!review?`<button class="btn block primary" data-rv="start">Review ${wFilter==='all'?'all words':fName.toLowerCase()} (${pool.length})</button>`:''}
+    ${pool.length?`<div class="field"><input id="wq" type="search" placeholder="Search" value="${esc(wordQuery)}" aria-label="Search words"></div>`:''}
     <ul class="wlist" id="wlist">${wordItems(list)}</ul></section></div>`;
 }
-const wordItems=list=>list.length?list.map(w=>`<li class="witem"><div class="tx"><b>${esc(w.w)}</b>${w.m?`<small>${esc(w.m)}</small>`:''}${w.ex?`<small style="font-style:italic">${esc(w.ex)}</small>`:''}${w.k?`<span class="known">Known ${w.k}×</span>`:''}</div><button class="rm" data-delword="${w.id}" aria-label="Delete ${esc(w.w)}">×</button></li>`).join(''):`<li class="note">${S.words.length?'No words match.':'No words yet. Save the word of the day or add your own.'}</li>`;
+/* Words = my own words + every Daily pack unlocked so far (no extra storage; "known" counts for pack items live in that day's doc as dk). */
+let wFilter='all';
+const WF=[['all','All'],['mine','Mine'],['idioms','Idioms'],['reading','Reading'],['speaking','Speaking'],['pron','Pronunciation'],['task1','Task 1'],['task2','Task 2']];
+const DLABEL={idioms:'Idiom',reading:'Reading',speaking:'Speaking',pron:'Pronunciation',task1:'Task 1',task2:'Task 2'};
+const unlockedPacks=()=>Math.min(clampDay(Math.max(1,todayIdx())),DCOUNT);
+function dailyWords(){
+  const out=[];
+  for(let k=unlockedPacks();k>=1;k--){const p=DPACK[k];if(!p)continue;const dk=dayDoc(k).dk||{};
+    for(const [sec] of DSEC){((p[sec]&&p[sec].items)||[]).forEach((x,i)=>{
+      out.push({id:`d${k}:${sec}:${i}`,w:sec==='idioms'?x.t:sec==='speaking'?x.s:x.w,m:x.uz||'',ex:x.ex||x.tip||'',syn:x.syn&&x.syn!=='—'?x.syn:'',ipa:x.ipa||'',sec,day:k,k:dk[sec+':'+i]||0});});}}
+  return out;
+}
+function wordPool(){
+  const mine=S.words.slice().reverse();
+  if(wFilter==='mine')return mine;
+  const d=dailyWords();
+  return wFilter==='all'?mine.concat(d):d.filter(x=>x.sec===wFilter);
+}
+function searchWords(pool){const qy=wordQuery.trim().toLowerCase();return qy?pool.filter(w=>w.w.toLowerCase().includes(qy)||(w.m||'').toLowerCase().includes(qy)||(w.syn||'').toLowerCase().includes(qy)):pool;}
+function findWord(id){if(/^d\d/.test(id))return dailyWords().find(x=>x.id===id)||null;return S.words.find(x=>x.id===id)||null;}
+async function ensurePacks(){
+  const need=[];for(let k=1;k<=unlockedPacks();k++)if(!DPACK[k])need.push(getPack(k));
+  if(!need.length)return;await Promise.all(need);if(tab==='words')renderView();
+}
+const wordItems=list=>list.length?list.slice(0,300).map(w=>`<li class="witem"><div class="tx"><b>${esc(w.w)}</b>${w.ipa?`<small>${esc(w.ipa)}</small>`:''}${w.m?`<small>${esc(w.m)}</small>`:''}${w.syn?`<small>≈ ${esc(w.syn)}</small>`:''}${w.ex?`<small style="font-style:italic">${esc(w.ex)}</small>`:''}${w.sec?`<span class="wtag">Day ${w.day} · ${DLABEL[w.sec]}</span>`:''}${w.k?`<span class="known">Known ${w.k}×</span>`:''}</div>${w.sec?'':`<button class="rm" data-delword="${w.id}" aria-label="Delete ${esc(w.w)}">×</button>`}</li>`).join('')+(list.length>300?`<li class="note">Showing 300 of ${list.length}. Search or pick a section to see the rest.</li>`:''):`<li class="note">${wordQuery.trim()?'No words match.':wFilter==='mine'?'No words yet. Add your own above or tap + in Daily.':'Nothing here yet.'}</li>`;
 function nextReviewWord(prev){
-  if(!S.words.length)return null;const minK=Math.min(...S.words.map(w=>w.k||0));
-  let pool=S.words.filter(w=>(w.k||0)<=minK+1&&w.id!==prev);if(!pool.length)pool=S.words;
+  const all=wordPool();if(!all.length)return null;const minK=Math.min(...all.map(w=>w.k||0));
+  let pool=all.filter(w=>(w.k||0)<=minK+1&&w.id!==prev);if(!pool.length)pool=all;
   return pool[Math.floor(Math.random()*pool.length)].id;
 }
 
@@ -1257,7 +1283,7 @@ document.addEventListener('click',async e=>{
       renderView();scrollTo(0,0);return;}
     if((el=g('[data-wplay]'))){playListening();return;}
   }
-  if((el=g('[data-tab]'))){tab=el.dataset.tab;haptic('sel');renderTabs();renderView();scrollTo(0,0);return;}
+  if((el=g('[data-tab]'))){tab=el.dataset.tab;if(tab==='words')ensurePacks();haptic('sel');renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-open]'))){openSettings();return;}
   if((el=g('[data-home]'))){try{TG.addToHomeScreen();}catch(x){toast('Your Telegram version cannot do this yet');}return;}
   if(e.target.matches&&e.target.matches('[data-close]')){closeSheet();return;}
@@ -1290,10 +1316,11 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-mood]'))){const v=Number(el.dataset.mood);setDay(sel,{mood:dayDoc(sel).mood===v?0:v});haptic('sel');renderHeader();renderView();return;}
   if((el=g('[data-saveword]'))){const w=DAILY[(Number(el.dataset.saveword)-1)%DAILY.length];if(w&&!S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())){S.words.push({id:'w'+Date.now().toString(36),w:w.w,m:w.uz,ex:w.ex,k:0});saveWords();haptic('ok');toast('Saved to my words');renderHeader();renderView();}return;}
   if((el=g('[data-delword]'))){S.words=S.words.filter(w=>w.id!==el.dataset.delword);saveWords();renderHeader();renderView();toast('Word deleted');return;}
+  if((el=g('[data-wf]'))){wFilter=el.dataset.wf;review=null;haptic('sel');renderView();return;}
   if((el=g('[data-rv]'))){const a=el.dataset.rv;
     if(a==='start')review={id:nextReviewWord(),show:false,done:0};
     else if(a==='stop')review=null;
-    else{const w=S.words.find(x=>x.id===review.id);if(w&&a==='knew'){w.k=(w.k||0)+1;saveWords();}haptic(a==='knew'?'ok':'light');review={id:nextReviewWord(review.id),show:false,done:review.done+1};}
+    else{if(a==='knew'){const id=review.id;if(/^d\d/.test(id)){const [d,sec,i]=id.slice(1).split(':'),n=Number(d),dk=Object.assign({},dayDoc(n).dk);dk[sec+':'+i]=(dk[sec+':'+i]||0)+1;setDay(n,{dk});}else{const w=S.words.find(x=>x.id===id);if(w){w.k=(w.k||0)+1;saveWords();}}}haptic(a==='knew'?'ok':'light');review={id:nextReviewWord(review.id),show:false,done:review.done+1};}
     renderView();return;}
   if((el=g('[data-flip]'))){if(review){review.show=!review.show;haptic('sel');renderView();}return;}
   if((el=g('[data-cue]'))){let n;do{n=Math.floor(Math.random()*CUES.length);}while(n===timer.cue&&CUES.length>1);timer.cue=n;if(timer.phase!=='speak'&&timer.phase!=='prep')timer.phase='idle';renderView();return;}
@@ -1325,7 +1352,7 @@ document.addEventListener('input',e=>{
   if(t.dataset.ren){const r=modsRef(goScopeKind(t.dataset.kind));r.m.rename=r.m.rename||{};r.m.rename[t.dataset.ren]=Object.assign({},r.m.rename[t.dataset.ren],{[t.dataset.f]:t.value});r.commit(true);return;}
   if(t.id==='hoursIn'||t.id==='wordsIn'){const k=t.id==='hoursIn'?'hours':'words';setDay(sel,{[k]:t.value===''?'':Math.max(0,Number(t.value))},true);renderHeader();return;}
   if(t.id==='noteIn'){setDay(sel,{note:t.value},true);return;}
-  if(t.id==='wq'){wordQuery=t.value;const qy=wordQuery.trim().toLowerCase();document.getElementById('wlist').innerHTML=wordItems(S.words.slice().reverse().filter(w=>!qy||w.w.toLowerCase().includes(qy)||(w.m||'').toLowerCase().includes(qy)));return;}
+  if(t.id==='wq'){wordQuery=t.value;document.getElementById('wlist').innerHTML=wordItems(searchWords(wordPool()));return;}
   if(t.dataset.mock){
     const n=Number(t.dataset.mock),k=t.dataset.k,mk='m'+pad(n),v=t.value===''?'':Number(t.value);
     S.mocks[mk]=Object.assign({},S.mocks[mk],{[k]:v});touch(mk,true);
@@ -1355,7 +1382,7 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());
-  renderAll();focusSync();
+  renderAll();focusSync();ensurePacks();
   let last=todayIdx();setInterval(()=>{const t=todayIdx();if(t!==last){last=t;sel=clampDay(t);renderAll();}},60000);
 })();
 })();
