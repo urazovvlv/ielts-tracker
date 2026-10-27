@@ -36,6 +36,16 @@ def tests(books):
 
 EARLY = tests([(18, [1, 2, 3, 4]), (19, [1, 2, 3, 4]), (17, [1, 2, 3, 4]), (16, [1, 2, 3, 4]), (15, [1, 2, 3, 4])])
 LATE = tests([(20, [1, 2, 3]), (21, [1, 2, 3, 4]), (20, [4]), (19, [3, 4])])
+SK = {"L": "Listening", "R": "Reading", "W": "Writing", "S": "Speaking"}
+MAINS = {
+    "full": {"L": ["Listening: full test, 4 sections + transcript check", "Listening: Sections 3–4 twice + dictation"],
+             "R": ["Reading: full test, 60 minutes", "Reading: one passage for each question type you find hard"],
+             "W": ["Writing Task 2 essay, 40 minutes", "Writing Task 1 report, 20 minutes + rewrite"],
+             "S": ["Speaking: full test recorded (Parts 1–3)", "Speaking: three Part 2 cards + Part 3 questions"]},
+    "short": {"L": ["Listening: two sections + transcript check"], "R": ["Reading: one passage in 20 minutes"],
+              "W": ["Writing: Task 2 plan + one body paragraph"], "S": ["Speaking: two Part 2 cards, recorded"]},
+}
+ROTA = [0, 1, 2, 0, 1, 3, -1]  # Mon..Sun, same as mainFor() in index.html
 
 
 def jround(x):
@@ -53,6 +63,11 @@ class Plan:
         n = (self.exam - self.start).days if self.exam else int(p.get("days") or 60)
         self.days = max(7, min(180, n))
         self.target = float(p.get("target") or 7.5)
+        rank = p.get("rank") or ""
+        rank = list(rank) if isinstance(rank, (str, list)) else []
+        self.rank = rank if sorted(rank) == ["L", "R", "S", "W"] else None
+        self.mwd = int(p.get("mwd") or 120)
+        self.mwe = int(p.get("mwe") or 180)
         N = self.days
         f1, f2 = jround(N * 14 / 60), jround(N * 35 / 60)
         f3 = N - 8 if N >= 30 else jround(N * 52 / 60)
@@ -86,7 +101,19 @@ class Plan:
         return next((nm for nm, a, b in self.phases if a <= n <= b), self.phases[-1][0])
 
     def main_task(self, n):
-        return f"Full mock · {self.mocks[n]}" if n in self.mocks else FOCUS[self.date(n).weekday()]
+        if n in self.mocks:
+            return f"Full mock · {self.mocks[n]}"
+        wd = self.date(n).weekday()
+        if not self.rank:
+            return FOCUS[wd]
+        r = ROTA[wd]
+        if r < 0:
+            return "Weekly review: redo this week's mistakes"
+        skill = self.rank[r]
+        mins = self.mwe if wd >= 5 else self.mwd
+        options = MAINS["short" if mins < 60 else "full"][skill]
+        v = ROTA[:wd].count(r)
+        return options[min(v, len(options) - 1)]
 
 
 def build(slot, plan, day, today, word):

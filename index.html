@@ -189,6 +189,41 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .ring .t{font-family:var(--f-display);font-size:40px;line-height:1.05;font-weight:800;font-variant-numeric:tabular-nums}
 .ring .p{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:1.3}
 
+/* tutor */
+.wz{gap:14px}
+.wz p{margin:0}
+.wz h2{font-size:21px}
+.wz-prog{display:flex;align-items:center;gap:10px}
+.wz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:4px}
+.wz-nav .btn{min-height:44px;padding:0 18px;font-size:15px}
+.wz-list{margin:0;padding-left:18px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips.col{flex-direction:column;align-items:stretch}
+.chip{border:1px solid var(--line);background:var(--sunk);border-radius:99px;padding:8px 13px;font-size:13.5px;font-weight:600;color:var(--ink);text-align:left}
+.chips.col .chip{border-radius:12px}
+.chip.on{background:var(--navy);border-color:var(--navy);color:var(--card)}
+.skillbox{border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:10px;background:var(--sunk)}
+.skillbox .mood button{background:var(--card)}
+.skillbox .mood button.on{background:var(--navy)}
+.passage{background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:14.5px;line-height:1.55}
+.passage h3{font-size:16px}
+.q{display:flex;flex-direction:column;gap:8px;padding-top:10px;border-top:1px solid var(--line)}
+.lrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center;font-size:14px}
+.rbars{display:flex;flex-direction:column;gap:9px}
+.rb{display:grid;grid-template-columns:76px 1fr 34px;grid-template-rows:auto auto;column-gap:8px;align-items:center}
+.rb-l{font-size:13px;font-weight:600}
+.rb-t{position:relative;height:10px;border-radius:99px;background:var(--navy-soft)}
+.rb-t i{display:block;height:100%;border-radius:99px;background:var(--navy)}
+.rb-t i.ok{background:var(--good)}
+.rb-t em{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--gold);border-radius:2px}
+.rb b{font-family:var(--f-display);font-size:16px;text-align:right}
+.rb small{grid-column:2/4;font-size:11px;color:var(--muted)}
+.verdict{border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px;border:1px solid var(--line)}
+.verdict.good{background:color-mix(in srgb,var(--good) 12%,var(--card));border-color:transparent}
+.verdict.warn{background:var(--gold-soft);border-color:transparent}
+.verdict.bad{background:color-mix(in srgb,var(--bad) 12%,var(--card));border-color:transparent}
+.verdict small{color:var(--muted);font-size:12px}
+.prio{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
@@ -265,6 +300,7 @@ function buildSchedule(p){
 const FOCUS=['Writing Task 2 essay','Reading: full test, 60 min','Writing Task 1 report','Reading: question types','Writing Task 2 essay','Speaking: full test, recorded','Review the week'];
 const phaseOf=n=>PHASES.find(p=>n>=p.a&&n<=p.b)||(n<1?PHASES[0]:PHASES[PHASES.length-1]);
 function baseTasks(n){
+  if(PLAN&&PLAN.profile&&PLAN.profile.rank)return genTasks(n,PLAN.profile);
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -480,7 +516,7 @@ function wotdCard(n){
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
   const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(),wd=WL.filter(x=>wt[x.k]).length;
-  return `<div class="wrap">
+  return `<div class="wrap">${PLAN&&!PLAN.profile?`<section class="card wotd"><b>Make this plan yours</b><span class="note">Take the 10-minute tutor check: your level, weak skills and daily time decide your tasks.</span><button class="btn primary" data-wstart="1">Start the check</button></section>`:''}
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
@@ -667,12 +703,15 @@ function planPreview(p){
 function reminderCode(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null;
   if(!uid||!PLAN)return null;
-  return JSON.stringify({id:uid,name:PLAN.name||'',start:PLAN.start,exam:PLAN.exam||'',days:DAYS,target:TARGET});
+  const pr=PLAN.profile,o={id:uid,name:PLAN.name||'',start:PLAN.start,exam:PLAN.exam||'',days:DAYS,target:TARGET};
+  if(pr&&pr.rank)Object.assign(o,{rank:pr.rank.join(''),mwd:pr.mwd,mwe:pr.mwe});
+  return JSON.stringify(o);
 }
 function openSettings(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
+   <section class="card"><h3 style="font-size:16px">Personal tutor check</h3><p class="note" style="margin:0">${PLAN&&PLAN.profile?`Last done ${esc(PLAN.profile.at||'')}. Redo it to update your level, weak skills and daily time. Your progress stays.`:'Answer a few questions and take a short placement test, and the app builds daily tasks around your weak skills and your time.'}</p><button class="btn block primary" data-wstart="1">${PLAN&&PLAN.profile?'Redo the check':'Start the check'}</button></section>
    ${planForm(planDefaults(),false)}
    <section class="card"><h3 style="font-size:16px">Reminders from the bot</h3>
     ${code?`<p class="note" style="margin:0">So the bot's daily messages follow <b>your</b> plan, copy this code and send it to the person who manages the bot. Send it again whenever you change your plan.</p>
@@ -714,19 +753,263 @@ function modsRef(scope){
   const k='d'+pad(sel),m=clone(S.days[k]);return {m,commit:later=>{S.days[k]=m;touch(k,later);}};
 }
 
+/* ---------- tutor: diagnostic, estimates, personal plan ---------- */
+const SK={L:'Listening',R:'Reading',W:'Writing',S:'Speaking'};
+const PROBLEMS={
+  L:[['spelling','Spelling names & numbers'],['speed','Fast speakers'],['maps','Maps & plans'],['distract','Speakers change answers'],['focus','Losing focus in Parts 3–4']],
+  R:[['time','Running out of time'],['tfng','True / False / Not Given'],['headings','Matching headings'],['vocab','Unknown words'],['long','Long, dense passages']],
+  W:[['ideas','Finding ideas'],['grammar','Grammar mistakes'],['overview','Task 1 overview'],['coherence','Paragraph structure'],['time','Finishing on time']],
+  S:[['fluency','Pausing, hesitating'],['vocab','Limited vocabulary'],['pron','Pronunciation'],['part2','Speaking for 2 minutes'],['ideas','Ideas for Part 3']]
+};
+const DRILLS={
+  L:{spelling:'Dictation: 10 names, numbers and dates, then check spelling',speed:'Shadowing: repeat a 2-minute BBC clip at full speed',maps:'One map or plan task + direction words (opposite, next to…)',distract:'Sections 1–2: mark every place a speaker changes an answer',focus:'Section 4 lecture: note-taking practice, then answer'},
+  R:{time:'One passage in exactly 18 minutes, no extra time',tfng:'15 True / False / Not Given statements, explain each answer',headings:'Matching headings: one passage, read first sentences only',vocab:'Paraphrase hunt: find 10 word pairs in a passage',long:'Skim three passages, 3 minutes each, main idea only'},
+  W:{ideas:'Plan three Task 2 questions, 5 minutes each (ideas only)',grammar:'Rewrite 5 of your sentences using complex structures',overview:'Write only the overview for two Task 1 charts',coherence:'One body paragraph: idea → explanation → example',time:'Timed: Task 2 intro + one body paragraph in 15 minutes'},
+  S:{fluency:'Talk for 2 minutes non-stop on a random topic, recorded',vocab:'Learn 5 natural phrases for one Part 1 topic and use them',pron:'Shadow a 1-minute clip, copying stress and intonation',part2:'Part 2 card: 1 min notes, then a full 2-minute talk',ideas:'Answer 4 Part 3 questions: opinion + reason + example'}
+};
+const MAINS={
+  full:{L:[['Listening: full test, 4 sections + transcript check',45],['Listening: Sections 3–4 twice + dictation',40]],
+        R:[['Reading: full test, 60 minutes',60],['Reading: one passage for each question type you find hard',45]],
+        W:[['Writing Task 2 essay, 40 minutes',45],['Writing Task 1 report, 20 minutes + rewrite',35]],
+        S:[['Speaking: full test recorded (Parts 1–3)',30],['Speaking: three Part 2 cards + Part 3 questions',30]]},
+  short:{L:[['Listening: two sections + transcript check',20]],R:[['Reading: one passage in 20 minutes',20]],
+        W:[['Writing: Task 2 plan + one body paragraph',20]],S:[['Speaking: two Part 2 cards, recorded',20]]}
+};
+/* Same rotation as reminders.py: weakest skill twice, second twice, third and fourth once, Sunday review. */
+const ROTA=[0,1,2,0,1,3,-1];
+function mainFor(n,p){
+  const wd=(dateOf(n).getDay()+6)%7,mins=wd>=5?p.mwe:p.mwd;
+  if(MOCKS[n])return {label:`Full mock · ${MOCKS[n]}`,sub:mins<150?'About 2 h 45 min. Short on time? Do Listening + Reading today, Writing + Speaking tomorrow.':'L 30 · R 60 · W 60 · S 15 min, exam conditions',m:165};
+  const r=ROTA[wd];if(r<0)return {label:'Weekly review: redo this week\'s mistakes',sub:'Then plan next week',m:30};
+  const sk=p.rank[r],v=ROTA.slice(0,wd).filter(x=>x===r).length,set=mins<60?MAINS.short:MAINS.full,opt=set[sk][Math.min(v,set[sk].length-1)];
+  return {label:opt[0],sub:`${SK[sk]} focus`,m:opt[1],sk};
+}
+function genTasks(n,p){
+  const wd=(dateOf(n).getDay()+6)%7,M=wd>=5?p.mwe:p.mwd,mn=mainFor(n,p);
+  const out=[{k:'main',label:mn.label,sub:`${mn.sub} · ~${mn.m} min`,main:true}];let used=mn.m;
+  const probs=sk=>(p.problems&&p.problems[sk]&&p.problems[sk].length?p.problems[sk]:PROBLEMS[sk].map(x=>x[0]));
+  const drill=(sk,i)=>{const ps=probs(sk);return DRILLS[sk][ps[(n+i)%ps.length]];};
+  const add=(k,label,why,m,cond)=>{if(cond===false||used+m>M+10)return;out.push({k,label,sub:`${why} · ~${m} min`});used+=m;};
+  const pos=sk=>p.rank.indexOf(sk);
+  add('words',M<60?'10 new words in Anki':'20 new words in Anki','Collocations, not single words',M<60?10:15);
+  add('drill',drill(p.rank[0],0),`${SK[p.rank[0]]} is your weakest skill`,15);
+  add('speak','Speaking: one Part 2 recording','Listen back for pauses and mistakes',10,mn.sk!=='S'&&pos('S')<=2);
+  add('grammar','Grammar: 15 min on one error type','Pick it from your mistake log',15,pos('W')<=1||pos('S')<=1);
+  add('listen','Listening section + transcript','Find why each answer was missed',20,mn.sk!=='L'&&pos('L')<=2);
+  add('drill2',drill(p.rank[1],1),`${SK[p.rank[1]]} practice`,15);
+  out.push({k:'log',label:'Mistake log updated',sub:'One line per error, type + fix · ~5 min'});
+  return out;
+}
+
+/* placement test — original material written for this app */
+const GQ=[
+  ['If I ___ more time, I would study abroad.',['have','had','will have','would have'],1],
+  ['The number of international students ___ increased since 2010.',['have','has','are','were'],1],
+  ['She has lived in Tashkent ___ 2019.',['for','since','during','from'],1],
+  ['___ the bad weather, the festival went ahead.',['Although','Despite','However','Because'],1],
+  ['The report ___ by the committee last week.',['was published','published','has published','is publishing'],0],
+  ['Governments should ___ measures to reduce air pollution.',['make','do','take','give'],2],
+  ['Hardly ___ the station when the train left.',['I had reached','had I reached','I reached','did I reached'],1],
+  ['Sales remained ___ at around 20% for the whole period.',['stable','still','quiet','calm'],0],
+  ['It is essential that every student ___ the form by Friday.',['submits','submit','will submit','submitted'],1],
+  ['The new policy had a significant ___ on unemployment.',['affect','effect','effective','affection'],1]
+];
+const PASSAGE=[['A','Vertical farms grow crops in stacked layers inside buildings, using LED lighting and nutrient-rich water instead of soil. Supporters argue that they could help cities feed growing populations while using far less land. Because water is collected and recycled in a closed system, some facilities report using a small fraction of the water needed in open fields.'],
+  ['B','The idea is not new. In the late 1990s, researchers in the United States began to promote the idea of farming inside tall city buildings, and the first commercial vertical farms opened about a decade later.'],
+  ['C','However, the costs are high. Lighting accounts for a large share of energy use, and where electricity comes mainly from fossil fuels, a lettuce grown indoors can have a larger carbon footprint than one grown in a field and transported hundreds of kilometres. As a result, most vertical farms concentrate on leafy greens and herbs, which grow quickly and sell at high prices. Staple crops such as wheat and rice are rarely grown this way, as they need too much space and light to be profitable.'],
+  ['D','Several well-funded companies have closed in recent years, which has led some investors to question whether the industry can survive without government support. Others believe that cheaper LEDs and renewable energy will eventually make indoor farming competitive. For now, most experts see vertical farms not as a replacement for traditional agriculture but as an addition to it, particularly in cities with little available farmland.']];
+const RQ=[
+  {t:'tfng',q:'Vertical farms grow plants without soil.',a:'TRUE'},
+  {t:'tfng',q:'In vertical farms, water is usually used only once.',a:'FALSE'},
+  {t:'tfng',q:'Vertical farming is more popular in Asia than in Europe.',a:'NOT GIVEN'},
+  {t:'tfng',q:'A lettuce grown indoors always has a smaller carbon footprint than one grown in a field.',a:'FALSE'},
+  {t:'mc',q:'Why do most vertical farms grow leafy greens and herbs?',o:['The seeds are cheap','They grow fast and sell at high prices','They are easy to transport','They need very little light'],a:1},
+  {t:'mc',q:'What is the writer\'s overall conclusion?',o:['Vertical farms will replace traditional farms','Vertical farming has no future','Vertical farms are a useful addition to traditional farming','Vertical farms only work with government money'],a:2},
+  {t:'gap',q:'Staple crops need too much space and ______ to be profitable.',a:['light']},
+  {t:'gap',q:'Some investors doubt the industry can survive without government ______.',a:['support']}
+];
+const LSCRIPT=[['W','Good morning, City Language Centre. How can I help you?'],['M','Hi. I\'d like to join your evening IELTS course, please.'],['W','Of course. Can I take your name?'],['M','Yes, it\'s Daniel Fenwick.'],['W','How do you spell your surname?'],['M','F, E, N, W, I, C, K.'],['W','Thank you. And a phone number?'],['M','It\'s 0 7 9 4 6, 3 1 8 5 2 0.'],['W','Our evening course runs on Tuesdays and Thursdays. Which would you prefer?'],['M','Thursday, please. I usually work late on Tuesdays.'],['W','No problem. Classes start at half past six and finish at eight.'],['M','And how much is the course?'],['W','The full course is two hundred and forty pounds, but students get fifteen per cent off.'],['M','Great, I\'m a student. Oh, and you asked how I heard about you? A friend recommended you, actually.'],['W','Lovely. I\'ll send you the details today.']];
+const LQ=[
+  {q:'Surname',a:['fenwick']},{q:'Phone number',a:['07946318520'],num:true},{q:'Preferred day',a:['thursday','thu']},
+  {q:'Class start time',a:['6.30','6:30','630','18.30','18:30','1830','halfpastsix','6.30pm','6:30pm','630pm']},
+  {q:'Full course price (£)',a:['240','£240','240pounds']},{q:'Heard about the centre from a…',a:['friend']}
+];
+const norm=s=>String(s||'').toLowerCase().replace(/[\s,]/g,'').replace(/[^a-z0-9.:£]/g,'');
+const ttsOK=()=>'speechSynthesis' in window&&typeof SpeechSynthesisUtterance!=='undefined';
+function scoreTest(t){
+  const g=t.g?GQ.filter((q,i)=>t.g[i]===q[2]).length:null;
+  const r=t.r?RQ.filter((q,i)=>{const v=t.r[i];if(q.t==='gap')return q.a.includes(norm(v));return v===q.a;}).length:null;
+  const l=t.l?LQ.filter((q,i)=>{const v=norm(t.l[i]);return q.a.includes(v)||q.a.includes(v.replace(/^£/,'').replace(/pounds?$/,''));}).length:null;
+  return {g,r,l};
+}
+const half=x=>Math.round(x*2)/2;
+const clampB=x=>Math.max(3.5,Math.min(9,x));
+function estimate(d,t){
+  const sc=scoreTest(t),conf={1:4.5,2:5,3:5.5,4:6,5:6.5},prev=d.hasPrev?d.prev:null,est={},src={};
+  for(const k of ['L','R','W','S']){
+    let base=conf[d.conf[k]||3];src[k]='self-check';
+    if(prev&&prev[k]){base=Number(prev[k]);src[k]='previous IELTS';}
+    est[k]=base;
+  }
+  if(sc.r!=null&&t.rDone){const b=toBand(Math.round(sc.r/8*40),RB);est.R=prev&&prev.R?half((b+Number(prev.R))/2):b;src.R='placement test';}
+  if(sc.l!=null&&t.lDone){const b=Math.min(7,toBand(Math.round(sc.l/6*40),LB));est.L=prev&&prev.L?half((b+Number(prev.L))/2):b;src.L='placement test';}
+  if(sc.g!=null&&t.gDone){const adj=sc.g>=9?0.5:sc.g<=5?-0.5:0;for(const k of ['W','S'])if(!(prev&&prev[k]))est[k]=est[k]+adj;}
+  for(const k in est)est[k]=clampB(half(est[k]));
+  const overallNow=half((est.L+est.R+est.W+est.S)/4);
+  const target=Number(d.target)||7,need=Math.max(Number(d.minSkill)||0,0);
+  const gapOf=k=>Math.max(target,need)-est[k];
+  const rank=['L','R','W','S'].sort((a,b)=>gapOf(b)-gapOf(a)||(d.conf[a]||3)-(d.conf[b]||3));
+  const days=d.exam?dayDiff(d.start,d.exam):Number(d.days)||60;
+  let hours=0;for(let i=0;i<days;i++){const dt=new Date(parseD(d.start).getTime()+i*864e5),we=dt.getDay()===0||dt.getDay()===6;hours+=(we?d.mwe:d.mwd)/60;}
+  const gap=Math.max(0,target-overallNow),needH=gap*175;
+  const verdict=gap<=0?['good','You are already around your target. Focus on consistency and exam technique.']:hours>=needH?['good','Realistic with steady daily work.']:hours>=needH*0.6?['warn','Ambitious but possible. Do not skip days.']:['bad','Very ambitious. Add daily time or choose a later exam date if you can.'];
+  return {est,src,overallNow,rank,days,hours:Math.round(hours),needH:Math.round(needH),gap,verdict,sc};
+}
+
+/* wizard */
+let WZ=null;
+const WSTEPS=['intro','goal','time','history','skills','test','result'];
+function startWizard(){initWizard();tab='today';renderAll();scrollTo(0,0);}
+function initWizard(){
+  const p=PLAN||planDefaults(),pr=(PLAN&&PLAN.profile)||{};
+  WZ={step:0,part:'g',lPlays:0,t:{g:{},r:{},l:{}},d:{
+    name:p.name||'',purpose:pr.purpose||'',type:pr.type||'Academic',target:p.target||7,minSkill:pr.minSkill||0,
+    start:p.start||isoD(new Date()),exam:p.exam||'',days:p.days||60,mwd:pr.mwd||120,mwe:pr.mwe||180,when:pr.when||'morning',
+    hasPrev:!!pr.prev,prev:pr.prev||{L:'',R:'',W:'',S:''},conf:pr.conf||{L:3,R:3,W:3,S:3},problems:pr.problems||{L:[],R:[],W:[],S:[]}}};
+}
+const chip=(field,val,label,on)=>`<button type="button" class="chip ${on?'on':''}" data-wchip="${field}" data-val="${esc(val)}" aria-pressed="${on}">${label}</button>`;
+function wzHead(){const i=WZ.step;return `<div class="wz-prog"><div class="pbar"><i style="width:${i/(WSTEPS.length-1)*100}%"></i></div><span class="note">Step ${i+1} of ${WSTEPS.length}</span></div>`;}
+function wzNav(next='Next',back=true){return `<div class="wz-nav">${back&&WZ.step>0?'<button class="btn" data-wnav="-1">Back</button>':'<span></span>'}<button class="btn primary" data-wnav="1">${next}</button></div>`;}
+function viewWizard(){
+  const d=WZ.d,s=WSTEPS[WZ.step];let b='';
+  if(s==='intro')b=`<h2>Let's build your personal plan</h2>
+    <p>I will ask about your goal, your time and your weak points, then give you a short placement test. From your answers I will build a daily plan that fits you.</p>
+    <ul class="wz-list"><li>About 10–15 minutes</li><li>The test is optional but makes your plan much more accurate</li><li>You can redo this any time from Settings</li></ul>${wzNav('Start')}`;
+  if(s==='goal')b=`<h2>Your goal</h2>
+    <div class="field"><label class="label" for="wName">Your name</label><input id="wName" data-w="name" type="text" maxlength="30" value="${esc(d.name)}"></div>
+    <div class="field"><span class="label">Why do you need IELTS?</span><div class="chips">${[['study','Study abroad'],['c1','C1 certificate / job'],['migrate','Moving abroad'],['other','Other']].map(([v,l])=>chip('purpose',v,l,d.purpose===v)).join('')}</div></div>
+    <div class="field"><span class="label">Test type</span><div class="chips">${['Academic','General Training'].map(v=>chip('type',v,v,d.type===v)).join('')}</div></div>
+    <div class="grid2"><div class="field"><label class="label" for="wTarget">Overall band you need</label><select id="wTarget" data-w="target" class="ein">${[5.5,6,6.5,7,7.5,8,8.5].map(v=>`<option value="${v}" ${Number(d.target)===v?'selected':''}>${v.toFixed(1)}</option>`).join('')}</select></div>
+    <div class="field"><label class="label" for="wMin">Minimum in each skill?</label><select id="wMin" data-w="minSkill" class="ein">${[[0,'No minimum'],[5.5,'5.5'],[6,'6.0'],[6.5,'6.5'],[7,'7.0'],[7.5,'7.5']].map(([v,l])=>`<option value="${v}" ${Number(d.minSkill)===v?'selected':''}>${l}</option>`).join('')}</select></div></div>
+    ${wzNav()}`;
+  if(s==='time')b=`<h2>Your time</h2>
+    <div class="grid2"><div class="field"><label class="label" for="wStart">Day 1</label><input id="wStart" data-w="start" class="ein" type="date" value="${esc(d.start)}"></div>
+    <div class="field"><label class="label" for="wExam">Exam date</label><input id="wExam" data-w="exam" class="ein" type="date" value="${esc(d.exam)}"></div></div>
+    ${d.exam?'':`<div class="field"><span class="label">No exam date yet? Plan length</span><div class="chips">${[30,45,60,90,120].map(v=>chip('days',v,v+' days',Number(d.days)===v)).join('')}</div></div>`}
+    <div class="field"><span class="label">Study time on weekdays</span><div class="chips">${[30,60,90,120,180,240].map(v=>chip('mwd',v,v<60?v+' min':v/60+' h',Number(d.mwd)===v)).join('')}</div></div>
+    <div class="field"><span class="label">Study time on weekends</span><div class="chips">${[30,60,90,120,180,240,300].map(v=>chip('mwe',v,v<60?v+' min':v/60+' h',Number(d.mwe)===v)).join('')}</div></div>
+    <div class="field"><span class="label">Best time to study</span><div class="chips">${[['morning','Morning'],['evening','Evening'],['both','Both']].map(([v,l])=>chip('when',v,l,d.when===v)).join('')}</div></div>
+    <p class="note" style="margin:0">Be honest. A plan you can follow every day beats a perfect plan you skip.</p>${wzNav()}`;
+  if(s==='history')b=`<h2>Have you taken IELTS before?</h2>
+    <div class="chips">${chip('hasPrev','no','No, never',!d.hasPrev)}${chip('hasPrev','yes','Yes',d.hasPrev)}</div>
+    ${d.hasPrev?`<p class="note" style="margin:0">Your most recent scores:</p><div class="sc4">${['L','R','W','S'].map(k=>`<label>${SK[k]}<select class="ein" data-wprev="${k}"><option value="">—</option>${[3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9].map(v=>`<option value="${v}" ${Number(d.prev[k])===v?'selected':''}>${v.toFixed(1)}</option>`).join('')}</select></label>`).join('')}</div>`:''}
+    ${wzNav()}`;
+  if(s==='skills')b=`<h2>How strong is each skill?</h2><p class="note" style="margin:0">Rate yourself, then tap the problems you often have.</p>
+    ${['L','R','W','S'].map(k=>`<div class="skillbox"><div class="card-h"><b>${SK[k]}</b><span class="note">${['','Very weak','Weak','OK','Good','Strong'][d.conf[k]]}</span></div>
+      <div class="mood">${[1,2,3,4,5].map(v=>`<button type="button" data-wconf="${k}" data-val="${v}" class="${d.conf[k]===v?'on':''}"><b>${v}</b></button>`).join('')}</div>
+      <div class="chips">${PROBLEMS[k].map(([v,l])=>chip('prob:'+k,v,l,d.problems[k].includes(v))).join('')}</div></div>`).join('')}
+    ${wzNav()}`;
+  if(s==='test')b=viewTest();
+  if(s==='result')b=viewResult();
+  return `<div class="wrap"><section class="card wz">${wzHead()}${b}</section></div>`;
+}
+function viewTest(){
+  const t=WZ.t,part=WZ.part;
+  const tabs=`<div class="seg">${[['g','Grammar'],['r','Reading'],['l','Listening']].map(([k,l])=>`<button type="button" data-wpart="${k}" class="${part===k?'on':''}">${l}${t[k+'Done']?' ✓':''}</button>`).join('')}</div>`;
+  let body='';
+  if(part==='g')body=`<p class="note" style="margin:0">10 questions · about 4 minutes · choose the best answer.</p>${GQ.map((q,i)=>`<div class="q"><p><b>${i+1}.</b> ${esc(q[0])}</p><div class="chips">${q[1].map((o,j)=>`<button type="button" class="chip ${t.g[i]===j?'on':''}" data-wg="${i}" data-val="${j}">${esc(o)}</button>`).join('')}</div></div>`).join('')}
+    <button class="btn block primary" data-wdone="g">Finish grammar</button>`;
+  if(part==='r')body=`<p class="note" style="margin:0">One short passage · 8 questions · about 10 minutes.</p>
+    <div class="passage"><h3>Vertical farming: promise and limits</h3>${PASSAGE.map(([k,p])=>`<p><b>${k}</b> ${esc(p)}</p>`).join('')}</div>
+    <p class="label" style="margin:6px 0 0">Questions 1–4 · TRUE, FALSE or NOT GIVEN?</p>
+    ${RQ.map((q,i)=>`<div class="q"><p><b>${i+1}.</b> ${esc(q.q)}</p>${q.t==='tfng'?`<div class="chips">${['TRUE','FALSE','NOT GIVEN'].map(o=>`<button type="button" class="chip ${t.r[i]===o?'on':''}" data-wr="${i}" data-val="${o}">${o}</button>`).join('')}</div>`:q.t==='mc'?`<div class="chips col">${q.o.map((o,j)=>`<button type="button" class="chip ${t.r[i]===j?'on':''}" data-wr="${i}" data-val="${j}">${'ABCD'[j]}. ${esc(o)}</button>`).join('')}</div>`:`<input type="text" class="ein" data-wrt="${i}" value="${esc(t.r[i]||'')}" placeholder="ONE WORD" maxlength="20">`}</div>`).join('')}
+    <button class="btn block primary" data-wdone="r">Finish reading</button>`;
+  if(part==='l')body=ttsOK()?`<p class="note" style="margin:0">A phone call, like IELTS Listening Part 1. Read the form first. You can play it <b>once</b>, like the real test. Turn your sound on.</p>
+    <button class="btn block ${WZ.lPlays?'':'primary'}" data-wplay="1" ${WZ.lPlays?'disabled':''}>${WZ.lPlays?(WZ.playing?'Playing…':'Played'):'▶ Play recording'}</button>
+    <div class="q"><p class="label">Course booking form · write a word or number</p>${LQ.map((q,i)=>`<label class="lrow"><span>${i+1}. ${esc(q.q)}</span><input type="text" class="ein" data-wlt="${i}" value="${esc(t.l[i]||'')}" maxlength="30"></label>`).join('')}</div>
+    <button class="btn block primary" data-wdone="l">Finish listening</button>`
+    :`<p class="note">This device cannot play the listening test. That's fine: your self-check is used for Listening, and your Day 1 mock will measure it properly.</p>`;
+  return `<h2>Placement test</h2>${tabs}${body}${wzNav(t.gDone||t.rDone||t.lDone?'See my results':'Skip the test')}`;
+}
+function viewResult(){
+  const d=WZ.d,R=estimate(d,WZ.t);WZ.R=R;
+  const tgt=Math.max(Number(d.target),Number(d.minSkill)||0);
+  const bars=['L','R','W','S'].map(k=>{const e=R.est[k],w=(e-3)/6*100,tw=(tgt-3)/6*100;return `<div class="rb"><span class="rb-l">${SK[k]}</span><div class="rb-t"><i style="width:${w}%" class="${e>=tgt?'ok':''}"></i><em style="left:${tw}%"></em></div><b class="num">${e.toFixed(1)}</b><small>${R.src[k]}</small></div>`;}).join('');
+  const keep=[PLAN,DAYS,START,MOCKS,MOCKDAYS,PHASES,TARGET];buildSchedule({start:d.start,exam:d.exam,days:d.days,target:d.target});
+  let sn=2;while(sn<DAYS&&(MOCKS[sn]||[0,6].includes(dateOf(sn).getDay())))sn++;
+  const sample=genTasks(sn,{rank:R.rank,mwd:d.mwd,mwe:d.mwe,problems:d.problems}),sampleDay=fmt(dateOf(sn));
+  [PLAN,DAYS,START,MOCKS,MOCKDAYS,PHASES,TARGET]=keep;
+  const v=R.verdict;
+  return `<h2>Your results</h2>
+    <div class="stats"><div class="stat"><span class="label">Now (estimate)</span><span class="v">${R.overallNow.toFixed(1)}</span></div><div class="stat hot"><span class="label">Target</span><span class="v">${Number(d.target).toFixed(1)}</span></div></div>
+    <div class="rbars">${bars}<p class="note" style="margin:0">The line shows your target${Number(d.minSkill)?' (or skill minimum)':''}.</p></div>
+    ${R.sc.g!=null&&WZ.t.gDone?`<p class="note" style="margin:0">Grammar test: <b>${R.sc.g}/10</b>${WZ.t.rDone?` · Reading: <b>${R.sc.r}/8</b>`:''}${WZ.t.lDone?` · Listening: <b>${R.sc.l}/6</b>`:''}</p>`:''}
+    <div class="verdict ${v[0]}"><b>${R.days} days · about ${R.hours} study hours</b><span>${v[1]}</span>${R.gap>0?`<small>Rule of thumb: about 150–200 focused hours for +1 band, so +${R.gap.toFixed(1)} needs roughly ${R.needH} hours.</small>`:''}</div>
+    <h3 style="font-size:16px">Your priority order</h3>
+    <ol class="prio">${R.rank.map((k,i)=>`<li><b>${SK[k]}</b> <span class="note">${i===0?'main focus, 2 days a week + daily drill':i===1?'2 days a week':'1 day a week'}</span></li>`).join('')}</ol>
+    <h3 style="font-size:16px">A typical weekday for you <span class="note" style="font-weight:500">(${sampleDay})</span></h3>
+    <ul class="tasks">${sample.map(x=>`<li class="task"><div class="tx"><b>${esc(x.label)}</b><small>${esc(x.sub)}</small></div></li>`).join('')}</ul>
+    <p class="note" style="margin:0">These are estimates from a short test. Your first full mock gives the real numbers, and you can redo this check any time in Settings.</p>
+    ${wzNav('Start my plan')}`;
+}
+function finishWizard(){
+  const d=WZ.d,R=WZ.R||estimate(d,WZ.t);
+  const plan=Object.assign({},PLAN,{name:d.name.trim(),start:d.start,exam:d.exam,days:Number(d.days)||60,target:Number(d.target),
+    profile:{purpose:d.purpose,type:d.type,minSkill:Number(d.minSkill)||0,mwd:Number(d.mwd),mwe:Number(d.mwe),when:d.when,
+      prev:d.hasPrev?d.prev:null,conf:d.conf,problems:d.problems,est:R.est,rank:R.rank,test:R.sc,at:isoD(new Date())}});
+  const err=planError(plan);if(err){toast(err);WZ.step=2;renderView();return;}
+  buildSchedule(plan);touch('plan');WZ=null;sel=clampDay(todayIdx());haptic('ok');toast('Your plan is ready');tab='today';renderAll();scrollTo(0,0);
+}
+function wzValid(){
+  const d=WZ.d,s=WSTEPS[WZ.step];
+  if(s==='goal'&&!d.name.trim())return 'Please write your name';
+  if(s==='time'){const e=planError({start:d.start,exam:d.exam,days:d.days});if(e)return e;}
+  return '';
+}
+function playListening(){
+  if(!ttsOK()||WZ.lPlays)return;
+  const synth=window.speechSynthesis,voices=synth.getVoices().filter(v=>/^en/i.test(v.lang));
+  const pick=re=>voices.find(v=>re.test(v.name))||null;
+  const vW=pick(/female|samantha|serena|kate|libby|sonia|susan|zira|google uk english female/i)||voices[0]||null;
+  const vM=pick(/male|daniel|arthur|ryan|george|david|google uk english male/i)||voices[1]||vW;
+  WZ.lPlays=1;WZ.playing=true;renderView();
+  LSCRIPT.forEach(([who,txt],i)=>{const u=new SpeechSynthesisUtterance(txt);u.lang='en-GB';u.rate=0.95;const v=who==='W'?vW:vM;if(v)u.voice=v;u.pitch=who==='W'?1.15:0.85;
+    if(i===LSCRIPT.length-1)u.onend=()=>{WZ.playing=false;if(WSTEPS[WZ.step]==='test')renderView();};synth.speak(u);});
+}
+
 /* ---------- render ---------- */
 function renderView(){
   const v=document.getElementById('view');
-  if(!PLAN){v.innerHTML=`<div class="wrap">${planForm(planDefaults(),true)}</div>`;return;}
+  if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();return;}
   v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
 }
-function renderAll(){renderHeader();renderTabs();renderView();document.getElementById('tabs').hidden=!PLAN;document.documentElement.style.setProperty('--target',`"${TARGET.toFixed(1)}"`);}
+function renderAll(){renderHeader();renderTabs();renderView();document.getElementById('tabs').hidden=!PLAN||!!WZ;document.documentElement.style.setProperty('--target',`"${TARGET.toFixed(1)}"`);}
 let tt0;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt0);tt0=setTimeout(()=>t.classList.remove('show'),1500);}
 const goScopeKind=kind=>kind==='week'?'week':editScope;
 
 /* ---------- events ---------- */
 document.addEventListener('click',async e=>{
   const g=s=>e.target.closest(s);let el;
+  if((el=g('[data-wstart]'))){closeSheet();startWizard();return;}
+  if(WZ){
+    if((el=g('[data-wnav]'))){const dir=Number(el.dataset.wnav);
+      if(dir>0){const err=wzValid();if(err){toast(err);return;}if(WSTEPS[WZ.step]==='result'){finishWizard();return;}}
+      if(window.speechSynthesis&&WZ.playing){try{speechSynthesis.cancel();}catch(x){}WZ.playing=false;}
+      WZ.step=Math.max(0,Math.min(WSTEPS.length-1,WZ.step+dir));haptic('sel');renderView();scrollTo(0,0);return;}
+    if((el=g('[data-wchip]'))){const f=el.dataset.wchip,v=el.dataset.val,d=WZ.d;
+      if(f.startsWith('prob:')){const k=f.slice(5),a=d.problems[k];d.problems[k]=a.includes(v)?a.filter(x=>x!==v):[...a,v];}
+      else if(f==='hasPrev')d.hasPrev=v==='yes';
+      else d[f]=['days','mwd','mwe'].includes(f)?Number(v):v;
+      haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
+    if((el=g('[data-wconf]'))){WZ.d.conf[el.dataset.wconf]=Number(el.dataset.val);haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
+    if((el=g('[data-wpart]'))){WZ.part=el.dataset.wpart;renderView();return;}
+    if((el=g('[data-wg]'))){WZ.t.g[Number(el.dataset.wg)]=Number(el.dataset.val);haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
+    if((el=g('[data-wr]'))){const i=Number(el.dataset.wr),q=RQ[i];WZ.t.r[i]=q.t==='mc'?Number(el.dataset.val):el.dataset.val;haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
+    if((el=g('[data-wdone]'))){const k=el.dataset.wdone;WZ.t[k+'Done']=true;haptic('ok');const nx={g:'r',r:'l',l:null}[k];
+      if(nx&&!WZ.t[nx+'Done']){WZ.part=nx;toast('Saved. Next part');}else{WZ.step=WSTEPS.indexOf('result');toast('Test finished');}
+      renderView();scrollTo(0,0);return;}
+    if((el=g('[data-wplay]'))){playListening();return;}
+  }
   if((el=g('[data-tab]'))){tab=el.dataset.tab;haptic('sel');renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-open]'))){openSettings();return;}
   if(e.target.matches&&e.target.matches('[data-close]')){closeSheet();return;}
@@ -762,6 +1045,10 @@ document.addEventListener('click',async e=>{
     return;}
 });
 document.addEventListener('change',e=>{
+  if(WZ){const t=e.target;
+    if(t.dataset.wprev){WZ.d.prev[t.dataset.wprev]=t.value;return;}
+    if(t.dataset.w){WZ.d[t.dataset.w]=t.type==='date'||t.type==='text'?t.value:Number(t.value);if(t.type==='date'){const y=scrollY;renderView();scrollTo(0,y);}return;}
+  }
   const tk=e.target.dataset.task;
   if(tk){setDay(sel,{t:Object.assign({},dayDoc(sel).t,{[tk]:e.target.checked})});const c=doneCount(sel),tot=totalCount(sel);
     if(e.target.checked){haptic(c===tot?'ok':'light');toast(c===tot?`Day ${sel} complete`:'+10 XP');}renderHeader();renderView();return;}
@@ -770,6 +1057,11 @@ document.addEventListener('change',e=>{
 });
 document.addEventListener('input',e=>{
   const t=e.target;
+  if(WZ){
+    if(t.dataset.w){WZ.d[t.dataset.w]=t.type==='date'||t.type==='text'?t.value:Number(t.value);return;}
+    if(t.dataset.wrt!=null){WZ.t.r[Number(t.dataset.wrt)]=t.value;return;}
+    if(t.dataset.wlt!=null){WZ.t.l[Number(t.dataset.wlt)]=t.value;return;}
+  }
   if(t.closest&&t.closest('[data-plan]')){const pv=document.getElementById('pPreview');if(pv)pv.textContent=planPreview(readPlanForm());return;}
   if(t.dataset.ren){const r=modsRef(goScopeKind(t.dataset.kind));r.m.rename=r.m.rename||{};r.m.rename[t.dataset.ren]=Object.assign({},r.m.rename[t.dataset.ren],{[t.dataset.f]:t.value});r.commit(true);return;}
   if(t.id==='hoursIn'||t.id==='wordsIn'){const k=t.id==='hoursIn'?'hours':'words';setDay(sel,{[k]:t.value===''?'':Math.max(0,Number(t.value))},true);renderHeader();return;}
