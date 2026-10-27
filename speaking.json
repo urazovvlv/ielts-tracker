@@ -1,0 +1,42 @@
+{
+ "part1": [
+  {"t": "Work or studies", "q": ["Do you work or are you a student?", "What do you like most about your studies?", "Is there anything you would like to change about your course?", "What do you plan to do after you graduate?"]},
+  {"t": "Hometown", "q": ["Where is your hometown?", "What do you like about it?", "Has your hometown changed much in recent years?", "Would you like to live there in the future?"]},
+  {"t": "Home and accommodation", "q": ["Do you live in a house or an apartment?", "Which room do you spend the most time in?", "What would you change about your home?", "Would you prefer to live alone or with other people?"]},
+  {"t": "Daily routine", "q": ["What is the busiest part of your day?", "Do you usually follow the same routine every day?", "Are you a morning person or an evening person?", "Has your routine changed since you were a child?"]},
+  {"t": "Mobile phones", "q": ["How often do you use your phone?", "What do you mainly use it for?", "Could you live without your phone for a week?", "Do you think people use their phones too much?"]},
+  {"t": "Reading", "q": ["Do you like reading?", "What kind of books do you enjoy?", "Do you prefer paper books or e-books?", "Did you read a lot when you were a child?"]},
+  {"t": "Music", "q": ["What kind of music do you like?", "When do you usually listen to music?", "Have you ever learned to play an instrument?", "Has your taste in music changed over the years?"]},
+  {"t": "Food and cooking", "q": ["What is your favourite food?", "Do you enjoy cooking?", "Do you prefer eating at home or in restaurants?", "Is there any food you didn't like as a child but like now?"]},
+  {"t": "Weather and seasons", "q": ["What is the weather like in your country?", "Which season do you like best?", "Does the weather affect your mood?", "Do you check the weather forecast every day?"]},
+  {"t": "Sport and exercise", "q": ["Do you do any sport?", "How often do you exercise?", "Did you play sports at school?", "Do you prefer watching sport or doing it?"]},
+  {"t": "Friends", "q": ["How often do you see your friends?", "What do you usually do together?", "Is it easy for you to make new friends?", "Do you prefer having a few close friends or many friends?"]},
+  {"t": "Shopping", "q": ["Do you enjoy shopping?", "Do you prefer shopping online or in shops?", "What was the last thing you bought?", "Do you usually plan what to buy before you go shopping?"]},
+  {"t": "Travel and holidays", "q": ["Do you like travelling?", "Where did you go on your last holiday?", "Do you prefer travelling alone or with others?", "Is there a place you would really like to visit?"]},
+  {"t": "Social media", "q": ["Which social media apps do you use?", "How much time do you spend on social media?", "Do you post things often or mostly read?", "Do you think social media has changed how people communicate?"]},
+  {"t": "Learning English", "q": ["How long have you been learning English?", "What is the most difficult part of English for you?", "How do you practise speaking?", "Do you think English will be useful in your career?"]},
+  {"t": "Free time", "q": ["What do you do in your free time?", "Do you have more free time now than before?", "Do you prefer relaxing at home or going out?", "Is there a hobby you would like to start?"]}
+ ],
+ "part3": [
+  ["Why do fewer young people read books nowadays?", "Should schools make students read more fiction?", "Will printed books disappear in the future?", "How can parents encourage children to read?"],
+  ["Who influences young people more today: parents or celebrities?", "What qualities make someone a good role model?", "Do famous people have a responsibility to behave well?", "How has the influence of family changed in your country?"],
+  ["Why do people like to visit famous places?", "What are the negative effects of tourism on a city?", "Should governments limit the number of tourists?", "How will travel change in the next twenty years?"],
+  ["Which skills are most important for young people today?", "Is it better to learn skills at school or by yourself?", "Do older people find it harder to learn new skills?", "How has the internet changed the way people learn?"],
+  ["Why do some people enjoy helping others?", "Should helping in the community be compulsory for students?", "Do people help their neighbours less than in the past?", "Who should help poor people: the government or individuals?"],
+  ["Why do people prefer different types of transport?", "What problems do traffic jams cause in big cities?", "Should public transport be free?", "How can cities encourage people to cycle more?"],
+  ["How has technology changed the way people work?", "Do older people find modern technology difficult?", "Are we too dependent on technology?", "What technology will be most important in the future?"],
+  ["Why is it important to set goals?", "Do young people today have different goals from their parents?", "Is success more about hard work or luck?", "Should schools teach students how to plan their future?"],
+  ["Why are traditional festivals important?", "Are festivals becoming too commercial?", "How have celebrations changed in your country?", "Should children learn about the festivals of other cultures?"],
+  ["What makes a good teacher?", "Will technology ever replace teachers?", "Should teachers be paid more?", "Is it better to study in large or small classes?"],
+  ["Why do some people find it hard to make decisions?", "Should parents make important decisions for their children?", "Do people make better decisions alone or in groups?", "How do young people make decisions about their careers?"],
+  ["How has the internet changed the way people get information?", "Is all information online reliable?", "Should children's use of the internet be controlled?", "Will online shopping replace shops completely?"],
+  ["Why are people busier today than in the past?", "Is it good to have a busy lifestyle?", "How can people balance work and free time?", "Do employers expect too much from their workers?"],
+  ["Why do people give gifts?", "Is it better to give money or a present?", "Do people spend too much money on gifts?", "How have gift-giving customs changed in your country?"],
+  ["Why do people eat out more than before?", "Is fast food a serious problem for health?", "Should the government control what restaurants sell?", "How do eating habits differ between young and old people?"],
+  ["Why don't some people do enough exercise?", "Should sport be compulsory at school?", "Do professional athletes earn too much money?", "How can governments encourage people to be more active?"],
+  ["Why are people afraid of making mistakes?", "Can mistakes be useful for learning?", "Should schools punish students for mistakes?", "Do adults learn more from mistakes than children?"],
+  ["Is face-to-face conversation better than talking online?", "Why do some people find it hard to talk to strangers?", "Are people losing the ability to have long conversations?", "What topics do people in your country like to discuss?"],
+  ["What are the advantages of running your own business?", "Why do many small businesses fail?", "Should the government support small businesses?", "Are big companies good or bad for a country?"],
+  ["Why is patience important in life?", "Are people less patient today than in the past?", "Does technology make people more impatient?", "How can children learn to be patient?"]
+ ]
+}

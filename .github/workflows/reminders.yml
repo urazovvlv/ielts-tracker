@@ -5,12 +5,13 @@ on:
     - cron: '0 2 * * *'     # 07:00 Tashkent
     - cron: '15 14 * * *'   # 19:15 Tashkent
     - cron: '15 16 * * *'   # 21:15 Tashkent
+    - cron: '30 15 * * 0'   # Sunday 20:30 Tashkent: weekly report
   workflow_dispatch:
     inputs:
       slot:
         description: 'Which reminder to send now'
         type: choice
-        options: [morning, evening, night]
+        options: [morning, evening, night, weekly]
         default: morning
 
 jobs:
@@ -27,6 +28,7 @@ jobs:
             case "${{ github.event.schedule }}" in
               '0 2 * * *')   echo "slot=morning" >> "$GITHUB_OUTPUT" ;;
               '15 14 * * *') echo "slot=evening" >> "$GITHUB_OUTPUT" ;;
+              '30 15 * * 0') echo "slot=weekly"  >> "$GITHUB_OUTPUT" ;;
               *)             echo "slot=night"   >> "$GITHUB_OUTPUT" ;;
             esac
           fi

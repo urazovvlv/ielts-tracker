@@ -213,6 +213,23 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .duebox span{font-weight:700}
 .duebox small{display:block;color:var(--muted);font-size:12.5px}
 .known.due{color:var(--navy)}
+.qlist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;counter-reset:q}
+.qlist button{width:100%;text-align:left;border:1px solid var(--line);background:var(--sunk);border-radius:12px;padding:11px 12px;font-size:15px;line-height:1.4;color:var(--ink);min-height:44px;font-family:inherit}
+.qlist button.on{border-color:var(--navy);background:var(--navy-soft);font-weight:700}
+.recbox{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--navy-soft)}
+.recbox b{font-size:20px;color:var(--navy)}
+.rec-l{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.recdot{width:10px;height:10px;border-radius:50%;background:var(--bad);flex:none;display:inline-block}
+.recbox .recdot{animation:recp 1s ease-in-out infinite}
+@keyframes recp{50%{opacity:.25}}
+.recbtn{display:flex;align-items:center;justify-content:center;gap:8px}
+.recbtn .recdot{background:currentColor}
+.recnote{margin:0;padding:10px 12px;border-radius:12px;background:var(--sunk)}
+.rlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.rlist li{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--sunk);display:flex;flex-direction:column;gap:8px}
+.rl-h{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.rl-h b{display:block;font-size:14px}
+.rlist audio{width:100%;height:40px}
 .wtag{display:inline-block;margin:4px 8px 0 0;font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .flash{border-radius:16px;padding:22px 16px;background:var(--navy);color:#fff;text-align:center;display:flex;flex-direction:column;gap:10px;min-height:170px;justify-content:center;cursor:pointer}
 .flash .fw{font-family:var(--f-display);font-size:26px;font-weight:800}
@@ -413,7 +430,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.7';
+const BUILD='2026-10-28.8';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -514,7 +531,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0}};
 let DAILY=[];
-let tab=/^#daily/.test(location.hash)?'daily':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#daily/.test(location.hash)?'daily':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -551,7 +568,7 @@ function setObj(k,o){
 const timers={};
 function touch(k,later){
   const o=getObj(k);if(!o)return;o._ts=Date.now();const v=JSON.stringify(o);lsSet(k,v);
-  if(k==='cfg_day'||/^d\d/.test(k))focusSync();
+  if(k==='cfg_day'||/^[dm]\d/.test(k))focusSync();
   clearTimeout(timers[k]);
   if(later)timers[k]=setTimeout(()=>put(k,JSON.stringify(getObj(k))),600);else put(k,v);
 }
@@ -600,9 +617,14 @@ const WORKER_URL='https://ielts-tracker.urazovvlv.workers.dev';
 let focusT=null;
 function focusSync(){
   if(!WORKER_URL||!inTG||!PLAN)return;clearTimeout(focusT);
-  focusT=setTimeout(()=>{const t=Math.max(1,todayIdx()),days={};
+  focusT=setTimeout(()=>{try{const t=Math.max(1,todayIdx()),days={},stats={};
     for(let n=t;n<=Math.min(DAYS,t+7);n++){const c={L:0,R:0,W:0,S:0,V:0};for(const x of listFor(n))if(x.sk in c)c[x.sk]++;days[isoD(dateOf(n))]=c;}
-    fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days}),keepalive:true}).catch(()=>{});
+    for(let n=Math.max(1,t-13);n<=Math.min(DAYS,t);n++){const L=listFor(n),tk=dayDoc(n).t||{},c={t:L.length,d:0,L:0,R:0,W:0,S:0,V:0,e:0,m:0};for(const x of L)if(tk[x.k]){c.d++;if(x.sk in c)c[x.sk]++;}stats[isoD(dateOf(n))]=c;}
+    for(const e of S.ess){const k=isoD(dateOf(e.d));if(stats[k])stats[k].e++;}
+    for(const m of S.mist){const k=isoD(new Date(m.t||0));if(stats[k])stats[k].m++;}
+    const mocks=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m);return o==null?null:{n,date:isoD(dateOf(n)),name:MOCKS[n],o,L:toBand(m.L,LB),R:toBand(m.R,RB),W:Number(m.W),S:Number(m.S)};}).filter(Boolean);
+    const top=topMistakes()[0],ext={top:top?mtInfo(top.sk,top.ty)[1]:'',topn:top?top.n:0,ess:S.ess.length,mist:S.mist.length,next:MOCKDAYS.filter(n=>n>t).slice(0,2).map(n=>isoD(dateOf(n))+'|'+MOCKS[n]),day:t,days:DAYS};
+    fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days,stats,mocks,ext}),keepalive:true}).catch(()=>{});}catch(e){}
   },2500);
 }
 const tagName=k=>(TAGS.find(t=>t[0]===k)||[k,k])[1];
@@ -857,14 +879,83 @@ async function ensurePacks(){
 const wordItems=list=>list.length?list.slice(0,300).map(w=>`<li class="witem"><div class="tx"><b>${esc(w.w)}</b>${w.ipa?`<small>${esc(w.ipa)}</small>`:''}${w.m?`<small>${esc(w.m)}</small>`:''}${w.syn?`<small>≈ ${esc(w.syn)}</small>`:''}${w.ex?`<small style="font-style:italic">${esc(w.ex)}</small>`:''}${w.sec?`<span class="wtag">Day ${w.day} · ${DLABEL[w.sec]}</span>`:''}<span class="${w.due<=dnum()?'known due':'known'}">${nextLabel(w)}</span></div>${w.sec?'':`<button class="rm" data-delword="${w.id}" aria-label="Delete ${esc(w.w)}">×</button>`}</li>`).join('')+(list.length>300?`<li class="note">Showing 300 of ${list.length}. Search or pick a section to see the rest.</li>`:''):`<li class="note">${wordQuery.trim()?'No words match.':wFilter==='mine'?'No words yet. Add your own above or tap + in Daily.':'Nothing here yet.'}</li>`;
 
 /* ---------- Speak ---------- */
+/* ---------- Speaking: question bank (speaking.json) + recorder (recordings stay on this device, IndexedDB) ---------- */
+let SPK={part1:[],part3:[]},spPart=2,spT=0,spQ=0;
+async function loadSpeaking(){try{const r=await fetch('speaking.json',{cache:'no-cache'});if(r.ok)SPK=await r.json();}catch(e){}spT=Math.floor(Math.random()*Math.max(1,(SPK.part1||[]).length));}
+const MIC=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
+let recAuto=(()=>{try{return localStorage.getItem('r75pref:recauto')!=='0';}catch(e){return true;}})();
+let rec={state:'idle',err:'',start:0,label:'',part:0,mr:null,stream:null,chunks:[],dur:0},recs=[],recLoaded=false,recTick=null;
+const mmss=ms=>{const s=Math.max(0,Math.round(ms/1000));return `${Math.floor(s/60)}:${pad(s%60)}`;};
+function recMime(){for(const t of ['audio/mp4','audio/webm;codecs=opus','audio/webm','audio/ogg;codecs=opus'])try{if(MediaRecorder.isTypeSupported(t))return t;}catch(e){}return '';}
+async function micStream(){if(rec.stream&&rec.stream.getAudioTracks().some(t=>t.readyState==='live'))return rec.stream;rec.stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true}});return rec.stream;}
+function micRelease(){if(rec.stream){try{rec.stream.getTracks().forEach(t=>t.stop());}catch(e){}rec.stream=null;}}
+const speakRerender=()=>{if(onSpeak())renderView();};
+async function recStart(part,label){
+  if(rec.state!=='idle')return;
+  if(!MIC){rec.err='nomic';speakRerender();return;}
+  rec.state='starting';
+  try{const st=await micStream(),mt=recMime(),mr=new MediaRecorder(st,mt?{mimeType:mt}:undefined);
+    rec.chunks=[];mr.ondataavailable=e=>{if(e.data&&e.data.size)rec.chunks.push(e.data);};
+    mr.onstop=()=>recSave(mr.mimeType||mt||'audio/webm');
+    mr.start(1000);Object.assign(rec,{state:'rec',err:'',start:Date.now(),label,part,mr});haptic('medium');
+    clearInterval(recTick);recTick=setInterval(()=>{if(rec.state!=='rec'){clearInterval(recTick);return;}const el=document.getElementById('recT');if(el)el.textContent=mmss(Date.now()-rec.start);if(Date.now()-rec.start>5*60000)recStop();},250);}
+  catch(e){rec.err=e&&(e.name==='NotAllowedError'||e.name==='SecurityError')?'denied':'fail';rec.state='idle';micRelease();}
+  speakRerender();
+}
+function recStop(){if(rec.state!=='rec'||!rec.mr)return;rec.dur=Date.now()-rec.start;rec.state='saving';clearInterval(recTick);try{rec.mr.stop();}catch(e){rec.state='idle';micRelease();}haptic('light');}
+async function recSave(type){
+  const blob=new Blob(rec.chunks,{type}),part=rec.part;micRelease();
+  const item={id:'r'+Date.now().toString(36),part,label:rec.label,ts:Date.now(),dur:rec.dur||0,type,blob};
+  rec.state='idle';rec.mr=null;rec.chunks=[];
+  if(blob.size){recs.unshift(Object.assign({url:URL.createObjectURL(blob)},item));await idbPut(item);
+    if(recs.length>30){for(const o of recs.splice(30)){try{URL.revokeObjectURL(o.url);}catch(e){}idbDel(o.id);}}
+    toast('Recording saved');haptic('ok');
+    if(part===1){const n=((SPK.part1[spT]||{}).q||[]).length;if(n)spQ=Math.min(spQ+1,n-1);}
+    if(part===3){const n=(SPK.part3[timer.cue]||[]).length;if(n)spQ=Math.min(spQ+1,n-1);}}
+  speakRerender();
+}
+function idb(){return new Promise((res,rej)=>{try{const r=indexedDB.open('r75rec',1);r.onupgradeneeded=()=>r.result.createObjectStore('rec',{keyPath:'id'});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}catch(e){rej(e);}});}
+async function idbPut(x){try{const db=await idb();await new Promise((res,rej)=>{const t=db.transaction('rec','readwrite');t.objectStore('rec').put(x);t.oncomplete=res;t.onerror=()=>rej(t.error);});}catch(e){}}
+async function idbDel(id){try{const db=await idb();await new Promise(res=>{const t=db.transaction('rec','readwrite');t.objectStore('rec').delete(id);t.oncomplete=res;t.onerror=res;});}catch(e){}}
+async function idbAll(){try{const db=await idb();return await new Promise((res,rej)=>{const r=db.transaction('rec').objectStore('rec').getAll();r.onsuccess=()=>res(r.result||[]);r.onerror=()=>rej(r.error);});}catch(e){return [];}}
+async function loadRecs(){if(recLoaded)return;recLoaded=true;const all=await idbAll();
+  recs=all.filter(x=>x&&x.blob).sort((a,b)=>b.ts-a.ts).map(x=>Object.assign({url:URL.createObjectURL(x.blob)},x));if(recs.length)speakRerender();}
+function recBlock(part,label){
+  if(!MIC)return `<p class="note recnote">Recording does not work inside this version of Telegram. Answer out loud and record a voice message to yourself in Saved Messages instead.</p>`;
+  const err=rec.err==='denied'?'Microphone access is blocked. Allow the microphone for Telegram in your phone settings (Settings → Telegram → Microphone), then try again.':rec.err?'Could not start recording on this device.':'';
+  if(rec.state==='rec'&&rec.part===part)return `<div class="recbox"><span class="recdot" aria-hidden="true"></span><b class="num" id="recT">${mmss(Date.now()-rec.start)}</b><span class="note rec-l">${esc(rec.label)}</span><button class="btn primary" data-rec="stop">Stop</button></div>`;
+  if(rec.state==='rec')return `<p class="note recnote">Recording another answer…</p>`;
+  return `${err?`<p class="note recnote">${err}</p>`:''}<button class="btn block primary recbtn" data-rec="start" data-part="${part}" data-label="${esc(label)}" ${rec.state!=='idle'?'disabled':''}><span class="recdot" aria-hidden="true"></span>Record my answer</button>`;
+}
+function recList(){
+  return `<section class="card"><div class="card-h"><h2>My recordings</h2><span class="note">${recs.length} on this phone</span></div>
+  ${recs.length?`<ul class="rlist">${recs.map(r=>`<li><div class="rl-h"><div><b>${esc(r.label)}</b><small class="note">${fmt(new Date(r.ts))} · ${mmss(r.dur)}</small></div><button class="rm" data-rdel="${r.id}" aria-label="Delete recording">×</button></div><audio controls preload="metadata" src="${r.url}"></audio></li>`).join('')}</ul>`
+  :'<p class="note" style="margin:0">Your answers appear here. Listen back for long pauses, repeated words and grammar slips. The last 30 recordings are kept on this phone only.</p>'}</section>`;
+}
+function qList(qs,part){return `<ol class="qlist">${qs.map((q,i)=>`<li><button type="button" class="${i===spQ?'on':''}" data-spq="${i}" aria-pressed="${i===spQ}">${esc(q)}</button></li>`).join('')}</ol>`;}
 function viewSpeak(){
-  const c=CUES[timer.cue];
-  return `<section class="card"><div class="card-h"><h2>Part 2 practice</h2><button class="btn" data-cue="next">New card</button></div>
+  loadRecs();
+  const seg=`<div class="seg">${[1,2,3].map(n=>`<button data-spp="${n}" class="${spPart===n?'on':''}">Part ${n}</button>`).join('')}</div>`;
+  let body='';
+  if(spPart===1){const tp=(SPK.part1||[])[spT];
+    body=tp?`<section class="card"><div class="card-h"><div><h2>${esc(tp.t)}</h2><span class="note">Part 1 · answer in 2–3 sentences, 20–30 seconds</span></div><button class="btn" data-sptopic="1">New topic</button></div>
+      ${qList(tp.q,1)}${recBlock(1,`Part 1 · ${tp.q[spQ]||''}`)}</section>`:'<section class="card"><p class="note">Loading questions…</p></section>';}
+  else if(spPart===3){const c=CUES[timer.cue],qs=(SPK.part3||[])[timer.cue]||[];
+    body=`<section class="card"><div class="card-h"><div><h2>Discussion</h2><span class="note">Part 3 · linked to: ${esc(c[0])}</span></div><button class="btn" data-cue="next">New topic</button></div>
+      <p class="note" style="margin:0">Give a longer answer: your opinion, a reason, an example, and the other side. About 40–60 seconds.</p>
+      ${qs.length?qList(qs,3):'<p class="note">Loading questions…</p>'}${qs.length?recBlock(3,`Part 3 · ${qs[spQ]||''}`):''}</section>`;}
+  else{const c=CUES[timer.cue];
+    body=`<section class="card"><div class="card-h"><h2>Part 2 practice</h2><button class="btn" data-cue="next">New card</button></div>
   <div class="cue"><div class="label">Cue card</div><h3>${esc(c[0])}</h3><span class="note">You should say:</span><ul>${c[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
   <div class="ring" id="ring">${ringSvg()}<div><div class="t" id="tt">${timeLeftText()}</div><div class="p" id="tp">${phaseText()}</div></div></div>
+  ${rec.state==='rec'&&rec.part===2?`<div class="recbox"><span class="recdot" aria-hidden="true"></span><b class="num" id="recT">${mmss(Date.now()-rec.start)}</b><span class="note rec-l">Recording your answer</span></div>`:''}
   <div id="tctrl">${timerCtrls()}</div>
-  <p class="note" style="margin:0">Real exam: 1 minute to prepare and make notes, then speak for 2 minutes. Record yourself on your phone and listen back for pauses, repeated words and grammar slips.</p></section>`;
+  ${MIC?`<label class="wc"><input type="checkbox" data-recauto="1" ${recAuto?'checked':''}><span>Record my 2-minute answer automatically</span></label>`:''}
+  ${rec.err&&spPart===2?`<p class="note recnote">${rec.err==='denied'?'Microphone access is blocked. Allow the microphone for Telegram in your phone settings, then try again.':'Could not start recording on this device.'}</p>`:''}
+  <p class="note" style="margin:0">Real exam: 1 minute to prepare and make notes, then speak for 2 minutes.${MIC?' Your answer is recorded so you can listen back below.':' Record yourself on your phone and listen back for pauses, repeated words and grammar slips.'}</p></section>`;}
+  return seg+body+recList();
 }
+
 function timeLeft(){if(timer.phase==='prep'||timer.phase==='speak')return Math.max(0,timer.end-Date.now());if(timer.phase==='done')return 0;return 60000;}
 const timeLeftText=()=>{const s=Math.ceil(timeLeft()/1000);return `${Math.floor(s/60)}:${pad(s%60)}`;};
 const phaseText=()=>({idle:'1 min prepare · 2 min speak',prep:'Prepare · make notes',speak:'Speak now',done:'Time is up'})[timer.phase];
@@ -877,14 +968,13 @@ function timerCtrls(){
   if(timer.phase==='idle')return '<button class="btn block primary" data-timer="start">Start: 1 min prepare</button>';
   if(timer.phase==='prep')return '<div class="grid2"><button class="btn block" data-timer="reset">Reset</button><button class="btn block primary" data-timer="speak">Start speaking now</button></div>';
   if(timer.phase==='speak')return '<button class="btn block" data-timer="reset">Stop</button>';
-  const done=(dayDoc(clampDay(todayIdx())).t||{}).speak;
-  return `<div class="grid2"><button class="btn block" data-timer="reset">Again</button><button class="btn block primary" data-timer="mark" ${done?'disabled':''}>${done?'Marked as done':'Mark Speaking task done'}</button></div>`;
+  return `<div class="grid2"><button class="btn block" data-timer="reset">Again</button><button class="btn block primary" data-cue="next">New card</button></div>`;
 }
 let tick=null;
-function startPhase(ph,ms){timer.phase=ph;timer.dur=ms;timer.end=Date.now()+ms;haptic('medium');clearInterval(tick);tick=setInterval(timerTick,200);if(onSpeak())renderView();}
+function startPhase(ph,ms){if(ph==='speak'&&recAuto&&MIC&&rec.state==='idle'&&tab==='speak'&&pSeg==='speak'&&spPart===2)recStart(2,'Part 2 · '+CUES[timer.cue][0]);timer.phase=ph;timer.dur=ms;timer.end=Date.now()+ms;haptic('medium');clearInterval(tick);tick=setInterval(timerTick,200);if(onSpeak())renderView();}
 function timerTick(){
   if(timer.phase!=='prep'&&timer.phase!=='speak'){clearInterval(tick);return;}
-  if(timeLeft()<=0){if(timer.phase==='prep'){startPhase('speak',120000);return;}timer.phase='done';clearInterval(tick);haptic('ok');if(onSpeak())renderView();return;}
+  if(timeLeft()<=0){if(timer.phase==='prep'){startPhase('speak',120000);return;}timer.phase='done';clearInterval(tick);if(rec.part===2)recStop();haptic('ok');if(onSpeak())renderView();return;}
   if(!onSpeak())return;
   const tt=document.getElementById('tt');if(tt)tt.textContent=timeLeftText();
   const rc=document.getElementById('rc');if(rc){const C=2*Math.PI*44;rc.setAttribute('stroke-dashoffset',C*(1-timeLeft()/timer.dur));}
@@ -1268,7 +1358,7 @@ function saveList(name){
   if(cur.length)chunks.push(cur);
   chunks.forEach((c,i)=>{const v=JSON.stringify(c);lsSet(name+'_'+i,v);put(name+'_'+i,v);});
   for(let i=chunks.length;i<listN[name];i++){lsSet(name+'_'+i,null);put(name+'_'+i,null);}
-  listN[name]=chunks.length;const meta=JSON.stringify({n:listN[name],_ts:S.listTs[name]});lsSet(name+'_n',meta);put(name+'_n',meta);
+  listN[name]=chunks.length;const meta=JSON.stringify({n:listN[name],_ts:S.listTs[name]});lsSet(name+'_n',meta);put(name+'_n',meta);focusSync();
 }
 function readList(name,src){
   let meta=null;try{meta=JSON.parse(src[name+'_n']||'null');}catch(e){}
@@ -1580,11 +1670,16 @@ document.addEventListener('click',async e=>{
     else if(review){const id=review.q[review.i];if(id){grade(id,a==='knew');if(a==='again'&&!review.re[id]){review.re[id]=1;review.q.push(id);}review.i++;review.done++;review.show=false;}haptic(a==='knew'?'ok':'light');}
     renderView();return;}
   if((el=g('[data-flip]'))){if(review){review.show=!review.show;haptic('sel');renderView();}return;}
-  if((el=g('[data-cue]'))){let n;do{n=Math.floor(Math.random()*CUES.length);}while(n===timer.cue&&CUES.length>1);timer.cue=n;if(timer.phase!=='speak'&&timer.phase!=='prep')timer.phase='idle';renderView();return;}
+  if((el=g('[data-spp]'))){spPart=Number(el.dataset.spp);spQ=0;rec.err='';haptic('sel');renderView();return;}
+  if((el=g('[data-sptopic]'))){let n;do{n=Math.floor(Math.random()*SPK.part1.length);}while(n===spT&&SPK.part1.length>1);spT=n;spQ=0;haptic('sel');renderView();return;}
+  if((el=g('[data-spq]'))){spQ=Number(el.dataset.spq);haptic('sel');renderView();return;}
+  if((el=g('[data-rec]'))){if(el.dataset.rec==='stop')recStop();else recStart(Number(el.dataset.part),el.dataset.label);return;}
+  if((el=g('[data-rdel]'))){const id=el.dataset.rdel,r=recs.find(x=>x.id===id);recs=recs.filter(x=>x.id!==id);if(r)try{URL.revokeObjectURL(r.url);}catch(x){}idbDel(id);haptic('light');renderView();return;}
+  if((el=g('[data-cue]'))){spQ=0;let n;do{n=Math.floor(Math.random()*CUES.length);}while(n===timer.cue&&CUES.length>1);timer.cue=n;if(timer.phase!=='speak'&&timer.phase!=='prep')timer.phase='idle';renderView();return;}
   if((el=g('[data-timer]'))){const a=el.dataset.timer;
-    if(a==='start')startPhase('prep',60000);else if(a==='speak')startPhase('speak',120000);
-    else if(a==='reset'){clearInterval(tick);timer.phase='idle';renderView();}
-    else if(a==='mark'){const n=clampDay(todayIdx());setDay(n,{t:Object.assign({},dayDoc(n).t,{speak:true})});haptic('ok');toast('Speaking task done');renderHeader();renderView();}
+    if(a==='start'){if(recAuto&&MIC)micStream().catch(e=>{rec.err=e&&(e.name==='NotAllowedError'||e.name==='SecurityError')?'denied':'fail';speakRerender();});startPhase('prep',60000);}
+    else if(a==='speak')startPhase('speak',120000);
+    else if(a==='reset'){clearInterval(tick);timer.phase='idle';if(rec.part===2)recStop();if(rec.state==='idle')micRelease();renderView();}
     return;}
 });
 document.addEventListener('change',e=>{
@@ -1593,6 +1688,7 @@ document.addEventListener('change',e=>{
     if(t.dataset.w){WZ.d[t.dataset.w]=t.type==='date'||t.type==='text'?t.value:Number(t.value);if(t.type==='date'){const y=scrollY;renderView();scrollTo(0,y);}return;}
   }
   if(e.target.dataset.wcheck){WD8.checks[e.target.dataset.wcheck]=e.target.checked;saveDraft();const d=document.getElementById('wcdone');if(d)d.textContent=Object.values(WD8.checks).filter(Boolean).length+'/'+document.querySelectorAll('[data-wcheck]').length;return;}
+  if(e.target.dataset.recauto){recAuto=e.target.checked;try{localStorage.setItem('r75pref:recauto',recAuto?'1':'0');}catch(x){}return;}
   if(e.target.id==='mSrc'){mAdd.src=Number(e.target.value);return;}
   const tk=e.target.dataset.task;
   if(tk){setDay(sel,{t:Object.assign({},dayDoc(sel).t,{[tk]:e.target.checked})});const c=doneCount(sel),tot=totalCount(sel);
@@ -1646,6 +1742,7 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
   await loadDailyIndex();
+  await loadSpeaking();
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());

@@ -12,6 +12,8 @@
 // Routes:
 //   POST /sync   {initData, days:{"2026-10-28":{"L":1,"R":2,"W":0,"S":1,"V":0}, ...}}
 //   GET  /focus?ids=111,222&date=2026-10-28   header X-Key: READ_KEY or readKey(BOT_TOKEN)
+//   GET  /user?ids=111   (same key) → the whole stored doc, for the Sunday weekly report
+//   POST /sync may also carry stats (per-day done counts), mocks and ext (small summary)
 //        → {"111":{"L":1,"R":2,...}, "222":null}
 
 const ORIGIN = "https://urazovvlv.github.io";
@@ -78,6 +80,52 @@ function cleanDays(days) {
   return out;
 }
 
+const STAT_KEYS = ["t", "d", "L", "R", "W", "S", "V", "e", "m"];
+const int = (v, max) => Math.max(0, Math.min(max, Math.floor(Number(v) || 0)));
+const str = (v, max) => String(v == null ? "" : v).slice(0, max);
+const band = (v) => {
+  const n = Number(v);
+  return Number.isFinite(n) ? Math.max(0, Math.min(9, Math.round(n * 2) / 2)) : null;
+};
+
+function cleanStats(stats) {
+  const out = {};
+  if (!stats || typeof stats !== "object") return out;
+  for (const [date, c] of Object.entries(stats).slice(0, 31)) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !c || typeof c !== "object") continue;
+    const row = {};
+    for (const k of STAT_KEYS) row[k] = int(c[k], 999);
+    out[date] = row;
+  }
+  return out;
+}
+
+function cleanMocks(mocks) {
+  if (!Array.isArray(mocks)) return null;
+  return mocks.slice(0, 30).map((m) => ({
+    n: int(m && m.n, 999),
+    date: /^\d{4}-\d{2}-\d{2}$/.test(m && m.date) ? m.date : "",
+    name: str(m && m.name, 60),
+    o: band(m && m.o), L: band(m && m.L), R: band(m && m.R), W: band(m && m.W), S: band(m && m.S),
+  }));
+}
+
+function cleanExt(e) {
+  if (!e || typeof e !== "object") return null;
+  return {
+    top: str(e.top, 60), topn: int(e.topn, 9999), ess: int(e.ess, 9999), mist: int(e.mist, 9999),
+    next: Array.isArray(e.next) ? e.next.slice(0, 3).map((x) => str(x, 90)) : [],
+    day: int(e.day, 999), days: int(e.days, 999),
+  };
+}
+
+async function readAllowed(req, env) {
+  const given = req.headers.get("X-Key") || "";
+  const token = String(env.BOT_TOKEN || "").trim();
+  const derived = token ? hex(await hmac(token, "ielts-focus-read")) : "";
+  return !!given && (given === env.READ_KEY || given === derived);
+}
+
 export default {
   async fetch(req, env) {
     const url = new URL(req.url);
@@ -96,17 +144,18 @@ export default {
       const key = "u:" + id;
       const old = (await env.FOCUS.get(key, "json")) || {};
       const days = Object.assign({}, old.days, cleanDays(body.days));
+      const stats = Object.assign({}, old.stats, cleanStats(body.stats));
       const cutoff = new Date(Date.now() - KEEP_DAYS * 86400000).toISOString().slice(0, 10);
       for (const d of Object.keys(days)) if (d < cutoff) delete days[d];
-      await env.FOCUS.put(key, JSON.stringify({ days, ts: Date.now() }));
+      for (const d of Object.keys(stats)) if (d < cutoff) delete stats[d];
+      const mocks = cleanMocks(body.mocks) || old.mocks || [];
+      const ext = cleanExt(body.ext) || old.ext || null;
+      await env.FOCUS.put(key, JSON.stringify({ days, stats, mocks, ext, ts: Date.now() }));
       return json({ ok: true }, 200, cors);
     }
 
     if (url.pathname === "/focus" && req.method === "GET") {
-      const given = req.headers.get("X-Key") || "";
-      const token = String(env.BOT_TOKEN || "").trim();
-      const derived = token ? hex(await hmac(token, "ielts-focus-read")) : "";
-      if (!given || (given !== env.READ_KEY && given !== derived)) return json({ error: "wrong key" }, 403);
+      if (!(await readAllowed(req, env))) return json({ error: "wrong key" }, 403);
       const date = url.searchParams.get("date") || "";
       const ids = (url.searchParams.get("ids") || "").split(",").filter((x) => /^\d+$/.test(x)).slice(0, 50);
       const out = {};
@@ -114,6 +163,14 @@ export default {
         const doc = await env.FOCUS.get("u:" + id, "json");
         out[id] = (doc && doc.days && doc.days[date]) || null;
       }
+      return json(out);
+    }
+
+    if (url.pathname === "/user" && req.method === "GET") {
+      if (!(await readAllowed(req, env))) return json({ error: "wrong key" }, 403);
+      const ids = (url.searchParams.get("ids") || "").split(",").filter((x) => /^\d+$/.test(x)).slice(0, 50);
+      const out = {};
+      for (const id of ids) out[id] = await env.FOCUS.get("u:" + id, "json");
       return json(out);
     }
 

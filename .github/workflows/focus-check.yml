@@ -19,9 +19,9 @@ jobs:
               req = urllib.request.Request(url, headers={"User-Agent": "ielts-reminders", **(headers or {})})
               try:
                   with urllib.request.urlopen(req, timeout=20) as r:
-                      return r.status, r.read()[:120].decode("utf-8", "replace")
+                      return r.status, r.read()[:20000].decode("utf-8", "replace")
               except urllib.error.HTTPError as e:
-                  return e.code, e.read()[:120].decode("utf-8", "replace")
+                  return e.code, e.read()[:2000].decode("utf-8", "replace")
               except Exception as e:
                   return 0, repr(e)[:120]
           print("::notice::home", *get(base + "/"))
@@ -30,6 +30,13 @@ jobs:
           today = dt.datetime.now(reminders.TZ).date().isoformat()
           code, body = get(f"{base}/focus?ids=5020539876&date={today}", {"X-Key": key})
           print(f"::notice::focus {code} {body}")
+          c2, b2 = get(f"{base}/user?ids=5020539876", {"X-Key": key})
+          import json as _j
+          try:
+              d = (_j.loads(b2) if c2 == 200 else {}).get("5020539876") or {}
+              print(f"::notice::user {c2} keys={sorted(d.keys())} stats={len(d.get('stats') or {})} mocks={len(d.get('mocks') or [])}")
+          except Exception as ex:
+              print(f"::notice::user {c2} {b2[:80]} {ex}")
           if code != 200:
               raise SystemExit(1)
           PY

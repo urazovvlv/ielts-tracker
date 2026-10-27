@@ -12,7 +12,7 @@ GitHub Actions runs this three times a day. Secrets:
   READ_KEY   (optional) the READ_KEY set on that server; by default a key derived from BOT_TOKEN is used
 
 Without BOT_TOKEN it only prints the messages, which is handy for testing.
-Usage: python3 reminders.py morning|evening|night
+Usage: python3 reminders.py morning|evening|night|weekly
 """
 import datetime as dt
 import hashlib
@@ -222,13 +222,127 @@ def load_pack(day):
         return None
 
 
-def load_focus(ids, today):
-    """Skill counts per user for today from the focus server, or {} if it is not set up or unreachable."""
-    base = (os.environ.get("FOCUS_URL", "").strip() or FOCUS_DEFAULT).rstrip("/")
+def focus_key():
     key = os.environ.get("READ_KEY", "").strip()
     token = os.environ.get("BOT_TOKEN", "").strip()
     if not key and token:
         key = hmac.new(token.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
+    return key
+
+
+def load_docs(ids):
+    """Everything the app has synced for each user (for the weekly report), or {}."""
+    base = (os.environ.get("FOCUS_URL", "").strip() or FOCUS_DEFAULT).rstrip("/")
+    key = focus_key()
+    if not base or not key:
+        return {}
+    req = urllib.request.Request(f"{base}/user?{urllib.parse.urlencode({'ids': ','.join(ids)})}",
+                                 headers={"X-Key": key, "User-Agent": "ielts-reminders"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.load(r)
+            return data if isinstance(data, dict) else {}
+    except (OSError, ValueError) as err:
+        print(f"Could not read the weekly data: {err}")
+        return {}
+
+
+def short_date(d):
+    return f"{WEEKDAYS[d.weekday()][:3]} {d.day} {d.strftime('%b')}"
+
+
+def build_weekly(plan, day, today, doc):
+    e = html.escape
+    first = today - dt.timedelta(days=6)
+    rng = f"{first.day} {first.strftime('%b')} – {today.day} {today.strftime('%b')}"
+    lines = [f"<b>Weekly report · {rng}</b>", f"Day {day} of {plan.days} · {plan.days - day} days left", ""]
+    stats = (doc or {}).get("stats") or {}
+    if not stats:
+        lines.append("I have no data from your tracker for this week yet. Open the tracker once, and next Sunday's report will be full.")
+        return "\n".join(lines)
+
+    def week(offset):
+        out = {"t": 0, "d": 0, "full": 0, "days": 0, "L": 0, "R": 0, "W": 0, "S": 0, "V": 0, "e": 0, "m": 0}
+        for i in range(7):
+            c = stats.get((today - dt.timedelta(days=offset + i)).isoformat())
+            if not c:
+                continue
+            out["days"] += 1
+            for k in ("t", "d", "L", "R", "W", "S", "V", "e", "m"):
+                out[k] += int(c.get(k, 0) or 0)
+            if c.get("t") and c.get("d") == c.get("t"):
+                out["full"] += 1
+        return out
+
+    w, prev = week(0), week(7)
+    if w["t"]:
+        pct = round(w["d"] * 100 / w["t"])
+        cmp = ""
+        if prev["t"]:
+            ppct = round(prev["d"] * 100 / prev["t"])
+            diff = pct - ppct
+            cmp = f" · last week {ppct}% ({'+' if diff >= 0 else ''}{diff})"
+        lines.append(f"<b>Tasks:</b> {w['d']} of {w['t']} done ({pct}%){cmp}")
+        lines.append(f"<b>Full days:</b> {w['full']} of 7")
+    else:
+        lines.append("<b>Tasks:</b> no tasks on your lists this week.")
+    skills = [(k, w[k]) for k in ("L", "R", "W", "S")]
+    if any(n for _, n in skills) or w["V"]:
+        order = sorted(skills + [("V", w["V"])], key=lambda x: -x[1])
+        lines.append("<b>By skill:</b> " + " · ".join(f"{SKILL_NAMES[k]} {n}" for k, n in order))
+        low = min(skills, key=lambda x: x[1])
+        lines.append(f"⚠️ Least practised: <b>{SKILL_NAMES[low[0]]}</b> ({low[1]} task{'s' if low[1] != 1 else ''}). Give it more time next week.")
+    elif w["d"]:
+        lines.append("Tag your tasks with L, R, W or S in Edit list to see which skill gets the least practice.")
+
+    mocks = sorted([m for m in (doc.get("mocks") or []) if m.get("o") is not None], key=lambda m: m.get("n", 0))
+    this_week = [m for m in mocks if first.isoformat() <= (m.get("date") or "") <= today.isoformat()]
+    lines.append("")
+    if this_week:
+        lines.append("<b>Mocks this week:</b>")
+        for m in this_week:
+            parts = " · ".join(f"{k} {m[k]:.1f}" for k in ("L", "R", "W", "S") if m.get(k) is not None)
+            lines.append(f"• Day {m.get('n')} · {e(m.get('name') or '')}: <b>{m['o']:.1f}</b> ({parts})")
+        latest = this_week[-1]
+        before = [m for m in mocks if m.get("n", 0) < latest.get("n", 0)]
+        if before:
+            diff = latest["o"] - before[-1]["o"]
+            lines.append(f"Change since your previous mock: {'+' if diff >= 0 else ''}{diff:.1f}")
+        gap = plan.target - latest["o"]
+        lines.append(f"Target {plan.target:.1f}: " + ("reached 🎯" if gap <= 0 else f"{gap:.1f} to go"))
+    elif mocks:
+        lines.append(f"<b>Latest mock:</b> Day {mocks[-1].get('n')} · {mocks[-1]['o']:.1f}")
+    else:
+        lines.append("<b>Mocks:</b> none logged yet.")
+
+    ext = doc.get("ext") or {}
+    extra = []
+    if w["e"]:
+        extra.append(f"{w['e']} essay{'s' if w['e'] != 1 else ''} saved")
+    if w["m"]:
+        extra.append(f"{w['m']} mistake{'s' if w['m'] != 1 else ''} logged")
+    if extra:
+        lines.append("<b>Practice:</b> " + " · ".join(extra))
+    if ext.get("top"):
+        lines.append(f"Most repeated mistake: <b>{e(ext['top'])}</b> ({ext.get('topn', 0)}×). Review it before the next mock.")
+    upcoming = []
+    for x in ext.get("next") or []:
+        d, _, name = str(x).partition("|")
+        try:
+            dd = dt.date.fromisoformat(d)
+        except ValueError:
+            continue
+        if dd > today:
+            upcoming.append(f"{short_date(dd)} · {e(name)}")
+    if upcoming:
+        lines += ["", "<b>Next mocks:</b> " + "; ".join(upcoming)]
+    return "\n".join(lines)
+
+
+def load_focus(ids, today):
+    """Skill counts per user for today from the focus server, or {} if it is not set up or unreachable."""
+    base = (os.environ.get("FOCUS_URL", "").strip() or FOCUS_DEFAULT).rstrip("/")
+    key = focus_key()
     if not base or not key:
         return {}
     q = urllib.parse.urlencode({"ids": ",".join(ids), "date": today.isoformat()})
@@ -244,13 +358,14 @@ def load_focus(ids, today):
 
 def main():
     slot = (sys.argv[1] if len(sys.argv) > 1 else "morning").strip() or "morning"
-    if slot not in ("morning", "evening", "night"):
-        sys.exit(f"Unknown reminder '{slot}'. Use morning, evening or night.")
+    if slot not in ("morning", "evening", "night", "weekly"):
+        sys.exit(f"Unknown reminder '{slot}'. Use morning, evening, night or weekly.")
     users = load_users()
     if not users:
         sys.exit("No users: add the USERS (or CHAT_ID) secret.")
     today = dt.datetime.now(TZ).date()
     focus = load_focus(list(users), today) if slot == "morning" else {}
+    docs = load_docs(list(users)) if slot == "weekly" else {}
     failures = 0
     for chat, raw in users.items():
         try:
@@ -263,7 +378,9 @@ def main():
         if not 1 <= day <= plan.days:
             print(f"User ending …{chat[-3:]}: day {day} is outside their {plan.days}-day plan, so no reminder.")
             continue
-        if slot == "morning":
+        if slot == "weekly":
+            ok = send(chat, build_weekly(plan, day, today, docs.get(chat)), "#prog")
+        elif slot == "morning":
             text = build(slot, plan, day, today, load_pack(day), focus.get(chat) if focus else None)
             ok = send(chat, text, "#daily")
         else:
