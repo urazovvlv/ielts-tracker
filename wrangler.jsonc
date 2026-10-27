@@ -1,0 +1,8 @@
+// Cloudflare Worker for the 07:00 "today's focus" line (see README). The mini app itself stays on GitHub Pages.
+{
+  "name": "ielts-tracker",
+  "main": "worker/worker.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "kv_namespaces": [{ "binding": "FOCUS", "id": "14379a0c624e4a56a3dfc99b02a3f4f4" }]
+}
