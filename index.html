@@ -257,7 +257,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.8';
+const BUILD='2026-10-27.9';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -537,7 +537,6 @@ function viewToday(){
     ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+10</span></li>`).join('')}</ul>`}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
-  ${wotdCard(n)}
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
