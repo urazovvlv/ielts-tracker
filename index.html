@@ -240,6 +240,8 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .warn{list-style:none;margin:0;padding:10px 12px;border-radius:12px;background:var(--gold-soft);display:flex;flex-direction:column;gap:6px;font-size:13px}
 .warn li{display:flex;align-items:flex-start;gap:2px}
 .plan-in{display:flex;flex-direction:column;margin-top:10px}
+/* iPhone zooms into fields under 16px */
+input[type=text],input[type=search],input[type=date],input[type=number],select,textarea,.ein,.ein.sm,.sc{font-size:16px}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
@@ -268,7 +270,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.18';
+const BUILD='2026-10-27.19';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -287,6 +289,8 @@ function applyTheme(){
   if(inTG&&ver('7.10')){try{TG.setBottomBarColor(dark?'#121C36':'#FFFFFF');}catch(e){}}
 }
 if(inTG){TG.ready();try{TG.expand();}catch(e){} TG.onEvent&&TG.onEvent('themeChanged',applyTheme);}
+const SETBTN=inTG&&ver('7.0')&&!!TG.SettingsButton;
+const BACK=inTG&&ver('6.1')&&!!TG.BackButton;
 applyTheme();
 const haptic=t=>{if(!inTG||!ver('6.1')||!TG.HapticFeedback)return;try{t==='ok'?TG.HapticFeedback.notificationOccurred('success'):t==='sel'?TG.HapticFeedback.selectionChanged():TG.HapticFeedback.impactOccurred(t||'light');}catch(e){}};
 
@@ -532,7 +536,7 @@ function renderHeader(){
   const dayLine=t<1?`<div class="day">Starts ${short(START)}</div>`:t>DAYS?`<div class="day">${toExam!=null&&toExam>=0?(toExam?'Exam in '+toExam+' day'+(toExam>1?'s':''):'Exam day'):'Plan complete'}</div>`:`<div class="day">Day ${t} <small>of ${DAYS}</small></div>`;
   document.getElementById('hdr').innerHTML=`
   <div class="hdr-top"><div><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}Road to ${TARGET.toFixed(1)}</div>${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(toExam!=null?'exam in '+toExam+' days':(DAYS-t)+' days left'):DAYS+'-day plan'}</div></div>
-  <button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button></div>
+  ${SETBTN?'':`<button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button>`}</div>
   <div class="hdr-row">
     <div class="lvl"><div class="lvl-top"><b>Current band ${cb.band.toFixed(1)}</b><span class="num">Target ${TARGET.toFixed(1)}${cb.band<TARGET?` · ${(TARGET-cb.band).toFixed(1)} to go`:' · reached'}</span></div><div class="hbar"><i style="width:${pct}%"></i></div>
       <div class="lvl-sub">${cb.m?`From the Day ${cb.day} mock · L ${cb.parts.L} · R ${cb.parts.R} · W ${cb.parts.W} · S ${cb.parts.S}`:'Starting level · log a mock to update it'}</div></div>
@@ -749,15 +753,20 @@ function reminderCode(){
   if(pr&&pr.rank)Object.assign(o,{rank:pr.rank.join(''),mwd:pr.mwd,mwe:pr.mwe});
   return JSON.stringify(o);
 }
+let homeState='unknown';
+const homeOK=inTG&&ver('8.0')&&typeof TG.addToHomeScreen==='function';
+function checkHome(){if(!homeOK||typeof TG.checkHomeScreenStatus!=='function')return;try{TG.checkHomeScreenStatus(st=>{homeState=st||'unknown';if(document.querySelector('.sheet'))openSettings();});}catch(e){}}
 function openSettings(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
    <details class="card sugg"><summary><b>My plan</b><span class="note">${PLAN?`Day 1 ${short(START)} · ${PLAN.exam?'exam '+short(parseD(PLAN.exam)):DAYS+' days'} · target ${TARGET.toFixed(1)}`:''}</span></summary>${planForm(planDefaults(),false)}</details>
+   ${homeOK?`<section class="card"><h3 style="font-size:16px">Home screen</h3><p class="note" style="margin:0">${homeState==='added'?'This app is already on your home screen.':'Open the tracker with one tap, like a normal app.'}</p>${homeState==='added'?'':'<button class="btn block primary" data-home="1">Add to home screen</button>'}</section>`:''}
    <p class="note" style="margin:0;text-align:center">App version ${BUILD}</p>
   </div></div>`;
+  updateBack();
 }
-const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;};
+const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;updateBack();};
 function backupText(){return JSON.stringify({v:1,plan:PLAN,days:S.days,weeks:S.weeks,mocks:S.mocks,cfg:S.cfg,words:S.words});}
 async function copyText(t){
   try{await navigator.clipboard.writeText(t);toast('Copied');return true;}catch(e){}
@@ -1027,9 +1036,28 @@ function playListening(){
 /* ---------- render ---------- */
 function renderView(){
   const v=document.getElementById('view');
-  if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();return;}
+  if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
   v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():tab==='mock'?viewMocks():tab==='words'?viewWords():viewSpeak();
+  updateBack();
 }
+/* What the Telegram back arrow should close, newest layer first. */
+function backTarget(){
+  if(document.querySelector('.sheet'))return 'sheet';
+  if(WZ&&(PLAN||WZ.step>0))return 'wizard';
+  if(editDay||editWeek)return 'edit';
+  return null;
+}
+function updateBack(){if(!BACK)return;try{backTarget()?TG.BackButton.show():TG.BackButton.hide();}catch(e){}}
+function onBack(){
+  const t=backTarget();
+  if(t==='sheet')closeSheet();
+  else if(t==='wizard'){if(window.speechSynthesis)try{speechSynthesis.cancel();}catch(x){}if(PLAN&&WZ.step===0){WZ=null;renderAll();}else{WZ.step=Math.max(0,WZ.step-1);renderView();}scrollTo(0,0);}
+  else if(t==='edit'){editDay=false;editWeek=false;resetArm=null;renderView();}
+  haptic('light');
+}
+if(BACK){try{TG.BackButton.onClick(onBack);}catch(e){}}
+if(homeOK){try{TG.onEvent('homeScreenAdded',()=>{homeState='added';toast('Added to your home screen');if(document.querySelector('.sheet'))openSettings();});}catch(e){}setTimeout(checkHome,0);}
+if(SETBTN){try{TG.SettingsButton.show();TG.SettingsButton.onClick(()=>{if(PLAN&&!WZ){openSettings();}});}catch(e){}}
 function renderAll(){renderHeader();renderTabs();renderView();document.getElementById('tabs').hidden=!PLAN||!!WZ;document.documentElement.style.setProperty('--target',`"${TARGET.toFixed(1)}"`);}
 let tt0;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt0);tt0=setTimeout(()=>t.classList.remove('show'),1500);}
 const goScopeKind=kind=>kind==='week'?editWScope:editScope;
@@ -1062,6 +1090,7 @@ document.addEventListener('click',async e=>{
   }
   if((el=g('[data-tab]'))){tab=el.dataset.tab;haptic('sel');renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-open]'))){openSettings();return;}
+  if((el=g('[data-home]'))){try{TG.addToHomeScreen();}catch(x){toast('Your Telegram version cannot do this yet');}return;}
   if(e.target.matches&&e.target.matches('[data-close]')){closeSheet();return;}
   if((el=g('[data-copy]'))){copyText(el.dataset.copy);return;}
   if((el=g('[data-copy-code]'))){const c=reminderCode();if(c)copyText(c);return;}
