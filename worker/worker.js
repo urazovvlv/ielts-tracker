@@ -6,11 +6,12 @@
 //   KV namespace binding  FOCUS      (any KV namespace)
 //   Secret                BOT_TOKEN  (the same token as in GitHub; used only to check that
 //                                     requests really come from your Telegram mini app)
-//   Secret                READ_KEY   (any long random text; the same value goes into GitHub)
+//   Secret                READ_KEY   (optional; without it the reminder script signs its requests
+//                                     with a key derived from BOT_TOKEN, so nothing else is needed)
 //
 // Routes:
 //   POST /sync   {initData, days:{"2026-10-28":{"L":1,"R":2,"W":0,"S":1,"V":0}, ...}}
-//   GET  /focus?ids=111,222&date=2026-10-28   header X-Key: READ_KEY
+//   GET  /focus?ids=111,222&date=2026-10-28   header X-Key: READ_KEY or readKey(BOT_TOKEN)
 //        → {"111":{"L":1,"R":2,...}, "222":null}
 
 const ORIGIN = "https://urazovvlv.github.io";
@@ -102,8 +103,9 @@ export default {
     }
 
     if (url.pathname === "/focus" && req.method === "GET") {
-      if (!env.READ_KEY || req.headers.get("X-Key") !== env.READ_KEY)
-        return json({ error: "wrong key" }, 403);
+      const given = req.headers.get("X-Key") || "";
+      const derived = env.BOT_TOKEN ? hex(await hmac(env.BOT_TOKEN, "ielts-focus-read")) : "";
+      if (!given || (given !== env.READ_KEY && given !== derived)) return json({ error: "wrong key" }, 403);
       const date = url.searchParams.get("date") || "";
       const ids = (url.searchParams.get("ids") || "").split(",").filter((x) => /^\d+$/.test(x)).slice(0, 50);
       const out = {};

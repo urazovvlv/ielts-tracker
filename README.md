@@ -40,10 +40,10 @@ Telegram caches the page. When you change `index.html`, also change `BUILD` near
 
 The 07:00 message names the skill with the most tasks on today's list. The bot can't read the app's storage, so the app sends only the skill counts (L/R/W/S/Voc per day) to a small free Cloudflare Worker: `worker/worker.js`.
 
-1. Cloudflare → Workers & Pages → Create Worker, paste `worker/worker.js`, deploy.
-2. Storage → KV → create a namespace; in the Worker's Settings → Bindings add it as `FOCUS`.
-3. Worker Settings → Variables and Secrets: secrets `BOT_TOKEN` (same as GitHub) and `READ_KEY` (any long random text).
-4. Put the Worker address in `WORKER_URL` in `index.html` (bump BUILD + version.json).
-5. GitHub secrets: `FOCUS_URL` (the Worker address) and `READ_KEY` (same text).
+The Worker `ielts-tracker` deploys from this repo automatically (Cloudflare Workers Builds, `wrangler.jsonc`, KV binding `FOCUS`).
 
+1. Worker Settings → Variables and Secrets: secret `BOT_TOKEN` (same as GitHub).
+2. Put the Worker address in `WORKER_URL` in `index.html` (bump BUILD + version.json) and in `FOCUS_DEFAULT` in `reminders.py`.
+
+The reminder script signs its reads with a key derived from `BOT_TOKEN`, so no extra GitHub secret is needed.
 Without it the morning message is sent without the focus line.

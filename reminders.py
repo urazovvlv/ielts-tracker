@@ -8,13 +8,15 @@ GitHub Actions runs this three times a day. Secrets:
              [{"id":111,"name":"Xushnud","start":"2026-10-19","exam":"","days":60,"target":7.5},
               {"id":222,"name":"Ali","start":"2026-10-27","exam":"2026-12-20","days":54,"target":7}]
   CHAT_ID    (older setup) one chat ID; used with the original 60-day plan unless USERS lists it
-  FOCUS_URL  (optional) address of the Cloudflare focus server (worker/worker.js)
-  READ_KEY   (optional) the READ_KEY secret set on that server
+  FOCUS_URL  (optional) address of the Cloudflare focus server (worker/worker.js); defaults to FOCUS_DEFAULT
+  READ_KEY   (optional) the READ_KEY set on that server; by default a key derived from BOT_TOKEN is used
 
 Without BOT_TOKEN it only prints the messages, which is handy for testing.
 Usage: python3 reminders.py morning|evening|night
 """
 import datetime as dt
+import hashlib
+import hmac
 import html
 import json
 import math
@@ -33,6 +35,7 @@ FOCUS = ["Writing Task 2 essay", "Reading: full test, 60 min", "Writing Task 1 r
 SKILL_NAMES = {"L": "Listening", "R": "Reading", "W": "Writing", "S": "Speaking", "V": "Vocabulary"}
 PACK_SECTIONS = [("idioms", "Idioms"), ("reading", "Reading words"), ("speaking", "Speaking"),
                  ("pron", "Pronunciation"), ("task1", "Writing Task 1"), ("task2", "Writing Task 2")]
+FOCUS_DEFAULT = ""  # e.g. https://ielts-tracker.<name>.workers.dev
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -224,8 +227,11 @@ def load_pack(day):
 
 def load_focus(ids, today):
     """Skill counts per user for today from the focus server, or {} if it is not set up or unreachable."""
-    base = os.environ.get("FOCUS_URL", "").strip().rstrip("/")
+    base = (os.environ.get("FOCUS_URL", "").strip() or FOCUS_DEFAULT).rstrip("/")
     key = os.environ.get("READ_KEY", "").strip()
+    token = os.environ.get("BOT_TOKEN", "").strip()
+    if not key and token:
+        key = hmac.new(token.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
     if not base or not key:
         return {}
     q = urllib.parse.urlencode({"ids": ",".join(ids), "date": today.isoformat()})
