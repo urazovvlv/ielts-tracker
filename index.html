@@ -724,7 +724,7 @@ function openSettings(){
    <section class="card"><h3 style="font-size:16px">Backup</h3><p class="note" style="margin:0">Copy all your data as text and keep it in Saved Messages. Paste it back to restore.</p>
     <div class="grid2"><button class="btn block" data-backup="copy">Copy backup</button><button class="btn block" data-backup="open">Restore</button></div>
     ${restoreOpen?'<textarea id="restoreIn" placeholder="Paste your backup text here"></textarea><button class="btn block primary" data-backup="restore">Restore this backup</button>':''}
-    <button class="btn block" data-wipe="1" style="color:var(--bad)">${wipeArm?'Tap again to delete all progress':'Delete all progress'}</button></section>
+    <button class="btn block" data-wipe="1" style="color:var(--bad)">${wipeArm?'Tap again: delete everything and start over':'Delete everything and start over'}</button></section>
   </div></div>`;
 }
 const closeSheet=()=>{document.getElementById('sheetHost').innerHTML='';wipeArm=false;restoreOpen=false;};
@@ -743,6 +743,7 @@ function restoreFrom(o){
 function wipe(){
   const keys=allKeys();S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:S.settings};
   keys.forEach(k=>{lsSet(k,null);put(k,null);});saveWords();
+  PLAN=null;WZ=null;lsSet('plan',null);put('plan',null);
 }
 
 /* ---------- mods (edit list) ---------- */
@@ -1020,7 +1021,7 @@ document.addEventListener('click',async e=>{
     else if(a==='open'){restoreOpen=!restoreOpen;openSettings();}
     else{try{const o=JSON.parse(document.getElementById('restoreIn').value);if(!o||!o.days)throw 0;restoreFrom(o);closeSheet();renderAll();toast('Backup restored');}catch(err){toast('That text is not a valid backup');}}
     return;}
-  if((el=g('[data-wipe]'))){if(!wipeArm){wipeArm=true;openSettings();return;}wipe();closeSheet();renderAll();toast('All progress deleted');return;}
+  if((el=g('[data-wipe]'))){if(!wipeArm){wipeArm=true;openSettings();return;}wipe();closeSheet();tab='today';renderAll();scrollTo(0,0);toast('Everything deleted. Let\'s start again');return;}
   if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);haptic('sel');renderView();return;}
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
