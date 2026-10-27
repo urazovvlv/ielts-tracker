@@ -123,21 +123,19 @@ def build(slot, plan, day, today, word):
         left = f"exam in {(plan.exam - today).days} days" if plan.exam else f"{plan.days - day} days left"
         lines = [f"<b>Good morning{hi}! Day {day}/{plan.days}</b>",
                  f"{WEEKDAYS[today.weekday()]} {today.day} {today.strftime('%b')} · {plan.phase(day)} phase · {left}", "",
-                 f"Main task: <b>{e(plan.main_task(day))}</b>"]
+                 "Open your tracker and check today's list. Empty? Add your tasks with Edit list."]
         if day in plan.mocks:
-            lines.append("Mock day: start at 19:00 in exam conditions, with no pauses.")
+            lines.append(f"Mock day: <b>{e(plan.mocks[day])}</b>. Start at 19:00 in exam conditions, with no pauses.")
         if word:
             lines += ["", f"Word of the day: <b>{e(word['w'])}</b> — {e(word['uz'])}", f"<i>{e(word['ex'])}</i>"]
-        lines += ["", "Minimum today: 20 words · 1 Speaking recording · 1 Listening section."]
     elif slot == "evening":
         if day in plan.mocks:
             lines = [f"<b>Mock time · Day {day}</b>",
                      f"{e(plan.mocks[day])}: Listening 30 min, Reading 60, Writing 60, Speaking 15.",
                      "Phone on silent. Type your scores in the Mocks tab when you finish."]
         else:
-            lines = [f"<b>Evening block · Day {day}</b>",
-                     "Listening section, then read the transcript and find why each answer was missed.",
-                     "Then 20 minutes of grammar on one error type."]
+            lines = [f"<b>Evening check · Day {day}</b>",
+                     "How is your list going? Finish the tasks you planned for today before the day ends."]
     else:
         lines = [f"<b>Log Day {day}{hi}</b>",
                  "Tick your tasks, add hours, words and energy, and write one thing to fix tomorrow."]

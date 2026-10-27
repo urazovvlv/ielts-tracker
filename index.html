@@ -224,6 +224,11 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .verdict.bad{background:color-mix(in srgb,var(--bad) 12%,var(--card));border-color:transparent}
 .verdict small{color:var(--muted);font-size:12px}
 .prio{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.empty{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:14px;border:1px dashed var(--line);border-radius:12px;background:var(--sunk)}
+.sugg{display:block}
+.sugg summary{cursor:pointer;display:flex;flex-direction:column;gap:2px;list-style:none}
+.sugg summary::-webkit-details-marker{display:none}
+.sugg[open] summary{margin-bottom:6px}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
@@ -252,7 +257,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.5';
+const BUILD='2026-10-27.6';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -308,7 +313,7 @@ function buildSchedule(p){
 const FOCUS=['Writing Task 2 essay','Reading: full test, 60 min','Writing Task 1 report','Reading: question types','Writing Task 2 essay','Speaking: full test, recorded','Review the week'];
 const phaseOf=n=>PHASES.find(p=>n>=p.a&&n<=p.b)||(n<1?PHASES[0]:PHASES[PHASES.length-1]);
 function baseTasks(n){
-  if(PLAN&&PLAN.profile&&PLAN.profile.rank)return genTasks(n,PLAN.profile);
+  return []; /* Lists start empty: everyone adds their own tasks with Edit list. */
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -515,11 +520,18 @@ function editPanel(list,kind){
     `<div class="field"><span class="label">Changes apply to</span><div class="seg"><button data-scope="day" class="${editScope==='day'?'on':''}">Only Day ${sel}</button><button data-scope="all" class="${editScope==='all'?'on':''}">Every day</button></div></div>`;
   return `${scope}<ul class="tasks">${list.length?list.map(x=>`<li class="task editing"><div class="ef"><input class="ein" aria-label="Exercise name" data-ren="${x.k}" data-f="label" data-kind="${kind}" value="${esc(x.label)}" maxlength="80"><input class="ein sm" aria-label="Note" data-ren="${x.k}" data-f="sub" data-kind="${kind}" value="${esc(x.sub||'')}" placeholder="Note (optional)" maxlength="120"></div><button class="rm" data-rm="${x.k}" data-kind="${kind}" aria-label="Remove">×</button></li>`).join(''):'<li class="note">No exercises yet. Add one below.</li>'}</ul>
   <form class="addrow" data-add="${kind}"><input id="add-${kind}-name" type="text" placeholder="New exercise, e.g. Shadowing 10 min" maxlength="80" required><input id="add-${kind}-note" type="text" placeholder="Note (optional)" maxlength="120"><button class="btn primary" type="submit">Add exercise</button></form>
-  <button class="btn ghost" data-reset="${kind}">${resetArm===kind?'Tap again to restore the default list':'Restore default list'}</button>`;
+  <button class="btn ghost" data-reset="${kind}">${resetArm===kind?'Tap again to remove all tasks here':'Remove all tasks here'}</button>`;
 }
 function wotdCard(n){
   const w=DAILY.length?DAILY[(clampDay(n)-1)%DAILY.length]:null;if(!w)return '';
   return `<section class="card wotd"><div class="label">Word of the day · Day ${clampDay(n)}</div><div class="w">${esc(w.w)}</div><div class="uz">${esc(w.uz)}</div><div class="ex">${esc(w.ex)}</div><button class="btn" data-saveword="${clampDay(n)}">${S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())?'Saved to my words':'Save to my words'}</button></section>`;
+}
+function suggestCard(n){
+  const have=new Set(listFor(n).map(x=>x.label));
+  const sug=genTasks(n,PLAN.profile).filter(x=>!have.has(x.label));
+  if(!sug.length)return '';
+  return `<details class="card sugg"><summary><b>Tutor suggestions for this day</b><span class="note">Based on your check · tap + to add</span></summary>
+    <ul class="tasks">${sug.map((x,i)=>`<li class="task"><div class="tx"><b>${esc(x.label)}</b><small>${esc(x.sub)}</small></div><button class="rm" data-sugg="${i}" aria-label="Add ${esc(x.label)}" style="color:var(--navy);font-weight:700">+</button></li>`).join('')}</ul></details>`;
 }
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
@@ -529,7 +541,7 @@ function viewToday(){
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
     <div class="pline"><span class="label">Checklist</span><div class="pbar"><i style="width:${tot?c/tot*100:0}%"></i></div><b class="num">${c}/${tot}</b></div>
-    ${editDay?editPanel(list,'day'):`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+10</span></li>`).join('')}</ul>`}
+    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label><span class="xp">+10</span></li>`).join('')}</ul>`}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
   <section class="card">
@@ -540,6 +552,7 @@ function viewToday(){
     <div class="field"><span class="label">Energy today</span><div class="mood">${MOODS.map((m,i)=>`<button data-mood="${i+1}" class="${d.mood===i+1?'on':''}" aria-pressed="${d.mood===i+1}"><b>${i+1}</b>${m}</button>`).join('')}</div></div>
     <div class="field"><label class="label" for="noteIn">What to fix tomorrow</label><textarea id="noteIn" maxlength="1500" placeholder="e.g. Lost 4 marks on spelling in Listening Section 1">${esc(d.note||'')}</textarea></div>
   </section>
+  ${PLAN&&PLAN.profile&&PLAN.profile.rank&&!editDay?suggestCard(n):''}
   ${wotdCard(n)}
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
@@ -967,7 +980,8 @@ function viewResult(){
     <div class="verdict ${v[0]}"><b>${R.days} days · about ${R.hours} study hours</b><span>${v[1]}</span>${R.gap>0?`<small>Rule of thumb: about 150–200 focused hours for +1 band, so +${R.gap.toFixed(1)} needs roughly ${R.needH} hours.</small>`:''}</div>
     <h3 style="font-size:16px">Your priority order</h3>
     <ol class="prio">${R.rank.map((k,i)=>`<li><b>${SK[k]}</b> <span class="note">${i===0?'main focus, 2 days a week + daily drill':i===1?'2 days a week':'1 day a week'}</span></li>`).join('')}</ol>
-    <h3 style="font-size:16px">A typical weekday for you <span class="note" style="font-weight:500">(${sampleDay})</span></h3>
+    <h3 style="font-size:16px">Suggested tasks for a weekday <span class="note" style="font-weight:500">(${sampleDay})</span></h3>
+    <p class="note" style="margin:0">Your daily list starts empty and you add your own tasks. These suggestions stay on the Today screen, so you can add any of them with one tap.</p>
     <ul class="tasks">${sample.map(x=>`<li class="task"><div class="tx"><b>${esc(x.label)}</b><small>${esc(x.sub)}</small></div></li>`).join('')}</ul>
     <p class="note" style="margin:0">These are estimates from a short test. Your first full mock gives the real numbers, and you can redo this check any time in Settings.</p>
     ${WZ.fresh&&PLAN?'<p class="note" style="margin:0;color:var(--bad)">Starting this plan deletes all your old progress.</p>':''}
@@ -1016,6 +1030,8 @@ const goScopeKind=kind=>kind==='week'?'week':editScope;
 document.addEventListener('click',async e=>{
   const g=s=>e.target.closest(s);let el;
   if((el=g('[data-wstart]'))){closeSheet();startWizard();return;}
+  if((el=g('[data-sugg]'))){const have=new Set(listFor(sel).map(x=>x.label)),sug=genTasks(sel,PLAN.profile).filter(x=>!have.has(x.label)),x=sug[Number(el.dataset.sugg)];
+    if(x){const r=modsRef('day');r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label:x.label,sub:x.sub}];r.commit();haptic('light');toast(`Added to Day ${sel}`);renderHeader();renderView();}return;}
   if((el=g('[data-wcancel]'))){if(window.speechSynthesis)try{speechSynthesis.cancel();}catch(x){}WZ=null;renderAll();scrollTo(0,0);return;}
   if(WZ){
     if((el=g('[data-wnav]'))){const dir=Number(el.dataset.wnav);
