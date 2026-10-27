@@ -239,6 +239,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .bal.full{border-color:var(--good)}
 .warn{list-style:none;margin:0;padding:10px 12px;border-radius:12px;background:var(--gold-soft);display:flex;flex-direction:column;gap:6px;font-size:13px}
 .warn li{display:flex;align-items:flex-start;gap:2px}
+.plan-in{display:flex;flex-direction:column;margin-top:10px}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px max(6px,env(safe-area-inset-left,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-right,0px));z-index:10}
 .tabs button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);padding:4px 0;border-radius:10px}
@@ -267,7 +268,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-27.13';
+const BUILD='2026-10-27.14';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -710,8 +711,8 @@ function planDefaults(){
 }
 function planForm(p,first){
   const opt=(vals,cur,fmtv)=>vals.map(v=>`<option value="${v}" ${Number(cur)===v?'selected':''}>${fmtv(v)}</option>`).join('');
-  return `<form class="card" data-plan="1" style="gap:12px">
-    ${first?`<div><h2>Set up your plan</h2><p class="note" style="margin:4px 0 0">Your plan and progress are saved in your own Telegram account. Nobody else sees them, even if they use the same bot.</p></div>`:'<h2>My plan</h2>'}
+  return `<form class="${first?'card':'plan-in'}" data-plan="1" style="gap:12px">
+    ${first?`<div><h2>Set up your plan</h2><p class="note" style="margin:4px 0 0">Your plan and progress are saved in your own Telegram account. Nobody else sees them, even if they use the same bot.</p></div>`:''}
     <div class="field"><label class="label" for="pName">Your name</label><input id="pName" type="text" maxlength="30" value="${esc(p.name||'')}" placeholder="e.g. Xushnud"></div>
     <div class="grid2">
       <div class="field"><label class="label" for="pStart">Day 1</label><input id="pStart" class="ein" type="date" value="${esc(p.start)}" required></div>
@@ -752,7 +753,7 @@ function openSettings(){
   const uid=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?TG.initDataUnsafe.user.id:null,code=reminderCode();
   document.getElementById('sheetHost').innerHTML=`<div class="sheet-bg" data-close="1"><div class="sheet" role="dialog" aria-label="Settings">
    <div class="card-h"><h2>Settings</h2><button class="btn" data-close="1">Close</button></div>
-   ${planForm(planDefaults(),false)}
+   <details class="card sugg"><summary><b>My plan</b><span class="note">${PLAN?`Day 1 ${short(START)} · ${PLAN.exam?'exam '+short(parseD(PLAN.exam)):DAYS+' days'} · target ${TARGET.toFixed(1)}`:''}</span></summary>${planForm(planDefaults(),false)}</details>
    <details class="card sugg"><summary><b>Bot reminders</b><span class="note">Only needed once, to make the bot follow your plan</span></summary><div style="display:flex;flex-direction:column;gap:10px">
     ${code?`<p class="note" style="margin:0">So the bot's daily messages follow <b>your</b> plan, copy this code and send it to the person who manages the bot. Send it again whenever you change your plan.</p>
     <div class="idbox"><code style="font-size:12px;word-break:break-all;font-weight:600" id="rcode">${esc(code)}</code></div>
