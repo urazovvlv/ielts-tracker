@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"Communication","items":[
-{"t":"get the message across","uz":"fikrni tushuntira olmoq","ex":"Good ads get the message across in seconds.","use":"Kommunikatsiya, marketing"},
-{"t":"beat around the bush","uz":"aylantirib gapirmoq, asosiy gapga o'tmaslik","ex":"Stop beating around the bush and tell me the truth.","use":"Gapirish uslubi"},
-{"t":"get straight to the point","uz":"darhol asosiy gapga o'tmoq","ex":"My boss always gets straight to the point.","use":"Odamni tasvirlash"},
-{"t":"on the tip of my tongue","uz":"tilimning uchida turibdi (eslay olmayapman)","ex":"His name is on the tip of my tongue.","use":"Speaking'da so'z topolmasangiz ham ishlating!"},
-{"t":"hear it through the grapevine","uz":"mish-mish orqali eshitmoq","ex":"I heard it through the grapevine that she's leaving.","use":"Yangilik qanday tarqalishi"},
-{"t":"talk someone into","uz":"birovni nimagadir ko'ndirmoq","ex":"My friend talked me into joining the gym.","use":"Part 2: qaror hikoyasi"},
-{"t":"keep someone posted","uz":"birovni xabardor qilib turmoq","ex":"I'll keep you posted about my results.","use":"Norasmiy muloqot"},
-{"t":"break the ice","uz":"tanishuvdagi noqulaylikni yo'qotmoq","ex":"Jokes are a good way to break the ice.","use":"Yangi odamlar bilan tanishish"},
-{"t":"speak your mind","uz":"fikrini ochiq aytmoq","ex":"I like people who speak their mind.","use":"Xarakter tasviri"},
-{"t":"a heart-to-heart","uz":"samimiy, ochiq suhbat","ex":"We had a long heart-to-heart about our future.","use":"Muhim suhbat haqida"}]},
-"reading":{"items":[
-{"w":"achieve","pos":"verb","syn":"accomplish, attain, reach","uz":"erishmoq","ex":"Few students achieve full marks."},
-{"w":"acquire","pos":"verb","syn":"obtain, gain, get","uz":"egallamoq, qo'lga kiritmoq","ex":"Children acquire language naturally."},
-{"w":"administration","pos":"noun","syn":"management, government","uz":"ma'muriyat, boshqaruv","ex":"The administration announced new reforms."},
-{"w":"affect","pos":"verb","syn":"influence, have an impact on","uz":"ta'sir qilmoq","ex":"Noise can affect concentration."},
-{"w":"appropriate","pos":"adj","syn":"suitable, proper, fitting","uz":"mos, munosib","ex":"Choose an appropriate method for the task."},
-{"w":"aspect","pos":"noun","syn":"feature, side, element","uz":"jihat","ex":"Cost is only one aspect of the problem."},
-{"w":"assist","pos":"verb","syn":"help, aid, support","uz":"yordam bermoq","ex":"Robots assist surgeons in complex operations."},
-{"w":"category","pos":"noun","syn":"class, group, type","uz":"toifa","ex":"The products fall into three categories."},
-{"w":"commission","pos":"verb/noun","syn":"order, request; committee","uz":"buyurtma bermoq; komissiya","ex":"The study was commissioned by the government."},
-{"w":"community","pos":"noun","syn":"society, population, group","uz":"jamiyat, mahalla","ex":"Local communities were consulted about the plan."}]},
-"speaking":{"theme":"Hypothetical situations","items":[
-{"s":"If I had the chance, I'd …","uz":"Imkonim bo'lsa, … qilardim","ex":"If I had the chance, I'd study in Canada.","use":"2-shart gap — band 7 uchun muhim"},
-{"s":"I'd probably …","uz":"Ehtimol, … qilardim","ex":"I'd probably travel around Asia first.","use":"Taxminiy javob"},
-{"s":"Suppose …, I think …","uz":"Faraz qilaylik, …","ex":"Suppose cars were banned, I think people would cycle more.","use":"Part 3 da fikr yuritish"},
-{"s":"If it were up to me, …","uz":"Menga qolsa edi, …","ex":"If it were up to me, I'd make museums free.","use":"Siyosat/qoida haqida savollar"},
-{"s":"I wish I could …","uz":"Qani endi … qila olsam","ex":"I wish I could speak Chinese fluently.","use":"Istak, afsus"},
-{"s":"If I'd known …, I would have …","uz":"Agar … bilganimda, … qilgan bo'lardim","ex":"If I'd known, I would have prepared better.","use":"3-shart gap — eng yuqori grammatika"},
-{"s":"Imagine if …","uz":"Tasavvur qiling, agar …","ex":"Imagine if everyone worked from home.","use":"Part 3 ga jonli boshlanish"},
-{"s":"In an ideal world, …","uz":"Ideal dunyoda, …","ex":"In an ideal world, everyone would have free healthcare.","use":"Orzu va real holatni solishtirish"},
-{"s":"Assuming that …, …","uz":"… deb faraz qilsak, …","ex":"Assuming that prices stay the same, more people will buy cars.","use":"Kelajak haqida mantiqiy fikr"},
-{"s":"Otherwise, …","uz":"Aks holda, …","ex":"We need cleaner energy. Otherwise, pollution will get worse.","use":"Oqibatni ko'rsatish"}]},
-"pron":{"theme":"Word stress: noun vs verb","items":[
-{"w":"REcord – reCORD","ipa":"/ˈrekɔːd/ – /rɪˈkɔːd/","uz":"ot — 1-bo'g'in, fe'l — 2-bo'g'in","tip":"a REcord, to reCORD"},
-{"w":"PREsent – preSENT","ipa":"/ˈpreznt/ – /prɪˈzent/","uz":"sovg'a/hozirgi – taqdim etmoq","tip":"I'll preSENT my PREsent"},
-{"w":"INcrease – inCREASE","ipa":"/ˈɪnkriːs/ – /ɪnˈkriːs/","uz":"Task 1 da ikkalasi ham kerak","tip":"an INcrease, to inCREASE"},
-{"w":"OBject – obJECT","ipa":"/ˈɒbdʒɪkt/ – /əbˈdʒekt/","uz":"narsa – e'tiroz bildirmoq","tip":"Urg'u ma'noni o'zgartiradi"},
-{"w":"PROgress – proGRESS","ipa":"/ˈprəʊɡres/ – /prəˈɡres/","uz":"taraqqiyot – rivojlanmoq","tip":"make PROgress"},
-{"w":"CONtract – conTRACT","ipa":"/ˈkɒntrækt/ – /kənˈtrækt/","uz":"shartnoma – qisqarmoq/kasallikka chalinmoq","tip":"sign a CONtract"},
-{"w":"PERmit – perMIT","ipa":"/ˈpɜːmɪt/ – /pəˈmɪt/","uz":"ruxsatnoma – ruxsat bermoq","tip":"a work PERmit"},
-{"w":"EXport – exPORT","ipa":"/ˈekspɔːt/ – /ɪkˈspɔːt/","uz":"eksport – eksport qilmoq","tip":"Task 1 grafiklarda tez-tez"},
-{"w":"DEcrease – deCREASE","ipa":"/ˈdiːkriːs/ – /dɪˈkriːs/","uz":"pasayish – pasaymoq","tip":"a DEcrease in sales"},
-{"w":"CONduct – conDUCT","ipa":"/ˈkɒndʌkt/ – /kənˈdʌkt/","uz":"xulq – o'tkazmoq (tadqiqot)","tip":"conDUCT research"}]},
-"task1":{"theme":"Time phrases","items":[
-{"w":"over the period","syn":"throughout the period","uz":"butun davr davomida","ex":"Over the period, sales doubled."},
-{"w":"between … and …","syn":"from … to …","uz":"… va … yillar orasida","ex":"Between 1990 and 2000, prices rose."},
-{"w":"in the following year","syn":"a year later","uz":"keyingi yilda","ex":"In the following year, the figure fell."},
-{"w":"by (+ year)","syn":"no later than","uz":"… yilga kelib","ex":"By 2020, half the population lived in cities."},
-{"w":"over the next decade","syn":"during the next ten years","uz":"keyingi o'n yil davomida","ex":"Over the next decade, it rose steadily."},
-{"w":"at the beginning / end of the period","syn":"initially / finally","uz":"davr boshida/oxirida","ex":"At the beginning of the period, coal dominated."},
-{"w":"initially","syn":"at first, originally","uz":"dastlab","ex":"Initially, there were 200 members."},
-{"w":"subsequently","syn":"afterwards, later","uz":"keyinchalik","ex":"Subsequently, numbers fell to 150."},
-{"w":"thereafter","syn":"after that","uz":"shundan so'ng","ex":"The rate peaked in 2008 and fell thereafter."},
-{"w":"is projected / expected to","syn":"is predicted to, is forecast to","uz":"… kutilmoqda (kelajak bashorati)","ex":"The figure is projected to reach 60% by 2040."}]},
-"task2":{"theme":"Government and society","items":[
-{"w":"allocate funds","syn":"distribute money, budget","uz":"mablag' ajratmoq","ex":"Governments should allocate more funds to education."},
-{"w":"public services","syn":"state services","uz":"davlat xizmatlari","ex":"Taxes pay for public services."},
-{"w":"infrastructure","syn":"roads, transport, utilities","uz":"infratuzilma","ex":"Poor infrastructure slows economic growth."},
-{"w":"impose restrictions","syn":"introduce limits","uz":"cheklovlar joriy etmoq","ex":"The state should impose restrictions on advertising."},
-{"w":"subsidise","syn":"fund, support financially","uz":"subsidiya bermoq","ex":"Public transport should be subsidised."},
-{"w":"welfare system","syn":"social security","uz":"ijtimoiy ta'minot tizimi","ex":"A strong welfare system protects the poor."},
-{"w":"income inequality","syn":"the wealth gap","uz":"daromadlar tengsizligi","ex":"Income inequality has grown in many countries."},
-{"w":"civic responsibility","syn":"duty as a citizen","uz":"fuqarolik burchi","ex":"Voting is a civic responsibility."},
-{"w":"raise awareness","syn":"inform, educate the public","uz":"xabardorlikni oshirmoq","ex":"Campaigns can raise awareness of road safety."},
-{"w":"the authorities","syn":"the government, officials","uz":"rasmiylar, hokimiyat","ex":"The authorities must take action quickly."}]}
+ "idioms": {
+  "theme": "Communication",
+  "items": [
+   {
+    "t": "get the message across",
+    "uz": "fikrni tushuntira olmoq",
+    "ex": "Good ads get the message across in seconds.",
+    "use": "Kommunikatsiya, marketing"
+   },
+   {
+    "t": "beat around the bush",
+    "uz": "aylantirib gapirmoq, asosiy gapga o'tmaslik",
+    "ex": "Stop beating around the bush and tell me the truth.",
+    "use": "Gapirish uslubi"
+   },
+   {
+    "t": "get straight to the point",
+    "uz": "darhol asosiy gapga o'tmoq",
+    "ex": "My boss always gets straight to the point.",
+    "use": "Odamni tasvirlash"
+   },
+   {
+    "t": "on the tip of my tongue",
+    "uz": "tilimning uchida turibdi (eslay olmayapman)",
+    "ex": "His name is on the tip of my tongue.",
+    "use": "Speaking'da so'z topolmasangiz ham ishlating!"
+   },
+   {
+    "t": "hear it through the grapevine",
+    "uz": "mish-mish orqali eshitmoq",
+    "ex": "I heard it through the grapevine that she's leaving.",
+    "use": "Yangilik qanday tarqalishi"
+   },
+   {
+    "t": "talk someone into",
+    "uz": "birovni nimagadir ko'ndirmoq",
+    "ex": "My friend talked me into joining the gym.",
+    "use": "Part 2: qaror hikoyasi"
+   },
+   {
+    "t": "keep someone posted",
+    "uz": "birovni xabardor qilib turmoq",
+    "ex": "I'll keep you posted about my results.",
+    "use": "Norasmiy muloqot"
+   },
+   {
+    "t": "break the ice",
+    "uz": "tanishuvdagi noqulaylikni yo'qotmoq",
+    "ex": "Jokes are a good way to break the ice.",
+    "use": "Yangi odamlar bilan tanishish"
+   },
+   {
+    "t": "speak your mind",
+    "uz": "fikrini ochiq aytmoq",
+    "ex": "I like people who speak their mind.",
+    "use": "Xarakter tasviri"
+   },
+   {
+    "t": "a heart-to-heart",
+    "uz": "samimiy, ochiq suhbat",
+    "ex": "We had a long heart-to-heart about our future.",
+    "use": "Muhim suhbat haqida"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "achieve",
+    "pos": "verb",
+    "syn": "accomplish, attain, reach",
+    "uz": "erishmoq",
+    "ex": "Few students achieve full marks."
+   },
+   {
+    "w": "acquire",
+    "pos": "verb",
+    "syn": "obtain, gain, get",
+    "uz": "egallamoq, qo'lga kiritmoq",
+    "ex": "Children acquire language naturally."
+   },
+   {
+    "w": "administration",
+    "pos": "noun",
+    "syn": "management, government",
+    "uz": "ma'muriyat, boshqaruv",
+    "ex": "The administration announced new reforms."
+   },
+   {
+    "w": "affect",
+    "pos": "verb",
+    "syn": "influence, have an impact on",
+    "uz": "ta'sir qilmoq",
+    "ex": "Noise can affect concentration."
+   },
+   {
+    "w": "appropriate",
+    "pos": "adj",
+    "syn": "suitable, proper, fitting",
+    "uz": "mos, munosib",
+    "ex": "Choose an appropriate method for the task."
+   },
+   {
+    "w": "aspect",
+    "pos": "noun",
+    "syn": "feature, side, element",
+    "uz": "jihat",
+    "ex": "Cost is only one aspect of the problem."
+   },
+   {
+    "w": "assist",
+    "pos": "verb",
+    "syn": "help, aid, support",
+    "uz": "yordam bermoq",
+    "ex": "Robots assist surgeons in complex operations."
+   },
+   {
+    "w": "category",
+    "pos": "noun",
+    "syn": "class, group, type",
+    "uz": "toifa",
+    "ex": "The products fall into three categories."
+   },
+   {
+    "w": "commission",
+    "pos": "verb/noun",
+    "syn": "order, request; committee",
+    "uz": "buyurtma bermoq; komissiya",
+    "ex": "The study was commissioned by the government."
+   },
+   {
+    "w": "community",
+    "pos": "noun",
+    "syn": "society, population, group",
+    "uz": "jamiyat, mahalla",
+    "ex": "Local communities were consulted about the plan."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Hypothetical situations",
+  "items": [
+   {
+    "s": "If I had the chance, I'd …",
+    "uz": "Imkonim bo'lsa, … qilardim",
+    "ex": "If I had the chance, I'd study in Canada.",
+    "use": "2-shart gap — band 7 uchun muhim"
+   },
+   {
+    "s": "I'd probably …",
+    "uz": "Ehtimol, … qilardim",
+    "ex": "I'd probably travel around Asia first.",
+    "use": "Taxminiy javob"
+   },
+   {
+    "s": "Suppose …, I think …",
+    "uz": "Faraz qilaylik, …",
+    "ex": "Suppose cars were banned, I think people would cycle more.",
+    "use": "Part 3 da fikr yuritish"
+   },
+   {
+    "s": "If it were up to me, …",
+    "uz": "Menga qolsa edi, …",
+    "ex": "If it were up to me, I'd make museums free.",
+    "use": "Siyosat/qoida haqida savollar"
+   },
+   {
+    "s": "I wish I could …",
+    "uz": "Qani endi … qila olsam",
+    "ex": "I wish I could speak Chinese fluently.",
+    "use": "Istak, afsus"
+   },
+   {
+    "s": "If I'd known …, I would have …",
+    "uz": "Agar … bilganimda, … qilgan bo'lardim",
+    "ex": "If I'd known, I would have prepared better.",
+    "use": "3-shart gap — eng yuqori grammatika"
+   },
+   {
+    "s": "Imagine if …",
+    "uz": "Tasavvur qiling, agar …",
+    "ex": "Imagine if everyone worked from home.",
+    "use": "Part 3 ga jonli boshlanish"
+   },
+   {
+    "s": "In an ideal world, …",
+    "uz": "Ideal dunyoda, …",
+    "ex": "In an ideal world, everyone would have free healthcare.",
+    "use": "Orzu va real holatni solishtirish"
+   },
+   {
+    "s": "Assuming that …, …",
+    "uz": "… deb faraz qilsak, …",
+    "ex": "Assuming that prices stay the same, more people will buy cars.",
+    "use": "Kelajak haqida mantiqiy fikr"
+   },
+   {
+    "s": "Otherwise, …",
+    "uz": "Aks holda, …",
+    "ex": "We need cleaner energy. Otherwise, pollution will get worse.",
+    "use": "Oqibatni ko'rsatish"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Word stress: noun vs verb",
+  "items": [
+   {
+    "w": "REcord – reCORD",
+    "ipa": "/ˈrekɔːd/ – /rɪˈkɔːd/",
+    "uz": "ot — 1-bo'g'in, fe'l — 2-bo'g'in",
+    "tip": "a REcord, to reCORD"
+   },
+   {
+    "w": "PREsent – preSENT",
+    "ipa": "/ˈpreznt/ – /prɪˈzent/",
+    "uz": "sovg'a/hozirgi – taqdim etmoq",
+    "tip": "I'll preSENT my PREsent"
+   },
+   {
+    "w": "INcrease – inCREASE",
+    "ipa": "/ˈɪnkriːs/ – /ɪnˈkriːs/",
+    "uz": "Task 1 da ikkalasi ham kerak",
+    "tip": "an INcrease, to inCREASE"
+   },
+   {
+    "w": "OBject – obJECT",
+    "ipa": "/ˈɒbdʒɪkt/ – /əbˈdʒekt/",
+    "uz": "narsa – e'tiroz bildirmoq",
+    "tip": "Urg'u ma'noni o'zgartiradi"
+   },
+   {
+    "w": "PROgress – proGRESS",
+    "ipa": "/ˈprəʊɡres/ – /prəˈɡres/",
+    "uz": "taraqqiyot – rivojlanmoq",
+    "tip": "make PROgress"
+   },
+   {
+    "w": "CONtract – conTRACT",
+    "ipa": "/ˈkɒntrækt/ – /kənˈtrækt/",
+    "uz": "shartnoma – qisqarmoq/kasallikka chalinmoq",
+    "tip": "sign a CONtract"
+   },
+   {
+    "w": "PERmit – perMIT",
+    "ipa": "/ˈpɜːmɪt/ – /pəˈmɪt/",
+    "uz": "ruxsatnoma – ruxsat bermoq",
+    "tip": "a work PERmit"
+   },
+   {
+    "w": "EXport – exPORT",
+    "ipa": "/ˈekspɔːt/ – /ɪkˈspɔːt/",
+    "uz": "eksport – eksport qilmoq",
+    "tip": "Task 1 grafiklarda tez-tez"
+   },
+   {
+    "w": "DEcrease – deCREASE",
+    "ipa": "/ˈdiːkriːs/ – /dɪˈkriːs/",
+    "uz": "pasayish – pasaymoq",
+    "tip": "a DEcrease in sales"
+   },
+   {
+    "w": "CONduct – conDUCT",
+    "ipa": "/ˈkɒndʌkt/ – /kənˈdʌkt/",
+    "uz": "xulq – o'tkazmoq (tadqiqot)",
+    "tip": "conDUCT research"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Time phrases",
+  "items": [
+   {
+    "w": "over the period",
+    "syn": "throughout the period",
+    "uz": "butun davr davomida",
+    "ex": "Over the period, sales doubled."
+   },
+   {
+    "w": "between … and …",
+    "syn": "from … to …",
+    "uz": "… va … yillar orasida",
+    "ex": "Between 1990 and 2000, prices rose."
+   },
+   {
+    "w": "in the following year",
+    "syn": "a year later",
+    "uz": "keyingi yilda",
+    "ex": "In the following year, the figure fell."
+   },
+   {
+    "w": "by (+ year)",
+    "syn": "no later than",
+    "uz": "… yilga kelib",
+    "ex": "By 2020, half the population lived in cities."
+   },
+   {
+    "w": "over the next decade",
+    "syn": "during the next ten years",
+    "uz": "keyingi o'n yil davomida",
+    "ex": "Over the next decade, it rose steadily."
+   },
+   {
+    "w": "at the beginning / end of the period",
+    "syn": "initially / finally",
+    "uz": "davr boshida/oxirida",
+    "ex": "At the beginning of the period, coal dominated."
+   },
+   {
+    "w": "initially",
+    "syn": "at first, originally",
+    "uz": "dastlab",
+    "ex": "Initially, there were 200 members."
+   },
+   {
+    "w": "subsequently",
+    "syn": "afterwards, later",
+    "uz": "keyinchalik",
+    "ex": "Subsequently, numbers fell to 150."
+   },
+   {
+    "w": "thereafter",
+    "syn": "after that",
+    "uz": "shundan so'ng",
+    "ex": "The rate peaked in 2008 and fell thereafter."
+   },
+   {
+    "w": "is projected / expected to",
+    "syn": "is predicted to, is forecast to",
+    "uz": "… kutilmoqda (kelajak bashorati)",
+    "ex": "The figure is projected to reach 60% by 2040."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Government and society",
+  "items": [
+   {
+    "w": "allocate funds",
+    "syn": "distribute money, budget",
+    "uz": "mablag' ajratmoq",
+    "ex": "Governments should allocate more funds to education."
+   },
+   {
+    "w": "public services",
+    "syn": "state services",
+    "uz": "davlat xizmatlari",
+    "ex": "Taxes pay for public services."
+   },
+   {
+    "w": "infrastructure",
+    "syn": "roads, transport, utilities",
+    "uz": "infratuzilma",
+    "ex": "Poor infrastructure slows economic growth."
+   },
+   {
+    "w": "impose restrictions",
+    "syn": "introduce limits",
+    "uz": "cheklovlar joriy etmoq",
+    "ex": "The state should impose restrictions on advertising."
+   },
+   {
+    "w": "subsidise",
+    "syn": "fund, support financially",
+    "uz": "subsidiya bermoq",
+    "ex": "Public transport should be subsidised."
+   },
+   {
+    "w": "welfare system",
+    "syn": "social security",
+    "uz": "ijtimoiy ta'minot tizimi",
+    "ex": "A strong welfare system protects the poor."
+   },
+   {
+    "w": "income inequality",
+    "syn": "the wealth gap",
+    "uz": "daromadlar tengsizligi",
+    "ex": "Income inequality has grown in many countries."
+   },
+   {
+    "w": "civic responsibility",
+    "syn": "duty as a citizen",
+    "uz": "fuqarolik burchi",
+    "ex": "Voting is a civic responsibility."
+   },
+   {
+    "w": "raise awareness",
+    "syn": "inform, educate the public",
+    "uz": "xabardorlikni oshirmoq",
+    "ex": "Campaigns can raise awareness of road safety."
+   },
+   {
+    "w": "the authorities",
+    "syn": "the government, officials",
+    "uz": "rasmiylar, hokimiyat",
+    "ex": "The authorities must take action quickly."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Subject–verb agreement",
+  "items": [
+   {
+    "s": "The number of + plural noun + is",
+    "uz": "'number' egasi — birlik",
+    "ex": "The number of cars is rising.",
+    "use": "Task 1 eng ko'p xato"
+   },
+   {
+    "s": "A number of + plural + are",
+    "uz": "'ko'plab' ma'nosida — ko'plik",
+    "ex": "A number of students are absent.",
+    "use": "Farqni eslab qoling"
+   },
+   {
+    "s": "People / police + are",
+    "uz": "ko'plik ma'nosidagi otlar",
+    "ex": "People are more connected today.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Everyone / each / every + is",
+    "uz": "birlik fe'l",
+    "ex": "Everyone has a phone nowadays.",
+    "use": "Speaking"
+   },
+   {
+    "s": "Uncountable nouns + is: information, advice, research",
+    "uz": "sanalmaydigan otlar birlikda",
+    "ex": "The information is useful.",
+    "use": "Writing"
+   },
+   {
+    "s": "One of the + plural + is",
+    "uz": "egasi 'one'",
+    "ex": "One of the main reasons is cost.",
+    "use": "Task 2"
+   },
+   {
+    "s": "The percentage of ... + was",
+    "uz": "ko'rsatkich nomi birlik",
+    "ex": "The percentage of women was 40%.",
+    "use": "Task 1"
+   },
+   {
+    "s": "❌ Technology have changed → ✅ Technology has changed",
+    "uz": "uchinchi shaxs birlikda -s",
+    "ex": "Technology has changed education.",
+    "use": "Tipik xato"
+   }
+  ]
+ }
 }

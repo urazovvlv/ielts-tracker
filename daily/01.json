@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"Success and hard work","items":[
-{"t":"go the extra mile","uz":"kutilganidan ham ko'proq harakat qilmoq","ex":"My teacher always goes the extra mile to explain difficult topics.","use":"Speaking Part 1–2: biror odamni maqtaganda"},
-{"t":"pay off","uz":"(mehnat) o'z samarasini bermoq","ex":"All those early mornings finally paid off when I passed the exam.","use":"Natija haqida gapirganda; juda tabiiy fe'l"},
-{"t":"burn the midnight oil","uz":"tun yarmigacha ishlamoq/o'qimoq","ex":"Before my finals I was burning the midnight oil every night.","use":"Part 2: imtihon yoki loyiha haqida hikoya"},
-{"t":"a piece of cake","uz":"juda oson ish","ex":"The first part of the test was a piece of cake for me.","use":"Norasmiy; faqat Speaking'da ishlating, Writing'da emas"},
-{"t":"learn the ropes","uz":"ishning yo'l-yo'rig'ini o'rganmoq","ex":"It took me a month to learn the ropes at my new job.","use":"Ish, o'qish yoki yangi joy haqida"},
-{"t":"get the hang of something","uz":"biror narsani uddalashni o'rganib olmoq","ex":"Targeting ads was hard at first, but I soon got the hang of it.","use":"Yangi ko'nikma haqida gapirganda"},
-{"t":"hit the books","uz":"jiddiy o'qishga kirishmoq","ex":"I need to hit the books if I want a 7.5.","use":"Part 1: Study/Work savollari"},
-{"t":"keep your eye on the ball","uz":"asosiy maqsaddan chalg'imaslik","ex":"With so many distractions, it's hard to keep your eye on the ball.","use":"Maqsad va intizom haqida"},
-{"t":"against all odds","uz":"barcha qiyinchiliklarga qaramay","ex":"Against all odds, she won a scholarship to study abroad.","use":"Part 2: muvaffaqiyatli odam haqida hikoya"},
-{"t":"the sky's the limit","uz":"imkoniyatlar cheksiz","ex":"With good English, the sky's the limit for young people here.","use":"Kelajak haqida ijobiy fikr bildirganda"}]},
-"reading":{"items":[
-{"w":"analyse","pos":"verb","syn":"examine, study, investigate","uz":"tahlil qilmoq","ex":"Researchers analysed data from 2,000 schools."},
-{"w":"approach","pos":"noun","syn":"method, way, strategy","uz":"yondashuv, usul","ex":"A new approach to teaching maths was tested."},
-{"w":"area","pos":"noun","syn":"field, region, domain","uz":"soha; hudud","ex":"This is a growing area of research."},
-{"w":"assess","pos":"verb","syn":"evaluate, judge, measure","uz":"baholamoq","ex":"The study assessed the impact of noise on sleep."},
-{"w":"assume","pos":"verb","syn":"suppose, presume, take for granted","uz":"faraz qilmoq, deb hisoblamoq","ex":"Scientists once assumed the brain stopped changing after childhood."},
-{"w":"authority","pos":"noun","syn":"power, control; expert","uz":"hokimiyat, vakolat; mutaxassis","ex":"Local authorities banned cars from the centre."},
-{"w":"available","pos":"adj","syn":"accessible, obtainable, on hand","uz":"mavjud, foydalanish mumkin","ex":"Clean water is not available in many rural areas."},
-{"w":"benefit","pos":"noun/verb","syn":"advantage, gain; help","uz":"foyda; foyda keltirmoq","ex":"The benefits of exercise are well documented."},
-{"w":"concept","pos":"noun","syn":"idea, notion, theory","uz":"tushuncha, g'oya","ex":"The concept of time differs across cultures."},
-{"w":"consist of","pos":"verb","syn":"be made up of, comprise, contain","uz":"...dan iborat bo'lmoq","ex":"The diet consisted mainly of rice and fish."}]},
-"speaking":{"theme":"Opening a Part 1 answer naturally","items":[
-{"s":"Well, to be honest, …","uz":"Rostini aytsam, … (javobni tabiiy boshlash)","ex":"Well, to be honest, I'm not a big fan of cooking.","use":"Part 1 har qanday savolda; ko'p takrorlamang"},
-{"s":"Actually, I'd say …","uz":"Aslida, men … der edim","ex":"Actually, I'd say I'm more of a morning person.","use":"Kutilmagan yoki aniq javob berganda"},
-{"s":"It really depends on …","uz":"Bu …ga bog'liq","ex":"It really depends on the weather, but usually I walk to work.","use":"Ha/yo'q bilan javob berib bo'lmaydigan savollarda"},
-{"s":"Definitely, especially when …","uz":"Albatta, ayniqsa … paytda","ex":"Definitely, especially when I'm stressed after work.","use":"Kuchli 'ha' javobini kengaytirish uchun"},
-{"s":"Not really, to be honest. I'd rather …","uz":"Unchalik emas. Men ko'proq …ni afzal ko'raman","ex":"Not really, to be honest. I'd rather read than watch TV.","use":"Salbiy javobni muloyim berish"},
-{"s":"I've always been into …","uz":"Men doim …ga qiziqqanman","ex":"I've always been into marketing and social media.","use":"Hobbi, qiziqishlar haqida"},
-{"s":"These days I tend to …","uz":"Hozirgi kunlarda men odatda …","ex":"These days I tend to study early in the morning.","use":"Odatlar haqida (Present Simple o'rniga tabiiyroq)"},
-{"s":"I used to …, but now …","uz":"Avval … edim, endi esa …","ex":"I used to hate English, but now I actually enjoy it.","use":"O'zgarishni ko'rsatish — grammatika diapazonini oshiradi"},
-{"s":"The main reason is that …","uz":"Asosiy sabab shuki, …","ex":"The main reason is that it helps me relax.","use":"Javobga sabab qo'shish (har javobda 1 ta sabab)"},
-{"s":"…, if that makes sense.","uz":"…, tushunarli bo'ldimi (gapni yumshatib tugatish)","ex":"I like the city, but I need quiet places too, if that makes sense.","use":"Murakkab fikrni tugatganda; kam ishlating"}]},
-"pron":{"theme":"TH sounds /θ/ and /ð/","items":[
-{"w":"think – sink","ipa":"/θɪŋk/ – /sɪŋk/","uz":"/θ/ — tilni tishlar orasiga qo'yib, havo chiqariladi; 's' emas","tip":"Tilning uchi tishlar orasidan sal ko'rinsin"},
-{"w":"three – tree","ipa":"/θriː/ – /triː/","uz":"'three' da 't' emas, /θ/ tovushi","tip":"'th' paytida til tishga tegadi, lekin havo to'xtamaydi"},
-{"w":"thought","ipa":"/θɔːt/","uz":"'gh' o'qilmaydi, cho'ziq /ɔː/","tip":"'thot' emas, 'thoot' kabi cho'zing"},
-{"w":"this – dis","ipa":"/ðɪs/","uz":"/ð/ — /θ/ning jarangli varianti, 'd' emas","tip":"Tovush paytida bo'g'iz titrashi kerak"},
-{"w":"breathe – breath","ipa":"/briːð/ – /breθ/","uz":"fe'l: cho'ziq /iː/ va /ð/; ot: qisqa /e/ va /θ/","tip":"breathe (nafas olmoq), breath (nafas)"},
-{"w":"clothes","ipa":"/kləʊðz/","uz":"ko'pincha 'klouz' deb ham aytiladi — ikkalasi to'g'ri","tip":"'clo-thes' deb ikki bo'g'in qilmang"},
-{"w":"month – months","ipa":"/mʌnθ/ – /mʌnθs/","uz":"oxiridagi /θs/ qiyin; sekin mashq qiling","tip":"'mans' yoki 'monts' emas"},
-{"w":"healthy","ipa":"/ˈhelθi/","uz":"/lθ/ birikmasi; 'helti' emas","tip":"l dan keyin til tishlar orasiga o'tadi"},
-{"w":"although","ipa":"/ɔːlˈðəʊ/","uz":"urg'u 2-bo'g'inda, 'gh' o'qilmaydi","tip":"ol-DHOU"},
-{"w":"theatre","ipa":"/ˈθɪətə/","uz":"/θ/ bilan boshlanadi, 'teatr' emas","tip":"THEE-uh-tuh"}]},
-"task1":{"theme":"Upward trends","items":[
-{"w":"rise / increase","syn":"go up, grow, climb","uz":"oshmoq, ko'tarilmoq (eng asosiy fe'llar)","ex":"The number of students rose from 200 to 350."},
-{"w":"a rise / an increase in","syn":"growth in, an upward trend in","uz":"…dagi o'sish (ot shakli)","ex":"There was a sharp increase in sales in 2010."},
-{"w":"soar","syn":"rocket, surge, shoot up","uz":"keskin va katta oshmoq","ex":"Prices soared to a peak of $90 in 2008."},
-{"w":"climb steadily","syn":"rise gradually, grow consistently","uz":"bir maromda oshib bormoq","ex":"Car ownership climbed steadily over the period."},
-{"w":"double / triple","syn":"increase twofold / threefold","uz":"ikki/uch barobar oshmoq","ex":"The figure doubled between 1990 and 2000."},
-{"w":"reach a peak of","syn":"peak at, hit a high of","uz":"eng yuqori nuqtaga yetmoq","ex":"Unemployment reached a peak of 12% in 2009."},
-{"w":"an upward trend","syn":"a growth trend, an upturn","uz":"o'sish tendensiyasi","ex":"Overall, there was an upward trend in internet use."},
-{"w":"recover","syn":"pick up, bounce back","uz":"pasayishdan keyin qayta oshmoq","ex":"Sales recovered to 500 units by the end of the year."},
-{"w":"by (+ amount)","syn":"—","uz":"…ga oshdi (farq miqdori)","ex":"Exports rose by 15% (= 15% ga oshdi)."},
-{"w":"to (+ level)","syn":"—","uz":"…gacha oshdi (yakuniy daraja)","ex":"Exports rose to 40% (= 40% gacha oshdi)."}]},
-"task2":{"theme":"Education","items":[
-{"w":"curriculum","syn":"syllabus, programme of study","uz":"o'quv dasturi","ex":"Schools should include financial skills in the curriculum."},
-{"w":"rote learning","syn":"memorisation","uz":"yod olish (tushunmasdan)","ex":"Rote learning does not develop critical thinking."},
-{"w":"critical thinking","syn":"analytical skills","uz":"tanqidiy fikrlash","ex":"University should develop students' critical thinking."},
-{"w":"tuition fees","syn":"course fees","uz":"kontrakt to'lovi","ex":"High tuition fees prevent many talented students from studying."},
-{"w":"vocational training","syn":"practical/job training","uz":"kasb-hunar ta'limi","ex":"Vocational training can reduce youth unemployment."},
-{"w":"academic performance","syn":"results, achievement","uz":"o'zlashtirish, o'quv natijalari","ex":"Sleep has a direct effect on academic performance."},
-{"w":"lifelong learning","syn":"continuous education","uz":"umrbod ta'lim","ex":"In a changing economy, lifelong learning is essential."},
-{"w":"distance learning","syn":"online education, e-learning","uz":"masofaviy ta'lim","ex":"Distance learning gives rural students more opportunities."},
-{"w":"equip someone with","syn":"provide with, give","uz":"(bilim/ko'nikma) bilan ta'minlamoq","ex":"Schools must equip young people with practical skills."},
-{"w":"well-rounded","syn":"balanced, all-round","uz":"har tomonlama rivojlangan","ex":"Sport and art help produce well-rounded students."}]}
+ "idioms": {
+  "theme": "Success and hard work",
+  "items": [
+   {
+    "t": "go the extra mile",
+    "uz": "kutilganidan ham ko'proq harakat qilmoq",
+    "ex": "My teacher always goes the extra mile to explain difficult topics.",
+    "use": "Speaking Part 1–2: biror odamni maqtaganda"
+   },
+   {
+    "t": "pay off",
+    "uz": "(mehnat) o'z samarasini bermoq",
+    "ex": "All those early mornings finally paid off when I passed the exam.",
+    "use": "Natija haqida gapirganda; juda tabiiy fe'l"
+   },
+   {
+    "t": "burn the midnight oil",
+    "uz": "tun yarmigacha ishlamoq/o'qimoq",
+    "ex": "Before my finals I was burning the midnight oil every night.",
+    "use": "Part 2: imtihon yoki loyiha haqida hikoya"
+   },
+   {
+    "t": "a piece of cake",
+    "uz": "juda oson ish",
+    "ex": "The first part of the test was a piece of cake for me.",
+    "use": "Norasmiy; faqat Speaking'da ishlating, Writing'da emas"
+   },
+   {
+    "t": "learn the ropes",
+    "uz": "ishning yo'l-yo'rig'ini o'rganmoq",
+    "ex": "It took me a month to learn the ropes at my new job.",
+    "use": "Ish, o'qish yoki yangi joy haqida"
+   },
+   {
+    "t": "get the hang of something",
+    "uz": "biror narsani uddalashni o'rganib olmoq",
+    "ex": "Targeting ads was hard at first, but I soon got the hang of it.",
+    "use": "Yangi ko'nikma haqida gapirganda"
+   },
+   {
+    "t": "hit the books",
+    "uz": "jiddiy o'qishga kirishmoq",
+    "ex": "I need to hit the books if I want a 7.5.",
+    "use": "Part 1: Study/Work savollari"
+   },
+   {
+    "t": "keep your eye on the ball",
+    "uz": "asosiy maqsaddan chalg'imaslik",
+    "ex": "With so many distractions, it's hard to keep your eye on the ball.",
+    "use": "Maqsad va intizom haqida"
+   },
+   {
+    "t": "against all odds",
+    "uz": "barcha qiyinchiliklarga qaramay",
+    "ex": "Against all odds, she won a scholarship to study abroad.",
+    "use": "Part 2: muvaffaqiyatli odam haqida hikoya"
+   },
+   {
+    "t": "the sky's the limit",
+    "uz": "imkoniyatlar cheksiz",
+    "ex": "With good English, the sky's the limit for young people here.",
+    "use": "Kelajak haqida ijobiy fikr bildirganda"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "analyse",
+    "pos": "verb",
+    "syn": "examine, study, investigate",
+    "uz": "tahlil qilmoq",
+    "ex": "Researchers analysed data from 2,000 schools."
+   },
+   {
+    "w": "approach",
+    "pos": "noun",
+    "syn": "method, way, strategy",
+    "uz": "yondashuv, usul",
+    "ex": "A new approach to teaching maths was tested."
+   },
+   {
+    "w": "area",
+    "pos": "noun",
+    "syn": "field, region, domain",
+    "uz": "soha; hudud",
+    "ex": "This is a growing area of research."
+   },
+   {
+    "w": "assess",
+    "pos": "verb",
+    "syn": "evaluate, judge, measure",
+    "uz": "baholamoq",
+    "ex": "The study assessed the impact of noise on sleep."
+   },
+   {
+    "w": "assume",
+    "pos": "verb",
+    "syn": "suppose, presume, take for granted",
+    "uz": "faraz qilmoq, deb hisoblamoq",
+    "ex": "Scientists once assumed the brain stopped changing after childhood."
+   },
+   {
+    "w": "authority",
+    "pos": "noun",
+    "syn": "power, control; expert",
+    "uz": "hokimiyat, vakolat; mutaxassis",
+    "ex": "Local authorities banned cars from the centre."
+   },
+   {
+    "w": "available",
+    "pos": "adj",
+    "syn": "accessible, obtainable, on hand",
+    "uz": "mavjud, foydalanish mumkin",
+    "ex": "Clean water is not available in many rural areas."
+   },
+   {
+    "w": "benefit",
+    "pos": "noun/verb",
+    "syn": "advantage, gain; help",
+    "uz": "foyda; foyda keltirmoq",
+    "ex": "The benefits of exercise are well documented."
+   },
+   {
+    "w": "concept",
+    "pos": "noun",
+    "syn": "idea, notion, theory",
+    "uz": "tushuncha, g'oya",
+    "ex": "The concept of time differs across cultures."
+   },
+   {
+    "w": "consist of",
+    "pos": "verb",
+    "syn": "be made up of, comprise, contain",
+    "uz": "...dan iborat bo'lmoq",
+    "ex": "The diet consisted mainly of rice and fish."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Opening a Part 1 answer naturally",
+  "items": [
+   {
+    "s": "Well, to be honest, …",
+    "uz": "Rostini aytsam, … (javobni tabiiy boshlash)",
+    "ex": "Well, to be honest, I'm not a big fan of cooking.",
+    "use": "Part 1 har qanday savolda; ko'p takrorlamang"
+   },
+   {
+    "s": "Actually, I'd say …",
+    "uz": "Aslida, men … der edim",
+    "ex": "Actually, I'd say I'm more of a morning person.",
+    "use": "Kutilmagan yoki aniq javob berganda"
+   },
+   {
+    "s": "It really depends on …",
+    "uz": "Bu …ga bog'liq",
+    "ex": "It really depends on the weather, but usually I walk to work.",
+    "use": "Ha/yo'q bilan javob berib bo'lmaydigan savollarda"
+   },
+   {
+    "s": "Definitely, especially when …",
+    "uz": "Albatta, ayniqsa … paytda",
+    "ex": "Definitely, especially when I'm stressed after work.",
+    "use": "Kuchli 'ha' javobini kengaytirish uchun"
+   },
+   {
+    "s": "Not really, to be honest. I'd rather …",
+    "uz": "Unchalik emas. Men ko'proq …ni afzal ko'raman",
+    "ex": "Not really, to be honest. I'd rather read than watch TV.",
+    "use": "Salbiy javobni muloyim berish"
+   },
+   {
+    "s": "I've always been into …",
+    "uz": "Men doim …ga qiziqqanman",
+    "ex": "I've always been into marketing and social media.",
+    "use": "Hobbi, qiziqishlar haqida"
+   },
+   {
+    "s": "These days I tend to …",
+    "uz": "Hozirgi kunlarda men odatda …",
+    "ex": "These days I tend to study early in the morning.",
+    "use": "Odatlar haqida (Present Simple o'rniga tabiiyroq)"
+   },
+   {
+    "s": "I used to …, but now …",
+    "uz": "Avval … edim, endi esa …",
+    "ex": "I used to hate English, but now I actually enjoy it.",
+    "use": "O'zgarishni ko'rsatish — grammatika diapazonini oshiradi"
+   },
+   {
+    "s": "The main reason is that …",
+    "uz": "Asosiy sabab shuki, …",
+    "ex": "The main reason is that it helps me relax.",
+    "use": "Javobga sabab qo'shish (har javobda 1 ta sabab)"
+   },
+   {
+    "s": "…, if that makes sense.",
+    "uz": "…, tushunarli bo'ldimi (gapni yumshatib tugatish)",
+    "ex": "I like the city, but I need quiet places too, if that makes sense.",
+    "use": "Murakkab fikrni tugatganda; kam ishlating"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "TH sounds /θ/ and /ð/",
+  "items": [
+   {
+    "w": "think – sink",
+    "ipa": "/θɪŋk/ – /sɪŋk/",
+    "uz": "/θ/ — tilni tishlar orasiga qo'yib, havo chiqariladi; 's' emas",
+    "tip": "Tilning uchi tishlar orasidan sal ko'rinsin"
+   },
+   {
+    "w": "three – tree",
+    "ipa": "/θriː/ – /triː/",
+    "uz": "'three' da 't' emas, /θ/ tovushi",
+    "tip": "'th' paytida til tishga tegadi, lekin havo to'xtamaydi"
+   },
+   {
+    "w": "thought",
+    "ipa": "/θɔːt/",
+    "uz": "'gh' o'qilmaydi, cho'ziq /ɔː/",
+    "tip": "'thot' emas, 'thoot' kabi cho'zing"
+   },
+   {
+    "w": "this – dis",
+    "ipa": "/ðɪs/",
+    "uz": "/ð/ — /θ/ning jarangli varianti, 'd' emas",
+    "tip": "Tovush paytida bo'g'iz titrashi kerak"
+   },
+   {
+    "w": "breathe – breath",
+    "ipa": "/briːð/ – /breθ/",
+    "uz": "fe'l: cho'ziq /iː/ va /ð/; ot: qisqa /e/ va /θ/",
+    "tip": "breathe (nafas olmoq), breath (nafas)"
+   },
+   {
+    "w": "clothes",
+    "ipa": "/kləʊðz/",
+    "uz": "ko'pincha 'klouz' deb ham aytiladi — ikkalasi to'g'ri",
+    "tip": "'clo-thes' deb ikki bo'g'in qilmang"
+   },
+   {
+    "w": "month – months",
+    "ipa": "/mʌnθ/ – /mʌnθs/",
+    "uz": "oxiridagi /θs/ qiyin; sekin mashq qiling",
+    "tip": "'mans' yoki 'monts' emas"
+   },
+   {
+    "w": "healthy",
+    "ipa": "/ˈhelθi/",
+    "uz": "/lθ/ birikmasi; 'helti' emas",
+    "tip": "l dan keyin til tishlar orasiga o'tadi"
+   },
+   {
+    "w": "although",
+    "ipa": "/ɔːlˈðəʊ/",
+    "uz": "urg'u 2-bo'g'inda, 'gh' o'qilmaydi",
+    "tip": "ol-DHOU"
+   },
+   {
+    "w": "theatre",
+    "ipa": "/ˈθɪətə/",
+    "uz": "/θ/ bilan boshlanadi, 'teatr' emas",
+    "tip": "THEE-uh-tuh"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Upward trends",
+  "items": [
+   {
+    "w": "rise / increase",
+    "syn": "go up, grow, climb",
+    "uz": "oshmoq, ko'tarilmoq (eng asosiy fe'llar)",
+    "ex": "The number of students rose from 200 to 350."
+   },
+   {
+    "w": "a rise / an increase in",
+    "syn": "growth in, an upward trend in",
+    "uz": "…dagi o'sish (ot shakli)",
+    "ex": "There was a sharp increase in sales in 2010."
+   },
+   {
+    "w": "soar",
+    "syn": "rocket, surge, shoot up",
+    "uz": "keskin va katta oshmoq",
+    "ex": "Prices soared to a peak of $90 in 2008."
+   },
+   {
+    "w": "climb steadily",
+    "syn": "rise gradually, grow consistently",
+    "uz": "bir maromda oshib bormoq",
+    "ex": "Car ownership climbed steadily over the period."
+   },
+   {
+    "w": "double / triple",
+    "syn": "increase twofold / threefold",
+    "uz": "ikki/uch barobar oshmoq",
+    "ex": "The figure doubled between 1990 and 2000."
+   },
+   {
+    "w": "reach a peak of",
+    "syn": "peak at, hit a high of",
+    "uz": "eng yuqori nuqtaga yetmoq",
+    "ex": "Unemployment reached a peak of 12% in 2009."
+   },
+   {
+    "w": "an upward trend",
+    "syn": "a growth trend, an upturn",
+    "uz": "o'sish tendensiyasi",
+    "ex": "Overall, there was an upward trend in internet use."
+   },
+   {
+    "w": "recover",
+    "syn": "pick up, bounce back",
+    "uz": "pasayishdan keyin qayta oshmoq",
+    "ex": "Sales recovered to 500 units by the end of the year."
+   },
+   {
+    "w": "by (+ amount)",
+    "syn": "—",
+    "uz": "…ga oshdi (farq miqdori)",
+    "ex": "Exports rose by 15% (= 15% ga oshdi)."
+   },
+   {
+    "w": "to (+ level)",
+    "syn": "—",
+    "uz": "…gacha oshdi (yakuniy daraja)",
+    "ex": "Exports rose to 40% (= 40% gacha oshdi)."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Education",
+  "items": [
+   {
+    "w": "curriculum",
+    "syn": "syllabus, programme of study",
+    "uz": "o'quv dasturi",
+    "ex": "Schools should include financial skills in the curriculum."
+   },
+   {
+    "w": "rote learning",
+    "syn": "memorisation",
+    "uz": "yod olish (tushunmasdan)",
+    "ex": "Rote learning does not develop critical thinking."
+   },
+   {
+    "w": "critical thinking",
+    "syn": "analytical skills",
+    "uz": "tanqidiy fikrlash",
+    "ex": "University should develop students' critical thinking."
+   },
+   {
+    "w": "tuition fees",
+    "syn": "course fees",
+    "uz": "kontrakt to'lovi",
+    "ex": "High tuition fees prevent many talented students from studying."
+   },
+   {
+    "w": "vocational training",
+    "syn": "practical/job training",
+    "uz": "kasb-hunar ta'limi",
+    "ex": "Vocational training can reduce youth unemployment."
+   },
+   {
+    "w": "academic performance",
+    "syn": "results, achievement",
+    "uz": "o'zlashtirish, o'quv natijalari",
+    "ex": "Sleep has a direct effect on academic performance."
+   },
+   {
+    "w": "lifelong learning",
+    "syn": "continuous education",
+    "uz": "umrbod ta'lim",
+    "ex": "In a changing economy, lifelong learning is essential."
+   },
+   {
+    "w": "distance learning",
+    "syn": "online education, e-learning",
+    "uz": "masofaviy ta'lim",
+    "ex": "Distance learning gives rural students more opportunities."
+   },
+   {
+    "w": "equip someone with",
+    "syn": "provide with, give",
+    "uz": "(bilim/ko'nikma) bilan ta'minlamoq",
+    "ex": "Schools must equip young people with practical skills."
+   },
+   {
+    "w": "well-rounded",
+    "syn": "balanced, all-round",
+    "uz": "har tomonlama rivojlangan",
+    "ex": "Sport and art help produce well-rounded students."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Present Perfect vs Past Simple",
+  "items": [
+   {
+    "s": "have/has + V3 (Present Perfect)",
+    "uz": "o'tmishda boshlanib hozir bilan bog'liq ish; aniq vaqt aytilmaydi",
+    "ex": "I have studied English for six years.",
+    "use": "Speaking Part 1: tajriba va davomiylik"
+   },
+   {
+    "s": "V2 (Past Simple) + aniq vaqt",
+    "uz": "o'tmishda tugagan ish, vaqti aniq: yesterday, in 2020, last year",
+    "ex": "I started learning English in 2019.",
+    "use": "Task 1: o'tgan yillar ma'lumotlari"
+   },
+   {
+    "s": "for / since",
+    "uz": "for + davomiylik (for 3 years), since + boshlanish nuqtasi (since 2020)",
+    "ex": "I have lived in Tashkent since 2022.",
+    "use": "Ko'p uchraydigan xato joyi"
+   },
+   {
+    "s": "ever / never / already / yet",
+    "uz": "Present Perfect bilan keladigan so'zlar",
+    "ex": "Have you ever been abroad? I haven't decided yet.",
+    "use": "Speaking: tajriba savollari"
+   },
+   {
+    "s": "❌ I have visited Bukhara last year → ✅ I visited Bukhara last year",
+    "uz": "aniq vaqt bo'lsa Present Perfect ishlatilmaydi",
+    "ex": "I visited Bukhara last summer.",
+    "use": "Eng ko'p uchraydigan xato"
+   },
+   {
+    "s": "Present Perfect Continuous: have been + -ing",
+    "uz": "hozirgacha davom etayotgan jarayonga urg'u",
+    "ex": "I have been preparing for IELTS for two months.",
+    "use": "Speaking: hozirgi faoliyat"
+   },
+   {
+    "s": "Task 1: between 1990 and 2010 → Past Simple",
+    "uz": "grafikdagi o'tgan davr har doim Past Simple",
+    "ex": "Sales rose steadily between 1990 and 2010.",
+    "use": "Task 1 zamon tanlovi"
+   },
+   {
+    "s": "Task 2: in recent years → Present Perfect",
+    "uz": "so'nggi yillardagi o'zgarishlar haqida",
+    "ex": "In recent years, online learning has become popular.",
+    "use": "Task 2 kirish gapi"
+   }
+  ]
+ }
 }

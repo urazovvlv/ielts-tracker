@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"People and relationships","items":[
-{"t":"get on (well) with","uz":"…bilan yaxshi munosabatda bo'lmoq","ex":"I get on really well with my younger brother.","use":"Part 1: Family savollari"},
-{"t":"see eye to eye","uz":"fikri bir joydan chiqmoq","ex":"My dad and I don't always see eye to eye.","use":"Ko'pincha inkor shaklida"},
-{"t":"hit it off","uz":"darhol til topishmoq","ex":"We hit it off as soon as we met.","use":"Do'st bilan tanishuv hikoyasi"},
-{"t":"a shoulder to cry on","uz":"dardlashadigan odam","ex":"My best friend is always a shoulder to cry on.","use":"Part 2: do'stni tasvirlash"},
-{"t":"take after","uz":"(ota-onaga) o'xshamoq","ex":"I take after my father; we're both stubborn.","use":"Oila a'zolari haqida"},
-{"t":"look up to","uz":"…ni o'ziga namuna deb bilmoq","ex":"I've always looked up to my older sister.","use":"Part 2: ta'sir qilgan odam"},
-{"t":"fall out with","uz":"…bilan urishib qolmoq","ex":"I fell out with my roommate over money.","use":"Munosabatlar muammosi"},
-{"t":"get along like a house on fire","uz":"juda yaxshi chiqishmoq","ex":"The two kids got along like a house on fire.","use":"Kuchli ifoda, kam ishlating"},
-{"t":"down-to-earth","uz":"oddiy, kamtar, hayotiy","ex":"Despite being rich, he's very down-to-earth.","use":"Xarakter tasviri — juda foydali"},
-{"t":"keep in touch","uz":"aloqani uzmaslik","ex":"We keep in touch through Telegram.","use":"Do'stlar, texnologiya"}]},
-"reading":{"items":[
-{"w":"complex","pos":"adj","syn":"complicated, intricate","uz":"murakkab","ex":"Climate is a complex system."},
-{"w":"conclude","pos":"verb","syn":"decide, infer; end","uz":"xulosa qilmoq; yakunlamoq","ex":"The authors concluded that diet matters most."},
-{"w":"conduct","pos":"verb","syn":"carry out, do, perform","uz":"o'tkazmoq (tadqiqot)","ex":"A survey was conducted in 20 cities."},
-{"w":"consequence","pos":"noun","syn":"result, effect, outcome","uz":"oqibat","ex":"The decision had serious consequences."},
-{"w":"construct","pos":"verb","syn":"build, create, assemble","uz":"qurmoq","ex":"The bridge was constructed in 1890."},
-{"w":"consume","pos":"verb","syn":"use, eat, spend","uz":"iste'mol qilmoq","ex":"The USA consumes a quarter of world energy."},
-{"w":"credit","pos":"noun/verb","syn":"recognition; attribute to","uz":"e'tirof; …ga nisbat bermoq","ex":"The invention is credited to a Chinese engineer."},
-{"w":"culture","pos":"noun","syn":"customs, civilisation, way of life","uz":"madaniyat","ex":"Food is an important part of culture."},
-{"w":"design","pos":"verb/noun","syn":"plan, create; pattern","uz":"loyihalamoq; dizayn","ex":"The building was designed to save energy."},
-{"w":"distinct","pos":"adj","syn":"different, separate, clear","uz":"aniq, alohida","ex":"There are two distinct groups of users."}]},
-"speaking":{"theme":"Telling a story about the past (Part 2)","items":[
-{"s":"It was back in …, when I was …","uz":"Bu …da, men … bo'lganimda edi","ex":"It was back in 2019, when I was in my first year.","use":"Part 2 ni vaqt bilan boshlash"},
-{"s":"I remember it clearly because …","uz":"Buni aniq eslayman, chunki …","ex":"I remember it clearly because it was my first flight.","use":"Nega esda qolganini tushuntirish"},
-{"s":"At first, …, but then …","uz":"Dastlab …, lekin keyin …","ex":"At first, I was nervous, but then I relaxed.","use":"Hikoyani rivojlantirish"},
-{"s":"What happened was …","uz":"Bo'lgan voqea shu edi: …","ex":"What happened was my phone died in the middle of the city.","use":"Asosiy voqeani boshlash"},
-{"s":"I was …ing when …","uz":"Men … qilayotgan edim, shunda …","ex":"I was walking home when it started to pour.","use":"Past Continuous + Past Simple"},
-{"s":"Before long, …","uz":"Ko'p o'tmay, …","ex":"Before long, we were laughing about it.","use":"Hikoyani tezlashtirish"},
-{"s":"Looking back, …","uz":"Orqaga qarasam, …","ex":"Looking back, it was the best decision I've made.","use":"Part 2 oxirida xulosa"},
-{"s":"I'd never … before, so …","uz":"Avval hech qachon … qilmagan edim, shuning uchun …","ex":"I'd never been abroad before, so everything felt new.","use":"Past Perfect — yuqori band"},
-{"s":"The best part was …","uz":"Eng yaxshi tomoni … edi","ex":"The best part was seeing my parents so proud.","use":"His-tuyg'u qo'shish"},
-{"s":"It taught me that …","uz":"Bu menga … ekanini o'rgatdi","ex":"It taught me that preparation matters.","use":"Hikoyani ma'no bilan tugatish"}]},
-"pron":{"theme":"Words Uzbek speakers often mispronounce","items":[
-{"w":"comfortable","ipa":"/ˈkʌmftəbl/","uz":"3 bo'g'in, 'com-for-table' emas","tip":"KUMF-tuh-bl"},
-{"w":"vegetable","ipa":"/ˈvedʒtəbl/","uz":"3 bo'g'in","tip":"VEJ-tuh-bl"},
-{"w":"interesting","ipa":"/ˈɪntrəstɪŋ/","uz":"urg'u 1-bo'g'inda, ko'pincha 3 bo'g'in","tip":"IN-truh-sting"},
-{"w":"chocolate","ipa":"/ˈtʃɒklət/","uz":"2 bo'g'in","tip":"CHOK-lut"},
-{"w":"determine","ipa":"/dɪˈtɜːmɪn/","uz":"oxiri /mɪn/, 'mayn' emas","tip":"di-TER-min"},
-{"w":"environment","ipa":"/ɪnˈvaɪrənmənt/","uz":"urg'u 2-bo'g'inda","tip":"in-VAI-run-ment"},
-{"w":"hierarchy","ipa":"/ˈhaɪərɑːki/","uz":"'ch' /k/ deb o'qiladi","tip":"HAI-uh-raa-kee"},
-{"w":"recipe","ipa":"/ˈresəpi/","uz":"3 bo'g'in, oxiri /pi/","tip":"RES-uh-pee"},
-{"w":"Europe","ipa":"/ˈjʊərəp/","uz":"/j/ bilan boshlanadi, 'Yevropa' emas","tip":"YOOR-up"},
-{"w":"photograph – photography","ipa":"/ˈfəʊtəɡrɑːf/ – /fəˈtɒɡrəfi/","uz":"urg'u ko'chadi","tip":"PHO-to-graph / pho-TO-graphy"}]},
-"task1":{"theme":"Writing the overview","items":[
-{"w":"Overall, …","syn":"In general, It is clear that …","uz":"Umuman olganda (overview shu so'z bilan boshlanadi)","ex":"Overall, car use increased while bus use declined."},
-{"w":"It is clear that …","syn":"It is evident that …","uz":"Aniq ko'rinib turibdiki, …","ex":"It is clear that the USA consumed the most energy."},
-{"w":"the most striking feature","syn":"the most noticeable trend","uz":"eng ko'zga tashlanadigan jihat","ex":"The most striking feature is the rise in solar power."},
-{"w":"experienced an upward/downward trend","syn":"rose/fell overall","uz":"umumiy o'sish/pasayish kuzatildi","ex":"All three countries experienced an upward trend."},
-{"w":"remained the most popular","syn":"stayed in first place","uz":"eng ommabopligicha qoldi","ex":"Football remained the most popular sport."},
-{"w":"the reverse was true for","syn":"the opposite happened for","uz":"… uchun buning aksi bo'ldi","ex":"Sales rose in cities; the reverse was true for villages."},
-{"w":"at a glance","syn":"immediately visible","uz":"bir qarashda","ex":"At a glance, the biggest change was in Asia."},
-{"w":"no overview = band 5","syn":"—","uz":"Overview bo'lmasa Task Achievement 5 dan oshmaydi — har doim yozing","ex":"Overview: 2 gap, raqamsiz, eng asosiy tendensiyalar."},
-{"w":"in terms of","syn":"regarding, with respect to","uz":"… jihatidan","ex":"In terms of cost, Japan was the most expensive."},
-{"w":"Generally speaking, …","syn":"On the whole, …","uz":"Umuman aytganda, …","ex":"Generally speaking, men spent more than women."}]},
-"task2":{"theme":"Globalisation and culture","items":[
-{"w":"cultural identity","syn":"national identity, heritage","uz":"madaniy o'ziga xoslik","ex":"Globalisation may weaken cultural identity."},
-{"w":"preserve traditions","syn":"protect customs","uz":"an'analarni saqlab qolmoq","ex":"Festivals help preserve traditions."},
-{"w":"cultural homogenisation","syn":"loss of cultural diversity","uz":"madaniyatlarning bir xillashuvi","ex":"Global brands lead to cultural homogenisation."},
-{"w":"multinational corporations","syn":"global companies","uz":"transmilliy korporatsiyalar","ex":"Multinational corporations create jobs in poor countries."},
-{"w":"cross-cultural understanding","syn":"intercultural awareness","uz":"madaniyatlararo tushunish","ex":"Travel promotes cross-cultural understanding."},
-{"w":"lingua franca","syn":"common language","uz":"umumiy muloqot tili","ex":"English has become a global lingua franca."},
-{"w":"cultural exchange","syn":"sharing of cultures","uz":"madaniy almashinuv","ex":"Student programmes encourage cultural exchange."},
-{"w":"heritage sites","syn":"historic monuments","uz":"tarixiy meros obidalari","ex":"Samarkand's heritage sites attract tourists."},
-{"w":"interconnected","syn":"linked, interdependent","uz":"o'zaro bog'langan","ex":"Today's economies are deeply interconnected."},
-{"w":"erode","syn":"weaken gradually, undermine","uz":"asta-sekin yemirmoq","ex":"Western media may erode local values."}]}
+ "idioms": {
+  "theme": "People and relationships",
+  "items": [
+   {
+    "t": "get on (well) with",
+    "uz": "…bilan yaxshi munosabatda bo'lmoq",
+    "ex": "I get on really well with my younger brother.",
+    "use": "Part 1: Family savollari"
+   },
+   {
+    "t": "see eye to eye",
+    "uz": "fikri bir joydan chiqmoq",
+    "ex": "My dad and I don't always see eye to eye.",
+    "use": "Ko'pincha inkor shaklida"
+   },
+   {
+    "t": "hit it off",
+    "uz": "darhol til topishmoq",
+    "ex": "We hit it off as soon as we met.",
+    "use": "Do'st bilan tanishuv hikoyasi"
+   },
+   {
+    "t": "a shoulder to cry on",
+    "uz": "dardlashadigan odam",
+    "ex": "My best friend is always a shoulder to cry on.",
+    "use": "Part 2: do'stni tasvirlash"
+   },
+   {
+    "t": "take after",
+    "uz": "(ota-onaga) o'xshamoq",
+    "ex": "I take after my father; we're both stubborn.",
+    "use": "Oila a'zolari haqida"
+   },
+   {
+    "t": "look up to",
+    "uz": "…ni o'ziga namuna deb bilmoq",
+    "ex": "I've always looked up to my older sister.",
+    "use": "Part 2: ta'sir qilgan odam"
+   },
+   {
+    "t": "fall out with",
+    "uz": "…bilan urishib qolmoq",
+    "ex": "I fell out with my roommate over money.",
+    "use": "Munosabatlar muammosi"
+   },
+   {
+    "t": "get along like a house on fire",
+    "uz": "juda yaxshi chiqishmoq",
+    "ex": "The two kids got along like a house on fire.",
+    "use": "Kuchli ifoda, kam ishlating"
+   },
+   {
+    "t": "down-to-earth",
+    "uz": "oddiy, kamtar, hayotiy",
+    "ex": "Despite being rich, he's very down-to-earth.",
+    "use": "Xarakter tasviri — juda foydali"
+   },
+   {
+    "t": "keep in touch",
+    "uz": "aloqani uzmaslik",
+    "ex": "We keep in touch through Telegram.",
+    "use": "Do'stlar, texnologiya"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "complex",
+    "pos": "adj",
+    "syn": "complicated, intricate",
+    "uz": "murakkab",
+    "ex": "Climate is a complex system."
+   },
+   {
+    "w": "conclude",
+    "pos": "verb",
+    "syn": "decide, infer; end",
+    "uz": "xulosa qilmoq; yakunlamoq",
+    "ex": "The authors concluded that diet matters most."
+   },
+   {
+    "w": "conduct",
+    "pos": "verb",
+    "syn": "carry out, do, perform",
+    "uz": "o'tkazmoq (tadqiqot)",
+    "ex": "A survey was conducted in 20 cities."
+   },
+   {
+    "w": "consequence",
+    "pos": "noun",
+    "syn": "result, effect, outcome",
+    "uz": "oqibat",
+    "ex": "The decision had serious consequences."
+   },
+   {
+    "w": "construct",
+    "pos": "verb",
+    "syn": "build, create, assemble",
+    "uz": "qurmoq",
+    "ex": "The bridge was constructed in 1890."
+   },
+   {
+    "w": "consume",
+    "pos": "verb",
+    "syn": "use, eat, spend",
+    "uz": "iste'mol qilmoq",
+    "ex": "The USA consumes a quarter of world energy."
+   },
+   {
+    "w": "credit",
+    "pos": "noun/verb",
+    "syn": "recognition; attribute to",
+    "uz": "e'tirof; …ga nisbat bermoq",
+    "ex": "The invention is credited to a Chinese engineer."
+   },
+   {
+    "w": "culture",
+    "pos": "noun",
+    "syn": "customs, civilisation, way of life",
+    "uz": "madaniyat",
+    "ex": "Food is an important part of culture."
+   },
+   {
+    "w": "design",
+    "pos": "verb/noun",
+    "syn": "plan, create; pattern",
+    "uz": "loyihalamoq; dizayn",
+    "ex": "The building was designed to save energy."
+   },
+   {
+    "w": "distinct",
+    "pos": "adj",
+    "syn": "different, separate, clear",
+    "uz": "aniq, alohida",
+    "ex": "There are two distinct groups of users."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Telling a story about the past (Part 2)",
+  "items": [
+   {
+    "s": "It was back in …, when I was …",
+    "uz": "Bu …da, men … bo'lganimda edi",
+    "ex": "It was back in 2019, when I was in my first year.",
+    "use": "Part 2 ni vaqt bilan boshlash"
+   },
+   {
+    "s": "I remember it clearly because …",
+    "uz": "Buni aniq eslayman, chunki …",
+    "ex": "I remember it clearly because it was my first flight.",
+    "use": "Nega esda qolganini tushuntirish"
+   },
+   {
+    "s": "At first, …, but then …",
+    "uz": "Dastlab …, lekin keyin …",
+    "ex": "At first, I was nervous, but then I relaxed.",
+    "use": "Hikoyani rivojlantirish"
+   },
+   {
+    "s": "What happened was …",
+    "uz": "Bo'lgan voqea shu edi: …",
+    "ex": "What happened was my phone died in the middle of the city.",
+    "use": "Asosiy voqeani boshlash"
+   },
+   {
+    "s": "I was …ing when …",
+    "uz": "Men … qilayotgan edim, shunda …",
+    "ex": "I was walking home when it started to pour.",
+    "use": "Past Continuous + Past Simple"
+   },
+   {
+    "s": "Before long, …",
+    "uz": "Ko'p o'tmay, …",
+    "ex": "Before long, we were laughing about it.",
+    "use": "Hikoyani tezlashtirish"
+   },
+   {
+    "s": "Looking back, …",
+    "uz": "Orqaga qarasam, …",
+    "ex": "Looking back, it was the best decision I've made.",
+    "use": "Part 2 oxirida xulosa"
+   },
+   {
+    "s": "I'd never … before, so …",
+    "uz": "Avval hech qachon … qilmagan edim, shuning uchun …",
+    "ex": "I'd never been abroad before, so everything felt new.",
+    "use": "Past Perfect — yuqori band"
+   },
+   {
+    "s": "The best part was …",
+    "uz": "Eng yaxshi tomoni … edi",
+    "ex": "The best part was seeing my parents so proud.",
+    "use": "His-tuyg'u qo'shish"
+   },
+   {
+    "s": "It taught me that …",
+    "uz": "Bu menga … ekanini o'rgatdi",
+    "ex": "It taught me that preparation matters.",
+    "use": "Hikoyani ma'no bilan tugatish"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Words Uzbek speakers often mispronounce",
+  "items": [
+   {
+    "w": "comfortable",
+    "ipa": "/ˈkʌmftəbl/",
+    "uz": "3 bo'g'in, 'com-for-table' emas",
+    "tip": "KUMF-tuh-bl"
+   },
+   {
+    "w": "vegetable",
+    "ipa": "/ˈvedʒtəbl/",
+    "uz": "3 bo'g'in",
+    "tip": "VEJ-tuh-bl"
+   },
+   {
+    "w": "interesting",
+    "ipa": "/ˈɪntrəstɪŋ/",
+    "uz": "urg'u 1-bo'g'inda, ko'pincha 3 bo'g'in",
+    "tip": "IN-truh-sting"
+   },
+   {
+    "w": "chocolate",
+    "ipa": "/ˈtʃɒklət/",
+    "uz": "2 bo'g'in",
+    "tip": "CHOK-lut"
+   },
+   {
+    "w": "determine",
+    "ipa": "/dɪˈtɜːmɪn/",
+    "uz": "oxiri /mɪn/, 'mayn' emas",
+    "tip": "di-TER-min"
+   },
+   {
+    "w": "environment",
+    "ipa": "/ɪnˈvaɪrənmənt/",
+    "uz": "urg'u 2-bo'g'inda",
+    "tip": "in-VAI-run-ment"
+   },
+   {
+    "w": "hierarchy",
+    "ipa": "/ˈhaɪərɑːki/",
+    "uz": "'ch' /k/ deb o'qiladi",
+    "tip": "HAI-uh-raa-kee"
+   },
+   {
+    "w": "recipe",
+    "ipa": "/ˈresəpi/",
+    "uz": "3 bo'g'in, oxiri /pi/",
+    "tip": "RES-uh-pee"
+   },
+   {
+    "w": "Europe",
+    "ipa": "/ˈjʊərəp/",
+    "uz": "/j/ bilan boshlanadi, 'Yevropa' emas",
+    "tip": "YOOR-up"
+   },
+   {
+    "w": "photograph – photography",
+    "ipa": "/ˈfəʊtəɡrɑːf/ – /fəˈtɒɡrəfi/",
+    "uz": "urg'u ko'chadi",
+    "tip": "PHO-to-graph / pho-TO-graphy"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing the overview",
+  "items": [
+   {
+    "w": "Overall, …",
+    "syn": "In general, It is clear that …",
+    "uz": "Umuman olganda (overview shu so'z bilan boshlanadi)",
+    "ex": "Overall, car use increased while bus use declined."
+   },
+   {
+    "w": "It is clear that …",
+    "syn": "It is evident that …",
+    "uz": "Aniq ko'rinib turibdiki, …",
+    "ex": "It is clear that the USA consumed the most energy."
+   },
+   {
+    "w": "the most striking feature",
+    "syn": "the most noticeable trend",
+    "uz": "eng ko'zga tashlanadigan jihat",
+    "ex": "The most striking feature is the rise in solar power."
+   },
+   {
+    "w": "experienced an upward/downward trend",
+    "syn": "rose/fell overall",
+    "uz": "umumiy o'sish/pasayish kuzatildi",
+    "ex": "All three countries experienced an upward trend."
+   },
+   {
+    "w": "remained the most popular",
+    "syn": "stayed in first place",
+    "uz": "eng ommabopligicha qoldi",
+    "ex": "Football remained the most popular sport."
+   },
+   {
+    "w": "the reverse was true for",
+    "syn": "the opposite happened for",
+    "uz": "… uchun buning aksi bo'ldi",
+    "ex": "Sales rose in cities; the reverse was true for villages."
+   },
+   {
+    "w": "at a glance",
+    "syn": "immediately visible",
+    "uz": "bir qarashda",
+    "ex": "At a glance, the biggest change was in Asia."
+   },
+   {
+    "w": "no overview = band 5",
+    "syn": "—",
+    "uz": "Overview bo'lmasa Task Achievement 5 dan oshmaydi — har doim yozing",
+    "ex": "Overview: 2 gap, raqamsiz, eng asosiy tendensiyalar."
+   },
+   {
+    "w": "in terms of",
+    "syn": "regarding, with respect to",
+    "uz": "… jihatidan",
+    "ex": "In terms of cost, Japan was the most expensive."
+   },
+   {
+    "w": "Generally speaking, …",
+    "syn": "On the whole, …",
+    "uz": "Umuman aytganda, …",
+    "ex": "Generally speaking, men spent more than women."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Globalisation and culture",
+  "items": [
+   {
+    "w": "cultural identity",
+    "syn": "national identity, heritage",
+    "uz": "madaniy o'ziga xoslik",
+    "ex": "Globalisation may weaken cultural identity."
+   },
+   {
+    "w": "preserve traditions",
+    "syn": "protect customs",
+    "uz": "an'analarni saqlab qolmoq",
+    "ex": "Festivals help preserve traditions."
+   },
+   {
+    "w": "cultural homogenisation",
+    "syn": "loss of cultural diversity",
+    "uz": "madaniyatlarning bir xillashuvi",
+    "ex": "Global brands lead to cultural homogenisation."
+   },
+   {
+    "w": "multinational corporations",
+    "syn": "global companies",
+    "uz": "transmilliy korporatsiyalar",
+    "ex": "Multinational corporations create jobs in poor countries."
+   },
+   {
+    "w": "cross-cultural understanding",
+    "syn": "intercultural awareness",
+    "uz": "madaniyatlararo tushunish",
+    "ex": "Travel promotes cross-cultural understanding."
+   },
+   {
+    "w": "lingua franca",
+    "syn": "common language",
+    "uz": "umumiy muloqot tili",
+    "ex": "English has become a global lingua franca."
+   },
+   {
+    "w": "cultural exchange",
+    "syn": "sharing of cultures",
+    "uz": "madaniy almashinuv",
+    "ex": "Student programmes encourage cultural exchange."
+   },
+   {
+    "w": "heritage sites",
+    "syn": "historic monuments",
+    "uz": "tarixiy meros obidalari",
+    "ex": "Samarkand's heritage sites attract tourists."
+   },
+   {
+    "w": "interconnected",
+    "syn": "linked, interdependent",
+    "uz": "o'zaro bog'langan",
+    "ex": "Today's economies are deeply interconnected."
+   },
+   {
+    "w": "erode",
+    "syn": "weaken gradually, undermine",
+    "uz": "asta-sekin yemirmoq",
+    "ex": "Western media may erode local values."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Countable, uncountable and quantifiers",
+  "items": [
+   {
+    "s": "many + countable / much + uncountable",
+    "uz": "ko'p (savol va inkor gaplarda ayniqsa)",
+    "ex": "How many books? How much time?",
+    "use": "Asosiy farq"
+   },
+   {
+    "s": "a large number of + countable",
+    "uz": "rasmiy 'ko'p'",
+    "ex": "A large number of students study abroad.",
+    "use": "Task 2: a lot of o'rniga"
+   },
+   {
+    "s": "a great deal of / a large amount of + uncountable",
+    "uz": "rasmiy 'ko'p' sanalmaydiganlar uchun",
+    "ex": "A great deal of money is spent on advertising.",
+    "use": "Task 2"
+   },
+   {
+    "s": "fewer + countable / less + uncountable",
+    "uz": "kamroq",
+    "ex": "Fewer people smoke; less money is spent.",
+    "use": "Task 1 taqqoslash"
+   },
+   {
+    "s": "Uncountable: advice, equipment, research, traffic, furniture",
+    "uz": "ko'plik -s qo'shilmaydi",
+    "ex": "They gave me useful advice.",
+    "use": "Ko'p uchraydigan xato so'zlar"
+   },
+   {
+    "s": "a piece of / an item of",
+    "uz": "sanalmaydiganni sanash",
+    "ex": "a piece of advice, an item of furniture",
+    "use": "Speaking"
+   },
+   {
+    "s": "few vs a few, little vs a little",
+    "uz": "few = deyarli yo'q (salbiy), a few = bir nechta",
+    "ex": "Few students passed. A few friends helped me.",
+    "use": "Band 7 aniqlik"
+   },
+   {
+    "s": "❌ informations, advices, researches → ✅ information, advice, research",
+    "uz": "-s qo'shilmaydi",
+    "ex": "The research shows clear results.",
+    "use": "Tipik xato"
+   }
+  ]
+ }
 }

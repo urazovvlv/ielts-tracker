@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"Nature and weather","items":[
-{"t":"a storm in a teacup","uz":"arzimas narsa uchun katta shov-shuv","ex":"The argument was just a storm in a teacup.","use":"Muammo kichikligini ko'rsatish"},
-{"t":"every cloud has a silver lining","uz":"har yomonlikda bir yaxshilik bor","ex":"I lost my job, but every cloud has a silver lining.","use":"Optimistik xulosa"},
-{"t":"come rain or shine","uz":"nima bo'lsa ham, har qanday holatda","ex":"I go jogging every morning, come rain or shine.","use":"Odatlar, intizom"},
-{"t":"a breath of fresh air","uz":"yangilik, yoqimli o'zgarish","ex":"Our new teacher is a breath of fresh air.","use":"Ijobiy tasvir"},
-{"t":"take a rain check","uz":"taklifni keyinga qoldirmoq","ex":"Can I take a rain check on dinner tonight?","use":"Muloyim rad etish"},
-{"t":"the calm before the storm","uz":"bo'ron oldidagi sukunat","ex":"Monday is quiet — the calm before the storm.","use":"Ish/imtihon oldidan"},
-{"t":"once in a lifetime","uz":"hayotda bir marta","ex":"Seeing the Northern Lights was a once-in-a-lifetime experience.","use":"Part 2: unutilmas voqea"},
-{"t":"go with the flow","uz":"oqimga qarshi bormaslik, moslashmoq","ex":"On holiday, I just go with the flow.","use":"Xarakter, dam olish"},
-{"t":"out of the woods","uz":"xavfdan chiqqan","ex":"The company isn't out of the woods yet.","use":"Muammo tugamaganini aytish"},
-{"t":"a drop in the ocean","uz":"dengizdan bir tomchi (juda oz)","ex":"The donation was a drop in the ocean compared to what's needed.","use":"Part 3/Writing: yetarli emasligi"}]},
-"reading":{"items":[
-{"w":"core","pos":"noun/adj","syn":"centre, heart; main, central","uz":"markaz; asosiy","ex":"Reading is at the core of the curriculum."},
-{"w":"corporate","pos":"adj","syn":"business, company","uz":"korporativ","ex":"Corporate taxes were reduced."},
-{"w":"correspond to","pos":"verb","syn":"match, be equivalent to","uz":"…ga mos kelmoq","ex":"Each colour corresponds to a different group."},
-{"w":"criteria","pos":"noun (pl.)","syn":"standards, requirements","uz":"mezonlar (birligi: criterion)","ex":"Applicants must meet three criteria."},
-{"w":"deduce","pos":"verb","syn":"conclude, infer, work out","uz":"xulosa chiqarmoq","ex":"From the data, we can deduce the cause."},
-{"w":"demonstrate","pos":"verb","syn":"show, prove, illustrate","uz":"ko'rsatmoq, isbotlamoq","ex":"The study demonstrates the value of sleep."},
-{"w":"document","pos":"noun/verb","syn":"record, paper; record","uz":"hujjat; qayd etmoq","ex":"The effects are well documented."},
-{"w":"dominate","pos":"verb","syn":"control, lead, prevail","uz":"ustunlik qilmoq","ex":"A few companies dominate the market."},
-{"w":"emphasis","pos":"noun","syn":"stress, focus, importance","uz":"urg'u, e'tibor","ex":"There is too much emphasis on exams."},
-{"w":"ensure","pos":"verb","syn":"make sure, guarantee","uz":"ta'minlamoq, kafolatlamoq","ex":"Rules ensure that workers are safe."}]},
-"speaking":{"theme":"Causes and effects (Part 3)","items":[
-{"s":"One of the main causes is …","uz":"Asosiy sabablardan biri …","ex":"One of the main causes is the lack of jobs.","use":"Sabab so'ralganda"},
-{"s":"This leads to …","uz":"Bu …ga olib keladi","ex":"Long hours lead to stress and poor health.","use":"Oqibat"},
-{"s":"As a result, …","uz":"Natijada, …","ex":"Prices went up. As a result, people bought less.","use":"Natija"},
-{"s":"This has had a huge impact on …","uz":"Bu …ga katta ta'sir ko'rsatdi","ex":"The internet has had a huge impact on how we shop.","use":"Present Perfect bilan ta'sir"},
-{"s":"…, which in turn …","uz":"…, bu esa o'z navbatida …","ex":"Pollution harms health, which in turn costs hospitals money.","use":"Zanjirli oqibat — yuqori band"},
-{"s":"It's mostly down to …","uz":"Bu asosan …ga bog'liq","ex":"It's mostly down to changes in lifestyle.","use":"Norasmiy sabab"},
-{"s":"The knock-on effect is that …","uz":"Domino ta'siri shundaki, …","ex":"The knock-on effect is that rents go up.","use":"Ikkilamchi oqibat"},
-{"s":"This means that …","uz":"Bu shuni anglatadiki, …","ex":"This means that young people can't afford homes.","use":"Oddiy, lekin kuchli bog'lovchi"},
-{"s":"Because of this, …","uz":"Shu sababli, …","ex":"Because of this, many families move abroad.","use":"Sabab-oqibat"},
-{"s":"In the long term, this could …","uz":"Uzoq muddatda bu … mumkin","ex":"In the long term, this could damage the economy.","use":"Kelajakdagi oqibat"}]},
-"pron":{"theme":"Short /ʊ/ vs long /uː/","items":[
-{"w":"full – fool","ipa":"/fʊl/ – /fuːl/","uz":"to'la – ahmoq; qisqa va uzun","tip":"fool ni cho'zing, lablar oldinga"},
-{"w":"pull – pool","ipa":"/pʊl/ – /puːl/","uz":"tortmoq – hovuz","tip":"pull qisqa, bo'shashgan"},
-{"w":"look – Luke","ipa":"/lʊk/ – /luːk/","uz":"qaramoq – ism","tip":"'luuk' emas — LUK"},
-{"w":"good","ipa":"/ɡʊd/","uz":"qisqa /ʊ/, 'guud' emas","tip":"GUD"},
-{"w":"book – boot","ipa":"/bʊk/ – /buːt/","uz":"kitob – etik","tip":"oo ikki xil o'qiladi"},
-{"w":"food","ipa":"/fuːd/","uz":"uzun /uː/","tip":"FOOOD"},
-{"w":"should – could – would","ipa":"/ʃʊd/ /kʊd/ /wʊd/","uz":"'l' o'qilmaydi, qisqa /ʊ/","tip":"SHUD, KUD, WUD"},
-{"w":"choose – chose","ipa":"/tʃuːz/ – /tʃəʊz/","uz":"tanlamoq – tanladi","tip":"choose /uː/, chose /əʊ/"},
-{"w":"woman","ipa":"/ˈwʊmən/","uz":"birinchi bo'g'in /ʊ/","tip":"WU-mun"},
-{"w":"cooperate","ipa":"/kəʊˈɒpəreɪt/","uz":"'oo' bu yerda ikki alohida unli: co-op","tip":"koh-OP-uh-rayt"}]},
-"task1":{"theme":"Tables and ranking","items":[
-{"w":"ranked first/second","syn":"came first, was in first place","uz":"birinchi/ikkinchi o'rinni egalladi","ex":"Japan ranked first for life expectancy."},
-{"w":"the highest/lowest figure was recorded in","syn":"the peak/minimum was in","uz":"eng yuqori/past ko'rsatkich …da qayd etildi","ex":"The lowest figure was recorded in Egypt."},
-{"w":"followed by","syn":"then","uz":"undan keyin …","ex":"The USA had the most cars, followed by China."},
-{"w":"came last","syn":"was at the bottom","uz":"oxirgi o'rinda","ex":"Brazil came last, with just 4%."},
-{"w":"a similar pattern","syn":"the same trend","uz":"o'xshash holat","ex":"A similar pattern was seen in Canada."},
-{"w":"was considerably higher than the rest","syn":"stood out","uz":"qolganlaridan ancha yuqori edi","ex":"Spending in Norway was considerably higher than the rest."},
-{"w":"the figures ranged from … to …","syn":"varied between","uz":"ko'rsatkichlar …dan …gacha bo'ldi","ex":"Figures ranged from 2% to 45%."},
-{"w":"the corresponding figure","syn":"the matching number","uz":"tegishli ko'rsatkich","ex":"In 2000, the corresponding figure was 30%."},
-{"w":"select key data","syn":"group the information","uz":"Jadvalda hamma raqamni yozmang — eng muhimlarini guruhlang","ex":"Group the highest, lowest and any unusual figures."},
-{"w":"stand out","syn":"be noticeable","uz":"ajralib turmoq","ex":"One country stands out: India."}]},
-"task2":{"theme":"Essay language: opinion and structure","items":[
-{"w":"This essay will argue that …","syn":"I firmly believe that …","uz":"Ushbu insho … ekanini ko'rsatadi (kirish)","ex":"This essay will argue that the benefits outweigh the drawbacks."},
-{"w":"It is often argued that …","syn":"Some people claim that …","uz":"Ko'pincha … deb ta'kidlanadi","ex":"It is often argued that tourism harms local culture."},
-{"w":"outweigh","syn":"be greater than","uz":"…dan ustun kelmoq","ex":"The advantages clearly outweigh the disadvantages."},
-{"w":"To a large extent","syn":"Largely","uz":"Katta darajada","ex":"I agree with this view to a large extent."},
-{"w":"Furthermore, / Moreover,","syn":"In addition,","uz":"Bundan tashqari,","ex":"Furthermore, it saves time."},
-{"w":"Consequently,","syn":"As a result, Therefore,","uz":"Natijada,","ex":"Consequently, fewer people visit museums."},
-{"w":"For instance,","syn":"For example,","uz":"Masalan,","ex":"For instance, Finland has no school uniforms."},
-{"w":"Nevertheless,","syn":"However, Nonetheless,","uz":"Shunga qaramay,","ex":"Nevertheless, some problems remain."},
-{"w":"In conclusion,","syn":"To conclude,","uz":"Xulosa qilib aytganda,","ex":"In conclusion, both sides have merit."},
-{"w":"a balanced approach","syn":"a compromise","uz":"muvozanatli yondashuv","ex":"A balanced approach is the best solution."}]}
+ "idioms": {
+  "theme": "Nature and weather",
+  "items": [
+   {
+    "t": "a storm in a teacup",
+    "uz": "arzimas narsa uchun katta shov-shuv",
+    "ex": "The argument was just a storm in a teacup.",
+    "use": "Muammo kichikligini ko'rsatish"
+   },
+   {
+    "t": "every cloud has a silver lining",
+    "uz": "har yomonlikda bir yaxshilik bor",
+    "ex": "I lost my job, but every cloud has a silver lining.",
+    "use": "Optimistik xulosa"
+   },
+   {
+    "t": "come rain or shine",
+    "uz": "nima bo'lsa ham, har qanday holatda",
+    "ex": "I go jogging every morning, come rain or shine.",
+    "use": "Odatlar, intizom"
+   },
+   {
+    "t": "a breath of fresh air",
+    "uz": "yangilik, yoqimli o'zgarish",
+    "ex": "Our new teacher is a breath of fresh air.",
+    "use": "Ijobiy tasvir"
+   },
+   {
+    "t": "take a rain check",
+    "uz": "taklifni keyinga qoldirmoq",
+    "ex": "Can I take a rain check on dinner tonight?",
+    "use": "Muloyim rad etish"
+   },
+   {
+    "t": "the calm before the storm",
+    "uz": "bo'ron oldidagi sukunat",
+    "ex": "Monday is quiet — the calm before the storm.",
+    "use": "Ish/imtihon oldidan"
+   },
+   {
+    "t": "once in a lifetime",
+    "uz": "hayotda bir marta",
+    "ex": "Seeing the Northern Lights was a once-in-a-lifetime experience.",
+    "use": "Part 2: unutilmas voqea"
+   },
+   {
+    "t": "go with the flow",
+    "uz": "oqimga qarshi bormaslik, moslashmoq",
+    "ex": "On holiday, I just go with the flow.",
+    "use": "Xarakter, dam olish"
+   },
+   {
+    "t": "out of the woods",
+    "uz": "xavfdan chiqqan",
+    "ex": "The company isn't out of the woods yet.",
+    "use": "Muammo tugamaganini aytish"
+   },
+   {
+    "t": "a drop in the ocean",
+    "uz": "dengizdan bir tomchi (juda oz)",
+    "ex": "The donation was a drop in the ocean compared to what's needed.",
+    "use": "Part 3/Writing: yetarli emasligi"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "core",
+    "pos": "noun/adj",
+    "syn": "centre, heart; main, central",
+    "uz": "markaz; asosiy",
+    "ex": "Reading is at the core of the curriculum."
+   },
+   {
+    "w": "corporate",
+    "pos": "adj",
+    "syn": "business, company",
+    "uz": "korporativ",
+    "ex": "Corporate taxes were reduced."
+   },
+   {
+    "w": "correspond to",
+    "pos": "verb",
+    "syn": "match, be equivalent to",
+    "uz": "…ga mos kelmoq",
+    "ex": "Each colour corresponds to a different group."
+   },
+   {
+    "w": "criteria",
+    "pos": "noun (pl.)",
+    "syn": "standards, requirements",
+    "uz": "mezonlar (birligi: criterion)",
+    "ex": "Applicants must meet three criteria."
+   },
+   {
+    "w": "deduce",
+    "pos": "verb",
+    "syn": "conclude, infer, work out",
+    "uz": "xulosa chiqarmoq",
+    "ex": "From the data, we can deduce the cause."
+   },
+   {
+    "w": "demonstrate",
+    "pos": "verb",
+    "syn": "show, prove, illustrate",
+    "uz": "ko'rsatmoq, isbotlamoq",
+    "ex": "The study demonstrates the value of sleep."
+   },
+   {
+    "w": "document",
+    "pos": "noun/verb",
+    "syn": "record, paper; record",
+    "uz": "hujjat; qayd etmoq",
+    "ex": "The effects are well documented."
+   },
+   {
+    "w": "dominate",
+    "pos": "verb",
+    "syn": "control, lead, prevail",
+    "uz": "ustunlik qilmoq",
+    "ex": "A few companies dominate the market."
+   },
+   {
+    "w": "emphasis",
+    "pos": "noun",
+    "syn": "stress, focus, importance",
+    "uz": "urg'u, e'tibor",
+    "ex": "There is too much emphasis on exams."
+   },
+   {
+    "w": "ensure",
+    "pos": "verb",
+    "syn": "make sure, guarantee",
+    "uz": "ta'minlamoq, kafolatlamoq",
+    "ex": "Rules ensure that workers are safe."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Causes and effects (Part 3)",
+  "items": [
+   {
+    "s": "One of the main causes is …",
+    "uz": "Asosiy sabablardan biri …",
+    "ex": "One of the main causes is the lack of jobs.",
+    "use": "Sabab so'ralganda"
+   },
+   {
+    "s": "This leads to …",
+    "uz": "Bu …ga olib keladi",
+    "ex": "Long hours lead to stress and poor health.",
+    "use": "Oqibat"
+   },
+   {
+    "s": "As a result, …",
+    "uz": "Natijada, …",
+    "ex": "Prices went up. As a result, people bought less.",
+    "use": "Natija"
+   },
+   {
+    "s": "This has had a huge impact on …",
+    "uz": "Bu …ga katta ta'sir ko'rsatdi",
+    "ex": "The internet has had a huge impact on how we shop.",
+    "use": "Present Perfect bilan ta'sir"
+   },
+   {
+    "s": "…, which in turn …",
+    "uz": "…, bu esa o'z navbatida …",
+    "ex": "Pollution harms health, which in turn costs hospitals money.",
+    "use": "Zanjirli oqibat — yuqori band"
+   },
+   {
+    "s": "It's mostly down to …",
+    "uz": "Bu asosan …ga bog'liq",
+    "ex": "It's mostly down to changes in lifestyle.",
+    "use": "Norasmiy sabab"
+   },
+   {
+    "s": "The knock-on effect is that …",
+    "uz": "Domino ta'siri shundaki, …",
+    "ex": "The knock-on effect is that rents go up.",
+    "use": "Ikkilamchi oqibat"
+   },
+   {
+    "s": "This means that …",
+    "uz": "Bu shuni anglatadiki, …",
+    "ex": "This means that young people can't afford homes.",
+    "use": "Oddiy, lekin kuchli bog'lovchi"
+   },
+   {
+    "s": "Because of this, …",
+    "uz": "Shu sababli, …",
+    "ex": "Because of this, many families move abroad.",
+    "use": "Sabab-oqibat"
+   },
+   {
+    "s": "In the long term, this could …",
+    "uz": "Uzoq muddatda bu … mumkin",
+    "ex": "In the long term, this could damage the economy.",
+    "use": "Kelajakdagi oqibat"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Short /ʊ/ vs long /uː/",
+  "items": [
+   {
+    "w": "full – fool",
+    "ipa": "/fʊl/ – /fuːl/",
+    "uz": "to'la – ahmoq; qisqa va uzun",
+    "tip": "fool ni cho'zing, lablar oldinga"
+   },
+   {
+    "w": "pull – pool",
+    "ipa": "/pʊl/ – /puːl/",
+    "uz": "tortmoq – hovuz",
+    "tip": "pull qisqa, bo'shashgan"
+   },
+   {
+    "w": "look – Luke",
+    "ipa": "/lʊk/ – /luːk/",
+    "uz": "qaramoq – ism",
+    "tip": "'luuk' emas — LUK"
+   },
+   {
+    "w": "good",
+    "ipa": "/ɡʊd/",
+    "uz": "qisqa /ʊ/, 'guud' emas",
+    "tip": "GUD"
+   },
+   {
+    "w": "book – boot",
+    "ipa": "/bʊk/ – /buːt/",
+    "uz": "kitob – etik",
+    "tip": "oo ikki xil o'qiladi"
+   },
+   {
+    "w": "food",
+    "ipa": "/fuːd/",
+    "uz": "uzun /uː/",
+    "tip": "FOOOD"
+   },
+   {
+    "w": "should – could – would",
+    "ipa": "/ʃʊd/ /kʊd/ /wʊd/",
+    "uz": "'l' o'qilmaydi, qisqa /ʊ/",
+    "tip": "SHUD, KUD, WUD"
+   },
+   {
+    "w": "choose – chose",
+    "ipa": "/tʃuːz/ – /tʃəʊz/",
+    "uz": "tanlamoq – tanladi",
+    "tip": "choose /uː/, chose /əʊ/"
+   },
+   {
+    "w": "woman",
+    "ipa": "/ˈwʊmən/",
+    "uz": "birinchi bo'g'in /ʊ/",
+    "tip": "WU-mun"
+   },
+   {
+    "w": "cooperate",
+    "ipa": "/kəʊˈɒpəreɪt/",
+    "uz": "'oo' bu yerda ikki alohida unli: co-op",
+    "tip": "koh-OP-uh-rayt"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Tables and ranking",
+  "items": [
+   {
+    "w": "ranked first/second",
+    "syn": "came first, was in first place",
+    "uz": "birinchi/ikkinchi o'rinni egalladi",
+    "ex": "Japan ranked first for life expectancy."
+   },
+   {
+    "w": "the highest/lowest figure was recorded in",
+    "syn": "the peak/minimum was in",
+    "uz": "eng yuqori/past ko'rsatkich …da qayd etildi",
+    "ex": "The lowest figure was recorded in Egypt."
+   },
+   {
+    "w": "followed by",
+    "syn": "then",
+    "uz": "undan keyin …",
+    "ex": "The USA had the most cars, followed by China."
+   },
+   {
+    "w": "came last",
+    "syn": "was at the bottom",
+    "uz": "oxirgi o'rinda",
+    "ex": "Brazil came last, with just 4%."
+   },
+   {
+    "w": "a similar pattern",
+    "syn": "the same trend",
+    "uz": "o'xshash holat",
+    "ex": "A similar pattern was seen in Canada."
+   },
+   {
+    "w": "was considerably higher than the rest",
+    "syn": "stood out",
+    "uz": "qolganlaridan ancha yuqori edi",
+    "ex": "Spending in Norway was considerably higher than the rest."
+   },
+   {
+    "w": "the figures ranged from … to …",
+    "syn": "varied between",
+    "uz": "ko'rsatkichlar …dan …gacha bo'ldi",
+    "ex": "Figures ranged from 2% to 45%."
+   },
+   {
+    "w": "the corresponding figure",
+    "syn": "the matching number",
+    "uz": "tegishli ko'rsatkich",
+    "ex": "In 2000, the corresponding figure was 30%."
+   },
+   {
+    "w": "select key data",
+    "syn": "group the information",
+    "uz": "Jadvalda hamma raqamni yozmang — eng muhimlarini guruhlang",
+    "ex": "Group the highest, lowest and any unusual figures."
+   },
+   {
+    "w": "stand out",
+    "syn": "be noticeable",
+    "uz": "ajralib turmoq",
+    "ex": "One country stands out: India."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: opinion and structure",
+  "items": [
+   {
+    "w": "This essay will argue that …",
+    "syn": "I firmly believe that …",
+    "uz": "Ushbu insho … ekanini ko'rsatadi (kirish)",
+    "ex": "This essay will argue that the benefits outweigh the drawbacks."
+   },
+   {
+    "w": "It is often argued that …",
+    "syn": "Some people claim that …",
+    "uz": "Ko'pincha … deb ta'kidlanadi",
+    "ex": "It is often argued that tourism harms local culture."
+   },
+   {
+    "w": "outweigh",
+    "syn": "be greater than",
+    "uz": "…dan ustun kelmoq",
+    "ex": "The advantages clearly outweigh the disadvantages."
+   },
+   {
+    "w": "To a large extent",
+    "syn": "Largely",
+    "uz": "Katta darajada",
+    "ex": "I agree with this view to a large extent."
+   },
+   {
+    "w": "Furthermore, / Moreover,",
+    "syn": "In addition,",
+    "uz": "Bundan tashqari,",
+    "ex": "Furthermore, it saves time."
+   },
+   {
+    "w": "Consequently,",
+    "syn": "As a result, Therefore,",
+    "uz": "Natijada,",
+    "ex": "Consequently, fewer people visit museums."
+   },
+   {
+    "w": "For instance,",
+    "syn": "For example,",
+    "uz": "Masalan,",
+    "ex": "For instance, Finland has no school uniforms."
+   },
+   {
+    "w": "Nevertheless,",
+    "syn": "However, Nonetheless,",
+    "uz": "Shunga qaramay,",
+    "ex": "Nevertheless, some problems remain."
+   },
+   {
+    "w": "In conclusion,",
+    "syn": "To conclude,",
+    "uz": "Xulosa qilib aytganda,",
+    "ex": "In conclusion, both sides have merit."
+   },
+   {
+    "w": "a balanced approach",
+    "syn": "a compromise",
+    "uz": "muvozanatli yondashuv",
+    "ex": "A balanced approach is the best solution."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Participle clauses (band 7+ sentences)",
+  "items": [
+   {
+    "s": "-ing clause = and/because + active",
+    "uz": "ikki gapni qisqartirish",
+    "ex": "Feeling tired, I went to bed early.",
+    "use": "Speaking hikoyalar"
+   },
+   {
+    "s": "V3 clause = passive",
+    "uz": "passiv ma'no",
+    "ex": "Built in 1900, the bridge is still in use.",
+    "use": "Task 1 maps"
+   },
+   {
+    "s": "Having + V3",
+    "uz": "birinchi ish tugagach",
+    "ex": "Having finished my degree, I started working.",
+    "use": "Band 8 grammatika"
+   },
+   {
+    "s": "..., reaching + number",
+    "uz": "Task 1: oxirgi nuqtani qo'shish",
+    "ex": "Exports rose sharply, reaching $5 billion.",
+    "use": "Task 1"
+   },
+   {
+    "s": "..., accounting for + %",
+    "uz": "ulushni qo'shish",
+    "ex": "Coal was the main source, accounting for 40%.",
+    "use": "Task 1 pie charts"
+   },
+   {
+    "s": "Reduced relative: people living in cities",
+    "uz": "who live → living",
+    "ex": "People living in cities spend more on rent.",
+    "use": "Task 2 qisqa uslub"
+   },
+   {
+    "s": "Reduced passive: the money spent on ads",
+    "uz": "which is spent → spent",
+    "ex": "The money spent on advertising has doubled.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ Walking home, the rain started → ✅ Walking home, I got caught in the rain",
+    "uz": "-ing qismining egasi asosiy gap egasi bilan bir xil bo'lishi kerak",
+    "ex": "Walking home, I saw an old friend.",
+    "use": "Dangling participle xatosi"
+   }
+  ]
+ }
 }

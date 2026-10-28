@@ -20,7 +20,7 @@
 //        → {"111":{"L":1,"R":2,...}, "222":null}
 
 const ORIGIN = "https://urazovvlv.github.io";
-const SKILLS = ["L", "R", "W", "S", "V"];
+const SKILLS = ["L", "R", "W", "S", "V", "G"];
 const KEEP_DAYS = 21;
 
 const cors = {
@@ -83,7 +83,7 @@ function cleanDays(days) {
   return out;
 }
 
-const STAT_KEYS = ["t", "d", "L", "R", "W", "S", "V", "e", "m"];
+const STAT_KEYS = ["t", "d", "L", "R", "W", "S", "V", "G", "e", "m"];
 const int = (v, max) => Math.max(0, Math.min(max, Math.floor(Number(v) || 0)));
 const str = (v, max) => String(v == null ? "" : v).slice(0, max);
 const band = (v) => {
@@ -161,10 +161,10 @@ async function readAllowed(req, env) {
 const APP = "https://urazovvlv.github.io/ielts-tracker/";
 const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"] };
 const RATE = ["", "Bad", "Weak", "OK", "Good", "Great"];
-const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary" };
+const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary", G: "Grammar" };
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const PACK = [["idioms", "Idioms"], ["reading", "Reading words"], ["speaking", "Speaking"], ["pron", "Pronunciation"], ["task1", "Writing Task 1"], ["task2", "Writing Task 2"]];
+const PACK = [["grammar", "Grammar"], ["idioms", "Idioms"], ["reading", "Reading words"], ["speaking", "Speaking"], ["pron", "Pronunciation"], ["task1", "Writing Task 1"], ["task2", "Writing Task 2"]];
 const esc = (t) => String(t == null ? "" : t).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
 const tashToday = () => new Date(Date.now() + 5 * 3600000).toISOString().slice(0, 10);
 const dOf = (iso) => new Date(iso + "T00:00:00Z");
@@ -187,7 +187,7 @@ function focusLine(c) {
   if (!c) return "";
   const total = Object.keys(NAMES).reduce((a, k) => a + (c[k] || 0), 0);
   const top = Math.max(...Object.keys(NAMES).map((k) => c[k] || 0));
-  if (!top) return "Today's focus: not set yet. Tag your tasks with L, R, W, S or Voc in Edit list.";
+  if (!top) return "Today's focus: not set yet. Tag your tasks with L, R, W, S, Voc or G in Edit list.";
   const best = Object.keys(NAMES).filter((k) => (c[k] || 0) === top).map((k) => NAMES[k]);
   return `🎯 Today's focus: <b>${best.join(" + ")}</b> (${top} of ${total} tasks)`;
 }
@@ -196,11 +196,11 @@ function weekly(doc, plan, day, days, today) {
   const first = addDays(today, -6), stats = doc.stats || {};
   const L = [`<b>Week ${Math.ceil(day / 7)} report · ${dOf(first).getUTCDate()} ${MON[dOf(first).getUTCMonth()]} – ${dOf(today).getUTCDate()} ${MON[dOf(today).getUTCMonth()]}</b>`, `Day ${day} of ${days} · ${days - day} days left`, ""];
   const wk = (off) => {
-    const o = { t: 0, d: 0, full: 0, L: 0, R: 0, W: 0, S: 0, V: 0, e: 0, m: 0 };
+    const o = { t: 0, d: 0, full: 0, L: 0, R: 0, W: 0, S: 0, V: 0, G: 0, e: 0, m: 0 };
     for (let i = 0; i < 7; i++) {
       const c = stats[addDays(today, -(off + i))];
       if (!c) continue;
-      for (const k of ["t", "d", "L", "R", "W", "S", "V", "e", "m"]) o[k] += c[k] || 0;
+      for (const k of ["t", "d", "L", "R", "W", "S", "V", "G", "e", "m"]) o[k] += c[k] || 0;
       if (c.t && c.d === c.t) o.full++;
     }
     return o;
@@ -213,8 +213,8 @@ function weekly(doc, plan, day, days, today) {
     L.push(`<b>Tasks:</b> ${w.d} of ${w.t} done (${pct}%)${cmp}`, `<b>Full days:</b> ${w.full} of 7`);
   } else L.push("<b>Tasks:</b> no tasks on your lists this week.");
   const sk = ["L", "R", "W", "S"].map((k) => [k, w[k]]);
-  if (sk.some(([, n]) => n) || w.V) {
-    L.push("<b>By skill:</b> " + [...sk, ["V", w.V]].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${NAMES[k]} ${n}`).join(" · "));
+  if (sk.some(([, n]) => n) || w.V || w.G) {
+    L.push("<b>By skill:</b> " + [...sk, ["V", w.V], ["G", w.G]].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${NAMES[k]} ${n}`).join(" · "));
     const low = sk.reduce((a, b) => (b[1] < a[1] ? b : a));
     L.push(`⚠️ Least practised: <b>${NAMES[low[0]]}</b> (${low[1]} task${low[1] === 1 ? "" : "s"}). Give it more time next week.`);
   } else if (w.d) L.push("Tag your tasks with L, R, W or S in Edit list to see which skill gets the least practice.");
@@ -287,7 +287,7 @@ async function buildMessage(slot, doc, today) {
     if (ms[day]) L.push("", `Mock day: <b>${esc(ms[day])}</b>. Start at 19:00 in exam conditions, with no pauses.`);
     const pack = await getPack(day);
     if (pack) {
-      L.push("", "<b>Today's pack</b> · 6 × 10, full version in the app (Daily tab):");
+      L.push("", "<b>Today's pack</b> · full version in the app (Daily tab):");
       for (const [k, t] of PACK) { const th = (pack[k] && pack[k].theme) || (k === "reading" ? "10 academic words" : ""); L.push(`• ${t}${th ? ": " + esc(th) : ""}`); }
     }
     return { text: L.join("\n"), frag: "#daily" };

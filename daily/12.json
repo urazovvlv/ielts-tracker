@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"Feelings and emotions","items":[
-{"t":"over the moon","uz":"juda xursand","ex":"I was over the moon when I got the job.","use":"Kuchli quvonch"},
-{"t":"on cloud nine","uz":"baxtdan osmonda","ex":"She's been on cloud nine since her wedding.","use":"Xursandchilik"},
-{"t":"down in the dumps","uz":"kayfiyati tushgan","ex":"I was down in the dumps after failing the test.","use":"Xafalik"},
-{"t":"butterflies in my stomach","uz":"hayajondan ichim g'ijimlanmoq","ex":"I had butterflies in my stomach before the interview.","use":"Part 2: muhim kun hikoyasi"},
-{"t":"at the end of my tether","uz":"sabrim tugagan","ex":"After three hours in traffic, I was at the end of my tether.","use":"Asabiylashish"},
-{"t":"get on my nerves","uz":"asabimga tegmoq","ex":"Loud music on the bus really gets on my nerves.","use":"Part 1: yoqmaydigan narsalar"},
-{"t":"jump for joy","uz":"xursandchilikdan sakramoq","ex":"My mum jumped for joy when she heard the news.","use":"Hikoyaga jonlilik"},
-{"t":"keep my cool","uz":"o'zini bosmoq, xotirjam qolmoq","ex":"I tried to keep my cool during the argument.","use":"Stress vaziyati"},
-{"t":"feel on top of the world","uz":"o'zini juda yaxshi his qilmoq","ex":"After the marathon I felt on top of the world.","use":"Yutuq hissi"},
-{"t":"a weight off my shoulders","uz":"yelkamdan tog' ag'darilgandek (yengillik)","ex":"Finishing my thesis was a weight off my shoulders.","use":"Yengillik hissi"}]},
-"reading":{"items":[
-{"w":"seek","pos":"verb","syn":"look for, search for, try to get","uz":"izlamoq","ex":"Many graduates seek work abroad."},
-{"w":"select","pos":"verb","syn":"choose, pick","uz":"tanlamoq","ex":"Participants were selected at random."},
-{"w":"site","pos":"noun","syn":"location, place, position","uz":"joy, maydon","ex":"The site was chosen for the new factory."},
-{"w":"strategy","pos":"noun","syn":"plan, approach, tactic","uz":"strategiya","ex":"A clear strategy is needed to reduce waste."},
-{"w":"survey","pos":"noun/verb","syn":"poll, questionnaire; study","uz":"so'rovnoma; o'rganmoq","ex":"A survey of 1,000 adults was carried out."},
-{"w":"text","pos":"noun","syn":"writing, passage, document","uz":"matn","ex":"The text describes life in ancient Rome."},
-{"w":"tradition","pos":"noun","syn":"custom, practice, convention","uz":"an'ana","ex":"The tradition dates back to the 12th century."},
-{"w":"transfer","pos":"verb/noun","syn":"move, shift, pass on","uz":"o'tkazmoq, ko'chirmoq","ex":"Knowledge is transferred from parents to children."},
-{"w":"alternative","pos":"noun/adj","syn":"option, substitute; other","uz":"muqobil","ex":"Solar power is a clean alternative to coal."},
-{"w":"circumstance","pos":"noun","syn":"situation, condition","uz":"holat, sharoit","ex":"Under no circumstances should children be left alone."}]},
-"speaking":{"theme":"Balancing and contrasting ideas (Part 3)","items":[
-{"s":"On the one hand, …. On the other hand, …","uz":"Bir tomondan … Boshqa tomondan …","ex":"On the one hand, it's convenient. On the other hand, it's expensive.","use":"Ikki tomonni ko'rsatish"},
-{"s":"Having said that, …","uz":"Shunday bo'lsa-da, …","ex":"Cities are noisy. Having said that, there's more to do.","use":"Juda tabiiy kontrast"},
-{"s":"Even so, …","uz":"Shunga qaramay, …","ex":"It's a long flight. Even so, it's worth it.","use":"Qisqa kontrast"},
-{"s":"Although …, …","uz":"Garchi … bo'lsa ham, …","ex":"Although I love my job, I'd like more free time.","use":"Murakkab gap"},
-{"s":"That said, …","uz":"Shuni aytgan holda, …","ex":"Online shopping is easy. That said, I prefer real shops.","use":"Having said that ga muqobil"},
-{"s":"It's a double-edged sword.","uz":"Bu ikki tomonlama qilich","ex":"Social media is a double-edged sword.","use":"Foyda va zarar haqida"},
-{"s":"The downside is that …","uz":"Salbiy tomoni shundaki, …","ex":"The downside is that you lose some privacy.","use":"Kamchilikni aytish"},
-{"s":"The upside is that …","uz":"Ijobiy tomoni shundaki, …","ex":"The upside is that you can work from anywhere.","use":"Afzallikni aytish"},
-{"s":"Despite …, …","uz":"…ga qaramay, …","ex":"Despite the price, many people buy iPhones.","use":"despite + ot/-ing"},
-{"s":"Whereas in the past …, nowadays …","uz":"O'tmishda … bo'lsa, hozir …","ex":"Whereas in the past people wrote letters, nowadays they text.","use":"Part 3 o'tmish-hozir savollari"}]},
-"pron":{"theme":"/ʃ/, /tʃ/, /dʒ/ and /ʒ/","items":[
-{"w":"ship – chip","ipa":"/ʃɪp/ – /tʃɪp/","uz":"/ʃ/ = 'sh', /tʃ/ = 'ch'","tip":"chip da tovush 't' bilan boshlanadi"},
-{"w":"wash – watch","ipa":"/wɒʃ/ – /wɒtʃ/","uz":"yuvmoq – tomosha qilmoq","tip":"Oxirgi tovushni farqlang"},
-{"w":"cheap – jeep","ipa":"/tʃiːp/ – /dʒiːp/","uz":"/tʃ/ jarangsiz, /dʒ/ jarangli ('j')","tip":"jeep da bo'g'iz titraydi"},
-{"w":"usually","ipa":"/ˈjuːʒuəli/","uz":"/ʒ/ — fransuzcha 'j' (jurnal)","tip":"YOO-zhoo-uh-lee"},
-{"w":"decision","ipa":"/dɪˈsɪʒn/","uz":"'-sion' /ʒn/","tip":"di-SIZH-n"},
-{"w":"measure","ipa":"/ˈmeʒə/","uz":"/ʒ/","tip":"MEZH-uh"},
-{"w":"education","ipa":"/ˌedʒuˈkeɪʃn/","uz":"'d' + 'u' = /dʒ/","tip":"ej-oo-KAY-shn"},
-{"w":"question","ipa":"/ˈkwestʃən/","uz":"'-stion' /stʃən/","tip":"KWES-chun"},
-{"w":"special","ipa":"/ˈspeʃl/","uz":"'ci' /ʃ/","tip":"SPESH-l"},
-{"w":"culture","ipa":"/ˈkʌltʃə/","uz":"'-ture' /tʃə/","tip":"KUL-chuh"}]},
-"task1":{"theme":"Sentence patterns for data","items":[
-{"w":"There was a + adj + noun + in","syn":"—","uz":"Shablon: There was a sharp rise in …","ex":"There was a steady decline in coal use."},
-{"w":"X + verb + adverb","syn":"—","uz":"Shablon: Coal use declined steadily.","ex":"The number of cars increased sharply."},
-{"w":"X saw/witnessed a …","syn":"experienced","uz":"X da … kuzatildi","ex":"2008 saw a dramatic fall in house prices."},
-{"w":"…, which was followed by …","syn":"after which","uz":"…, undan keyin esa …","ex":"Sales rose to 500, which was followed by a slight dip."},
-{"w":"…, before + -ing","syn":"and then","uz":"… va keyin …","ex":"It peaked at 80% before falling to 60%."},
-{"w":"…, reaching …","syn":"and reached","uz":"… ga yetib","ex":"Exports doubled, reaching $4 billion in 2010."},
-{"w":"…, with X + -ing","syn":"while","uz":"… va bunda X …","ex":"Most people used cars, with only 10% taking buses."},
-{"w":"Similarly, …","syn":"Likewise","uz":"Xuddi shunday, …","ex":"Similarly, spending on clothes rose."},
-{"w":"As for …,","syn":"Regarding …,","uz":"…ga kelsak,","ex":"As for Germany, the figure remained stable."},
-{"w":"In comparison,","syn":"By comparison","uz":"Taqqoslaganda,","ex":"In comparison, only 5% used trains."}]},
-"task2":{"theme":"Tourism","items":[
-{"w":"mass tourism","syn":"large-scale tourism","uz":"ommaviy turizm","ex":"Mass tourism damages historic sites."},
-{"w":"ecotourism","syn":"sustainable tourism","uz":"ekoturizm","ex":"Ecotourism can protect natural areas."},
-{"w":"boost the local economy","syn":"stimulate local business","uz":"mahalliy iqtisodiyotni rivojlantirmoq","ex":"Tourism boosts the local economy."},
-{"w":"seasonal jobs","syn":"temporary work","uz":"mavsumiy ishlar","ex":"Tourism creates mostly seasonal jobs."},
-{"w":"commercialisation","syn":"turning culture into a product","uz":"tijoratlashuv","ex":"Commercialisation can spoil local traditions."},
-{"w":"overtourism","syn":"too many tourists","uz":"turistlarning haddan tashqari ko'pligi","ex":"Overtourism has made rents rise in Venice."},
-{"w":"broaden your horizons","syn":"widen your experience","uz":"dunyoqarashni kengaytirmoq","ex":"Travelling abroad broadens your horizons."},
-{"w":"hospitality industry","syn":"hotels and restaurants","uz":"mehmondo'stlik sohasi","ex":"The hospitality industry employs many young people."},
-{"w":"cultural sensitivity","syn":"respect for local customs","uz":"madaniy hassoslik","ex":"Tourists should show cultural sensitivity."},
-{"w":"leave a footprint","syn":"have an impact","uz":"iz qoldirmoq (ta'sir)","ex":"Every flight leaves an environmental footprint."}]}
+ "idioms": {
+  "theme": "Feelings and emotions",
+  "items": [
+   {
+    "t": "over the moon",
+    "uz": "juda xursand",
+    "ex": "I was over the moon when I got the job.",
+    "use": "Kuchli quvonch"
+   },
+   {
+    "t": "on cloud nine",
+    "uz": "baxtdan osmonda",
+    "ex": "She's been on cloud nine since her wedding.",
+    "use": "Xursandchilik"
+   },
+   {
+    "t": "down in the dumps",
+    "uz": "kayfiyati tushgan",
+    "ex": "I was down in the dumps after failing the test.",
+    "use": "Xafalik"
+   },
+   {
+    "t": "butterflies in my stomach",
+    "uz": "hayajondan ichim g'ijimlanmoq",
+    "ex": "I had butterflies in my stomach before the interview.",
+    "use": "Part 2: muhim kun hikoyasi"
+   },
+   {
+    "t": "at the end of my tether",
+    "uz": "sabrim tugagan",
+    "ex": "After three hours in traffic, I was at the end of my tether.",
+    "use": "Asabiylashish"
+   },
+   {
+    "t": "get on my nerves",
+    "uz": "asabimga tegmoq",
+    "ex": "Loud music on the bus really gets on my nerves.",
+    "use": "Part 1: yoqmaydigan narsalar"
+   },
+   {
+    "t": "jump for joy",
+    "uz": "xursandchilikdan sakramoq",
+    "ex": "My mum jumped for joy when she heard the news.",
+    "use": "Hikoyaga jonlilik"
+   },
+   {
+    "t": "keep my cool",
+    "uz": "o'zini bosmoq, xotirjam qolmoq",
+    "ex": "I tried to keep my cool during the argument.",
+    "use": "Stress vaziyati"
+   },
+   {
+    "t": "feel on top of the world",
+    "uz": "o'zini juda yaxshi his qilmoq",
+    "ex": "After the marathon I felt on top of the world.",
+    "use": "Yutuq hissi"
+   },
+   {
+    "t": "a weight off my shoulders",
+    "uz": "yelkamdan tog' ag'darilgandek (yengillik)",
+    "ex": "Finishing my thesis was a weight off my shoulders.",
+    "use": "Yengillik hissi"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "seek",
+    "pos": "verb",
+    "syn": "look for, search for, try to get",
+    "uz": "izlamoq",
+    "ex": "Many graduates seek work abroad."
+   },
+   {
+    "w": "select",
+    "pos": "verb",
+    "syn": "choose, pick",
+    "uz": "tanlamoq",
+    "ex": "Participants were selected at random."
+   },
+   {
+    "w": "site",
+    "pos": "noun",
+    "syn": "location, place, position",
+    "uz": "joy, maydon",
+    "ex": "The site was chosen for the new factory."
+   },
+   {
+    "w": "strategy",
+    "pos": "noun",
+    "syn": "plan, approach, tactic",
+    "uz": "strategiya",
+    "ex": "A clear strategy is needed to reduce waste."
+   },
+   {
+    "w": "survey",
+    "pos": "noun/verb",
+    "syn": "poll, questionnaire; study",
+    "uz": "so'rovnoma; o'rganmoq",
+    "ex": "A survey of 1,000 adults was carried out."
+   },
+   {
+    "w": "text",
+    "pos": "noun",
+    "syn": "writing, passage, document",
+    "uz": "matn",
+    "ex": "The text describes life in ancient Rome."
+   },
+   {
+    "w": "tradition",
+    "pos": "noun",
+    "syn": "custom, practice, convention",
+    "uz": "an'ana",
+    "ex": "The tradition dates back to the 12th century."
+   },
+   {
+    "w": "transfer",
+    "pos": "verb/noun",
+    "syn": "move, shift, pass on",
+    "uz": "o'tkazmoq, ko'chirmoq",
+    "ex": "Knowledge is transferred from parents to children."
+   },
+   {
+    "w": "alternative",
+    "pos": "noun/adj",
+    "syn": "option, substitute; other",
+    "uz": "muqobil",
+    "ex": "Solar power is a clean alternative to coal."
+   },
+   {
+    "w": "circumstance",
+    "pos": "noun",
+    "syn": "situation, condition",
+    "uz": "holat, sharoit",
+    "ex": "Under no circumstances should children be left alone."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Balancing and contrasting ideas (Part 3)",
+  "items": [
+   {
+    "s": "On the one hand, …. On the other hand, …",
+    "uz": "Bir tomondan … Boshqa tomondan …",
+    "ex": "On the one hand, it's convenient. On the other hand, it's expensive.",
+    "use": "Ikki tomonni ko'rsatish"
+   },
+   {
+    "s": "Having said that, …",
+    "uz": "Shunday bo'lsa-da, …",
+    "ex": "Cities are noisy. Having said that, there's more to do.",
+    "use": "Juda tabiiy kontrast"
+   },
+   {
+    "s": "Even so, …",
+    "uz": "Shunga qaramay, …",
+    "ex": "It's a long flight. Even so, it's worth it.",
+    "use": "Qisqa kontrast"
+   },
+   {
+    "s": "Although …, …",
+    "uz": "Garchi … bo'lsa ham, …",
+    "ex": "Although I love my job, I'd like more free time.",
+    "use": "Murakkab gap"
+   },
+   {
+    "s": "That said, …",
+    "uz": "Shuni aytgan holda, …",
+    "ex": "Online shopping is easy. That said, I prefer real shops.",
+    "use": "Having said that ga muqobil"
+   },
+   {
+    "s": "It's a double-edged sword.",
+    "uz": "Bu ikki tomonlama qilich",
+    "ex": "Social media is a double-edged sword.",
+    "use": "Foyda va zarar haqida"
+   },
+   {
+    "s": "The downside is that …",
+    "uz": "Salbiy tomoni shundaki, …",
+    "ex": "The downside is that you lose some privacy.",
+    "use": "Kamchilikni aytish"
+   },
+   {
+    "s": "The upside is that …",
+    "uz": "Ijobiy tomoni shundaki, …",
+    "ex": "The upside is that you can work from anywhere.",
+    "use": "Afzallikni aytish"
+   },
+   {
+    "s": "Despite …, …",
+    "uz": "…ga qaramay, …",
+    "ex": "Despite the price, many people buy iPhones.",
+    "use": "despite + ot/-ing"
+   },
+   {
+    "s": "Whereas in the past …, nowadays …",
+    "uz": "O'tmishda … bo'lsa, hozir …",
+    "ex": "Whereas in the past people wrote letters, nowadays they text.",
+    "use": "Part 3 o'tmish-hozir savollari"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/ʃ/, /tʃ/, /dʒ/ and /ʒ/",
+  "items": [
+   {
+    "w": "ship – chip",
+    "ipa": "/ʃɪp/ – /tʃɪp/",
+    "uz": "/ʃ/ = 'sh', /tʃ/ = 'ch'",
+    "tip": "chip da tovush 't' bilan boshlanadi"
+   },
+   {
+    "w": "wash – watch",
+    "ipa": "/wɒʃ/ – /wɒtʃ/",
+    "uz": "yuvmoq – tomosha qilmoq",
+    "tip": "Oxirgi tovushni farqlang"
+   },
+   {
+    "w": "cheap – jeep",
+    "ipa": "/tʃiːp/ – /dʒiːp/",
+    "uz": "/tʃ/ jarangsiz, /dʒ/ jarangli ('j')",
+    "tip": "jeep da bo'g'iz titraydi"
+   },
+   {
+    "w": "usually",
+    "ipa": "/ˈjuːʒuəli/",
+    "uz": "/ʒ/ — fransuzcha 'j' (jurnal)",
+    "tip": "YOO-zhoo-uh-lee"
+   },
+   {
+    "w": "decision",
+    "ipa": "/dɪˈsɪʒn/",
+    "uz": "'-sion' /ʒn/",
+    "tip": "di-SIZH-n"
+   },
+   {
+    "w": "measure",
+    "ipa": "/ˈmeʒə/",
+    "uz": "/ʒ/",
+    "tip": "MEZH-uh"
+   },
+   {
+    "w": "education",
+    "ipa": "/ˌedʒuˈkeɪʃn/",
+    "uz": "'d' + 'u' = /dʒ/",
+    "tip": "ej-oo-KAY-shn"
+   },
+   {
+    "w": "question",
+    "ipa": "/ˈkwestʃən/",
+    "uz": "'-stion' /stʃən/",
+    "tip": "KWES-chun"
+   },
+   {
+    "w": "special",
+    "ipa": "/ˈspeʃl/",
+    "uz": "'ci' /ʃ/",
+    "tip": "SPESH-l"
+   },
+   {
+    "w": "culture",
+    "ipa": "/ˈkʌltʃə/",
+    "uz": "'-ture' /tʃə/",
+    "tip": "KUL-chuh"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Sentence patterns for data",
+  "items": [
+   {
+    "w": "There was a + adj + noun + in",
+    "syn": "—",
+    "uz": "Shablon: There was a sharp rise in …",
+    "ex": "There was a steady decline in coal use."
+   },
+   {
+    "w": "X + verb + adverb",
+    "syn": "—",
+    "uz": "Shablon: Coal use declined steadily.",
+    "ex": "The number of cars increased sharply."
+   },
+   {
+    "w": "X saw/witnessed a …",
+    "syn": "experienced",
+    "uz": "X da … kuzatildi",
+    "ex": "2008 saw a dramatic fall in house prices."
+   },
+   {
+    "w": "…, which was followed by …",
+    "syn": "after which",
+    "uz": "…, undan keyin esa …",
+    "ex": "Sales rose to 500, which was followed by a slight dip."
+   },
+   {
+    "w": "…, before + -ing",
+    "syn": "and then",
+    "uz": "… va keyin …",
+    "ex": "It peaked at 80% before falling to 60%."
+   },
+   {
+    "w": "…, reaching …",
+    "syn": "and reached",
+    "uz": "… ga yetib",
+    "ex": "Exports doubled, reaching $4 billion in 2010."
+   },
+   {
+    "w": "…, with X + -ing",
+    "syn": "while",
+    "uz": "… va bunda X …",
+    "ex": "Most people used cars, with only 10% taking buses."
+   },
+   {
+    "w": "Similarly, …",
+    "syn": "Likewise",
+    "uz": "Xuddi shunday, …",
+    "ex": "Similarly, spending on clothes rose."
+   },
+   {
+    "w": "As for …,",
+    "syn": "Regarding …,",
+    "uz": "…ga kelsak,",
+    "ex": "As for Germany, the figure remained stable."
+   },
+   {
+    "w": "In comparison,",
+    "syn": "By comparison",
+    "uz": "Taqqoslaganda,",
+    "ex": "In comparison, only 5% used trains."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Tourism",
+  "items": [
+   {
+    "w": "mass tourism",
+    "syn": "large-scale tourism",
+    "uz": "ommaviy turizm",
+    "ex": "Mass tourism damages historic sites."
+   },
+   {
+    "w": "ecotourism",
+    "syn": "sustainable tourism",
+    "uz": "ekoturizm",
+    "ex": "Ecotourism can protect natural areas."
+   },
+   {
+    "w": "boost the local economy",
+    "syn": "stimulate local business",
+    "uz": "mahalliy iqtisodiyotni rivojlantirmoq",
+    "ex": "Tourism boosts the local economy."
+   },
+   {
+    "w": "seasonal jobs",
+    "syn": "temporary work",
+    "uz": "mavsumiy ishlar",
+    "ex": "Tourism creates mostly seasonal jobs."
+   },
+   {
+    "w": "commercialisation",
+    "syn": "turning culture into a product",
+    "uz": "tijoratlashuv",
+    "ex": "Commercialisation can spoil local traditions."
+   },
+   {
+    "w": "overtourism",
+    "syn": "too many tourists",
+    "uz": "turistlarning haddan tashqari ko'pligi",
+    "ex": "Overtourism has made rents rise in Venice."
+   },
+   {
+    "w": "broaden your horizons",
+    "syn": "widen your experience",
+    "uz": "dunyoqarashni kengaytirmoq",
+    "ex": "Travelling abroad broadens your horizons."
+   },
+   {
+    "w": "hospitality industry",
+    "syn": "hotels and restaurants",
+    "uz": "mehmondo'stlik sohasi",
+    "ex": "The hospitality industry employs many young people."
+   },
+   {
+    "w": "cultural sensitivity",
+    "syn": "respect for local customs",
+    "uz": "madaniy hassoslik",
+    "ex": "Tourists should show cultural sensitivity."
+   },
+   {
+    "w": "leave a footprint",
+    "syn": "have an impact",
+    "uz": "iz qoldirmoq (ta'sir)",
+    "ex": "Every flight leaves an environmental footprint."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Gerunds and infinitives",
+  "items": [
+   {
+    "s": "enjoy / avoid / consider / suggest + -ing",
+    "uz": "bu fe'llardan keyin -ing",
+    "ex": "I enjoy reading. I avoid eating late.",
+    "use": "Speaking"
+   },
+   {
+    "s": "want / decide / plan / hope + to V",
+    "uz": "bu fe'llardan keyin to + V",
+    "ex": "I decided to take the exam in December.",
+    "use": "Speaking Part 1"
+   },
+   {
+    "s": "Preposition + -ing",
+    "uz": "predlogdan keyin har doim -ing",
+    "ex": "I'm interested in learning languages.",
+    "use": "Ko'p uchraydigan xato joyi"
+   },
+   {
+    "s": "-ing as subject",
+    "uz": "gap egasi sifatida",
+    "ex": "Learning a language takes time.",
+    "use": "Task 2 boshlanish"
+   },
+   {
+    "s": "It is + adj + to V",
+    "uz": "baho berish",
+    "ex": "It is important to sleep well.",
+    "use": "Task 2"
+   },
+   {
+    "s": "stop + -ing vs stop + to V",
+    "uz": "to'xtatmoq vs biror narsa qilish uchun to'xtamoq",
+    "ex": "I stopped smoking. I stopped to rest.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "look forward to + -ing",
+    "uz": "to bu yerda predlog",
+    "ex": "I look forward to hearing from you.",
+    "use": "Tipik tuzoq"
+   },
+   {
+    "s": "❌ I'm used to wake up early → ✅ I'm used to waking up early",
+    "uz": "be used to + -ing",
+    "ex": "I'm used to studying at night.",
+    "use": "Tipik xato"
+   }
+  ]
+ }
 }

@@ -397,5 +397,58 @@
     "ex": "The state pension may not be enough to live on."
    }
   ]
+ },
+ "grammar": {
+  "theme": "Contrast and concession",
+  "items": [
+   {
+    "s": "although / even though + gap",
+    "uz": "garchi ... bo'lsa ham",
+    "ex": "Although the course is expensive, it is worth it.",
+    "use": "Task 2 murakkab gap"
+   },
+   {
+    "s": "despite / in spite of + ot / -ing",
+    "uz": "...ga qaramay (gap emas)",
+    "ex": "Despite the rain, we went out.",
+    "use": "Band 7 grammatika"
+   },
+   {
+    "s": "however, (yangi gap boshida)",
+    "uz": "biroq; nuqtadan keyin, vergul bilan",
+    "ex": "Cars are convenient. However, they pollute the air.",
+    "use": "Task 2 kohezion"
+   },
+   {
+    "s": "whereas / while",
+    "uz": "qarama-qarshi taqqoslash",
+    "ex": "Men preferred football, whereas women chose tennis.",
+    "use": "Task 1"
+   },
+   {
+    "s": "on the other hand",
+    "uz": "ikkinchi tomon (on the one hand bilan)",
+    "ex": "On the other hand, online classes save time.",
+    "use": "Task 2 discuss"
+   },
+   {
+    "s": "nevertheless / nonetheless",
+    "uz": "shunga qaramay (rasmiy)",
+    "ex": "Nevertheless, some problems remain.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ Despite it is expensive → ✅ Although it is expensive / Despite being expensive",
+    "uz": "despite'dan keyin gap kelmaydi",
+    "ex": "Despite being expensive, it is popular.",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "❌ Although ..., but ... → ✅ Although ..., ...",
+    "uz": "although va but bir gapda kelmaydi",
+    "ex": "Although it was late, we continued.",
+    "use": "O'zbek tilidan ko'chirma xato"
+   }
+  ]
  }
 }

@@ -1,68 +1,454 @@
 {
-"idioms":{"theme":"Studying and learning","items":[
-{"t":"learn something by heart","uz":"yod olmoq","ex":"As a child, I learned many poems by heart.","use":"Maktab xotiralari haqida"},
-{"t":"a quick learner","uz":"tez o'rganadigan odam","ex":"I'm a quick learner when it comes to new apps.","use":"O'zingizni tasvirlaganda"},
-{"t":"pass with flying colours","uz":"imtihondan a'lo baho bilan o'tmoq","ex":"She passed her driving test with flying colours.","use":"Part 2: muvaffaqiyat haqida hikoya"},
-{"t":"brush up on","uz":"(unutilgan bilimni) qayta tiklamoq","ex":"I need to brush up on my grammar before the exam.","use":"Til o'rganish, imtihonga tayyorgarlik"},
-{"t":"cut corners","uz":"ishni yengillashtirib, sifatsiz qilmoq","ex":"If you cut corners in practice, you'll pay for it in the exam.","use":"Salbiy odat haqida gapirganda"},
-{"t":"in a nutshell","uz":"qisqacha aytganda","ex":"In a nutshell, I study because I want better opportunities.","use":"Javobni yakunlash uchun"},
-{"t":"food for thought","uz":"o'ylash uchun mavzu","ex":"His lecture gave me a lot of food for thought.","use":"Qiziqarli g'oya, kitob, film haqida"},
-{"t":"rack your brains","uz":"bosh qotirmoq, qattiq o'ylamoq","ex":"I racked my brains but couldn't remember the word.","use":"Qiyin vaziyat hikoyasi"},
-{"t":"a steep learning curve","uz":"qisqa vaqtda ko'p narsani o'rganish zarurati","ex":"Starting university was a steep learning curve for me.","use":"Yangi ish yoki o'qish boshlanishi"},
-{"t":"practice makes perfect","uz":"mashq mukammallikka olib keladi","ex":"My speaking was weak, but practice makes perfect.","use":"Maslahat berganda; ko'p ishlatmang"}]},
-"reading":{"items":[
-{"w":"constitute","pos":"verb","syn":"make up, form, represent","uz":"tashkil etmoq","ex":"Women constitute 60% of the workforce."},
-{"w":"context","pos":"noun","syn":"background, setting, situation","uz":"kontekst, vaziyat","ex":"Words must be understood in context."},
-{"w":"contract","pos":"noun","syn":"agreement, deal","uz":"shartnoma","ex":"Workers on short-term contracts earn less."},
-{"w":"create","pos":"verb","syn":"produce, generate, make","uz":"yaratmoq","ex":"The policy created thousands of new jobs."},
-{"w":"data","pos":"noun","syn":"information, figures, statistics","uz":"ma'lumotlar","ex":"The data suggest a link between diet and mood."},
-{"w":"define","pos":"verb","syn":"explain, describe, specify","uz":"ta'riflamoq, belgilamoq","ex":"Success is difficult to define."},
-{"w":"derive from","pos":"verb","syn":"come from, originate from, stem from","uz":"…dan kelib chiqmoq","ex":"Many English words derive from Latin."},
-{"w":"distribute","pos":"verb","syn":"share out, spread, allocate","uz":"taqsimlamoq","ex":"Food was distributed to the villages."},
-{"w":"economy","pos":"noun","syn":"financial system, market","uz":"iqtisodiyot","ex":"Tourism is vital to the local economy."},
-{"w":"environment","pos":"noun","syn":"surroundings, nature, setting","uz":"atrof-muhit; muhit","ex":"Children learn best in a safe environment."}]},
-"speaking":{"theme":"Giving opinions","items":[
-{"s":"Personally, I think …","uz":"Shaxsan men … deb o'ylayman","ex":"Personally, I think public transport should be free.","use":"Part 3 asosiy fikr; 'I think' dan ko'ra tabiiyroq"},
-{"s":"As far as I'm concerned, …","uz":"Menga qolsa, …","ex":"As far as I'm concerned, health is more important than money.","use":"Kuchli shaxsiy fikr"},
-{"s":"I'm pretty sure that …","uz":"Ancha ishonchim komilki, …","ex":"I'm pretty sure that most people use their phones too much.","use":"Ishonch bilan aytganda"},
-{"s":"I'd argue that …","uz":"Men … deb ta'kidlagan bo'lardim","ex":"I'd argue that teachers matter more than technology.","use":"Part 3: munozarali savollarda"},
-{"s":"From my point of view, …","uz":"Mening nuqtai nazarimdan, …","ex":"From my point of view, cities are too crowded.","use":"Rasmiyroq fikr; Part 3"},
-{"s":"I'm not entirely sure, but I'd guess …","uz":"Aniq bilmayman, lekin taxminimcha …","ex":"I'm not entirely sure, but I'd guess it's about money.","use":"Javobni bilmasangiz — to'xtab qolmang"},
-{"s":"It seems to me that …","uz":"Menimcha, … kabi tuyuladi","ex":"It seems to me that young people read less these days.","use":"Kuzatuvga asoslangan fikr"},
-{"s":"I strongly believe that …","uz":"Qat'iy ishonamanki, …","ex":"I strongly believe that everyone should learn a second language.","use":"Eng kuchli fikr; kamdan-kam ishlating"},
-{"s":"I'm in two minds about …","uz":"…haqida ikkilanib turibman","ex":"I'm in two minds about working from home.","use":"Ikkala tomonni ko'rganda (idioma ham)"},
-{"s":"That's a tough question, but …","uz":"Bu qiyin savol, lekin …","ex":"That's a tough question, but I think it's mainly cultural.","use":"Vaqt yutish + javob boshlash (Part 3)"}]},
-"pron":{"theme":"V and W","items":[
-{"w":"vest – west","ipa":"/vest/ – /west/","uz":"/v/: yuqori tishlar pastki labga tegadi; /w/: lablar yumaloq, tishlar tegmaydi","tip":"O'zbek 'v' ko'pincha ikkalasining o'rtasida — farqlang"},
-{"w":"very – wary","ipa":"/ˈveri/ – /ˈweəri/","uz":"'very' tishlar bilan, 'wary' lablar bilan","tip":"Ko'zguga qarab mashq qiling"},
-{"w":"vine – wine","ipa":"/vaɪn/ – /waɪn/","uz":"bir harf ma'noni o'zgartiradi: uzum novdasi – vino","tip":"/w/ da 'u' tovushi bilan boshlang: u-ain"},
-{"w":"village","ipa":"/ˈvɪlɪdʒ/","uz":"oxiri /ɪdʒ/, 'vileyj' emas","tip":"VIL-ij"},
-{"w":"world","ipa":"/wɜːld/","uz":"/ɜː/ uzun tovush, 'vorld' emas","tip":"Lablarni yumaloqlab boshlang"},
-{"w":"woman – women","ipa":"/ˈwʊmən/ – /ˈwɪmɪn/","uz":"birlik va ko'plik birinchi bo'g'inda farq qiladi","tip":"WU-man / WI-min"},
-{"w":"vocabulary","ipa":"/vəˈkæbjələri/","uz":"urg'u 2-bo'g'inda","tip":"vuh-KAB-yuh-luh-ree"},
-{"w":"twelve","ipa":"/twelv/","uz":"boshida /tw/, oxirida /v/","tip":"Ikkala tovushni ham aniq ayting"},
-{"w":"quiet – quite","ipa":"/ˈkwaɪət/ – /kwaɪt/","uz":"quiet — 2 bo'g'in (jim), quite — 1 bo'g'in (ancha)","tip":"KWAI-ut / KWAIT"},
-{"w":"Wednesday","ipa":"/ˈwenzdeɪ/","uz":"birinchi 'd' o'qilmaydi","tip":"WENZ-day"}]},
-"task1":{"theme":"Downward trends","items":[
-{"w":"fall / decrease / decline","syn":"go down, drop, dip","uz":"kamaymoq, pasaymoq","ex":"Coal use fell from 40% to 25%."},
-{"w":"a fall / a decline in","syn":"a drop in, a reduction in","uz":"…dagi pasayish","ex":"There was a slight decline in sales in spring."},
-{"w":"plummet","syn":"plunge, collapse, slump","uz":"keskin va katta tushib ketmoq","ex":"Profits plummeted to just $2 million in 2009."},
-{"w":"dip","syn":"fall slightly","uz":"biroz va qisqa vaqt tushmoq","ex":"Visitor numbers dipped in March before rising again."},
-{"w":"halve","syn":"fall by 50%","uz":"ikki barobar kamaymoq","ex":"The birth rate halved over three decades."},
-{"w":"hit a low of","syn":"reach the lowest point, bottom out at","uz":"eng past nuqtaga tushmoq","ex":"Temperatures hit a low of -5°C in January."},
-{"w":"a downward trend","syn":"a downturn","uz":"pasayish tendensiyasi","ex":"Newspaper sales show a clear downward trend."},
-{"w":"diminish","syn":"lessen, shrink, reduce","uz":"kamayib bormoq (rasmiy)","ex":"The gap between the two countries diminished."},
-{"w":"was overtaken by","syn":"fell below","uz":"…dan o'zib ketildi (pastga tushdi)","ex":"Radio was overtaken by the internet in 2005."},
-{"w":"decrease gradually","syn":"decline steadily, fall slowly","uz":"asta-sekin kamaymoq","ex":"The figure decreased gradually to 30%."}]},
-"task2":{"theme":"Technology","items":[
-{"w":"digital literacy","syn":"computer skills","uz":"raqamli savodxonlik","ex":"Digital literacy is now as important as reading."},
-{"w":"screen time","syn":"time spent on devices","uz":"ekran oldida o'tkazilgan vaqt","ex":"Parents should limit children's screen time."},
-{"w":"automation","syn":"mechanisation, robotics","uz":"avtomatlashtirish","ex":"Automation may replace many low-skilled jobs."},
-{"w":"cutting-edge","syn":"state-of-the-art, advanced","uz":"eng zamonaviy","ex":"Hospitals need cutting-edge equipment."},
-{"w":"social isolation","syn":"loneliness","uz":"ijtimoiy yolg'izlik","ex":"Excessive gaming can lead to social isolation."},
-{"w":"privacy concerns","syn":"data protection issues","uz":"shaxsiy ma'lumotlar xavfsizligi muammosi","ex":"Social media raises serious privacy concerns."},
-{"w":"be addicted to","syn":"be hooked on, be dependent on","uz":"…ga qaram bo'lmoq","ex":"Many teenagers are addicted to their smartphones."},
-{"w":"revolutionise","syn":"transform, change radically","uz":"tubdan o'zgartirmoq","ex":"The internet has revolutionised the way we shop."},
-{"w":"widen the gap","syn":"increase inequality","uz":"tafovutni kengaytirmoq","ex":"Technology may widen the gap between rich and poor."},
-{"w":"a double-edged sword","syn":"has both benefits and drawbacks","uz":"ikki tomonlama qilich (foydasi ham, zarari ham bor)","ex":"Social media is a double-edged sword for young people."}]}
+ "idioms": {
+  "theme": "Studying and learning",
+  "items": [
+   {
+    "t": "learn something by heart",
+    "uz": "yod olmoq",
+    "ex": "As a child, I learned many poems by heart.",
+    "use": "Maktab xotiralari haqida"
+   },
+   {
+    "t": "a quick learner",
+    "uz": "tez o'rganadigan odam",
+    "ex": "I'm a quick learner when it comes to new apps.",
+    "use": "O'zingizni tasvirlaganda"
+   },
+   {
+    "t": "pass with flying colours",
+    "uz": "imtihondan a'lo baho bilan o'tmoq",
+    "ex": "She passed her driving test with flying colours.",
+    "use": "Part 2: muvaffaqiyat haqida hikoya"
+   },
+   {
+    "t": "brush up on",
+    "uz": "(unutilgan bilimni) qayta tiklamoq",
+    "ex": "I need to brush up on my grammar before the exam.",
+    "use": "Til o'rganish, imtihonga tayyorgarlik"
+   },
+   {
+    "t": "cut corners",
+    "uz": "ishni yengillashtirib, sifatsiz qilmoq",
+    "ex": "If you cut corners in practice, you'll pay for it in the exam.",
+    "use": "Salbiy odat haqida gapirganda"
+   },
+   {
+    "t": "in a nutshell",
+    "uz": "qisqacha aytganda",
+    "ex": "In a nutshell, I study because I want better opportunities.",
+    "use": "Javobni yakunlash uchun"
+   },
+   {
+    "t": "food for thought",
+    "uz": "o'ylash uchun mavzu",
+    "ex": "His lecture gave me a lot of food for thought.",
+    "use": "Qiziqarli g'oya, kitob, film haqida"
+   },
+   {
+    "t": "rack your brains",
+    "uz": "bosh qotirmoq, qattiq o'ylamoq",
+    "ex": "I racked my brains but couldn't remember the word.",
+    "use": "Qiyin vaziyat hikoyasi"
+   },
+   {
+    "t": "a steep learning curve",
+    "uz": "qisqa vaqtda ko'p narsani o'rganish zarurati",
+    "ex": "Starting university was a steep learning curve for me.",
+    "use": "Yangi ish yoki o'qish boshlanishi"
+   },
+   {
+    "t": "practice makes perfect",
+    "uz": "mashq mukammallikka olib keladi",
+    "ex": "My speaking was weak, but practice makes perfect.",
+    "use": "Maslahat berganda; ko'p ishlatmang"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "constitute",
+    "pos": "verb",
+    "syn": "make up, form, represent",
+    "uz": "tashkil etmoq",
+    "ex": "Women constitute 60% of the workforce."
+   },
+   {
+    "w": "context",
+    "pos": "noun",
+    "syn": "background, setting, situation",
+    "uz": "kontekst, vaziyat",
+    "ex": "Words must be understood in context."
+   },
+   {
+    "w": "contract",
+    "pos": "noun",
+    "syn": "agreement, deal",
+    "uz": "shartnoma",
+    "ex": "Workers on short-term contracts earn less."
+   },
+   {
+    "w": "create",
+    "pos": "verb",
+    "syn": "produce, generate, make",
+    "uz": "yaratmoq",
+    "ex": "The policy created thousands of new jobs."
+   },
+   {
+    "w": "data",
+    "pos": "noun",
+    "syn": "information, figures, statistics",
+    "uz": "ma'lumotlar",
+    "ex": "The data suggest a link between diet and mood."
+   },
+   {
+    "w": "define",
+    "pos": "verb",
+    "syn": "explain, describe, specify",
+    "uz": "ta'riflamoq, belgilamoq",
+    "ex": "Success is difficult to define."
+   },
+   {
+    "w": "derive from",
+    "pos": "verb",
+    "syn": "come from, originate from, stem from",
+    "uz": "…dan kelib chiqmoq",
+    "ex": "Many English words derive from Latin."
+   },
+   {
+    "w": "distribute",
+    "pos": "verb",
+    "syn": "share out, spread, allocate",
+    "uz": "taqsimlamoq",
+    "ex": "Food was distributed to the villages."
+   },
+   {
+    "w": "economy",
+    "pos": "noun",
+    "syn": "financial system, market",
+    "uz": "iqtisodiyot",
+    "ex": "Tourism is vital to the local economy."
+   },
+   {
+    "w": "environment",
+    "pos": "noun",
+    "syn": "surroundings, nature, setting",
+    "uz": "atrof-muhit; muhit",
+    "ex": "Children learn best in a safe environment."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Giving opinions",
+  "items": [
+   {
+    "s": "Personally, I think …",
+    "uz": "Shaxsan men … deb o'ylayman",
+    "ex": "Personally, I think public transport should be free.",
+    "use": "Part 3 asosiy fikr; 'I think' dan ko'ra tabiiyroq"
+   },
+   {
+    "s": "As far as I'm concerned, …",
+    "uz": "Menga qolsa, …",
+    "ex": "As far as I'm concerned, health is more important than money.",
+    "use": "Kuchli shaxsiy fikr"
+   },
+   {
+    "s": "I'm pretty sure that …",
+    "uz": "Ancha ishonchim komilki, …",
+    "ex": "I'm pretty sure that most people use their phones too much.",
+    "use": "Ishonch bilan aytganda"
+   },
+   {
+    "s": "I'd argue that …",
+    "uz": "Men … deb ta'kidlagan bo'lardim",
+    "ex": "I'd argue that teachers matter more than technology.",
+    "use": "Part 3: munozarali savollarda"
+   },
+   {
+    "s": "From my point of view, …",
+    "uz": "Mening nuqtai nazarimdan, …",
+    "ex": "From my point of view, cities are too crowded.",
+    "use": "Rasmiyroq fikr; Part 3"
+   },
+   {
+    "s": "I'm not entirely sure, but I'd guess …",
+    "uz": "Aniq bilmayman, lekin taxminimcha …",
+    "ex": "I'm not entirely sure, but I'd guess it's about money.",
+    "use": "Javobni bilmasangiz — to'xtab qolmang"
+   },
+   {
+    "s": "It seems to me that …",
+    "uz": "Menimcha, … kabi tuyuladi",
+    "ex": "It seems to me that young people read less these days.",
+    "use": "Kuzatuvga asoslangan fikr"
+   },
+   {
+    "s": "I strongly believe that …",
+    "uz": "Qat'iy ishonamanki, …",
+    "ex": "I strongly believe that everyone should learn a second language.",
+    "use": "Eng kuchli fikr; kamdan-kam ishlating"
+   },
+   {
+    "s": "I'm in two minds about …",
+    "uz": "…haqida ikkilanib turibman",
+    "ex": "I'm in two minds about working from home.",
+    "use": "Ikkala tomonni ko'rganda (idioma ham)"
+   },
+   {
+    "s": "That's a tough question, but …",
+    "uz": "Bu qiyin savol, lekin …",
+    "ex": "That's a tough question, but I think it's mainly cultural.",
+    "use": "Vaqt yutish + javob boshlash (Part 3)"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "V and W",
+  "items": [
+   {
+    "w": "vest – west",
+    "ipa": "/vest/ – /west/",
+    "uz": "/v/: yuqori tishlar pastki labga tegadi; /w/: lablar yumaloq, tishlar tegmaydi",
+    "tip": "O'zbek 'v' ko'pincha ikkalasining o'rtasida — farqlang"
+   },
+   {
+    "w": "very – wary",
+    "ipa": "/ˈveri/ – /ˈweəri/",
+    "uz": "'very' tishlar bilan, 'wary' lablar bilan",
+    "tip": "Ko'zguga qarab mashq qiling"
+   },
+   {
+    "w": "vine – wine",
+    "ipa": "/vaɪn/ – /waɪn/",
+    "uz": "bir harf ma'noni o'zgartiradi: uzum novdasi – vino",
+    "tip": "/w/ da 'u' tovushi bilan boshlang: u-ain"
+   },
+   {
+    "w": "village",
+    "ipa": "/ˈvɪlɪdʒ/",
+    "uz": "oxiri /ɪdʒ/, 'vileyj' emas",
+    "tip": "VIL-ij"
+   },
+   {
+    "w": "world",
+    "ipa": "/wɜːld/",
+    "uz": "/ɜː/ uzun tovush, 'vorld' emas",
+    "tip": "Lablarni yumaloqlab boshlang"
+   },
+   {
+    "w": "woman – women",
+    "ipa": "/ˈwʊmən/ – /ˈwɪmɪn/",
+    "uz": "birlik va ko'plik birinchi bo'g'inda farq qiladi",
+    "tip": "WU-man / WI-min"
+   },
+   {
+    "w": "vocabulary",
+    "ipa": "/vəˈkæbjələri/",
+    "uz": "urg'u 2-bo'g'inda",
+    "tip": "vuh-KAB-yuh-luh-ree"
+   },
+   {
+    "w": "twelve",
+    "ipa": "/twelv/",
+    "uz": "boshida /tw/, oxirida /v/",
+    "tip": "Ikkala tovushni ham aniq ayting"
+   },
+   {
+    "w": "quiet – quite",
+    "ipa": "/ˈkwaɪət/ – /kwaɪt/",
+    "uz": "quiet — 2 bo'g'in (jim), quite — 1 bo'g'in (ancha)",
+    "tip": "KWAI-ut / KWAIT"
+   },
+   {
+    "w": "Wednesday",
+    "ipa": "/ˈwenzdeɪ/",
+    "uz": "birinchi 'd' o'qilmaydi",
+    "tip": "WENZ-day"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Downward trends",
+  "items": [
+   {
+    "w": "fall / decrease / decline",
+    "syn": "go down, drop, dip",
+    "uz": "kamaymoq, pasaymoq",
+    "ex": "Coal use fell from 40% to 25%."
+   },
+   {
+    "w": "a fall / a decline in",
+    "syn": "a drop in, a reduction in",
+    "uz": "…dagi pasayish",
+    "ex": "There was a slight decline in sales in spring."
+   },
+   {
+    "w": "plummet",
+    "syn": "plunge, collapse, slump",
+    "uz": "keskin va katta tushib ketmoq",
+    "ex": "Profits plummeted to just $2 million in 2009."
+   },
+   {
+    "w": "dip",
+    "syn": "fall slightly",
+    "uz": "biroz va qisqa vaqt tushmoq",
+    "ex": "Visitor numbers dipped in March before rising again."
+   },
+   {
+    "w": "halve",
+    "syn": "fall by 50%",
+    "uz": "ikki barobar kamaymoq",
+    "ex": "The birth rate halved over three decades."
+   },
+   {
+    "w": "hit a low of",
+    "syn": "reach the lowest point, bottom out at",
+    "uz": "eng past nuqtaga tushmoq",
+    "ex": "Temperatures hit a low of -5°C in January."
+   },
+   {
+    "w": "a downward trend",
+    "syn": "a downturn",
+    "uz": "pasayish tendensiyasi",
+    "ex": "Newspaper sales show a clear downward trend."
+   },
+   {
+    "w": "diminish",
+    "syn": "lessen, shrink, reduce",
+    "uz": "kamayib bormoq (rasmiy)",
+    "ex": "The gap between the two countries diminished."
+   },
+   {
+    "w": "was overtaken by",
+    "syn": "fell below",
+    "uz": "…dan o'zib ketildi (pastga tushdi)",
+    "ex": "Radio was overtaken by the internet in 2005."
+   },
+   {
+    "w": "decrease gradually",
+    "syn": "decline steadily, fall slowly",
+    "uz": "asta-sekin kamaymoq",
+    "ex": "The figure decreased gradually to 30%."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Technology",
+  "items": [
+   {
+    "w": "digital literacy",
+    "syn": "computer skills",
+    "uz": "raqamli savodxonlik",
+    "ex": "Digital literacy is now as important as reading."
+   },
+   {
+    "w": "screen time",
+    "syn": "time spent on devices",
+    "uz": "ekran oldida o'tkazilgan vaqt",
+    "ex": "Parents should limit children's screen time."
+   },
+   {
+    "w": "automation",
+    "syn": "mechanisation, robotics",
+    "uz": "avtomatlashtirish",
+    "ex": "Automation may replace many low-skilled jobs."
+   },
+   {
+    "w": "cutting-edge",
+    "syn": "state-of-the-art, advanced",
+    "uz": "eng zamonaviy",
+    "ex": "Hospitals need cutting-edge equipment."
+   },
+   {
+    "w": "social isolation",
+    "syn": "loneliness",
+    "uz": "ijtimoiy yolg'izlik",
+    "ex": "Excessive gaming can lead to social isolation."
+   },
+   {
+    "w": "privacy concerns",
+    "syn": "data protection issues",
+    "uz": "shaxsiy ma'lumotlar xavfsizligi muammosi",
+    "ex": "Social media raises serious privacy concerns."
+   },
+   {
+    "w": "be addicted to",
+    "syn": "be hooked on, be dependent on",
+    "uz": "…ga qaram bo'lmoq",
+    "ex": "Many teenagers are addicted to their smartphones."
+   },
+   {
+    "w": "revolutionise",
+    "syn": "transform, change radically",
+    "uz": "tubdan o'zgartirmoq",
+    "ex": "The internet has revolutionised the way we shop."
+   },
+   {
+    "w": "widen the gap",
+    "syn": "increase inequality",
+    "uz": "tafovutni kengaytirmoq",
+    "ex": "Technology may widen the gap between rich and poor."
+   },
+   {
+    "w": "a double-edged sword",
+    "syn": "has both benefits and drawbacks",
+    "uz": "ikki tomonlama qilich (foydasi ham, zarari ham bor)",
+    "ex": "Social media is a double-edged sword for young people."
+   }
+  ]
+ },
+ "grammar": {
+  "theme": "Articles: a / an / the / no article",
+  "items": [
+   {
+    "s": "a / an + sanaladigan birlik ot (birinchi marta)",
+    "uz": "noaniq, birinchi tilga olinayotgan narsa",
+    "ex": "I bought a laptop last month.",
+    "use": "Har bir birlik otdan oldin tekshiring"
+   },
+   {
+    "s": "the + ma'lum narsa",
+    "uz": "oldin aytilgan yoki yagona narsa",
+    "ex": "The laptop is very fast. The government should act.",
+    "use": "Task 2: the government, the environment"
+   },
+   {
+    "s": "Zero article + umumiy ko'plik/sanalmaydigan",
+    "uz": "umuman olganda gapirilsa artikl kerak emas",
+    "ex": "Children need exercise. Education is important.",
+    "use": "Task 2 umumiy fikrlar"
+   },
+   {
+    "s": "the + superlative",
+    "uz": "eng ... — har doim the bilan",
+    "ex": "China had the highest figure.",
+    "use": "Task 1 taqqoslash"
+   },
+   {
+    "s": "the + number of / proportion of",
+    "uz": "ko'rsatkich nomlari oldidan the",
+    "ex": "The number of students increased.",
+    "use": "Task 1 boshlovchi ibora"
+   },
+   {
+    "s": "❌ The money is important for the happiness → ✅ Money is important for happiness",
+    "uz": "abstrakt otlar umumiy ma'noda artiklsiz",
+    "ex": "Money cannot buy happiness.",
+    "use": "Writing'dagi eng tipik xato"
+   },
+   {
+    "s": "Mamlakatlar: the USA, the UK, lekin Japan, Uzbekistan",
+    "uz": "'States', 'Kingdom', 'Republic' bo'lsa the",
+    "ex": "Students from the UK and Japan took part.",
+    "use": "Task 1 mamlakatlar"
+   },
+   {
+    "s": "a/an + kasb",
+    "uz": "kasbni aytganda artikl shart",
+    "ex": "My father is a doctor.",
+    "use": "Speaking Part 1"
+   }
+  ]
+ }
 }

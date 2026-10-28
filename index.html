@@ -298,7 +298,7 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .sugg summary::-webkit-details-marker{display:none}
 .sugg[open] summary{margin-bottom:6px}
 .skb{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.03em;padding:1px 6px;border-radius:6px;margin-right:6px;vertical-align:2px;color:#fff;font-family:var(--f-body)}
-.sk-L{background:#2D6BD8}.sk-R{background:#1F8A5B}.sk-W{background:#C98A12}.sk-S{background:#8A4FC8}.sk-V{background:#5B6890}
+.sk-L{background:#2D6BD8}.sk-R{background:#1F8A5B}.sk-W{background:#C98A12}.sk-S{background:#8A4FC8}.sk-V{background:#5B6890}.sk-G{background:#B8456B}
 .bals{display:flex;flex-wrap:wrap;gap:6px}
 .bal{display:inline-flex;align-items:center;font-size:12.5px;padding:4px 8px 4px 4px;border-radius:99px;border:1px solid var(--line);background:var(--sunk);gap:2px}
 .bal b{margin-left:4px}
@@ -364,7 +364,7 @@ h3{font-size:var(--fs-m)}
 .task input[type=checkbox]{width:26px;height:26px}
 .task .tx b{font-size:var(--fs-m);line-height:1.3}
 .task .tx small{font-size:var(--fs-s);margin-top:2px}
-.bals{flex-wrap:nowrap;overflow-x:auto;gap:6px;padding-bottom:2px;scrollbar-width:none}
+.bals{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .bals::-webkit-scrollbar{display:none}
 .bal{flex:1 1 0;min-width:0;justify-content:center;padding:4px 6px 4px 4px;font-size:var(--fs-s);min-height:32px;white-space:nowrap}
 .bal .skb{margin-right:4px}
@@ -440,7 +440,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.10';
+const BUILD='2026-10-28.11';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -621,15 +621,15 @@ const dayDoc=n=>S.days['d'+pad(n)]||{};
 const weekDoc=w=>S.weeks['w'+w]||{};
 const mockDoc=n=>S.mocks['m'+pad(n)]||{};
 function setDay(n,patch,later){const k='d'+pad(n);S.days[k]=Object.assign({},S.days[k],patch);touch(k,later);}
-const TAGS=[['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking'],['V','Vocab']];
+const TAGS=[['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking'],['V','Vocab'],['G','Grammar']];
 /* Focus server (Cloudflare Worker): tells the 07:00 bot message which skill has the most tasks today. Empty = off. */
 const WORKER_URL='https://ielts-tracker.urazovvlv.workers.dev';
 let focusT=null;
 function focusSync(){
   if(!WORKER_URL||!inTG||!PLAN)return;clearTimeout(focusT);
   focusT=setTimeout(()=>{try{const t=Math.max(1,todayIdx()),days={},stats={};
-    for(let n=t;n<=Math.min(DAYS,t+7);n++){const c={L:0,R:0,W:0,S:0,V:0};for(const x of listFor(n))if(x.sk in c)c[x.sk]++;days[isoD(dateOf(n))]=c;}
-    for(let n=Math.max(1,t-13);n<=Math.min(DAYS,t);n++){const L=listFor(n),tk=dayDoc(n).t||{},c={t:L.length,d:0,L:0,R:0,W:0,S:0,V:0,e:0,m:0};for(const x of L)if(tk[x.k]){c.d++;if(x.sk in c)c[x.sk]++;}stats[isoD(dateOf(n))]=c;}
+    for(let n=t;n<=Math.min(DAYS,t+7);n++){const c={L:0,R:0,W:0,S:0,V:0,G:0};for(const x of listFor(n))if(x.sk in c)c[x.sk]++;days[isoD(dateOf(n))]=c;}
+    for(let n=Math.max(1,t-13);n<=Math.min(DAYS,t);n++){const L=listFor(n),tk=dayDoc(n).t||{},c={t:L.length,d:0,L:0,R:0,W:0,S:0,V:0,G:0,e:0,m:0};for(const x of L)if(tk[x.k]){c.d++;if(x.sk in c)c[x.sk]++;}stats[isoD(dateOf(n))]=c;}
     for(const e of S.ess){const k=isoD(dateOf(e.d));if(stats[k])stats[k].e++;}
     for(const m of S.mist){const k=isoD(new Date(m.t||0));if(stats[k])stats[k].m++;}
     const mocks=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m);return o==null?null:{n,date:isoD(dateOf(n)),name:MOCKS[n],o,L:toBand(m.L,LB),R:toBand(m.R,RB),W:Number(m.W),S:Number(m.S)};}).filter(Boolean);
@@ -868,14 +868,14 @@ function viewWords(){
 }
 /* Words = my own words + every Daily pack unlocked so far (no extra storage; "known" counts for pack items live in that day's doc as dk). */
 let wFilter='all';
-const WF=[['all','All'],['mine','Mine'],['idioms','Idioms'],['reading','Reading'],['speaking','Speaking'],['pron','Pronunciation'],['task1','Task 1'],['task2','Task 2']];
-const DLABEL={idioms:'Idiom',reading:'Reading',speaking:'Speaking',pron:'Pronunciation',task1:'Task 1',task2:'Task 2'};
+const WF=[['all','All'],['mine','Mine'],['grammar','Grammar'],['idioms','Idioms'],['reading','Reading'],['speaking','Speaking'],['pron','Pronunciation'],['task1','Task 1'],['task2','Task 2']];
+const DLABEL={grammar:'Grammar',idioms:'Idiom',reading:'Reading',speaking:'Speaking',pron:'Pronunciation',task1:'Task 1',task2:'Task 2'};
 const unlockedPacks=()=>Math.min(clampDay(Math.max(1,todayIdx())),DCOUNT);
 function dailyWords(){
   const out=[];
   for(let k=unlockedPacks();k>=1;k--){const p=DPACK[k];if(!p)continue;const dk=dayDoc(k).dk||{};
     for(const [sec] of DSEC){((p[sec]&&p[sec].items)||[]).forEach((x,i)=>{
-      out.push(Object.assign({id:`d${k}:${sec}:${i}`,w:sec==='idioms'?x.t:sec==='speaking'?x.s:x.w,m:x.uz||'',ex:x.ex||x.tip||'',syn:x.syn&&x.syn!=='—'?x.syn:'',ipa:x.ipa||'',sec,day:k},srsDaily(k,dk[sec+':'+i])));});}}
+      out.push(Object.assign({id:`d${k}:${sec}:${i}`,w:sec==='idioms'?x.t:(sec==='speaking'||sec==='grammar')?x.s:x.w,m:x.uz||'',ex:x.ex||x.tip||'',syn:x.syn&&x.syn!=='—'?x.syn:'',ipa:x.ipa||'',sec,day:k},srsDaily(k,dk[sec+':'+i])));});}}
   return out;
 }
 function wordPool(){
@@ -1322,7 +1322,7 @@ function playListening(){
 }
 
 /* ---------- Daily pack: 6 sections x 10 items, files in /daily ---------- */
-const DSEC=[['idioms','Idioms','S'],['reading','Reading words','R'],['speaking','Speaking phrases','S'],['pron','Pronunciation','S'],['task1','Writing Task 1 words','W'],['task2','Writing Task 2 words','W']];
+const DSEC=[['grammar','Grammar','G'],['idioms','Idioms','S'],['reading','Reading words','R'],['speaking','Speaking phrases','S'],['pron','Pronunciation','S'],['task1','Writing Task 1 words','W'],['task2','Writing Task 2 words','W']];
 let DPACK={},DCOUNT=0,dSel=null,dLoading=false;
 const dOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(d&&d.dataset&&d.dataset.dsec){d.open?dOpen.add(d.dataset.dsec):dOpen.delete(d.dataset.dsec);}},true);
@@ -1335,7 +1335,7 @@ async function getPack(n){
 }
 function dItem(sec,x,i){
   const save=['idioms','reading','task1','task2'].includes(sec);
-  const head=sec==='idioms'?x.t:sec==='speaking'?x.s:x.w;
+  const head=sec==='idioms'?x.t:(sec==='speaking'||sec==='grammar')?x.s:x.w;
   const saved=save&&S.words.some(w=>w.w.toLowerCase()===String(head).toLowerCase());
   return `<li class="di"><div class="di-h"><b>${esc(head)}</b>${x.pos?`<span class="di-pos">${esc(x.pos)}</span>`:''}${sec==='pron'&&ttsOK()?`<button class="di-btn" data-say="${esc(head.replace(/ – /g,', '))}" aria-label="Listen">🔊</button>`:''}${save?`<button class="di-btn ${saved?'on':''}" data-dsave="${sec}:${i}" aria-label="Save to my words">${saved?'✓':'+'}</button>`:''}</div>
     ${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}
@@ -1348,11 +1348,11 @@ function viewDaily(){
   const today=clampDay(todayIdx());if(dSel==null)dSel=today;
   const n=clampDay(dSel),k=packNo(n),p=DPACK[k];
   if(DCOUNT&&!p&&!dLoading){dLoading=true;getPack(n).then(()=>{dLoading=false;if(tab==='daily')renderView();});}
-  const done=(dayDoc(n).dl)||{},cnt=DSEC.filter(([sk])=>done[sk]).length;
+  const secList=DSEC.filter(([sk])=>!p||p[sk]),nsec=secList.length,done=(dayDoc(n).dl)||{},cnt=secList.filter(([sk])=>done[sk]).length;
   const review=DCOUNT&&n>DCOUNT;
-  const head=`<section class="card"><div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${n===today?'Today\'s pack':fmt(dateOf(n))}</h2><span class="note">${review?`Review of Day ${k}`:'6 sections · 10 items each'}</span></div></div>
+  const head=`<section class="card"><div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${n===today?'Today\'s pack':fmt(dateOf(n))}</h2><span class="note">${review?`Review of Day ${k}`:`${nsec} sections · grammar + 60 words and phrases`}</span></div></div>
     <div class="daynav"><button class="btn icon" data-dnav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-dnav="1" aria-label="Next day">›</button></div></div>
-    <div class="pline"><span class="label">Learned</span><div class="pbar"><i style="width:${cnt/6*100}%"></i></div><b class="num">${cnt}/6</b></div>
+    <div class="pline"><span class="label">Learned</span><div class="pbar"><i style="width:${cnt/nsec*100}%"></i></div><b class="num">${cnt}/${nsec}</b></div>
     ${n!==today?'<button class="btn" data-dnav="0">Back to today</button>':''}</section>`;
   if(!DCOUNT)return `<div class="wrap">${head}<section class="card"><p class="note" style="margin:0">Daily packs could not load. Check your internet and reopen the app.</p></section></div>`;
   if(!p)return `<div class="wrap">${head}<section class="card"><p class="note" style="margin:0">Loading today's pack…</p></section></div>`;
