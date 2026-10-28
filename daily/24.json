@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Sentence types: simple, compound, complex",
+  "items": [
+   {
+    "s": "Simple sentence",
+    "uz": "bitta ega + bitta fe'l",
+    "ex": "Many people work from home.",
+    "use": "Aniq fikr uchun"
+   },
+   {
+    "s": "Compound: and / but / so / or",
+    "uz": "ikki mustaqil gap + bog'lovchi",
+    "ex": "Prices rose, but wages stayed the same.",
+    "use": "Band 6 daraja"
+   },
+   {
+    "s": "Complex: because / although / when / if + clause",
+    "uz": "ergash gap bilan",
+    "ex": "Although it is expensive, many people buy it.",
+    "use": "Band 7 talabi"
+   },
+   {
+    "s": "Relative clause in a complex sentence",
+    "uz": "who/which bilan",
+    "ex": "Students who sleep well perform better.",
+    "use": "GRA uchun"
+   },
+   {
+    "s": "Mix lengths",
+    "uz": "qisqa va uzun gaplarni aralashtiring",
+    "ex": "This is a serious problem. Unless governments act quickly, it will get worse.",
+    "use": "Ravon uslub"
+   },
+   {
+    "s": "Comma after a fronted clause",
+    "uz": "ergash gap boshida bo'lsa vergul",
+    "ex": "When the price fell, sales rose.",
+    "use": "Tinish belgisi"
+   },
+   {
+    "s": "No comma before because (usually)",
+    "uz": "because oldidan odatda vergul qo'yilmaydi",
+    "ex": "Sales rose because the price fell.",
+    "use": "Tinish belgisi"
+   },
+   {
+    "s": "❌ Because it is cheap. (fragment) → ✅ Many people buy it because it is cheap.",
+    "uz": "because qismi yolg'iz gap bo'lolmaydi",
+    "ex": "Many choose buses because they are cheap.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Luck and chance",
+  "items": [
+   {
+    "t": "a stroke of luck",
+    "uz": "omad kulib boqishi",
+    "ex": "Finding that job was a stroke of luck.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "beginner's luck",
+    "uz": "boshlovchining omadi",
+    "ex": "I won the first game — beginner's luck!",
+    "use": "Hazil"
+   },
+   {
+    "t": "touch wood",
+    "uz": "ko'z tegmasin",
+    "ex": "I've never been ill, touch wood.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "my lucky day",
+    "uz": "omadli kunim",
+    "ex": "It's my lucky day — the bus came early!",
+    "use": "Kundalik"
+   },
+   {
+    "t": "try your luck",
+    "uz": "omadingni sinab ko'rmoq",
+    "ex": "I tried my luck and applied for the grant.",
+    "use": "Imkoniyat"
+   },
+   {
+    "t": "the luck of the draw",
+    "uz": "taqdir, tasodif",
+    "ex": "Which examiner you get is the luck of the draw.",
+    "use": "IELTS haqida"
+   },
+   {
+    "t": "against the odds",
+    "uz": "qiyinchiliklarga qaramay",
+    "ex": "She succeeded against the odds.",
+    "use": "Muvaffaqiyat"
+   },
+   {
+    "t": "by chance",
+    "uz": "tasodifan",
+    "ex": "I met my best friend by chance.",
+    "use": "Part 2"
+   },
+   {
+    "t": "a blessing",
+    "uz": "ne'mat",
+    "ex": "Having good neighbours is a blessing.",
+    "use": "Ijobiy"
+   },
+   {
+    "t": "down on your luck",
+    "uz": "omadsiz davrda",
+    "ex": "He was down on his luck after losing his job.",
+    "use": "Qiyinchilik"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "subsequent",
+    "pos": "adj",
+    "syn": "following, later, next",
+    "uz": "keyingi",
+    "ex": "Subsequent studies confirmed the results."
+   },
+   {
+    "w": "sum",
+    "pos": "noun",
+    "syn": "amount, total",
+    "uz": "summa, jami",
+    "ex": "A large sum was spent on research."
+   },
+   {
+    "w": "summary",
+    "pos": "noun",
+    "syn": "outline, overview, synopsis",
+    "uz": "xulosa, qisqacha mazmun",
+    "ex": "Write a summary of the article."
+   },
+   {
+    "w": "undertake",
+    "pos": "verb",
+    "syn": "carry out, take on",
+    "uz": "o'z zimmasiga olmoq, bajarmoq",
+    "ex": "The study was undertaken in 2018."
+   },
+   {
+    "w": "academy",
+    "pos": "noun",
+    "syn": "school, college, institute",
+    "uz": "akademiya",
+    "ex": "She studied at a music academy."
+   },
+   {
+    "w": "adjust",
+    "pos": "verb",
+    "syn": "adapt, change, modify",
+    "uz": "moslashtirmoq",
+    "ex": "It takes time to adjust to a new culture."
+   },
+   {
+    "w": "alter",
+    "pos": "verb",
+    "syn": "change, modify",
+    "uz": "o'zgartirmoq",
+    "ex": "Climate change alters rainfall patterns."
+   },
+   {
+    "w": "amend",
+    "pos": "verb",
+    "syn": "revise, change, correct",
+    "uz": "o'zgartirish kiritmoq",
+    "ex": "The law was amended in 2010."
+   },
+   {
+    "w": "aware",
+    "pos": "adj",
+    "syn": "conscious, informed",
+    "uz": "xabardor",
+    "ex": "People are more aware of health risks."
+   },
+   {
+    "w": "capacity",
+    "pos": "noun",
+    "syn": "ability; volume, size",
+    "uz": "sig'im; qobiliyat",
+    "ex": "The stadium has a capacity of 50,000."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Clarifying and rephrasing",
+  "items": [
+   {
+    "s": "What I'm trying to say is …",
+    "uz": "Aytmoqchi bo'lganim …",
+    "ex": "What I'm trying to say is that both matter.",
+    "use": "Fikrni aniqlashtirish"
+   },
+   {
+    "s": "In other words, …",
+    "uz": "Boshqacha aytganda, …",
+    "ex": "In other words, it's too expensive for most people.",
+    "use": "Qayta ifoda"
+   },
+   {
+    "s": "Let me put it another way.",
+    "uz": "Boshqacha aytib ko'ray",
+    "ex": "Let me put it another way — it saves time.",
+    "use": "Ravonlik"
+   },
+   {
+    "s": "Sorry, I mean …",
+    "uz": "Kechirasiz, … demoqchiman",
+    "ex": "We went in June — sorry, I mean July.",
+    "use": "O'zini tuzatish (normal)"
+   },
+   {
+    "s": "To be more specific, …",
+    "uz": "Aniqroq aytsam, …",
+    "ex": "To be more specific, I mean online courses.",
+    "use": "Detal"
+   },
+   {
+    "s": "Do you mean …?",
+    "uz": "… ni nazarda tutyapsizmi?",
+    "ex": "Do you mean public or private schools?",
+    "use": "Savolni aniqlashtirish"
+   },
+   {
+    "s": "By that I mean …",
+    "uz": "Bu bilan … ni nazarda tutyapman",
+    "ex": "It's convenient. By that I mean it's close to home.",
+    "use": "Tushuntirish"
+   },
+   {
+    "s": "That's not quite what I meant.",
+    "uz": "Unaqa demoqchi emasdim",
+    "ex": "That's not quite what I meant — I meant cost.",
+    "use": "Tuzatish"
+   },
+   {
+    "s": "Let me rephrase that.",
+    "uz": "Buni boshqacha aytay",
+    "ex": "Let me rephrase that — it's not cheap, but it's worth it.",
+    "use": "Qayta ifoda"
+   },
+   {
+    "s": "To put it simply, …",
+    "uz": "Oddiy qilib aytganda, …",
+    "ex": "To put it simply, money matters.",
+    "use": "Xulosa"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Linking sounds: consonant + vowel",
+  "items": [
+   {
+    "w": "an apple",
+    "ipa": "/ə‿ˈnæpl/",
+    "uz": "undosh keyingi unliga ulanadi",
+    "tip": "ə-NAPL"
+   },
+   {
+    "w": "turn it off",
+    "ipa": "/tɜːn‿ɪt‿ɒf/",
+    "uz": "uchta so'z bitta oqim",
+    "tip": "TER-ni-TOF"
+   },
+   {
+    "w": "pick it up",
+    "ipa": "/pɪk‿ɪt‿ʌp/",
+    "uz": "Listening'da shunday eshitiladi",
+    "tip": "PI-ki-TAP"
+   },
+   {
+    "w": "look at",
+    "ipa": "/lʊk‿ət/",
+    "uz": "LU-kət",
+    "tip": "Tez nutq"
+   },
+   {
+    "w": "a lot of",
+    "ipa": "/ə ˈlɒt‿əv/",
+    "uz": "ə-LO-təv",
+    "tip": "Speaking ravonligi"
+   },
+   {
+    "w": "first of all",
+    "ipa": "/fɜːst‿əv‿ɔːl/",
+    "uz": "FER-stə-VOL",
+    "tip": "Bog'lanib aytiladi"
+   },
+   {
+    "w": "in an hour",
+    "ipa": "/ɪn‿ən‿aʊə/",
+    "uz": "i-nə-NAUƏ",
+    "tip": "Listening"
+   },
+   {
+    "w": "go out",
+    "ipa": "/ɡəʊ‿w‿aʊt/",
+    "uz": "unli + unli orasida /w/",
+    "tip": "GOU-wout"
+   },
+   {
+    "w": "I agree",
+    "ipa": "/aɪ‿j‿əˈɡriː/",
+    "uz": "unli + unli orasida /j/",
+    "tip": "AI-yə-GREE"
+   },
+   {
+    "w": "not at all",
+    "ipa": "/nɒt‿ət‿ɔːl/",
+    "uz": "NO-tə-TOL",
+    "tip": "Klassik ibora"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Prepositions in Task 1",
+  "items": [
+   {
+    "w": "rose from 10% to 30%",
+    "syn": "boshlanish → oxir",
+    "uz": "…dan …gacha oshdi",
+    "ex": "Use from … to … for start and end."
+   },
+   {
+    "w": "rose by 20%",
+    "syn": "o'zgarish miqdori",
+    "uz": "20% ga oshdi",
+    "ex": "by = qanchaga"
+   },
+   {
+    "w": "stood at 50%",
+    "syn": "was",
+    "uz": "… ni tashkil etdi",
+    "ex": "In 2000, it stood at 50%."
+   },
+   {
+    "w": "peaked at",
+    "syn": "reached a high of",
+    "uz": "… da cho'qqiga chiqdi",
+    "ex": "Sales peaked at 900 units."
+   },
+   {
+    "w": "in 2010 / between 2010 and 2020",
+    "syn": "vaqt predloglari",
+    "uz": "yil uchun in",
+    "ex": "In 2010, the figure doubled."
+   },
+   {
+    "w": "throughout",
+    "syn": "during the whole time",
+    "uz": "davomida (butun)",
+    "ex": "Costs remained low throughout the decade."
+   },
+   {
+    "w": "with a figure of",
+    "syn": "at",
+    "uz": "… ko'rsatkich bilan",
+    "ex": "Japan came first, with a figure of 80%."
+   },
+   {
+    "w": "a fall of 5%",
+    "syn": "noun + of + amount",
+    "uz": "5% lik pasayish",
+    "ex": "There was a fall of 5% in exports."
+   },
+   {
+    "w": "a fall in exports",
+    "syn": "noun + in + what",
+    "uz": "eksportdagi pasayish",
+    "ex": "Don't say 'a fall of exports'."
+   },
+   {
+    "w": "among / between",
+    "syn": "ko'pchilik / ikki narsa",
+    "uz": "orasida",
+    "ex": "Among the five countries, Italy spent most."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Poverty and global inequality",
+  "items": [
+   {
+    "w": "developing countries",
+    "syn": "poorer nations",
+    "uz": "rivojlanayotgan davlatlar",
+    "ex": "Developing countries need investment."
+   },
+   {
+    "w": "foreign aid",
+    "syn": "international assistance",
+    "uz": "chet el yordami",
+    "ex": "Foreign aid should target education."
+   },
+   {
+    "w": "the poverty line",
+    "syn": "minimum income level",
+    "uz": "qashshoqlik chegarasi",
+    "ex": "Millions live below the poverty line."
+   },
+   {
+    "w": "the wealth gap",
+    "syn": "inequality between rich and poor",
+    "uz": "boylar va kambag'allar orasidagi farq",
+    "ex": "The wealth gap is widening."
+   },
+   {
+    "w": "basic necessities",
+    "syn": "food, water, shelter",
+    "uz": "asosiy ehtiyojlar",
+    "ex": "Everyone should have access to basic necessities."
+   },
+   {
+    "w": "self-sufficient",
+    "syn": "independent",
+    "uz": "o'zini-o'zi ta'minlaydigan",
+    "ex": "Aid should help communities become self-sufficient."
+   },
+   {
+    "w": "debt relief",
+    "syn": "cancelling debt",
+    "uz": "qarzlarni kechish",
+    "ex": "Debt relief can free money for schools."
+   },
+   {
+    "w": "corruption",
+    "syn": "dishonest use of power",
+    "uz": "korrupsiya",
+    "ex": "Corruption prevents aid from reaching people."
+   },
+   {
+    "w": "charitable donations",
+    "syn": "charity",
+    "uz": "xayriya",
+    "ex": "Charitable donations rise at Ramadan."
+   },
+   {
+    "w": "break the cycle of poverty",
+    "syn": "end poverty",
+    "uz": "qashshoqlik doirasini buzmoq",
+    "ex": "Education helps break the cycle of poverty."
+   }
+  ]
+ }
+}

@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Used to, would and be/get used to",
+  "items": [
+   {
+    "s": "used to + V",
+    "uz": "o'tmishdagi odat yoki holat (endi yo'q)",
+    "ex": "I used to live in a village.",
+    "use": "Part 1: bolalik"
+   },
+   {
+    "s": "would + V (past habit)",
+    "uz": "o'tmishdagi takroriy harakat (holat emas)",
+    "ex": "My grandmother would tell us stories every night.",
+    "use": "Band 7 hikoya"
+   },
+   {
+    "s": "didn't use to + V",
+    "uz": "inkor shakli: use (d yo'q)",
+    "ex": "I didn't use to like vegetables.",
+    "use": "Tipik yozuv xatosi"
+   },
+   {
+    "s": "Did you use to …?",
+    "uz": "so'roq shakli",
+    "ex": "Did you use to play outside?",
+    "use": "Part 1 savollari"
+   },
+   {
+    "s": "be used to + -ing / noun",
+    "uz": "... ga ko'nikkan bo'lmoq",
+    "ex": "I'm used to waking up early.",
+    "use": "Hozirgi odat"
+   },
+   {
+    "s": "get used to + -ing",
+    "uz": "... ga ko'nikmoq (jarayon)",
+    "ex": "It took me a year to get used to city life.",
+    "use": "O'zgarishlar haqida"
+   },
+   {
+    "s": "❌ I'm used to live alone → ✅ I'm used to living alone",
+    "uz": "be used to dan keyin -ing",
+    "ex": "I'm used to living alone now.",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "❌ I would live in Samarkand → ✅ I used to live",
+    "uz": "holat (live, have, be) uchun would emas",
+    "ex": "I used to have long hair.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Shopping and spending",
+  "items": [
+   {
+    "t": "shop till you drop",
+    "uz": "charchaguncha xarid qilmoq",
+    "ex": "On holidays my sister shops till she drops.",
+    "use": "Hazil"
+   },
+   {
+    "t": "window-shopping",
+    "uz": "faqat vitrinaga qarab yurish",
+    "ex": "I go window-shopping when I have no money.",
+    "use": "Part 1: shopping"
+   },
+   {
+    "t": "a bargain",
+    "uz": "arzon va sifatli xarid",
+    "ex": "These shoes were a real bargain.",
+    "use": "Xarid tajribasi"
+   },
+   {
+    "t": "go on a spending spree",
+    "uz": "pulni ayamay sarflab yubormoq",
+    "ex": "I went on a spending spree after payday.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "pay through the nose",
+    "uz": "juda qimmat to'lamoq",
+    "ex": "We paid through the nose for the tickets.",
+    "use": "Narx haqida"
+   },
+   {
+    "t": "shop around",
+    "uz": "narxlarni solishtirib xarid qilmoq",
+    "ex": "It's smart to shop around before buying a phone.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "an impulse buy",
+    "uz": "o'ylamay qilingan xarid",
+    "ex": "This jacket was an impulse buy.",
+    "use": "Iste'molchilik"
+   },
+   {
+    "t": "value for money",
+    "uz": "pulga arziydigan",
+    "ex": "The course was great value for money.",
+    "use": "Baholash"
+   },
+   {
+    "t": "on a shoestring",
+    "uz": "juda kam pul bilan",
+    "ex": "Students often live on a shoestring.",
+    "use": "Talaba hayoti"
+   },
+   {
+    "t": "buy into the hype",
+    "uz": "reklama/shov-shuvga ishonmoq",
+    "ex": "I didn't buy into the hype about the new phone.",
+    "use": "Part 3: reklama"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "publish",
+    "pos": "verb",
+    "syn": "issue, release, print",
+    "uz": "nashr etmoq",
+    "ex": "The study was published in 2019."
+   },
+   {
+    "w": "react",
+    "pos": "verb",
+    "syn": "respond, behave",
+    "uz": "munosabat bildirmoq",
+    "ex": "Markets reacted badly to the news."
+   },
+   {
+    "w": "register",
+    "pos": "verb/noun",
+    "syn": "record, enrol; list",
+    "uz": "ro'yxatdan o'tmoq; ro'yxat",
+    "ex": "Over 2,000 students registered for the course."
+   },
+   {
+    "w": "rely on",
+    "pos": "verb",
+    "syn": "depend on, count on",
+    "uz": "…ga tayanmoq",
+    "ex": "Many farmers rely on rainfall."
+   },
+   {
+    "w": "remove",
+    "pos": "verb",
+    "syn": "take away, eliminate",
+    "uz": "olib tashlamoq",
+    "ex": "The trees were removed to build a road."
+   },
+   {
+    "w": "scheme",
+    "pos": "noun",
+    "syn": "plan, programme, project",
+    "uz": "dastur, loyiha",
+    "ex": "A new recycling scheme was introduced."
+   },
+   {
+    "w": "sequence",
+    "pos": "noun",
+    "syn": "order, series, succession",
+    "uz": "ketma-ketlik",
+    "ex": "The events are described in sequence."
+   },
+   {
+    "w": "shift",
+    "pos": "noun/verb",
+    "syn": "change, move",
+    "uz": "o'zgarish, siljish",
+    "ex": "There has been a shift towards online shopping."
+   },
+   {
+    "w": "specify",
+    "pos": "verb",
+    "syn": "state, define, name",
+    "uz": "aniq ko'rsatmoq",
+    "ex": "The rules specify the maximum weight."
+   },
+   {
+    "w": "sufficient",
+    "pos": "adj",
+    "syn": "enough, adequate",
+    "uz": "yetarli",
+    "ex": "There was not sufficient evidence."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about childhood and the past",
+  "items": [
+   {
+    "s": "When I was a kid, …",
+    "uz": "Bolaligimda, …",
+    "ex": "When I was a kid, I spent summers in the village.",
+    "use": "Part 1/2 boshlanishi"
+   },
+   {
+    "s": "Back then, …",
+    "uz": "O'sha paytlarda, …",
+    "ex": "Back then, nobody had smartphones.",
+    "use": "O'tmishni tasvirlash"
+   },
+   {
+    "s": "I used to … but these days …",
+    "uz": "Ilgari … edim, hozir esa …",
+    "ex": "I used to hate reading, but these days I love it.",
+    "use": "O'zgarishni ko'rsatish"
+   },
+   {
+    "s": "As far as I can remember, …",
+    "uz": "Eslashimcha, …",
+    "ex": "As far as I can remember, it was in 2015.",
+    "use": "Aniq bo'lmagan xotira"
+   },
+   {
+    "s": "It brings back memories of …",
+    "uz": "Bu menga … ni eslatadi",
+    "ex": "This song brings back memories of school.",
+    "use": "Hissiy javob"
+   },
+   {
+    "s": "I have fond memories of …",
+    "uz": "… haqida iliq xotiralarim bor",
+    "ex": "I have fond memories of my grandmother's garden.",
+    "use": "Part 2"
+   },
+   {
+    "s": "Growing up, …",
+    "uz": "Ulg'ayayotganimda, …",
+    "ex": "Growing up, I was quite shy.",
+    "use": "Participle — band 7+"
+   },
+   {
+    "s": "I'll never forget the time …",
+    "uz": "… vaqtni hech qachon unutmayman",
+    "ex": "I'll never forget the time I got lost in Bukhara.",
+    "use": "Hikoya boshlash"
+   },
+   {
+    "s": "Things were different in those days.",
+    "uz": "O'sha kunlarda hamma narsa boshqacha edi",
+    "ex": "Things were different in those days — life was slower.",
+    "use": "Part 3 taqqoslash"
+   },
+   {
+    "s": "Looking back, I realise …",
+    "uz": "Ortga qarab, tushunamanki …",
+    "ex": "Looking back, I realise how lucky I was.",
+    "use": "Xulosa"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Diphthongs /eɪ/, /aɪ/, /ɔɪ/",
+  "items": [
+   {
+    "w": "late – let",
+    "ipa": "/leɪt/ – /let/",
+    "uz": "/eɪ/ ikki tovush: e+i",
+    "tip": "late cho'ziqroq"
+   },
+   {
+    "w": "main – men",
+    "ipa": "/meɪn/ – /men/",
+    "uz": "asosiy – erkaklar",
+    "tip": "/eɪ/ ni to'liq ayting"
+   },
+   {
+    "w": "paper",
+    "ipa": "/ˈpeɪpə/",
+    "uz": "'paper' emas, PEY-puh",
+    "tip": "Oxirgi r o'qilmaydi"
+   },
+   {
+    "w": "data",
+    "ipa": "/ˈdeɪtə/",
+    "uz": "Britaniyada asosan DEY-tuh",
+    "tip": "IELTS'da tez-tez"
+   },
+   {
+    "w": "buy – boy",
+    "ipa": "/baɪ/ – /bɔɪ/",
+    "uz": "sotib olmoq – bola",
+    "tip": "/aɪ/ vs /ɔɪ/"
+   },
+   {
+    "w": "climate",
+    "ipa": "/ˈklaɪmət/",
+    "uz": "'klimat' emas, KLAI-mət",
+    "tip": "Task 2 so'zi"
+   },
+   {
+    "w": "choice",
+    "ipa": "/tʃɔɪs/",
+    "uz": "/ɔɪ/ dumaloq lablar",
+    "tip": "CHOIS"
+   },
+   {
+    "w": "employ",
+    "ipa": "/ɪmˈplɔɪ/",
+    "uz": "urg'u ikkinchi bo'g'inda",
+    "tip": "im-PLOY"
+   },
+   {
+    "w": "variety",
+    "ipa": "/vəˈraɪəti/",
+    "uz": "'varieti' emas, və-RAI-ə-ti",
+    "tip": "Ko'p xato qilinadigan so'z"
+   },
+   {
+    "w": "height",
+    "ipa": "/haɪt/",
+    "uz": "'heyt' emas, HAIT",
+    "tip": "weight /weɪt/ bilan farq"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Introduction: paraphrasing the question",
+  "items": [
+   {
+    "w": "shows → illustrates / gives information about",
+    "syn": "describes, presents",
+    "uz": "savoldagi fe'lni almashtiring",
+    "ex": "The graph gives information about car ownership."
+   },
+   {
+    "w": "the number of → how many",
+    "syn": "the quantity of",
+    "uz": "… soni → qanchalik ko'p",
+    "ex": "The chart shows how many people used the library."
+   },
+   {
+    "w": "the percentage of → the proportion of",
+    "syn": "the share of",
+    "uz": "foiz → ulush",
+    "ex": "The proportion of students who walked to school…"
+   },
+   {
+    "w": "from 2000 to 2020 → over a 20-year period",
+    "syn": "between 2000 and 2020",
+    "uz": "vaqtni boshqacha ifodalang",
+    "ex": "…over a 20-year period starting in 2000."
+   },
+   {
+    "w": "in the UK → in Britain",
+    "syn": "British",
+    "uz": "joy nomini almashtirish",
+    "ex": "…by British households."
+   },
+   {
+    "w": "people aged 18–25 → young adults",
+    "syn": "those in their late teens and early twenties",
+    "uz": "yosh guruhini boshqacha ayting",
+    "ex": "…among young adults."
+   },
+   {
+    "w": "spending on → expenditure on",
+    "syn": "money spent on",
+    "uz": "xarajat",
+    "ex": "The table compares expenditure on food."
+   },
+   {
+    "w": "Never copy the question",
+    "syn": "rephrase",
+    "uz": "savolni so'zma-so'z ko'chirmang — u so'z soniga kirmaydi",
+    "ex": "Change at least two parts of the sentence."
+   },
+   {
+    "w": "One sentence is enough",
+    "syn": "concise",
+    "uz": "kirish bitta gap",
+    "ex": "Then move to the overview."
+   },
+   {
+    "w": "Do not give your opinion",
+    "syn": "stay objective",
+    "uz": "Task 1 da fikr bildirilmaydi",
+    "ex": "Avoid 'I think'."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Food and nutrition",
+  "items": [
+   {
+    "w": "processed food",
+    "syn": "ready-made food",
+    "uz": "qayta ishlangan oziq-ovqat",
+    "ex": "Processed food contains too much salt."
+   },
+   {
+    "w": "nutritional value",
+    "syn": "health value",
+    "uz": "ozuqaviy qiymat",
+    "ex": "Fast food has little nutritional value."
+   },
+   {
+    "w": "dietary habits",
+    "syn": "eating habits",
+    "uz": "ovqatlanish odatlari",
+    "ex": "Dietary habits have changed dramatically."
+   },
+   {
+    "w": "food security",
+    "syn": "access to enough food",
+    "uz": "oziq-ovqat xavfsizligi",
+    "ex": "Climate change threatens food security."
+   },
+   {
+    "w": "organic produce",
+    "syn": "natural food",
+    "uz": "organik mahsulot",
+    "ex": "Organic produce is often expensive."
+   },
+   {
+    "w": "sugar tax",
+    "syn": "tax on sugary drinks",
+    "uz": "shakar solig'i",
+    "ex": "A sugar tax could reduce obesity."
+   },
+   {
+    "w": "food waste",
+    "syn": "thrown-away food",
+    "uz": "isrof qilingan oziq-ovqat",
+    "ex": "Supermarkets create huge amounts of food waste."
+   },
+   {
+    "w": "locally grown",
+    "syn": "local",
+    "uz": "mahalliy yetishtirilgan",
+    "ex": "Locally grown food is fresher."
+   },
+   {
+    "w": "portion sizes",
+    "syn": "amount per serving",
+    "uz": "porsiya hajmi",
+    "ex": "Portion sizes in restaurants have grown."
+   },
+   {
+    "w": "nutrition labelling",
+    "syn": "food labels",
+    "uz": "ozuqaviy yorliq",
+    "ex": "Clear nutrition labelling helps consumers."
+   }
+  ]
+ }
+}

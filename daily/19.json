@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Reported speech",
+  "items": [
+   {
+    "s": "said (that) + backshift",
+    "uz": "zamon bir pog'ona orqaga: is → was",
+    "ex": "He said that he was tired.",
+    "use": "Hikoya qilish"
+   },
+   {
+    "s": "told + person + (that)",
+    "uz": "told dan keyin kimga aytilgani",
+    "ex": "She told me that she had passed.",
+    "use": "said vs told"
+   },
+   {
+    "s": "will → would, can → could",
+    "uz": "modal o'zgarishi",
+    "ex": "He said he would call later.",
+    "use": "Speaking hikoya"
+   },
+   {
+    "s": "asked + if/whether",
+    "uz": "ha/yo'q savollarni aytib berish",
+    "ex": "She asked if I was ready.",
+    "use": "Savolni aytib berish"
+   },
+   {
+    "s": "asked + wh- + statement order",
+    "uz": "so'roq tartibi o'zgaradi",
+    "ex": "He asked where I lived.",
+    "use": "Tipik xato joyi"
+   },
+   {
+    "s": "told/asked + someone + to V",
+    "uz": "buyruq va iltimos",
+    "ex": "The teacher told us to be quiet.",
+    "use": "Buyruqlar"
+   },
+   {
+    "s": "Reporting verbs: suggest, admit, deny",
+    "uz": "ko'proq akademik fe'llar",
+    "ex": "Experts suggest that sleep improves memory.",
+    "use": "Task 2: research shows…"
+   },
+   {
+    "s": "❌ He said me → ✅ He told me / He said to me",
+    "uz": "said dan keyin kishi to'g'ridan kelmaydi",
+    "ex": "He told me the news.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Colours",
+  "items": [
+   {
+    "t": "out of the blue",
+    "uz": "kutilmaganda",
+    "ex": "He called me out of the blue.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "paint the town red",
+    "uz": "bayram qilib, maza qilib dam olmoq",
+    "ex": "After the exam, we painted the town red.",
+    "use": "Bayram"
+   },
+   {
+    "t": "red tape",
+    "uz": "byurokratiya",
+    "ex": "Starting a business involves a lot of red tape.",
+    "use": "Part 3: davlat"
+   },
+   {
+    "t": "in the red",
+    "uz": "qarzda, zararda",
+    "ex": "The company has been in the red for years.",
+    "use": "Biznes"
+   },
+   {
+    "t": "in black and white",
+    "uz": "yozma ravishda, aniq",
+    "ex": "I want the agreement in black and white.",
+    "use": "Rasmiy"
+   },
+   {
+    "t": "green with envy",
+    "uz": "hasaddan ko'karib ketmoq",
+    "ex": "My friends were green with envy.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "give the green light",
+    "uz": "ruxsat bermoq",
+    "ex": "The boss gave the green light to the project.",
+    "use": "Ish"
+   },
+   {
+    "t": "feel blue",
+    "uz": "g'amgin bo'lmoq",
+    "ex": "I sometimes feel blue in winter.",
+    "use": "Kayfiyat"
+   },
+   {
+    "t": "a grey area",
+    "uz": "noaniq holat",
+    "ex": "Using AI for homework is a grey area.",
+    "use": "Part 3: munozarali masala"
+   },
+   {
+    "t": "see red",
+    "uz": "qattiq jahli chiqmoq",
+    "ex": "My dad sees red when people litter.",
+    "use": "Hissiyot"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "approximate",
+    "pos": "adj/verb",
+    "syn": "rough, estimated",
+    "uz": "taxminiy",
+    "ex": "The approximate cost is $500."
+   },
+   {
+    "w": "attitude",
+    "pos": "noun",
+    "syn": "view, opinion, outlook",
+    "uz": "munosabat",
+    "ex": "Attitudes towards women have changed."
+   },
+   {
+    "w": "attribute",
+    "pos": "verb/noun",
+    "syn": "credit, ascribe; quality",
+    "uz": "…ga bog'lamoq; xususiyat",
+    "ex": "The success was attributed to good planning."
+   },
+   {
+    "w": "civil",
+    "pos": "adj",
+    "syn": "public, civic; polite",
+    "uz": "fuqarolik; xushmuomala",
+    "ex": "Civil rights were extended to all."
+   },
+   {
+    "w": "code",
+    "pos": "noun",
+    "syn": "rules, system; cipher",
+    "uz": "kodeks, qoidalar",
+    "ex": "Workers must follow a dress code."
+   },
+   {
+    "w": "commit",
+    "pos": "verb",
+    "syn": "carry out; dedicate",
+    "uz": "sodir etmoq; o'zini bag'ishlamoq",
+    "ex": "The company committed to reducing waste."
+   },
+   {
+    "w": "communicate",
+    "pos": "verb",
+    "syn": "convey, express, talk",
+    "uz": "muloqot qilmoq, yetkazmoq",
+    "ex": "Bees communicate by dancing."
+   },
+   {
+    "w": "concentrate",
+    "pos": "verb",
+    "syn": "focus; gather",
+    "uz": "diqqatni jamlamoq",
+    "ex": "Industry is concentrated in the north."
+   },
+   {
+    "w": "conference",
+    "pos": "noun",
+    "syn": "meeting, convention",
+    "uz": "anjuman",
+    "ex": "The results were presented at a conference."
+   },
+   {
+    "w": "contrast",
+    "pos": "noun/verb",
+    "syn": "difference; compare",
+    "uz": "qarama-qarshilik; solishtirmoq",
+    "ex": "In contrast, rural areas grew slowly."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing feelings and reactions",
+  "items": [
+   {
+    "s": "I was over the moon when …",
+    "uz": "… da juda xursand bo'ldim",
+    "ex": "I was over the moon when I got the scholarship.",
+    "use": "Kuchli quvonch"
+   },
+   {
+    "s": "It made me feel …",
+    "uz": "Bu menga … his qildirdi",
+    "ex": "It made me feel really proud.",
+    "use": "Part 2 hissiyot"
+   },
+   {
+    "s": "I couldn't believe my eyes.",
+    "uz": "Ko'zlarimga ishonmadim",
+    "ex": "When I saw the results, I couldn't believe my eyes.",
+    "use": "Hayrat"
+   },
+   {
+    "s": "I was a bit taken aback.",
+    "uz": "Biroz hayron qoldim",
+    "ex": "I was a bit taken aback by his reaction.",
+    "use": "Yumshoq hayrat"
+   },
+   {
+    "s": "I was absolutely gutted.",
+    "uz": "Juda xafa bo'ldim (Britaniya)",
+    "ex": "I was absolutely gutted when we lost.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "It was a huge relief.",
+    "uz": "Katta yengillik bo'ldi",
+    "ex": "Finishing exams was a huge relief.",
+    "use": "Yengillik"
+   },
+   {
+    "s": "I was on edge.",
+    "uz": "Asabiy holatda edim",
+    "ex": "I was on edge before the interview.",
+    "use": "Hayajon"
+   },
+   {
+    "s": "I felt a sense of achievement.",
+    "uz": "Muvaffaqiyat hissini his qildim",
+    "ex": "I felt a real sense of achievement.",
+    "use": "Part 2: yutuq"
+   },
+   {
+    "s": "It got on my nerves.",
+    "uz": "Asabimga tegdi",
+    "ex": "The noise really got on my nerves.",
+    "use": "Bezovtalik"
+   },
+   {
+    "s": "I was thrilled to bits.",
+    "uz": "Juda-juda xursand edim",
+    "ex": "My mum was thrilled to bits with the gift.",
+    "use": "Kuchli quvonch"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "-s endings: /s/, /z/, /ɪz/",
+  "items": [
+   {
+    "w": "books, cats, maps",
+    "ipa": "/s/",
+    "uz": "jarangsiz tovushdan keyin /s/",
+    "tip": "BUKS"
+   },
+   {
+    "w": "dogs, plays, cities",
+    "ipa": "/z/",
+    "uz": "jarangli tovush va unlidan keyin /z/",
+    "tip": "DOGZ"
+   },
+   {
+    "w": "buses, watches, changes",
+    "ipa": "/ɪz/",
+    "uz": "s, sh, ch, j tovushlaridan keyin qo'shimcha bo'g'in",
+    "tip": "BUS-iz"
+   },
+   {
+    "w": "increases",
+    "ipa": "/ɪnˈkriːsɪz/",
+    "uz": "Task 1 so'zi — 4 bo'g'in",
+    "tip": "in-KREE-siz"
+   },
+   {
+    "w": "rises",
+    "ipa": "/ˈraɪzɪz/",
+    "uz": "2 bo'g'in",
+    "tip": "RAI-ziz"
+   },
+   {
+    "w": "figures",
+    "ipa": "/ˈfɪɡəz/",
+    "uz": "oxiri /z/",
+    "tip": "FIG-əz"
+   },
+   {
+    "w": "costs",
+    "ipa": "/kɒsts/",
+    "uz": "/sts/ birikmasi",
+    "tip": "Oxirini yutmang"
+   },
+   {
+    "w": "goes",
+    "ipa": "/ɡəʊz/",
+    "uz": "/z/ bilan",
+    "tip": "GƏUZ"
+   },
+   {
+    "w": "says",
+    "ipa": "/sez/",
+    "uz": "'seyz' emas, SEZ",
+    "tip": "Ko'p xato"
+   },
+   {
+    "w": "houses",
+    "ipa": "/ˈhaʊzɪz/",
+    "uz": "birlikda /s/, ko'plikda /z/ + /ɪz/",
+    "tip": "HAU-ziz"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Future data in Task 1",
+  "items": [
+   {
+    "w": "is expected to",
+    "syn": "is predicted to",
+    "uz": "… kutilmoqda",
+    "ex": "The population is expected to reach 10 million."
+   },
+   {
+    "w": "is projected to",
+    "syn": "is forecast to",
+    "uz": "… prognoz qilinmoqda",
+    "ex": "Sales are projected to fall by 2030."
+   },
+   {
+    "w": "is likely to",
+    "syn": "will probably",
+    "uz": "… ehtimoli bor",
+    "ex": "The trend is likely to continue."
+   },
+   {
+    "w": "will have + V3 by",
+    "syn": "future perfect",
+    "uz": "… ga kelib … bo'ladi",
+    "ex": "By 2050, the figure will have doubled."
+   },
+   {
+    "w": "according to the forecast",
+    "syn": "the projection shows",
+    "uz": "prognozga ko'ra",
+    "ex": "According to the forecast, demand will rise."
+   },
+   {
+    "w": "is set to",
+    "syn": "is going to",
+    "uz": "… bo'lishi belgilangan",
+    "ex": "Solar power is set to overtake coal."
+   },
+   {
+    "w": "is estimated to",
+    "syn": "is calculated to",
+    "uz": "taxminan … deb hisoblanmoqda",
+    "ex": "Costs are estimated to rise sharply."
+   },
+   {
+    "w": "in the coming years",
+    "syn": "in future",
+    "uz": "kelgusi yillarda",
+    "ex": "Numbers will continue to grow in the coming years."
+   },
+   {
+    "w": "mix past and future",
+    "syn": "two time frames",
+    "uz": "o'tgan va kelasi zamonni aralashtiring",
+    "ex": "Prices rose until 2020 and are expected to fall."
+   },
+   {
+    "w": "avoid 'will' every time",
+    "syn": "vary forms",
+    "uz": "har gapda will ishlatmang",
+    "ex": "Use expected/projected/predicted."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Consumerism and shopping",
+  "items": [
+   {
+    "w": "consumer culture",
+    "syn": "materialism",
+    "uz": "iste'molchilik madaniyati",
+    "ex": "Consumer culture encourages people to buy more."
+   },
+   {
+    "w": "materialistic",
+    "syn": "obsessed with possessions",
+    "uz": "moddiyatparast",
+    "ex": "Society has become more materialistic."
+   },
+   {
+    "w": "disposable income",
+    "syn": "spare money",
+    "uz": "erkin sarflanadigan daromad",
+    "ex": "Young people have more disposable income."
+   },
+   {
+    "w": "throwaway society",
+    "syn": "culture of waste",
+    "uz": "bir martalik jamiyat",
+    "ex": "We live in a throwaway society."
+   },
+   {
+    "w": "brand loyalty",
+    "syn": "loyalty to a brand",
+    "uz": "brendga sodiqlik",
+    "ex": "Advertising builds brand loyalty."
+   },
+   {
+    "w": "status symbol",
+    "syn": "sign of wealth",
+    "uz": "maqom ramzi",
+    "ex": "Expensive phones are status symbols."
+   },
+   {
+    "w": "peer pressure",
+    "syn": "pressure from friends",
+    "uz": "tengdoshlar bosimi",
+    "ex": "Teenagers buy clothes due to peer pressure."
+   },
+   {
+    "w": "in debt",
+    "syn": "owing money",
+    "uz": "qarzga botgan",
+    "ex": "Credit cards leave many people in debt."
+   },
+   {
+    "w": "ethical consumption",
+    "syn": "responsible buying",
+    "uz": "axloqiy iste'mol",
+    "ex": "Ethical consumption is growing among the young."
+   },
+   {
+    "w": "fuel economic growth",
+    "syn": "drive the economy",
+    "uz": "iqtisodiy o'sishni rag'batlantirmoq",
+    "ex": "Spending fuels economic growth."
+   }
+  ]
+ }
+}

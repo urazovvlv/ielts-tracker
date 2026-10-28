@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Cause and effect linkers",
+  "items": [
+   {
+    "s": "because + gap / because of + ot",
+    "uz": "sabab",
+    "ex": "Many people drive because buses are slow. / because of slow buses",
+    "use": "Asosiy farq"
+   },
+   {
+    "s": "due to / owing to + ot",
+    "uz": "rasmiy sabab",
+    "ex": "Flights were cancelled due to fog.",
+    "use": "Task 1/2"
+   },
+   {
+    "s": "as / since + gap (boshida)",
+    "uz": "sababni gap boshida berish",
+    "ex": "Since prices rose, sales fell.",
+    "use": "Xilma-xillik"
+   },
+   {
+    "s": "therefore / consequently / as a result",
+    "uz": "natija — yangi gap boshida",
+    "ex": "Prices rose. As a result, sales fell.",
+    "use": "Task 2 kohezion"
+   },
+   {
+    "s": "so + natija",
+    "uz": "norasmiyroq natija",
+    "ex": "It was late, so we went home.",
+    "use": "Speaking"
+   },
+   {
+    "s": "lead to / result in / cause",
+    "uz": "fe'llar bilan sabab-natija",
+    "ex": "Pollution causes breathing problems.",
+    "use": "Band 7 xilma-xillik"
+   },
+   {
+    "s": "result from / stem from",
+    "uz": "natija sababdan kelib chiqadi",
+    "ex": "Many problems stem from poverty.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ Due to people drive → ✅ Because people drive / Due to heavy traffic",
+    "uz": "due to dan keyin gap emas, ot",
+    "ex": "Due to heavy traffic, I was late.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Honesty and lies",
+  "items": [
+   {
+    "t": "tell a white lie",
+    "uz": "yaxshilik uchun yolg'on gapirmoq",
+    "ex": "I told a white lie about liking the gift.",
+    "use": "Part 3: halollik"
+   },
+   {
+    "t": "come clean",
+    "uz": "haqiqatni tan olmoq",
+    "ex": "He finally came clean about the mistake.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "to be honest with you",
+    "uz": "rostini aytsam",
+    "ex": "To be honest with you, I didn't enjoy it.",
+    "use": "Speaking"
+   },
+   {
+    "t": "take something with a pinch of salt",
+    "uz": "shubha bilan qabul qilmoq",
+    "ex": "Take online reviews with a pinch of salt.",
+    "use": "Part 3: ommaviy axborot"
+   },
+   {
+    "t": "a straight answer",
+    "uz": "to'g'ridan-to'g'ri javob",
+    "ex": "I couldn't get a straight answer from him.",
+    "use": "Muloqot"
+   },
+   {
+    "t": "keep a straight face",
+    "uz": "kulgini bosib turmoq",
+    "ex": "It was hard to keep a straight face.",
+    "use": "Hazil"
+   },
+   {
+    "t": "on the level",
+    "uz": "halol, rost",
+    "ex": "Is this offer on the level?",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "cross my heart",
+    "uz": "qasam ichaman",
+    "ex": "I didn't tell anyone, cross my heart.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "live a lie",
+    "uz": "yolg'on hayot kechirmoq",
+    "ex": "He was living a lie in that job.",
+    "use": "Part 2"
+   },
+   {
+    "t": "be economical with the truth",
+    "uz": "haqiqatni to'liq aytmaslik",
+    "ex": "The advert was economical with the truth.",
+    "use": "Reklama haqida"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "occupy",
+    "pos": "verb",
+    "syn": "fill, take up; live in",
+    "uz": "egallamoq",
+    "ex": "Offices occupy the top floors."
+   },
+   {
+    "w": "option",
+    "pos": "noun",
+    "syn": "choice, alternative",
+    "uz": "variant, tanlov",
+    "ex": "Students have the option to study online."
+   },
+   {
+    "w": "output",
+    "pos": "noun",
+    "syn": "production, yield",
+    "uz": "ishlab chiqarish hajmi",
+    "ex": "Industrial output rose by 5%."
+   },
+   {
+    "w": "overall",
+    "pos": "adj/adv",
+    "syn": "general; in general",
+    "uz": "umumiy; umuman olganda",
+    "ex": "Overall, the results were positive."
+   },
+   {
+    "w": "parallel",
+    "pos": "adj/noun",
+    "syn": "similar; similarity",
+    "uz": "parallel, o'xshash",
+    "ex": "There are parallels between the two cases."
+   },
+   {
+    "w": "parameter",
+    "pos": "noun",
+    "syn": "limit, boundary, guideline",
+    "uz": "parametr, chegara",
+    "ex": "The study set clear parameters."
+   },
+   {
+    "w": "phase",
+    "pos": "noun",
+    "syn": "stage, period, step",
+    "uz": "bosqich",
+    "ex": "The first phase lasted two years."
+   },
+   {
+    "w": "predict",
+    "pos": "verb",
+    "syn": "forecast, foresee",
+    "uz": "bashorat qilmoq",
+    "ex": "Experts predict a fall in prices."
+   },
+   {
+    "w": "principal",
+    "pos": "adj",
+    "syn": "main, chief, primary",
+    "uz": "asosiy",
+    "ex": "Rice is the principal crop."
+   },
+   {
+    "w": "prior to",
+    "pos": "prep",
+    "syn": "before, earlier than",
+    "uz": "…dan oldin",
+    "ex": "Prior to 1990, few people owned cars."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Expressing preferences",
+  "items": [
+   {
+    "s": "I'd rather … than …",
+    "uz": "… dan ko'ra … ni afzal ko'raman",
+    "ex": "I'd rather stay in than go to a party.",
+    "use": "Part 1 tanlov"
+   },
+   {
+    "s": "I prefer … to …",
+    "uz": "… ni … dan afzal ko'raman",
+    "ex": "I prefer tea to coffee.",
+    "use": "Grammatika: to"
+   },
+   {
+    "s": "Given the choice, I'd …",
+    "uz": "Tanlash imkoni bo'lsa, …",
+    "ex": "Given the choice, I'd live by the sea.",
+    "use": "Band 7"
+   },
+   {
+    "s": "I'm torn between … and …",
+    "uz": "… va … orasida ikkilanyapman",
+    "ex": "I'm torn between medicine and law.",
+    "use": "Ikkilanish"
+   },
+   {
+    "s": "… appeals to me more.",
+    "uz": "… menga ko'proq yoqadi",
+    "ex": "City life appeals to me more.",
+    "use": "Rasmiyroq"
+   },
+   {
+    "s": "I'm more of a … person.",
+    "uz": "Men ko'proq … odamiman",
+    "ex": "I'm more of a morning person.",
+    "use": "Tabiiy"
+   },
+   {
+    "s": "It's a toss-up between … and …",
+    "uz": "… va … orasida ikkilanaman",
+    "ex": "It's a toss-up between pizza and plov.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "Both have their pros and cons, but …",
+    "uz": "Ikkalasining ham yaxshi-yomon tomoni bor, lekin …",
+    "ex": "Both have their pros and cons, but I prefer buses.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Nothing beats …",
+    "uz": "… ga hech narsa yetmaydi",
+    "ex": "Nothing beats home-made food.",
+    "use": "Kuchli preference"
+   },
+   {
+    "s": "I'd go for … every time.",
+    "uz": "Har safar … ni tanlardim",
+    "ex": "I'd go for a book over a film every time.",
+    "use": "Ishonchli javob"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Word stress: three-syllable words",
+  "items": [
+   {
+    "w": "PROgramme",
+    "ipa": "/ˈprəʊɡræm/",
+    "uz": "1-bo'g'in",
+    "tip": "PROH-gram"
+   },
+   {
+    "w": "imPORtant",
+    "ipa": "/ɪmˈpɔːtnt/",
+    "uz": "2-bo'g'in",
+    "tip": "im-POR-tənt"
+   },
+   {
+    "w": "Industry",
+    "ipa": "/ˈɪndəstri/",
+    "uz": "'inDUStry' emas",
+    "tip": "IN-dəs-tri"
+   },
+   {
+    "w": "Average",
+    "ipa": "/ˈævərɪdʒ/",
+    "uz": "Task 1 so'zi",
+    "tip": "AV-ə-rij"
+   },
+   {
+    "w": "Interest",
+    "ipa": "/ˈɪntrəst/",
+    "uz": "ko'pincha 2 bo'g'in eshitiladi",
+    "tip": "IN-trəst"
+   },
+   {
+    "w": "comPUTer",
+    "ipa": "/kəmˈpjuːtə/",
+    "uz": "2-bo'g'in",
+    "tip": "kəm-PYU-tə"
+   },
+   {
+    "w": "PERcentage → perCENTage",
+    "ipa": "/pəˈsentɪdʒ/",
+    "uz": "2-bo'g'in urg'uli",
+    "tip": "pə-SEN-tij"
+   },
+   {
+    "w": "deVElopment",
+    "ipa": "/dɪˈveləpmənt/",
+    "uz": "4 bo'g'in, 2-chisi",
+    "tip": "di-VEL-əp-mənt"
+   },
+   {
+    "w": "Opposite",
+    "ipa": "/ˈɒpəzɪt/",
+    "uz": "Maps uchun",
+    "tip": "OP-ə-zit"
+   },
+   {
+    "w": "mainTAIN",
+    "ipa": "/meɪnˈteɪn/",
+    "uz": "2 bo'g'inli fe'l — 2-chi",
+    "tip": "mein-TEIN"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Synonyms to avoid repetition",
+  "items": [
+   {
+    "w": "the number of people",
+    "syn": "the figure, the total",
+    "uz": "odamlar soni → ko'rsatkich",
+    "ex": "The figure rose to 2 million."
+   },
+   {
+    "w": "increased",
+    "syn": "grew, climbed, went up",
+    "uz": "oshdi",
+    "ex": "Sales grew steadily."
+   },
+   {
+    "w": "decreased",
+    "syn": "fell, dropped, declined",
+    "uz": "kamaydi",
+    "ex": "Exports dropped sharply."
+   },
+   {
+    "w": "people",
+    "syn": "residents, individuals, citizens",
+    "uz": "odamlar",
+    "ex": "Residents preferred trains."
+   },
+   {
+    "w": "percentage",
+    "syn": "proportion, share, rate",
+    "uz": "foiz",
+    "ex": "The share of renewables doubled."
+   },
+   {
+    "w": "amount",
+    "syn": "quantity, volume, level",
+    "uz": "miqdor",
+    "ex": "The volume of waste fell."
+   },
+   {
+    "w": "country",
+    "syn": "nation",
+    "uz": "davlat",
+    "ex": "Both nations spent heavily."
+   },
+   {
+    "w": "use (noun)",
+    "syn": "consumption, usage",
+    "uz": "foydalanish",
+    "ex": "Water consumption peaked in July."
+   },
+   {
+    "w": "money spent",
+    "syn": "expenditure, spending",
+    "uz": "xarajat",
+    "ex": "Expenditure on health rose."
+   },
+   {
+    "w": "this/these",
+    "syn": "referencing",
+    "uz": "takror o'rniga ishora",
+    "ex": "This was the highest figure."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Animals and animal rights",
+  "items": [
+   {
+    "w": "animal welfare",
+    "syn": "animal well-being",
+    "uz": "hayvonlar farovonligi",
+    "ex": "Laws should protect animal welfare."
+   },
+   {
+    "w": "endangered species",
+    "syn": "threatened animals",
+    "uz": "yo'qolib borayotgan turlar",
+    "ex": "Zoos help protect endangered species."
+   },
+   {
+    "w": "in captivity",
+    "syn": "kept in zoos",
+    "uz": "asirlikda",
+    "ex": "Animals in captivity often show stress."
+   },
+   {
+    "w": "natural habitat",
+    "syn": "wild environment",
+    "uz": "tabiiy yashash muhiti",
+    "ex": "Deforestation destroys natural habitats."
+   },
+   {
+    "w": "poaching",
+    "syn": "illegal hunting",
+    "uz": "brakonerlik",
+    "ex": "Poaching threatens elephants."
+   },
+   {
+    "w": "factory farming",
+    "syn": "intensive farming",
+    "uz": "sanoat chorvachiligi",
+    "ex": "Factory farming is cruel to animals."
+   },
+   {
+    "w": "conservation",
+    "syn": "protection",
+    "uz": "muhofaza",
+    "ex": "Conservation projects need funding."
+   },
+   {
+    "w": "vegetarianism",
+    "syn": "plant-based diet",
+    "uz": "vegetarianlik",
+    "ex": "Vegetarianism is becoming more popular."
+   },
+   {
+    "w": "ethical treatment",
+    "syn": "humane treatment",
+    "uz": "insoniy munosabat",
+    "ex": "Animals deserve ethical treatment."
+   },
+   {
+    "w": "wildlife",
+    "syn": "wild animals",
+    "uz": "yovvoyi tabiat",
+    "ex": "Tourism can disturb wildlife."
+   }
+  ]
+ }
+}

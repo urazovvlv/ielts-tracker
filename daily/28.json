@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Hedging: sounding academic",
+  "items": [
+   {
+    "s": "tend to + V",
+    "uz": "odatda … qilishga moyil",
+    "ex": "Young people tend to spend more online.",
+    "use": "Task 2 umumlashtirish"
+   },
+   {
+    "s": "appear to / seem to",
+    "uz": "… ga o'xshaydi",
+    "ex": "The policy appears to be working.",
+    "use": "Ehtiyotkor fikr"
+   },
+   {
+    "s": "may / might / could",
+    "uz": "ehtimol",
+    "ex": "This may lead to higher prices.",
+    "use": "Band 7 hedging"
+   },
+   {
+    "s": "It is likely that …",
+    "uz": "Ehtimol, …",
+    "ex": "It is likely that costs will rise.",
+    "use": "Bashorat"
+   },
+   {
+    "s": "to some extent / to a certain degree",
+    "uz": "ma'lum darajada",
+    "ex": "I agree to some extent.",
+    "use": "Qisman rozilik"
+   },
+   {
+    "s": "in many cases / in some cases",
+    "uz": "ko'p hollarda",
+    "ex": "In many cases, students work part-time.",
+    "use": "Umumlashtirishni yumshatish"
+   },
+   {
+    "s": "Avoid: all, always, never, everyone",
+    "uz": "mutlaq so'zlardan qoching",
+    "ex": "❌ All teenagers are lazy → ✅ Some teenagers can be…",
+    "use": "Task Response"
+   },
+   {
+    "s": "arguably",
+    "uz": "aytish mumkinki",
+    "ex": "This is arguably the biggest problem.",
+    "use": "Band 8 so'z"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Memory and forgetting",
+  "items": [
+   {
+    "t": "ring a bell",
+    "uz": "tanish tuyulmoq",
+    "ex": "His name rings a bell.",
+    "use": "Speaking"
+   },
+   {
+    "t": "slip my mind",
+    "uz": "esdan chiqmoq",
+    "ex": "Sorry, your birthday slipped my mind.",
+    "use": "Kechirim"
+   },
+   {
+    "t": "a memory like a sieve",
+    "uz": "juda unutuvchan",
+    "ex": "I have a memory like a sieve.",
+    "use": "Hazil"
+   },
+   {
+    "t": "jog someone's memory",
+    "uz": "eslatishga yordam bermoq",
+    "ex": "This photo might jog your memory.",
+    "use": "Eslash"
+   },
+   {
+    "t": "come to mind",
+    "uz": "esga kelmoq",
+    "ex": "Nothing comes to mind right now.",
+    "use": "Speaking: o'ylab olish"
+   },
+   {
+    "t": "a trip down memory lane",
+    "uz": "xotiralar safari",
+    "ex": "Visiting my school was a trip down memory lane.",
+    "use": "Part 2"
+   },
+   {
+    "t": "etched in my memory",
+    "uz": "xotiramda o'yilib qolgan",
+    "ex": "That day is etched in my memory.",
+    "use": "Hissiy hikoya"
+   },
+   {
+    "t": "in living memory",
+    "uz": "odamlar eslay oladigan davrda",
+    "ex": "It was the coldest winter in living memory.",
+    "use": "Rasmiy"
+   },
+   {
+    "t": "go blank",
+    "uz": "miya bo'shab qolmoq",
+    "ex": "My mind went blank in the exam.",
+    "use": "IELTS stress"
+   },
+   {
+    "t": "refresh my memory",
+    "uz": "xotirani yangilamoq",
+    "ex": "Can you refresh my memory about the rules?",
+    "use": "Muloyim so'rov"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "monitor",
+    "pos": "verb/noun",
+    "syn": "watch, check, track",
+    "uz": "kuzatmoq, nazorat qilmoq",
+    "ex": "Scientists monitor air quality daily."
+   },
+   {
+    "w": "network",
+    "pos": "noun",
+    "syn": "system, web, connections",
+    "uz": "tarmoq",
+    "ex": "The city has a large metro network."
+   },
+   {
+    "w": "notion",
+    "pos": "noun",
+    "syn": "idea, concept, belief",
+    "uz": "tushuncha, g'oya",
+    "ex": "The notion of free education is popular."
+   },
+   {
+    "w": "objective",
+    "pos": "noun/adj",
+    "syn": "goal; unbiased",
+    "uz": "maqsad; xolis",
+    "ex": "The main objective is to reduce costs."
+   },
+   {
+    "w": "orient",
+    "pos": "verb",
+    "syn": "direct, focus, align",
+    "uz": "yo'naltirmoq",
+    "ex": "The course is oriented towards beginners."
+   },
+   {
+    "w": "perspective",
+    "pos": "noun",
+    "syn": "view, outlook, angle",
+    "uz": "nuqtai nazar",
+    "ex": "From an economic perspective, it makes sense."
+   },
+   {
+    "w": "precise",
+    "pos": "adj",
+    "syn": "exact, accurate",
+    "uz": "aniq",
+    "ex": "Precise figures are not available."
+   },
+   {
+    "w": "prime",
+    "pos": "adj",
+    "syn": "main, chief, best",
+    "uz": "asosiy, eng yaxshi",
+    "ex": "The prime cause was poor management."
+   },
+   {
+    "w": "psychology",
+    "pos": "noun",
+    "syn": "study of the mind; mindset",
+    "uz": "psixologiya",
+    "ex": "Child psychology is a growing field."
+   },
+   {
+    "w": "pursue",
+    "pos": "verb",
+    "syn": "follow, seek, chase",
+    "uz": "ortidan quvmoq, davom ettirmoq",
+    "ex": "She pursued a career in law."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Emphasising your point",
+  "items": [
+   {
+    "s": "I really do believe that …",
+    "uz": "Men haqiqatan ishonamanki …",
+    "ex": "I really do believe that reading matters.",
+    "use": "Do bilan emfaza"
+   },
+   {
+    "s": "There's no doubt that …",
+    "uz": "Shubha yo'qki …",
+    "ex": "There's no doubt that tech has helped us.",
+    "use": "Ishonch"
+   },
+   {
+    "s": "The fact of the matter is …",
+    "uz": "Gapning rosti …",
+    "ex": "The fact of the matter is it's too expensive.",
+    "use": "Kuchli fikr"
+   },
+   {
+    "s": "What really matters is …",
+    "uz": "Asosiy muhimi …",
+    "ex": "What really matters is consistency.",
+    "use": "Cleft"
+   },
+   {
+    "s": "I can't stress enough how …",
+    "uz": "… qanchalik muhimligini qayta-qayta ta'kidlayman",
+    "ex": "I can't stress enough how useful it is.",
+    "use": "Kuchli emfaza"
+   },
+   {
+    "s": "Without a doubt, …",
+    "uz": "Shubhasiz, …",
+    "ex": "Without a doubt, it was the best day.",
+    "use": "Ishonch"
+   },
+   {
+    "s": "By far the most … is …",
+    "uz": "Eng … si, shubhasiz, …",
+    "ex": "By far the most important thing is health.",
+    "use": "Superlative emfaza"
+   },
+   {
+    "s": "Absolutely.",
+    "uz": "Mutlaqo",
+    "ex": "Do you like it? — Absolutely.",
+    "use": "Qisqa kuchli javob"
+   },
+   {
+    "s": "It goes without saying that …",
+    "uz": "Aytmasa ham ma'lumki …",
+    "ex": "It goes without saying that safety comes first.",
+    "use": "Idiomatik"
+   },
+   {
+    "s": "I'd go as far as to say …",
+    "uz": "Hatto … deyishgacha boraman",
+    "ex": "I'd go as far as to say it changed my life.",
+    "use": "Band 8"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Word stress: compound nouns",
+  "items": [
+   {
+    "w": "BUS stop",
+    "ipa": "/ˈbʌs stɒp/",
+    "uz": "qo'shma otlarda 1-qism urg'uli",
+    "tip": "BUS stop"
+   },
+   {
+    "w": "POST office",
+    "ipa": "/ˈpəʊst ɒfɪs/",
+    "uz": "pochta",
+    "tip": "POST office"
+   },
+   {
+    "w": "SWIMming pool",
+    "ipa": "/ˈswɪmɪŋ puːl/",
+    "uz": "hovuz",
+    "tip": "SWIM-ming pool"
+   },
+   {
+    "w": "TRAFfic jam",
+    "ipa": "/ˈtræfɪk dʒæm/",
+    "uz": "tirbandlik",
+    "tip": "Task 2 so'zi"
+   },
+   {
+    "w": "CAR park",
+    "ipa": "/ˈkɑː pɑːk/",
+    "uz": "avtoturargoh",
+    "tip": "Maps"
+   },
+   {
+    "w": "HOMEwork",
+    "ipa": "/ˈhəʊmwɜːk/",
+    "uz": "uy vazifasi",
+    "tip": "HOME-work"
+   },
+   {
+    "w": "a GREEN house vs a green HOUSE",
+    "ipa": "/ˈɡriːnhaʊs/",
+    "uz": "issiqxona vs yashil uy — urg'u ma'noni o'zgartiradi",
+    "tip": "Ma'no farqi"
+   },
+   {
+    "w": "SHOPping centre",
+    "ipa": "/ˈʃɒpɪŋ sentə/",
+    "uz": "savdo markazi",
+    "tip": "Listening maps"
+   },
+   {
+    "w": "RAILway station",
+    "ipa": "/ˈreɪlweɪ steɪʃn/",
+    "uz": "temir yo'l vokzali",
+    "tip": "Listening"
+   },
+   {
+    "w": "PHONE number",
+    "ipa": "/ˈfəʊn nʌmbə/",
+    "uz": "telefon raqami",
+    "tip": "Listening Section 1"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Comparing two time periods",
+  "items": [
+   {
+    "w": "compared with 2000",
+    "syn": "in comparison with",
+    "uz": "2000 yilga nisbatan",
+    "ex": "Compared with 2000, spending doubled in 2020."
+   },
+   {
+    "w": "in the earlier year",
+    "syn": "in the first year",
+    "uz": "dastlabki yilda",
+    "ex": "In the earlier year, coal dominated."
+   },
+   {
+    "w": "by the later date",
+    "syn": "in the second year",
+    "uz": "keyingi sanaga kelib",
+    "ex": "By the later date, gas had taken over."
+   },
+   {
+    "w": "the picture had changed",
+    "syn": "the situation was different",
+    "uz": "manzara o'zgargan edi",
+    "ex": "By 2020, the picture had changed completely."
+   },
+   {
+    "w": "swapped positions",
+    "syn": "changed places",
+    "uz": "o'rin almashdi",
+    "ex": "Cars and buses swapped positions."
+   },
+   {
+    "w": "remained in first place",
+    "syn": "stayed the highest",
+    "uz": "birinchi o'rinda qoldi",
+    "ex": "Rice remained in first place in both years."
+   },
+   {
+    "w": "more than doubled",
+    "syn": "over twice as much",
+    "uz": "ikki baravardan ko'p oshdi",
+    "ex": "The figure more than doubled."
+   },
+   {
+    "w": "fell by half",
+    "syn": "halved",
+    "uz": "yarmiga kamaydi",
+    "ex": "Smoking rates fell by half."
+   },
+   {
+    "w": "showed little change",
+    "syn": "barely changed",
+    "uz": "deyarli o'zgarmadi",
+    "ex": "Housing costs showed little change."
+   },
+   {
+    "w": "a reversal",
+    "syn": "the opposite trend",
+    "uz": "teskari tendensiya",
+    "ex": "There was a reversal in 2010."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Social media and communication",
+  "items": [
+   {
+    "w": "online presence",
+    "syn": "visibility online",
+    "uz": "onlayn mavjudlik",
+    "ex": "Businesses need a strong online presence."
+   },
+   {
+    "w": "cyberbullying",
+    "syn": "online harassment",
+    "uz": "kiberbulling",
+    "ex": "Cyberbullying harms teenagers' mental health."
+   },
+   {
+    "w": "echo chamber",
+    "syn": "hearing only similar views",
+    "uz": "faqat o'xshash fikrlar muhiti",
+    "ex": "Social media creates echo chambers."
+   },
+   {
+    "w": "misinformation",
+    "syn": "false information",
+    "uz": "noto'g'ri ma'lumot",
+    "ex": "Misinformation spreads quickly online."
+   },
+   {
+    "w": "connect with others",
+    "syn": "stay in touch",
+    "uz": "boshqalar bilan bog'lanmoq",
+    "ex": "Social media helps people connect with others."
+   },
+   {
+    "w": "self-esteem",
+    "syn": "self-confidence",
+    "uz": "o'zini qadrlash",
+    "ex": "Comparing yourself online lowers self-esteem."
+   },
+   {
+    "w": "go viral",
+    "syn": "spread widely",
+    "uz": "keng tarqalmoq",
+    "ex": "The video went viral overnight."
+   },
+   {
+    "w": "personal data",
+    "syn": "private information",
+    "uz": "shaxsiy ma'lumotlar",
+    "ex": "Apps collect huge amounts of personal data."
+   },
+   {
+    "w": "screen addiction",
+    "syn": "phone dependency",
+    "uz": "ekranga qaramlik",
+    "ex": "Screen addiction is common among teenagers."
+   },
+   {
+    "w": "regulate social media companies",
+    "syn": "control tech firms",
+    "uz": "ijtimoiy tarmoq kompaniyalarini tartibga solmoq",
+    "ex": "Governments should regulate social media companies."
+   }
+  ]
+ }
+}

@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Dependent prepositions",
+  "items": [
+   {
+    "s": "interested in / good at / afraid of",
+    "uz": "sifat + predlog birikmalari",
+    "ex": "I'm interested in economics.",
+    "use": "Speaking Part 1"
+   },
+   {
+    "s": "depend on / rely on / focus on",
+    "uz": "fe'l + on",
+    "ex": "Success depends on hard work.",
+    "use": "Task 2"
+   },
+   {
+    "s": "result in / lead to",
+    "uz": "natijaga olib kelmoq",
+    "ex": "Stress can lead to illness.",
+    "use": "Cause–effect"
+   },
+   {
+    "s": "responsible for / famous for",
+    "uz": "sifat + for",
+    "ex": "Parents are responsible for their children.",
+    "use": "Task 2"
+   },
+   {
+    "s": "an increase in / a rise in",
+    "uz": "o'zgarish otlari + in",
+    "ex": "There was an increase in sales.",
+    "use": "Task 1"
+   },
+   {
+    "s": "a reason for / a solution to",
+    "uz": "ot + predlog",
+    "ex": "One solution to traffic is better buses.",
+    "use": "Task 2 yechim"
+   },
+   {
+    "s": "the impact on / the effect on",
+    "uz": "ta'sir + on",
+    "ex": "Technology has a big effect on children.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ discuss about / emphasise on → ✅ discuss / emphasise",
+    "uz": "bu fe'llardan keyin predlog kerak emas",
+    "ex": "This essay will discuss both views.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Sleep and rest",
+  "items": [
+   {
+    "t": "sleep like a log",
+    "uz": "qotib uxlamoq",
+    "ex": "After the trip, I slept like a log.",
+    "use": "Part 1: uyqu"
+   },
+   {
+    "t": "toss and turn",
+    "uz": "uxlolmay to'lg'anmoq",
+    "ex": "I tossed and turned before the exam.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "catch some Z's",
+    "uz": "biroz uxlab olmoq (norasmiy)",
+    "ex": "I'll catch some Z's after lunch.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "burn the candle at both ends",
+    "uz": "o'zini haddan ortiq charchatmoq",
+    "ex": "Working and studying, I burn the candle at both ends.",
+    "use": "Charchoq"
+   },
+   {
+    "t": "recharge my batteries",
+    "uz": "kuch to'plamoq",
+    "ex": "I go to the mountains to recharge my batteries.",
+    "use": "Dam olish"
+   },
+   {
+    "t": "a lie-in",
+    "uz": "kech turish",
+    "ex": "On Sundays I have a lie-in.",
+    "use": "Dam olish kuni"
+   },
+   {
+    "t": "put your feet up",
+    "uz": "dam olmoq",
+    "ex": "In the evening I just put my feet up.",
+    "use": "Part 1"
+   },
+   {
+    "t": "lose sleep over",
+    "uz": "… dan tashvishlanib uxlay olmaslik",
+    "ex": "Don't lose sleep over one bad mock.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "call it a night",
+    "uz": "kunni tugatmoq, uxlashga ketmoq",
+    "ex": "It's midnight — let's call it a night.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "wide awake",
+    "uz": "butunlay uyg'oq",
+    "ex": "At 3 am I was still wide awake.",
+    "use": "Uyqusizlik"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "hence",
+    "pos": "adv",
+    "syn": "therefore, thus, so",
+    "uz": "shuning uchun",
+    "ex": "Oil is scarce, hence its high price."
+   },
+   {
+    "w": "hypothesis",
+    "pos": "noun",
+    "syn": "theory, assumption",
+    "uz": "gipoteza, faraz",
+    "ex": "The data support the hypothesis."
+   },
+   {
+    "w": "implement",
+    "pos": "verb",
+    "syn": "carry out, put into effect",
+    "uz": "amalga oshirmoq",
+    "ex": "The plan was implemented in 2015."
+   },
+   {
+    "w": "implicate",
+    "pos": "verb",
+    "syn": "involve, connect",
+    "uz": "aloqador qilmoq",
+    "ex": "Smoking is implicated in many diseases."
+   },
+   {
+    "w": "integrate",
+    "pos": "verb",
+    "syn": "combine, include, merge",
+    "uz": "birlashtirmoq, integratsiya qilmoq",
+    "ex": "Migrants need help to integrate."
+   },
+   {
+    "w": "internal",
+    "pos": "adj",
+    "syn": "inner, domestic",
+    "uz": "ichki",
+    "ex": "The report was for internal use only."
+   },
+   {
+    "w": "investigate",
+    "pos": "verb",
+    "syn": "examine, study, explore",
+    "uz": "tekshirmoq, tadqiq qilmoq",
+    "ex": "Scientists investigated the cause."
+   },
+   {
+    "w": "label",
+    "pos": "noun/verb",
+    "syn": "tag; name, classify",
+    "uz": "yorliq; nomlamoq",
+    "ex": "Food labels show calories."
+   },
+   {
+    "w": "mechanism",
+    "pos": "noun",
+    "syn": "process, system, means",
+    "uz": "mexanizm",
+    "ex": "The mechanism of memory is complex."
+   },
+   {
+    "w": "obvious",
+    "pos": "adj",
+    "syn": "clear, evident",
+    "uz": "ravshan, aniq",
+    "ex": "The benefits are obvious."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing objects",
+  "items": [
+   {
+    "s": "It's made of …",
+    "uz": "… dan yasalgan",
+    "ex": "It's made of wood and leather.",
+    "use": "Part 2: buyum"
+   },
+   {
+    "s": "It's about the size of …",
+    "uz": "Hajmi … dek",
+    "ex": "It's about the size of a book.",
+    "use": "O'lcham"
+   },
+   {
+    "s": "It's used for …ing",
+    "uz": "… uchun ishlatiladi",
+    "ex": "It's used for recording lectures.",
+    "use": "Vazifasi"
+   },
+   {
+    "s": "It comes in different colours.",
+    "uz": "Turli ranglarda bo'ladi",
+    "ex": "The bag comes in different colours.",
+    "use": "Tavsif"
+   },
+   {
+    "s": "It's really handy for …",
+    "uz": "… uchun juda qulay",
+    "ex": "It's really handy for travelling.",
+    "use": "Foydalilik"
+   },
+   {
+    "s": "It has sentimental value.",
+    "uz": "Uning hissiy qadri bor",
+    "ex": "This watch has sentimental value — it was my grandfather's.",
+    "use": "Part 2: qadrli buyum"
+   },
+   {
+    "s": "It's a bit worn out now.",
+    "uz": "Hozir biroz eskirgan",
+    "ex": "It's a bit worn out now, but I still use it.",
+    "use": "Holat"
+   },
+   {
+    "s": "What's special about it is …",
+    "uz": "Uning o'ziga xosligi …",
+    "ex": "What's special about it is the design.",
+    "use": "Cleft — band 7"
+   },
+   {
+    "s": "I got it as a present from …",
+    "uz": "… dan sovg'a sifatida olganman",
+    "ex": "I got it as a present from my uncle.",
+    "use": "Kelib chiqishi"
+   },
+   {
+    "s": "I couldn't live without it.",
+    "uz": "Usiz yasholmayman",
+    "ex": "Honestly, I couldn't live without my laptop.",
+    "use": "Kuchli fikr"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Word stress: two-syllable words",
+  "items": [
+   {
+    "w": "PROduct",
+    "ipa": "/ˈprɒdʌkt/",
+    "uz": "ko'pchilik 2 bo'g'inli otlar — 1-bo'g'in urg'uli",
+    "tip": "PRO-duct"
+   },
+   {
+    "w": "beGIN",
+    "ipa": "/bɪˈɡɪn/",
+    "uz": "ko'pchilik 2 bo'g'inli fe'llar — 2-bo'g'in",
+    "tip": "be-GIN"
+   },
+   {
+    "w": "HAPpy",
+    "ipa": "/ˈhæpi/",
+    "uz": "sifatlar odatda 1-bo'g'in",
+    "tip": "HAP-py"
+   },
+   {
+    "w": "hoTEL",
+    "ipa": "/həʊˈtel/",
+    "uz": "istisno: 2-bo'g'in",
+    "tip": "hoh-TEL"
+   },
+   {
+    "w": "aBROAD",
+    "ipa": "/əˈbrɔːd/",
+    "uz": "a- bilan boshlansa odatda 2-bo'g'in",
+    "tip": "ə-BROAD"
+   },
+   {
+    "w": "deSIGN",
+    "ipa": "/dɪˈzaɪn/",
+    "uz": "g o'qilmaydi",
+    "tip": "di-ZAIN"
+   },
+   {
+    "w": "CAREful",
+    "ipa": "/ˈkeəfl/",
+    "uz": "-ful urg'uni olmaydi",
+    "tip": "CARE-ful"
+   },
+   {
+    "w": "deVELop",
+    "ipa": "/dɪˈveləp/",
+    "uz": "3 bo'g'in, 2-chi urg'uli",
+    "tip": "di-VEL-əp"
+   },
+   {
+    "w": "COMpany",
+    "ipa": "/ˈkʌmpəni/",
+    "uz": "o va a ikkalasi ham ə",
+    "tip": "KUM-pə-ni"
+   },
+   {
+    "w": "perCENT",
+    "ipa": "/pəˈsent/",
+    "uz": "Task 1 so'zi",
+    "tip": "pə-SENT"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Mixed charts: linking two visuals",
+  "items": [
+   {
+    "w": "The bar chart and the pie chart …",
+    "syn": "the two charts",
+    "uz": "ikki diagramma",
+    "ex": "The bar chart and the pie chart give information about energy."
+   },
+   {
+    "w": "while the pie chart shows …",
+    "syn": "whereas the table shows",
+    "uz": "pie chart esa … ko'rsatadi",
+    "ex": "…while the pie chart shows how it was used."
+   },
+   {
+    "w": "Turning to the second chart, …",
+    "syn": "Looking at the table, …",
+    "uz": "ikkinchi diagrammaga o'tsak",
+    "ex": "Turning to the second chart, coal accounted for 40%."
+   },
+   {
+    "w": "This is reflected in …",
+    "syn": "This matches …",
+    "uz": "Bu … da aks etgan",
+    "ex": "This is reflected in the high cost of fuel."
+   },
+   {
+    "w": "one overview for both",
+    "syn": "single overview",
+    "uz": "ikkala grafik uchun bitta overview",
+    "ex": "Overall, A increased, and most of it was used for B."
+   },
+   {
+    "w": "a separate paragraph for each",
+    "syn": "one chart per paragraph",
+    "uz": "har bir grafikka alohida abzas",
+    "ex": "Body 1: bar chart. Body 2: pie chart."
+   },
+   {
+    "w": "link the data where possible",
+    "syn": "make connections",
+    "uz": "imkon bo'lsa bog'lang",
+    "ex": "The rise in tourists explains the higher spending."
+   },
+   {
+    "w": "in addition",
+    "syn": "furthermore",
+    "uz": "bundan tashqari",
+    "ex": "In addition, the table shows that…"
+   },
+   {
+    "w": "as for",
+    "syn": "regarding",
+    "uz": "…ga kelsak",
+    "ex": "As for transport, buses were most popular."
+   },
+   {
+    "w": "keep within 170–190 words",
+    "syn": "concise",
+    "uz": "juda uzun yozmang",
+    "ex": "Select the key data only."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Language learning",
+  "items": [
+   {
+    "w": "bilingual",
+    "syn": "speaking two languages",
+    "uz": "ikki tilli",
+    "ex": "Bilingual children often do better at school."
+   },
+   {
+    "w": "fluency",
+    "syn": "speaking easily",
+    "uz": "ravonlik",
+    "ex": "Fluency comes with daily practice."
+   },
+   {
+    "w": "immersion",
+    "syn": "full exposure",
+    "uz": "til muhitiga sho'ng'ish",
+    "ex": "Immersion is the fastest way to learn."
+   },
+   {
+    "w": "a global language",
+    "syn": "lingua franca",
+    "uz": "global til",
+    "ex": "English has become a global language."
+   },
+   {
+    "w": "native speaker",
+    "syn": "first-language speaker",
+    "uz": "ona tili sohibi",
+    "ex": "Native speakers use many idioms."
+   },
+   {
+    "w": "language barrier",
+    "syn": "communication problem",
+    "uz": "til to'sig'i",
+    "ex": "The language barrier made travel difficult."
+   },
+   {
+    "w": "compulsory foreign language",
+    "syn": "required subject",
+    "uz": "majburiy chet tili",
+    "ex": "A compulsory foreign language should start early."
+   },
+   {
+    "w": "career opportunities",
+    "syn": "job prospects",
+    "uz": "kasbiy imkoniyatlar",
+    "ex": "English opens up career opportunities."
+   },
+   {
+    "w": "endangered languages",
+    "syn": "dying languages",
+    "uz": "yo'qolib borayotgan tillar",
+    "ex": "Many endangered languages disappear each year."
+   },
+   {
+    "w": "cognitive benefits",
+    "syn": "brain benefits",
+    "uz": "aqliy foydalar",
+    "ex": "Learning languages has cognitive benefits."
+   }
+  ]
+ }
+}

@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Inversion for emphasis",
+  "items": [
+   {
+    "s": "Not only + auxiliary + subject",
+    "uz": "nafaqat … (gap boshida — so'roq tartibi)",
+    "ex": "Not only does exercise improve health, but it also reduces stress.",
+    "use": "Band 8 struktura"
+   },
+   {
+    "s": "Never have I …",
+    "uz": "Hech qachon … (emfaza)",
+    "ex": "Never have I seen such a beautiful city.",
+    "use": "Speaking Part 2"
+   },
+   {
+    "s": "Rarely / Seldom + aux + subject",
+    "uz": "kamdan-kam",
+    "ex": "Rarely do people read newspapers now.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Only when … + aux + subject",
+    "uz": "faqat … bo'lgandagina",
+    "ex": "Only when we act together can we stop pollution.",
+    "use": "Task 2 xulosa"
+   },
+   {
+    "s": "Under no circumstances should …",
+    "uz": "hech qanday holatda",
+    "ex": "Under no circumstances should children be left alone.",
+    "use": "Kuchli fikr"
+   },
+   {
+    "s": "No sooner had … than …",
+    "uz": "… bilanoq …",
+    "ex": "No sooner had I arrived than it started raining.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "Use it once or twice only",
+    "uz": "haddan ortiq ishlatmang",
+    "ex": "Bitta essayda 1 ta inversiya yetarli",
+    "use": "Tabiiylik"
+   },
+   {
+    "s": "❌ Not only it saves time → ✅ Not only does it save time",
+    "uz": "inversiyada yordamchi fe'l oldin",
+    "ex": "Not only does it save time, but it also saves money.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Anger and annoyance",
+  "items": [
+   {
+    "t": "lose your temper",
+    "uz": "jahli chiqib ketmoq",
+    "ex": "I rarely lose my temper.",
+    "use": "Part 1: xarakter"
+   },
+   {
+    "t": "drive someone up the wall",
+    "uz": "jinni qilmoq (bezor qilmoq)",
+    "ex": "Traffic drives me up the wall.",
+    "use": "Bezovtalik"
+   },
+   {
+    "t": "blow off steam",
+    "uz": "asabni bo'shatmoq",
+    "ex": "I go running to blow off steam.",
+    "use": "Stress"
+   },
+   {
+    "t": "fly off the handle",
+    "uz": "birdaniga jahli chiqmoq",
+    "ex": "He flew off the handle over nothing.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "bite someone's head off",
+    "uz": "kimgadir qattiq gapirib yubormoq",
+    "ex": "Sorry, I didn't mean to bite your head off.",
+    "use": "Kechirim"
+   },
+   {
+    "t": "a short fuse",
+    "uz": "tez jahli chiqadigan",
+    "ex": "My boss has a short fuse.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "rub someone up the wrong way",
+    "uz": "kimnidir g'ashiga tegmoq",
+    "ex": "His attitude rubs people up the wrong way.",
+    "use": "Munosabatlar"
+   },
+   {
+    "t": "count to ten",
+    "uz": "o'zini bosish uchun to'xtamoq",
+    "ex": "When I'm angry, I count to ten.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "make someone's blood boil",
+    "uz": "qonini qaynatmoq",
+    "ex": "Animal cruelty makes my blood boil.",
+    "use": "Kuchli his"
+   },
+   {
+    "t": "the final straw",
+    "uz": "sabr kosasini to'ldirgan narsa",
+    "ex": "Being late again was the final straw.",
+    "use": "Hikoya"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "energy",
+    "pos": "noun",
+    "syn": "power, fuel; vitality",
+    "uz": "energiya",
+    "ex": "Solar energy is getting cheaper."
+   },
+   {
+    "w": "enforce",
+    "pos": "verb",
+    "syn": "impose, apply, implement",
+    "uz": "majburan joriy qilmoq",
+    "ex": "The police enforce traffic laws."
+   },
+   {
+    "w": "entity",
+    "pos": "noun",
+    "syn": "organisation, body, unit",
+    "uz": "sub'ekt, birlik",
+    "ex": "The company is a separate legal entity."
+   },
+   {
+    "w": "equate",
+    "pos": "verb",
+    "syn": "treat as equal, compare",
+    "uz": "tenglashtirmoq",
+    "ex": "Many people equate money with success."
+   },
+   {
+    "w": "evolve",
+    "pos": "verb",
+    "syn": "develop, change, grow",
+    "uz": "rivojlanmoq",
+    "ex": "Languages evolve over time."
+   },
+   {
+    "w": "expand",
+    "pos": "verb",
+    "syn": "grow, increase, extend",
+    "uz": "kengaymoq",
+    "ex": "The city expanded rapidly."
+   },
+   {
+    "w": "expose",
+    "pos": "verb",
+    "syn": "reveal, uncover; subject to",
+    "uz": "fosh qilmoq; duchor qilmoq",
+    "ex": "Children are exposed to adverts daily."
+   },
+   {
+    "w": "external",
+    "pos": "adj",
+    "syn": "outside, outer, foreign",
+    "uz": "tashqi",
+    "ex": "External factors affected the results."
+   },
+   {
+    "w": "facilitate",
+    "pos": "verb",
+    "syn": "make easier, help",
+    "uz": "osonlashtirmoq",
+    "ex": "Technology facilitates communication."
+   },
+   {
+    "w": "fundamental",
+    "pos": "adj",
+    "syn": "basic, essential, key",
+    "uz": "asosiy, fundamental",
+    "ex": "Education is a fundamental right."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about advantages and disadvantages",
+  "items": [
+   {
+    "s": "The main advantage is that …",
+    "uz": "Asosiy afzalligi …",
+    "ex": "The main advantage is that it's cheap.",
+    "use": "Part 3"
+   },
+   {
+    "s": "Another plus is …",
+    "uz": "Yana bir ijobiy tomoni …",
+    "ex": "Another plus is the flexible schedule.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "On the downside, …",
+    "uz": "Salbiy tomondan, …",
+    "ex": "On the downside, it can be lonely.",
+    "use": "Kamchilik"
+   },
+   {
+    "s": "The biggest drawback is …",
+    "uz": "Eng katta kamchiligi …",
+    "ex": "The biggest drawback is the cost.",
+    "use": "Kamchilik"
+   },
+   {
+    "s": "It has its pros and cons.",
+    "uz": "Yaxshi va yomon tomonlari bor",
+    "ex": "Social media has its pros and cons.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "The benefits outweigh the drawbacks.",
+    "uz": "Foydasi zararidan ko'p",
+    "ex": "Overall, the benefits outweigh the drawbacks.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "One thing in its favour is …",
+    "uz": "Uning foydasiga bir narsa …",
+    "ex": "One thing in its favour is convenience.",
+    "use": "Band 7"
+   },
+   {
+    "s": "The catch is that …",
+    "uz": "Hiylasi shundaki, …",
+    "ex": "It's free. The catch is that you see lots of adverts.",
+    "use": "Idiomatik"
+   },
+   {
+    "s": "It's not all positive, though.",
+    "uz": "Lekin hammasi ijobiy emas",
+    "ex": "It's not all positive, though — it's addictive.",
+    "use": "O'tish"
+   },
+   {
+    "s": "Weighing it all up, …",
+    "uz": "Hammasini tarozuga solsak, …",
+    "ex": "Weighing it all up, I'd still choose it.",
+    "use": "Yakun"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/ŋ/ sound and -ing",
+  "items": [
+   {
+    "w": "sing – sin",
+    "ipa": "/sɪŋ/ – /sɪn/",
+    "uz": "/ŋ/ burun orqali, g aytilmaydi",
+    "tip": "SING (g siz)"
+   },
+   {
+    "w": "thing – thin",
+    "ipa": "/θɪŋ/ – /θɪn/",
+    "uz": "narsa – ingichka",
+    "tip": "Farq"
+   },
+   {
+    "w": "studying",
+    "ipa": "/ˈstʌdiɪŋ/",
+    "uz": "'studyinG' emas, oxiri /ŋ/",
+    "tip": "STUD-i-iŋ"
+   },
+   {
+    "w": "morning",
+    "ipa": "/ˈmɔːnɪŋ/",
+    "uz": "MOR-niŋ",
+    "tip": "Part 1"
+   },
+   {
+    "w": "long – longer",
+    "ipa": "/lɒŋ/ – /ˈlɒŋɡə/",
+    "uz": "longer da g eshitiladi",
+    "tip": "Istisno"
+   },
+   {
+    "w": "finger – singer",
+    "ipa": "/ˈfɪŋɡə/ – /ˈsɪŋə/",
+    "uz": "finger da /g/ bor, singer da yo'q",
+    "tip": "Qiyin juftlik"
+   },
+   {
+    "w": "English",
+    "ipa": "/ˈɪŋɡlɪʃ/",
+    "uz": "/ŋɡ/",
+    "tip": "IŊ-glish"
+   },
+   {
+    "w": "young",
+    "ipa": "/jʌŋ/",
+    "uz": "yosh",
+    "tip": "YAŊ"
+   },
+   {
+    "w": "bank",
+    "ipa": "/bæŋk/",
+    "uz": "n bu yerda /ŋ/",
+    "tip": "BAŊK"
+   },
+   {
+    "w": "think – thank",
+    "ipa": "/θɪŋk/ – /θæŋk/",
+    "uz": "/ɪ/ va /æ/ farqi",
+    "tip": "Ikkalasida /ŋk/"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Common mistakes in Task 1",
+  "items": [
+   {
+    "w": "no overview",
+    "syn": "missing summary",
+    "uz": "overview yo'q → TA band 5",
+    "ex": "Always write 'Overall, …'"
+   },
+   {
+    "w": "giving opinions or reasons",
+    "syn": "speculation",
+    "uz": "sabab yoki fikr yozish",
+    "ex": "Don't explain why — just describe."
+   },
+   {
+    "w": "listing every number",
+    "syn": "data dump",
+    "uz": "har bir raqamni ro'yxatlash",
+    "ex": "Select and compare key data."
+   },
+   {
+    "w": "wrong units",
+    "syn": "% vs numbers",
+    "uz": "noto'g'ri birlik",
+    "ex": "Check: percent, millions, tonnes."
+   },
+   {
+    "w": "wrong tense",
+    "syn": "time frame",
+    "uz": "zamon xatosi",
+    "ex": "Past data → past tense."
+   },
+   {
+    "w": "copying the question",
+    "syn": "no paraphrase",
+    "uz": "savolni ko'chirish",
+    "ex": "Paraphrase the introduction."
+   },
+   {
+    "w": "under 150 words",
+    "syn": "too short",
+    "uz": "150 so'zdan kam",
+    "ex": "Aim for 160–190 words."
+   },
+   {
+    "w": "conclusion with opinion",
+    "syn": "in my opinion",
+    "uz": "fikr bilan xulosa",
+    "ex": "End with data, not opinion."
+   },
+   {
+    "w": "the number of + uncountable",
+    "syn": "the amount of",
+    "uz": "number vs amount",
+    "ex": "the amount of water, the number of cars"
+   },
+   {
+    "w": "spending 30+ minutes",
+    "syn": "time management",
+    "uz": "Task 1 ga ko'p vaqt",
+    "ex": "20 minutes maximum."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Online learning and education technology",
+  "items": [
+   {
+    "w": "e-learning platforms",
+    "syn": "online course sites",
+    "uz": "onlayn ta'lim platformalari",
+    "ex": "E-learning platforms offer cheap courses."
+   },
+   {
+    "w": "self-paced",
+    "syn": "at your own speed",
+    "uz": "o'z sur'atida",
+    "ex": "Self-paced courses suit working adults."
+   },
+   {
+    "w": "face-to-face interaction",
+    "syn": "in-person contact",
+    "uz": "yuzma-yuz muloqot",
+    "ex": "Online learning lacks face-to-face interaction."
+   },
+   {
+    "w": "self-discipline",
+    "syn": "self-control",
+    "uz": "o'z-o'zini nazorat",
+    "ex": "Online study requires self-discipline."
+   },
+   {
+    "w": "the digital divide",
+    "syn": "unequal internet access",
+    "uz": "raqamli tafovut",
+    "ex": "The digital divide affects rural students."
+   },
+   {
+    "w": "blended learning",
+    "syn": "online + classroom",
+    "uz": "aralash ta'lim",
+    "ex": "Blended learning combines the best of both."
+   },
+   {
+    "w": "accessible to all",
+    "syn": "open to everyone",
+    "uz": "hamma uchun ochiq",
+    "ex": "Online courses are accessible to all."
+   },
+   {
+    "w": "recognised qualification",
+    "syn": "accredited degree",
+    "uz": "tan olingan malaka",
+    "ex": "Employers want recognised qualifications."
+   },
+   {
+    "w": "distractions at home",
+    "syn": "interruptions",
+    "uz": "uydagi chalg'ituvchilar",
+    "ex": "Distractions at home reduce focus."
+   },
+   {
+    "w": "interactive tools",
+    "syn": "engaging software",
+    "uz": "interaktiv vositalar",
+    "ex": "Interactive tools make lessons engaging."
+   }
+  ]
+ }
+}

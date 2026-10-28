@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Punctuation for IELTS Writing",
+  "items": [
+   {
+    "s": "Full stop between complete sentences",
+    "uz": "ikki to'liq gapni vergul bilan ulamang",
+    "ex": "Prices rose. Sales fell.",
+    "use": "Run-on xatosiga qarshi"
+   },
+   {
+    "s": "Comma after linking words at the start",
+    "uz": "However, Therefore, In addition,",
+    "ex": "However, this is not always true.",
+    "use": "Kohezion"
+   },
+   {
+    "s": "Semicolon before however",
+    "uz": "; however, — ikki gapni bog'laydi",
+    "ex": "Cars are useful; however, they pollute.",
+    "use": "Band 7 GRA"
+   },
+   {
+    "s": "Commas around non-defining clauses",
+    "uz": "qo'shimcha ma'lumot vergul ichida",
+    "ex": "Tashkent, which has 3 million people, is growing.",
+    "use": "Relative clauses"
+   },
+   {
+    "s": "Apostrophe: possession",
+    "uz": "people's, children's, the country's",
+    "ex": "Children's health is important.",
+    "use": "Tipik xato joyi"
+   },
+   {
+    "s": "it's vs its",
+    "uz": "it's = it is; its = uning",
+    "ex": "The company lost its biggest client.",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "No contractions in Writing",
+    "uz": "don't → do not",
+    "ex": "This does not mean that…",
+    "use": "Rasmiy uslub"
+   },
+   {
+    "s": "Commas in lists",
+    "uz": "A, B and C",
+    "ex": "Coal, gas and oil are fossil fuels.",
+    "use": "Ro'yxatlar"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Effort and hard work",
+  "items": [
+   {
+    "t": "put your back into it",
+    "uz": "jon kuydirib ishlamoq",
+    "ex": "If you put your back into it, you'll finish today.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "work your fingers to the bone",
+    "uz": "tinmay mehnat qilmoq",
+    "ex": "My mother worked her fingers to the bone for us.",
+    "use": "Oila haqida"
+   },
+   {
+    "t": "give it your all",
+    "uz": "bor kuchini bermoq",
+    "ex": "Give it your all in the final week.",
+    "use": "IELTS"
+   },
+   {
+    "t": "leave no stone unturned",
+    "uz": "har bir imkoniyatni sinab ko'rmoq",
+    "ex": "They left no stone unturned to find the cause.",
+    "use": "Jiddiy harakat"
+   },
+   {
+    "t": "pull your socks up",
+    "uz": "o'zini qo'lga olib, yaxshiroq harakat qilmoq",
+    "ex": "I need to pull my socks up in Writing.",
+    "use": "O'z-o'zini tanqid"
+   },
+   {
+    "t": "go all out",
+    "uz": "jon-jahdi bilan harakat qilmoq",
+    "ex": "The team went all out to win.",
+    "use": "Sport"
+   },
+   {
+    "t": "elbow grease",
+    "uz": "qo'l mehnati",
+    "ex": "Cleaning the house took some elbow grease.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "no pain, no gain",
+    "uz": "mehnatsiz natija yo'q",
+    "ex": "Daily practice is hard, but no pain, no gain.",
+    "use": "Motivatsiya"
+   },
+   {
+    "t": "slack off",
+    "uz": "bo'shashib qolmoq",
+    "ex": "Don't slack off after a good mock.",
+    "use": "Ogohlantirish"
+   },
+   {
+    "t": "bend over backwards",
+    "uz": "yordam uchun qo'lidan kelganini qilmoq",
+    "ex": "The staff bent over backwards to help us.",
+    "use": "Xizmat"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "challenge",
+    "pos": "noun/verb",
+    "syn": "difficulty; question",
+    "uz": "qiyinchilik; e'tiroz bildirmoq",
+    "ex": "Climate change is a global challenge."
+   },
+   {
+    "w": "clause",
+    "pos": "noun",
+    "syn": "section, article, part",
+    "uz": "band, modda",
+    "ex": "A new clause was added to the contract."
+   },
+   {
+    "w": "compound",
+    "pos": "noun/adj",
+    "syn": "mixture; combined",
+    "uz": "birikma",
+    "ex": "Water is a compound of hydrogen and oxygen."
+   },
+   {
+    "w": "conflict",
+    "pos": "noun",
+    "syn": "disagreement, clash, war",
+    "uz": "nizo, ziddiyat",
+    "ex": "The conflict lasted ten years."
+   },
+   {
+    "w": "consult",
+    "pos": "verb",
+    "syn": "ask, refer to, discuss with",
+    "uz": "maslahatlashmoq",
+    "ex": "Patients should consult a doctor."
+   },
+   {
+    "w": "contact",
+    "pos": "noun/verb",
+    "syn": "communication; reach",
+    "uz": "aloqa; bog'lanmoq",
+    "ex": "Contact with nature reduces stress."
+   },
+   {
+    "w": "decline",
+    "pos": "noun/verb",
+    "syn": "decrease, fall; refuse",
+    "uz": "pasayish; rad etmoq",
+    "ex": "There was a sharp decline in sales."
+   },
+   {
+    "w": "discrete",
+    "pos": "adj",
+    "syn": "separate, distinct",
+    "uz": "alohida, ajralgan",
+    "ex": "The process has four discrete stages."
+   },
+   {
+    "w": "draft",
+    "pos": "noun/verb",
+    "syn": "version, outline; write",
+    "uz": "qoralama",
+    "ex": "The first draft was too long."
+   },
+   {
+    "w": "enable",
+    "pos": "verb",
+    "syn": "allow, make possible",
+    "uz": "imkon bermoq",
+    "ex": "The internet enables remote work."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing a process or how to do something",
+  "items": [
+   {
+    "s": "The first thing you need to do is …",
+    "uz": "Birinchi qilish kerak bo'lgan ish …",
+    "ex": "The first thing you need to do is wash the rice.",
+    "use": "Part 2: retsept"
+   },
+   {
+    "s": "Once you've …, you …",
+    "uz": "… qilib bo'lgach, …",
+    "ex": "Once you've chopped the onions, you fry them.",
+    "use": "Ketma-ketlik"
+   },
+   {
+    "s": "After that, …",
+    "uz": "Shundan so'ng, …",
+    "ex": "After that, add the carrots.",
+    "use": "Tartib"
+   },
+   {
+    "s": "The tricky part is …",
+    "uz": "Qiyin joyi …",
+    "ex": "The tricky part is getting the timing right.",
+    "use": "Qiyinchilik"
+   },
+   {
+    "s": "Make sure you …",
+    "uz": "Albatta … qiling",
+    "ex": "Make sure you don't add too much salt.",
+    "use": "Maslahat"
+   },
+   {
+    "s": "It takes about … to …",
+    "uz": "… uchun taxminan … ketadi",
+    "ex": "It takes about two hours to cook.",
+    "use": "Vaqt"
+   },
+   {
+    "s": "The key is to …",
+    "uz": "Asosiysi — …",
+    "ex": "The key is to practise every day.",
+    "use": "Muhim nuqta"
+   },
+   {
+    "s": "Finally, …",
+    "uz": "Nihoyat, …",
+    "ex": "Finally, serve it with salad.",
+    "use": "Yakun"
+   },
+   {
+    "s": "It's easier than it sounds.",
+    "uz": "Ko'ringanidan osonroq",
+    "ex": "Making plov is easier than it sounds.",
+    "use": "Tabiiy izoh"
+   },
+   {
+    "s": "If you get stuck, …",
+    "uz": "Agar qiynalib qolsangiz, …",
+    "ex": "If you get stuck, watch a tutorial.",
+    "use": "Maslahat"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Sentence stress: content words",
+  "items": [
+   {
+    "w": "I WANT to GO HOME.",
+    "ipa": "content words urg'uli",
+    "uz": "ot, fe'l, sifat, ravish urg'uli",
+    "tip": "Function words kuchsiz"
+   },
+   {
+    "w": "It's VERY imPORtant.",
+    "ipa": "ma'noli so'zlarga urg'u",
+    "uz": "Speaking'da monoton bo'lmaslik",
+    "tip": "Ritm"
+   },
+   {
+    "w": "I LIVE in TASHkent.",
+    "ipa": "joy nomi urg'uli",
+    "uz": "in kuchsiz",
+    "tip": "Part 1"
+   },
+   {
+    "w": "I've been STUDYing for TWO YEARS.",
+    "ipa": "raqam va fe'l urg'uli",
+    "uz": "have/been kuchsiz",
+    "tip": "Ritm"
+   },
+   {
+    "w": "Contrastive stress: I said TEA, not coffee.",
+    "ipa": "farqni ko'rsatish",
+    "uz": "urg'u bilan qarama-qarshilik",
+    "tip": "Tabiiy nutq"
+   },
+   {
+    "w": "NOT really.",
+    "ipa": "inkorga urg'u",
+    "uz": "not urg'uli",
+    "tip": "Javob"
+   },
+   {
+    "w": "I REALLY LOVE it.",
+    "ipa": "kuchaytiruvchiga urg'u",
+    "uz": "his-tuyg'uni ko'rsatadi",
+    "tip": "Fluency"
+   },
+   {
+    "w": "WHAT do you DO?",
+    "ipa": "savol so'zi va asosiy fe'l",
+    "uz": "do (yordamchi) kuchsiz",
+    "tip": "Savollar"
+   },
+   {
+    "w": "Pause between ideas",
+    "ipa": "chunking",
+    "uz": "fikrlar orasida qisqa to'xtash",
+    "tip": "Tushunarlilik"
+   },
+   {
+    "w": "Avoid stressing every word",
+    "ipa": "robot kabi emas",
+    "uz": "har so'zga urg'u bermang",
+    "tip": "Pronunciation band 7"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Line graph practice: describing one line well",
+  "items": [
+   {
+    "w": "started at",
+    "syn": "began at",
+    "uz": "… dan boshlandi",
+    "ex": "The figure started at 20% in 1990."
+   },
+   {
+    "w": "rose gradually to",
+    "syn": "climbed slowly to",
+    "uz": "asta-sekin … gacha oshdi",
+    "ex": "It rose gradually to 35% by 2000."
+   },
+   {
+    "w": "before falling back to",
+    "syn": "then dropped to",
+    "uz": "keyin … gacha qaytib tushdi",
+    "ex": "…before falling back to 30%."
+   },
+   {
+    "w": "reached a high of",
+    "syn": "peaked at",
+    "uz": "eng yuqori … ga yetdi",
+    "ex": "It reached a high of 60% in 2010."
+   },
+   {
+    "w": "ended the period at",
+    "syn": "finished at",
+    "uz": "davr oxirida … da to'xtadi",
+    "ex": "It ended the period at 45%."
+   },
+   {
+    "w": "a period of stability",
+    "syn": "no change",
+    "uz": "barqarorlik davri",
+    "ex": "This was followed by a period of stability."
+   },
+   {
+    "w": "a brief dip",
+    "syn": "a short fall",
+    "uz": "qisqa pasayish",
+    "ex": "There was a brief dip in 2008."
+   },
+   {
+    "w": "a steady upward climb",
+    "syn": "consistent growth",
+    "uz": "barqaror o'sish",
+    "ex": "The graph shows a steady upward climb."
+   },
+   {
+    "w": "by the end of the period",
+    "syn": "finally",
+    "uz": "davr oxiriga kelib",
+    "ex": "By the end of the period, it had doubled."
+   },
+   {
+    "w": "describe key points, not every year",
+    "syn": "select",
+    "uz": "har yilni emas, asosiy nuqtalarni yozing",
+    "ex": "Start, peak, low and end."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Immigration and migration",
+  "items": [
+   {
+    "w": "economic migrants",
+    "syn": "people moving for work",
+    "uz": "iqtisodiy muhojirlar",
+    "ex": "Many economic migrants work in Russia."
+   },
+   {
+    "w": "labour shortages",
+    "syn": "lack of workers",
+    "uz": "ishchi kuchi tanqisligi",
+    "ex": "Migrants fill labour shortages."
+   },
+   {
+    "w": "remittances",
+    "syn": "money sent home",
+    "uz": "pul o'tkazmalari",
+    "ex": "Remittances support many Uzbek families."
+   },
+   {
+    "w": "integrate into society",
+    "syn": "become part of society",
+    "uz": "jamiyatga moslashmoq",
+    "ex": "Language helps migrants integrate into society."
+   },
+   {
+    "w": "cultural diversity",
+    "syn": "variety of cultures",
+    "uz": "madaniy xilma-xillik",
+    "ex": "Immigration increases cultural diversity."
+   },
+   {
+    "w": "host country",
+    "syn": "receiving country",
+    "uz": "qabul qiluvchi davlat",
+    "ex": "Migrants contribute to the host country."
+   },
+   {
+    "w": "brain gain",
+    "syn": "gain of skilled workers",
+    "uz": "intellektual salohiyat oqimi",
+    "ex": "Rich countries benefit from brain gain."
+   },
+   {
+    "w": "strain on public services",
+    "syn": "pressure on services",
+    "uz": "davlat xizmatlariga yuk",
+    "ex": "Rapid immigration can strain public services."
+   },
+   {
+    "w": "work permit",
+    "syn": "visa",
+    "uz": "ish ruxsatnomasi",
+    "ex": "Migrants need a work permit."
+   },
+   {
+    "w": "discrimination",
+    "syn": "unfair treatment",
+    "uz": "kamsitish",
+    "ex": "Migrants often face discrimination."
+   }
+  ]
+ }
+}

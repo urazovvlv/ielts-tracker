@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Adding ideas and giving examples",
+  "items": [
+   {
+    "s": "Furthermore / Moreover / In addition",
+    "uz": "qo'shimcha fikr — gap boshida, vergul bilan",
+    "ex": "In addition, cycling improves health.",
+    "use": "Task 2 body"
+   },
+   {
+    "s": "not only … but also …",
+    "uz": "nafaqat … balki …",
+    "ex": "Cycling is not only cheap but also healthy.",
+    "use": "Band 7 struktura"
+   },
+   {
+    "s": "as well as + ot / -ing",
+    "uz": "… bilan birga",
+    "ex": "As well as saving money, it saves time.",
+    "use": "Xilma-xillik"
+   },
+   {
+    "s": "such as + misollar ro'yxati",
+    "uz": "masalan (ot)",
+    "ex": "Sports such as tennis are expensive.",
+    "use": "Misollar"
+   },
+   {
+    "s": "for example / for instance + gap",
+    "uz": "misol gap",
+    "ex": "For instance, Finland has no homework.",
+    "use": "Task 2 misol"
+   },
+   {
+    "s": "A case in point is …",
+    "uz": "Yaqqol misol …",
+    "ex": "A case in point is Singapore.",
+    "use": "Band 7+"
+   },
+   {
+    "s": "like (norasmiy) → such as (rasmiy)",
+    "uz": "Writing'da 'like' o'rniga 'such as'",
+    "ex": "Fruits such as apples are cheap.",
+    "use": "Register"
+   },
+   {
+    "s": "❌ For example, such as … → ✅ For example, … / … such as …",
+    "uz": "ikkalasini birga ishlatmang",
+    "ex": "For example, Japan has very clean cities.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Risk and danger",
+  "items": [
+   {
+    "t": "play with fire",
+    "uz": "xavfli ish qilmoq",
+    "ex": "Driving that fast is playing with fire.",
+    "use": "Ogohlantirish"
+   },
+   {
+    "t": "on thin ice",
+    "uz": "xavfli vaziyatda",
+    "ex": "After missing three classes, I'm on thin ice.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "take a gamble",
+    "uz": "tavakkal qilmoq",
+    "ex": "Quitting my job was a gamble.",
+    "use": "Qarorlar"
+   },
+   {
+    "t": "better safe than sorry",
+    "uz": "ehtiyot shart",
+    "ex": "I always back up my files — better safe than sorry.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "a close call",
+    "uz": "zo'rg'a qutulib qolish",
+    "ex": "Missing that car was a close call.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "stick your neck out",
+    "uz": "tavakkal qilib fikr bildirmoq",
+    "ex": "She stuck her neck out to defend me.",
+    "use": "Jasorat"
+   },
+   {
+    "t": "throw caution to the wind",
+    "uz": "ehtiyotkorlikni unutmoq",
+    "ex": "On holiday we threw caution to the wind.",
+    "use": "Part 2"
+   },
+   {
+    "t": "at your own risk",
+    "uz": "o'z javobgarligingizda",
+    "ex": "Swim here at your own risk.",
+    "use": "Qoidalar"
+   },
+   {
+    "t": "push your luck",
+    "uz": "omadni haddan ortiq sinamoq",
+    "ex": "Don't push your luck with the teacher.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "a safe bet",
+    "uz": "ishonchli tanlov",
+    "ex": "Studying medicine is a safe bet for a career.",
+    "use": "Part 3: kasb"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "professional",
+    "pos": "adj/noun",
+    "syn": "expert, skilled; specialist",
+    "uz": "professional, mutaxassis",
+    "ex": "Professional advice is expensive."
+   },
+   {
+    "w": "project",
+    "pos": "noun/verb",
+    "syn": "plan, scheme; forecast",
+    "uz": "loyiha; prognoz qilmoq",
+    "ex": "Sales are projected to rise."
+   },
+   {
+    "w": "promote",
+    "pos": "verb",
+    "syn": "encourage, advertise, support",
+    "uz": "targ'ib qilmoq",
+    "ex": "The campaign promotes healthy eating."
+   },
+   {
+    "w": "regime",
+    "pos": "noun",
+    "syn": "system, government; routine",
+    "uz": "tuzum; rejim",
+    "ex": "A strict exercise regime helped him."
+   },
+   {
+    "w": "resolve",
+    "pos": "verb",
+    "syn": "solve, settle, fix",
+    "uz": "hal qilmoq",
+    "ex": "The conflict was resolved peacefully."
+   },
+   {
+    "w": "retain",
+    "pos": "verb",
+    "syn": "keep, maintain, hold",
+    "uz": "saqlab qolmoq",
+    "ex": "Companies want to retain good staff."
+   },
+   {
+    "w": "series",
+    "pos": "noun",
+    "syn": "sequence, set, succession",
+    "uz": "turkum, ketma-ketlik",
+    "ex": "A series of tests was carried out."
+   },
+   {
+    "w": "statistic",
+    "pos": "noun",
+    "syn": "figure, data, number",
+    "uz": "statistika",
+    "ex": "Statistics show a fall in crime."
+   },
+   {
+    "w": "status",
+    "pos": "noun",
+    "syn": "position, rank, standing",
+    "uz": "maqom, holat",
+    "ex": "Doctors have high social status."
+   },
+   {
+    "w": "stress",
+    "pos": "noun/verb",
+    "syn": "pressure; emphasise",
+    "uz": "stress; urg'u bermoq",
+    "ex": "The report stresses the need for change."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing changes over time",
+  "items": [
+   {
+    "s": "… has changed a lot over the years.",
+    "uz": "… yillar davomida ancha o'zgardi",
+    "ex": "My city has changed a lot over the years.",
+    "use": "Part 1/3"
+   },
+   {
+    "s": "It's become much more … than it used to be.",
+    "uz": "Avvalgidan ancha … bo'lib qoldi",
+    "ex": "It's become much more crowded than it used to be.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "Nowadays, …, whereas in the past …",
+    "uz": "Hozir …, ilgari esa …",
+    "ex": "Nowadays, people text, whereas in the past they called.",
+    "use": "Part 3"
+   },
+   {
+    "s": "There's been a big shift towards …",
+    "uz": "… tomonga katta siljish bo'ldi",
+    "ex": "There's been a big shift towards online shopping.",
+    "use": "Band 7"
+   },
+   {
+    "s": "… is on the rise.",
+    "uz": "… oshib bormoqda",
+    "ex": "Remote work is on the rise.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "… is becoming less and less common.",
+    "uz": "… tobora kamayib bormoqda",
+    "ex": "Writing letters is becoming less and less common.",
+    "use": "Kamayish"
+   },
+   {
+    "s": "Over the last decade or so, …",
+    "uz": "So'nggi o'n yil ichida, …",
+    "ex": "Over the last decade or so, prices have doubled.",
+    "use": "Vaqt"
+   },
+   {
+    "s": "It's hardly recognisable now.",
+    "uz": "Endi tanib bo'lmaydi",
+    "ex": "My old school is hardly recognisable now.",
+    "use": "Kuchli o'zgarish"
+   },
+   {
+    "s": "Things have taken a turn for the better.",
+    "uz": "Ishlar yaxshi tomonga o'zgardi",
+    "ex": "Since the new mayor, things have taken a turn for the better.",
+    "use": "Idioma"
+   },
+   {
+    "s": "Some things never change.",
+    "uz": "Ba'zi narsalar hech o'zgarmaydi",
+    "ex": "Some things never change — the bazaar is as busy as ever.",
+    "use": "Kontrast"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/h/ sound",
+  "items": [
+   {
+    "w": "hair – air",
+    "ipa": "/heə/ – /eə/",
+    "uz": "soch – havo",
+    "tip": "/h/ ni tashlamang"
+   },
+   {
+    "w": "hate – eight",
+    "ipa": "/heɪt/ – /eɪt/",
+    "uz": "nafrat – sakkiz",
+    "tip": "Ma'no butunlay o'zgaradi"
+   },
+   {
+    "w": "heat – eat",
+    "ipa": "/hiːt/ – /iːt/",
+    "uz": "issiqlik – yemoq",
+    "tip": "Nafas chiqarib ayting"
+   },
+   {
+    "w": "hold – old",
+    "ipa": "/həʊld/ – /əʊld/",
+    "uz": "ushlamoq – qari",
+    "tip": "Juftlik"
+   },
+   {
+    "w": "hospital",
+    "ipa": "/ˈhɒspɪtl/",
+    "uz": "'xospital' emas — /h/ yumshoq",
+    "tip": "HOS-pi-təl"
+   },
+   {
+    "w": "hour / honest",
+    "ipa": "/aʊə/ /ˈɒnɪst/",
+    "uz": "bu so'zlarda h o'qilmaydi",
+    "tip": "Istisnolar"
+   },
+   {
+    "w": "whole – hole",
+    "ipa": "/həʊl/",
+    "uz": "bir xil o'qiladi",
+    "tip": "Homofon"
+   },
+   {
+    "w": "perhaps",
+    "ipa": "/pəˈhæps/",
+    "uz": "pə-HAPS",
+    "tip": "Speaking"
+   },
+   {
+    "w": "behaviour",
+    "ipa": "/bɪˈheɪvjə/",
+    "uz": "bi-HEY-vyə",
+    "tip": "Task 2"
+   },
+   {
+    "w": "household",
+    "ipa": "/ˈhaʊshəʊld/",
+    "uz": "Task 1 so'zi",
+    "tip": "HAUS-həuld"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Process diagrams: natural cycles",
+  "items": [
+   {
+    "w": "The life cycle of … consists of … stages",
+    "syn": "has … phases",
+    "uz": "hayot sikli … bosqichdan iborat",
+    "ex": "The life cycle of a frog consists of five stages."
+   },
+   {
+    "w": "begins as / starts life as",
+    "syn": "originates as",
+    "uz": "… sifatida boshlanadi",
+    "ex": "The butterfly starts life as an egg."
+   },
+   {
+    "w": "develops into",
+    "syn": "grows into, becomes",
+    "uz": "… ga aylanadi",
+    "ex": "The larva develops into a pupa."
+   },
+   {
+    "w": "emerges",
+    "syn": "comes out",
+    "uz": "chiqadi",
+    "ex": "The adult insect emerges after two weeks."
+   },
+   {
+    "w": "evaporates",
+    "syn": "turns into vapour",
+    "uz": "bug'lanadi",
+    "ex": "Water evaporates from the sea."
+   },
+   {
+    "w": "condenses",
+    "syn": "turns into droplets",
+    "uz": "kondensatsiyalanadi",
+    "ex": "The vapour condenses into clouds."
+   },
+   {
+    "w": "the cycle repeats itself",
+    "syn": "the process starts again",
+    "uz": "sikl qaytadan boshlanadi",
+    "ex": "The cycle then repeats itself."
+   },
+   {
+    "w": "active voice for natural processes",
+    "syn": "not passive",
+    "uz": "tabiiy jarayonda aktiv nisbat",
+    "ex": "The egg hatches after 10 days."
+   },
+   {
+    "w": "approximately … days later",
+    "syn": "after about … days",
+    "uz": "taxminan … kundan keyin",
+    "ex": "Approximately three weeks later, it matures."
+   },
+   {
+    "w": "at this stage",
+    "syn": "at this point",
+    "uz": "bu bosqichda",
+    "ex": "At this stage, the plant produces seeds."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Energy and resources",
+  "items": [
+   {
+    "w": "non-renewable resources",
+    "syn": "finite resources",
+    "uz": "tiklanmaydigan resurslar",
+    "ex": "Oil is a non-renewable resource."
+   },
+   {
+    "w": "solar and wind power",
+    "syn": "clean energy",
+    "uz": "quyosh va shamol energiyasi",
+    "ex": "Solar power is cheap in Uzbekistan."
+   },
+   {
+    "w": "energy consumption",
+    "syn": "energy use",
+    "uz": "energiya iste'moli",
+    "ex": "Energy consumption peaks in winter."
+   },
+   {
+    "w": "energy-efficient",
+    "syn": "low-energy",
+    "uz": "energiya tejamkor",
+    "ex": "Energy-efficient homes reduce bills."
+   },
+   {
+    "w": "nuclear power",
+    "syn": "atomic energy",
+    "uz": "atom energiyasi",
+    "ex": "Nuclear power is controversial."
+   },
+   {
+    "w": "dependence on oil",
+    "syn": "reliance on oil",
+    "uz": "neftga qaramlik",
+    "ex": "Countries want to reduce dependence on oil."
+   },
+   {
+    "w": "power shortages",
+    "syn": "blackouts",
+    "uz": "elektr tanqisligi",
+    "ex": "Power shortages are common in winter."
+   },
+   {
+    "w": "water scarcity",
+    "syn": "lack of water",
+    "uz": "suv tanqisligi",
+    "ex": "Water scarcity affects Central Asia."
+   },
+   {
+    "w": "conserve resources",
+    "syn": "save resources",
+    "uz": "resurslarni tejamoq",
+    "ex": "Individuals can conserve resources at home."
+   },
+   {
+    "w": "invest in green technology",
+    "syn": "fund clean tech",
+    "uz": "yashil texnologiyaga sarmoya kiritmoq",
+    "ex": "Governments should invest in green technology."
+   }
+  ]
+ }
+}

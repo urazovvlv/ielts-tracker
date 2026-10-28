@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Cleft sentences for emphasis",
+  "items": [
+   {
+    "s": "What I like about … is …",
+    "uz": "… da menga yoqadigani — …",
+    "ex": "What I like about Tashkent is the food.",
+    "use": "Speaking band 7+"
+   },
+   {
+    "s": "What … need is …",
+    "uz": "… ga kerak narsa — …",
+    "ex": "What students need is more practice.",
+    "use": "Task 2"
+   },
+   {
+    "s": "It is/was … that …",
+    "uz": "aynan … edi",
+    "ex": "It was my teacher who inspired me.",
+    "use": "Part 2 emfaza"
+   },
+   {
+    "s": "The reason why … is that …",
+    "uz": "… sababi shundaki …",
+    "ex": "The reason why I chose IELTS is that I need C1.",
+    "use": "Sabab"
+   },
+   {
+    "s": "The thing that … is …",
+    "uz": "… narsa — …",
+    "ex": "The thing that surprised me most was the price.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "All I want is …",
+    "uz": "Faqat … ni xohlayman",
+    "ex": "All I want is a quiet place to study.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "What happened was …",
+    "uz": "Bo'lgan voqea shu: …",
+    "ex": "What happened was the bus broke down.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "❌ What I like it is the food → ✅ What I like is the food",
+    "uz": "cleft'da qo'shimcha 'it' yo'q",
+    "ex": "What I need is time.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Surprise and shock",
+  "items": [
+   {
+    "t": "take someone by surprise",
+    "uz": "kutilmaganda hayratga solmoq",
+    "ex": "The news took everyone by surprise.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "out of nowhere",
+    "uz": "birdan, qayerdandir",
+    "ex": "A dog appeared out of nowhere.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "jaw-dropping",
+    "uz": "og'zi ochilib qoladigan",
+    "ex": "The view was jaw-dropping.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "you could have knocked me down with a feather",
+    "uz": "juda hayron qoldim",
+    "ex": "When I heard my score, you could have knocked me down with a feather.",
+    "use": "Kuchli hayrat"
+   },
+   {
+    "t": "a bolt from the blue",
+    "uz": "kutilmagan voqea",
+    "ex": "His resignation was a bolt from the blue.",
+    "use": "Yangilik"
+   },
+   {
+    "t": "lost for words",
+    "uz": "so'z topa olmay qolmoq",
+    "ex": "I was lost for words at the surprise party.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "raise eyebrows",
+    "uz": "hayron qoldirmoq, shubha uyg'otmoq",
+    "ex": "His decision raised a few eyebrows.",
+    "use": "Munosabat"
+   },
+   {
+    "t": "catch someone off guard",
+    "uz": "tayyor bo'lmagan payt ushlamoq",
+    "ex": "The question caught me off guard.",
+    "use": "Speaking imtihon"
+   },
+   {
+    "t": "a turn-up for the books",
+    "uz": "kutilmagan ijobiy natija",
+    "ex": "Winning the match was a turn-up for the books.",
+    "use": "Britaniya iborasi"
+   },
+   {
+    "t": "speechless",
+    "uz": "gapirolmay qolgan",
+    "ex": "I was speechless when I saw the gift.",
+    "use": "Hissiyot"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "generate",
+    "pos": "verb",
+    "syn": "produce, create, cause",
+    "uz": "hosil qilmoq",
+    "ex": "Wind turbines generate electricity."
+   },
+   {
+    "w": "generation",
+    "pos": "noun",
+    "syn": "age group; production",
+    "uz": "avlod; ishlab chiqarish",
+    "ex": "The younger generation uses social media more."
+   },
+   {
+    "w": "image",
+    "pos": "noun",
+    "syn": "picture; reputation",
+    "uz": "tasvir; obro'",
+    "ex": "The scandal damaged the company's image."
+   },
+   {
+    "w": "liberal",
+    "pos": "adj",
+    "syn": "open-minded, tolerant",
+    "uz": "liberal, erkin fikrli",
+    "ex": "The city has liberal attitudes."
+   },
+   {
+    "w": "licence",
+    "pos": "noun",
+    "syn": "permit, permission",
+    "uz": "litsenziya, guvohnoma",
+    "ex": "You need a licence to sell alcohol."
+   },
+   {
+    "w": "logic",
+    "pos": "noun",
+    "syn": "reasoning, sense",
+    "uz": "mantiq",
+    "ex": "The logic of the argument is clear."
+   },
+   {
+    "w": "marginal",
+    "pos": "adj",
+    "syn": "small, slight, minor",
+    "uz": "juda kichik, chekka",
+    "ex": "There was a marginal increase in sales."
+   },
+   {
+    "w": "medical",
+    "pos": "adj",
+    "syn": "health-related, clinical",
+    "uz": "tibbiy",
+    "ex": "Medical costs are rising."
+   },
+   {
+    "w": "mental",
+    "pos": "adj",
+    "syn": "psychological, intellectual",
+    "uz": "ruhiy, aqliy",
+    "ex": "Exercise improves mental health."
+   },
+   {
+    "w": "modify",
+    "pos": "verb",
+    "syn": "change, adjust, alter",
+    "uz": "o'zgartirmoq",
+    "ex": "The design was modified after testing."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Problems and solutions (Part 3)",
+  "items": [
+   {
+    "s": "One way to tackle this is to …",
+    "uz": "Buni hal qilishning bir yo'li — …",
+    "ex": "One way to tackle this is to improve buses.",
+    "use": "Yechim"
+   },
+   {
+    "s": "The root of the problem is …",
+    "uz": "Muammoning ildizi …",
+    "ex": "The root of the problem is low salaries.",
+    "use": "Sabab"
+   },
+   {
+    "s": "A possible solution would be …",
+    "uz": "Mumkin bo'lgan yechim …",
+    "ex": "A possible solution would be free courses.",
+    "use": "Yumshoq taklif"
+   },
+   {
+    "s": "The government could …",
+    "uz": "Hukumat … qilishi mumkin",
+    "ex": "The government could offer tax breaks.",
+    "use": "Davlat"
+   },
+   {
+    "s": "It's easier said than done.",
+    "uz": "Aytish oson, qilish qiyin",
+    "ex": "Reducing traffic is easier said than done.",
+    "use": "Realizm"
+   },
+   {
+    "s": "In the short term, … but in the long term …",
+    "uz": "Qisqa muddatda … uzoq muddatda …",
+    "ex": "In the short term, it's costly, but in the long term it pays off.",
+    "use": "Band 7"
+   },
+   {
+    "s": "There's no quick fix.",
+    "uz": "Tez yechim yo'q",
+    "ex": "There's no quick fix for unemployment.",
+    "use": "Muammo"
+   },
+   {
+    "s": "If nothing is done, …",
+    "uz": "Hech narsa qilinmasa, …",
+    "ex": "If nothing is done, pollution will get worse.",
+    "use": "Ogohlantirish"
+   },
+   {
+    "s": "Individuals can also play a part by …",
+    "uz": "Har bir odam ham … orqali hissa qo'shishi mumkin",
+    "ex": "Individuals can play a part by recycling.",
+    "use": "Shaxsiy mas'uliyat"
+   },
+   {
+    "s": "It would take a combination of …",
+    "uz": "… ning uyg'unligi kerak",
+    "ex": "It would take a combination of laws and education.",
+    "use": "Murakkab yechim"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Homophones in Listening",
+  "items": [
+   {
+    "w": "weather – whether",
+    "ipa": "/ˈweðə/",
+    "uz": "ob-havo – …mi (bir xil o'qiladi)",
+    "tip": "Kontekstdan aniqlang"
+   },
+   {
+    "w": "right – write",
+    "ipa": "/raɪt/",
+    "uz": "to'g'ri – yozmoq",
+    "tip": "Homofon"
+   },
+   {
+    "w": "meet – meat",
+    "ipa": "/miːt/",
+    "uz": "uchrashmoq – go'sht",
+    "tip": "Homofon"
+   },
+   {
+    "w": "piece – peace",
+    "ipa": "/piːs/",
+    "uz": "bo'lak – tinchlik",
+    "tip": "Homofon"
+   },
+   {
+    "w": "allowed – aloud",
+    "ipa": "/əˈlaʊd/",
+    "uz": "ruxsat – ovoz chiqarib",
+    "tip": "Homofon"
+   },
+   {
+    "w": "site – sight",
+    "ipa": "/saɪt/",
+    "uz": "joy – ko'rish",
+    "tip": "Homofon"
+   },
+   {
+    "w": "fare – fair",
+    "ipa": "/feə/",
+    "uz": "yo'l haqi – adolatli/yarmarka",
+    "tip": "Listening: transport"
+   },
+   {
+    "w": "principal – principle",
+    "ipa": "/ˈprɪnsəpl/",
+    "uz": "asosiy – tamoyil",
+    "tip": "Writing imlosi farqli"
+   },
+   {
+    "w": "course – coarse",
+    "ipa": "/kɔːs/",
+    "uz": "kurs – dag'al",
+    "tip": "Homofon"
+   },
+   {
+    "w": "two – too – to",
+    "ipa": "/tuː/",
+    "uz": "ikki – ham – …ga",
+    "tip": "Kuchsiz shakl: to /tə/"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Tables: describing many numbers",
+  "items": [
+   {
+    "w": "The table provides data on",
+    "syn": "presents figures for",
+    "uz": "jadvalda … haqida ma'lumot berilgan",
+    "ex": "The table provides data on tourist numbers."
+   },
+   {
+    "w": "across the five countries",
+    "syn": "in all five countries",
+    "uz": "beshala davlat bo'yicha",
+    "ex": "Spending varied widely across the five countries."
+   },
+   {
+    "w": "the widest gap",
+    "syn": "the biggest difference",
+    "uz": "eng katta farq",
+    "ex": "The widest gap was between men and women in Japan."
+   },
+   {
+    "w": "figures were broadly similar",
+    "syn": "roughly the same",
+    "uz": "ko'rsatkichlar umuman o'xshash edi",
+    "ex": "Figures for 2010 and 2015 were broadly similar."
+   },
+   {
+    "w": "by a considerable margin",
+    "syn": "by far",
+    "uz": "ancha farq bilan",
+    "ex": "Germany led by a considerable margin."
+   },
+   {
+    "w": "compare rows and columns",
+    "syn": "both directions",
+    "uz": "qator va ustunlarni solishtiring",
+    "ex": "Compare countries and years."
+   },
+   {
+    "w": "the totals",
+    "syn": "sum figures",
+    "uz": "jami ko'rsatkichlar",
+    "ex": "The totals show an overall increase."
+   },
+   {
+    "w": "the remaining categories",
+    "syn": "the rest",
+    "uz": "qolgan toifalar",
+    "ex": "The remaining categories each accounted for less than 10%."
+   },
+   {
+    "w": "an anomaly",
+    "syn": "an exception",
+    "uz": "istisno holat",
+    "ex": "The only anomaly was Italy, where it fell."
+   },
+   {
+    "w": "round the numbers",
+    "syn": "approximately",
+    "uz": "raqamlarni yaxlitlash",
+    "ex": "around 45% instead of 44.7%"
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Ageing and the workforce",
+  "items": [
+   {
+    "w": "retirement age",
+    "syn": "pension age",
+    "uz": "nafaqa yoshi",
+    "ex": "Many countries are raising the retirement age."
+   },
+   {
+    "w": "a shrinking workforce",
+    "syn": "fewer workers",
+    "uz": "qisqarayotgan ishchi kuchi",
+    "ex": "An ageing population means a shrinking workforce."
+   },
+   {
+    "w": "healthcare costs",
+    "syn": "medical spending",
+    "uz": "sog'liqni saqlash xarajatlari",
+    "ex": "Healthcare costs rise with age."
+   },
+   {
+    "w": "intergenerational",
+    "syn": "between generations",
+    "uz": "avlodlararo",
+    "ex": "Intergenerational living is common in Uzbekistan."
+   },
+   {
+    "w": "wisdom and experience",
+    "syn": "knowledge",
+    "uz": "donolik va tajriba",
+    "ex": "Older workers bring wisdom and experience."
+   },
+   {
+    "w": "retrain",
+    "syn": "learn new skills",
+    "uz": "qayta o'qitmoq",
+    "ex": "Older employees should be able to retrain."
+   },
+   {
+    "w": "age discrimination",
+    "syn": "ageism",
+    "uz": "yoshga ko'ra kamsitish",
+    "ex": "Age discrimination is illegal in many countries."
+   },
+   {
+    "w": "dependency ratio",
+    "syn": "workers vs dependants",
+    "uz": "qaramlik koeffitsienti",
+    "ex": "The dependency ratio is rising."
+   },
+   {
+    "w": "active ageing",
+    "syn": "staying active",
+    "uz": "faol qarilik",
+    "ex": "Governments promote active ageing."
+   },
+   {
+    "w": "financial security in old age",
+    "syn": "secure pension",
+    "uz": "qarilikda moliyaviy kafolat",
+    "ex": "Saving early ensures financial security in old age."
+   }
+  ]
+ }
+}

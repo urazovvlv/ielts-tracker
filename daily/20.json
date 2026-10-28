@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Prepositions of time and place",
+  "items": [
+   {
+    "s": "at + clock time / night / the weekend",
+    "uz": "aniq vaqt nuqtasi",
+    "ex": "at 7 o'clock, at night, at the weekend",
+    "use": "Part 1"
+   },
+   {
+    "s": "on + days and dates",
+    "uz": "kunlar va sanalar",
+    "ex": "on Monday, on 5 May, on my birthday",
+    "use": "Listening sanalar"
+   },
+   {
+    "s": "in + months, years, seasons, parts of day",
+    "uz": "uzunroq davr",
+    "ex": "in May, in 2020, in summer, in the morning",
+    "use": "Task 1 yillar"
+   },
+   {
+    "s": "during / for",
+    "uz": "during + voqea, for + davomiylik",
+    "ex": "during the holiday, for two weeks",
+    "use": "Tipik chalkashlik"
+   },
+   {
+    "s": "by + deadline / until + davom",
+    "uz": "by = …gacha (kechiktirmay), until = …gacha davom",
+    "ex": "Finish it by Friday. I stayed until 10.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "at / in / on (place)",
+    "uz": "at nuqta, in ichida, on sirtda",
+    "ex": "at the station, in Tashkent, on the wall",
+    "use": "Joy"
+   },
+   {
+    "s": "in the city centre / on the outskirts",
+    "uz": "shahar markazida / chekkasida",
+    "ex": "I live on the outskirts of Tashkent.",
+    "use": "Part 1: uy"
+   },
+   {
+    "s": "❌ in Monday / at 2020 → ✅ on Monday / in 2020",
+    "uz": "tipik predlog xatolari",
+    "ex": "The exam is on 27 December.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "The human body",
+  "items": [
+   {
+    "t": "an eye for an eye",
+    "uz": "ko'zga ko'z (qasos)",
+    "ex": "Some believe in an eye for an eye.",
+    "use": "Part 3: jazo"
+   },
+   {
+    "t": "get cold feet",
+    "uz": "oxirgi daqiqada qo'rqib qolmoq",
+    "ex": "He got cold feet before the wedding.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "keep your chin up",
+    "uz": "tushkunlikka tushmang",
+    "ex": "Keep your chin up — the next mock will be better.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "by heart",
+    "uz": "yoddan",
+    "ex": "I know the poem by heart.",
+    "use": "O'qish"
+   },
+   {
+    "t": "all ears",
+    "uz": "diqqat bilan eshitmoq",
+    "ex": "Tell me your plan — I'm all ears.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "break a leg",
+    "uz": "omad tilayman (imtihon, chiqish oldidan)",
+    "ex": "Break a leg in your exam!",
+    "use": "Omad tilash"
+   },
+   {
+    "t": "see eye to eye on",
+    "uz": "fikri mos kelmoq (aniq mavzuda)",
+    "ex": "We don't see eye to eye on politics.",
+    "use": "Fikrlar"
+   },
+   {
+    "t": "have a lot on your plate",
+    "uz": "ishi juda ko'p",
+    "ex": "I have a lot on my plate this week.",
+    "use": "Bandlik"
+   },
+   {
+    "t": "pull someone's leg",
+    "uz": "hazillashmoq, laqillatmoq",
+    "ex": "Don't worry, I'm just pulling your leg.",
+    "use": "Hazil"
+   },
+   {
+    "t": "give someone a hand",
+    "uz": "yordam bermoq",
+    "ex": "Could you give me a hand with this box?",
+    "use": "Yordam"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "cycle",
+    "pos": "noun",
+    "syn": "sequence, rotation, series",
+    "uz": "sikl, aylanma",
+    "ex": "The water cycle has four stages."
+   },
+   {
+    "w": "debate",
+    "pos": "noun/verb",
+    "syn": "discussion, argument",
+    "uz": "munozara",
+    "ex": "There is a debate about school uniforms."
+   },
+   {
+    "w": "despite",
+    "pos": "prep",
+    "syn": "in spite of, regardless of",
+    "uz": "…ga qaramay",
+    "ex": "Despite the cost, the plan went ahead."
+   },
+   {
+    "w": "dimension",
+    "pos": "noun",
+    "syn": "aspect, feature; size",
+    "uz": "o'lcham; jihat",
+    "ex": "The problem has a social dimension."
+   },
+   {
+    "w": "domestic",
+    "pos": "adj",
+    "syn": "national, internal; household",
+    "uz": "ichki; maishiy",
+    "ex": "Domestic flights are cheaper."
+   },
+   {
+    "w": "emerge",
+    "pos": "verb",
+    "syn": "appear, arise, come out",
+    "uz": "paydo bo'lmoq",
+    "ex": "New evidence has emerged."
+   },
+   {
+    "w": "error",
+    "pos": "noun",
+    "syn": "mistake, fault",
+    "uz": "xato",
+    "ex": "The error was found in the data."
+   },
+   {
+    "w": "ethnic",
+    "pos": "adj",
+    "syn": "cultural, racial, national",
+    "uz": "etnik",
+    "ex": "The city has many ethnic groups."
+   },
+   {
+    "w": "goal",
+    "pos": "noun",
+    "syn": "aim, target, objective",
+    "uz": "maqsad",
+    "ex": "The main goal is to cut emissions."
+   },
+   {
+    "w": "grant",
+    "pos": "noun/verb",
+    "syn": "funding, award; allow",
+    "uz": "grant; bermoq, ruxsat bermoq",
+    "ex": "She received a research grant."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Generalising (Part 3)",
+  "items": [
+   {
+    "s": "Generally speaking, …",
+    "uz": "Umuman olganda, …",
+    "ex": "Generally speaking, young people adapt faster.",
+    "use": "Part 3 boshlanishi"
+   },
+   {
+    "s": "On the whole, …",
+    "uz": "Umuman, …",
+    "ex": "On the whole, people are more health-conscious.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "By and large, …",
+    "uz": "Asosan, …",
+    "ex": "By and large, the service is good.",
+    "use": "Band 7 iborasi"
+   },
+   {
+    "s": "In most cases, …",
+    "uz": "Ko'p hollarda, …",
+    "ex": "In most cases, parents pay for university.",
+    "use": "Umumlashtirish"
+   },
+   {
+    "s": "As a rule, …",
+    "uz": "Qoida tariqasida, …",
+    "ex": "As a rule, shops close at 9 pm.",
+    "use": "Odat"
+   },
+   {
+    "s": "The vast majority of people …",
+    "uz": "Odamlarning aksariyati …",
+    "ex": "The vast majority of people own a smartphone.",
+    "use": "Kattalik"
+   },
+   {
+    "s": "It's fair to say that …",
+    "uz": "Aytish mumkinki, …",
+    "ex": "It's fair to say that life is faster now.",
+    "use": "Muvozanatli fikr"
+   },
+   {
+    "s": "There are exceptions, of course.",
+    "uz": "Albatta, istisnolar bor",
+    "ex": "There are exceptions, of course, but most agree.",
+    "use": "Ehtiyotkorlik"
+   },
+   {
+    "s": "This varies from person to person.",
+    "uz": "Bu odamdan-odamga farq qiladi",
+    "ex": "Taste in music varies from person to person.",
+    "use": "Yumshoq javob"
+   },
+   {
+    "s": "For the most part, …",
+    "uz": "Ko'p jihatdan, …",
+    "ex": "For the most part, I agree.",
+    "use": "Qisman rozilik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Diphthongs /ɪə/, /eə/, /ʊə/",
+  "items": [
+   {
+    "w": "here – hair",
+    "ipa": "/hɪə/ – /heə/",
+    "uz": "bu yerda – soch",
+    "tip": "/ɪə/ vs /eə/"
+   },
+   {
+    "w": "year",
+    "ipa": "/jɪə/",
+    "uz": "'yer' emas, YIƏ",
+    "tip": "Task 1 da tez-tez"
+   },
+   {
+    "w": "clear",
+    "ipa": "/klɪə/",
+    "uz": "aniq",
+    "tip": "KLIƏ"
+   },
+   {
+    "w": "area",
+    "ipa": "/ˈeəriə/",
+    "uz": "'areya' emas, EƏ-ri-ə",
+    "tip": "Ko'p ishlatiladi"
+   },
+   {
+    "w": "care – career",
+    "ipa": "/keə/ – /kəˈrɪə/",
+    "uz": "g'amxo'rlik – karyera",
+    "tip": "Urg'u farqi: kə-RIƏ"
+   },
+   {
+    "w": "there / their / they're",
+    "ipa": "/ðeə/",
+    "uz": "uchalasi bir xil o'qiladi",
+    "tip": "Writing'da yozilishi farqli"
+   },
+   {
+    "w": "idea",
+    "ipa": "/aɪˈdɪə/",
+    "uz": "ai-DIƏ, oxirida r yo'q",
+    "tip": "Speaking"
+   },
+   {
+    "w": "theory",
+    "ipa": "/ˈθɪəri/",
+    "uz": "THIƏ-ri",
+    "tip": "Akademik so'z"
+   },
+   {
+    "w": "aware",
+    "ipa": "/əˈweə/",
+    "uz": "ə-WEƏ",
+    "tip": "Task 2"
+   },
+   {
+    "w": "tour – sure",
+    "ipa": "/tʊə/ – /ʃɔː/",
+    "uz": "ko'p britaniyaliklar /ɔː/ deydi",
+    "tip": "Ikkala variant to'g'ri"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Maps: location and direction",
+  "items": [
+   {
+    "w": "in the north-east of the town",
+    "syn": "in the north-eastern part",
+    "uz": "shaharning shimoli-sharqida",
+    "ex": "A hospital was built in the north-east of the town."
+   },
+   {
+    "w": "opposite",
+    "syn": "facing",
+    "uz": "qarshisida",
+    "ex": "The bank is opposite the park."
+   },
+   {
+    "w": "alongside",
+    "syn": "next to, along",
+    "uz": "yonma-yon",
+    "ex": "A cycle path runs alongside the river."
+   },
+   {
+    "w": "in the centre of",
+    "syn": "in the middle of",
+    "uz": "markazida",
+    "ex": "A car park was added in the centre of the village."
+   },
+   {
+    "w": "on the outskirts",
+    "syn": "on the edge",
+    "uz": "chekkasida",
+    "ex": "A factory was built on the outskirts."
+   },
+   {
+    "w": "east of / west of",
+    "syn": "to the east of",
+    "uz": "…dan sharqda",
+    "ex": "The school lies west of the lake."
+   },
+   {
+    "w": "in the south-west corner",
+    "syn": "in the bottom-left corner",
+    "uz": "janubi-g'arbiy burchakda",
+    "ex": "A playground was added in the south-west corner."
+   },
+   {
+    "w": "across the river",
+    "syn": "on the other side of",
+    "uz": "daryoning narigi tomonida",
+    "ex": "A new bridge connects homes across the river."
+   },
+   {
+    "w": "surrounded by",
+    "syn": "encircled by",
+    "uz": "… bilan o'ralgan",
+    "ex": "The park is surrounded by houses."
+   },
+   {
+    "w": "the residential area",
+    "syn": "housing area",
+    "uz": "turar-joy hududi",
+    "ex": "The residential area was expanded."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Children and parenting",
+  "items": [
+   {
+    "w": "parental guidance",
+    "syn": "supervision",
+    "uz": "ota-ona nazorati",
+    "ex": "Young children need parental guidance online."
+   },
+   {
+    "w": "discipline",
+    "syn": "rules and control",
+    "uz": "intizom",
+    "ex": "Discipline helps children develop self-control."
+   },
+   {
+    "w": "spoil a child",
+    "syn": "give too much",
+    "uz": "bolani erkalatib buzmoq",
+    "ex": "Too many gifts can spoil a child."
+   },
+   {
+    "w": "formative years",
+    "syn": "early years",
+    "uz": "shakllanish yillari",
+    "ex": "The formative years shape personality."
+   },
+   {
+    "w": "working parents",
+    "syn": "parents with jobs",
+    "uz": "ishlaydigan ota-onalar",
+    "ex": "Working parents rely on childcare."
+   },
+   {
+    "w": "instil values",
+    "syn": "teach values",
+    "uz": "qadriyatlarni singdirmoq",
+    "ex": "Parents should instil values like honesty."
+   },
+   {
+    "w": "peer influence",
+    "syn": "influence of friends",
+    "uz": "tengdoshlar ta'siri",
+    "ex": "Peer influence grows in adolescence."
+   },
+   {
+    "w": "quality time",
+    "syn": "time together",
+    "uz": "birga mazmunli vaqt",
+    "ex": "Families should spend quality time together."
+   },
+   {
+    "w": "overprotective",
+    "syn": "too protective",
+    "uz": "haddan ortiq himoya qiluvchi",
+    "ex": "Overprotective parents limit independence."
+   },
+   {
+    "w": "independence",
+    "syn": "self-reliance",
+    "uz": "mustaqillik",
+    "ex": "Chores teach children independence."
+   }
+  ]
+ }
+}

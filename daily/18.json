@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Question forms and indirect questions",
+  "items": [
+   {
+    "s": "Auxiliary + subject + verb",
+    "uz": "so'roq gapda yordamchi fe'l egadan oldin",
+    "ex": "Do you enjoy your job? Where did you go?",
+    "use": "Asosiy tartib"
+   },
+   {
+    "s": "Subject questions: Who/What + verb",
+    "uz": "ega haqida so'raganda do ishlatilmaydi",
+    "ex": "Who taught you English? What happened?",
+    "use": "Tipik xato joyi"
+   },
+   {
+    "s": "Indirect: Could you tell me where … is?",
+    "uz": "muloyim so'roq — oddiy gap tartibi",
+    "ex": "Could you tell me where the station is?",
+    "use": "Speaking: muloyimlik"
+   },
+   {
+    "s": "I wonder if/whether …",
+    "uz": "qiziqaman, … mi",
+    "ex": "I wonder whether it will rain.",
+    "use": "Speaking: fikr yuritish"
+   },
+   {
+    "s": "❌ Can you tell me where is the bank? → ✅ where the bank is",
+    "uz": "indirect savolda tartib almashmaydi",
+    "ex": "Do you know what time it starts?",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "Question tags: isn't it? / don't you?",
+    "uz": "tasdiq kutish",
+    "ex": "It's a lovely day, isn't it?",
+    "use": "Tabiiy muloqot"
+   },
+   {
+    "s": "Negative questions: Don't you think …?",
+    "uz": "fikringizni yumshoq bildirish",
+    "ex": "Don't you think exams are too stressful?",
+    "use": "Part 3 munozara"
+   },
+   {
+    "s": "Rhetorical questions in Task 2 — avoid",
+    "uz": "Task 2 da ritorik savol yozmang",
+    "ex": "❌ But is this really true? → ✅ However, this view is debatable.",
+    "use": "Akademik uslub"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Animals",
+  "items": [
+   {
+    "t": "let the cat out of the bag",
+    "uz": "sirni oshkor qilib qo'ymoq",
+    "ex": "She let the cat out of the bag about the party.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "the elephant in the room",
+    "uz": "hamma biladigan, lekin gapirilmaydigan muammo",
+    "ex": "Money was the elephant in the room.",
+    "use": "Part 3: muammolar"
+   },
+   {
+    "t": "kill two birds with one stone",
+    "uz": "bir o'q bilan ikki quyon",
+    "ex": "I listen to podcasts on the bus — two birds with one stone.",
+    "use": "Samaradorlik"
+   },
+   {
+    "t": "a fish out of water",
+    "uz": "o'zini begona his qilgan odam",
+    "ex": "At the party I felt like a fish out of water.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "when pigs fly",
+    "uz": "tuyaning dumi yerga tekkanda (hech qachon)",
+    "ex": "He'll arrive on time when pigs fly.",
+    "use": "Hazil"
+   },
+   {
+    "t": "hold your horses",
+    "uz": "shoshmang",
+    "ex": "Hold your horses — let's read the instructions.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "an early bird",
+    "uz": "erta turadigan odam",
+    "ex": "I'm an early bird, so I study at 6 am.",
+    "use": "Part 1: kun tartibi"
+   },
+   {
+    "t": "a night owl",
+    "uz": "kech yotadigan odam",
+    "ex": "My brother is a night owl.",
+    "use": "Part 1"
+   },
+   {
+    "t": "the lion's share",
+    "uz": "eng katta ulush",
+    "ex": "Rent takes the lion's share of my salary.",
+    "use": "Pul haqida"
+   },
+   {
+    "t": "get the wrong end of the stick",
+    "uz": "noto'g'ri tushunmoq",
+    "ex": "I got the wrong end of the stick about the meeting.",
+    "use": "Tushunmovchilik"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "task",
+    "pos": "noun",
+    "syn": "job, duty, assignment",
+    "uz": "vazifa",
+    "ex": "Each student was given a different task."
+   },
+   {
+    "w": "technical",
+    "pos": "adj",
+    "syn": "specialised, practical",
+    "uz": "texnik",
+    "ex": "The report was too technical for most readers."
+   },
+   {
+    "w": "technique",
+    "pos": "noun",
+    "syn": "method, approach, skill",
+    "uz": "usul, texnika",
+    "ex": "New farming techniques increased yields."
+   },
+   {
+    "w": "technology",
+    "pos": "noun",
+    "syn": "machinery, innovation",
+    "uz": "texnologiya",
+    "ex": "Technology has changed how we learn."
+   },
+   {
+    "w": "valid",
+    "pos": "adj",
+    "syn": "sound, reasonable; legal",
+    "uz": "asosli; amal qiluvchi",
+    "ex": "This is a valid argument."
+   },
+   {
+    "w": "volume",
+    "pos": "noun",
+    "syn": "amount, quantity; book",
+    "uz": "hajm, miqdor",
+    "ex": "The volume of traffic doubled."
+   },
+   {
+    "w": "access",
+    "pos": "noun/verb",
+    "syn": "entry, availability; reach",
+    "uz": "kirish imkoniyati",
+    "ex": "Many villages lack access to clean water."
+   },
+   {
+    "w": "adequate",
+    "pos": "adj",
+    "syn": "sufficient, enough, acceptable",
+    "uz": "yetarli, qoniqarli",
+    "ex": "Workers need adequate training."
+   },
+   {
+    "w": "annual",
+    "pos": "adj",
+    "syn": "yearly",
+    "uz": "yillik",
+    "ex": "Annual rainfall is very low."
+   },
+   {
+    "w": "apparent",
+    "pos": "adj",
+    "syn": "clear, obvious; seeming",
+    "uz": "ravshan; ko'rinadigan",
+    "ex": "It soon became apparent that the plan had failed."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Speculating and guessing",
+  "items": [
+   {
+    "s": "I'd imagine that …",
+    "uz": "Menimcha, taxminan …",
+    "ex": "I'd imagine that most people use their phones for news.",
+    "use": "Part 3 taxmin"
+   },
+   {
+    "s": "It's probably because …",
+    "uz": "Ehtimol, buning sababi …",
+    "ex": "It's probably because life is busier now.",
+    "use": "Sabab taxmini"
+   },
+   {
+    "s": "I suppose …",
+    "uz": "O'ylaymanki, …",
+    "ex": "I suppose older people prefer TV.",
+    "use": "Yumshoq fikr"
+   },
+   {
+    "s": "My guess would be that …",
+    "uz": "Mening taxminim …",
+    "ex": "My guess would be that prices will keep rising.",
+    "use": "Bashorat"
+   },
+   {
+    "s": "It could be that …",
+    "uz": "Balki …",
+    "ex": "It could be that young people have less free time.",
+    "use": "Ehtimolli sabab"
+   },
+   {
+    "s": "Chances are …",
+    "uz": "Ehtimol, …",
+    "ex": "Chances are he's already left.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "I'm not an expert, but …",
+    "uz": "Mutaxassis emasman, lekin …",
+    "ex": "I'm not an expert, but I think it's about money.",
+    "use": "Bilmagan mavzu"
+   },
+   {
+    "s": "I wouldn't be surprised if …",
+    "uz": "… bo'lsa hayron bo'lmasdim",
+    "ex": "I wouldn't be surprised if prices doubled.",
+    "use": "Bashorat"
+   },
+   {
+    "s": "I'd say it's mainly down to …",
+    "uz": "Asosan …ga bog'liq deyman",
+    "ex": "I'd say it's mainly down to cost.",
+    "use": "Sabab"
+   },
+   {
+    "s": "If I had to guess, …",
+    "uz": "Taxmin qilishim kerak bo'lsa, …",
+    "ex": "If I had to guess, I'd say about half.",
+    "use": "Raqamli taxmin"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Diphthongs /əʊ/ and /aʊ/",
+  "items": [
+   {
+    "w": "go – goal",
+    "ipa": "/ɡəʊ/ – /ɡəʊl/",
+    "uz": "Britaniyada 'go' /əʊ/, 'gou' emas 'go'",
+    "tip": "GƏU"
+   },
+   {
+    "w": "know – now",
+    "ipa": "/nəʊ/ – /naʊ/",
+    "uz": "bilmoq – hozir",
+    "tip": "Farq: /əʊ/ va /aʊ/"
+   },
+   {
+    "w": "low – loud",
+    "ipa": "/ləʊ/ – /laʊd/",
+    "uz": "past – baland ovoz",
+    "tip": "Diagrammalar tavsifi"
+   },
+   {
+    "w": "phone",
+    "ipa": "/fəʊn/",
+    "uz": "'fon' emas, FƏUN",
+    "tip": "Part 1"
+   },
+   {
+    "w": "road – rode",
+    "ipa": "/rəʊd/",
+    "uz": "homofonlar — bir xil o'qiladi",
+    "tip": "Listening"
+   },
+   {
+    "w": "house",
+    "ipa": "/haʊs/",
+    "uz": "'xaus' emas, /h/ yumshoq",
+    "tip": "HAUS"
+   },
+   {
+    "w": "allow",
+    "ipa": "/əˈlaʊ/",
+    "uz": "'alou' emas, ə-LAU",
+    "tip": "Ko'p xato qilinadi"
+   },
+   {
+    "w": "amount",
+    "ipa": "/əˈmaʊnt/",
+    "uz": "Task 1 so'zi",
+    "tip": "ə-MAUNT"
+   },
+   {
+    "w": "though",
+    "ipa": "/ðəʊ/",
+    "uz": "gh o'qilmaydi",
+    "tip": "ÐƏU"
+   },
+   {
+    "w": "drought",
+    "ipa": "/draʊt/",
+    "uz": "qurg'oqchilik; 'drout'",
+    "tip": "Task 2: environment"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "The overview: what to include",
+  "items": [
+   {
+    "w": "the main trend",
+    "syn": "the general pattern",
+    "uz": "asosiy tendensiya",
+    "ex": "The main trend was a steady rise in car use."
+   },
+   {
+    "w": "the biggest change",
+    "syn": "the most significant change",
+    "uz": "eng katta o'zgarish",
+    "ex": "The biggest change was seen in solar power."
+   },
+   {
+    "w": "the highest and lowest categories",
+    "syn": "extremes",
+    "uz": "eng yuqori va eng past toifalar",
+    "ex": "Coal remained the highest source throughout."
+   },
+   {
+    "w": "no specific numbers",
+    "syn": "general statements",
+    "uz": "overview'da raqam yozmang",
+    "ex": "Overall, more people chose public transport."
+   },
+   {
+    "w": "two key features",
+    "syn": "main points",
+    "uz": "2 ta asosiy xususiyat yetarli",
+    "ex": "Overall, A rose while B fell."
+   },
+   {
+    "w": "in general",
+    "syn": "overall, broadly speaking",
+    "uz": "umuman olganda",
+    "ex": "In general, older people spent more."
+   },
+   {
+    "w": "it is evident that",
+    "syn": "it is clear that",
+    "uz": "ko'rinib turibdiki",
+    "ex": "It is evident that sales grew overall."
+   },
+   {
+    "w": "the overall picture",
+    "syn": "the big picture",
+    "uz": "umumiy manzara",
+    "ex": "The overall picture is one of growth."
+   },
+   {
+    "w": "place: after the introduction",
+    "syn": "paragraph 2",
+    "uz": "joyi: kirishdan keyin yoki oxirida",
+    "ex": "Examiners find it easily there."
+   },
+   {
+    "w": "one or two sentences",
+    "syn": "brief",
+    "uz": "1–2 gap",
+    "ex": "Keep it short and clear."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Housing and accommodation",
+  "items": [
+   {
+    "w": "housing shortage",
+    "syn": "lack of homes",
+    "uz": "uy-joy tanqisligi",
+    "ex": "Big cities face a housing shortage."
+   },
+   {
+    "w": "property prices",
+    "syn": "house prices",
+    "uz": "ko'chmas mulk narxlari",
+    "ex": "Property prices have doubled in ten years."
+   },
+   {
+    "w": "high-rise buildings",
+    "syn": "tower blocks, skyscrapers",
+    "uz": "ko'p qavatli binolar",
+    "ex": "High-rise buildings save land."
+   },
+   {
+    "w": "social housing",
+    "syn": "public housing",
+    "uz": "ijtimoiy uy-joy",
+    "ex": "The government should build more social housing."
+   },
+   {
+    "w": "get on the property ladder",
+    "syn": "buy a first home",
+    "uz": "birinchi uyni sotib olmoq",
+    "ex": "Young people struggle to get on the property ladder."
+   },
+   {
+    "w": "rent rather than buy",
+    "syn": "lease",
+    "uz": "sotib olish o'rniga ijaraga olmoq",
+    "ex": "Many prefer to rent rather than buy."
+   },
+   {
+    "w": "living conditions",
+    "syn": "quality of housing",
+    "uz": "turmush sharoiti",
+    "ex": "Poor living conditions affect health."
+   },
+   {
+    "w": "homelessness",
+    "syn": "lack of shelter",
+    "uz": "uysizlik",
+    "ex": "Homelessness is rising in large cities."
+   },
+   {
+    "w": "densely populated",
+    "syn": "crowded",
+    "uz": "aholi zich joylashgan",
+    "ex": "Densely populated areas need good planning."
+   },
+   {
+    "w": "suburbs",
+    "syn": "outskirts",
+    "uz": "shahar chekkasi",
+    "ex": "Families are moving to the suburbs."
+   }
+  ]
+ }
+}

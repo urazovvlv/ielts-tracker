@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Narrative tenses: Past Continuous and Past Perfect",
+  "items": [
+   {
+    "s": "was/were + -ing",
+    "uz": "o'tmishda ma'lum vaqtda davom etayotgan ish",
+    "ex": "I was studying when you called.",
+    "use": "Part 2 hikoya fon"
+   },
+   {
+    "s": "Past Continuous + when + Past Simple",
+    "uz": "uzoq ish + to'satdan sodir bo'lgan ish",
+    "ex": "We were walking home when it started to rain.",
+    "use": "Hikoyani jonlantirish"
+   },
+   {
+    "s": "while + Past Continuous",
+    "uz": "bir vaqtda ikki ish",
+    "ex": "While I was waiting, I read a book.",
+    "use": "Part 2"
+   },
+   {
+    "s": "had + V3 (Past Perfect)",
+    "uz": "o'tmishdagi boshqa voqeadan oldin bo'lgan ish",
+    "ex": "When I arrived, the train had already left.",
+    "use": "Band 7 hikoya"
+   },
+   {
+    "s": "by the time + Past Simple, Past Perfect",
+    "uz": "... bo'lguncha, allaqachon ...",
+    "ex": "By the time I graduated, I had learned three languages.",
+    "use": "Murakkab gap"
+   },
+   {
+    "s": "had never + V3 + before",
+    "uz": "o'shangacha hech qachon ...",
+    "ex": "I had never seen the sea before that trip.",
+    "use": "Birinchi tajriba hikoyasi"
+   },
+   {
+    "s": "Task 1: had + V3 by 2000",
+    "uz": "o'tmish nuqtasigacha bo'lgan o'zgarish",
+    "ex": "By 2000, the population had doubled.",
+    "use": "Task 1 o'tgan davr"
+   },
+   {
+    "s": "❌ When I came, he already left → ✅ he had already left",
+    "uz": "oldin bo'lgan ish uchun Past Perfect",
+    "ex": "When I came home, everyone had gone to bed.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Food and eating",
+  "items": [
+   {
+    "t": "have a sweet tooth",
+    "uz": "shirinlikka o'ch bo'lmoq",
+    "ex": "I have a sweet tooth, so I love halva.",
+    "use": "Part 1: ovqat"
+   },
+   {
+    "t": "eat like a horse",
+    "uz": "juda ko'p yemoq",
+    "ex": "After football, I eat like a horse.",
+    "use": "Hazil"
+   },
+   {
+    "t": "grab a bite",
+    "uz": "tez yengil ovqatlanib olmoq",
+    "ex": "Let's grab a bite before class.",
+    "use": "Kundalik hayot"
+   },
+   {
+    "t": "comfort food",
+    "uz": "ko'nglini ko'taradigan ovqat",
+    "ex": "Plov is my comfort food.",
+    "use": "Part 2: sevimli taom"
+   },
+   {
+    "t": "home-cooked meal",
+    "uz": "uyda pishirilgan ovqat",
+    "ex": "Nothing beats a home-cooked meal.",
+    "use": "Uy va oila"
+   },
+   {
+    "t": "not my cup of tea",
+    "uz": "menga yoqmaydi",
+    "ex": "Spicy food isn't really my cup of tea.",
+    "use": "Yumshoq rad etish"
+   },
+   {
+    "t": "eat out",
+    "uz": "restoranda ovqatlanmoq",
+    "ex": "We eat out about once a week.",
+    "use": "Part 1"
+   },
+   {
+    "t": "a balanced diet",
+    "uz": "muvozanatli ovqatlanish",
+    "ex": "I try to keep a balanced diet.",
+    "use": "Sog'liq"
+   },
+   {
+    "t": "cut down on",
+    "uz": "kamaytirmoq",
+    "ex": "I'm trying to cut down on sugar.",
+    "use": "Odatlarni o'zgartirish"
+   },
+   {
+    "t": "mouth-watering",
+    "uz": "og'izni suvlantiradigan",
+    "ex": "The smell of fresh bread was mouth-watering.",
+    "use": "Tasvirlash"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "layer",
+    "pos": "noun",
+    "syn": "level, sheet, coating",
+    "uz": "qatlam",
+    "ex": "A thin layer of ice covered the lake."
+   },
+   {
+    "w": "link",
+    "pos": "noun/verb",
+    "syn": "connection; connect",
+    "uz": "bog'liqlik; bog'lamoq",
+    "ex": "Studies link sugar to heart disease."
+   },
+   {
+    "w": "locate",
+    "pos": "verb",
+    "syn": "find, place, situate",
+    "uz": "joylashtirmoq, topmoq",
+    "ex": "The factory is located near the river."
+   },
+   {
+    "w": "maximise",
+    "pos": "verb",
+    "syn": "increase, make the most of",
+    "uz": "maksimal darajaga yetkazmoq",
+    "ex": "Farmers want to maximise their profits."
+   },
+   {
+    "w": "minor",
+    "pos": "adj",
+    "syn": "small, slight, unimportant",
+    "uz": "kichik, ahamiyatsiz",
+    "ex": "Only minor changes were made."
+   },
+   {
+    "w": "outcome",
+    "pos": "noun",
+    "syn": "result, consequence",
+    "uz": "natija",
+    "ex": "The outcome of the experiment was clear."
+   },
+   {
+    "w": "partner",
+    "pos": "noun",
+    "syn": "associate, colleague, ally",
+    "uz": "hamkor",
+    "ex": "The two firms became business partners."
+   },
+   {
+    "w": "philosophy",
+    "pos": "noun",
+    "syn": "belief, thinking, principles",
+    "uz": "falsafa, qarash",
+    "ex": "Her philosophy is to learn by doing."
+   },
+   {
+    "w": "physical",
+    "pos": "adj",
+    "syn": "bodily; material",
+    "uz": "jismoniy; moddiy",
+    "ex": "Physical exercise reduces stress."
+   },
+   {
+    "w": "proportion",
+    "pos": "noun",
+    "syn": "part, share, percentage",
+    "uz": "ulush, nisbat",
+    "ex": "A large proportion of students work part-time."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Expressing likes and dislikes",
+  "items": [
+   {
+    "s": "I'm really into …",
+    "uz": "Men … ga juda qiziqaman",
+    "ex": "I'm really into photography these days.",
+    "use": "Like o'rniga"
+   },
+   {
+    "s": "I'm a big fan of …",
+    "uz": "Men …ning katta muxlisiman",
+    "ex": "I'm a big fan of Turkish series.",
+    "use": "Part 1"
+   },
+   {
+    "s": "… is right up my street.",
+    "uz": "Bu aynan menga yoqadigan narsa",
+    "ex": "Sci-fi films are right up my street.",
+    "use": "Idiomatik"
+   },
+   {
+    "s": "I can't stand …",
+    "uz": "… ga toqatim yo'q",
+    "ex": "I can't stand loud music in buses.",
+    "use": "Kuchli dislike"
+   },
+   {
+    "s": "I'm not a huge fan of …",
+    "uz": "… ni unchalik yoqtirmayman",
+    "ex": "I'm not a huge fan of winter.",
+    "use": "Yumshoq dislike"
+   },
+   {
+    "s": "… doesn't do much for me.",
+    "uz": "… menga unchalik ta'sir qilmaydi",
+    "ex": "Modern art doesn't do much for me.",
+    "use": "Neytral"
+   },
+   {
+    "s": "I'm keen on …",
+    "uz": "… ga ishtiyoqim bor",
+    "ex": "I'm keen on learning new languages.",
+    "use": "Rasmiyroq"
+   },
+   {
+    "s": "What I love about … is …",
+    "uz": "…da eng yoqadigan narsa …",
+    "ex": "What I love about Samarkand is its history.",
+    "use": "Cleft — band 7+"
+   },
+   {
+    "s": "I've gone off …",
+    "uz": "… dan ko'nglim qoldi",
+    "ex": "I've gone off fast food recently.",
+    "use": "O'zgargan did"
+   },
+   {
+    "s": "I could … all day.",
+    "uz": "Kun bo'yi … qila olaman",
+    "ex": "I could listen to this song all day.",
+    "use": "Kuchli like"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Letters for spelling (Listening)",
+  "items": [
+   {
+    "w": "A – E – I",
+    "ipa": "/eɪ/ – /iː/ – /aɪ/",
+    "uz": "eng ko'p adashtiriladigan harflar",
+    "tip": "A = 'ey', E = 'ii', I = 'ay'"
+   },
+   {
+    "w": "G – J",
+    "ipa": "/dʒiː/ – /dʒeɪ/",
+    "uz": "G 'jii', J 'jey'",
+    "tip": "Ism va manzillarda"
+   },
+   {
+    "w": "B – V",
+    "ipa": "/biː/ – /viː/",
+    "uz": "lablar: B yopiq, V tish-lab",
+    "tip": "Telefon diktovkasida"
+   },
+   {
+    "w": "M – N",
+    "ipa": "/em/ – /en/",
+    "uz": "M lab yopiladi",
+    "tip": "M for Mike, N for November"
+   },
+   {
+    "w": "double L / double S",
+    "ipa": "/ˈdʌbl el/",
+    "uz": "ikki bir xil harf ketma-ket",
+    "tip": "Listening: 'double L' = ll"
+   },
+   {
+    "w": "R",
+    "ipa": "/ɑː/",
+    "uz": "'ar' — r talaffuz qilinmaydi",
+    "tip": "Britaniya inglizchasi"
+   },
+   {
+    "w": "Y",
+    "ipa": "/waɪ/",
+    "uz": "'uay'",
+    "tip": "Ism yozishda"
+   },
+   {
+    "w": "W",
+    "ipa": "/ˈdʌbljuː/",
+    "uz": "'double-yu'",
+    "tip": "Uzun harf nomi"
+   },
+   {
+    "w": "H",
+    "ipa": "/eɪtʃ/",
+    "uz": "'eych', 'heych' emas",
+    "tip": "Pochta indekslarida"
+   },
+   {
+    "w": "Z",
+    "ipa": "/zed/",
+    "uz": "Britaniyada 'zed', Amerikada 'zii'",
+    "tip": "Listening ikkala variant"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Line graphs: several lines",
+  "items": [
+   {
+    "w": "The line graph illustrates …",
+    "syn": "shows, depicts",
+    "uz": "Chiziqli grafik … ni ko'rsatadi",
+    "ex": "The line graph illustrates sales of three products."
+   },
+   {
+    "w": "followed a similar pattern",
+    "syn": "moved in the same way",
+    "uz": "o'xshash yo'nalishda bordi",
+    "ex": "Coffee and tea sales followed a similar pattern."
+   },
+   {
+    "w": "diverged",
+    "syn": "moved apart",
+    "uz": "bir-biridan uzoqlashdi",
+    "ex": "The two lines diverged after 2010."
+   },
+   {
+    "w": "converged",
+    "syn": "came together",
+    "uz": "bir-biriga yaqinlashdi",
+    "ex": "By 2020 the figures had converged."
+   },
+   {
+    "w": "intersected / crossed",
+    "syn": "met at the same point",
+    "uz": "kesishdi",
+    "ex": "The lines crossed in 2005."
+   },
+   {
+    "w": "overtook",
+    "syn": "surpassed",
+    "uz": "ortda qoldirdi",
+    "ex": "Online sales overtook shop sales in 2015."
+   },
+   {
+    "w": "throughout the period",
+    "syn": "for the whole period",
+    "uz": "butun davr davomida",
+    "ex": "Rice remained the cheapest throughout the period."
+   },
+   {
+    "w": "the other two",
+    "syn": "the remaining ones",
+    "uz": "qolgan ikkitasi",
+    "ex": "The other two lines stayed below 20%."
+   },
+   {
+    "w": "at the same rate",
+    "syn": "equally fast",
+    "uz": "bir xil sur'atda",
+    "ex": "Both figures rose at the same rate."
+   },
+   {
+    "w": "group the lines",
+    "syn": "organise by trend",
+    "uz": "chiziqlarni tendensiya bo'yicha guruhlang",
+    "ex": "Two lines rose, while one fell."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Sports and fitness",
+  "items": [
+   {
+    "w": "physical activity",
+    "syn": "exercise",
+    "uz": "jismoniy faollik",
+    "ex": "Children need an hour of physical activity a day."
+   },
+   {
+    "w": "team spirit",
+    "syn": "cooperation",
+    "uz": "jamoaviy ruh",
+    "ex": "Team sports build team spirit."
+   },
+   {
+    "w": "professional athletes",
+    "syn": "sportspeople",
+    "uz": "professional sportchilar",
+    "ex": "Professional athletes earn huge salaries."
+   },
+   {
+    "w": "sports facilities",
+    "syn": "gyms, stadiums",
+    "uz": "sport inshootlari",
+    "ex": "Rural areas lack sports facilities."
+   },
+   {
+    "w": "competitive",
+    "syn": "rivalrous",
+    "uz": "raqobatbardosh",
+    "ex": "Competitive sport teaches discipline."
+   },
+   {
+    "w": "promote a healthy lifestyle",
+    "syn": "encourage fitness",
+    "uz": "sog'lom turmush tarzini targ'ib qilmoq",
+    "ex": "Schools should promote a healthy lifestyle."
+   },
+   {
+    "w": "role models for young people",
+    "syn": "examples",
+    "uz": "yoshlar uchun namuna",
+    "ex": "Footballers are role models for young people."
+   },
+   {
+    "w": "host major sporting events",
+    "syn": "organise the Olympics",
+    "uz": "yirik sport tadbirlarini o'tkazmoq",
+    "ex": "Hosting the Olympics is very expensive."
+   },
+   {
+    "w": "grassroots sport",
+    "syn": "community sport",
+    "uz": "ommaviy (quyi) sport",
+    "ex": "Money should go to grassroots sport."
+   },
+   {
+    "w": "sedentary jobs",
+    "syn": "desk jobs",
+    "uz": "kam harakatli ishlar",
+    "ex": "Sedentary jobs increase health risks."
+   }
+  ]
+ }
+}

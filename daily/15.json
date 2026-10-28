@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Present Simple vs Present Continuous",
+  "items": [
+   {
+    "s": "Present Simple: odatlar va faktlar",
+    "uz": "har doim, odatda takrorlanadigan ish yoki umumiy haqiqat",
+    "ex": "I usually study in the morning.",
+    "use": "Speaking Part 1: odatlar"
+   },
+   {
+    "s": "Present Continuous: hozir yoki shu davrda",
+    "uz": "aynan hozir yoki shu kunlarda davom etayotgan ish",
+    "ex": "I'm preparing for IELTS these days.",
+    "use": "Part 1: hozirgi hayotingiz"
+   },
+   {
+    "s": "Stative verbs: know, like, believe, own",
+    "uz": "holat fe'llari odatda -ing olmaydi",
+    "ex": "I know what you mean.",
+    "use": "Ko'p uchraydigan xato"
+   },
+   {
+    "s": "❌ I am knowing → ✅ I know",
+    "uz": "know, understand, want continuous bo'lmaydi",
+    "ex": "I understand the question.",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "think: fikr vs jarayon",
+    "uz": "I think (fikr) / I'm thinking (o'ylayapman)",
+    "ex": "I think it's useful. I'm thinking about changing jobs.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "Frequency adverbs: always, often, rarely",
+    "uz": "odatda fe'ldan oldin, be dan keyin",
+    "ex": "I rarely watch TV. I'm always busy.",
+    "use": "Part 1 javoblari"
+   },
+   {
+    "s": "Present Simple in Task 1 (static data)",
+    "uz": "vaqt ko'rsatilmagan jadval/diagrammalar",
+    "ex": "The chart shows that most people prefer buses.",
+    "use": "Task 1 kirish"
+   },
+   {
+    "s": "Present Simple in Task 2",
+    "uz": "umumiy fikr va faktlar",
+    "ex": "Many people believe that schools should teach finance.",
+    "use": "Task 2 asosiy zamon"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Family and home",
+  "items": [
+   {
+    "t": "run in the family",
+    "uz": "oilada nasldan-naslga o'tmoq",
+    "ex": "Musical talent runs in our family.",
+    "use": "Part 1: oila"
+   },
+   {
+    "t": "the apple of someone's eye",
+    "uz": "eng sevimli, ardoqli odam",
+    "ex": "My little sister is the apple of my dad's eye.",
+    "use": "Oila a'zosini tasvirlash"
+   },
+   {
+    "t": "like father, like son",
+    "uz": "otasiga o'xshagan o'g'il",
+    "ex": "He became a doctor too — like father, like son.",
+    "use": "Hazil aralash"
+   },
+   {
+    "t": "home sweet home",
+    "uz": "o'z uyim — o'lan to'shagim",
+    "ex": "After the trip I thought: home sweet home.",
+    "use": "Sayohatdan qaytish"
+   },
+   {
+    "t": "feel at home in",
+    "uz": "biror joyda o'zini erkin his qilmoq",
+    "ex": "I quickly felt at home in Tashkent.",
+    "use": "Part 2: shahar"
+   },
+   {
+    "t": "bring up",
+    "uz": "tarbiyalamoq",
+    "ex": "I was brought up by my grandparents.",
+    "use": "Bolalik haqida"
+   },
+   {
+    "t": "a family man",
+    "uz": "oilasiga juda bog'langan erkak",
+    "ex": "My father is a real family man.",
+    "use": "Odamni tasvirlash"
+   },
+   {
+    "t": "black sheep of the family",
+    "uz": "oiladagi 'boshqacha', qoidaga sig'maydigan odam",
+    "ex": "My cousin was the black sheep of the family.",
+    "use": "Hikoyalar"
+   },
+   {
+    "t": "flesh and blood",
+    "uz": "o'z qon-qarindoshi",
+    "ex": "You can't ignore your own flesh and blood.",
+    "use": "Part 3: oila qadriyatlari"
+   },
+   {
+    "t": "a full house",
+    "uz": "uy mehmonga to'la",
+    "ex": "During Navruz we always have a full house.",
+    "use": "Bayramlar haqida"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "exclude",
+    "pos": "verb",
+    "syn": "leave out, omit, rule out",
+    "uz": "chiqarib tashlamoq",
+    "ex": "Children were excluded from the study."
+   },
+   {
+    "w": "framework",
+    "pos": "noun",
+    "syn": "structure, system, basis",
+    "uz": "asos, tizim",
+    "ex": "The law provides a framework for trade."
+   },
+   {
+    "w": "fund",
+    "pos": "noun/verb",
+    "syn": "finance, money; pay for",
+    "uz": "jamg'arma; moliyalashtirmoq",
+    "ex": "The project was funded by the EU."
+   },
+   {
+    "w": "illustrate",
+    "pos": "verb",
+    "syn": "show, demonstrate, explain",
+    "uz": "ko'rsatib bermoq, tasvirlamoq",
+    "ex": "The graph illustrates the change."
+   },
+   {
+    "w": "immigrate",
+    "pos": "verb",
+    "syn": "move to a country, settle",
+    "uz": "boshqa davlatga ko'chib kelmoq",
+    "ex": "Many families immigrated in the 1990s."
+   },
+   {
+    "w": "imply",
+    "pos": "verb",
+    "syn": "suggest, indicate, hint",
+    "uz": "shama qilmoq, anglatmoq",
+    "ex": "The results imply a strong link."
+   },
+   {
+    "w": "initial",
+    "pos": "adj",
+    "syn": "first, early, original",
+    "uz": "dastlabki",
+    "ex": "The initial results were promising."
+   },
+   {
+    "w": "instance",
+    "pos": "noun",
+    "syn": "example, case",
+    "uz": "misol, holat",
+    "ex": "In this instance, the drug failed."
+   },
+   {
+    "w": "interact",
+    "pos": "verb",
+    "syn": "communicate, work together",
+    "uz": "o'zaro ta'sir qilmoq, muloqot qilmoq",
+    "ex": "Children interact more in small groups."
+   },
+   {
+    "w": "justify",
+    "pos": "verb",
+    "syn": "explain, defend, give reasons for",
+    "uz": "oqlamoq, asoslamoq",
+    "ex": "It is hard to justify the high cost."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about habits and routines",
+  "items": [
+   {
+    "s": "I tend to …",
+    "uz": "Odatda …",
+    "ex": "I tend to study better in the mornings.",
+    "use": "Odatlarni tabiiy aytish"
+   },
+   {
+    "s": "More often than not, …",
+    "uz": "Ko'pincha, …",
+    "ex": "More often than not, I cook at home.",
+    "use": "Frequency, band 7"
+   },
+   {
+    "s": "Every now and then, …",
+    "uz": "Vaqti-vaqti bilan, …",
+    "ex": "Every now and then, I go hiking.",
+    "use": "Kamdan-kam ish"
+   },
+   {
+    "s": "I make a point of …ing",
+    "uz": "… qilishni albatta odat qilganman",
+    "ex": "I make a point of reading every night.",
+    "use": "Muhim odat"
+   },
+   {
+    "s": "It's part of my daily routine.",
+    "uz": "Bu kundalik tartibimning bir qismi",
+    "ex": "Going to the gym is part of my daily routine.",
+    "use": "Part 1"
+   },
+   {
+    "s": "Hardly ever …",
+    "uz": "Deyarli hech qachon …",
+    "ex": "I hardly ever eat fast food.",
+    "use": "Inkor ma'nosi"
+   },
+   {
+    "s": "Whenever I get the chance, …",
+    "uz": "Imkon bo'ldi deguncha, …",
+    "ex": "Whenever I get the chance, I visit my parents.",
+    "use": "Sevimli faoliyat"
+   },
+   {
+    "s": "I'm in the habit of …ing",
+    "uz": "… qilish odatim bor",
+    "ex": "I'm in the habit of checking my phone too much.",
+    "use": "Yomon odatlar"
+   },
+   {
+    "s": "On weekdays … but at weekends …",
+    "uz": "Ish kunlari … dam olish kunlari esa …",
+    "ex": "On weekdays I'm busy, but at weekends I relax.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "It depends on my mood.",
+    "uz": "Kayfiyatimga bog'liq",
+    "ex": "Whether I go out depends on my mood.",
+    "use": "Moslashuvchan javob"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Numbers: -teen vs -ty",
+  "items": [
+   {
+    "w": "thirteen – thirty",
+    "ipa": "/ˌθɜːˈtiːn/ – /ˈθɜːti/",
+    "uz": "-teen: urg'u oxirida, -ty: boshida",
+    "tip": "thir-TEEN / THIR-ty"
+   },
+   {
+    "w": "fourteen – forty",
+    "ipa": "/ˌfɔːˈtiːn/ – /ˈfɔːti/",
+    "uz": "Listening'da eng ko'p adashtiriladigan juftlik",
+    "tip": "four-TEEN / FOR-ty"
+   },
+   {
+    "w": "fifteen – fifty",
+    "ipa": "/ˌfɪfˈtiːn/ – /ˈfɪfti/",
+    "uz": "-teen da uzun /iː/",
+    "tip": "fif-TEEN / FIF-ty"
+   },
+   {
+    "w": "sixteen – sixty",
+    "ipa": "/ˌsɪksˈtiːn/ – /ˈsɪksti/",
+    "uz": "oxiri cho'ziq yoki qisqa",
+    "tip": "six-TEEN / SIX-ty"
+   },
+   {
+    "w": "seventeen – seventy",
+    "ipa": "/ˌsevnˈtiːn/ – /ˈsevnti/",
+    "uz": "3 bo'g'in, urg'u farqi",
+    "tip": "seven-TEEN / SEV-en-ty"
+   },
+   {
+    "w": "eighteen – eighty",
+    "ipa": "/ˌeɪˈtiːn/ – /ˈeɪti/",
+    "uz": "eighteen da /t/ kuchli",
+    "tip": "eigh-TEEN / EIGH-ty"
+   },
+   {
+    "w": "nineteen – ninety",
+    "ipa": "/ˌnaɪnˈtiːn/ – /ˈnaɪnti/",
+    "uz": "ninety ba'zan 'nainy' kabi eshitiladi",
+    "tip": "nine-TEEN / NINE-ty"
+   },
+   {
+    "w": "hundred",
+    "ipa": "/ˈhʌndrəd/",
+    "uz": "/h/ ni tashlab ketmang",
+    "tip": "HUN-drəd"
+   },
+   {
+    "w": "thousand",
+    "ipa": "/ˈθaʊznd/",
+    "uz": "boshi /θ/, 'tauzand' emas",
+    "tip": "THOU-znd"
+   },
+   {
+    "w": "a/one hundred and five",
+    "ipa": "/wʌn ˈhʌndrəd ən faɪv/",
+    "uz": "Britaniyada 'and' qo'shiladi",
+    "tip": "Listening: raqamlarni aniq yozing"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Bar charts: introducing and comparing",
+  "items": [
+   {
+    "w": "The bar chart compares …",
+    "syn": "illustrates, shows",
+    "uz": "Ustunli diagramma … ni taqqoslaydi",
+    "ex": "The bar chart compares spending in five countries."
+   },
+   {
+    "w": "the vertical axis",
+    "syn": "the y-axis",
+    "uz": "vertikal o'q",
+    "ex": "The vertical axis shows the number of visitors."
+   },
+   {
+    "w": "the tallest bar",
+    "syn": "the highest figure",
+    "uz": "eng baland ustun (yozuvda raqam bilan ayting)",
+    "ex": "The highest figure was for Japan, at 80%."
+   },
+   {
+    "w": "by contrast",
+    "syn": "on the other hand",
+    "uz": "aksincha",
+    "ex": "By contrast, Brazil spent very little."
+   },
+   {
+    "w": "a noticeable difference",
+    "syn": "a clear gap",
+    "uz": "sezilarli farq",
+    "ex": "There was a noticeable difference between men and women."
+   },
+   {
+    "w": "categories",
+    "syn": "groups, types",
+    "uz": "toifalar",
+    "ex": "The data are divided into four categories."
+   },
+   {
+    "w": "the figure for X",
+    "syn": "the number for X",
+    "uz": "X ga tegishli ko'rsatkich",
+    "ex": "The figure for Italy was slightly lower."
+   },
+   {
+    "w": "considerably more / fewer",
+    "syn": "far more / far fewer",
+    "uz": "ancha ko'p / kam",
+    "ex": "Considerably more men than women played sport."
+   },
+   {
+    "w": "almost identical",
+    "syn": "nearly the same",
+    "uz": "deyarli bir xil",
+    "ex": "Spending in 2000 and 2010 was almost identical."
+   },
+   {
+    "w": "Group similar bars",
+    "syn": "organise data",
+    "uz": "o'xshash ustunlarni bitta gapda birlashtiring",
+    "ex": "Germany and France both had around 40%."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Art and culture",
+  "items": [
+   {
+    "w": "the arts",
+    "syn": "music, painting, theatre",
+    "uz": "san'at (umumiy)",
+    "ex": "Governments should fund the arts."
+   },
+   {
+    "w": "cultural heritage",
+    "syn": "traditions, history",
+    "uz": "madaniy meros",
+    "ex": "Museums protect our cultural heritage."
+   },
+   {
+    "w": "creativity",
+    "syn": "imagination",
+    "uz": "ijodkorlik",
+    "ex": "Art lessons develop creativity."
+   },
+   {
+    "w": "artistic expression",
+    "syn": "self-expression",
+    "uz": "badiiy ifoda",
+    "ex": "Graffiti can be a form of artistic expression."
+   },
+   {
+    "w": "public funding",
+    "syn": "state support",
+    "uz": "davlat moliyasi",
+    "ex": "Public funding for theatres has been cut."
+   },
+   {
+    "w": "a luxury rather than a necessity",
+    "syn": "non-essential",
+    "uz": "zaruriyat emas, hashamat",
+    "ex": "Some see art as a luxury rather than a necessity."
+   },
+   {
+    "w": "enrich people's lives",
+    "syn": "improve quality of life",
+    "uz": "hayotni boyitmoq",
+    "ex": "Music enriches people's lives."
+   },
+   {
+    "w": "commercial value",
+    "syn": "profit",
+    "uz": "tijoriy qiymat",
+    "ex": "Not all art has commercial value."
+   },
+   {
+    "w": "cultural events",
+    "syn": "festivals, exhibitions",
+    "uz": "madaniy tadbirlar",
+    "ex": "Cultural events attract tourists."
+   },
+   {
+    "w": "appreciate art",
+    "syn": "value art",
+    "uz": "san'atni qadrlamoq",
+    "ex": "Children should learn to appreciate art."
+   }
+  ]
+ }
+}
