@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Final check: grammar for Task 1",
+  "items": [
+   {
+    "s": "Introduction: Present Simple",
+    "uz": "The chart shows / compares",
+    "ex": "The bar chart compares spending in four countries.",
+    "use": "Kirish"
+   },
+   {
+    "s": "Past data: Past Simple throughout",
+    "uz": "o'tgan yillar",
+    "ex": "Exports rose from 2000 to 2010.",
+    "use": "Izchillik"
+   },
+   {
+    "s": "Future data: be expected / projected to",
+    "uz": "prognoz",
+    "ex": "Demand is projected to reach 5 million.",
+    "use": "Prognoz"
+   },
+   {
+    "s": "Maps/processes: passive voice",
+    "uz": "was built / is heated",
+    "ex": "A bridge was built across the river.",
+    "use": "Maps/process"
+   },
+   {
+    "s": "Agreement: the number of … was",
+    "uz": "birlik fe'l",
+    "ex": "The number of tourists was 3 million.",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "Prepositions: rise to / by / from",
+    "uz": "to = gacha, by = ga",
+    "ex": "It rose by 10% to 50%.",
+    "use": "Aniqlik"
+   },
+   {
+    "s": "Comparatives with figures",
+    "uz": "twice as many as, much higher than",
+    "ex": "There were twice as many cars as bikes.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "Proofread: articles and plurals",
+    "uz": "a/the, -s",
+    "ex": "the highest figure, two million people",
+    "use": "Oxirgi 2 daqiqa"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Finishing strong",
+  "items": [
+   {
+    "t": "the home stretch",
+    "uz": "marraga yaqin oxirgi qism",
+    "ex": "We're on the home stretch now — two days left.",
+    "use": "IELTS"
+   },
+   {
+    "t": "go the distance",
+    "uz": "oxirigacha bormoq",
+    "ex": "You've gone the distance — 60 days!",
+    "use": "Motivatsiya"
+   },
+   {
+    "t": "cross the finish line",
+    "uz": "marrani kesib o'tmoq",
+    "ex": "Let's cross the finish line in style.",
+    "use": "Yakun"
+   },
+   {
+    "t": "save the best till last",
+    "uz": "eng yaxshisini oxiriga qoldirmoq",
+    "ex": "I saved the best till last — the full mock.",
+    "use": "Hazil"
+   },
+   {
+    "t": "tie up loose ends",
+    "uz": "qolgan mayda ishlarni tugatmoq",
+    "ex": "Today I'll tie up loose ends before the exam.",
+    "use": "Tayyorgarlik"
+   },
+   {
+    "t": "last but not least",
+    "uz": "oxirgi, lekin muhimligi kam emas",
+    "ex": "Last but not least, get some sleep.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "in the final countdown",
+    "uz": "so'nggi sanoqda",
+    "ex": "We're in the final countdown to exam day.",
+    "use": "Imtihon"
+   },
+   {
+    "t": "give it one last push",
+    "uz": "oxirgi marta zo'r berish",
+    "ex": "Give it one last push this week.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "finish on a high",
+    "uz": "yuqori notada tugatmoq",
+    "ex": "I want to finish on a high.",
+    "use": "Maqsad"
+   },
+   {
+    "t": "all set",
+    "uz": "hammasi tayyor",
+    "ex": "Passport, pencils, water — I'm all set.",
+    "use": "Imtihon kuni"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "prominent",
+    "pos": "adj",
+    "syn": "important, famous; noticeable",
+    "uz": "taniqli; ko'zga tashlanadigan",
+    "ex": "She is a prominent scientist."
+   },
+   {
+    "w": "rigorous",
+    "pos": "adj",
+    "syn": "strict, thorough",
+    "uz": "qat'iy, puxta",
+    "ex": "The drug passed rigorous tests."
+   },
+   {
+    "w": "robust",
+    "pos": "adj",
+    "syn": "strong, sturdy",
+    "uz": "mustahkam, kuchli",
+    "ex": "The economy remained robust."
+   },
+   {
+    "w": "scarce",
+    "pos": "adj",
+    "syn": "rare, insufficient",
+    "uz": "kam, tanqis",
+    "ex": "Water is scarce in the desert."
+   },
+   {
+    "w": "sophisticated",
+    "pos": "adj",
+    "syn": "advanced, complex",
+    "uz": "murakkab, zamonaviy",
+    "ex": "Sophisticated software detects fraud."
+   },
+   {
+    "w": "sparse",
+    "pos": "adj",
+    "syn": "thin, scattered",
+    "uz": "siyrak",
+    "ex": "The population is sparse in the north."
+   },
+   {
+    "w": "subtle",
+    "pos": "adj",
+    "syn": "slight, delicate",
+    "uz": "nozik",
+    "ex": "There are subtle differences between the two."
+   },
+   {
+    "w": "susceptible",
+    "pos": "adj",
+    "syn": "vulnerable, prone",
+    "uz": "moyil, ta'sirchan",
+    "ex": "Children are susceptible to infections."
+   },
+   {
+    "w": "tangible",
+    "pos": "adj",
+    "syn": "real, concrete",
+    "uz": "aniq, seziladigan",
+    "ex": "The plan brought tangible benefits."
+   },
+   {
+    "w": "thrive",
+    "pos": "verb",
+    "syn": "flourish, prosper",
+    "uz": "gullab-yashnamoq",
+    "ex": "Small businesses thrive in tourist areas."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Exam day: Speaking test strategies",
+  "items": [
+   {
+    "s": "Good morning. My name is …",
+    "uz": "Salomlashish",
+    "ex": "Good morning. My name is Xushnud.",
+    "use": "Boshlanish"
+   },
+   {
+    "s": "Could you repeat the question, please?",
+    "uz": "Savolni takrorlashni so'rash — ruxsat",
+    "ex": "Could you repeat the question, please?",
+    "use": "Part 1/3"
+   },
+   {
+    "s": "Sorry, what does … mean?",
+    "uz": "So'z ma'nosini so'rash (Part 1 va 3 da)",
+    "ex": "Sorry, what does 'leisure' mean?",
+    "use": "Part 3 da mumkin"
+   },
+   {
+    "s": "Let me think for a second.",
+    "uz": "Bir soniya o'ylab olay",
+    "ex": "Let me think for a second… I'd say…",
+    "use": "Fluency"
+   },
+   {
+    "s": "Keep talking — silence costs marks",
+    "uz": "Jimlik ball tushiradi",
+    "ex": "Pauza kerak bo'lsa ham ibora bilan to'ldiring",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Smile and make eye contact",
+    "uz": "Tabassum, ko'z bilan aloqa",
+    "ex": "Xotirjam ko'rinish ishonch beradi",
+    "use": "Psixologiya"
+   },
+   {
+    "s": "Ask for clarification in Part 3 if needed",
+    "uz": "Part 3 da aniqlashtirish so'rash mumkin",
+    "ex": "Do you mean in my country or in general?",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Correct yourself naturally",
+    "uz": "O'z xatoingizni tabiiy tuzating",
+    "ex": "We go — sorry, we went there last year.",
+    "use": "Tabiiy"
+   },
+   {
+    "s": "Use a range of tenses",
+    "uz": "Zamonlarni aralashtiring",
+    "ex": "Past, present, future, conditionals",
+    "use": "GRA"
+   },
+   {
+    "s": "Thank you. It was nice talking to you.",
+    "uz": "Xayrlashish",
+    "ex": "Thank you. It was nice talking to you.",
+    "use": "Yakun"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Final review: tricky word stress",
+  "items": [
+   {
+    "w": "eCONomy",
+    "ipa": "/ɪˈkɒnəmi/",
+    "uz": "i-KON-ə-mi",
+    "tip": "Task 2"
+   },
+   {
+    "w": "CONtroversy",
+    "ipa": "/ˈkɒntrəvɜːsi/",
+    "uz": "KON-trə-ver-si (Britaniya)",
+    "tip": "Task 2"
+   },
+   {
+    "w": "ecoNOmic",
+    "ipa": "/ˌiːkəˈnɒmɪk/",
+    "uz": "ee-kə-NOM-ik",
+    "tip": "Task 2"
+   },
+   {
+    "w": "tecHNOlogy",
+    "ipa": "/tekˈnɒlədʒi/",
+    "uz": "tek-NOL-ə-ji",
+    "tip": "Task 2"
+   },
+   {
+    "w": "INfrastructure",
+    "ipa": "/ˈɪnfrəstrʌktʃə/",
+    "uz": "IN-frə-struk-chə — urg'u boshida",
+    "tip": "Task 2"
+   },
+   {
+    "w": "ADvertising",
+    "ipa": "/ˈædvətaɪzɪŋ/",
+    "uz": "AD-və-tai-ziŋ",
+    "tip": "Media"
+   },
+   {
+    "w": "acaDEMic",
+    "ipa": "/ˌækəˈdemɪk/",
+    "uz": "a-kə-DEM-ik",
+    "tip": "Ta'lim"
+   },
+   {
+    "w": "CATegory",
+    "ipa": "/ˈkætəɡəri/",
+    "uz": "KAT-ə-gə-ri",
+    "tip": "Task 1"
+   },
+   {
+    "w": "comPARison",
+    "ipa": "/kəmˈpærɪsn/",
+    "uz": "kəm-PA-ri-sn",
+    "tip": "Task 1"
+   },
+   {
+    "w": "sigNIFicant",
+    "ipa": "/sɪɡˈnɪfɪkənt/",
+    "uz": "sig-NIF-i-kənt",
+    "tip": "Task 1/2"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Sentence bank: bar charts, pie charts and tables",
+  "items": [
+   {
+    "w": "X had the highest proportion of Y, at A%",
+    "syn": "top value",
+    "uz": "eng yuqori ulush",
+    "ex": "Japan had the highest proportion of elderly people, at 28%."
+   },
+   {
+    "w": "X accounted for nearly half of the total",
+    "syn": "share",
+    "uz": "jamining deyarli yarmi",
+    "ex": "Rent accounted for nearly half of the total."
+   },
+   {
+    "w": "X was twice as high as Y",
+    "syn": "ratio",
+    "uz": "ikki baravar yuqori",
+    "ex": "Spending in Norway was twice as high as in Spain."
+   },
+   {
+    "w": "In contrast, X recorded the lowest figure, at only A",
+    "syn": "lowest",
+    "uz": "eng past",
+    "ex": "In contrast, Egypt recorded the lowest figure, at only 4%."
+   },
+   {
+    "w": "X and Y had similar figures, at around A",
+    "syn": "similarity",
+    "uz": "o'xshash",
+    "ex": "France and Italy had similar figures, at around 30%."
+   },
+   {
+    "w": "The remaining categories each made up less than A%",
+    "syn": "small items",
+    "uz": "qolganlari",
+    "ex": "The remaining categories each made up less than 10%."
+   },
+   {
+    "w": "While X dominated in A, Y was more popular in B",
+    "syn": "contrast by group",
+    "uz": "guruhlar bo'yicha kontrast",
+    "ex": "While cars dominated in the USA, bikes were more popular in the Netherlands."
+   },
+   {
+    "w": "X ranked first, followed by Y and Z",
+    "syn": "ranking",
+    "uz": "reyting",
+    "ex": "China ranked first, followed by India and the USA."
+   },
+   {
+    "w": "The gap between X and Y was greatest in …",
+    "syn": "difference",
+    "uz": "farq eng katta",
+    "ex": "The gap between men and women was greatest in Japan."
+   },
+   {
+    "w": "A similar pattern can be seen for X",
+    "syn": "repetition",
+    "uz": "o'xshash naqsh",
+    "ex": "A similar pattern can be seen for exports."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: introductions and thesis statements",
+  "items": [
+   {
+    "w": "Paraphrase the topic in one sentence",
+    "syn": "background",
+    "uz": "mavzuni bitta gapda qayta ifodalash",
+    "ex": "It is often argued that university education should be free for all."
+   },
+   {
+    "w": "State the essay's direction",
+    "syn": "thesis",
+    "uz": "inshoning yo'nalishini ayting",
+    "ex": "This essay will discuss both views before giving my opinion."
+   },
+   {
+    "w": "Give your position (if asked)",
+    "syn": "opinion",
+    "uz": "fikringiz (so'ralsa)",
+    "ex": "I believe that the benefits outweigh the costs."
+   },
+   {
+    "w": "Two sentences are enough",
+    "syn": "length",
+    "uz": "ikki gap yetarli",
+    "ex": "40–50 words for the introduction."
+   },
+   {
+    "w": "Don't start with 'Nowadays' every time",
+    "syn": "variety",
+    "uz": "har safar 'Nowadays' bilan boshlamang",
+    "ex": "In recent years / It is widely believed that…"
+   },
+   {
+    "w": "Avoid copying the question",
+    "syn": "originality",
+    "uz": "savolni ko'chirmang",
+    "ex": "Change words and structure."
+   },
+   {
+    "w": "Avoid general statements about 'the world'",
+    "syn": "focus",
+    "uz": "'Bugungi dunyoda' kabi umumiy gaplardan qoching",
+    "ex": "❌ In today's modern world, technology is everywhere."
+   },
+   {
+    "w": "Outline main points briefly (optional)",
+    "syn": "preview",
+    "uz": "asosiy fikrlarni qisqa ayting",
+    "ex": "…mainly because it saves money and time."
+   },
+   {
+    "w": "Make the essay type clear",
+    "syn": "match the task",
+    "uz": "insho turiga mos",
+    "ex": "Agree/disagree → clear position."
+   },
+   {
+    "w": "Spend about 3 minutes on it",
+    "syn": "time",
+    "uz": "taxminan 3 daqiqa",
+    "ex": "Leave time for body paragraphs."
+   }
+  ]
+ }
+}

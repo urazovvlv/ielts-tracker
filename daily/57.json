@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Review: choosing the right tense",
+  "items": [
+   {
+    "s": "Present Simple: facts and habits",
+    "uz": "faktlar va odatlar",
+    "ex": "Water boils at 100°C. I study every morning.",
+    "use": "Asos"
+   },
+   {
+    "s": "Present Continuous: now / temporary",
+    "uz": "hozir, vaqtinchalik",
+    "ex": "I'm living with my aunt this year.",
+    "use": "Speaking"
+   },
+   {
+    "s": "Present Perfect: past → now, no time",
+    "uz": "o'tmishdan hozirgacha",
+    "ex": "Technology has changed education.",
+    "use": "Task 2 kirish"
+   },
+   {
+    "s": "Past Simple: finished time",
+    "uz": "tugagan vaqt",
+    "ex": "Sales fell in 2009.",
+    "use": "Task 1"
+   },
+   {
+    "s": "Past Perfect: before another past event",
+    "uz": "boshqa o'tmishdan oldin",
+    "ex": "By 2010, the figure had doubled.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Future forms: will / going to / expected to",
+    "uz": "kelajak",
+    "ex": "It is expected to rise.",
+    "use": "Task 1 prognoz"
+   },
+   {
+    "s": "Conditionals for Task 2 solutions",
+    "uz": "yechim natijasi",
+    "ex": "If taxes were lowered, people would spend more.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Check: one time frame per paragraph",
+    "uz": "har abzasda izchil zamon",
+    "ex": "Zamonlarni sababsiz almashtirmang",
+    "use": "Coherence + GRA"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Confidence and nerves",
+  "items": [
+   {
+    "t": "keep your nerve",
+    "uz": "o'zini yo'qotmaslik",
+    "ex": "Keep your nerve in the Speaking test.",
+    "use": "Imtihon"
+   },
+   {
+    "t": "get the jitters",
+    "uz": "titroq bosmoq",
+    "ex": "I always get the jitters before exams.",
+    "use": "Hayajon"
+   },
+   {
+    "t": "hold your head high",
+    "uz": "boshini baland ko'tarmoq",
+    "ex": "Hold your head high — you've worked hard.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "rise to the occasion",
+    "uz": "kerakli paytda yaxshi natija ko'rsatmoq",
+    "ex": "She rose to the occasion in the final.",
+    "use": "Muvaffaqiyat"
+   },
+   {
+    "t": "feel out of your depth",
+    "uz": "o'zini qobiliyatsiz his qilmoq",
+    "ex": "I felt out of my depth in the advanced class.",
+    "use": "Qiyinchilik"
+   },
+   {
+    "t": "a confidence boost",
+    "uz": "ishonchni oshiruvchi narsa",
+    "ex": "A good mock is a real confidence boost.",
+    "use": "IELTS"
+   },
+   {
+    "t": "believe in yourself",
+    "uz": "o'zingga ishon",
+    "ex": "Believe in yourself on exam day.",
+    "use": "Motivatsiya"
+   },
+   {
+    "t": "fake it till you make it",
+    "uz": "ishonchli ko'rinib, keyin haqiqatda ishonchli bo'lmoq",
+    "ex": "In Speaking, fake it till you make it — smile and speak.",
+    "use": "Strategiya"
+   },
+   {
+    "t": "in your element",
+    "uz": "o'z suvida (qulay muhitda)",
+    "ex": "When she talks about history, she's in her element.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "steady your nerves",
+    "uz": "asabni tinchlantirmoq",
+    "ex": "Take a deep breath to steady your nerves.",
+    "use": "Maslahat"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "deplete",
+    "pos": "verb",
+    "syn": "use up, exhaust",
+    "uz": "tugatmoq, kamaytirmoq",
+    "ex": "Overfishing has depleted fish stocks."
+   },
+   {
+    "w": "deteriorate",
+    "pos": "verb",
+    "syn": "get worse, decline",
+    "uz": "yomonlashmoq",
+    "ex": "Air quality deteriorated in winter."
+   },
+   {
+    "w": "detrimental",
+    "pos": "adj",
+    "syn": "harmful, damaging",
+    "uz": "zararli",
+    "ex": "Lack of sleep is detrimental to health."
+   },
+   {
+    "w": "drastic",
+    "pos": "adj",
+    "syn": "extreme, severe",
+    "uz": "keskin, jiddiy",
+    "ex": "Drastic measures are needed."
+   },
+   {
+    "w": "encompass",
+    "pos": "verb",
+    "syn": "include, cover",
+    "uz": "qamrab olmoq",
+    "ex": "The course encompasses all four skills."
+   },
+   {
+    "w": "endeavour",
+    "pos": "noun/verb",
+    "syn": "attempt, effort; try",
+    "uz": "harakat, intilish",
+    "ex": "Learning a language is a lifelong endeavour."
+   },
+   {
+    "w": "exacerbate",
+    "pos": "verb",
+    "syn": "make worse, worsen",
+    "uz": "yomonlashtirmoq",
+    "ex": "Traffic exacerbates air pollution."
+   },
+   {
+    "w": "feasible",
+    "pos": "adj",
+    "syn": "possible, practical",
+    "uz": "amalga oshiriladigan",
+    "ex": "Is it feasible to ban all cars?"
+   },
+   {
+    "w": "foster",
+    "pos": "verb",
+    "syn": "encourage, promote",
+    "uz": "rivojlantirmoq, qo'llab-quvvatlamoq",
+    "ex": "Schools should foster creativity."
+   },
+   {
+    "w": "hinder",
+    "pos": "verb",
+    "syn": "obstruct, slow down",
+    "uz": "to'sqinlik qilmoq",
+    "ex": "Poor roads hinder development."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about technology (Part 3)",
+  "items": [
+   {
+    "s": "Technology has made life more convenient, but …",
+    "uz": "Texnologiya hayotni qulayroq qildi, lekin …",
+    "ex": "Technology has made life more convenient, but less personal.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "We've become overly dependent on …",
+    "uz": "… ga haddan ortiq qaram bo'lib qoldik",
+    "ex": "We've become overly dependent on our phones.",
+    "use": "Tanqid"
+   },
+   {
+    "s": "It cuts both ways.",
+    "uz": "Ikki tomonlama ta'sir qiladi",
+    "ex": "Social media cuts both ways.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Older people are often left behind.",
+    "uz": "Kattalar ko'pincha ortda qoladi",
+    "ex": "Older people are often left behind by technology.",
+    "use": "Ijtimoiy"
+   },
+   {
+    "s": "Privacy is becoming a major concern.",
+    "uz": "Maxfiylik jiddiy muammoga aylanmoqda",
+    "ex": "Privacy is becoming a major concern online.",
+    "use": "Muammo"
+   },
+   {
+    "s": "It has opened up new opportunities for …",
+    "uz": "… uchun yangi imkoniyatlar ochdi",
+    "ex": "It has opened up new opportunities for small businesses.",
+    "use": "Foyda"
+   },
+   {
+    "s": "Face-to-face interaction is declining.",
+    "uz": "Yuzma-yuz muloqot kamaymoqda",
+    "ex": "Face-to-face interaction is declining among teenagers.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "It depends on how it's used.",
+    "uz": "Qanday ishlatilishiga bog'liq",
+    "ex": "Ultimately, it depends on how it's used.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "AI will change the job market dramatically.",
+    "uz": "AI mehnat bozorini tubdan o'zgartiradi",
+    "ex": "AI will change the job market dramatically.",
+    "use": "Kelajak"
+   },
+   {
+    "s": "Digital skills are now as basic as reading.",
+    "uz": "Raqamli ko'nikmalar endi o'qish kabi asosiy",
+    "ex": "Digital skills are now as basic as reading and writing.",
+    "use": "Band 7 fikr"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Fractions, decimals and years",
+  "items": [
+   {
+    "w": "a half / a third / a quarter",
+    "ipa": "/hɑːf/ /θɜːd/ /ˈkwɔːtə/",
+    "uz": "kasrlar",
+    "tip": "Listening va Task 1"
+   },
+   {
+    "w": "two thirds / three quarters",
+    "ipa": "/tuː θɜːdz/ /θriː ˈkwɔːtəz/",
+    "uz": "ko'plik -s",
+    "tip": "Fractions"
+   },
+   {
+    "w": "0.5 → nought point five",
+    "ipa": "/nɔːt pɔɪnt faɪv/",
+    "uz": "Britaniya 'nought'",
+    "tip": "Listening"
+   },
+   {
+    "w": "2.75 → two point seven five",
+    "ipa": "/tuː pɔɪnt ˈsevn faɪv/",
+    "uz": "har raqam alohida",
+    "tip": "O'nli kasr"
+   },
+   {
+    "w": "1900 → nineteen hundred",
+    "ipa": "/ˌnaɪnˈtiːn ˈhʌndrəd/",
+    "uz": "yil",
+    "tip": "Tarix"
+   },
+   {
+    "w": "2005 → two thousand and five",
+    "ipa": "/tuː ˈθaʊznd ən faɪv/",
+    "uz": "yil",
+    "tip": "Task 1"
+   },
+   {
+    "w": "the 1990s → the nineteen nineties",
+    "ipa": "/ðə ˌnaɪnˈtiːn ˈnaɪntiz/",
+    "uz": "o'n yillik",
+    "tip": "Speaking"
+   },
+   {
+    "w": "1st, 2nd, 3rd",
+    "ipa": "/fɜːst/ /ˈsekənd/ /θɜːd/",
+    "uz": "tartib sonlar",
+    "tip": "Sanalar"
+   },
+   {
+    "w": "21st century",
+    "ipa": "/ˈtwenti fɜːst ˈsentʃəri/",
+    "uz": "asr",
+    "tip": "Task 2"
+   },
+   {
+    "w": "%",
+    "ipa": "/pə ˈsent/",
+    "uz": "per cent — urg'u ikkinchi bo'g'inda",
+    "tip": "pə-SENT"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Sentence bank: line graphs",
+  "items": [
+   {
+    "w": "X rose steadily from A to B between … and …",
+    "syn": "steady rise",
+    "uz": "barqaror o'sish",
+    "ex": "Sales rose steadily from 200 to 500 between 2000 and 2010."
+   },
+   {
+    "w": "X peaked at A in …, before declining to B",
+    "syn": "peak + fall",
+    "uz": "cho'qqi + pasayish",
+    "ex": "It peaked at 80% in 2005, before declining to 60%."
+   },
+   {
+    "w": "X remained relatively stable at around A",
+    "syn": "stability",
+    "uz": "barqarorlik",
+    "ex": "Prices remained relatively stable at around $50."
+   },
+   {
+    "w": "X and Y followed opposite trends",
+    "syn": "contrast",
+    "uz": "teskari tendensiyalar",
+    "ex": "Coal and gas followed opposite trends."
+   },
+   {
+    "w": "X overtook Y in … to become the most …",
+    "syn": "crossing",
+    "uz": "o'zib ketdi",
+    "ex": "Gas overtook coal in 2010 to become the main source."
+   },
+   {
+    "w": "There was a dramatic increase in X, which reached A",
+    "syn": "noun style",
+    "uz": "keskin o'sish",
+    "ex": "There was a dramatic increase in users, which reached 2 million."
+   },
+   {
+    "w": "X fluctuated between A and B",
+    "syn": "fluctuation",
+    "uz": "tebranish",
+    "ex": "Visitor numbers fluctuated between 10 and 15 million."
+   },
+   {
+    "w": "By …, X had more than doubled",
+    "syn": "past perfect",
+    "uz": "o'tmish nuqtasiga kelib",
+    "ex": "By 2020, X had more than doubled."
+   },
+   {
+    "w": "X is projected to continue rising, reaching A by …",
+    "syn": "future",
+    "uz": "prognoz",
+    "ex": "It is projected to continue rising, reaching 90% by 2040."
+   },
+   {
+    "w": "Over the period as a whole, X increased by A",
+    "syn": "summary data",
+    "uz": "butun davr bo'yicha",
+    "ex": "Over the period as a whole, X increased by 40%."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: agree or disagree (opinion essays)",
+  "items": [
+   {
+    "w": "I completely agree that",
+    "syn": "full agreement",
+    "uz": "To'liq qo'shilaman",
+    "ex": "I completely agree that children should learn cooking."
+   },
+   {
+    "w": "I strongly disagree with the idea that",
+    "syn": "full disagreement",
+    "uz": "… g'oyasiga qat'iyan qarshiman",
+    "ex": "I strongly disagree with the idea that exams are useless."
+   },
+   {
+    "w": "While I accept that …, I believe",
+    "syn": "partial agreement",
+    "uz": "… ni tan olsam-da, ishonamanki",
+    "ex": "While I accept that fees are high, I believe university is worth it."
+   },
+   {
+    "w": "This essay agrees for two reasons",
+    "syn": "thesis",
+    "uz": "Ushbu insho ikki sababga ko'ra qo'shiladi",
+    "ex": "This essay agrees for two main reasons."
+   },
+   {
+    "w": "The first reason is that",
+    "syn": "body 1",
+    "uz": "Birinchi sabab",
+    "ex": "The first reason is that it saves money."
+   },
+   {
+    "w": "Another reason why I hold this view is",
+    "syn": "body 2",
+    "uz": "Bu fikrda bo'lishimning yana bir sababi",
+    "ex": "Another reason why I hold this view is fairness."
+   },
+   {
+    "w": "Admittedly, some may argue that …; however,",
+    "syn": "concession",
+    "uz": "Tan olish kerakki …; biroq",
+    "ex": "Admittedly, some may argue that it is costly; however, …"
+   },
+   {
+    "w": "For these reasons, I firmly believe",
+    "syn": "conclusion",
+    "uz": "Shu sabablarga ko'ra qat'iy ishonamanki",
+    "ex": "For these reasons, I firmly believe it should be compulsory."
+   },
+   {
+    "w": "State your position in the introduction",
+    "syn": "TR",
+    "uz": "Pozitsiyani kirishda ayting",
+    "ex": "Don't wait until the conclusion."
+   },
+   {
+    "w": "Every paragraph supports your position",
+    "syn": "coherence",
+    "uz": "Har abzas pozitsiyani qo'llashi kerak",
+    "ex": "No surprise change of opinion."
+   }
+  ]
+ }
+}

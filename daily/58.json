@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Review: clauses for complex sentences",
+  "items": [
+   {
+    "s": "Relative: who / which / that / whose / where",
+    "uz": "aniqlovchi ergash gap",
+    "ex": "The city where I was born is small.",
+    "use": "GRA"
+   },
+   {
+    "s": "Non-defining with commas",
+    "uz": "qo'shimcha ma'lumot",
+    "ex": "My brother, who lives abroad, visits yearly.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Adverbial: although / because / when / if / unless",
+    "uz": "hol ergash gaplari",
+    "ex": "When prices rise, demand falls.",
+    "use": "Asos"
+   },
+   {
+    "s": "Noun clause: that / what / whether",
+    "uz": "ot ergash gap",
+    "ex": "What matters is consistency.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Participle clause: -ing / V3 / having V3",
+    "uz": "qisqartirilgan gap",
+    "ex": "Built in 1420, the madrasah is famous.",
+    "use": "Band 8"
+   },
+   {
+    "s": "Purpose: so that / in order to",
+    "uz": "maqsad",
+    "ex": "Parks are built so that children can play.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Conditional: if / unless / provided that",
+    "uz": "shart",
+    "ex": "Provided that it is cheap, people will use it.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Check punctuation with every clause",
+    "uz": "vergullar",
+    "ex": "Fronted clause + vergul; non-defining + vergul",
+    "use": "Accuracy"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Exams and tests",
+  "items": [
+   {
+    "t": "sail through",
+    "uz": "oson o'tib ketmoq",
+    "ex": "She sailed through the Listening test.",
+    "use": "Imtihon"
+   },
+   {
+    "t": "scrape through",
+    "uz": "zo'rg'a o'tmoq",
+    "ex": "I scraped through maths with a C.",
+    "use": "Natija"
+   },
+   {
+    "t": "cram for an exam",
+    "uz": "imtihon oldidan shoshilib yodlamoq",
+    "ex": "Cramming the night before rarely works.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "draw a blank",
+    "uz": "hech narsa eslay olmaslik",
+    "ex": "I drew a blank on the last question.",
+    "use": "Stress"
+   },
+   {
+    "t": "ace a test",
+    "uz": "a'lo topshirmoq",
+    "ex": "I want to ace the Reading section.",
+    "use": "Maqsad"
+   },
+   {
+    "t": "a mock exam",
+    "uz": "sinov imtihoni",
+    "ex": "Mock exams help you manage time.",
+    "use": "IELTS"
+   },
+   {
+    "t": "know your stuff",
+    "uz": "biladiganini yaxshi bilmoq",
+    "ex": "The examiner can tell if you know your stuff.",
+    "use": "Tayyorgarlik"
+   },
+   {
+    "t": "the moment of truth",
+    "uz": "haqiqat lahzasi",
+    "ex": "Results day is the moment of truth.",
+    "use": "Natija"
+   },
+   {
+    "t": "sit an exam",
+    "uz": "imtihon topshirmoq (Britaniya)",
+    "ex": "I'm sitting the exam on 27 December.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "fail miserably",
+    "uz": "batamom yiqilmoq",
+    "ex": "I failed miserably in my first mock.",
+    "use": "Hikoya"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "hostile",
+    "pos": "adj",
+    "syn": "unfriendly, aggressive",
+    "uz": "dushmanona",
+    "ex": "The climate is hostile to most plants."
+   },
+   {
+    "w": "intricate",
+    "pos": "adj",
+    "syn": "complex, detailed",
+    "uz": "murakkab, nozik",
+    "ex": "The tiles have intricate patterns."
+   },
+   {
+    "w": "mitigate",
+    "pos": "verb",
+    "syn": "reduce, lessen",
+    "uz": "yumshatmoq, kamaytirmoq",
+    "ex": "Trees mitigate the effects of heat."
+   },
+   {
+    "w": "notable",
+    "pos": "adj",
+    "syn": "remarkable, significant",
+    "uz": "diqqatga sazovor",
+    "ex": "There was a notable increase in visitors."
+   },
+   {
+    "w": "obsolete",
+    "pos": "adj",
+    "syn": "outdated, no longer used",
+    "uz": "eskirgan",
+    "ex": "Fax machines are obsolete."
+   },
+   {
+    "w": "pivotal",
+    "pos": "adj",
+    "syn": "crucial, central",
+    "uz": "hal qiluvchi",
+    "ex": "Teachers play a pivotal role."
+   },
+   {
+    "w": "plausible",
+    "pos": "adj",
+    "syn": "believable, reasonable",
+    "uz": "ishonarli",
+    "ex": "That explanation sounds plausible."
+   },
+   {
+    "w": "prevalent",
+    "pos": "adj",
+    "syn": "common, widespread",
+    "uz": "keng tarqalgan",
+    "ex": "Obesity is prevalent in rich countries."
+   },
+   {
+    "w": "profound",
+    "pos": "adj",
+    "syn": "deep, great",
+    "uz": "chuqur",
+    "ex": "The internet had a profound impact."
+   },
+   {
+    "w": "prolong",
+    "pos": "verb",
+    "syn": "extend, lengthen",
+    "uz": "uzaytirmoq",
+    "ex": "Exercise can prolong life."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about health (Part 3)",
+  "items": [
+   {
+    "s": "People are more health-conscious than they used to be.",
+    "uz": "Odamlar avvalgidan ko'ra sog'lig'iga e'tiborli",
+    "ex": "People are more health-conscious than they used to be.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "Prevention is better than cure.",
+    "uz": "Davolashdan ko'ra oldini olish yaxshi",
+    "ex": "Prevention is better than cure, so check-ups matter.",
+    "use": "Maqol"
+   },
+   {
+    "s": "Fast food is cheap and convenient, which is why …",
+    "uz": "Fast food arzon va qulay, shuning uchun …",
+    "ex": "Fast food is cheap and convenient, which is why it's popular.",
+    "use": "Sabab"
+   },
+   {
+    "s": "Mental health is finally being taken seriously.",
+    "uz": "Ruhiy salomatlikka nihoyat jiddiy qaralmoqda",
+    "ex": "Mental health is finally being taken seriously.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "A sedentary lifestyle is a major risk.",
+    "uz": "Kam harakatli turmush katta xavf",
+    "ex": "A sedentary lifestyle is a major risk for office workers.",
+    "use": "Muammo"
+   },
+   {
+    "s": "The government should make healthy food more affordable.",
+    "uz": "Hukumat sog'lom ovqatni arzonroq qilishi kerak",
+    "ex": "The government should make healthy food more affordable.",
+    "use": "Yechim"
+   },
+   {
+    "s": "It's down to personal responsibility to some extent.",
+    "uz": "Ma'lum darajada shaxsiy mas'uliyat",
+    "ex": "It's down to personal responsibility to some extent.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Life expectancy has risen thanks to …",
+    "uz": "… tufayli umr ko'rish davomiyligi oshdi",
+    "ex": "Life expectancy has risen thanks to better medicine.",
+    "use": "Fakt"
+   },
+   {
+    "s": "Healthcare should be accessible to everyone.",
+    "uz": "Tibbiyot hamma uchun ochiq bo'lishi kerak",
+    "ex": "Healthcare should be accessible to everyone.",
+    "use": "Fikr"
+   },
+   {
+    "s": "Stress is one of the biggest health problems today.",
+    "uz": "Stress bugungi eng katta muammolardan biri",
+    "ex": "Stress is one of the biggest health problems today.",
+    "use": "Fikr"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Exam-day warm-up: tongue twisters",
+  "items": [
+   {
+    "w": "Red lorry, yellow lorry",
+    "ipa": "/red ˈlɒri ˈjeləʊ ˈlɒri/",
+    "uz": "R va L farqi",
+    "tip": "Sekin, keyin tez"
+   },
+   {
+    "w": "She sells seashells by the seashore",
+    "ipa": "/ʃiː selz ˈsiːʃelz/",
+    "uz": "/s/ va /ʃ/",
+    "tip": "Isitish"
+   },
+   {
+    "w": "Three thin thinkers thinking",
+    "ipa": "/θriː θɪn ˈθɪŋkəz/",
+    "uz": "/θ/ mashqi",
+    "tip": "Til uchi tashqarida"
+   },
+   {
+    "w": "Very well, very well",
+    "ipa": "/ˈveri wel/",
+    "uz": "/v/ va /w/",
+    "tip": "Lab harakati"
+   },
+   {
+    "w": "Unique New York",
+    "ipa": "/juˈniːk njuː jɔːk/",
+    "uz": "/j/ va unlilar",
+    "tip": "Og'izni ochish"
+   },
+   {
+    "w": "Which witch is which?",
+    "ipa": "/wɪtʃ wɪtʃ ɪz wɪtʃ/",
+    "uz": "/w/ va /tʃ/",
+    "tip": "Tezlik"
+   },
+   {
+    "w": "A big black bug bit a big black bear",
+    "ipa": "/ə bɪɡ blæk bʌɡ/",
+    "uz": "/b/ va unlilar",
+    "tip": "Isitish"
+   },
+   {
+    "w": "Peter Piper picked a peck",
+    "ipa": "/ˈpiːtə ˈpaɪpə/",
+    "uz": "/p/ nafas bilan",
+    "tip": "Aspiratsiya"
+   },
+   {
+    "w": "Six slippery snails slid slowly seaward",
+    "ipa": "/sɪks ˈslɪpəri sneɪlz/",
+    "uz": "/s/ birikmalari",
+    "tip": "Klasterlar"
+   },
+   {
+    "w": "5 minutes before Speaking",
+    "ipa": "warm-up",
+    "uz": "Imtihondan oldin 5 daqiqa ovoz chiqarib mashq qiling",
+    "tip": "Ovozni isitish"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Sentence bank: maps and processes",
+  "items": [
+   {
+    "w": "Over the period, the village was transformed into a town",
+    "syn": "map overview",
+    "uz": "qishloq shaharga aylandi",
+    "ex": "Over the period, the village was transformed into a busy town."
+   },
+   {
+    "w": "X was demolished to make way for Y",
+    "syn": "replacement",
+    "uz": "Y uchun X buzildi",
+    "ex": "The farm was demolished to make way for houses."
+   },
+   {
+    "w": "A new X was constructed to the north of Y",
+    "syn": "new building",
+    "uz": "Y ning shimolida yangi X qurildi",
+    "ex": "A new school was constructed to the north of the park."
+   },
+   {
+    "w": "X remained unchanged throughout",
+    "syn": "no change",
+    "uz": "X o'zgarishsiz qoldi",
+    "ex": "The church remained unchanged throughout."
+   },
+   {
+    "w": "The most noticeable change was the addition of",
+    "syn": "biggest change",
+    "uz": "eng sezilarli o'zgarish — … qo'shilishi",
+    "ex": "The most noticeable change was the addition of a motorway."
+   },
+   {
+    "w": "The process consists of X stages, beginning with … and ending with …",
+    "syn": "process overview",
+    "uz": "jarayon X bosqichdan iborat",
+    "ex": "The process consists of six stages, beginning with harvesting and ending with packaging."
+   },
+   {
+    "w": "Once X has been V3, it is V3",
+    "syn": "sequence",
+    "uz": "X … qilingach, u …",
+    "ex": "Once the fruit has been washed, it is sliced."
+   },
+   {
+    "w": "X is then transported to Y, where it is V3",
+    "syn": "transport + location",
+    "uz": "keyin Y ga olib boriladi, u yerda …",
+    "ex": "It is then transported to a factory, where it is processed."
+   },
+   {
+    "w": "In the final stage, X is V3 and V3",
+    "syn": "ending",
+    "uz": "oxirgi bosqichda",
+    "ex": "In the final stage, the juice is bottled and sold."
+   },
+   {
+    "w": "This cycle then repeats",
+    "syn": "cyclical end",
+    "uz": "sikl takrorlanadi",
+    "ex": "This cycle then repeats every year."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: two-part (direct) questions",
+  "items": [
+   {
+    "w": "Answer both questions directly",
+    "syn": "TR",
+    "uz": "Ikkala savolga to'g'ridan javob bering",
+    "ex": "Q1: Why? Q2: Is it positive or negative?"
+   },
+   {
+    "w": "There are several reasons why",
+    "syn": "answering 'why'",
+    "uz": "Buning bir necha sababi bor",
+    "ex": "There are several reasons why people move to cities."
+   },
+   {
+    "w": "The main reason for this is",
+    "syn": "cause",
+    "uz": "Buning asosiy sababi",
+    "ex": "The main reason for this is better job prospects."
+   },
+   {
+    "w": "As for whether this is a positive development,",
+    "syn": "second question",
+    "uz": "Bu ijobiy hodisa ekanligiga kelsak",
+    "ex": "As for whether this is a positive development, I believe…"
+   },
+   {
+    "w": "I would argue that this trend is largely positive/negative",
+    "syn": "evaluation",
+    "uz": "Bu tendensiya asosan ijobiy/salbiy deb hisoblayman",
+    "ex": "I would argue that this trend is largely positive."
+   },
+   {
+    "w": "To address the first question,",
+    "syn": "signposting",
+    "uz": "Birinchi savolga kelsak",
+    "ex": "To address the first question, cost is the key factor."
+   },
+   {
+    "w": "Turning to the second question,",
+    "syn": "signposting",
+    "uz": "Ikkinchi savolga o'tsak",
+    "ex": "Turning to the second question, the effects are mixed."
+   },
+   {
+    "w": "one body paragraph per question",
+    "syn": "structure",
+    "uz": "har savolga bitta abzas",
+    "ex": "Body 1 = Q1, Body 2 = Q2."
+   },
+   {
+    "w": "Restate both answers in the conclusion",
+    "syn": "conclusion",
+    "uz": "Xulosada ikkala javobni takrorlang",
+    "ex": "In conclusion, people move for work, and this is mostly positive."
+   },
+   {
+    "w": "Don't ignore part of the question",
+    "syn": "TR penalty",
+    "uz": "Savolning bir qismini tashlab ketmang",
+    "ex": "Missing a part caps TR at 5."
+   }
+  ]
+ }
+}

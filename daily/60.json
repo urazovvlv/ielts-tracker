@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Final check: grammar for Task 2",
+  "items": [
+   {
+    "s": "Mix simple and complex sentences",
+    "uz": "aralash gaplar",
+    "ex": "This is costly. However, if it is planned well, it can save money.",
+    "use": "GRA band 7"
+   },
+   {
+    "s": "Use conditionals for solutions",
+    "uz": "yechim + natija",
+    "ex": "If governments invested more, standards would rise.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Use passive for academic tone",
+    "uz": "passiv",
+    "ex": "It is widely accepted that exercise improves health.",
+    "use": "Akademik"
+   },
+   {
+    "s": "Use modals to hedge",
+    "uz": "could, may, might",
+    "ex": "This may lead to higher unemployment.",
+    "use": "Hedging"
+   },
+   {
+    "s": "Check articles: a / the / zero",
+    "uz": "artikllar",
+    "ex": "Education is important. The education system needs reform.",
+    "use": "Uzbek speakers' #1 error"
+   },
+   {
+    "s": "Check subject–verb agreement",
+    "uz": "moslik",
+    "ex": "Technology has changed; people have adapted.",
+    "use": "Accuracy"
+   },
+   {
+    "s": "Check plurals and countability",
+    "uz": "ko'plik",
+    "ex": "many students, much information",
+    "use": "Accuracy"
+   },
+   {
+    "s": "Leave 3 minutes to proofread",
+    "uz": "tekshirish",
+    "ex": "Articles, -s, tenses, spelling",
+    "use": "Oxirgi qadam"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Celebration and achievement",
+  "items": [
+   {
+    "t": "a dream come true",
+    "uz": "orzu ushaldi",
+    "ex": "Getting 7.5 would be a dream come true.",
+    "use": "Maqsad"
+   },
+   {
+    "t": "pat yourself on the back",
+    "uz": "o'zingni maqtab qo'y",
+    "ex": "Pat yourself on the back — 60 days done!",
+    "use": "Yutuq"
+   },
+   {
+    "t": "mission accomplished",
+    "uz": "vazifa bajarildi",
+    "ex": "Last mock done — mission accomplished.",
+    "use": "Yakun"
+   },
+   {
+    "t": "the cherry on top",
+    "uz": "eng yoqimli qo'shimcha",
+    "ex": "Passing was great; band 8 in Reading was the cherry on top.",
+    "use": "Bonus"
+   },
+   {
+    "t": "pull out all the stops",
+    "uz": "bor kuchini ishga solmoq",
+    "ex": "I pulled out all the stops for this exam.",
+    "use": "Harakat"
+   },
+   {
+    "t": "reap the rewards",
+    "uz": "mehnat samarasini ko'rmoq",
+    "ex": "Now it's time to reap the rewards.",
+    "use": "Natija"
+   },
+   {
+    "t": "walking on air",
+    "uz": "osmonda uchayotgandek",
+    "ex": "I was walking on air after the results.",
+    "use": "Quvonch"
+   },
+   {
+    "t": "raise a glass to",
+    "uz": "… sharafiga qadah ko'tarmoq",
+    "ex": "Let's raise a glass to your success.",
+    "use": "Bayram"
+   },
+   {
+    "t": "a milestone",
+    "uz": "muhim bosqich",
+    "ex": "Band 7 is a milestone in my career.",
+    "use": "Yutuq"
+   },
+   {
+    "t": "onwards and upwards",
+    "uz": "faqat oldinga va yuqoriga",
+    "ex": "IELTS done — onwards and upwards!",
+    "use": "Kelajak"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "ubiquitous",
+    "pos": "adj",
+    "syn": "everywhere, widespread",
+    "uz": "hamma joyda mavjud",
+    "ex": "Smartphones are now ubiquitous."
+   },
+   {
+    "w": "unprecedented",
+    "pos": "adj",
+    "syn": "never seen before",
+    "uz": "misli ko'rilmagan",
+    "ex": "The city grew at an unprecedented rate."
+   },
+   {
+    "w": "viable",
+    "pos": "adj",
+    "syn": "workable, feasible",
+    "uz": "hayotiy, amalga oshiriladigan",
+    "ex": "Solar power is a viable alternative."
+   },
+   {
+    "w": "vulnerable",
+    "pos": "adj",
+    "syn": "at risk, weak",
+    "uz": "himoyasiz, zaif",
+    "ex": "The elderly are vulnerable in heatwaves."
+   },
+   {
+    "w": "yield",
+    "pos": "verb/noun",
+    "syn": "produce; harvest",
+    "uz": "bermoq; hosil",
+    "ex": "The study yielded useful results."
+   },
+   {
+    "w": "versatile",
+    "pos": "adj",
+    "syn": "flexible, adaptable",
+    "uz": "ko'p qirrali",
+    "ex": "Bamboo is a versatile material."
+   },
+   {
+    "w": "wane",
+    "pos": "verb",
+    "syn": "decrease, decline",
+    "uz": "susaymoq",
+    "ex": "Interest in the show began to wane."
+   },
+   {
+    "w": "consensus",
+    "pos": "noun",
+    "syn": "agreement",
+    "uz": "kelishuv, yakdil fikr",
+    "ex": "There is a scientific consensus on climate change."
+   },
+   {
+    "w": "discrepancy",
+    "pos": "noun",
+    "syn": "difference, mismatch",
+    "uz": "nomuvofiqlik",
+    "ex": "There was a discrepancy between the two reports."
+   },
+   {
+    "w": "impetus",
+    "pos": "noun",
+    "syn": "driving force, motivation",
+    "uz": "turtki",
+    "ex": "The crisis gave impetus to reform."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Final speaking checklist for band 7+",
+  "items": [
+   {
+    "s": "Fluency: speak at length without long pauses",
+    "uz": "uzun va ravon",
+    "ex": "Use fillers like 'Let me think' instead of silence.",
+    "use": "FC"
+   },
+   {
+    "s": "Coherence: use linking words naturally",
+    "uz": "bog'lovchilar",
+    "ex": "On the other hand…, That's why…",
+    "use": "FC"
+   },
+   {
+    "s": "Vocabulary: some less common words and idioms",
+    "uz": "kamroq uchraydigan so'zlar",
+    "ex": "steeped in history, a game changer",
+    "use": "LR"
+   },
+   {
+    "s": "Paraphrase instead of repeating",
+    "uz": "qayta ifoda",
+    "ex": "popular → widespread",
+    "use": "LR"
+   },
+   {
+    "s": "Grammar: a range of structures",
+    "uz": "turli tuzilmalar",
+    "ex": "conditionals, relative clauses, passives",
+    "use": "GRA"
+   },
+   {
+    "s": "Accuracy: most sentences error-free",
+    "uz": "aniqlik",
+    "ex": "Check -s, articles and past tenses",
+    "use": "GRA"
+   },
+   {
+    "s": "Pronunciation: clear sounds and word stress",
+    "uz": "aniq talaffuz",
+    "ex": "/θ/, /w/–/v/, -ed endings",
+    "use": "P"
+   },
+   {
+    "s": "Intonation: not monotone",
+    "uz": "jonli ohang",
+    "ex": "Stress key words, fall at the end",
+    "use": "P"
+   },
+   {
+    "s": "Part 2: talk for the full 2 minutes",
+    "uz": "to'liq 2 daqiqa",
+    "ex": "Plan with keywords, tell a story",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Part 3: extend with reason + example + other side",
+    "uz": "PEEL",
+    "ex": "4–6 gap",
+    "use": "Strategiya"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Final review: 10 sounds Uzbek speakers should check",
+  "items": [
+   {
+    "w": "/θ/ – think",
+    "ipa": "/θɪŋk/",
+    "uz": "til tishlar orasida, 's' yoki 't' emas",
+    "tip": "Day 1"
+   },
+   {
+    "w": "/ð/ – this",
+    "ipa": "/ðɪs/",
+    "uz": "jarangli, 'z' yoki 'd' emas",
+    "tip": "Day 54"
+   },
+   {
+    "w": "/w/ – world",
+    "ipa": "/wɜːld/",
+    "uz": "lablar dumaloq, 'v' emas",
+    "tip": "Day 2"
+   },
+   {
+    "w": "/ɪ/ vs /iː/ – ship / sheep",
+    "ipa": "/ʃɪp/ /ʃiːp/",
+    "uz": "qisqa va uzun",
+    "tip": "Day 3"
+   },
+   {
+    "w": "/æ/ – man",
+    "ipa": "/mæn/",
+    "uz": "og'iz keng, 'men' emas",
+    "tip": "Day 4"
+   },
+   {
+    "w": "/ɜː/ – work",
+    "ipa": "/wɜːk/",
+    "uz": "'vork' yoki 'vərk' emas",
+    "tip": "Day 9"
+   },
+   {
+    "w": "/ə/ – about",
+    "ipa": "/əˈbaʊt/",
+    "uz": "urg'usiz unlilar kuchsiz",
+    "tip": "Day 10"
+   },
+   {
+    "w": "-ed endings – worked",
+    "ipa": "/wɜːkt/",
+    "uz": "/t/, /d/, /ɪd/ — qo'shimcha bo'g'in yo'q",
+    "tip": "Day 5"
+   },
+   {
+    "w": "consonant clusters – street",
+    "ipa": "/striːt/",
+    "uz": "oldiga 'i' qo'shmang",
+    "tip": "Day 52"
+   },
+   {
+    "w": "word stress – development",
+    "ipa": "/dɪˈveləpmənt/",
+    "uz": "to'g'ri bo'g'inga urg'u",
+    "tip": "Day 59"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Exam day: Task 1 final checklist",
+  "items": [
+   {
+    "w": "Identify the visual type in 30 seconds",
+    "syn": "line / bar / pie / table / map / process",
+    "uz": "grafik turini aniqlang",
+    "ex": "Plan accordingly."
+   },
+   {
+    "w": "Paraphrase the question",
+    "syn": "introduction",
+    "uz": "savolni qayta ifodalang",
+    "ex": "One sentence."
+   },
+   {
+    "w": "Write a clear overview",
+    "syn": "two key features",
+    "uz": "aniq overview",
+    "ex": "Overall, …"
+   },
+   {
+    "w": "Group the data logically",
+    "syn": "two body paragraphs",
+    "uz": "ma'lumotni mantiqiy guruhlang",
+    "ex": "By trend, category or time."
+   },
+   {
+    "w": "Include accurate numbers",
+    "syn": "evidence",
+    "uz": "aniq raqamlar",
+    "ex": "Every main point needs data."
+   },
+   {
+    "w": "Compare, don't just list",
+    "syn": "comparison",
+    "uz": "taqqoslang",
+    "ex": "higher than, twice as much as"
+   },
+   {
+    "w": "Use correct tenses",
+    "syn": "time frame",
+    "uz": "to'g'ri zamon",
+    "ex": "Past, present or future."
+   },
+   {
+    "w": "Stay objective",
+    "syn": "no opinion",
+    "uz": "fikr bildirmang",
+    "ex": "Describe only."
+   },
+   {
+    "w": "150–190 words in 20 minutes",
+    "syn": "length and time",
+    "uz": "so'z soni va vaqt",
+    "ex": "Then move to Task 2."
+   },
+   {
+    "w": "Proofread the key errors",
+    "syn": "final check",
+    "uz": "asosiy xatolarni tekshiring",
+    "ex": "Articles, plurals, agreement."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: conclusions + final Task 2 checklist",
+  "items": [
+   {
+    "w": "In conclusion, …",
+    "syn": "To conclude, / To sum up,",
+    "uz": "Xulosa qilib aytganda",
+    "ex": "In conclusion, I firmly believe that…"
+   },
+   {
+    "w": "Restate your position in new words",
+    "syn": "paraphrase thesis",
+    "uz": "pozitsiyani yangi so'zlar bilan qaytaring",
+    "ex": "…free education benefits society as a whole."
+   },
+   {
+    "w": "Summarise the main reasons",
+    "syn": "brief summary",
+    "uz": "asosiy sabablarni qisqa umumlashtiring",
+    "ex": "…because it increases opportunity and growth."
+   },
+   {
+    "w": "No new ideas in the conclusion",
+    "syn": "rule",
+    "uz": "xulosada yangi g'oya yo'q",
+    "ex": "Only summarise."
+   },
+   {
+    "w": "Optional: a final recommendation or prediction",
+    "syn": "closing thought",
+    "uz": "yakuniy tavsiya yoki bashorat",
+    "ex": "Governments should therefore act quickly."
+   },
+   {
+    "w": "Answer every part of the question",
+    "syn": "TR",
+    "uz": "savolning har bir qismiga javob",
+    "ex": "Check the task again."
+   },
+   {
+    "w": "Clear paragraphs: intro, 2 bodies, conclusion",
+    "syn": "CC",
+    "uz": "4 abzas",
+    "ex": "One main idea per body paragraph."
+   },
+   {
+    "w": "Develop ideas with explanation + example",
+    "syn": "TR",
+    "uz": "g'oyani tushuntirish + misol bilan rivojlantiring",
+    "ex": "Not lists of ideas."
+   },
+   {
+    "w": "250+ words in 40 minutes",
+    "syn": "length and time",
+    "uz": "250+ so'z, 40 daqiqa",
+    "ex": "Plan 5 min, write 30, check 5."
+   },
+   {
+    "w": "You are ready — trust your preparation",
+    "syn": "confidence",
+    "uz": "Siz tayyorsiz — tayyorgarligingizga ishoning",
+    "ex": "Good luck on 27 December!"
+   }
+  ]
+ }
+}
