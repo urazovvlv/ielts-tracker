@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Referencing: this, these, such, the former / the latter",
+  "items": [
+   {
+    "s": "this + noun",
+    "uz": "oldingi fikrga ishora (ot bilan aniqroq)",
+    "ex": "Prices rose sharply. This increase hurt families.",
+    "use": "Coherence band 7"
+   },
+   {
+    "s": "these + plural noun",
+    "uz": "ko'plikdagi ishora",
+    "ex": "Cars and planes pollute. These forms of transport…",
+    "use": "Takrordan qochish"
+   },
+   {
+    "s": "such + noun",
+    "uz": "bunday",
+    "ex": "Such policies are expensive.",
+    "use": "Akademik"
+   },
+   {
+    "s": "the former / the latter",
+    "uz": "birinchisi / ikkinchisi",
+    "ex": "Buses and trains are cheap; the latter are faster.",
+    "use": "Band 7+"
+   },
+   {
+    "s": "it / they",
+    "uz": "aniq ot bilan bog'langan bo'lsin",
+    "ex": "The government introduced a tax. It reduced smoking.",
+    "use": "Aniqlik"
+   },
+   {
+    "s": "doing so",
+    "uz": "buni qilish",
+    "ex": "Recycling is easy, and doing so saves money.",
+    "use": "Takrordan qochish"
+   },
+   {
+    "s": "this trend / this problem / this approach",
+    "uz": "this + umumlashtiruvchi ot",
+    "ex": "This approach has two advantages.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ This is a problem. This is because this … → ✅ vary references",
+    "uz": "bir xil ishorani takrorlamang",
+    "ex": "This issue arises because…",
+    "use": "Haddan ortiq 'this'"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Money and value (more)",
+  "items": [
+   {
+    "t": "worth its weight in gold",
+    "uz": "oltinga teng qadrli",
+    "ex": "A good teacher is worth her weight in gold.",
+    "use": "Maqtov"
+   },
+   {
+    "t": "money talks",
+    "uz": "pul hamma narsani hal qiladi",
+    "ex": "In politics, money talks.",
+    "use": "Part 3"
+   },
+   {
+    "t": "on the house",
+    "uz": "tekin (muassasa hisobidan)",
+    "ex": "The dessert was on the house.",
+    "use": "Restoran"
+   },
+   {
+    "t": "go Dutch",
+    "uz": "har kim o'zi to'laydi",
+    "ex": "Let's go Dutch on dinner.",
+    "use": "Do'stlar"
+   },
+   {
+    "t": "in the black",
+    "uz": "foydada",
+    "ex": "The company is finally in the black.",
+    "use": "Biznes"
+   },
+   {
+    "t": "a penny for your thoughts",
+    "uz": "nima haqida o'ylayapsan?",
+    "ex": "You look quiet — a penny for your thoughts?",
+    "use": "Muloqot"
+   },
+   {
+    "t": "feel the pinch",
+    "uz": "pul tanqisligini his qilmoq",
+    "ex": "Families are feeling the pinch as prices rise.",
+    "use": "Iqtisod"
+   },
+   {
+    "t": "pay off (debt)",
+    "uz": "qarzni to'lab bo'lmoq",
+    "ex": "I want to pay off my loan this year.",
+    "use": "Moliyaviy maqsad"
+   },
+   {
+    "t": "rolling in it",
+    "uz": "pulga ko'milgan",
+    "ex": "His family is rolling in it.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "cost a fortune",
+    "uz": "juda qimmat turmoq",
+    "ex": "Private schools cost a fortune.",
+    "use": "Narx"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "prohibit",
+    "pos": "verb",
+    "syn": "ban, forbid",
+    "uz": "taqiqlamoq",
+    "ex": "Smoking is prohibited in public places."
+   },
+   {
+    "w": "publication",
+    "pos": "noun",
+    "syn": "printing; book, journal",
+    "uz": "nashr",
+    "ex": "The publication of the report caused debate."
+   },
+   {
+    "w": "quote",
+    "pos": "verb/noun",
+    "syn": "cite; citation; price",
+    "uz": "iqtibos keltirmoq",
+    "ex": "The article quotes several experts."
+   },
+   {
+    "w": "release",
+    "pos": "verb/noun",
+    "syn": "let go, publish; launch",
+    "uz": "ozod qilmoq, chiqarmoq",
+    "ex": "Factories release toxic gases."
+   },
+   {
+    "w": "reverse",
+    "pos": "verb/adj",
+    "syn": "undo, invert; opposite",
+    "uz": "teskari qilmoq; teskari",
+    "ex": "The trend was reversed after 2010."
+   },
+   {
+    "w": "simulate",
+    "pos": "verb",
+    "syn": "imitate, reproduce",
+    "uz": "taqlid qilmoq, modellashtirmoq",
+    "ex": "Pilots train on machines that simulate flight."
+   },
+   {
+    "w": "sole",
+    "pos": "adj",
+    "syn": "only, single",
+    "uz": "yagona",
+    "ex": "Tourism is the sole source of income."
+   },
+   {
+    "w": "somewhat",
+    "pos": "adv",
+    "syn": "rather, slightly, quite",
+    "uz": "biroz, ma'lum darajada",
+    "ex": "The results were somewhat surprising."
+   },
+   {
+    "w": "submit",
+    "pos": "verb",
+    "syn": "hand in, present",
+    "uz": "topshirmoq",
+    "ex": "Applications must be submitted by May."
+   },
+   {
+    "w": "successor",
+    "pos": "noun",
+    "syn": "replacement, heir",
+    "uz": "vorisi",
+    "ex": "Her successor changed the policy."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Using idioms naturally in Speaking",
+  "items": [
+   {
+    "s": "Use 1–2 idioms per part, not more",
+    "uz": "me'yorida",
+    "ex": "Har javobga idioma tiqmang",
+    "use": "Tabiiylik"
+   },
+   {
+    "s": "Make sure the idiom fits the topic",
+    "uz": "mos kontekst",
+    "ex": "It's raining cats and dogs ❌ (eskirgan)",
+    "use": "Eskirgan idiomalardan qoching"
+   },
+   {
+    "s": "Use idioms in informal parts",
+    "uz": "Part 1–2",
+    "ex": "Part 1–2 da tabiiyroq",
+    "use": "Register"
+   },
+   {
+    "s": "Get the form exactly right",
+    "uz": "aniq shakl",
+    "ex": "❌ a piece of a cake → ✅ a piece of cake",
+    "use": "Aniqlik"
+   },
+   {
+    "s": "Collocations matter more than idioms",
+    "uz": "kollokatsiyalar muhimroq",
+    "ex": "make a decision > idioms",
+    "use": "LR band 7"
+   },
+   {
+    "s": "Phrasal verbs count as idiomatic language",
+    "uz": "phrasal verbs ham",
+    "ex": "I grew up in Samarkand.",
+    "use": "LR"
+   },
+   {
+    "s": "I was over the moon (natural)",
+    "uz": "tabiiy misol",
+    "ex": "When I passed, I was over the moon.",
+    "use": "Part 2"
+   },
+   {
+    "s": "It cost an arm and a leg (natural)",
+    "uz": "tabiiy misol",
+    "ex": "The flight cost an arm and a leg.",
+    "use": "Part 1"
+   },
+   {
+    "s": "Avoid clichés like 'every coin has two sides'",
+    "uz": "klishe",
+    "ex": "Klishelar band ko'tarmaydi",
+    "use": "Original bo'ling"
+   },
+   {
+    "s": "Learn idioms in sentences",
+    "uz": "gap ichida",
+    "ex": "Daily'dagi misol gaplarni yodlang",
+    "use": "Mashq usuli"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Weak forms 2: have, has, them, her",
+  "items": [
+   {
+    "w": "have (aux)",
+    "ipa": "/həv/ yoki /əv/",
+    "uz": "I could have gone → 'could've'",
+    "tip": "KUD-əv"
+   },
+   {
+    "w": "has (aux)",
+    "ipa": "/həz/ yoki /əz/",
+    "uz": "She has finished → /ʃiəz/",
+    "tip": "Tez nutq"
+   },
+   {
+    "w": "them",
+    "ipa": "/ðəm/ yoki /əm/",
+    "uz": "Tell them → TEL-əm",
+    "tip": "Listening"
+   },
+   {
+    "w": "her",
+    "ipa": "/hə/ yoki /ə/",
+    "uz": "Ask her → ASK-ə",
+    "tip": "Listening"
+   },
+   {
+    "w": "him",
+    "ipa": "/ɪm/",
+    "uz": "I saw him → ai-SAW-im",
+    "tip": "h tushadi"
+   },
+   {
+    "w": "are",
+    "ipa": "/ə/",
+    "uz": "They are here → ðeə-rə-HIƏ",
+    "tip": "Kuchsiz"
+   },
+   {
+    "w": "some",
+    "ipa": "/səm/",
+    "uz": "some water → səm-WOR-tə",
+    "tip": "Kuchsiz"
+   },
+   {
+    "w": "from",
+    "ipa": "/frəm/",
+    "uz": "from Tashkent → frəm-TASH-kent",
+    "tip": "Kuchsiz"
+   },
+   {
+    "w": "at",
+    "ipa": "/ət/",
+    "uz": "at home → ət-HOUM",
+    "tip": "Kuchsiz"
+   },
+   {
+    "w": "than",
+    "ipa": "/ðən/",
+    "uz": "bigger than → BIG-ə-ðən",
+    "tip": "Taqqoslash"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing about very small or zero values",
+  "items": [
+   {
+    "w": "negligible",
+    "syn": "tiny, insignificant",
+    "uz": "juda kichik, e'tiborsiz",
+    "ex": "The amount of nuclear power was negligible."
+   },
+   {
+    "w": "fell to zero",
+    "syn": "disappeared",
+    "uz": "nolga tushdi",
+    "ex": "Coal use fell to zero by 2020."
+   },
+   {
+    "w": "was virtually non-existent",
+    "syn": "almost none",
+    "uz": "deyarli yo'q edi",
+    "ex": "Online sales were virtually non-existent in 1995."
+   },
+   {
+    "w": "a mere 2%",
+    "syn": "only 2%",
+    "uz": "atigi 2%",
+    "ex": "A mere 2% of students cycled."
+   },
+   {
+    "w": "barely registered",
+    "syn": "was hardly visible",
+    "uz": "deyarli sezilmadi",
+    "ex": "Wind power barely registered before 2000."
+   },
+   {
+    "w": "no data were given for",
+    "syn": "missing data",
+    "uz": "… uchun ma'lumot yo'q",
+    "ex": "No data were given for 2005."
+   },
+   {
+    "w": "a minimal amount",
+    "syn": "a very small quantity",
+    "uz": "minimal miqdor",
+    "ex": "Only a minimal amount was exported."
+   },
+   {
+    "w": "rose from nothing to",
+    "syn": "started at zero",
+    "uz": "noldan … gacha o'sdi",
+    "ex": "Electric car sales rose from nothing to 5%."
+   },
+   {
+    "w": "the lowest of all",
+    "syn": "the smallest",
+    "uz": "eng pasti",
+    "ex": "Italy had the lowest figure of all."
+   },
+   {
+    "w": "only slightly above zero",
+    "syn": "near zero",
+    "uz": "noldan sal yuqori",
+    "ex": "Figures stayed only slightly above zero."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Crime prevention and punishment",
+  "items": [
+   {
+    "w": "prison sentence",
+    "syn": "jail term",
+    "uz": "qamoq jazosi",
+    "ex": "Long prison sentences may not reduce crime."
+   },
+   {
+    "w": "crime rate",
+    "syn": "level of crime",
+    "uz": "jinoyatchilik darajasi",
+    "ex": "The crime rate fell in the 2010s."
+   },
+   {
+    "w": "surveillance cameras",
+    "syn": "CCTV",
+    "uz": "kuzatuv kameralari",
+    "ex": "Surveillance cameras deter theft."
+   },
+   {
+    "w": "youth crime",
+    "syn": "crimes by young people",
+    "uz": "yoshlar jinoyatchiligi",
+    "ex": "Youth crime is linked to unemployment."
+   },
+   {
+    "w": "restorative justice",
+    "syn": "repairing harm",
+    "uz": "tiklovchi adolat",
+    "ex": "Restorative justice brings victims and offenders together."
+   },
+   {
+    "w": "a deterrent effect",
+    "syn": "discouraging effect",
+    "uz": "to'xtatuvchi ta'sir",
+    "ex": "Harsh punishments may have a deterrent effect."
+   },
+   {
+    "w": "social causes of crime",
+    "syn": "poverty, education",
+    "uz": "jinoyatning ijtimoiy sabablari",
+    "ex": "We must tackle the social causes of crime."
+   },
+   {
+    "w": "community policing",
+    "syn": "local police work",
+    "uz": "jamoatchilik politsiyasi",
+    "ex": "Community policing builds trust."
+   },
+   {
+    "w": "cybercrime",
+    "syn": "online crime",
+    "uz": "kiberjinoyat",
+    "ex": "Cybercrime is growing rapidly."
+   },
+   {
+    "w": "reintegrate into society",
+    "syn": "return to normal life",
+    "uz": "jamiyatga qaytarmoq",
+    "ex": "Education helps prisoners reintegrate into society."
+   }
+  ]
+ }
+}

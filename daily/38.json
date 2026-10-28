@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Phrasal verbs: speaking vs writing",
+  "items": [
+   {
+    "s": "find out → discover",
+    "uz": "Speaking: find out, Writing: discover",
+    "ex": "Scientists discovered a new species.",
+    "use": "Register"
+   },
+   {
+    "s": "cut down on → reduce",
+    "uz": "kamaytirmoq",
+    "ex": "Governments should reduce car use.",
+    "use": "Task 2"
+   },
+   {
+    "s": "look into → investigate",
+    "uz": "o'rganmoq",
+    "ex": "The police investigated the case.",
+    "use": "Task 2"
+   },
+   {
+    "s": "put off → postpone",
+    "uz": "kechiktirmoq",
+    "ex": "The meeting was postponed.",
+    "use": "Rasmiy"
+   },
+   {
+    "s": "set up → establish",
+    "uz": "tashkil etmoq",
+    "ex": "The company was established in 1990.",
+    "use": "Task 1/2"
+   },
+   {
+    "s": "go up / go down → increase / decrease",
+    "uz": "Task 1 da rasmiy fe'l",
+    "ex": "Sales increased by 10%.",
+    "use": "Task 1"
+   },
+   {
+    "s": "Phrasal verbs are good in Speaking",
+    "uz": "tabiiy nutq belgisi",
+    "ex": "I grew up in a small town.",
+    "use": "Speaking LR"
+   },
+   {
+    "s": "Some phrasal verbs are fine in Writing",
+    "uz": "carry out, bring about, account for",
+    "ex": "Research was carried out in 2019.",
+    "use": "Akademik phrasal verbs"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Patience and waiting",
+  "items": [
+   {
+    "t": "hang in there",
+    "uz": "chidang, bardosh bering",
+    "ex": "Hang in there — exam day is close.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "bide your time",
+    "uz": "qulay paytni kutmoq",
+    "ex": "He bided his time before asking for a raise.",
+    "use": "Strategiya"
+   },
+   {
+    "t": "good things come to those who wait",
+    "uz": "sabr tagi — sariq oltin",
+    "ex": "Good things come to those who wait.",
+    "use": "Maqol"
+   },
+   {
+    "t": "hold on",
+    "uz": "biroz kuting",
+    "ex": "Hold on, I'll check.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "wait and see",
+    "uz": "kutib ko'rmoq",
+    "ex": "Let's wait and see what the results show.",
+    "use": "Noaniqlik"
+   },
+   {
+    "t": "Rome wasn't built in a day",
+    "uz": "katta ish vaqt talab qiladi",
+    "ex": "Band 7.5 needs time — Rome wasn't built in a day.",
+    "use": "Motivatsiya"
+   },
+   {
+    "t": "on hold",
+    "uz": "to'xtatib qo'yilgan",
+    "ex": "My plans are on hold until after the exam.",
+    "use": "Rejalar"
+   },
+   {
+    "t": "lose patience",
+    "uz": "sabri tugamoq",
+    "ex": "I lost patience with the slow internet.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "in due course",
+    "uz": "o'z vaqtida",
+    "ex": "Results will be published in due course.",
+    "use": "Rasmiy"
+   },
+   {
+    "t": "twiddle your thumbs",
+    "uz": "bekor o'tirmoq",
+    "ex": "I spent an hour twiddling my thumbs at the airport.",
+    "use": "Hikoya"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "equip",
+    "pos": "verb",
+    "syn": "supply, provide, prepare",
+    "uz": "jihozlamoq, tayyorlamoq",
+    "ex": "Schools should equip students with digital skills."
+   },
+   {
+    "w": "extract",
+    "pos": "verb/noun",
+    "syn": "remove, take out; excerpt",
+    "uz": "ajratib olmoq; parcha",
+    "ex": "Oil is extracted from the sea bed."
+   },
+   {
+    "w": "finite",
+    "pos": "adj",
+    "syn": "limited, restricted",
+    "uz": "cheklangan",
+    "ex": "Fossil fuels are a finite resource."
+   },
+   {
+    "w": "foundation",
+    "pos": "noun",
+    "syn": "basis, base; organisation",
+    "uz": "asos; fond",
+    "ex": "Reading is the foundation of learning."
+   },
+   {
+    "w": "globe",
+    "pos": "noun",
+    "syn": "world, earth",
+    "uz": "yer shari",
+    "ex": "The company has offices across the globe."
+   },
+   {
+    "w": "grade",
+    "pos": "noun/verb",
+    "syn": "mark, level; rank",
+    "uz": "baho, daraja",
+    "ex": "She got top grades in maths."
+   },
+   {
+    "w": "guarantee",
+    "pos": "verb/noun",
+    "syn": "ensure, promise",
+    "uz": "kafolatlamoq",
+    "ex": "A degree does not guarantee a job."
+   },
+   {
+    "w": "hierarchy",
+    "pos": "noun",
+    "syn": "ranking, order",
+    "uz": "ierarxiya",
+    "ex": "The company has a strict hierarchy."
+   },
+   {
+    "w": "identical",
+    "pos": "adj",
+    "syn": "the same, alike",
+    "uz": "bir xil",
+    "ex": "The two samples were identical."
+   },
+   {
+    "w": "ideology",
+    "pos": "noun",
+    "syn": "beliefs, doctrine",
+    "uz": "mafkura",
+    "ex": "Political ideology shapes policy."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Disagreeing politely",
+  "items": [
+   {
+    "s": "I'm afraid I don't quite agree.",
+    "uz": "Afsuski, unchalik qo'shilmayman",
+    "ex": "I'm afraid I don't quite agree with that.",
+    "use": "Muloyim"
+   },
+   {
+    "s": "I see your point, but …",
+    "uz": "Fikringizni tushunaman, lekin …",
+    "ex": "I see your point, but it's too expensive.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "That's one way of looking at it, but …",
+    "uz": "Bu bir nuqtai nazar, lekin …",
+    "ex": "That's one way of looking at it, but…",
+    "use": "Diplomatik"
+   },
+   {
+    "s": "I'm not convinced that …",
+    "uz": "… ekanligiga ishonmayman",
+    "ex": "I'm not convinced that it works.",
+    "use": "Shubha"
+   },
+   {
+    "s": "With respect, …",
+    "uz": "Hurmat bilan, …",
+    "ex": "With respect, I think the opposite is true.",
+    "use": "Rasmiy"
+   },
+   {
+    "s": "I'd question whether …",
+    "uz": "… ekanligiga shubha bilan qarayman",
+    "ex": "I'd question whether that's fair.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Not entirely.",
+    "uz": "To'liq emas",
+    "ex": "Do you agree? — Not entirely.",
+    "use": "Qisqa javob"
+   },
+   {
+    "s": "I can see why people think that, but …",
+    "uz": "Odamlar nega shunday o'ylashini tushunaman, lekin …",
+    "ex": "I can see why people think that, but the data show otherwise.",
+    "use": "Empatiya"
+   },
+   {
+    "s": "I'd beg to differ.",
+    "uz": "Men boshqacha fikrdaman (rasmiy)",
+    "ex": "I'd beg to differ on that point.",
+    "use": "Rasmiy"
+   },
+   {
+    "s": "It's not as simple as that.",
+    "uz": "Hammasi unchalik oddiy emas",
+    "ex": "It's not as simple as that — there are many factors.",
+    "use": "Murakkablik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Words with silent syllables or tricky spelling",
+  "items": [
+   {
+    "w": "temperature",
+    "ipa": "/ˈtemprətʃə/",
+    "uz": "3 bo'g'in, o'rtadagi e tushadi",
+    "tip": "TEM-prə-chə"
+   },
+   {
+    "w": "library",
+    "ipa": "/ˈlaɪbrəri/",
+    "uz": "'laybrari' emas, LAI-brə-ri",
+    "tip": "3 bo'g'in"
+   },
+   {
+    "w": "February",
+    "ipa": "/ˈfebruəri/",
+    "uz": "FEB-ru-ə-ri",
+    "tip": "Sanalar"
+   },
+   {
+    "w": "literature",
+    "ipa": "/ˈlɪtrətʃə/",
+    "uz": "LIT-rə-chə",
+    "tip": "3 bo'g'in"
+   },
+   {
+    "w": "restaurant",
+    "ipa": "/ˈrestrɒnt/",
+    "uz": "RES-tront",
+    "tip": "2-3 bo'g'in"
+   },
+   {
+    "w": "business",
+    "ipa": "/ˈbɪznəs/",
+    "uz": "BIZ-nəs, 'biznes' emas",
+    "tip": "u o'qilmaydi"
+   },
+   {
+    "w": "medicine",
+    "ipa": "/ˈmedsn/",
+    "uz": "MED-sn",
+    "tip": "2 bo'g'in"
+   },
+   {
+    "w": "especially",
+    "ipa": "/ɪˈspeʃəli/",
+    "uz": "i-SPESH-ə-li, 'ekspesheli' emas",
+    "tip": "Ko'p xato"
+   },
+   {
+    "w": "mathematics",
+    "ipa": "/ˌmæθəˈmætɪks/",
+    "uz": "urg'u 3-bo'g'inda",
+    "tip": "math-ə-MAT-iks"
+   },
+   {
+    "w": "Leicester",
+    "ipa": "/ˈlestə/",
+    "uz": "LES-tə — joy nomlari aldaydi",
+    "tip": "Listening joy nomlari"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing the most important data",
+  "items": [
+   {
+    "w": "what stands out most",
+    "syn": "the key feature",
+    "uz": "eng ko'zga tashlanadigan narsa",
+    "ex": "What stands out most is the rise in solar power."
+   },
+   {
+    "w": "notably",
+    "syn": "especially",
+    "uz": "ayniqsa",
+    "ex": "Prices rose, notably in the capital."
+   },
+   {
+    "w": "it is worth noting that",
+    "syn": "it should be noted that",
+    "uz": "shuni ta'kidlash joizki",
+    "ex": "It is worth noting that women outnumbered men."
+   },
+   {
+    "w": "significantly",
+    "syn": "markedly",
+    "uz": "sezilarli darajada",
+    "ex": "Car use was markedly higher in rural areas."
+   },
+   {
+    "w": "the key difference",
+    "syn": "the main contrast",
+    "uz": "asosiy farq",
+    "ex": "The key difference lies in age."
+   },
+   {
+    "w": "dominated",
+    "syn": "was the largest",
+    "uz": "ustunlik qildi",
+    "ex": "Coal dominated energy production."
+   },
+   {
+    "w": "by far",
+    "syn": "much more than any other",
+    "uz": "boshqalardan ancha",
+    "ex": "Rice was by far the most common crop."
+   },
+   {
+    "w": "in particular",
+    "syn": "particularly",
+    "uz": "xususan",
+    "ex": "Young people, in particular, used apps."
+   },
+   {
+    "w": "most noticeably",
+    "syn": "clearly",
+    "uz": "eng ko'zga tashlanadigan",
+    "ex": "Most noticeably, costs fell after 2010."
+   },
+   {
+    "w": "an exceptional case",
+    "syn": "unusual",
+    "uz": "istisno holat",
+    "ex": "Italy was an exceptional case."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Climate change: causes and responses",
+  "items": [
+   {
+    "w": "global warming",
+    "syn": "rising temperatures",
+    "uz": "global isish",
+    "ex": "Global warming causes extreme weather."
+   },
+   {
+    "w": "greenhouse gases",
+    "syn": "CO2 and methane",
+    "uz": "issiqxona gazlari",
+    "ex": "Cars emit greenhouse gases."
+   },
+   {
+    "w": "extreme weather events",
+    "syn": "floods, droughts",
+    "uz": "ekstremal ob-havo hodisalari",
+    "ex": "Extreme weather events are more frequent."
+   },
+   {
+    "w": "rising sea levels",
+    "syn": "higher oceans",
+    "uz": "dengiz sathining ko'tarilishi",
+    "ex": "Rising sea levels threaten coastal cities."
+   },
+   {
+    "w": "reduce emissions",
+    "syn": "cut pollution",
+    "uz": "chiqindilarni kamaytirmoq",
+    "ex": "Countries pledged to reduce emissions."
+   },
+   {
+    "w": "climate refugees",
+    "syn": "people displaced by climate",
+    "uz": "iqlim qochqinlari",
+    "ex": "Climate refugees are increasing."
+   },
+   {
+    "w": "international agreements",
+    "syn": "treaties",
+    "uz": "xalqaro kelishuvlar",
+    "ex": "International agreements set emission targets."
+   },
+   {
+    "w": "carbon tax",
+    "syn": "tax on emissions",
+    "uz": "uglerod solig'i",
+    "ex": "A carbon tax makes polluters pay."
+   },
+   {
+    "w": "adapt to climate change",
+    "syn": "adjust",
+    "uz": "iqlim o'zgarishiga moslashmoq",
+    "ex": "Farmers must adapt to climate change."
+   },
+   {
+    "w": "individual action",
+    "syn": "personal responsibility",
+    "uz": "shaxsiy harakat",
+    "ex": "Individual action matters, but governments matter more."
+   }
+  ]
+ }
+}

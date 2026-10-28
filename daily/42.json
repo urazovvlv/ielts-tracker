@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Emphasis: do/does/did, so and such",
+  "items": [
+   {
+    "s": "do/does/did + V for emphasis",
+    "uz": "tasdiqni kuchaytirish",
+    "ex": "I do understand your point.",
+    "use": "Speaking emfaza"
+   },
+   {
+    "s": "so + adjective / adverb",
+    "uz": "shunchalik …",
+    "ex": "The exam was so difficult.",
+    "use": "Hissiyot"
+   },
+   {
+    "s": "such + (a) + adjective + noun",
+    "uz": "shunday … ki",
+    "ex": "It was such a long day.",
+    "use": "❌ so long day"
+   },
+   {
+    "s": "so … that …",
+    "uz": "shunchalik …ki …",
+    "ex": "It was so hot that we stayed inside.",
+    "use": "Natija"
+   },
+   {
+    "s": "such … that …",
+    "uz": "shunday … ki …",
+    "ex": "It was such a good film that I watched it twice.",
+    "use": "Natija"
+   },
+   {
+    "s": "so much / so many",
+    "uz": "shuncha ko'p",
+    "ex": "There were so many people.",
+    "use": "Miqdor"
+   },
+   {
+    "s": "the very + noun",
+    "uz": "aynan o'sha",
+    "ex": "That was the very moment I decided.",
+    "use": "Band 8"
+   },
+   {
+    "s": "❌ It was so a good day → ✅ It was such a good day",
+    "uz": "otdan oldin such",
+    "ex": "It was such a beautiful view.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Learning and knowledge (more)",
+  "items": [
+   {
+    "t": "know something inside out",
+    "uz": "biror narsani to'liq bilmoq",
+    "ex": "She knows the test format inside out.",
+    "use": "IELTS"
+   },
+   {
+    "t": "pick up (a language)",
+    "uz": "o'rganib olmoq (tabiiy)",
+    "ex": "I picked up some Turkish from TV series.",
+    "use": "Til o'rganish"
+   },
+   {
+    "t": "a know-it-all",
+    "uz": "hamma narsani biladigan qilib ko'rsatadigan",
+    "ex": "Nobody likes a know-it-all.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "learn the hard way",
+    "uz": "achchiq tajribadan o'rganmoq",
+    "ex": "I learned the hard way to back up my files.",
+    "use": "Saboq"
+   },
+   {
+    "t": "hit the nail on the head",
+    "uz": "aynan nishonga urmoq",
+    "ex": "You hit the nail on the head.",
+    "use": "Rozilik"
+   },
+   {
+    "t": "go over something",
+    "uz": "takrorlamoq",
+    "ex": "Let's go over the answers.",
+    "use": "O'qish"
+   },
+   {
+    "t": "a crash course",
+    "uz": "qisqa intensiv kurs",
+    "ex": "I took a crash course in Excel.",
+    "use": "Ta'lim"
+   },
+   {
+    "t": "rusty",
+    "uz": "unutilgan (malaka)",
+    "ex": "My German is a bit rusty.",
+    "use": "Til"
+   },
+   {
+    "t": "the school of hard knocks",
+    "uz": "hayot maktabi",
+    "ex": "He learned business in the school of hard knocks.",
+    "use": "Tajriba"
+   },
+   {
+    "t": "bookworm",
+    "uz": "kitobxon",
+    "ex": "My sister is a real bookworm.",
+    "use": "Xarakter"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "accumulate",
+    "pos": "verb",
+    "syn": "collect, gather, build up",
+    "uz": "to'planmoq",
+    "ex": "Plastic accumulates in the ocean."
+   },
+   {
+    "w": "ambiguous",
+    "pos": "adj",
+    "syn": "unclear, vague",
+    "uz": "noaniq, ikki ma'noli",
+    "ex": "The instructions were ambiguous."
+   },
+   {
+    "w": "appreciate",
+    "pos": "verb",
+    "syn": "value; understand; rise in value",
+    "uz": "qadrlamoq",
+    "ex": "Property values appreciate over time."
+   },
+   {
+    "w": "arbitrary",
+    "pos": "adj",
+    "syn": "random, unreasoned",
+    "uz": "o'zboshimcha, asossiz",
+    "ex": "The decision seemed arbitrary."
+   },
+   {
+    "w": "automate",
+    "pos": "verb",
+    "syn": "mechanise, computerise",
+    "uz": "avtomatlashtirmoq",
+    "ex": "Many factory jobs have been automated."
+   },
+   {
+    "w": "bias",
+    "pos": "noun",
+    "syn": "prejudice, partiality",
+    "uz": "xolis emaslik, tarafkashlik",
+    "ex": "The study showed gender bias."
+   },
+   {
+    "w": "chart",
+    "pos": "noun/verb",
+    "syn": "graph, diagram; record",
+    "uz": "diagramma; kuzatib bormoq",
+    "ex": "The chart shows changes over time."
+   },
+   {
+    "w": "clarify",
+    "pos": "verb",
+    "syn": "explain, make clear",
+    "uz": "aniqlashtirmoq",
+    "ex": "Could you clarify the question?"
+   },
+   {
+    "w": "commodity",
+    "pos": "noun",
+    "syn": "product, goods",
+    "uz": "tovar",
+    "ex": "Cotton is Uzbekistan's main commodity."
+   },
+   {
+    "w": "complement",
+    "pos": "verb/noun",
+    "syn": "go well with, complete",
+    "uz": "to'ldirmoq",
+    "ex": "Online lessons complement classroom teaching."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing technology use",
+  "items": [
+   {
+    "s": "I'm glued to my phone.",
+    "uz": "Telefonimdan ko'zimni uzmayman",
+    "ex": "Honestly, I'm glued to my phone in the evenings.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "I use it mainly for …",
+    "uz": "Asosan … uchun ishlataman",
+    "ex": "I use it mainly for work and studying.",
+    "use": "Part 1"
+   },
+   {
+    "s": "I'm not very tech-savvy.",
+    "uz": "Texnologiyani unchalik bilmayman",
+    "ex": "My parents aren't very tech-savvy.",
+    "use": "Tavsif"
+   },
+   {
+    "s": "It's made my life a lot easier.",
+    "uz": "Hayotimni ancha osonlashtirdi",
+    "ex": "Online banking has made my life a lot easier.",
+    "use": "Foyda"
+   },
+   {
+    "s": "I try to limit my screen time.",
+    "uz": "Ekran vaqtimni cheklashga harakat qilaman",
+    "ex": "I try to limit my screen time before bed.",
+    "use": "Odat"
+   },
+   {
+    "s": "I couldn't do my job without it.",
+    "uz": "Usiz ishimni qila olmasdim",
+    "ex": "I couldn't do my job without Meta Ads Manager.",
+    "use": "Ish"
+   },
+   {
+    "s": "It's a bit of a time-waster.",
+    "uz": "Vaqtni biroz o'g'irlaydi",
+    "ex": "Instagram is a bit of a time-waster.",
+    "use": "Salbiy"
+   },
+   {
+    "s": "I'm an early adopter.",
+    "uz": "Yangi texnologiyani birinchilardan bo'lib sinayman",
+    "ex": "I'm an early adopter of new apps.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "I tend to switch off notifications.",
+    "uz": "Bildirishnomalarni o'chirib qo'yaman",
+    "ex": "I tend to switch off notifications when studying.",
+    "use": "Odat"
+   },
+   {
+    "s": "It's a love-hate relationship.",
+    "uz": "Sevgi-nafrat munosabati",
+    "ex": "I have a love-hate relationship with social media.",
+    "use": "Idiomatik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Assimilation: sounds that change",
+  "items": [
+   {
+    "w": "ten boys",
+    "ipa": "/tem bɔɪz/",
+    "uz": "/n/ → /m/ (b oldidan)",
+    "tip": "TEM-boiz"
+   },
+   {
+    "w": "good boy",
+    "ipa": "/ɡʊb bɔɪ/",
+    "uz": "/d/ → /b/",
+    "tip": "GUB-boi"
+   },
+   {
+    "w": "don't you",
+    "ipa": "/ˈdəʊntʃu/",
+    "uz": "/t/ + /j/ → /tʃ/",
+    "tip": "DOUN-chu"
+   },
+   {
+    "w": "did you",
+    "ipa": "/ˈdɪdʒu/",
+    "uz": "/d/ + /j/ → /dʒ/",
+    "tip": "DI-ju"
+   },
+   {
+    "w": "would you",
+    "ipa": "/ˈwʊdʒu/",
+    "uz": "Listening'da shunday",
+    "tip": "WU-ju"
+   },
+   {
+    "w": "this year",
+    "ipa": "/ðɪʃ jɪə/",
+    "uz": "/s/ + /j/ → /ʃ/",
+    "tip": "ÐISH-yiə"
+   },
+   {
+    "w": "in Paris",
+    "ipa": "/ɪm ˈpærɪs/",
+    "uz": "/n/ → /m/",
+    "tip": "im-PA-ris"
+   },
+   {
+    "w": "green park",
+    "ipa": "/ɡriːm pɑːk/",
+    "uz": "/n/ → /m/",
+    "tip": "GREEM-park"
+   },
+   {
+    "w": "that girl",
+    "ipa": "/ðæk ɡɜːl/",
+    "uz": "/t/ → /k/",
+    "tip": "ÐAK-gerl"
+   },
+   {
+    "w": "Recognise it in Listening",
+    "ipa": "tanib olish",
+    "uz": "O'zingiz aytishingiz shart emas, tanish kerak",
+    "tip": "Listening strategiya"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing efficiently: 20-minute plan for Task 1",
+  "items": [
+   {
+    "w": "2 min: read and identify the type",
+    "syn": "analyse",
+    "uz": "2 daqiqa: turini aniqlash",
+    "ex": "Line, bar, pie, table, map or process?"
+   },
+   {
+    "w": "3 min: find 2 key features for the overview",
+    "syn": "plan",
+    "uz": "3 daqiqa: overview uchun 2 xususiyat",
+    "ex": "Highest/lowest, biggest change."
+   },
+   {
+    "w": "1 min: group the data",
+    "syn": "organise",
+    "uz": "1 daqiqa: ma'lumotni guruhlash",
+    "ex": "Body 1: rising items. Body 2: falling items."
+   },
+   {
+    "w": "2 min: introduction",
+    "syn": "paraphrase",
+    "uz": "2 daqiqa: kirish",
+    "ex": "One paraphrased sentence."
+   },
+   {
+    "w": "2 min: overview",
+    "syn": "summary",
+    "uz": "2 daqiqa: overview",
+    "ex": "Overall, … while …"
+   },
+   {
+    "w": "8 min: two body paragraphs",
+    "syn": "details",
+    "uz": "8 daqiqa: ikkita asosiy abzas",
+    "ex": "Compare with numbers."
+   },
+   {
+    "w": "2 min: check",
+    "syn": "proofread",
+    "uz": "2 daqiqa: tekshirish",
+    "ex": "Tenses, articles, plurals, word count."
+   },
+   {
+    "w": "Do Task 2 first?",
+    "syn": "strategy",
+    "uz": "Ba'zilar Task 2 dan boshlaydi",
+    "ex": "Task 2 is worth twice as much."
+   },
+   {
+    "w": "Never go over 20 minutes",
+    "syn": "time limit",
+    "uz": "20 daqiqadan oshirmang",
+    "ex": "Task 2 needs 40 minutes."
+   },
+   {
+    "w": "Practise with a timer",
+    "syn": "Practice tab",
+    "uz": "Practice → Writing taymeri bilan",
+    "ex": "Build speed."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Volunteering and community",
+  "items": [
+   {
+    "w": "volunteer work",
+    "syn": "unpaid work",
+    "uz": "ko'ngillilik",
+    "ex": "Volunteer work builds valuable skills."
+   },
+   {
+    "w": "give back to the community",
+    "syn": "help society",
+    "uz": "jamiyatga qarzini qaytarmoq",
+    "ex": "Successful people should give back to the community."
+   },
+   {
+    "w": "community spirit",
+    "syn": "sense of togetherness",
+    "uz": "jamoaviylik ruhi",
+    "ex": "Hashar shows strong community spirit."
+   },
+   {
+    "w": "charity work",
+    "syn": "helping charities",
+    "uz": "xayriya ishlari",
+    "ex": "Students can do charity work in summer."
+   },
+   {
+    "w": "social responsibility",
+    "syn": "duty to society",
+    "uz": "ijtimoiy mas'uliyat",
+    "ex": "Companies have a social responsibility."
+   },
+   {
+    "w": "compulsory community service",
+    "syn": "required volunteering",
+    "uz": "majburiy jamoat ishi",
+    "ex": "Some schools require compulsory community service."
+   },
+   {
+    "w": "non-profit organisations",
+    "syn": "NGOs",
+    "uz": "notijorat tashkilotlar",
+    "ex": "Non-profit organisations rely on volunteers."
+   },
+   {
+    "w": "a sense of purpose",
+    "syn": "meaning",
+    "uz": "maqsad hissi",
+    "ex": "Volunteering gives people a sense of purpose."
+   },
+   {
+    "w": "the less fortunate",
+    "syn": "poor people",
+    "uz": "kam ta'minlanganlar",
+    "ex": "We should help the less fortunate."
+   },
+   {
+    "w": "civic engagement",
+    "syn": "public participation",
+    "uz": "fuqarolik faolligi",
+    "ex": "Civic engagement strengthens democracy."
+   }
+  ]
+ }
+}

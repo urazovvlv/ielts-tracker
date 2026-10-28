@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Formal vs informal register",
+  "items": [
+   {
+    "s": "a lot of → a large number of / a great deal of",
+    "uz": "Writing'da rasmiy",
+    "ex": "A large number of students work part-time.",
+    "use": "Task 2"
+   },
+   {
+    "s": "kids → children",
+    "uz": "rasmiy so'z",
+    "ex": "Children need clear rules.",
+    "use": "Task 2"
+   },
+   {
+    "s": "get → obtain / become / receive",
+    "uz": "get o'rniga aniq fe'l",
+    "ex": "Students receive feedback weekly.",
+    "use": "LR"
+   },
+   {
+    "s": "big / huge → significant / substantial",
+    "uz": "rasmiy sifat",
+    "ex": "There was a substantial increase.",
+    "use": "Task 1/2"
+   },
+   {
+    "s": "I think → It could be argued that / I believe",
+    "uz": "fikrni rasmiy bildirish",
+    "ex": "I believe that education should be free.",
+    "use": "Task 2"
+   },
+   {
+    "s": "really / very → extremely / highly",
+    "uz": "rasmiy kuchaytirgich",
+    "ex": "This is highly unlikely.",
+    "use": "Rasmiy uslub"
+   },
+   {
+    "s": "stuff / things → aspects / issues / factors",
+    "uz": "aniq ot",
+    "ex": "Several factors affect health.",
+    "use": "LR"
+   },
+   {
+    "s": "❌ Nowadays kids are crazy about gadgets → ✅ Children today are heavily dependent on technology",
+    "uz": "slang Writing'da yo'q",
+    "ex": "Children today rely heavily on technology.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Noise, peace and quiet",
+  "items": [
+   {
+    "t": "peace and quiet",
+    "uz": "tinchlik va osoyishtalik",
+    "ex": "I go to the village for some peace and quiet.",
+    "use": "Dam olish"
+   },
+   {
+    "t": "make a racket",
+    "uz": "shovqin ko'tarmoq",
+    "ex": "The neighbours made a racket all night.",
+    "use": "Shikoyat"
+   },
+   {
+    "t": "as quiet as a mouse",
+    "uz": "sichqondek jim",
+    "ex": "She was as quiet as a mouse.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "you could hear a pin drop",
+    "uz": "jimjitlik — igna tushsa eshitiladi",
+    "ex": "In the exam hall you could hear a pin drop.",
+    "use": "Atmosfera"
+   },
+   {
+    "t": "deafening",
+    "uz": "quloqni qomatga keltiradigan",
+    "ex": "The music was deafening.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "hustle and bustle",
+    "uz": "shahar shovqini va tiriqchiligi",
+    "ex": "I love the hustle and bustle of the bazaar.",
+    "use": "Shahar hayoti"
+   },
+   {
+    "t": "keep it down",
+    "uz": "ovozingizni pasaytiring",
+    "ex": "Could you keep it down, please?",
+    "use": "Muloyim so'rov"
+   },
+   {
+    "t": "in the dead of night",
+    "uz": "tun yarmida",
+    "ex": "The phone rang in the dead of night.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "a stone's throw from",
+    "uz": "juda yaqin",
+    "ex": "My flat is a stone's throw from the metro.",
+    "use": "Joy"
+   },
+   {
+    "t": "tranquil",
+    "uz": "osoyishta",
+    "ex": "The garden is tranquil in the morning.",
+    "use": "Tasvir"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "infer",
+    "pos": "verb",
+    "syn": "deduce, conclude",
+    "uz": "xulosa chiqarmoq",
+    "ex": "We can infer that prices will rise."
+   },
+   {
+    "w": "innovate",
+    "pos": "verb",
+    "syn": "create, invent, modernise",
+    "uz": "yangilik kiritmoq",
+    "ex": "Companies must innovate to survive."
+   },
+   {
+    "w": "insert",
+    "pos": "verb",
+    "syn": "put in, add",
+    "uz": "kiritmoq, joylashtirmoq",
+    "ex": "Insert your card into the machine."
+   },
+   {
+    "w": "intervene",
+    "pos": "verb",
+    "syn": "step in, interfere",
+    "uz": "aralashmoq",
+    "ex": "The government intervened to stop the strike."
+   },
+   {
+    "w": "isolate",
+    "pos": "verb",
+    "syn": "separate, cut off",
+    "uz": "ajratib qo'ymoq",
+    "ex": "Elderly people can become isolated."
+   },
+   {
+    "w": "media",
+    "pos": "noun",
+    "syn": "press, broadcasting",
+    "uz": "ommaviy axborot vositalari",
+    "ex": "The media influence public opinion."
+   },
+   {
+    "w": "mode",
+    "pos": "noun",
+    "syn": "method, form, type",
+    "uz": "usul, shakl",
+    "ex": "Cycling is a cheap mode of transport."
+   },
+   {
+    "w": "paradigm",
+    "pos": "noun",
+    "syn": "model, pattern",
+    "uz": "paradigma, namuna",
+    "ex": "The discovery caused a paradigm shift."
+   },
+   {
+    "w": "phenomenon",
+    "pos": "noun",
+    "syn": "event, occurrence",
+    "uz": "hodisa",
+    "ex": "Online learning is a global phenomenon."
+   },
+   {
+    "w": "priority",
+    "pos": "noun",
+    "syn": "main concern, first importance",
+    "uz": "ustuvorlik",
+    "ex": "Health should be a top priority."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about responsibility (Part 3)",
+  "items": [
+   {
+    "s": "It's the government's responsibility to …",
+    "uz": "… hukumatning mas'uliyati",
+    "ex": "It's the government's responsibility to provide schools.",
+    "use": "Davlat roli"
+   },
+   {
+    "s": "I think it's down to individuals to …",
+    "uz": "Menimcha, bu har bir odamga bog'liq",
+    "ex": "I think it's down to individuals to eat well.",
+    "use": "Shaxsiy mas'uliyat"
+   },
+   {
+    "s": "Both have a part to play.",
+    "uz": "Ikkalasining ham roli bor",
+    "ex": "Both parents and schools have a part to play.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Parents should take the lead in …",
+    "uz": "Ota-onalar … da yetakchilik qilishi kerak",
+    "ex": "Parents should take the lead in teaching manners.",
+    "use": "Oila"
+   },
+   {
+    "s": "Companies have a duty to …",
+    "uz": "Kompaniyalarning … burchi bor",
+    "ex": "Companies have a duty to protect workers.",
+    "use": "Biznes"
+   },
+   {
+    "s": "Ultimately, it comes down to …",
+    "uz": "Oxir-oqibat, bu … ga borib taqaladi",
+    "ex": "Ultimately, it comes down to personal choice.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "The burden shouldn't fall only on …",
+    "uz": "Yuk faqat … ning yelkasiga tushmasligi kerak",
+    "ex": "The burden shouldn't fall only on teachers.",
+    "use": "Band 7"
+   },
+   {
+    "s": "It's a shared responsibility.",
+    "uz": "Bu umumiy mas'uliyat",
+    "ex": "Protecting nature is a shared responsibility.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "We can't just leave it to …",
+    "uz": "Buni faqat … ga tashlab qo'yolmaymiz",
+    "ex": "We can't just leave it to the government.",
+    "use": "Fikr"
+   },
+   {
+    "s": "At a personal level, …; at a national level, …",
+    "uz": "Shaxsiy darajada …; davlat darajasida …",
+    "ex": "At a personal level, recycle; at a national level, invest.",
+    "use": "Struktura"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Chunking: speaking in thought groups",
+  "items": [
+   {
+    "w": "In my opinion | it's a good idea.",
+    "ipa": "fikr guruhlari",
+    "uz": "har bir ma'no bo'lagidan keyin qisqa pauza",
+    "tip": "Ritm"
+   },
+   {
+    "w": "When I was a child | I lived in a village.",
+    "ipa": "ergash gapdan keyin pauza",
+    "uz": "Tabiiy nutq",
+    "tip": "Chunk"
+   },
+   {
+    "w": "The thing is | …",
+    "ipa": "ibora sifatida",
+    "uz": "The thing is | I don't have time.",
+    "tip": "Speaking"
+   },
+   {
+    "w": "Don't pause inside a chunk",
+    "ipa": "the | big | city ❌",
+    "uz": "the big city ✅",
+    "tip": "Ravonlik"
+   },
+   {
+    "w": "as a matter of fact",
+    "ipa": "/əz ə ˈmætər əv ˈfækt/",
+    "uz": "bitta chunk",
+    "tip": "Tez aytiladi"
+   },
+   {
+    "w": "at the end of the day",
+    "ipa": "bir chunk",
+    "uz": "ritmda",
+    "tip": "Idioma"
+   },
+   {
+    "w": "I'd like to talk about | …",
+    "ipa": "Part 2 boshida",
+    "uz": "chunk + pauza",
+    "tip": "Struktura"
+   },
+   {
+    "w": "Lists in chunks",
+    "ipa": "tea, | coffee | and juice",
+    "uz": "ro'yxat elementlari alohida",
+    "tip": "Ohang"
+   },
+   {
+    "w": "Shadowing practice",
+    "ipa": "takrorlash",
+    "uz": "Podcast gapini chunklab takrorlang",
+    "tip": "Mashq"
+   },
+   {
+    "w": "Speed vs clarity",
+    "ipa": "tezlik emas, aniqlik",
+    "uz": "Juda tez gapirish ball bermaydi",
+    "tip": "Fluency ≠ speed"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Process diagrams: sequencing language",
+  "items": [
+   {
+    "w": "First of all, …",
+    "syn": "To begin with, …",
+    "uz": "avvalo",
+    "ex": "To begin with, the beans are picked."
+   },
+   {
+    "w": "In the next stage, …",
+    "syn": "Next, …",
+    "uz": "keyingi bosqichda",
+    "ex": "In the next stage, they are dried."
+   },
+   {
+    "w": "Once this has been done, …",
+    "syn": "After this, …",
+    "uz": "bu bajarilgach",
+    "ex": "Once this has been done, they are roasted."
+   },
+   {
+    "w": "before being + V3",
+    "syn": "prior to being",
+    "uz": "… qilinishidan oldin",
+    "ex": "They are cooled before being packed."
+   },
+   {
+    "w": "In parallel, …",
+    "syn": "Alongside this, …",
+    "uz": "parallel ravishda",
+    "ex": "In parallel, the waste is collected."
+   },
+   {
+    "w": "Following this, …",
+    "syn": "Subsequently, …",
+    "uz": "shundan so'ng",
+    "ex": "Following this, the mixture is filtered."
+   },
+   {
+    "w": "until",
+    "syn": "up to the point when",
+    "uz": "… gacha",
+    "ex": "It is heated until it melts."
+   },
+   {
+    "w": "The process ends with …",
+    "syn": "Finally, …",
+    "uz": "jarayon … bilan tugaydi",
+    "ex": "The process ends with delivery to stores."
+   },
+   {
+    "w": "where",
+    "syn": "relative clause for places",
+    "uz": "qayerda",
+    "ex": "…to a factory, where it is processed."
+   },
+   {
+    "w": "count the stages in the overview",
+    "syn": "number of steps",
+    "uz": "overview'da bosqichlar sonini ayting",
+    "ex": "There are seven stages, from picking to packing."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Work-life balance and remote work",
+  "items": [
+   {
+    "w": "flexible working",
+    "syn": "flexitime",
+    "uz": "moslashuvchan ish",
+    "ex": "Flexible working improves morale."
+   },
+   {
+    "w": "commute time",
+    "syn": "travel time",
+    "uz": "ishga qatnash vaqti",
+    "ex": "Remote work saves commute time."
+   },
+   {
+    "w": "overtime",
+    "syn": "extra hours",
+    "uz": "ortiqcha ish soatlari",
+    "ex": "Unpaid overtime causes stress."
+   },
+   {
+    "w": "blurred boundaries",
+    "syn": "mixed work and home",
+    "uz": "chegaralar xiralashuvi",
+    "ex": "Home working creates blurred boundaries."
+   },
+   {
+    "w": "productivity",
+    "syn": "output",
+    "uz": "unumdorlik",
+    "ex": "Some studies show higher productivity at home."
+   },
+   {
+    "w": "isolation",
+    "syn": "loneliness",
+    "uz": "yolg'izlik",
+    "ex": "Remote workers may feel isolation."
+   },
+   {
+    "w": "a four-day week",
+    "syn": "shorter week",
+    "uz": "to'rt kunlik ish haftasi",
+    "ex": "A four-day week is being tested."
+   },
+   {
+    "w": "employee well-being",
+    "syn": "staff health",
+    "uz": "xodimlar farovonligi",
+    "ex": "Employee well-being should be a priority."
+   },
+   {
+    "w": "job-related stress",
+    "syn": "work stress",
+    "uz": "ish bilan bog'liq stress",
+    "ex": "Job-related stress costs billions."
+   },
+   {
+    "w": "switch off",
+    "syn": "stop working mentally",
+    "uz": "ishdan uzilmoq",
+    "ex": "It's hard to switch off when you work at home."
+   }
+  ]
+ }
+}

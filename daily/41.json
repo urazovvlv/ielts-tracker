@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Parallel structure",
+  "items": [
+   {
+    "s": "Lists in the same form",
+    "uz": "ro'yxat bir xil grammatik shaklda",
+    "ex": "I like reading, cooking and swimming.",
+    "use": "❌ reading, to cook and swim"
+   },
+   {
+    "s": "not only … but also … (same form)",
+    "uz": "ikki qism bir xil",
+    "ex": "It is not only cheap but also fast.",
+    "use": "Band 7"
+   },
+   {
+    "s": "both … and …",
+    "uz": "ikkalasi ham",
+    "ex": "Both parents and teachers agree.",
+    "use": "Parallel"
+   },
+   {
+    "s": "either … or … / neither … nor …",
+    "uz": "yo … yo / na … na",
+    "ex": "Neither the price nor the quality changed.",
+    "use": "Akademik"
+   },
+   {
+    "s": "Comparisons: to + V … than to + V",
+    "uz": "taqqoslash ham parallel",
+    "ex": "It is cheaper to cook than to eat out.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "Task 2 thesis with parallel points",
+    "uz": "kirish gapida",
+    "ex": "This essay will discuss the causes and suggest solutions.",
+    "use": "Struktura"
+   },
+   {
+    "s": "Neither … nor + singular/plural verb",
+    "uz": "yaqin egaga moslashadi",
+    "ex": "Neither the students nor the teacher was ready.",
+    "use": "Grammatik aniqlik"
+   },
+   {
+    "s": "❌ The job is well-paid, interesting and I can work from home",
+    "uz": "aralash shakl",
+    "ex": "✅ The job is well-paid, interesting and flexible.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Decisions and choices (more)",
+  "items": [
+   {
+    "t": "weigh your options",
+    "uz": "variantlarni tortib ko'rmoq",
+    "ex": "I weighed my options before choosing a university.",
+    "use": "Qaror"
+   },
+   {
+    "t": "spoilt for choice",
+    "uz": "tanlov juda ko'p",
+    "ex": "In Tashkent you're spoilt for choice for restaurants.",
+    "use": "Ijobiy"
+   },
+   {
+    "t": "a toss-up",
+    "uz": "teng imkoniyat",
+    "ex": "It's a toss-up between the two jobs.",
+    "use": "Ikkilanish"
+   },
+   {
+    "t": "the lesser of two evils",
+    "uz": "ikki yomondan kamrog'i",
+    "ex": "I chose the bus — the lesser of two evils.",
+    "use": "Tanlov"
+   },
+   {
+    "t": "cross that bridge when we come to it",
+    "uz": "vaqti kelganda hal qilamiz",
+    "ex": "We'll cross that bridge when we come to it.",
+    "use": "Rejalashtirish"
+   },
+   {
+    "t": "keep your options open",
+    "uz": "variantlarni ochiq qoldirmoq",
+    "ex": "I'm keeping my options open for next year.",
+    "use": "Kelajak"
+   },
+   {
+    "t": "a hard choice",
+    "uz": "qiyin tanlov",
+    "ex": "Leaving home was a hard choice.",
+    "use": "Part 2"
+   },
+   {
+    "t": "change your mind",
+    "uz": "fikrini o'zgartirmoq",
+    "ex": "I changed my mind about studying abroad.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "stick to your guns",
+    "uz": "o'z qaroridan qaytmaslik",
+    "ex": "She stuck to her guns despite criticism.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "at a crossroads",
+    "uz": "chorrahada (muhim qaror oldida)",
+    "ex": "After graduation, I was at a crossroads.",
+    "use": "Part 2"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "survive",
+    "pos": "verb",
+    "syn": "live through, endure",
+    "uz": "omon qolmoq",
+    "ex": "Few small shops survived the crisis."
+   },
+   {
+    "w": "thesis",
+    "pos": "noun",
+    "syn": "dissertation; argument",
+    "uz": "dissertatsiya; asosiy g'oya",
+    "ex": "She wrote her thesis on migration."
+   },
+   {
+    "w": "topic",
+    "pos": "noun",
+    "syn": "subject, theme",
+    "uz": "mavzu",
+    "ex": "Climate change is a hot topic."
+   },
+   {
+    "w": "transmit",
+    "pos": "verb",
+    "syn": "send, pass on, spread",
+    "uz": "uzatmoq, yuqtirmoq",
+    "ex": "Mosquitoes transmit malaria."
+   },
+   {
+    "w": "ultimate",
+    "pos": "adj",
+    "syn": "final, eventual; greatest",
+    "uz": "yakuniy; eng oliy",
+    "ex": "The ultimate goal is zero waste."
+   },
+   {
+    "w": "unique",
+    "pos": "adj",
+    "syn": "one of a kind, distinctive",
+    "uz": "noyob, yagona",
+    "ex": "Each city has a unique character."
+   },
+   {
+    "w": "visible",
+    "pos": "adj",
+    "syn": "noticeable, observable",
+    "uz": "ko'rinadigan",
+    "ex": "The effects are already visible."
+   },
+   {
+    "w": "voluntary",
+    "pos": "adj",
+    "syn": "optional, unpaid",
+    "uz": "ixtiyoriy",
+    "ex": "Attendance is voluntary."
+   },
+   {
+    "w": "abandon",
+    "pos": "verb",
+    "syn": "leave, give up",
+    "uz": "tashlab ketmoq, voz kechmoq",
+    "ex": "The project was abandoned."
+   },
+   {
+    "w": "accompany",
+    "pos": "verb",
+    "syn": "go with, escort",
+    "uz": "hamroh bo'lmoq",
+    "ex": "Children must be accompanied by an adult."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Answering difficult or unfamiliar questions",
+  "items": [
+   {
+    "s": "That's not something I've given much thought to, but …",
+    "uz": "Bu haqda ko'p o'ylamaganman, lekin …",
+    "ex": "That's not something I've given much thought to, but I'd say…",
+    "use": "Kutilmagan savol"
+   },
+   {
+    "s": "I don't know much about …, but I imagine …",
+    "uz": "… haqida ko'p bilmayman, lekin tasavvurimcha …",
+    "ex": "I don't know much about farming, but I imagine it's hard.",
+    "use": "Bilim yo'q"
+   },
+   {
+    "s": "I've never experienced it myself, but …",
+    "uz": "O'zim boshdan kechirmaganman, lekin …",
+    "ex": "I've never been to a concert, but friends say…",
+    "use": "Tajriba yo'q"
+   },
+   {
+    "s": "Let me approach it from a different angle.",
+    "uz": "Boshqa tomondan yondashay",
+    "ex": "Let me approach it from a different angle.",
+    "use": "Moslashuvchanlik"
+   },
+   {
+    "s": "Could I take a moment to think?",
+    "uz": "O'ylab olsam maylimi?",
+    "ex": "Could I take a moment to think about that?",
+    "use": "Ruxsat"
+   },
+   {
+    "s": "I'd have to guess, but …",
+    "uz": "Taxmin qilishim kerak, lekin …",
+    "ex": "I'd have to guess, but maybe 20%.",
+    "use": "Raqam"
+   },
+   {
+    "s": "Never say 'I don't know' and stop",
+    "uz": "javobsiz to'xtamang",
+    "ex": "Always add a reason or example",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Talk about a similar experience",
+    "uz": "o'xshash tajriba",
+    "ex": "I haven't done that, but I did something similar…",
+    "use": "Ko'prik"
+   },
+   {
+    "s": "Turn it into a general answer",
+    "uz": "umumlashtirish",
+    "ex": "Generally, people in my country…",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Invent a plausible example",
+    "uz": "ishonarli misol",
+    "ex": "Part 2'da to'qima tafsilot normal",
+    "use": "IELTS haqiqat tekshirmaydi"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Stress in academic word families",
+  "items": [
+   {
+    "w": "aCAdemy – acaDEmic",
+    "ipa": "/əˈkædəmi/ – /ˌækəˈdemɪk/",
+    "uz": "urg'u ko'chadi",
+    "tip": "ə-KAD-ə-mi / ak-ə-DEM-ik"
+   },
+   {
+    "w": "ENergy – enerGEtic",
+    "ipa": "/ˈenədʒi/ – /ˌenəˈdʒetɪk/",
+    "uz": "urg'u ko'chadi",
+    "tip": "EN-ə-ji / en-ə-JET-ik"
+   },
+   {
+    "w": "deMOcracy – demoCRAtic",
+    "ipa": "/dɪˈmɒkrəsi/ – /ˌdeməˈkrætɪk/",
+    "uz": "urg'u ko'chadi",
+    "tip": "di-MOK-rə-si / dem-ə-KRAT-ik"
+   },
+   {
+    "w": "phiLOsophy",
+    "ipa": "/fəˈlɒsəfi/",
+    "uz": "2-bo'g'in urg'uli",
+    "tip": "fə-LOS-ə-fi"
+   },
+   {
+    "w": "biOlogy – bioLOgical",
+    "ipa": "/baɪˈɒlədʒi/ – /ˌbaɪəˈlɒdʒɪkl/",
+    "uz": "urg'u ko'chadi",
+    "tip": "bai-OL-ə-ji / bai-ə-LOJ-i-kəl"
+   },
+   {
+    "w": "ecoLOgical",
+    "ipa": "/ˌiːkəˈlɒdʒɪkl/",
+    "uz": "-ical oldidan",
+    "tip": "ee-kə-LOJ-i-kəl"
+   },
+   {
+    "w": "staTIStical",
+    "ipa": "/stəˈtɪstɪkl/",
+    "uz": "stə-TIS-ti-kəl",
+    "tip": "Task 1"
+   },
+   {
+    "w": "indiVIDual",
+    "ipa": "/ˌɪndɪˈvɪdʒuəl/",
+    "uz": "in-di-VID-yu-əl",
+    "tip": "Task 2"
+   },
+   {
+    "w": "necessary – neCESsity",
+    "ipa": "/ˈnesəsəri/ – /nəˈsesəti/",
+    "uz": "urg'u ko'chadi",
+    "tip": "NES-ə-sə-ri / nə-SES-ə-ti"
+   },
+   {
+    "w": "hisTORic – HIStory",
+    "ipa": "/hɪˈstɒrɪk/ – /ˈhɪstri/",
+    "uz": "urg'u ko'chadi",
+    "tip": "his-TOR-ik / HIS-tri"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing a map: before and after",
+  "items": [
+   {
+    "w": "Over the 30-year period, the town underwent",
+    "syn": "experienced",
+    "uz": "30 yil davomida shahar … boshdan kechirdi",
+    "ex": "The town underwent major changes."
+   },
+   {
+    "w": "was transformed into",
+    "syn": "became",
+    "uz": "… ga aylantirildi",
+    "ex": "The farmland was transformed into a housing estate."
+   },
+   {
+    "w": "made way for",
+    "syn": "was cleared for",
+    "uz": "… uchun joy bo'shatdi",
+    "ex": "The forest made way for a golf course."
+   },
+   {
+    "w": "was widened",
+    "syn": "made broader",
+    "uz": "kengaytirildi",
+    "ex": "The main road was widened."
+   },
+   {
+    "w": "new facilities were added",
+    "syn": "amenities",
+    "uz": "yangi inshootlar qo'shildi",
+    "ex": "New facilities such as a gym were added."
+   },
+   {
+    "w": "remained in the same location",
+    "syn": "did not move",
+    "uz": "o'sha joyda qoldi",
+    "ex": "The school remained in the same location."
+   },
+   {
+    "w": "a pedestrianised area",
+    "syn": "car-free zone",
+    "uz": "piyodalar hududi",
+    "ex": "The centre became a pedestrianised area."
+   },
+   {
+    "w": "more developed / more urban",
+    "syn": "built-up",
+    "uz": "ko'proq qurilgan",
+    "ex": "Overall, the area became more urban."
+   },
+   {
+    "w": "the most dramatic change",
+    "syn": "the biggest change",
+    "uz": "eng keskin o'zgarish",
+    "ex": "The most dramatic change was in the north."
+   },
+   {
+    "w": "passive voice is essential",
+    "syn": "was built, was removed",
+    "uz": "maps uchun passiv majburiy",
+    "ex": "A bridge was built across the river."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Public transport and road safety",
+  "items": [
+   {
+    "w": "road safety",
+    "syn": "safe roads",
+    "uz": "yo'l xavfsizligi",
+    "ex": "Speed cameras improve road safety."
+   },
+   {
+    "w": "traffic accidents",
+    "syn": "road crashes",
+    "uz": "yo'l-transport hodisalari",
+    "ex": "Traffic accidents kill thousands each year."
+   },
+   {
+    "w": "speed limits",
+    "syn": "maximum speed",
+    "uz": "tezlik chegarasi",
+    "ex": "Lower speed limits save lives."
+   },
+   {
+    "w": "cycle lanes",
+    "syn": "bike paths",
+    "uz": "velosiped yo'lakchalari",
+    "ex": "More cycle lanes encourage cycling."
+   },
+   {
+    "w": "congestion charges",
+    "syn": "fees to drive in city",
+    "uz": "tirbandlik to'lovi",
+    "ex": "London introduced congestion charges."
+   },
+   {
+    "w": "high-speed rail",
+    "syn": "fast trains",
+    "uz": "tezyurar temir yo'l",
+    "ex": "High-speed rail links Tashkent and Samarkand."
+   },
+   {
+    "w": "fuel prices",
+    "syn": "petrol costs",
+    "uz": "yoqilg'i narxlari",
+    "ex": "Rising fuel prices affect transport costs."
+   },
+   {
+    "w": "car-sharing",
+    "syn": "sharing cars",
+    "uz": "avtomobilni birgalikda ishlatish",
+    "ex": "Car-sharing reduces traffic."
+   },
+   {
+    "w": "reliable timetables",
+    "syn": "punctual services",
+    "uz": "ishonchli jadval",
+    "ex": "People use buses if timetables are reliable."
+   },
+   {
+    "w": "electric vehicles",
+    "syn": "EVs",
+    "uz": "elektromobillar",
+    "ex": "Electric vehicles reduce air pollution."
+   }
+  ]
+ }
+}
