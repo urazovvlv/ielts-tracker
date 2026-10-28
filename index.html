@@ -7,7 +7,7 @@
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap">
 <style>
 /* Layout: phone-first mini app — sticky header (day, level, streak), one scrolling view, bottom tab bar */
 :root{
@@ -427,6 +427,160 @@ h3{font-size:var(--fs-m)}
 .di-ex{font-size:var(--fs-s);font-style:italic;color:var(--muted)}
 .di-use{font-size:var(--fs-xs);color:var(--navy);font-weight:600;background:var(--navy-soft);padding:3px 8px;border-radius:6px;align-self:flex-start}
 .tabs button{font-size:10.5px}
+
+/* ===== Design system v3 — "Night shift": midnight navy instrument panel, teal for progress, one bold moment (the 60-day ruler) ===== */
+:root{
+  --bg:#F2F4FA; --card:#FFFFFF; --sunk:#F3F6FC; --raised:#E8EDF8; --ink:#0B1533; --muted:#5B688C; --line:#E0E6F2;
+  --navy:#2146C7; --action:#1F45C7; --navy-deep:#0A1638; --navy-soft:#E7EDFC;
+  --teal:#0B9486; --teal-soft:#DCF3F0; --gold:#B7791F; --gold-soft:#FBF1DE;
+  --good:#0B9486; --bad:#D64545;
+  --ph1:#9FB4F0; --ph2:#5F82E6; --ph3:#2146C7; --ph4:#0B9486;
+  --f-display:"Unbounded","Onest",system-ui,sans-serif;
+  --f-body:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r-card:20px; --r-item:14px; --r-ctl:12px;
+  --shadow:0 1px 2px rgba(10,22,56,.05),0 6px 24px -12px rgba(10,22,56,.12);
+  --hdr-glow:rgba(70,110,255,.55);
+}
+:root[data-theme="dark"]{
+  --bg:#070D1F; --card:#0E1630; --sunk:#0A1229; --raised:#16203F; --ink:#E9EEFB; --muted:#8B98BE; --line:#1B2647;
+  --navy:#7D9BFF; --action:#3B63E6; --navy-deep:#050A18; --navy-soft:#15204A;
+  --teal:#2DD4BF; --teal-soft:#0D2C33; --gold:#F2B84B; --gold-soft:#29210F;
+  --good:#2DD4BF; --bad:#FF6B6B;
+  --ph1:#22305E; --ph2:#34509E; --ph3:#5B82FF; --ph4:#2DD4BF;
+  --shadow:none;
+  --hdr-glow:rgba(59,99,230,.38);
+}
+html,body{font-family:var(--f-body);letter-spacing:-.003em}
+body{font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-body);font-weight:700;letter-spacing:-.015em}
+::selection{background:color-mix(in srgb,var(--teal) 35%,transparent)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+/* labels: sentence case, quiet */
+.label,.sc4 label,.wc-h,.ring .p,.wtag,.hdr .eyebrow{text-transform:none;letter-spacing:0}
+.label{font-size:13px;font-weight:600;color:var(--muted)}
+.note{color:var(--muted)}
+
+/* header: deep navy panel with the 60-day ruler */
+.hdr{background:radial-gradient(120% 160% at 100% -20%,var(--hdr-glow),transparent 58%),var(--navy-deep);padding:14px max(18px,env(safe-area-inset-left,0px)) 18px max(18px,env(safe-area-inset-right,0px));border-bottom:1px solid rgba(255,255,255,.06)}
+.hdr-in{gap:10px}
+.hdr .eyebrow{font-size:14px;font-weight:600;color:rgba(255,255,255,.72)}
+.hdr-day{display:flex;flex-direction:column;gap:6px}
+.hdr .day,.hdr-day .day{font-family:var(--f-display);font-weight:700;font-size:34px;line-height:1;letter-spacing:-.02em;color:#fff}
+.hdr .day small{font-family:var(--f-body);font-size:16px;font-weight:600;color:rgba(255,255,255,.55);letter-spacing:0;margin-left:2px}
+.hdr .phase,.hdr-day .phase{display:flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.78)}
+.ph-chip{font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.1);color:#fff}
+.sync{padding:4px 9px 4px 8px;border-radius:99px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.8)}
+.sync.ok i{background:#2DD4BF}.sync.busy i{background:#F2B84B}.sync.err i{background:#FF6B6B}
+.iconbtn{border-radius:12px;border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.07)}
+.ruler{display:flex;gap:2px;height:14px;align-items:flex-end;margin-top:6px}
+.ruler i{flex:1;min-width:0;height:8px;border-radius:2px;background:rgba(255,255,255,.14);transform-origin:bottom}
+.ruler i.past{background:#2DD4BF;opacity:.85}
+.ruler i.now{height:14px;background:#fff;box-shadow:0 0 0 2px rgba(45,212,191,.35)}
+.ruler i.mk:not(.past):not(.now){background:rgba(45,212,191,.45)}
+@media (prefers-reduced-motion:no-preference){
+  .ruler.anim i{animation:tick .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 6ms)}
+  @keyframes tick{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+}
+
+/* surfaces */
+.wrap{gap:14px;padding-top:16px}
+.card{border-radius:var(--r-card);border:1px solid var(--line);box-shadow:var(--shadow);padding:18px;gap:16px}
+:root[data-theme="dark"] .card{border-color:transparent;background:linear-gradient(180deg,color-mix(in srgb,var(--card) 100%,#fff 2%),var(--card))}
+.card-h h2,.wz h2,.card>h2{font-size:20px}
+.task,.witem,.mrow,.qlist button,.essay,.rlist li,.stat,.mock,.cue,.wtimer,.empty,.recnote,.svsum>div,.band-parts>span,.passage,.idbox{border-radius:var(--r-item)}
+.task,.witem,.mrow,.essay,.rlist li,.stat,.mock,.cue,.wtimer,.band-parts>span,.svsum>div,.qlist button{background:var(--sunk);border-color:var(--line)}
+:root[data-theme="dark"] .task,:root[data-theme="dark"] .witem,:root[data-theme="dark"] .mrow,:root[data-theme="dark"] .essay,:root[data-theme="dark"] .rlist li,:root[data-theme="dark"] .stat,:root[data-theme="dark"] .mock,:root[data-theme="dark"] .cue,:root[data-theme="dark"] .wtimer,:root[data-theme="dark"] .band-parts>span,:root[data-theme="dark"] .qlist button{border-color:transparent;background:var(--raised)}
+.empty{border-style:dashed;background:transparent}
+
+/* buttons */
+.btn{border-radius:var(--r-ctl);font-weight:600;min-height:46px;background:var(--raised);border-color:transparent;color:var(--ink);transition:transform .12s ease,background .15s ease}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--action);border-color:var(--action);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.btn.primary:disabled{opacity:.55}
+.btn.ghost{background:none;color:var(--muted)}
+.btn.block{min-height:50px;font-size:16px}
+.btn.icon{background:var(--raised)}
+.rm{background:transparent;border-color:var(--line);color:var(--muted)}
+.chip{background:var(--sunk);border-color:var(--line);border-radius:99px;font-weight:600}
+.chip.on{background:var(--action);border-color:var(--action);color:#fff}
+.seg{background:var(--raised);border:0;border-radius:14px;padding:4px;gap:4px}
+.seg button{border-radius:10px;color:var(--muted);min-height:40px}
+.seg button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(10,22,56,.12)}
+:root[data-theme="dark"] .seg button.on{background:#26325E;color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.addrow{border:1px dashed color-mix(in srgb,var(--navy) 45%,transparent);background:color-mix(in srgb,var(--navy-soft) 60%,transparent);border-radius:var(--r-item)}
+.addrow input,.field input[type=text],.field input[type=search],textarea,.sc,.ein,#wq8,.wtext,.mrow2 select,.svform textarea{background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--ink)}
+:root[data-theme="dark"] .addrow input,:root[data-theme="dark"] .field input[type=text],:root[data-theme="dark"] .field input[type=search],:root[data-theme="dark"] textarea,:root[data-theme="dark"] .sc,:root[data-theme="dark"] .ein,:root[data-theme="dark"] #wq8,:root[data-theme="dark"] .wtext,:root[data-theme="dark"] .mrow2 select,:root[data-theme="dark"] .svform textarea{background:var(--sunk)}
+input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--muted) 75%,transparent)}
+
+/* day card */
+.badge-day{background:var(--navy-soft);color:var(--navy);font-family:var(--f-body);font-weight:600;font-size:12px;border-radius:14px;padding:8px 12px}
+.badge-day b{font-family:var(--f-display);font-weight:700;font-size:22px;line-height:1.1}
+.tag{background:var(--teal-soft);color:var(--teal);font-weight:600}
+.pbar,.band-bar{background:var(--raised);height:8px}
+.pbar i,.band-bar i{background:linear-gradient(90deg,var(--teal),color-mix(in srgb,var(--teal) 70%,#7D9BFF))}
+.task{transition:background .15s ease,opacity .15s ease}
+.task input[type=checkbox]{border-radius:9px;border-color:color-mix(in srgb,var(--muted) 70%,transparent);background:transparent}
+.task input[type=checkbox]:checked{background:var(--teal);border-color:var(--teal)}
+.task input[type=checkbox]:checked::after{border-color:#fff}
+:root[data-theme="dark"] .task input[type=checkbox]:checked::after{border-color:#06211F}
+.task.done{background:transparent;border-color:var(--line);opacity:.7}
+.task.done .tx b{text-decoration-color:color-mix(in srgb,var(--muted) 60%,transparent)}
+.bal{background:var(--sunk);border-color:var(--line)}
+.bal.full{border-color:var(--teal);background:var(--teal-soft)}
+.warn{background:var(--gold-soft);border-radius:var(--r-item)}
+.skb{border-radius:6px;font-weight:700;letter-spacing:0}
+
+/* numbers that matter use the display face */
+.band-now b,.stat .v,.duebox b,.svsum b,.ring .t,.wt,.recbox b,.pill{font-family:var(--f-display);font-weight:700;letter-spacing:-.02em}
+.band-now b{font-size:44px;color:var(--ink)}
+.stat .v{font-size:24px}
+.pill{font-size:14px;padding:5px 12px}
+.pill.hit{background:var(--teal);color:#fff}
+:root[data-theme="dark"] .pill.hit{color:#06211F}
+.pill.c1{background:var(--action);color:#fff}
+.duebox{background:var(--navy-soft);border-radius:var(--r-item)}
+.duebox b{color:var(--navy)}
+
+/* word of the day + flashcard */
+.wotd{background:linear-gradient(135deg,var(--navy-soft),color-mix(in srgb,var(--teal-soft) 70%,var(--navy-soft)));border-color:transparent}
+.wotd .w{font-family:var(--f-body);font-weight:700;font-size:24px;letter-spacing:-.02em}
+.flash{background:radial-gradient(120% 140% at 100% 0%,rgba(70,110,255,.5),transparent 60%),var(--navy-deep);border-radius:var(--r-card);min-height:190px}
+.flash .fw{font-family:var(--f-body);font-weight:700;font-size:28px;letter-spacing:-.02em}
+
+/* daily pack */
+.dsec summary{padding:16px 18px}
+.dsec.done{border-color:color-mix(in srgb,var(--teal) 45%,var(--line))}
+.dsec-ok{color:var(--teal)}
+.di-use{background:var(--teal-soft);color:var(--teal);border-radius:8px}
+.di-ipa{color:var(--navy)}
+.di-btn{background:var(--raised);border-color:transparent;color:var(--navy);border-radius:10px}
+.di-btn.on{background:var(--teal-soft);color:var(--teal)}
+
+/* progress map & charts */
+.cell{border-radius:7px;border-color:transparent;background:var(--raised)}
+.cell.today{outline-color:var(--teal)}
+.cell .mk{background:var(--teal)}
+.chart svg text{font-family:var(--f-body)}
+
+/* speaking */
+.ring .t{font-size:40px}
+.qlist button.on{background:var(--navy-soft);border-color:var(--navy)}
+.recbox{background:var(--navy-soft);border-radius:var(--r-item)}
+
+/* tabs: frosted bar with a teal indicator */
+.tabs{background:color-mix(in srgb,var(--card) 82%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);border-top:1px solid var(--line)}
+.tabs button{position:relative;font-size:11px;font-weight:600;color:var(--muted);gap:4px}
+.tabs button.on{color:var(--ink)}
+.tabs button.on svg{color:var(--teal)}
+.tabs button::before{content:"";position:absolute;top:0;left:50%;width:0;height:3px;border-radius:0 0 3px 3px;background:var(--teal);transform:translateX(-50%);transition:width .2s ease}
+.tabs button.on::before{width:22px}
+
+/* sheet + toast */
+.sheet{background:var(--bg);border-radius:24px 24px 0 0}
+.sheet-bg{background:rgba(3,7,18,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.toast{border-radius:14px;background:var(--ink);color:var(--bg);font-weight:600;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+@media (prefers-reduced-motion:reduce){.btn:active{transform:none}.tabs button::before{transition:none}}
 </style>
 </head>
 <body>
@@ -440,7 +594,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.12';
+const BUILD='2026-10-28.13';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -455,8 +609,8 @@ const CLOUD=inTG&&ver('6.9')&&!!TG.CloudStorage;
 function applyTheme(){
   const dark=inTG?TG.colorScheme==='dark':(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
   document.documentElement.dataset.theme=dark?'dark':'light';
-  if(inTG&&ver('6.1')){try{TG.setHeaderColor(dark?'#0B1A45':'#0E2160');TG.setBackgroundColor(dark?'#0A1124':'#F2F4FA');}catch(e){}}
-  if(inTG&&ver('7.10')){try{TG.setBottomBarColor(dark?'#121C36':'#FFFFFF');}catch(e){}}
+  if(inTG&&ver('6.1')){try{TG.setHeaderColor(dark?'#050A18':'#0A1638');TG.setBackgroundColor(dark?'#070D1F':'#F2F4FA');}catch(e){}}
+  if(inTG&&ver('7.10')){try{TG.setBottomBarColor(dark?'#0E1630':'#FFFFFF');}catch(e){}}
 }
 if(inTG){TG.ready();try{TG.expand();}catch(e){} TG.onEvent&&TG.onEvent('themeChanged',applyTheme);}
 const SETBTN=inTG&&ver('7.0')&&!!TG.SettingsButton;
@@ -721,14 +875,16 @@ function currentBand(){
   const day=done[done.length-1],m=mockDoc(day);
   return {band:overall(m),m,day,parts:{L:toBand(m.L,LB).toFixed(1),R:toBand(m.R,RB).toFixed(1),W:Number(m.W).toFixed(1),S:Number(m.S).toFixed(1)}};
 }
+let rulerShown=false;
 function renderHeader(){
   if(!PLAN){document.getElementById('hdr').innerHTML=`<div class="hdr-top"><div><div class="eyebrow">IELTS tracker</div><div class="day">Welcome</div><div class="phase">Set up your plan to begin</div></div></div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>`;return;}
   const t=todayIdx(),cb=currentBand(),pct=Math.max(3,Math.min(100,(cb.band-4)/(TARGET-4)*100));
   const toExam=PLAN&&PLAN.exam?dayDiff(isoD(new Date()),PLAN.exam):null;
   const dayLine=t<1?`<div class="day">Starts ${short(START)}</div>`:t>DAYS?`<div class="day">${toExam!=null&&toExam>=0?(toExam?'Exam in '+toExam+' day'+(toExam>1?'s':''):'Exam day'):'Plan complete'}</div>`:`<div class="day">Day ${t} <small>of ${DAYS}</small></div>`;
   document.getElementById('hdr').innerHTML=`
-  <div class="hdr-top"><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name)+' · ':''}IELTS tracker</div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>${SETBTN?'':`<button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button>`}</div>
-  <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?phaseOf(t).n+' phase · '+(DAYS-t)+' day'+(DAYS-t===1?'':'s')+' left':t<1?DAYS+'-day plan · starts in '+(1-t)+' day'+(1-t===1?'':'s'):DAYS+'-day plan'}</div></div>`;
+  <div class="hdr-top"><div class="eyebrow">${PLAN&&PLAN.name?esc(PLAN.name):'IELTS tracker'}</div><div class="sync ${syncState==='ok'?'ok':syncState==='busy'?'busy':syncState==='err'?'err':''}" id="sync"><i></i><span>${syncText()}</span></div>${SETBTN?'':`<button class="iconbtn" data-open="settings" aria-label="Settings">${ico('gear')}</button>`}</div>
+  <div class="hdr-day">${dayLine}<div class="phase">${t>=1&&t<=DAYS?(DAYS-t)+' day'+(DAYS-t===1?'':'s')+' left <span class="ph-chip">'+phaseOf(t).n+' phase</span>':t<1?DAYS+'-day plan, starts in '+(1-t)+' day'+(1-t===1?'':'s'):DAYS+'-day plan'}</div></div>${t>=1&&t<=DAYS?`<div class="ruler${rulerShown?'':' anim'}" role="img" aria-label="Day ${t} of ${DAYS}">${Array.from({length:DAYS},(_,i)=>`<i style="--i:${i}" class="${i+1<t?'past':i+1===t?'now':''}${MOCKS[i+1]?' mk':''}"></i>`).join('')}</div>`:''}`;
+  if(document.querySelector('.ruler'))setTimeout(()=>{rulerShown=true;},50);
 }
 function renderTabs(){
   const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['words','Words'],['speak','Practice']];
