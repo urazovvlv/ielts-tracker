@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Tense consistency in Task 1",
+  "items": [
+   {
+    "s": "Past data → Past Simple",
+    "uz": "o'tgan yillar — o'tgan zamon",
+    "ex": "In 2010, sales rose to 500.",
+    "use": "Asosiy qoida"
+   },
+   {
+    "s": "No dates → Present Simple",
+    "uz": "vaqtsiz diagramma — hozirgi zamon",
+    "ex": "The process consists of six stages.",
+    "use": "Process/table"
+   },
+   {
+    "s": "Future data → future forms",
+    "uz": "prognoz — kelasi zamon shakllari",
+    "ex": "Sales are expected to reach 900.",
+    "use": "Prognoz"
+   },
+   {
+    "s": "Past + future in one chart",
+    "uz": "ikkalasini to'g'ri bog'lang",
+    "ex": "Sales grew until 2020 and are projected to fall.",
+    "use": "Aralash"
+   },
+   {
+    "s": "Past Perfect for 'by + past year'",
+    "uz": "o'tmish nuqtasigacha",
+    "ex": "By 2000, the figure had doubled.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Introduction in Present Simple",
+    "uz": "The graph shows …",
+    "ex": "The graph shows changes in …",
+    "use": "Kirish"
+   },
+   {
+    "s": "Maps: past passive / present perfect passive",
+    "uz": "was built / has been replaced",
+    "ex": "A school was built in 2005.",
+    "use": "Maps"
+   },
+   {
+    "s": "❌ In 1990, the number increases → ✅ increased",
+    "uz": "o'tgan yil + o'tgan zamon",
+    "ex": "In 1990, the number increased.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Friendship and social life",
+  "items": [
+   {
+    "t": "a fair-weather friend",
+    "uz": "yaxshi kunlardagi do'st",
+    "ex": "He was just a fair-weather friend.",
+    "use": "Do'stlik"
+   },
+   {
+    "t": "thick as thieves",
+    "uz": "juda qalin do'st",
+    "ex": "My cousin and I are thick as thieves.",
+    "use": "Yaqinlik"
+   },
+   {
+    "t": "a social butterfly",
+    "uz": "hamma bilan tanish, kirishimli",
+    "ex": "My sister is a real social butterfly.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "drift apart",
+    "uz": "asta-sekin uzoqlashmoq",
+    "ex": "We drifted apart after school.",
+    "use": "Munosabat"
+   },
+   {
+    "t": "make friends",
+    "uz": "do'stlashmoq",
+    "ex": "I make friends easily.",
+    "use": "Part 1"
+   },
+   {
+    "t": "hang out with",
+    "uz": "birga vaqt o'tkazmoq",
+    "ex": "I hang out with friends at weekends.",
+    "use": "Part 1"
+   },
+   {
+    "t": "a friend in need is a friend indeed",
+    "uz": "do'st kulfatda bilinar",
+    "ex": "He helped me when I was ill — a friend in need is a friend indeed.",
+    "use": "Maqol"
+   },
+   {
+    "t": "bury the hatchet",
+    "uz": "yarashmoq",
+    "ex": "We buried the hatchet after years.",
+    "use": "Munosabat"
+   },
+   {
+    "t": "a lone wolf",
+    "uz": "yolg'iz bo'rini yoqtiradigan odam",
+    "ex": "I'm a bit of a lone wolf.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "warm to someone",
+    "uz": "kimgadir iliq munosabat paydo bo'lmoq",
+    "ex": "I didn't like him at first, but I warmed to him.",
+    "use": "Munosabat"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "behalf",
+    "pos": "noun",
+    "syn": "on behalf of = for, representing",
+    "uz": "nomidan",
+    "ex": "She spoke on behalf of the students."
+   },
+   {
+    "w": "bulk",
+    "pos": "noun",
+    "syn": "majority, main part; large size",
+    "uz": "asosiy qism",
+    "ex": "The bulk of the budget goes on salaries."
+   },
+   {
+    "w": "cease",
+    "pos": "verb",
+    "syn": "stop, end",
+    "uz": "to'xtatmoq",
+    "ex": "The factory ceased production in 2015."
+   },
+   {
+    "w": "coherent",
+    "pos": "adj",
+    "syn": "logical, clear, consistent",
+    "uz": "izchil, mantiqiy",
+    "ex": "Your essay must be coherent."
+   },
+   {
+    "w": "coincide",
+    "pos": "verb",
+    "syn": "happen at the same time; agree",
+    "uz": "to'g'ri kelmoq",
+    "ex": "The holiday coincided with the festival."
+   },
+   {
+    "w": "commence",
+    "pos": "verb",
+    "syn": "begin, start",
+    "uz": "boshlanmoq",
+    "ex": "The exam will commence at 9 am."
+   },
+   {
+    "w": "compatible",
+    "pos": "adj",
+    "syn": "consistent, suitable together",
+    "uz": "mos keladigan",
+    "ex": "The app is compatible with iPhones."
+   },
+   {
+    "w": "concurrent",
+    "pos": "adj",
+    "syn": "simultaneous, parallel",
+    "uz": "bir vaqtdagi",
+    "ex": "Two concurrent studies were run."
+   },
+   {
+    "w": "confine",
+    "pos": "verb",
+    "syn": "limit, restrict",
+    "uz": "cheklamoq",
+    "ex": "The disease was confined to one region."
+   },
+   {
+    "w": "controversy",
+    "pos": "noun",
+    "syn": "dispute, debate",
+    "uz": "bahs, ziddiyat",
+    "ex": "The new law caused controversy."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Comparing generations (Part 3)",
+  "items": [
+   {
+    "s": "My grandparents' generation …",
+    "uz": "Bobo-buvilarim avlodi …",
+    "ex": "My grandparents' generation valued stability.",
+    "use": "Avlodlar"
+   },
+   {
+    "s": "Young people today are more … than their parents",
+    "uz": "Bugungi yoshlar ota-onalaridan ko'ra …",
+    "ex": "Young people today are more independent than their parents.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "Older people tend to …, while younger people …",
+    "uz": "Kattalar …, yoshlar esa …",
+    "ex": "Older people tend to save, while younger people spend.",
+    "use": "Kontrast"
+   },
+   {
+    "s": "There's a big generation gap when it comes to …",
+    "uz": "… masalasida avlodlar farqi katta",
+    "ex": "There's a big generation gap when it comes to technology.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Each generation has its own challenges.",
+    "uz": "Har avlodning o'z qiyinchiliklari bor",
+    "ex": "Each generation has its own challenges.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "They grew up in very different circumstances.",
+    "uz": "Ular juda boshqa sharoitda o'sgan",
+    "ex": "They grew up in very different circumstances.",
+    "use": "Kontekst"
+   },
+   {
+    "s": "Respect for elders is still important.",
+    "uz": "Kattalarga hurmat hali ham muhim",
+    "ex": "In Uzbekistan, respect for elders is still important.",
+    "use": "Madaniyat"
+   },
+   {
+    "s": "The younger generation is more open-minded about …",
+    "uz": "Yosh avlod … ga ochiqroq",
+    "ex": "The younger generation is more open-minded about careers.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "Each side can learn from the other.",
+    "uz": "Har ikki tomon bir-biridan o'rganishi mumkin",
+    "ex": "Each side can learn from the other.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "It's a two-way street.",
+    "uz": "Bu ikki tomonlama yo'l",
+    "ex": "Respect is a two-way street.",
+    "use": "Idioma"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "British vs American pronunciation",
+  "items": [
+   {
+    "w": "vitamin",
+    "ipa": "UK /ˈvɪtəmɪn/ – US /ˈvaɪtəmɪn/",
+    "uz": "VIT-ə-min / VAI-tə-min",
+    "tip": "Sog'liq mavzusi"
+   },
+   {
+    "w": "schedule",
+    "ipa": "UK /ˈʃedjuːl/ – US /ˈskedʒuːl/",
+    "uz": "SHED-yool / SKED-jool",
+    "tip": "Listening'da ikkalasi"
+   },
+   {
+    "w": "tomato",
+    "ipa": "UK /təˈmɑːtəʊ/ – US /təˈmeɪtoʊ/",
+    "uz": "tə-MAH-to / tə-MEI-to",
+    "tip": "Farq"
+   },
+   {
+    "w": "privacy",
+    "ipa": "UK /ˈprɪvəsi/ – US /ˈpraɪvəsi/",
+    "uz": "PRIV-ə-si / PRAI-və-si",
+    "tip": "Task 2 so'zi"
+   },
+   {
+    "w": "leisure",
+    "ipa": "UK /ˈleʒə/ – US /ˈliːʒər/",
+    "uz": "LEZH-ə / LEE-zhər",
+    "tip": "Task 2 so'zi"
+   },
+   {
+    "w": "either",
+    "ipa": "/ˈaɪðə/ yoki /ˈiːðə/",
+    "uz": "ikkalasi to'g'ri",
+    "tip": "AI-ðə / EE-ðə"
+   },
+   {
+    "w": "route",
+    "ipa": "UK /ruːt/ – US /raʊt/",
+    "uz": "ROOT / RAUT",
+    "tip": "Listening"
+   },
+   {
+    "w": "garage",
+    "ipa": "UK /ˈɡærɑːʒ/ – US /ɡəˈrɑːʒ/",
+    "uz": "urg'u farqi",
+    "tip": "GA-rahzh / gə-RAHZH"
+   },
+   {
+    "w": "hot",
+    "ipa": "UK /hɒt/ – US /hɑːt/",
+    "uz": "UK qisqa dumaloq o",
+    "tip": "HOT / HAHT"
+   },
+   {
+    "w": "IELTS accepts any clear accent",
+    "ipa": "aksent muhim emas",
+    "uz": "Tushunarlilik muhim, aksent emas",
+    "tip": "Pronunciation mezoni"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing about changes with 'there was/were'",
+  "items": [
+   {
+    "w": "There was a gradual rise in",
+    "syn": "noun phrase",
+    "uz": "… da asta-sekin o'sish bo'ldi",
+    "ex": "There was a gradual rise in demand."
+   },
+   {
+    "w": "There were fluctuations in",
+    "syn": "plural noun",
+    "uz": "… da tebranishlar bo'ldi",
+    "ex": "There were fluctuations in oil prices."
+   },
+   {
+    "w": "There was little change in",
+    "syn": "almost no change",
+    "uz": "… da deyarli o'zgarish bo'lmadi",
+    "ex": "There was little change in rent."
+   },
+   {
+    "w": "There has been a steady increase in",
+    "syn": "present perfect",
+    "uz": "… da barqaror o'sish bo'lib kelmoqda",
+    "ex": "There has been a steady increase in tourists."
+   },
+   {
+    "w": "There is expected to be a fall in",
+    "syn": "future",
+    "uz": "… da pasayish kutilmoqda",
+    "ex": "There is expected to be a fall in births."
+   },
+   {
+    "w": "There were twice as many … as …",
+    "syn": "comparison",
+    "uz": "… dan ikki baravar ko'p … bor edi",
+    "ex": "There were twice as many cars as bikes."
+   },
+   {
+    "w": "alternate with verb sentences",
+    "syn": "variety",
+    "uz": "fe'lli gaplar bilan almashtiring",
+    "ex": "Sales rose. / There was a rise in sales."
+   },
+   {
+    "w": "adjective + noun: a dramatic fall",
+    "syn": "noun style",
+    "uz": "sifat + ot",
+    "ex": "There was a dramatic fall in 2008."
+   },
+   {
+    "w": "verb + adverb: fell dramatically",
+    "syn": "verb style",
+    "uz": "fe'l + ravish",
+    "ex": "Sales fell dramatically in 2008."
+   },
+   {
+    "w": "both styles in one report",
+    "syn": "range of structures",
+    "uz": "bitta hisobotda ikkala uslub",
+    "ex": "Shows grammatical range."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Exams, testing and assessment",
+  "items": [
+   {
+    "w": "standardised tests",
+    "syn": "the same test for all",
+    "uz": "standart testlar",
+    "ex": "Standardised tests measure basic skills."
+   },
+   {
+    "w": "exam pressure",
+    "syn": "test stress",
+    "uz": "imtihon bosimi",
+    "ex": "Exam pressure affects students' health."
+   },
+   {
+    "w": "continuous assessment",
+    "syn": "coursework grading",
+    "uz": "doimiy baholash",
+    "ex": "Continuous assessment is fairer than one exam."
+   },
+   {
+    "w": "teach to the test",
+    "syn": "focus only on exams",
+    "uz": "faqat imtihonga o'rgatmoq",
+    "ex": "Many teachers teach to the test."
+   },
+   {
+    "w": "memorisation",
+    "syn": "rote learning",
+    "uz": "yodlash",
+    "ex": "Exams reward memorisation over thinking."
+   },
+   {
+    "w": "practical skills",
+    "syn": "hands-on abilities",
+    "uz": "amaliy ko'nikmalar",
+    "ex": "Tests rarely measure practical skills."
+   },
+   {
+    "w": "academic achievement",
+    "syn": "school success",
+    "uz": "akademik yutuq",
+    "ex": "Academic achievement is not the only measure."
+   },
+   {
+    "w": "high-stakes exams",
+    "syn": "very important exams",
+    "uz": "yuqori xavfli imtihonlar",
+    "ex": "University entrance tests are high-stakes exams."
+   },
+   {
+    "w": "objective measure",
+    "syn": "fair measure",
+    "uz": "xolis o'lchov",
+    "ex": "Exams provide an objective measure of ability."
+   },
+   {
+    "w": "cheating",
+    "syn": "dishonesty in exams",
+    "uz": "ko'chirish, aldash",
+    "ex": "Online exams make cheating easier."
+   }
+  ]
+ }
+}

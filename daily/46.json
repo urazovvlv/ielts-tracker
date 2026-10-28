@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Verb patterns: make, let, allow, enable, encourage",
+  "items": [
+   {
+    "s": "make + someone + V (no to)",
+    "uz": "majburlamoq",
+    "ex": "Teachers made us rewrite the essay.",
+    "use": "❌ made us to rewrite"
+   },
+   {
+    "s": "let + someone + V (no to)",
+    "uz": "ruxsat bermoq",
+    "ex": "My parents let me travel alone.",
+    "use": "❌ let me to travel"
+   },
+   {
+    "s": "allow / permit + someone + to V",
+    "uz": "ruxsat bermoq (rasmiy)",
+    "ex": "The law allows workers to take breaks.",
+    "use": "Task 2"
+   },
+   {
+    "s": "enable + someone + to V",
+    "uz": "imkon bermoq",
+    "ex": "The internet enables people to work remotely.",
+    "use": "Task 2 band 7"
+   },
+   {
+    "s": "encourage / persuade + someone + to V",
+    "uz": "rag'batlantirmoq",
+    "ex": "Tax cuts encourage people to buy electric cars.",
+    "use": "Task 2"
+   },
+   {
+    "s": "prevent / stop + someone + from + -ing",
+    "uz": "to'sqinlik qilmoq",
+    "ex": "High fees prevent students from studying.",
+    "use": "Task 2"
+   },
+   {
+    "s": "be made to + V (passive)",
+    "uz": "passivda to qaytadi",
+    "ex": "We were made to wait for an hour.",
+    "use": "Grammatika"
+   },
+   {
+    "s": "❌ Technology allows us communicate → ✅ allows us to communicate",
+    "uz": "allow dan keyin to",
+    "ex": "Phones allow us to stay in touch.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Work and effort (more)",
+  "items": [
+   {
+    "t": "get down to business",
+    "uz": "ishga kirishmoq",
+    "ex": "Let's get down to business.",
+    "use": "Ish"
+   },
+   {
+    "t": "a busy bee",
+    "uz": "tinim bilmas odam",
+    "ex": "My mum is a real busy bee.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "work like a dog",
+    "uz": "ot kabi ishlamoq",
+    "ex": "I worked like a dog before the exam.",
+    "use": "Mehnat"
+   },
+   {
+    "t": "hold down a job",
+    "uz": "ishni saqlab qolmoq",
+    "ex": "It's hard to hold down a job and study.",
+    "use": "Part 1"
+   },
+   {
+    "t": "a dog-eat-dog world",
+    "uz": "shafqatsiz raqobat dunyosi",
+    "ex": "Business is a dog-eat-dog world.",
+    "use": "Part 3"
+   },
+   {
+    "t": "learn on the job",
+    "uz": "ish jarayonida o'rganmoq",
+    "ex": "I learned targeting on the job.",
+    "use": "Ish tajribasi"
+   },
+   {
+    "t": "take on too much",
+    "uz": "o'ziga haddan ortiq yuk olmoq",
+    "ex": "I took on too much this month.",
+    "use": "Bandlik"
+   },
+   {
+    "t": "pull an all-nighter",
+    "uz": "tun bo'yi uxlamay ishlamoq",
+    "ex": "I pulled an all-nighter to finish the project.",
+    "use": "Talaba hayoti"
+   },
+   {
+    "t": "a labour of love",
+    "uz": "sevib qilinadigan mehnat",
+    "ex": "Running my blog is a labour of love.",
+    "use": "Sevimli ish"
+   },
+   {
+    "t": "cut your teeth",
+    "uz": "dastlabki tajriba orttirmoq",
+    "ex": "I cut my teeth in marketing at a small agency.",
+    "use": "Karyera"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "random",
+    "pos": "adj",
+    "syn": "chance, arbitrary, unplanned",
+    "uz": "tasodifiy",
+    "ex": "Participants were chosen at random."
+   },
+   {
+    "w": "reinforce",
+    "pos": "verb",
+    "syn": "strengthen, support",
+    "uz": "mustahkamlamoq",
+    "ex": "Adverts reinforce gender stereotypes."
+   },
+   {
+    "w": "restore",
+    "pos": "verb",
+    "syn": "repair, bring back",
+    "uz": "tiklamoq",
+    "ex": "The palace was restored in 2010."
+   },
+   {
+    "w": "revise",
+    "pos": "verb",
+    "syn": "review, change; study again",
+    "uz": "qayta ko'rib chiqmoq; takrorlamoq",
+    "ex": "The forecast was revised upwards."
+   },
+   {
+    "w": "schedule",
+    "pos": "noun/verb",
+    "syn": "timetable, plan; arrange",
+    "uz": "jadval; rejalashtirmoq",
+    "ex": "Trains run on a tight schedule."
+   },
+   {
+    "w": "tension",
+    "pos": "noun",
+    "syn": "stress, strain; conflict",
+    "uz": "keskinlik",
+    "ex": "There is tension between the two groups."
+   },
+   {
+    "w": "terminate",
+    "pos": "verb",
+    "syn": "end, stop",
+    "uz": "tugatmoq",
+    "ex": "The contract was terminated early."
+   },
+   {
+    "w": "theme",
+    "pos": "noun",
+    "syn": "subject, topic, idea",
+    "uz": "mavzu, g'oya",
+    "ex": "Freedom is a central theme of the novel."
+   },
+   {
+    "w": "thereby",
+    "pos": "adv",
+    "syn": "as a result, in that way",
+    "uz": "shu bilan, natijada",
+    "ex": "Prices fell, thereby increasing demand."
+   },
+   {
+    "w": "uniform",
+    "pos": "adj/noun",
+    "syn": "consistent, the same; clothing",
+    "uz": "bir xil; forma",
+    "ex": "Growth was not uniform across regions."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about trends and statistics (Part 3)",
+  "items": [
+   {
+    "s": "According to what I've read, …",
+    "uz": "O'qiganlarimga ko'ra, …",
+    "ex": "According to what I've read, more people work from home now.",
+    "use": "Manbaga tayanish"
+   },
+   {
+    "s": "Statistics show that …",
+    "uz": "Statistikaga ko'ra, …",
+    "ex": "Statistics show that fewer people smoke.",
+    "use": "Ishonchli fikr"
+   },
+   {
+    "s": "There's been a noticeable increase in …",
+    "uz": "… da sezilarli o'sish bo'ldi",
+    "ex": "There's been a noticeable increase in online shopping.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "It's becoming increasingly common to …",
+    "uz": "… tobora keng tarqalmoqda",
+    "ex": "It's becoming increasingly common to study online.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "Fewer and fewer people …",
+    "uz": "Tobora kamroq odam …",
+    "ex": "Fewer and fewer people buy newspapers.",
+    "use": "Kamayish"
+   },
+   {
+    "s": "A growing number of …",
+    "uz": "Tobora ko'p …",
+    "ex": "A growing number of young people freelance.",
+    "use": "O'sish"
+   },
+   {
+    "s": "Roughly speaking, …",
+    "uz": "Taxminan aytganda, …",
+    "ex": "Roughly speaking, half of my friends live abroad.",
+    "use": "Taxmin"
+   },
+   {
+    "s": "I don't have exact figures, but …",
+    "uz": "Aniq raqamlar yo'q, lekin …",
+    "ex": "I don't have exact figures, but it's a lot.",
+    "use": "Halol javob"
+   },
+   {
+    "s": "This trend is likely to continue.",
+    "uz": "Bu tendensiya davom etishi mumkin",
+    "ex": "This trend is likely to continue.",
+    "use": "Bashorat"
+   },
+   {
+    "s": "It's a worldwide phenomenon.",
+    "uz": "Bu butun dunyo hodisasi",
+    "ex": "Urbanisation is a worldwide phenomenon.",
+    "use": "Umumlashtirish"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Stress shift: -ee, -eer, -ese, -ique",
+  "items": [
+   {
+    "w": "employEE",
+    "ipa": "/ˌemplɔɪˈiː/",
+    "uz": "-ee qo'shimchasi urg'uli",
+    "tip": "em-ploi-EE"
+   },
+   {
+    "w": "traiNEE",
+    "ipa": "/ˌtreɪˈniː/",
+    "uz": "-ee urg'uli",
+    "tip": "trei-NEE"
+   },
+   {
+    "w": "refuGEE",
+    "ipa": "/ˌrefjuˈdʒiː/",
+    "uz": "-ee urg'uli",
+    "tip": "ref-yu-JEE"
+   },
+   {
+    "w": "volunTEER",
+    "ipa": "/ˌvɒlənˈtɪə/",
+    "uz": "-eer urg'uli",
+    "tip": "vol-ən-TIƏ"
+   },
+   {
+    "w": "engiNEER",
+    "ipa": "/ˌendʒɪˈnɪə/",
+    "uz": "-eer urg'uli",
+    "tip": "en-ji-NIƏ"
+   },
+   {
+    "w": "VietnamESE",
+    "ipa": "/ˌvjetnəˈmiːz/",
+    "uz": "-ese urg'uli",
+    "tip": "viet-nə-MEEZ"
+   },
+   {
+    "w": "techNIQUE",
+    "ipa": "/tekˈniːk/",
+    "uz": "-ique urg'uli",
+    "tip": "tek-NEEK"
+   },
+   {
+    "w": "uNIQUE",
+    "ipa": "/juˈniːk/",
+    "uz": "-ique urg'uli",
+    "tip": "yu-NEEK"
+   },
+   {
+    "w": "guaranTEE",
+    "ipa": "/ˌɡærənˈtiː/",
+    "uz": "-tee urg'uli",
+    "tip": "ga-rən-TEE"
+   },
+   {
+    "w": "cigaRETTE",
+    "ipa": "/ˌsɪɡəˈret/",
+    "uz": "-ette urg'uli (Britaniya)",
+    "tip": "si-gə-RET"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Task 1 band 7 checklist",
+  "items": [
+   {
+    "w": "clear overview",
+    "syn": "summary of key trends",
+    "uz": "aniq overview",
+    "ex": "Without it, Task Achievement is capped at 5."
+   },
+   {
+    "w": "accurate data",
+    "syn": "correct numbers",
+    "uz": "aniq raqamlar",
+    "ex": "Check every figure you write."
+   },
+   {
+    "w": "meaningful comparisons",
+    "syn": "not just listing",
+    "uz": "mazmunli taqqoslash",
+    "ex": "Compare the highest with the lowest."
+   },
+   {
+    "w": "logical paragraphs",
+    "syn": "grouped data",
+    "uz": "mantiqiy abzaslar",
+    "ex": "Each body paragraph has a clear focus."
+   },
+   {
+    "w": "varied vocabulary",
+    "syn": "synonyms for trends",
+    "uz": "xilma-xil leksika",
+    "ex": "rose, climbed, grew, increased"
+   },
+   {
+    "w": "a mix of structures",
+    "syn": "complex sentences",
+    "uz": "aralash grammatik tuzilmalar",
+    "ex": "…, while …, which …"
+   },
+   {
+    "w": "few errors",
+    "syn": "accuracy",
+    "uz": "kam xato",
+    "ex": "Most sentences error-free for band 7."
+   },
+   {
+    "w": "correct tense throughout",
+    "syn": "consistent time frame",
+    "uz": "izchil zamon",
+    "ex": "Past data in past tense."
+   },
+   {
+    "w": "150+ words",
+    "syn": "length",
+    "uz": "150+ so'z",
+    "ex": "Under 150 loses marks."
+   },
+   {
+    "w": "no irrelevant opinion",
+    "syn": "objectivity",
+    "uz": "fikr yo'q",
+    "ex": "Describe, don't explain."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Sports funding and professional sport",
+  "items": [
+   {
+    "w": "sponsorship deals",
+    "syn": "commercial support",
+    "uz": "homiylik shartnomalari",
+    "ex": "Sponsorship deals bring money into sport."
+   },
+   {
+    "w": "astronomical salaries",
+    "syn": "extremely high pay",
+    "uz": "astronomik maoshlar",
+    "ex": "Footballers earn astronomical salaries."
+   },
+   {
+    "w": "national pride",
+    "syn": "patriotism",
+    "uz": "milliy g'urur",
+    "ex": "Olympic medals boost national pride."
+   },
+   {
+    "w": "elite athletes",
+    "syn": "top sportspeople",
+    "uz": "elita sportchilar",
+    "ex": "Funding should not only go to elite athletes."
+   },
+   {
+    "w": "performance-enhancing drugs",
+    "syn": "doping",
+    "uz": "doping",
+    "ex": "Performance-enhancing drugs ruin fair play."
+   },
+   {
+    "w": "fair play",
+    "syn": "sportsmanship",
+    "uz": "halol o'yin",
+    "ex": "Sport teaches fair play."
+   },
+   {
+    "w": "spectator sports",
+    "syn": "sports to watch",
+    "uz": "tomosha sportlari",
+    "ex": "Football is the most popular spectator sport."
+   },
+   {
+    "w": "public money",
+    "syn": "taxpayers' money",
+    "uz": "davlat puli",
+    "ex": "Should public money pay for stadiums?"
+   },
+   {
+    "w": "a lasting legacy",
+    "syn": "long-term benefit",
+    "uz": "uzoq muddatli meros",
+    "ex": "The Olympics should leave a lasting legacy."
+   },
+   {
+    "w": "inspire young people",
+    "syn": "motivate youth",
+    "uz": "yoshlarni ilhomlantirmoq",
+    "ex": "Champions inspire young people to exercise."
+   }
+  ]
+ }
+}

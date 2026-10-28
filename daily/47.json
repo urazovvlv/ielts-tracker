@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Agreement with quantity phrases (Task 1)",
+  "items": [
+   {
+    "s": "The majority of + plural noun + plural verb",
+    "uz": "ko'pchilik + ko'plik fe'l",
+    "ex": "The majority of students were female.",
+    "use": "Task 1"
+   },
+   {
+    "s": "The majority of + uncountable + singular verb",
+    "uz": "sanalmaydigan bilan birlik",
+    "ex": "The majority of the money was spent on food.",
+    "use": "Task 1"
+   },
+   {
+    "s": "Half of + plural + are / Half of + singular + is",
+    "uz": "otga moslashadi",
+    "ex": "Half of the respondents were under 30.",
+    "use": "Task 1"
+   },
+   {
+    "s": "Each of + plural + singular verb",
+    "uz": "har biri — birlik",
+    "ex": "Each of the countries has its own system.",
+    "use": "Grammatika"
+   },
+   {
+    "s": "Neither of + plural + singular verb (formal)",
+    "uz": "ikkalasidan hech biri",
+    "ex": "Neither of the figures was accurate.",
+    "use": "Rasmiy"
+   },
+   {
+    "s": "A third of the population is …",
+    "uz": "population — birlik",
+    "ex": "A third of the population is over 60.",
+    "use": "Task 1"
+   },
+   {
+    "s": "Most + plural noun (no 'the')",
+    "uz": "umumiy ko'pchilik",
+    "ex": "Most people own a phone.",
+    "use": "❌ The most people"
+   },
+   {
+    "s": "❌ The number of students were → ✅ was",
+    "uz": "number egasi birlik",
+    "ex": "The number of visitors was 2 million.",
+    "use": "Tipik xato (takror)"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Cities and urban life",
+  "items": [
+   {
+    "t": "concrete jungle",
+    "uz": "beton o'rmon (gavjum shahar)",
+    "ex": "Tashkent is becoming a concrete jungle.",
+    "use": "Part 3"
+   },
+   {
+    "t": "the bright lights",
+    "uz": "katta shahar jozibasi",
+    "ex": "Young people move for the bright lights of the capital.",
+    "use": "Migratsiya"
+   },
+   {
+    "t": "a city that never sleeps",
+    "uz": "hech uxlamaydigan shahar",
+    "ex": "Istanbul is a city that never sleeps.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "rush hour",
+    "uz": "tig'iz soat",
+    "ex": "The metro is packed at rush hour.",
+    "use": "Part 1"
+   },
+   {
+    "t": "just around the corner",
+    "uz": "juda yaqinda, burilishda",
+    "ex": "There's a bakery just around the corner.",
+    "use": "Joy"
+   },
+   {
+    "t": "off the grid",
+    "uz": "tarmoqdan tashqarida yashash",
+    "ex": "Some people choose to live off the grid.",
+    "use": "Turmush tarzi"
+   },
+   {
+    "t": "urban jungle",
+    "uz": "shahar o'rmoni",
+    "ex": "Parks offer an escape from the urban jungle.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "out and about",
+    "uz": "tashqarida yurgan, faol",
+    "ex": "I'm usually out and about at weekends.",
+    "use": "Part 1"
+   },
+   {
+    "t": "a melting pot",
+    "uz": "turli madaniyatlar qozoni",
+    "ex": "Tashkent is a melting pot of cultures.",
+    "use": "Madaniyat"
+   },
+   {
+    "t": "live in each other's pockets",
+    "uz": "doim birga, juda yaqin yashamoq",
+    "ex": "In small flats, families live in each other's pockets.",
+    "use": "Uy-joy"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "vehicle",
+    "pos": "noun",
+    "syn": "car, means of transport; medium",
+    "uz": "transport vositasi",
+    "ex": "Electric vehicles are getting cheaper."
+   },
+   {
+    "w": "via",
+    "pos": "prep",
+    "syn": "through, by way of",
+    "uz": "orqali",
+    "ex": "Information is sent via the internet."
+   },
+   {
+    "w": "virtual",
+    "pos": "adj",
+    "syn": "online, simulated; almost",
+    "uz": "virtual; deyarli",
+    "ex": "Virtual classrooms became common."
+   },
+   {
+    "w": "visual",
+    "pos": "adj",
+    "syn": "seen, optical",
+    "uz": "vizual, ko'rish orqali",
+    "ex": "Visual aids help learners."
+   },
+   {
+    "w": "widespread",
+    "pos": "adj",
+    "syn": "common, extensive",
+    "uz": "keng tarqalgan",
+    "ex": "Smartphone use is widespread."
+   },
+   {
+    "w": "accommodate",
+    "pos": "verb",
+    "syn": "house; adapt to",
+    "uz": "joylashtirmoq; moslashmoq",
+    "ex": "The hotel can accommodate 300 guests."
+   },
+   {
+    "w": "analogy",
+    "pos": "noun",
+    "syn": "comparison, parallel",
+    "uz": "o'xshatish",
+    "ex": "He used an analogy to explain the idea."
+   },
+   {
+    "w": "anticipate",
+    "pos": "verb",
+    "syn": "expect, predict",
+    "uz": "kutmoq, oldindan ko'rmoq",
+    "ex": "We anticipate higher demand in summer."
+   },
+   {
+    "w": "assure",
+    "pos": "verb",
+    "syn": "promise, guarantee",
+    "uz": "ishontirmoq",
+    "ex": "The bank assured customers their money was safe."
+   },
+   {
+    "w": "attain",
+    "pos": "verb",
+    "syn": "achieve, reach",
+    "uz": "erishmoq",
+    "ex": "Few students attain band 8."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Hypothesising about society (Part 3)",
+  "items": [
+   {
+    "s": "If everyone …, society would …",
+    "uz": "Agar hamma …, jamiyat … bo'lardi",
+    "ex": "If everyone cycled, cities would be cleaner.",
+    "use": "2nd conditional"
+   },
+   {
+    "s": "Imagine a world where …",
+    "uz": "… bo'lgan dunyoni tasavvur qiling",
+    "ex": "Imagine a world where nobody needed to work.",
+    "use": "Faraz"
+   },
+   {
+    "s": "Were the government to …, …",
+    "uz": "Agar hukumat … qilsa",
+    "ex": "Were the government to ban cars, traffic would vanish.",
+    "use": "Inversiya — band 8"
+   },
+   {
+    "s": "Supposing … , what would happen?",
+    "uz": "Faraz qilaylik …",
+    "ex": "Supposing robots took all jobs, what would we do?",
+    "use": "Savol"
+   },
+   {
+    "s": "It would probably lead to …",
+    "uz": "Ehtimol, … ga olib kelardi",
+    "ex": "It would probably lead to more inequality.",
+    "use": "Natija"
+   },
+   {
+    "s": "On the plus side, … would …; on the downside, …",
+    "uz": "Ijobiy tomondan …; salbiy tomondan …",
+    "ex": "On the plus side, it would be cheaper; on the downside, slower.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "I can't imagine … ever happening.",
+    "uz": "… bo'lishini tasavvur qilolmayman",
+    "ex": "I can't imagine schools ever disappearing.",
+    "use": "Shubha"
+   },
+   {
+    "s": "In theory, …, but in practice …",
+    "uz": "Nazariyada …, amalda esa …",
+    "ex": "In theory, it works, but in practice it's expensive.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Had we …, we would …",
+    "uz": "Agar … qilganimizda",
+    "ex": "Had we invested earlier, we would be richer now.",
+    "use": "Mixed conditional"
+   },
+   {
+    "s": "That would be a game changer.",
+    "uz": "Bu vaziyatni tubdan o'zgartirardi",
+    "ex": "Free internet for all would be a game changer.",
+    "use": "Idiomatik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Final -d/-t and past tense clarity",
+  "items": [
+   {
+    "w": "I worked yesterday",
+    "ipa": "/wɜːkt/",
+    "uz": "-ed ni yutmang — zamon ko'rinishi kerak",
+    "tip": "WERKT"
+   },
+   {
+    "w": "I watched a film",
+    "ipa": "/wɒtʃt/",
+    "uz": "/tʃt/ birikmasi",
+    "tip": "WOCHT"
+   },
+   {
+    "w": "It changed a lot",
+    "ipa": "/tʃeɪndʒd/",
+    "uz": "/ndʒd/",
+    "tip": "CHEINJD"
+   },
+   {
+    "w": "He moved to Tashkent",
+    "ipa": "/muːvd/",
+    "uz": "/vd/",
+    "tip": "MOOVD"
+   },
+   {
+    "w": "We discussed it",
+    "ipa": "/dɪˈskʌst/",
+    "uz": "/st/",
+    "tip": "dis-KAST"
+   },
+   {
+    "w": "It increased by 10%",
+    "ipa": "/ɪnˈkriːst/",
+    "uz": "Task 1 da gapirganda ham",
+    "tip": "in-KREEST"
+   },
+   {
+    "w": "They started early",
+    "ipa": "/ˈstɑːtɪd/",
+    "uz": "/ɪd/ bo'g'in",
+    "tip": "STAR-tid"
+   },
+   {
+    "w": "I used to …",
+    "ipa": "/juːst tə/",
+    "uz": "used to — /s/ bilan",
+    "tip": "YOOST-tə"
+   },
+   {
+    "w": "Linking: worked on → /wɜːk tɒn/",
+    "ipa": "keyingi unliga ulanadi",
+    "uz": "WERK-TON",
+    "tip": "Ravonlik"
+   },
+   {
+    "w": "Examiner listens for past tense",
+    "ipa": "GRA va Pronunciation",
+    "uz": "zamon tovushi yo'qolsa xato hisoblanadi",
+    "tip": "Band 7"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing two pie charts (then and now)",
+  "items": [
+   {
+    "w": "In 1990, … whereas by 2020 …",
+    "syn": "then vs now",
+    "uz": "1990 da …, 2020 ga kelib esa …",
+    "ex": "In 1990, coal dominated, whereas by 2020 gas led."
+   },
+   {
+    "w": "shrank from … to …",
+    "syn": "fell from",
+    "uz": "… dan … gacha qisqardi",
+    "ex": "The coal segment shrank from 60% to 20%."
+   },
+   {
+    "w": "expanded to",
+    "syn": "grew to",
+    "uz": "… gacha kengaydi",
+    "ex": "Renewables expanded to a quarter."
+   },
+   {
+    "w": "was replaced as the largest",
+    "syn": "lost first place",
+    "uz": "eng katta o'rnini boy berdi",
+    "ex": "Oil was replaced as the largest source."
+   },
+   {
+    "w": "new categories appeared",
+    "syn": "added",
+    "uz": "yangi toifalar paydo bo'ldi",
+    "ex": "Solar appeared as a new category."
+   },
+   {
+    "w": "the composition changed",
+    "syn": "the mix changed",
+    "uz": "tarkib o'zgardi",
+    "ex": "The composition of spending changed greatly."
+   },
+   {
+    "w": "stayed roughly the same",
+    "syn": "barely changed",
+    "uz": "deyarli o'zgarmadi",
+    "ex": "Housing stayed roughly the same."
+   },
+   {
+    "w": "the most significant shift",
+    "syn": "biggest change",
+    "uz": "eng muhim siljish",
+    "ex": "The most significant shift was in transport."
+   },
+   {
+    "w": "compare segment by segment",
+    "syn": "one by one",
+    "uz": "bo'lakma-bo'lak solishtiring",
+    "ex": "Group rising and falling segments."
+   },
+   {
+    "w": "one overview for both pies",
+    "syn": "single summary",
+    "uz": "ikkala doira uchun bitta overview",
+    "ex": "Overall, energy sources became more diverse."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Rural vs urban life",
+  "items": [
+   {
+    "w": "rural areas",
+    "syn": "the countryside",
+    "uz": "qishloq joylari",
+    "ex": "Rural areas lack good hospitals."
+   },
+   {
+    "w": "urban migration",
+    "syn": "moving to cities",
+    "uz": "shaharga ko'chish",
+    "ex": "Urban migration empties villages."
+   },
+   {
+    "w": "a slower pace of life",
+    "syn": "relaxed lifestyle",
+    "uz": "sekinroq hayot sur'ati",
+    "ex": "Villages offer a slower pace of life."
+   },
+   {
+    "w": "job opportunities",
+    "syn": "employment chances",
+    "uz": "ish imkoniyatlari",
+    "ex": "Cities offer more job opportunities."
+   },
+   {
+    "w": "close-knit community",
+    "syn": "tight community",
+    "uz": "ahil jamoa",
+    "ex": "Villages have close-knit communities."
+   },
+   {
+    "w": "cost of living",
+    "syn": "living expenses",
+    "uz": "turmush qiymati",
+    "ex": "The cost of living is higher in Tashkent."
+   },
+   {
+    "w": "amenities",
+    "syn": "facilities",
+    "uz": "qulayliklar",
+    "ex": "Rural towns lack basic amenities."
+   },
+   {
+    "w": "fresh air and open spaces",
+    "syn": "nature",
+    "uz": "toza havo va keng maydonlar",
+    "ex": "Children enjoy fresh air and open spaces."
+   },
+   {
+    "w": "agricultural sector",
+    "syn": "farming",
+    "uz": "qishloq xo'jaligi sohasi",
+    "ex": "Many villagers work in the agricultural sector."
+   },
+   {
+    "w": "regional development",
+    "syn": "investment in regions",
+    "uz": "hududiy rivojlanish",
+    "ex": "Regional development can slow migration."
+   }
+  ]
+ }
+}
