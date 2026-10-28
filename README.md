@@ -13,9 +13,9 @@ Each person opens the app from their own Telegram account. Their plan (Day 1, ex
 - 07:00 morning message: day, days left, today's focus skill, mock day, Daily pack topics
 - 19:15 evening check (mock instructions on mock days)
 - 21:15 log reminder (and a note before mock days)
-- 23:00 weekly report on the last day of each plan week
+- 23:00 daily report (tasks done / not done) with a link to the daily survey, plus the weekly report on the last day of each plan week
 
-Anyone who presses **Start** in the bot and opens the app gets reminders for their own plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, mock scores and a small summary (no task text, no words, no essays). Requests are checked against Telegram's `initData` signature.
+Anyone who presses **Start** in the bot and opens the app gets reminders for their own plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, today's and yesterday's task names with done marks, daily survey answers, mock scores and a small summary (no saved words or essays). Requests are checked against Telegram's `initData` signature.
 
 Worker settings: secret `BOT_TOKEN` (same token as the bot). The GitHub workflow `reminders.yml` only sends a reminder by hand for testing; it needs the `BOT_TOKEN` GitHub secret.
 

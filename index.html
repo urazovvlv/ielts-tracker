@@ -230,6 +230,16 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 .rl-h{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
 .rl-h b{display:block;font-size:14px}
 .rlist audio{width:100%;height:40px}
+.svform{display:flex;flex-direction:column;gap:14px}
+.svrow{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.svrow .sc{width:96px}
+.svform textarea{width:100%;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-family:inherit;resize:vertical}
+.svform .seg button{padding:10px 2px;font-size:12.5px}
+.svsum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.svsum>div{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;border-radius:12px;background:var(--sunk);text-align:center}
+.svsum b{font-size:18px;color:var(--navy);line-height:1.2}
+.svsum span{font-size:11px;color:var(--muted)}
+.svt{display:flex;flex-direction:column;gap:2px;font-size:14px;line-height:1.45}
 .wtag{display:inline-block;margin:4px 8px 0 0;font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .flash{border-radius:16px;padding:22px 16px;background:var(--navy);color:#fff;text-align:center;display:flex;flex-direction:column;gap:10px;min-height:170px;justify-content:center;cursor:pointer}
 .flash .fw{font-family:var(--f-display);font-size:26px;font-weight:800}
@@ -430,7 +440,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.9';
+const BUILD='2026-10-28.10';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -529,9 +539,9 @@ const CUES=[
 ];
 
 /* ---------- state ---------- */
-let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0}};
+let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};
 let DAILY=[];
-let tab=/^#daily/.test(location.hash)?'daily':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#daily/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -557,18 +567,18 @@ async function kick(){
 }
 function getObj(k){
   if(k==='plan')return PLAN;
-  if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];
+  if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];if(/^sv\d{2,3}$/.test(k))return S.surv[k];
   if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;return null;
 }
 function setObj(k,o){
   if(k==='plan'){if(o&&o.start)PLAN=o;}
-  else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;
+  else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;else if(/^sv\d{2,3}$/.test(k))S.surv[k]=o;
   else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;
 }
 const timers={};
 function touch(k,later){
   const o=getObj(k);if(!o)return;o._ts=Date.now();const v=JSON.stringify(o);lsSet(k,v);
-  if(k==='cfg_day'||/^[dm]\d/.test(k))focusSync();
+  if(k==='cfg_day'||/^([dm]|sv)\d/.test(k))focusSync();
   clearTimeout(timers[k]);
   if(later)timers[k]=setTimeout(()=>put(k,JSON.stringify(getObj(k))),600);else put(k,v);
 }
@@ -623,8 +633,10 @@ function focusSync(){
     for(const e of S.ess){const k=isoD(dateOf(e.d));if(stats[k])stats[k].e++;}
     for(const m of S.mist){const k=isoD(new Date(m.t||0));if(stats[k])stats[k].m++;}
     const mocks=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m);return o==null?null:{n,date:isoD(dateOf(n)),name:MOCKS[n],o,L:toBand(m.L,LB),R:toBand(m.R,RB),W:Number(m.W),S:Number(m.S)};}).filter(Boolean);
+    const tl={};for(let n=Math.max(1,t-1);n<=Math.min(DAYS,t);n++){const tk=dayDoc(n).t||{};tl[isoD(dateOf(n))]=listFor(n).slice(0,40).map(x=>[String(x.label||'').slice(0,80),x.sk||'',tk[x.k]?1:0]);}
+    const sv={};for(let n=Math.max(1,t-13);n<=Math.min(DAYS,t);n++){const q=survDoc(n);if(q&&q.h!=null&&q.h!=='')sv[isoD(dateOf(n))]={h:Number(q.h)||0,w:Number(q.w)||0,sk:q.sk||'',r:q.r||0,good:String(q.good||'').slice(0,240),bad:String(q.bad||'').slice(0,240),tmr:String(q.tmr||'').slice(0,240)};}
     const top=topMistakes()[0],ext={top:top?mtInfo(top.sk,top.ty)[1]:'',topn:top?top.n:0,ess:S.ess.length,mist:S.mist.length,next:MOCKDAYS.filter(n=>n>t).slice(0,2).map(n=>isoD(dateOf(n))+'|'+MOCKS[n]),day:t,days:DAYS,plan:{name:PLAN.name||'',start:PLAN.start,exam:PLAN.exam||'',days:DAYS,target:TARGET},ms:Object.fromEntries(MOCKDAYS.map(n=>[n,MOCKS[n]]))};
-    fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days,stats,mocks,ext}),keepalive:true}).catch(()=>{});}catch(e){}
+    fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days,stats,mocks,ext,tl,sv}),keepalive:true}).catch(()=>{});}catch(e){}
   },2500);
 }
 const tagName=k=>(TAGS.find(t=>t[0]===k)||[k,k])[1];
@@ -755,6 +767,7 @@ function viewToday(){
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary edit-done':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
   ${isToday&&MOCKS[n]?topCard('Before tonight\'s mock','Your most repeated mistakes'):''}
+  ${n<=todayIdx()?surveyCard(n):''}
   <section class="card">
     <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary edit-done':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
@@ -784,6 +797,7 @@ function viewProgress(){
     <div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
     <div class="band-bar"><i style="width:${pct}%"></i></div>
     ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:'<p class="note" style="margin:0">Starting level. Log a full mock below to update it.</p>'}`;})()}</section>
+  ${studyCard()}
   ${mockSections()}
   <section class="card"><div class="card-h"><h2>Progress</h2></div>
     <div class="stats">
@@ -1058,7 +1072,7 @@ async function fullWipe(){
   q.clear();for(const k in timers)clearTimeout(timers[k]);
   while(busy)await sleep(100);
   for(const k of Object.keys(lsAll()))lsSet(k,null);
-  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
+  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
   if(CLOUD){
     let keys=await cs('getKeys');
     for(let i=0;i<keys.length;i+=40)await cs('removeItems',keys.slice(i,i+40));
@@ -1546,6 +1560,64 @@ function grade(id,knew){
 let swT=null;function saveWordsLater(){clearTimeout(swT);swT=setTimeout(saveWords,700);}
 function nextLabel(x){const d=x.due-dnum();if(x.isNew)return 'New';if(d<=0)return 'Due today';if(d===1)return 'Next: tomorrow';return `Next: in ${d} days`;}
 
+/* ---------- Daily survey (one doc per day: svNN) + study charts ---------- */
+const survDoc=n=>S.surv['sv'+pad(n)]||null;
+function setSurv(n,o){const k='sv'+pad(n);S.surv[k]=Object.assign({},S.surv[k],o);touch(k);}
+const DIST=[['phone','Phone / social media'],['work','Work'],['uni','University'],['tired','Tired'],['none','No distractions']];
+const RATE=['','Bad','Weak','OK','Good','Great'];
+const svHash=/^#survey/.test(location.hash);let svOpen=false,svDraft=null;
+function svSuggestSkill(n){const L=listFor(n),t=dayDoc(n).t||{},c={};for(const x of L)if(t[x.k]&&x.sk)c[x.sk]=(c[x.sk]||0)+1;let best='',m=0;for(const k in c)if(c[k]>m){m=c[k];best=k;}return best;}
+function surveyCard(n){
+  const sv=survDoc(n),isToday=n===todayIdx();
+  if(sv&&sv.h!=null&&!svOpen){
+    return `<section class="card" id="survey"><div class="card-h"><div><h2>Daily survey</h2><span class="note">Day ${n} · filled</span></div><button class="btn" data-sv="edit">Edit</button></div>
+      <div class="svsum"><div><b class="num">${sv.h}</b><span>hours</span></div><div><b class="num">${sv.w||0}</b><span>new words</span></div><div><b>${sv.sk?tagName(sv.sk):'—'}</b><span>main skill</span></div><div><b>${sv.r?RATE[sv.r]:'—'}</b><span>day</span></div></div>
+      ${sv.good?`<div class="svt"><span class="label">Did well</span>${esc(sv.good)}</div>`:''}${sv.bad?`<div class="svt"><span class="label">Mistakes and weak points</span>${esc(sv.bad)}</div>`:''}${sv.tmr?`<div class="svt"><span class="label">Tomorrow</span>${esc(sv.tmr)}</div>`:''}
+      <div class="chart">${lineChart('h')}</div></section>`;
+  }
+  if(!svOpen)return `<section class="card" id="survey"><div class="card-h"><div><h2>Daily survey</h2><span class="note">${isToday?'1 minute at the end of the day':`Day ${n}`}</span></div></div>
+    <p class="note" style="margin:0">Hours, new words, main skill, a rating and a short reflection. Your hours are drawn as a line in Progress.</p><button class="btn block primary" data-sv="open">Fill in the survey</button></section>`;
+  const d=svDraft||(svDraft=Object.assign({h:'',w:'',sk:svSuggestSkill(n),r:0,good:'',bad:'',tmr:'',dis:[]},sv||{}));
+  return `<section class="card" id="survey"><div class="card-h"><div><h2>Daily survey</h2><span class="note">Day ${n} · ${fmt(dateOf(n))}</span></div></div>
+    <form class="svform" data-svform="${n}">
+      <div class="svrow"><label class="label" for="svH">1. Hours of study today</label><input id="svH" class="sc" type="number" inputmode="decimal" min="0" max="16" step="0.5" value="${d.h}" placeholder="0" required></div>
+      <div class="svrow"><label class="label" for="svW">2. New words learned</label><input id="svW" class="sc" type="number" inputmode="numeric" min="0" max="500" value="${d.w}" placeholder="0"></div>
+      <div class="field"><span class="label">3. Which skill got most of your time?</span><div class="chips">${TAGS.map(([k,nm])=>`<button type="button" class="chip ${d.sk===k?'on':''}" data-svsk="${k}">${nm}</button>`).join('')}</div></div>
+      <div class="field"><span class="label">4. Rate your day</span><div class="seg">${[1,2,3,4,5].map(r=>`<button type="button" data-svr="${r}" class="${d.r===r?'on':''}">${RATE[r]}</button>`).join('')}</div></div>
+      <div class="field"><label class="label" for="svG">5. What did you do well today?</label><textarea id="svG" rows="2" maxlength="240" placeholder="e.g. Finished a full Reading test in 60 minutes">${esc(d.good)}</textarea></div>
+      <div class="field"><label class="label" for="svB">6. What mistakes or weak points did you notice?</label><textarea id="svB" rows="2" maxlength="240" placeholder="e.g. Lost marks on True/False/Not Given, articles in Writing">${esc(d.bad)}</textarea></div>
+      <div class="field"><label class="label" for="svT">7. What will you do better tomorrow?</label><textarea id="svT" rows="2" maxlength="240" placeholder="e.g. Start Writing before checking my phone">${esc(d.tmr)}</textarea></div>
+      <div class="field"><span class="label">8. What distracted you? (optional)</span><div class="chips">${DIST.map(([k,l])=>`<button type="button" class="chip ${d.dis.includes(k)?'on':''}" data-svdis="${k}">${l}</button>`).join('')}</div></div>
+      <div class="grid2"><button type="button" class="btn block" data-sv="cancel">Cancel</button><button type="submit" class="btn block primary">Save survey</button></div>
+    </form></section>`;
+}
+function svReadForm(){const g=id=>document.getElementById(id);if(!svDraft||!g('svH'))return;
+  svDraft.h=g('svH').value;svDraft.w=g('svW').value;svDraft.good=g('svG').value;svDraft.bad=g('svB').value;svDraft.tmr=g('svT').value;}
+/* Line chart of one survey field (h = hours, w = new words) over the plan so far. */
+function lineChart(f){
+  const t=clampDay(Math.max(1,todayIdx())),W=360,H=170,l=28,r=10,tp=16,b=22;
+  const pts=[];for(let n=1;n<=t;n++){const s=survDoc(n);if(s&&s[f]!==''&&s[f]!=null)pts.push({n,v:Number(s[f])||0});}
+  const vmax=Math.max(f==='h'?4:20,...pts.map(p=>p.v)),step=f==='h'?(vmax>8?2:1):Math.max(5,Math.ceil(vmax/4/5)*5),ymax=Math.ceil(vmax/step)*step;
+  const span=Math.max(t,7),x=n=>l+(n-1)/(span-1)*(W-l-r),y=v=>tp+(H-tp-b)*(1-v/ymax);
+  let g='';for(let v=0;v<=ymax;v+=step)g+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${l-6}" y="${y(v)+3.5}" text-anchor="end" font-size="9.5" fill="var(--muted)">${v}</text>`;
+  const xl=[...new Set([1,Math.round(span/2),span])].map(n=>`<text x="${x(n)}" y="${H-6}" text-anchor="${n===1?'start':n===span?'end':'middle'}" font-size="9.5" fill="var(--muted)">Day ${n}</text>`).join('');
+  const line=pts.length>1?`<polyline points="${pts.map(p=>`${x(p.n)},${y(p.v)}`).join(' ')}" fill="none" stroke="var(--navy)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>`:'';
+  const area=pts.length>1?`<polygon points="${x(pts[0].n)},${y(0)} ${pts.map(p=>`${x(p.n)},${y(p.v)}`).join(' ')} ${x(pts[pts.length-1].n)},${y(0)}" fill="var(--navy)" opacity=".08"/>`:'';
+  const dots=pts.map((p,i)=>`<circle cx="${x(p.n)}" cy="${y(p.v)}" r="${i===pts.length-1?4.5:3}" fill="var(--navy)" stroke="var(--card)" stroke-width="1.5"/>`).join('');
+  const last=pts.length?`<text x="${x(pts[pts.length-1].n)}" y="${y(pts[pts.length-1].v)-9}" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)">${pts[pts.length-1].v}</text>`:'';
+  const empty=pts.length?'':`<text x="${(l+W-r)/2}" y="${y(ymax/2)}" text-anchor="middle" font-size="11" fill="var(--muted)">Fill in the daily survey to start the line</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${f==='h'?'Study hours':'New words'} per day">${g}${area}${line}${dots}${last}${xl}${empty}</svg>`;
+}
+function studyCard(){
+  const t=clampDay(Math.max(1,todayIdx()));let tot=0,days=0,wk=0,words=0;
+  for(let n=1;n<=t;n++){const s=survDoc(n);if(s&&s.h!==''&&s.h!=null){tot+=Number(s.h)||0;days++;if(n>t-7)wk+=Number(s.h)||0;}if(s&&s.w)words+=Number(s.w)||0;}
+  return `<section class="card"><div class="card-h"><h2>Study hours</h2><span class="note">From the daily survey</span></div>
+    <div class="stats"><div class="stat"><span class="label">Total</span><span class="v num">${+tot.toFixed(1)}<small> h</small></span></div><div class="stat"><span class="label">Last 7 days</span><span class="v num">${+wk.toFixed(1)}<small> h</small></span></div><div class="stat"><span class="label">Average</span><span class="v num">${days?(tot/days).toFixed(1):'0'}<small> h/day</small></span></div></div>
+    <div class="chart">${lineChart('h')}</div>
+    <div class="card-h" style="margin-top:4px"><h2>New words</h2><span class="note">${words} in total</span></div>
+    <div class="chart">${lineChart('w')}</div></section>`;
+}
+
 /* ---------- render ---------- */
 function renderView(){
   const v=document.getElementById('view');
@@ -1621,7 +1693,7 @@ document.addEventListener('click',async e=>{
     else{try{const o=JSON.parse(document.getElementById('restoreIn').value);if(!o||!o.days)throw 0;restoreFrom(o);closeSheet();renderAll();toast('Backup restored');}catch(err){toast('That text is not a valid backup');}}
     return;}
   if((el=g('[data-wipe]'))){if(!wipeArm){wipeArm=true;openSettings();return;}closeSheet();initWizard(true);tab='today';renderAll();scrollTo(0,0);return;}
-  if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);haptic('sel');renderView();return;}
+  if((el=g('[data-nav]'))){const v=Number(el.dataset.nav);sel=v===0?clampDay(todayIdx()):clampDay(sel+v);svOpen=false;svDraft=null;haptic('sel');renderView();return;}
   if((el=g('[data-day]'))){sel=Number(el.dataset.day);tab='today';renderTabs();renderView();scrollTo(0,0);return;}
   if((el=g('[data-edit]'))){if(el.dataset.edit==='week')editWeek=!editWeek;else editDay=!editDay;resetArm=null;renderView();return;}
   if((el=g('[data-addsk]'))){const kd=el.dataset.addsk,v=el.dataset.val;addSk[kd]=addSk[kd]===v?'':v;const nm=document.getElementById(`add-${kd}-name`),nv=nm?nm.value:'',nt=document.getElementById(`add-${kd}-note`),tv=nt?nt.value:'';renderView();const a=document.getElementById(`add-${kd}-name`);if(a){a.value=nv;document.getElementById(`add-${kd}-note`).value=tv;}return;}
@@ -1663,6 +1735,11 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-mty]'))){mAdd.ty=mAdd.ty===el.dataset.mty?'':el.dataset.mty;haptic('sel');
     document.querySelectorAll('[data-mty]').forEach(b=>b.classList.toggle('on',b.dataset.mty===mAdd.ty));return;}
   if((el=g('[data-mdel]'))){S.mist=S.mist.filter(x=>x.id!==el.dataset.mdel);saveList('mist');haptic('light');renderView();return;}
+  if((el=g('[data-sv]'))){const a=el.dataset.sv;if(a==='cancel'){svOpen=false;svDraft=null;}else{svOpen=true;svDraft=null;}haptic('sel');renderView();
+    if(svOpen){const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});}return;}
+  if((el=g('[data-svsk],[data-svr],[data-svdis]'))){svReadForm();if(el.dataset.svsk)svDraft.sk=svDraft.sk===el.dataset.svsk?'':el.dataset.svsk;
+    else if(el.dataset.svr)svDraft.r=Number(el.dataset.svr);else{const k=el.dataset.svdis;svDraft.dis=svDraft.dis.includes(k)?svDraft.dis.filter(x=>x!==k):(k==='none'?['none']:[...svDraft.dis.filter(x=>x!=='none'),k]);}
+    haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
   if((el=g('[data-wf]'))){wFilter=el.dataset.wf;review=null;haptic('sel');renderView();return;}
   if((el=g('[data-rv]'))){const a=el.dataset.rv;
     if(a==='start'){review={q:dueOf(wordPool()).map(x=>x.id),i:0,show:false,done:0,re:{}};scrollTo(0,0);}
@@ -1728,6 +1805,9 @@ document.addEventListener('submit',e=>{
   if(f.dataset.add){const kind=f.dataset.add,nm=document.getElementById(`add-${kind}-name`),nt=document.getElementById(`add-${kind}-note`),label=nm.value.trim();if(!label)return;
     const r=modsRef(goScopeKind(kind));r.m.extra=[...(r.m.extra||[]),{k:'x'+Date.now().toString(36),label,sub:nt.value.trim(),sk:addSk[kind]||''}];r.commit();haptic('light');
     toast(kind==='week'?(editWScope==='allweeks'?'Added to every week':`Added to Week ${Math.ceil(sel/7)}`):editScope==='all'?'Added to every day':`Added to Day ${sel}`);renderHeader();renderView();const again=document.getElementById(`add-${kind}-name`);if(again)again.focus();return;}
+  if(f.dataset.svform){svReadForm();const n=Number(f.dataset.svform),d=svDraft;if(d.h===''){toast('Enter your study hours');return;}
+    setSurv(n,{h:Math.max(0,Math.min(16,Number(d.h)||0)),w:Math.max(0,Math.min(500,Math.round(Number(d.w)||0))),sk:d.sk||'',r:d.r||0,good:d.good.trim(),bad:d.bad.trim(),tmr:d.tmr.trim(),dis:d.dis,at:Date.now()});
+    svOpen=false;svDraft=null;haptic('ok');toast('Survey saved');renderView();const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});return;}
   if(f.dataset.addmist){if(!mAdd.ty){toast('Choose the mistake type');return;}
     const n=Math.max(1,Math.min(40,Number(document.getElementById('mN').value)||1)),note=document.getElementById('mNote').value.trim();
     S.mist.push({id:'m'+Date.now().toString(36),sk:mAdd.sk,ty:mAdd.ty,n,note,src:Number(mAdd.src)||0,t:Date.now()});saveList('mist');
@@ -1746,7 +1826,9 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());
+  if(svHash){const q=survDoc(clampDay(todayIdx()));svOpen=!(q&&q.h!=null);}
   renderAll();focusSync();ensurePacks();wTimerLoop();
+  if(svHash)setTimeout(()=>{const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});},50);
   let last=todayIdx();setInterval(()=>{const t=todayIdx();if(t!==last){last=t;sel=clampDay(t);renderAll();}},60000);
 })();
 })();
