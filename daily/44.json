@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Advanced concession: while, albeit, even if, much as",
+  "items": [
+   {
+    "s": "While + clause, main clause",
+    "uz": "garchi … bo'lsa-da",
+    "ex": "While I agree in part, I think the cost is too high.",
+    "use": "Task 2 muvozanat"
+   },
+   {
+    "s": "albeit + adj/adverb",
+    "uz": "garchi (rasmiy, qisqa)",
+    "ex": "Sales rose, albeit slowly.",
+    "use": "Band 8 so'z"
+   },
+   {
+    "s": "even if + clause",
+    "uz": "hatto … bo'lsa ham",
+    "ex": "Even if prices fall, people won't buy cars.",
+    "use": "Shartli kontrast"
+   },
+   {
+    "s": "even though + clause",
+    "uz": "garchi … bo'lsa ham (fakt)",
+    "ex": "Even though it rained, we went out.",
+    "use": "Fakt"
+   },
+   {
+    "s": "much as + clause",
+    "uz": "qanchalik … bo'lmasin",
+    "ex": "Much as I love the city, it's too crowded.",
+    "use": "Speaking band 8"
+   },
+   {
+    "s": "regardless of + noun",
+    "uz": "… dan qat'i nazar",
+    "ex": "Education should be free regardless of income.",
+    "use": "Task 2"
+   },
+   {
+    "s": "admittedly, …",
+    "uz": "tan olish kerakki",
+    "ex": "Admittedly, this solution is expensive.",
+    "use": "Task 2 qarama-qarshi fikr"
+   },
+   {
+    "s": "❌ Even I tried, I failed → ✅ Even though I tried, I failed",
+    "uz": "even yolg'iz bog'lovchi emas",
+    "ex": "Even though I studied, I was nervous.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Trouble and problems (more)",
+  "items": [
+   {
+    "t": "a can of worms",
+    "uz": "muammolar to'plami",
+    "ex": "Changing the law would open a can of worms.",
+    "use": "Part 3"
+   },
+   {
+    "t": "up against it",
+    "uz": "qiyin vaziyatda",
+    "ex": "Small businesses are really up against it.",
+    "use": "Iqtisod"
+   },
+   {
+    "t": "in a pickle",
+    "uz": "chigal vaziyatda",
+    "ex": "I lost my keys and was in a pickle.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "a thorn in my side",
+    "uz": "doimiy bezovtalik manbai",
+    "ex": "Slow internet is a thorn in my side.",
+    "use": "Shikoyat"
+   },
+   {
+    "t": "make matters worse",
+    "uz": "vaziyatni yomonlashtirmoq",
+    "ex": "To make matters worse, it started raining.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "teething problems",
+    "uz": "boshlang'ich muammolar",
+    "ex": "The new metro line had teething problems.",
+    "use": "Yangi tizim"
+   },
+   {
+    "t": "nip it in the bud",
+    "uz": "boshida to'xtatmoq",
+    "ex": "Bad habits should be nipped in the bud.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "a recipe for disaster",
+    "uz": "falokat retsepti",
+    "ex": "No sleep before an exam is a recipe for disaster.",
+    "use": "Ogohlantirish"
+   },
+   {
+    "t": "back to the drawing board",
+    "uz": "rejani qaytadan tuzmoq",
+    "ex": "The plan failed, so it's back to the drawing board.",
+    "use": "Muvaffaqiyatsizlik"
+   },
+   {
+    "t": "weather the storm",
+    "uz": "qiyinchilikdan o'tmoq",
+    "ex": "The company weathered the storm.",
+    "use": "Biznes"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "exhibit",
+    "pos": "verb/noun",
+    "syn": "show, display; item on show",
+    "uz": "namoyish etmoq; eksponat",
+    "ex": "Patients exhibit different symptoms."
+   },
+   {
+    "w": "exploit",
+    "pos": "verb",
+    "syn": "use unfairly; make use of",
+    "uz": "ekspluatatsiya qilmoq",
+    "ex": "Workers were exploited in factories."
+   },
+   {
+    "w": "fluctuate",
+    "pos": "verb",
+    "syn": "vary, rise and fall",
+    "uz": "tebranmoq",
+    "ex": "Prices fluctuate with the seasons."
+   },
+   {
+    "w": "guideline",
+    "pos": "noun",
+    "syn": "rule, instruction",
+    "uz": "yo'riqnoma",
+    "ex": "Doctors follow strict guidelines."
+   },
+   {
+    "w": "highlight",
+    "pos": "verb",
+    "syn": "emphasise, stress",
+    "uz": "ta'kidlamoq",
+    "ex": "The report highlights the need for action."
+   },
+   {
+    "w": "implicit",
+    "pos": "adj",
+    "syn": "implied, unspoken",
+    "uz": "yashirin, ko'zda tutilgan",
+    "ex": "There was an implicit criticism in his words."
+   },
+   {
+    "w": "induce",
+    "pos": "verb",
+    "syn": "cause, bring about; persuade",
+    "uz": "keltirib chiqarmoq",
+    "ex": "Stress can induce headaches."
+   },
+   {
+    "w": "inevitable",
+    "pos": "adj",
+    "syn": "unavoidable, certain",
+    "uz": "muqarrar",
+    "ex": "Change is inevitable."
+   },
+   {
+    "w": "infrastructure",
+    "pos": "noun",
+    "syn": "basic facilities",
+    "uz": "infratuzilma",
+    "ex": "Rural infrastructure needs investment."
+   },
+   {
+    "w": "inspect",
+    "pos": "verb",
+    "syn": "examine, check",
+    "uz": "tekshirmoq",
+    "ex": "Restaurants are inspected regularly."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about culture and traditions",
+  "items": [
+   {
+    "s": "In my culture, it's customary to …",
+    "uz": "Madaniyatimda … qilish odat",
+    "ex": "In my culture, it's customary to offer tea to guests.",
+    "use": "Part 1/3"
+   },
+   {
+    "s": "It's a tradition that goes back …",
+    "uz": "Bu … dan boshlangan an'ana",
+    "ex": "It's a tradition that goes back centuries.",
+    "use": "Tarix"
+   },
+   {
+    "s": "It's a big deal in my country.",
+    "uz": "Mamlakatimda bu juda muhim",
+    "ex": "Weddings are a big deal in my country.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "People tend to celebrate by …",
+    "uz": "Odamlar odatda … orqali nishonlaydi",
+    "ex": "People tend to celebrate by cooking sumalak.",
+    "use": "Bayram"
+   },
+   {
+    "s": "It's deeply rooted in …",
+    "uz": "… ga chuqur singgan",
+    "ex": "Hospitality is deeply rooted in Uzbek culture.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Younger people don't follow it as much.",
+    "uz": "Yoshlar unchalik amal qilmaydi",
+    "ex": "Younger people don't follow it as much.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "It brings families together.",
+    "uz": "Oilalarni birlashtiradi",
+    "ex": "Navruz brings families together.",
+    "use": "Foyda"
+   },
+   {
+    "s": "Foreigners are often surprised that …",
+    "uz": "Chet elliklar ko'pincha … dan hayron bo'ladi",
+    "ex": "Foreigners are often surprised that we eat plov at weddings in the morning.",
+    "use": "Qiziqarli detal"
+   },
+   {
+    "s": "It's not as strict as it used to be.",
+    "uz": "Avvalgidek qat'iy emas",
+    "ex": "It's not as strict as it used to be.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "I'd like to see it preserved.",
+    "uz": "Saqlanib qolishini xohlardim",
+    "ex": "I'd like to see these crafts preserved.",
+    "use": "Fikr"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Intonation for lists, choices and attitudes",
+  "items": [
+   {
+    "w": "Would you like tea ↗ or coffee ↘?",
+    "ipa": "tanlov savoli",
+    "uz": "oxirgi variantda ovoz tushadi",
+    "tip": "Choice question"
+   },
+   {
+    "w": "Would you like tea or coffee ↗?",
+    "ipa": "ha/yo'q savoli",
+    "uz": "'biror ichimlik?' ma'nosida",
+    "tip": "Ma'no farqi"
+   },
+   {
+    "w": "Enthusiasm: wide pitch range",
+    "ipa": "hayajon",
+    "uz": "That's AMAZING!",
+    "tip": "Speaking his"
+   },
+   {
+    "w": "Boredom: flat pitch",
+    "ipa": "zerikish",
+    "uz": "Monoton ohang zerikish bildiradi",
+    "tip": "Ehtiyot bo'ling"
+   },
+   {
+    "w": "Polite requests ↗",
+    "ipa": "muloyim ohang",
+    "uz": "Could you repeat that ↗?",
+    "tip": "Muloyimlik"
+   },
+   {
+    "w": "Fall at the end of statements",
+    "ipa": "ishonch",
+    "uz": "Ovozni gap oxirida tushiring",
+    "tip": "Ishonchli eshitilish"
+   },
+   {
+    "w": "Uptalk (↗ every sentence)",
+    "ipa": "har gapda ko'tarilish",
+    "uz": "Ishonchsiz eshitiladi — qoching",
+    "tip": "Xato odat"
+   },
+   {
+    "w": "Pause before important words",
+    "ipa": "urg'u uchun pauza",
+    "uz": "The answer is … education.",
+    "tip": "Ta'sir"
+   },
+   {
+    "w": "Record and compare with a native speaker",
+    "ipa": "mashq",
+    "uz": "Practice → Speaking'da yozib tinglang",
+    "tip": "Mashq"
+   },
+   {
+    "w": "Intonation counts in Pronunciation",
+    "ipa": "band mezoni",
+    "uz": "Pronunciation bandiga intonatsiya ham kiradi",
+    "tip": "Band 7"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing about a process with no numbers",
+  "items": [
+   {
+    "w": "There are X main stages",
+    "syn": "the process consists of",
+    "uz": "X ta asosiy bosqich bor",
+    "ex": "There are six main stages in the process."
+   },
+   {
+    "w": "from … to …",
+    "syn": "beginning to end",
+    "uz": "… dan … gacha",
+    "ex": "…from the collection of milk to delivery."
+   },
+   {
+    "w": "Overview: start, end, number of stages",
+    "syn": "summary",
+    "uz": "overview: boshlanish, oxir, bosqichlar soni",
+    "ex": "Overall, it is a linear process with five stages."
+   },
+   {
+    "w": "linear vs cyclical",
+    "syn": "one-way vs repeating",
+    "uz": "chiziqli vs aylanma",
+    "ex": "The water cycle is cyclical."
+   },
+   {
+    "w": "natural vs man-made",
+    "syn": "type of process",
+    "uz": "tabiiy vs sun'iy",
+    "ex": "This is a man-made process."
+   },
+   {
+    "w": "use present simple passive",
+    "syn": "is collected",
+    "uz": "hozirgi zamon passiv",
+    "ex": "The milk is collected from farms."
+   },
+   {
+    "w": "describe every stage",
+    "syn": "complete",
+    "uz": "har bir bosqichni yozing",
+    "ex": "Missing stages lower Task Achievement."
+   },
+   {
+    "w": "add detail from labels",
+    "syn": "use diagram words",
+    "uz": "diagrammadagi so'zlardan foydalaning",
+    "ex": "…at a temperature of 72°C."
+   },
+   {
+    "w": "two body paragraphs",
+    "syn": "split stages",
+    "uz": "bosqichlarni ikkiga bo'ling",
+    "ex": "Stages 1–3 and stages 4–6."
+   },
+   {
+    "w": "avoid 'firstly, secondly, thirdly' only",
+    "syn": "vary sequencers",
+    "uz": "faqat firstly/secondly emas",
+    "ex": "Use once, next, after that."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Happiness and well-being",
+  "items": [
+   {
+    "w": "quality of life",
+    "syn": "living standards",
+    "uz": "hayot sifati",
+    "ex": "Green spaces improve quality of life."
+   },
+   {
+    "w": "material wealth",
+    "syn": "money and possessions",
+    "uz": "moddiy boylik",
+    "ex": "Material wealth does not guarantee happiness."
+   },
+   {
+    "w": "life satisfaction",
+    "syn": "contentment",
+    "uz": "hayotdan qoniqish",
+    "ex": "Life satisfaction is high in Nordic countries."
+   },
+   {
+    "w": "mental well-being",
+    "syn": "psychological health",
+    "uz": "ruhiy farovonlik",
+    "ex": "Exercise improves mental well-being."
+   },
+   {
+    "w": "social connections",
+    "syn": "relationships",
+    "uz": "ijtimoiy aloqalar",
+    "ex": "Strong social connections make people happier."
+   },
+   {
+    "w": "the rat race",
+    "syn": "competitive working life",
+    "uz": "tinimsiz poyga",
+    "ex": "Many want to escape the rat race."
+   },
+   {
+    "w": "a sense of fulfilment",
+    "syn": "satisfaction",
+    "uz": "o'zini ro'yobga chiqarish hissi",
+    "ex": "Meaningful work gives a sense of fulfilment."
+   },
+   {
+    "w": "stress levels",
+    "syn": "amount of stress",
+    "uz": "stress darajasi",
+    "ex": "Stress levels are rising among students."
+   },
+   {
+    "w": "leisure time",
+    "syn": "free time",
+    "uz": "bo'sh vaqt",
+    "ex": "People have less leisure time today."
+   },
+   {
+    "w": "measure happiness",
+    "syn": "assess well-being",
+    "uz": "baxtni o'lchamoq",
+    "ex": "It is difficult to measure happiness."
+   }
+  ]
+ }
+}

@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Future in the past",
+  "items": [
+   {
+    "s": "was/were going to + V",
+    "uz": "o'tmishdagi reja (amalga oshmagan)",
+    "ex": "I was going to call you, but I forgot.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "would + V (future in the past)",
+    "uz": "o'tmishdan kelajakka qarash",
+    "ex": "I knew it would be difficult.",
+    "use": "Part 2"
+   },
+   {
+    "s": "was about to + V",
+    "uz": "endi … moqchi edi",
+    "ex": "I was about to leave when he arrived.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "was supposed to + V",
+    "uz": "… qilishi kerak edi",
+    "ex": "The bus was supposed to come at 8.",
+    "use": "Shikoyat"
+   },
+   {
+    "s": "was due to + V",
+    "uz": "rejalashtirilgan edi",
+    "ex": "The project was due to finish in 2020.",
+    "use": "Rasmiy"
+   },
+   {
+    "s": "thought / hoped / expected + would",
+    "uz": "fikr va umid",
+    "ex": "I hoped I would get 7.0.",
+    "use": "Speaking"
+   },
+   {
+    "s": "Task 1: was expected to (past forecast)",
+    "uz": "o'tmishdagi prognoz",
+    "ex": "In 2000, sales were expected to double.",
+    "use": "Task 1"
+   },
+   {
+    "s": "❌ I knew it will be hard → ✅ I knew it would be hard",
+    "uz": "o'tmish fikrida will → would",
+    "ex": "I thought it would rain.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Speech and talking",
+  "items": [
+   {
+    "t": "talk shop",
+    "uz": "ish haqida gapirmoq (ishdan tashqari)",
+    "ex": "Let's not talk shop at dinner.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "small talk",
+    "uz": "yengil suhbat",
+    "ex": "I'm not good at small talk.",
+    "use": "Part 1: odamlar"
+   },
+   {
+    "t": "talk someone's ear off",
+    "uz": "kimnidir gap bilan charchatmoq",
+    "ex": "My neighbour talked my ear off.",
+    "use": "Hazil"
+   },
+   {
+    "t": "get a word in edgeways",
+    "uz": "gapga so'z qo'sha olish",
+    "ex": "I couldn't get a word in edgeways.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "the gift of the gab",
+    "uz": "notiqlik qobiliyati",
+    "ex": "Salespeople need the gift of the gab.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "speak volumes",
+    "uz": "ko'p narsani anglatmoq",
+    "ex": "His silence spoke volumes.",
+    "use": "Kuzatuv"
+   },
+   {
+    "t": "lost in translation",
+    "uz": "tarjimada yo'qolgan",
+    "ex": "Some jokes get lost in translation.",
+    "use": "Til"
+   },
+   {
+    "t": "put in a good word for",
+    "uz": "kimgadir yaxshi gap aytmoq",
+    "ex": "My teacher put in a good word for me.",
+    "use": "Yordam"
+   },
+   {
+    "t": "word of mouth",
+    "uz": "og'izdan-og'izga",
+    "ex": "The café became popular by word of mouth.",
+    "use": "Marketing"
+   },
+   {
+    "t": "have the last word",
+    "uz": "oxirgi so'zni aytmoq",
+    "ex": "My grandmother always has the last word.",
+    "use": "Oila"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "intense",
+    "pos": "adj",
+    "syn": "strong, extreme, powerful",
+    "uz": "kuchli, jadal",
+    "ex": "The competition was intense."
+   },
+   {
+    "w": "manipulate",
+    "pos": "verb",
+    "syn": "control unfairly; handle",
+    "uz": "manipulyatsiya qilmoq",
+    "ex": "Adverts can manipulate children."
+   },
+   {
+    "w": "minimise",
+    "pos": "verb",
+    "syn": "reduce, keep low",
+    "uz": "minimallashtirmoq",
+    "ex": "We must minimise the risks."
+   },
+   {
+    "w": "nuclear",
+    "pos": "adj",
+    "syn": "atomic",
+    "uz": "yadroviy",
+    "ex": "Nuclear energy produces little CO2."
+   },
+   {
+    "w": "offset",
+    "pos": "verb",
+    "syn": "balance, compensate for",
+    "uz": "qoplamoq, muvozanatlamoq",
+    "ex": "Higher prices were offset by lower costs."
+   },
+   {
+    "w": "paragraph",
+    "pos": "noun",
+    "syn": "section of text",
+    "uz": "abzas",
+    "ex": "Each paragraph should have one main idea."
+   },
+   {
+    "w": "practitioner",
+    "pos": "noun",
+    "syn": "professional, doctor",
+    "uz": "amaliyotchi mutaxassis",
+    "ex": "Medical practitioners need regular training."
+   },
+   {
+    "w": "predominant",
+    "pos": "adj",
+    "syn": "main, chief, dominant",
+    "uz": "ustun, asosiy",
+    "ex": "Cotton is the predominant crop."
+   },
+   {
+    "w": "prospect",
+    "pos": "noun",
+    "syn": "possibility, outlook",
+    "uz": "istiqbol",
+    "ex": "Job prospects for graduates are good."
+   },
+   {
+    "w": "radical",
+    "pos": "adj",
+    "syn": "fundamental, extreme",
+    "uz": "tub, keskin",
+    "ex": "Radical changes are needed."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about ambitions and goals",
+  "items": [
+   {
+    "s": "My ultimate goal is to …",
+    "uz": "Mening yakuniy maqsadim — …",
+    "ex": "My ultimate goal is to open a language centre.",
+    "use": "Part 2/3"
+   },
+   {
+    "s": "I've set my heart on …",
+    "uz": "Ko'nglim … ga qattiq bog'langan",
+    "ex": "I've set my heart on studying in the UK.",
+    "use": "Kuchli istak"
+   },
+   {
+    "s": "I'm determined to …",
+    "uz": "… ga qat'iy qaror qilganman",
+    "ex": "I'm determined to get 7.5.",
+    "use": "Qat'iyat"
+   },
+   {
+    "s": "I'm working towards …",
+    "uz": "… sari ishlayapman",
+    "ex": "I'm working towards C1 level.",
+    "use": "Jarayon"
+   },
+   {
+    "s": "It's been a dream of mine to …",
+    "uz": "… qilish orzuim bo'lgan",
+    "ex": "It's been a dream of mine to travel to Japan.",
+    "use": "Orzu"
+   },
+   {
+    "s": "I'd like to make a difference in …",
+    "uz": "… da o'zgarish yasashni xohlayman",
+    "ex": "I'd like to make a difference in education.",
+    "use": "Ijtimoiy maqsad"
+   },
+   {
+    "s": "In five years' time, I see myself …",
+    "uz": "Besh yildan keyin o'zimni … ko'raman",
+    "ex": "In five years' time, I see myself running my own business.",
+    "use": "Kelajak"
+   },
+   {
+    "s": "The first step is to …",
+    "uz": "Birinchi qadam — …",
+    "ex": "The first step is to pass IELTS.",
+    "use": "Reja"
+   },
+   {
+    "s": "I'm aiming high.",
+    "uz": "Yuqoriga intilyapman",
+    "ex": "I'm aiming high — band 7.5.",
+    "use": "Ambitsiya"
+   },
+   {
+    "s": "Whatever it takes.",
+    "uz": "Nima qilish kerak bo'lsa ham",
+    "ex": "I'll do whatever it takes.",
+    "use": "Qat'iyat"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Commonly mispronounced IELTS words",
+  "items": [
+   {
+    "w": "queue",
+    "ipa": "/kjuː/",
+    "uz": "faqat 'kyu', qolgan harflar o'qilmaydi",
+    "tip": "Q-U-E-U-E"
+   },
+   {
+    "w": "colleague",
+    "ipa": "/ˈkɒliːɡ/",
+    "uz": "KOL-eeg, 'kolleyg' emas",
+    "tip": "Ish haqida"
+   },
+   {
+    "w": "executive",
+    "ipa": "/ɪɡˈzekjətɪv/",
+    "uz": "ig-ZEK-yə-tiv",
+    "tip": "Biznes"
+   },
+   {
+    "w": "advertisement",
+    "ipa": "/ədˈvɜːtɪsmənt/",
+    "uz": "Britaniyada əd-VER-tis-mənt",
+    "tip": "Media mavzusi"
+   },
+   {
+    "w": "analysis",
+    "ipa": "/əˈnæləsɪs/",
+    "uz": "ə-NAL-ə-sis",
+    "tip": "Akademik"
+   },
+   {
+    "w": "pronunciation",
+    "ipa": "/prəˌnʌnsiˈeɪʃn/",
+    "uz": "'pronounciation' emas!",
+    "tip": "prə-nun-si-EI-shn"
+   },
+   {
+    "w": "debt",
+    "ipa": "/det/",
+    "uz": "b o'qilmaydi",
+    "tip": "DET"
+   },
+   {
+    "w": "salmon",
+    "ipa": "/ˈsæmən/",
+    "uz": "l o'qilmaydi",
+    "tip": "SAM-ən"
+   },
+   {
+    "w": "subtle",
+    "ipa": "/ˈsʌtl/",
+    "uz": "b o'qilmaydi",
+    "tip": "SAT-l"
+   },
+   {
+    "w": "genre",
+    "ipa": "/ˈʒɒnrə/",
+    "uz": "fransuzcha /ʒ/ bilan",
+    "tip": "ZHON-rə"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Line graph: describing fluctuations precisely",
+  "items": [
+   {
+    "w": "fluctuated between X and Y",
+    "syn": "varied between",
+    "uz": "X va Y oralig'ida tebrandi",
+    "ex": "Prices fluctuated between $50 and $70."
+   },
+   {
+    "w": "rose and fell several times",
+    "syn": "went up and down",
+    "uz": "bir necha marta ko'tarilib tushdi",
+    "ex": "The figure rose and fell several times."
+   },
+   {
+    "w": "a volatile period",
+    "syn": "unstable",
+    "uz": "beqaror davr",
+    "ex": "2008–2010 was a volatile period."
+   },
+   {
+    "w": "despite fluctuations, the overall trend was",
+    "syn": "general direction",
+    "uz": "tebranishlarga qaramay umumiy tendensiya",
+    "ex": "Despite fluctuations, the overall trend was upward."
+   },
+   {
+    "w": "a series of peaks and troughs",
+    "syn": "highs and lows",
+    "uz": "cho'qqi va chuqurliklar",
+    "ex": "The graph shows a series of peaks and troughs."
+   },
+   {
+    "w": "a trough of",
+    "syn": "a low point",
+    "uz": "eng past nuqta",
+    "ex": "It hit a trough of 20 in 2009."
+   },
+   {
+    "w": "seasonal variation",
+    "syn": "changes by season",
+    "uz": "mavsumiy o'zgarish",
+    "ex": "Sales show clear seasonal variation."
+   },
+   {
+    "w": "recovered to",
+    "syn": "came back to",
+    "uz": "… gacha tiklandi",
+    "ex": "It recovered to its earlier level."
+   },
+   {
+    "w": "unpredictably",
+    "syn": "irregularly",
+    "uz": "oldindan aytib bo'lmas holda",
+    "ex": "The rate changed unpredictably."
+   },
+   {
+    "w": "don't describe every small change",
+    "syn": "summarise",
+    "uz": "har bir kichik o'zgarishni yozmang",
+    "ex": "Give the range instead."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Competition vs cooperation",
+  "items": [
+   {
+    "w": "healthy competition",
+    "syn": "positive rivalry",
+    "uz": "sog'lom raqobat",
+    "ex": "Healthy competition motivates students."
+   },
+   {
+    "w": "teamwork skills",
+    "syn": "collaboration skills",
+    "uz": "jamoada ishlash ko'nikmasi",
+    "ex": "Employers value teamwork skills."
+   },
+   {
+    "w": "cut-throat",
+    "syn": "ruthless",
+    "uz": "shafqatsiz (raqobat)",
+    "ex": "The job market is cut-throat."
+   },
+   {
+    "w": "rankings and league tables",
+    "syn": "ranking lists",
+    "uz": "reytinglar",
+    "ex": "School league tables create pressure."
+   },
+   {
+    "w": "collaborative projects",
+    "syn": "group work",
+    "uz": "hamkorlikdagi loyihalar",
+    "ex": "Collaborative projects teach communication."
+   },
+   {
+    "w": "a competitive edge",
+    "syn": "advantage",
+    "uz": "raqobat ustunligi",
+    "ex": "Languages give graduates a competitive edge."
+   },
+   {
+    "w": "win-win situation",
+    "syn": "good for both",
+    "uz": "har ikki tomon uchun foydali",
+    "ex": "Cooperation creates a win-win situation."
+   },
+   {
+    "w": "peer comparison",
+    "syn": "comparing with classmates",
+    "uz": "tengdoshlar bilan solishtirish",
+    "ex": "Constant peer comparison lowers confidence."
+   },
+   {
+    "w": "individual achievement",
+    "syn": "personal success",
+    "uz": "shaxsiy yutuq",
+    "ex": "Schools reward individual achievement."
+   },
+   {
+    "w": "foster cooperation",
+    "syn": "encourage working together",
+    "uz": "hamkorlikni rivojlantirmoq",
+    "ex": "Team sports foster cooperation."
+   }
+  ]
+ }
+}

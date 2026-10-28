@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Expressing purpose",
+  "items": [
+   {
+    "s": "to + V",
+    "uz": "maqsad (eng oddiy)",
+    "ex": "I study every day to improve my score.",
+    "use": "Asosiy"
+   },
+   {
+    "s": "in order to / so as to + V",
+    "uz": "rasmiyroq maqsad",
+    "ex": "Governments tax fuel in order to reduce pollution.",
+    "use": "Task 2"
+   },
+   {
+    "s": "in order not to / so as not to",
+    "uz": "inkor maqsad",
+    "ex": "I left early so as not to miss the bus.",
+    "use": "❌ to not"
+   },
+   {
+    "s": "so that + can/could/will/would",
+    "uz": "maqsad (ega o'zgarsa)",
+    "ex": "Cities build parks so that people can relax.",
+    "use": "Murakkab gap"
+   },
+   {
+    "s": "for + noun / -ing (function)",
+    "uz": "vazifa bildiradi",
+    "ex": "This app is for learning vocabulary.",
+    "use": "Narsalar vazifasi"
+   },
+   {
+    "s": "with the aim of + -ing",
+    "uz": "… maqsadida",
+    "ex": "The law was passed with the aim of protecting children.",
+    "use": "Band 7"
+   },
+   {
+    "s": "in an attempt to + V",
+    "uz": "… ga urinib",
+    "ex": "Prices were cut in an attempt to boost sales.",
+    "use": "Task 1/2"
+   },
+   {
+    "s": "❌ I came here for study → ✅ I came here to study",
+    "uz": "maqsad uchun to + V",
+    "ex": "I went to the library to study.",
+    "use": "O'zbekchadan ko'chirma xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Body and health (more)",
+  "items": [
+   {
+    "t": "in good shape",
+    "uz": "yaxshi jismoniy holatda",
+    "ex": "I'm in good shape for my age.",
+    "use": "Sog'liq"
+   },
+   {
+    "t": "a sight for sore eyes",
+    "uz": "ko'zga yoqimli manzara",
+    "ex": "After the long trip, home was a sight for sore eyes.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "on your last legs",
+    "uz": "holdan toygan, oxirgi kuchida",
+    "ex": "My old laptop is on its last legs.",
+    "use": "Buyumlar"
+   },
+   {
+    "t": "bounce back",
+    "uz": "tez tiklanmoq",
+    "ex": "After the flu, I bounced back quickly.",
+    "use": "Sog'liq"
+   },
+   {
+    "t": "off colour",
+    "uz": "biroz betob",
+    "ex": "I've been feeling a bit off colour today.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "a splitting headache",
+    "uz": "kuchli bosh og'rig'i",
+    "ex": "I woke up with a splitting headache.",
+    "use": "Sog'liq"
+   },
+   {
+    "t": "go under the knife",
+    "uz": "operatsiya qilinmoq",
+    "ex": "My uncle went under the knife last year.",
+    "use": "Tibbiyot"
+   },
+   {
+    "t": "bitter pill to swallow",
+    "uz": "qabul qilish qiyin haqiqat",
+    "ex": "Failing the exam was a bitter pill to swallow.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "in the pink",
+    "uz": "sog'-salomat",
+    "ex": "Grandpa is in the pink after his holiday.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "get a second wind",
+    "uz": "yangi kuch paydo bo'lmoq",
+    "ex": "I got a second wind after a coffee.",
+    "use": "Energiya"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "conform",
+    "pos": "verb",
+    "syn": "comply, follow, obey",
+    "uz": "moslashmoq, rioya qilmoq",
+    "ex": "Teenagers often feel pressure to conform."
+   },
+   {
+    "w": "contemporary",
+    "pos": "adj",
+    "syn": "modern, current",
+    "uz": "zamonaviy",
+    "ex": "The museum shows contemporary art."
+   },
+   {
+    "w": "contradict",
+    "pos": "verb",
+    "syn": "oppose, deny",
+    "uz": "zid bo'lmoq",
+    "ex": "The new data contradict earlier findings."
+   },
+   {
+    "w": "crucial",
+    "pos": "adj",
+    "syn": "vital, essential, key",
+    "uz": "hal qiluvchi, juda muhim",
+    "ex": "Sleep is crucial for memory."
+   },
+   {
+    "w": "currency",
+    "pos": "noun",
+    "syn": "money; acceptance",
+    "uz": "valyuta",
+    "ex": "The local currency lost value."
+   },
+   {
+    "w": "denote",
+    "pos": "verb",
+    "syn": "indicate, represent",
+    "uz": "bildirmoq",
+    "ex": "Red areas denote high temperatures."
+   },
+   {
+    "w": "detect",
+    "pos": "verb",
+    "syn": "discover, notice, identify",
+    "uz": "aniqlamoq",
+    "ex": "The test can detect cancer early."
+   },
+   {
+    "w": "deviate",
+    "pos": "verb",
+    "syn": "depart, differ",
+    "uz": "chetga chiqmoq",
+    "ex": "Results deviated from the forecast."
+   },
+   {
+    "w": "displace",
+    "pos": "verb",
+    "syn": "move, replace",
+    "uz": "siqib chiqarmoq, ko'chirmoq",
+    "ex": "The dam displaced thousands of people."
+   },
+   {
+    "w": "eventual",
+    "pos": "adj",
+    "syn": "final, ultimate",
+    "uz": "oxir-oqibatdagi",
+    "ex": "The eventual cost was double the estimate."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Part 1: short natural answers (2–3 sentences)",
+  "items": [
+   {
+    "s": "Yes, definitely. + reason + detail",
+    "uz": "Ha, albatta + sabab + tafsilot",
+    "ex": "Yes, definitely. It helps me relax, especially after work.",
+    "use": "Formula"
+   },
+   {
+    "s": "Not especially. + why",
+    "uz": "Unchalik emas + sabab",
+    "ex": "Not especially. I find it a bit boring.",
+    "use": "Yumshoq inkor"
+   },
+   {
+    "s": "It depends. + two cases",
+    "uz": "Vaziyatga bog'liq + ikki holat",
+    "ex": "It depends. On weekdays I don't, but at weekends I do.",
+    "use": "Ikki tomon"
+   },
+   {
+    "s": "I used to, but not anymore.",
+    "uz": "Ilgari … edim, endi yo'q",
+    "ex": "I used to, but not anymore — I don't have time.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "Mostly …, but sometimes …",
+    "uz": "Asosan …, ba'zan esa …",
+    "ex": "Mostly at home, but sometimes in cafés.",
+    "use": "Chastota"
+   },
+   {
+    "s": "Avoid one-word answers",
+    "uz": "bir so'zli javob yo'q",
+    "ex": "❌ Yes. → ✅ Yes, I do. I …",
+    "use": "Fluency"
+   },
+   {
+    "s": "Avoid very long Part 1 answers",
+    "uz": "juda uzun emas",
+    "ex": "20–30 soniya yetarli",
+    "use": "Vaqt"
+   },
+   {
+    "s": "Answer the question asked",
+    "uz": "savolga mos",
+    "ex": "Who? → odam, When? → vaqt",
+    "use": "Aniqlik"
+   },
+   {
+    "s": "Use present tenses for habits",
+    "uz": "odatlar — Present Simple",
+    "ex": "I usually …",
+    "use": "Grammatika"
+   },
+   {
+    "s": "Add a personal touch",
+    "uz": "shaxsiy detal",
+    "ex": "…, like my grandmother's recipe.",
+    "use": "Tabiiylik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Stress in phrasal verbs",
+  "items": [
+   {
+    "w": "give UP",
+    "ipa": "/ɡɪv ˈʌp/",
+    "uz": "phrasal verbda urg'u predlogda",
+    "tip": "give-UP"
+   },
+   {
+    "w": "look AFter",
+    "ipa": "/lʊk ˈɑːftə/",
+    "uz": "urg'u 'after' da",
+    "tip": "look-AF-tə"
+   },
+   {
+    "w": "turn DOWN",
+    "ipa": "/tɜːn ˈdaʊn/",
+    "uz": "rad etmoq",
+    "tip": "turn-DOWN"
+   },
+   {
+    "w": "set UP",
+    "ipa": "/set ˈʌp/",
+    "uz": "tashkil etmoq",
+    "tip": "set-UP"
+   },
+   {
+    "w": "a SETup",
+    "ipa": "/ˈsetʌp/",
+    "uz": "ot shaklida urg'u boshida",
+    "tip": "SET-up"
+   },
+   {
+    "w": "a BREAKdown",
+    "ipa": "/ˈbreɪkdaʊn/",
+    "uz": "ot — 1-qism urg'uli",
+    "tip": "BREAK-down"
+   },
+   {
+    "w": "break DOWN",
+    "ipa": "/breɪk ˈdaʊn/",
+    "uz": "fe'l — 2-qism urg'uli",
+    "tip": "break-DOWN"
+   },
+   {
+    "w": "an OUTcome",
+    "ipa": "/ˈaʊtkʌm/",
+    "uz": "ot",
+    "tip": "OUT-come"
+   },
+   {
+    "w": "find OUT",
+    "ipa": "/faɪnd ˈaʊt/",
+    "uz": "bilib olmoq",
+    "tip": "find-OUT"
+   },
+   {
+    "w": "Pattern: verb → second part, noun → first part",
+    "ipa": "qoida",
+    "uz": "fe'l: 2-qism, ot: 1-qism",
+    "tip": "Eslab qoling"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Task 1: describing proportions in tables",
+  "items": [
+   {
+    "w": "over a third",
+    "syn": "more than 33%",
+    "uz": "uchdan birdan ko'p",
+    "ex": "Over a third of households had a pet."
+   },
+   {
+    "w": "roughly one in eight",
+    "syn": "about 12%",
+    "uz": "taxminan sakkizdan bir",
+    "ex": "Roughly one in eight adults smoked."
+   },
+   {
+    "w": "a clear majority",
+    "syn": "well over 50%",
+    "uz": "aniq ko'pchilik",
+    "ex": "A clear majority supported the plan."
+   },
+   {
+    "w": "evenly split",
+    "syn": "50/50",
+    "uz": "teng bo'lingan",
+    "ex": "Opinion was evenly split."
+   },
+   {
+    "w": "the share rose to",
+    "syn": "the proportion increased to",
+    "uz": "ulush … ga ko'tarildi",
+    "ex": "The share rose to 40%."
+   },
+   {
+    "w": "made up the bulk of",
+    "syn": "most of",
+    "uz": "asosiy qismini tashkil etdi",
+    "ex": "Students made up the bulk of users."
+   },
+   {
+    "w": "accounted for the remainder",
+    "syn": "the rest",
+    "uz": "qolganini tashkil etdi",
+    "ex": "Other countries accounted for the remainder."
+   },
+   {
+    "w": "in relative terms",
+    "syn": "proportionally",
+    "uz": "nisbiy jihatdan",
+    "ex": "In relative terms, spending fell."
+   },
+   {
+    "w": "in absolute terms",
+    "syn": "actual numbers",
+    "uz": "mutlaq raqamlarda",
+    "ex": "In absolute terms, the number grew."
+   },
+   {
+    "w": "percentages vs numbers",
+    "syn": "check the unit",
+    "uz": "foiz va son farqi",
+    "ex": "Don't confuse 20% with 20 people."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Fashion and appearance",
+  "items": [
+   {
+    "w": "fast fashion",
+    "syn": "cheap, quickly made clothes",
+    "uz": "tez moda",
+    "ex": "Fast fashion creates huge waste."
+   },
+   {
+    "w": "designer labels",
+    "syn": "brands",
+    "uz": "brendlar",
+    "ex": "Teenagers want designer labels."
+   },
+   {
+    "w": "self-image",
+    "syn": "how you see yourself",
+    "uz": "o'zini qanday ko'rish",
+    "ex": "Fashion affects self-image."
+   },
+   {
+    "w": "follow trends",
+    "syn": "keep up with fashion",
+    "uz": "moda tendensiyalariga ergashmoq",
+    "ex": "Young people follow trends on Instagram."
+   },
+   {
+    "w": "express individuality",
+    "syn": "show personality",
+    "uz": "o'ziga xoslikni ifodalamoq",
+    "ex": "Clothes help people express individuality."
+   },
+   {
+    "w": "school uniforms",
+    "syn": "required clothes",
+    "uz": "maktab formasi",
+    "ex": "School uniforms reduce peer pressure."
+   },
+   {
+    "w": "sweatshops",
+    "syn": "factories with poor conditions",
+    "uz": "og'ir sharoitli fabrikalar",
+    "ex": "Cheap clothes are often made in sweatshops."
+   },
+   {
+    "w": "beauty standards",
+    "syn": "ideals of beauty",
+    "uz": "go'zallik standartlari",
+    "ex": "Unrealistic beauty standards harm teenagers."
+   },
+   {
+    "w": "second-hand clothes",
+    "syn": "used clothes",
+    "uz": "ikkinchi qo'l kiyimlar",
+    "ex": "Buying second-hand clothes is eco-friendly."
+   },
+   {
+    "w": "dress code",
+    "syn": "rules on clothing",
+    "uz": "kiyinish qoidasi",
+    "ex": "Many offices have a strict dress code."
+   }
+  ]
+ }
+}
