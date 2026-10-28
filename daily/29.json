@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Wish and If only",
+  "items": [
+   {
+    "s": "wish + Past Simple",
+    "uz": "hozirgi holatga afsus",
+    "ex": "I wish I had more free time.",
+    "use": "Speaking Part 3"
+   },
+   {
+    "s": "wish + were",
+    "uz": "be fe'li bilan (rasmiy)",
+    "ex": "I wish I were taller.",
+    "use": "Grammatik aniqlik"
+   },
+   {
+    "s": "wish + had + V3",
+    "uz": "o'tmishga afsus",
+    "ex": "I wish I had started IELTS earlier.",
+    "use": "Part 2 hikoya"
+   },
+   {
+    "s": "wish + would",
+    "uz": "boshqalarning xatti-harakatidan norozilik",
+    "ex": "I wish people would stop littering.",
+    "use": "Shikoyat"
+   },
+   {
+    "s": "If only …",
+    "uz": "qaniydi … (kuchliroq)",
+    "ex": "If only I had studied harder!",
+    "use": "Hissiy emfaza"
+   },
+   {
+    "s": "I'd rather + Past Simple",
+    "uz": "boshqa odam … qilsa yaxshi bo'lardi",
+    "ex": "I'd rather you didn't smoke here.",
+    "use": "Muloyim iltimos"
+   },
+   {
+    "s": "It's time + Past Simple",
+    "uz": "… qilish vaqti keldi",
+    "ex": "It's time governments took action.",
+    "use": "Task 2 kuchli fikr"
+   },
+   {
+    "s": "❌ I wish I have → ✅ I wish I had",
+    "uz": "wish dan keyin bir zamon orqaga",
+    "ex": "I wish I knew the answer.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Opinions and arguments",
+  "items": [
+   {
+    "t": "agree to disagree",
+    "uz": "har kim o'z fikrida qolmoq",
+    "ex": "We agreed to disagree about politics.",
+    "use": "Munozara"
+   },
+   {
+    "t": "have a bone to pick with",
+    "uz": "kimdandir gina qilmoq",
+    "ex": "I have a bone to pick with you.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "sit on the fence",
+    "uz": "betaraf qolmoq",
+    "ex": "Don't sit on the fence in your essay — give a clear view.",
+    "use": "Task 2 maslahati"
+   },
+   {
+    "t": "be of two minds",
+    "uz": "ikkilanmoq",
+    "ex": "I'm of two minds about studying abroad.",
+    "use": "Part 3"
+   },
+   {
+    "t": "put your foot down",
+    "uz": "qat'iy turmoq",
+    "ex": "My dad put his foot down about late nights.",
+    "use": "Oila"
+   },
+   {
+    "t": "a heated debate",
+    "uz": "qizg'in munozara",
+    "ex": "There was a heated debate about the new law.",
+    "use": "Part 3"
+   },
+   {
+    "t": "have a point",
+    "uz": "haqli joyi bor",
+    "ex": "You have a point, but it's expensive.",
+    "use": "Qisman rozilik"
+   },
+   {
+    "t": "play devil's advocate",
+    "uz": "atayin qarshi fikrni himoya qilmoq",
+    "ex": "Let me play devil's advocate for a moment.",
+    "use": "Munozara"
+   },
+   {
+    "t": "the other side of the coin",
+    "uz": "masalaning boshqa tomoni",
+    "ex": "The other side of the coin is the cost.",
+    "use": "Muvozanat"
+   },
+   {
+    "t": "stand your ground",
+    "uz": "o'z fikrida turmoq",
+    "ex": "She stood her ground in the meeting.",
+    "use": "Xarakter"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "ratio",
+    "pos": "noun",
+    "syn": "proportion, rate",
+    "uz": "nisbat",
+    "ex": "The ratio of students to teachers is 20:1."
+   },
+   {
+    "w": "reject",
+    "pos": "verb",
+    "syn": "refuse, turn down",
+    "uz": "rad etmoq",
+    "ex": "The proposal was rejected."
+   },
+   {
+    "w": "revenue",
+    "pos": "noun",
+    "syn": "income, earnings",
+    "uz": "daromad",
+    "ex": "Tourism generates a lot of revenue."
+   },
+   {
+    "w": "stable",
+    "pos": "adj",
+    "syn": "steady, constant",
+    "uz": "barqaror",
+    "ex": "Prices remained stable."
+   },
+   {
+    "w": "style",
+    "pos": "noun",
+    "syn": "manner, way, fashion",
+    "uz": "uslub",
+    "ex": "Teaching styles vary widely."
+   },
+   {
+    "w": "substitute",
+    "pos": "noun/verb",
+    "syn": "replacement; replace",
+    "uz": "o'rinbosar; almashtirmoq",
+    "ex": "Honey is a substitute for sugar."
+   },
+   {
+    "w": "sustain",
+    "pos": "verb",
+    "syn": "maintain, support, keep up",
+    "uz": "qo'llab-quvvatlamoq, saqlab turmoq",
+    "ex": "The economy cannot sustain this growth."
+   },
+   {
+    "w": "symbol",
+    "pos": "noun",
+    "syn": "sign, emblem",
+    "uz": "ramz",
+    "ex": "The Registan is a symbol of Samarkand."
+   },
+   {
+    "w": "target",
+    "pos": "noun/verb",
+    "syn": "goal; aim at",
+    "uz": "maqsad; mo'ljallamoq",
+    "ex": "The adverts target teenagers."
+   },
+   {
+    "w": "transit",
+    "pos": "noun",
+    "syn": "transport, movement",
+    "uz": "tranzit, tashish",
+    "ex": "Goods were damaged in transit."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Giving advice and recommendations",
+  "items": [
+   {
+    "s": "If I were you, I'd …",
+    "uz": "Sizning o'rningizda bo'lsam, …",
+    "ex": "If I were you, I'd start with Reading.",
+    "use": "Klassik maslahat"
+   },
+   {
+    "s": "You might want to …",
+    "uz": "… qilishni xohlarsiz",
+    "ex": "You might want to book early.",
+    "use": "Muloyim"
+   },
+   {
+    "s": "It's worth …ing",
+    "uz": "… qilishga arziydi",
+    "ex": "It's worth visiting Khiva.",
+    "use": "Tavsiya"
+   },
+   {
+    "s": "I'd strongly recommend …",
+    "uz": "… ni qat'iy tavsiya qilaman",
+    "ex": "I'd strongly recommend this course.",
+    "use": "Kuchli"
+   },
+   {
+    "s": "Whatever you do, don't …",
+    "uz": "Nima bo'lsa ham, … qilmang",
+    "ex": "Whatever you do, don't skip breakfast.",
+    "use": "Ogohlantirish"
+   },
+   {
+    "s": "The best thing to do is …",
+    "uz": "Eng yaxshisi — …",
+    "ex": "The best thing to do is practise daily.",
+    "use": "Maslahat"
+   },
+   {
+    "s": "Have you thought about …ing?",
+    "uz": "… haqida o'ylab ko'rdingizmi?",
+    "ex": "Have you thought about joining a club?",
+    "use": "Savol shaklida"
+   },
+   {
+    "s": "You'd be better off …ing",
+    "uz": "… qilsangiz yaxshiroq bo'ladi",
+    "ex": "You'd be better off taking the metro.",
+    "use": "Taqqoslovchi maslahat"
+   },
+   {
+    "s": "Don't forget to …",
+    "uz": "… ni unutmang",
+    "ex": "Don't forget to bring your passport.",
+    "use": "Eslatma"
+   },
+   {
+    "s": "A word of advice: …",
+    "uz": "Bir maslahat: …",
+    "ex": "A word of advice: sleep well before the exam.",
+    "use": "Norasmiy"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Word families: -tion, -sion, -ic",
+  "items": [
+   {
+    "w": "inFORMation",
+    "ipa": "/ˌɪnfəˈmeɪʃn/",
+    "uz": "-tion oldidagi bo'g'in urg'uli",
+    "tip": "in-fə-MEI-shn"
+   },
+   {
+    "w": "conCLUsion",
+    "ipa": "/kənˈkluːʒn/",
+    "uz": "-sion: /ʒn/",
+    "tip": "kən-KLOO-zhn"
+   },
+   {
+    "w": "disCUSsion",
+    "ipa": "/dɪˈskʌʃn/",
+    "uz": "-ssion: /ʃn/",
+    "tip": "dis-KUSH-n"
+   },
+   {
+    "w": "poPUlation",
+    "ipa": "/ˌpɒpjuˈleɪʃn/",
+    "uz": "Task 1 so'zi",
+    "tip": "pop-yu-LEI-shn"
+   },
+   {
+    "w": "sciENtific",
+    "ipa": "/ˌsaɪənˈtɪfɪk/",
+    "uz": "-ic oldidagi bo'g'in",
+    "tip": "sai-ən-TIF-ik"
+   },
+   {
+    "w": "staTIStics",
+    "ipa": "/stəˈtɪstɪks/",
+    "uz": "stə-TIS-tiks",
+    "tip": "Task 1"
+   },
+   {
+    "w": "graphic",
+    "ipa": "/ˈɡræfɪk/",
+    "uz": "GRAF-ik",
+    "tip": "-ic qoidasi"
+   },
+   {
+    "w": "energetic",
+    "ipa": "/ˌenəˈdʒetɪk/",
+    "uz": "e-nə-JET-ik",
+    "tip": "-ic qoidasi"
+   },
+   {
+    "w": "competition – competitive",
+    "ipa": "/ˌkɒmpəˈtɪʃn/ – /kəmˈpetətɪv/",
+    "uz": "urg'u ko'chadi",
+    "tip": "kom-pə-TISH-n / kəm-PET-ə-tiv"
+   },
+   {
+    "w": "organisation",
+    "ipa": "/ˌɔːɡənaɪˈzeɪʃn/",
+    "uz": "5 bo'g'in",
+    "tip": "or-gə-nai-ZEI-shn"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Process diagrams: man-made processes",
+  "items": [
+   {
+    "w": "raw materials",
+    "syn": "inputs",
+    "uz": "xomashyo",
+    "ex": "Raw materials are delivered to the factory."
+   },
+   {
+    "w": "are mixed with",
+    "syn": "are combined with",
+    "uz": "… bilan aralashtiriladi",
+    "ex": "The clay is mixed with water."
+   },
+   {
+    "w": "is shaped into",
+    "syn": "is formed into",
+    "uz": "… shakliga keltiriladi",
+    "ex": "The mixture is shaped into bricks."
+   },
+   {
+    "w": "is placed in",
+    "syn": "is put into",
+    "uz": "… ga joylashtiriladi",
+    "ex": "The bricks are placed in a kiln."
+   },
+   {
+    "w": "at a temperature of",
+    "syn": "heated to",
+    "uz": "… harorat ostida",
+    "ex": "They are heated at a temperature of 1,000°C."
+   },
+   {
+    "w": "is left to cool",
+    "syn": "cools for",
+    "uz": "sovushga qoldiriladi",
+    "ex": "The glass is left to cool for 24 hours."
+   },
+   {
+    "w": "is delivered to",
+    "syn": "is sent to",
+    "uz": "… ga yetkaziladi",
+    "ex": "The finished product is delivered to shops."
+   },
+   {
+    "w": "by means of",
+    "syn": "using",
+    "uz": "… yordamida",
+    "ex": "Waste is removed by means of a filter."
+   },
+   {
+    "w": "simultaneously",
+    "syn": "at the same time",
+    "uz": "bir vaqtning o'zida",
+    "ex": "Simultaneously, gas is collected."
+   },
+   {
+    "w": "the end product",
+    "syn": "the final product",
+    "uz": "yakuniy mahsulot",
+    "ex": "The end product is packaged in boxes."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Gender equality",
+  "items": [
+   {
+    "w": "gender pay gap",
+    "syn": "difference in pay",
+    "uz": "jinslar o'rtasidagi maosh farqi",
+    "ex": "The gender pay gap is still large."
+   },
+   {
+    "w": "equal opportunities",
+    "syn": "the same chances",
+    "uz": "teng imkoniyatlar",
+    "ex": "Women deserve equal opportunities at work."
+   },
+   {
+    "w": "traditional gender roles",
+    "syn": "old expectations",
+    "uz": "an'anaviy gender rollari",
+    "ex": "Traditional gender roles are changing."
+   },
+   {
+    "w": "stereotypes",
+    "syn": "fixed ideas",
+    "uz": "stereotiplar",
+    "ex": "Toys often reinforce stereotypes."
+   },
+   {
+    "w": "maternity / paternity leave",
+    "syn": "parental leave",
+    "uz": "tug'ruq/otalik ta'tili",
+    "ex": "Paternity leave helps share childcare."
+   },
+   {
+    "w": "male-dominated",
+    "syn": "mostly men",
+    "uz": "erkaklar ustun bo'lgan",
+    "ex": "Engineering is still male-dominated."
+   },
+   {
+    "w": "glass ceiling",
+    "syn": "invisible barrier",
+    "uz": "ko'rinmas to'siq",
+    "ex": "Women still hit a glass ceiling."
+   },
+   {
+    "w": "empower women",
+    "syn": "give women power",
+    "uz": "ayollarga imkoniyat bermoq",
+    "ex": "Education empowers women."
+   },
+   {
+    "w": "household chores",
+    "syn": "housework",
+    "uz": "uy yumushlari",
+    "ex": "Household chores should be shared."
+   },
+   {
+    "w": "underrepresented",
+    "syn": "too few",
+    "uz": "yetarlicha vakili yo'q",
+    "ex": "Women are underrepresented in politics."
+   }
+  ]
+ }
+}

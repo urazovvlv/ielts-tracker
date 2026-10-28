@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Causative: have / get something done",
+  "items": [
+   {
+    "s": "have + object + V3",
+    "uz": "ishni boshqa odamga qildirmoq",
+    "ex": "I had my hair cut yesterday.",
+    "use": "Part 1: kundalik"
+   },
+   {
+    "s": "get + object + V3",
+    "uz": "norasmiyroq variant",
+    "ex": "I need to get my phone repaired.",
+    "use": "Speaking"
+   },
+   {
+    "s": "have someone do something",
+    "uz": "kimgadir biror ish qildirmoq",
+    "ex": "The teacher had us write an essay.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "get someone to do something",
+    "uz": "kimnidir ko'ndirib qildirmoq",
+    "ex": "I got my brother to help me.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "have something stolen",
+    "uz": "noxush voqea (passiv ma'no)",
+    "ex": "He had his bag stolen on the bus.",
+    "use": "Hikoya"
+   },
+   {
+    "s": "Tense changes in 'have'",
+    "uz": "have zamonga qarab o'zgaradi",
+    "ex": "I'm having my car washed. I've had it fixed.",
+    "use": "Grammatik xilma-xillik"
+   },
+   {
+    "s": "Task 2: have their skills assessed",
+    "uz": "rasmiy kontekst",
+    "ex": "Workers should have their skills assessed regularly.",
+    "use": "Akademik"
+   },
+   {
+    "s": "❌ I cut my hair at the salon → ✅ I had my hair cut",
+    "uz": "o'zingiz qilmagan ish uchun causative",
+    "ex": "I had my eyes tested.",
+    "use": "O'zbekchadan ko'chirma xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Help and support",
+  "items": [
+   {
+    "t": "lend a hand",
+    "uz": "yordam qo'lini cho'zmoq",
+    "ex": "Neighbours lent a hand after the flood.",
+    "use": "Part 3: jamiyat"
+   },
+   {
+    "t": "back someone up",
+    "uz": "qo'llab-quvvatlamoq",
+    "ex": "My friends always back me up.",
+    "use": "Do'stlik"
+   },
+   {
+    "t": "a helping hand",
+    "uz": "yordam",
+    "ex": "Volunteers offer a helping hand.",
+    "use": "Ko'ngillilar"
+   },
+   {
+    "t": "go out of your way",
+    "uz": "ortiqcha harakat qilib yordam bermoq",
+    "ex": "The hotel staff went out of their way to help.",
+    "use": "Xizmat"
+   },
+   {
+    "t": "there for someone",
+    "uz": "har doim yonida",
+    "ex": "My mum is always there for me.",
+    "use": "Oila"
+   },
+   {
+    "t": "take someone under your wing",
+    "uz": "himoyasiga olmoq",
+    "ex": "My manager took me under her wing.",
+    "use": "Ish"
+   },
+   {
+    "t": "pitch in",
+    "uz": "hamma bilan birga hissa qo'shmoq",
+    "ex": "Everyone pitched in to clean the yard.",
+    "use": "Hashar"
+   },
+   {
+    "t": "a safety net",
+    "uz": "xavfsizlik to'ri (yordam tizimi)",
+    "ex": "Welfare is a safety net for the poor.",
+    "use": "Task 2"
+   },
+   {
+    "t": "moral support",
+    "uz": "ma'naviy qo'llab-quvvatlash",
+    "ex": "My friend came for moral support.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "help out",
+    "uz": "yordamlashmoq",
+    "ex": "I help out at my uncle's shop.",
+    "use": "Part 1"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "trend",
+    "pos": "noun",
+    "syn": "tendency, pattern, movement",
+    "uz": "tendensiya",
+    "ex": "The trend is towards smaller families."
+   },
+   {
+    "w": "version",
+    "pos": "noun",
+    "syn": "form, variant, edition",
+    "uz": "versiya",
+    "ex": "The new version is faster."
+   },
+   {
+    "w": "welfare",
+    "pos": "noun",
+    "syn": "well-being; social aid",
+    "uz": "farovonlik; ijtimoiy yordam",
+    "ex": "Child welfare is a priority."
+   },
+   {
+    "w": "whereas",
+    "pos": "conj",
+    "syn": "while, but in contrast",
+    "uz": "… esa",
+    "ex": "Men preferred cars, whereas women chose buses."
+   },
+   {
+    "w": "abstract",
+    "pos": "adj/noun",
+    "syn": "theoretical; summary",
+    "uz": "mavhum; annotatsiya",
+    "ex": "Abstract ideas are hard to teach."
+   },
+   {
+    "w": "accurate",
+    "pos": "adj",
+    "syn": "correct, exact, precise",
+    "uz": "aniq, to'g'ri",
+    "ex": "Accurate data is essential."
+   },
+   {
+    "w": "acknowledge",
+    "pos": "verb",
+    "syn": "admit, recognise, accept",
+    "uz": "tan olmoq",
+    "ex": "The government acknowledged the problem."
+   },
+   {
+    "w": "aggregate",
+    "pos": "noun/adj",
+    "syn": "total; combined",
+    "uz": "jami, umumiy",
+    "ex": "The aggregate score was 7.0."
+   },
+   {
+    "w": "allocate",
+    "pos": "verb",
+    "syn": "assign, distribute, give",
+    "uz": "ajratmoq",
+    "ex": "More money was allocated to schools."
+   },
+   {
+    "w": "assign",
+    "pos": "verb",
+    "syn": "give, allocate, appoint",
+    "uz": "topshirmoq, tayinlamoq",
+    "ex": "Each student was assigned a mentor."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about hobbies and free time",
+  "items": [
+   {
+    "s": "I got into … when …",
+    "uz": "… ga … paytda qiziqib qoldim",
+    "ex": "I got into chess when I was ten.",
+    "use": "Part 1: boshlanish"
+   },
+   {
+    "s": "It helps me unwind.",
+    "uz": "Bu menga dam berishga yordam beradi",
+    "ex": "Drawing helps me unwind after work.",
+    "use": "Foyda"
+   },
+   {
+    "s": "I'm pretty hooked on …",
+    "uz": "… ga mukkasidan ketganman",
+    "ex": "I'm pretty hooked on podcasts.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "It's a great way to …",
+    "uz": "… ning ajoyib usuli",
+    "ex": "It's a great way to meet new people.",
+    "use": "Foyda"
+   },
+   {
+    "s": "I try to fit it in whenever I can.",
+    "uz": "Imkon bo'lganda vaqt ajrataman",
+    "ex": "I try to fit in a run whenever I can.",
+    "use": "Bandlik"
+   },
+   {
+    "s": "I'm not very good at it, but …",
+    "uz": "Unchalik yaxshi emasman, lekin …",
+    "ex": "I'm not very good at it, but I enjoy it.",
+    "use": "Kamtarlik"
+   },
+   {
+    "s": "It takes my mind off things.",
+    "uz": "Fikrimni chalg'itadi (yaxshi ma'noda)",
+    "ex": "Gardening takes my mind off things.",
+    "use": "Stress"
+   },
+   {
+    "s": "I've been doing it for about … years.",
+    "uz": "Taxminan … yildan beri qilaman",
+    "ex": "I've been doing it for about five years.",
+    "use": "Present Perfect Cont."
+   },
+   {
+    "s": "It's something I'd like to take up.",
+    "uz": "Bu men boshlamoqchi bo'lgan narsa",
+    "ex": "Photography is something I'd like to take up.",
+    "use": "Reja"
+   },
+   {
+    "s": "I lose track of time when …",
+    "uz": "… da vaqtni sezmay qolaman",
+    "ex": "I lose track of time when I read.",
+    "use": "Kuchli qiziqish"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Dark L and clear L",
+  "items": [
+   {
+    "w": "light – people",
+    "ipa": "/laɪt/ – /ˈpiːpl/",
+    "uz": "boshida tiniq L, oxirida qalin L",
+    "tip": "Ikki xil L"
+   },
+   {
+    "w": "feel",
+    "ipa": "/fiːl/",
+    "uz": "oxirgi L qalin",
+    "tip": "FEEL"
+   },
+   {
+    "w": "still",
+    "ipa": "/stɪl/",
+    "uz": "qisqa /ɪ/ + qalin L",
+    "tip": "STIL"
+   },
+   {
+    "w": "child",
+    "ipa": "/tʃaɪld/",
+    "uz": "/ld/ ni yutmang",
+    "tip": "CHAILD"
+   },
+   {
+    "w": "help",
+    "ipa": "/help/",
+    "uz": "L dan keyin /p/",
+    "tip": "HELP"
+   },
+   {
+    "w": "milk",
+    "ipa": "/mɪlk/",
+    "uz": "qalin L",
+    "tip": "MILK"
+   },
+   {
+    "w": "level",
+    "ipa": "/ˈlevl/",
+    "uz": "ikki L ikki xil",
+    "tip": "LEV-l"
+   },
+   {
+    "w": "really",
+    "ipa": "/ˈrɪəli/",
+    "uz": "R + L ketma-ket",
+    "tip": "RIƏ-li"
+   },
+   {
+    "w": "rural",
+    "ipa": "/ˈrʊərəl/",
+    "uz": "R va L ketma-ket — qiyin",
+    "tip": "ROO-rəl"
+   },
+   {
+    "w": "particularly",
+    "ipa": "/pəˈtɪkjələli/",
+    "uz": "uzun so'z, sekin mashq qiling",
+    "tip": "pə-TIK-yə-lə-li"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Task 1 with ages, gender and groups",
+  "items": [
+   {
+    "w": "people aged 25 to 34",
+    "syn": "the 25–34 age group",
+    "uz": "25–34 yoshdagilar",
+    "ex": "People aged 25 to 34 used the internet most."
+   },
+   {
+    "w": "the youngest age group",
+    "syn": "the under-18s",
+    "uz": "eng yosh guruh",
+    "ex": "The youngest age group spent the least."
+   },
+   {
+    "w": "the over-65s",
+    "syn": "the elderly",
+    "uz": "65 yoshdan oshganlar",
+    "ex": "The over-65s watched the most TV."
+   },
+   {
+    "w": "males and females",
+    "syn": "men and women",
+    "uz": "erkaklar va ayollar",
+    "ex": "Females outnumbered males in nursing."
+   },
+   {
+    "w": "outnumbered",
+    "syn": "were more than",
+    "uz": "sonda ustun keldi",
+    "ex": "Women outnumbered men by two to one."
+   },
+   {
+    "w": "in every age group",
+    "syn": "across all ages",
+    "uz": "har bir yosh guruhida",
+    "ex": "Men earned more in every age group."
+   },
+   {
+    "w": "with age",
+    "syn": "as people got older",
+    "uz": "yosh ulg'aygan sari",
+    "ex": "Spending on health rose with age."
+   },
+   {
+    "w": "the gender gap",
+    "syn": "difference between sexes",
+    "uz": "jinslar orasidagi farq",
+    "ex": "The gender gap narrowed over time."
+   },
+   {
+    "w": "middle-aged",
+    "syn": "aged 45–64",
+    "uz": "o'rta yoshli",
+    "ex": "Middle-aged people saved the most."
+   },
+   {
+    "w": "respondents",
+    "syn": "people surveyed",
+    "uz": "so'rovnoma qatnashchilari",
+    "ex": "Half of the respondents were students."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Public health and healthcare systems",
+  "items": [
+   {
+    "w": "universal healthcare",
+    "syn": "free care for all",
+    "uz": "hamma uchun bepul tibbiyot",
+    "ex": "Universal healthcare improves life expectancy."
+   },
+   {
+    "w": "private healthcare",
+    "syn": "paid medical services",
+    "uz": "xususiy tibbiyot",
+    "ex": "Private healthcare is too expensive for many."
+   },
+   {
+    "w": "waiting lists",
+    "syn": "queues for treatment",
+    "uz": "navbatlar",
+    "ex": "Waiting lists for surgery are long."
+   },
+   {
+    "w": "preventive medicine",
+    "syn": "prevention",
+    "uz": "profilaktika",
+    "ex": "Preventive medicine saves money."
+   },
+   {
+    "w": "vaccination programmes",
+    "syn": "immunisation",
+    "uz": "emlash dasturlari",
+    "ex": "Vaccination programmes saved millions of lives."
+   },
+   {
+    "w": "healthcare workers",
+    "syn": "medical staff",
+    "uz": "tibbiyot xodimlari",
+    "ex": "Healthcare workers deserve better pay."
+   },
+   {
+    "w": "access to medical care",
+    "syn": "availability of doctors",
+    "uz": "tibbiy yordamga kirish",
+    "ex": "Rural areas lack access to medical care."
+   },
+   {
+    "w": "a healthy lifestyle",
+    "syn": "good habits",
+    "uz": "sog'lom turmush tarzi",
+    "ex": "Campaigns encourage a healthy lifestyle."
+   },
+   {
+    "w": "epidemic",
+    "syn": "outbreak",
+    "uz": "epidemiya",
+    "ex": "The epidemic spread quickly."
+   },
+   {
+    "w": "medical research",
+    "syn": "health research",
+    "uz": "tibbiy tadqiqotlar",
+    "ex": "Medical research needs public funding."
+   }
+  ]
+ }
+}

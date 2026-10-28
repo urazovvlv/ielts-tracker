@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Advanced comparison structures",
+  "items": [
+   {
+    "s": "the + comparative, the + comparative",
+    "uz": "qancha … shuncha …",
+    "ex": "The more you practise, the better you get.",
+    "use": "Band 7+ struktura"
+   },
+   {
+    "s": "as … as / not as … as",
+    "uz": "teng / teng emas",
+    "ex": "Buses are not as fast as the metro.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "not nearly as … as",
+    "uz": "unchalik ham … emas",
+    "ex": "Rent here is not nearly as high as in London.",
+    "use": "Kuchli farq"
+   },
+   {
+    "s": "nowhere near as … as",
+    "uz": "aslo … emas",
+    "ex": "My Writing is nowhere near as good as my Reading.",
+    "use": "Speaking"
+   },
+   {
+    "s": "comparative + and + comparative",
+    "uz": "tobora …",
+    "ex": "Cities are getting bigger and bigger.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "the same + noun + as",
+    "uz": "xuddi … kabi",
+    "ex": "She has the same job as her mother.",
+    "use": "O'xshashlik"
+   },
+   {
+    "s": "much / a lot / far + comparative",
+    "uz": "ancha …roq",
+    "ex": "It's far cheaper to cook at home.",
+    "use": "Kuchaytirish"
+   },
+   {
+    "s": "❌ The more I study, I get better → ✅ the better I get",
+    "uz": "ikkinchi qism ham 'the + comparative'",
+    "ex": "The earlier you start, the easier it is.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Secrets and privacy",
+  "items": [
+   {
+    "t": "keep something under wraps",
+    "uz": "sir saqlamoq",
+    "ex": "The project was kept under wraps.",
+    "use": "Ish"
+   },
+   {
+    "t": "spill the beans",
+    "uz": "sirni ochib qo'ymoq",
+    "ex": "Who spilled the beans about the gift?",
+    "use": "Hikoya"
+   },
+   {
+    "t": "my lips are sealed",
+    "uz": "og'zim mahkam",
+    "ex": "Don't worry, my lips are sealed.",
+    "use": "Va'da"
+   },
+   {
+    "t": "behind closed doors",
+    "uz": "yopiq eshiklar ortida",
+    "ex": "The decision was made behind closed doors.",
+    "use": "Part 3: siyosat"
+   },
+   {
+    "t": "an open secret",
+    "uz": "hamma biladigan sir",
+    "ex": "It's an open secret that he's leaving.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "keep something to yourself",
+    "uz": "o'zingda saqla",
+    "ex": "Please keep this to yourself.",
+    "use": "So'rov"
+   },
+   {
+    "t": "let something slip",
+    "uz": "beixtiyor aytib qo'ymoq",
+    "ex": "I let it slip that we were moving.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "off the record",
+    "uz": "rasmiy bo'lmagan holda",
+    "ex": "Off the record, the plan has failed.",
+    "use": "Ommaviy axborot"
+   },
+   {
+    "t": "hush-hush",
+    "uz": "maxfiy",
+    "ex": "The new product is very hush-hush.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "a skeleton in the cupboard",
+    "uz": "yashirin uyatli sir",
+    "ex": "Every family has a skeleton in the cupboard.",
+    "use": "Hazil"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "attach",
+    "pos": "verb",
+    "syn": "fasten, connect; associate",
+    "uz": "biriktirmoq",
+    "ex": "Please attach a copy of your passport."
+   },
+   {
+    "w": "author",
+    "pos": "noun",
+    "syn": "writer, creator",
+    "uz": "muallif",
+    "ex": "The author argues that tests are unfair."
+   },
+   {
+    "w": "bond",
+    "pos": "noun",
+    "syn": "connection, tie",
+    "uz": "bog'liqlik, rishta",
+    "ex": "Sport builds a strong bond between players."
+   },
+   {
+    "w": "brief",
+    "pos": "adj",
+    "syn": "short, concise",
+    "uz": "qisqa",
+    "ex": "There was a brief pause."
+   },
+   {
+    "w": "capable",
+    "pos": "adj",
+    "syn": "able, competent",
+    "uz": "qodir, qobiliyatli",
+    "ex": "Children are capable of learning two languages."
+   },
+   {
+    "w": "cite",
+    "pos": "verb",
+    "syn": "quote, mention, refer to",
+    "uz": "iqtibos keltirmoq",
+    "ex": "The study is widely cited."
+   },
+   {
+    "w": "cooperate",
+    "pos": "verb",
+    "syn": "work together, collaborate",
+    "uz": "hamkorlik qilmoq",
+    "ex": "Countries must cooperate on climate."
+   },
+   {
+    "w": "discriminate",
+    "pos": "verb",
+    "syn": "treat unfairly; distinguish",
+    "uz": "kamsitmoq; farqlamoq",
+    "ex": "Employers must not discriminate by age."
+   },
+   {
+    "w": "display",
+    "pos": "verb/noun",
+    "syn": "show, exhibit",
+    "uz": "namoyish etmoq",
+    "ex": "The museum displays ancient coins."
+   },
+   {
+    "w": "diverse",
+    "pos": "adj",
+    "syn": "varied, different, mixed",
+    "uz": "xilma-xil",
+    "ex": "Tashkent has a diverse population."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about places (Part 2)",
+  "items": [
+   {
+    "s": "It's tucked away in …",
+    "uz": "U … ichkarisida yashiringan",
+    "ex": "It's tucked away in a quiet street.",
+    "use": "Joy tasviri"
+   },
+   {
+    "s": "It's within walking distance of …",
+    "uz": "… dan piyoda borsa bo'ladi",
+    "ex": "It's within walking distance of my home.",
+    "use": "Masofa"
+   },
+   {
+    "s": "It's a bit off the beaten track.",
+    "uz": "Biroz chekkada",
+    "ex": "It's a bit off the beaten track, but worth it.",
+    "use": "Idioma"
+   },
+   {
+    "s": "It's always buzzing with people.",
+    "uz": "Doim odamlar bilan gavjum",
+    "ex": "The bazaar is always buzzing with people.",
+    "use": "Atmosfera"
+   },
+   {
+    "s": "It has a laid-back atmosphere.",
+    "uz": "Bemalol, xotirjam muhit",
+    "ex": "The café has a laid-back atmosphere.",
+    "use": "Atmosfera"
+   },
+   {
+    "s": "The highlight for me was …",
+    "uz": "Men uchun eng zo'ri …",
+    "ex": "The highlight for me was the view from the top.",
+    "use": "Part 2"
+   },
+   {
+    "s": "It's steeped in history.",
+    "uz": "Tarixga boy",
+    "ex": "Bukhara is steeped in history.",
+    "use": "Band 7 ibora"
+   },
+   {
+    "s": "It's a great spot for …",
+    "uz": "… uchun ajoyib joy",
+    "ex": "It's a great spot for taking photos.",
+    "use": "Tavsiya"
+   },
+   {
+    "s": "It's changed beyond recognition.",
+    "uz": "Tanib bo'lmas darajada o'zgargan",
+    "ex": "The area has changed beyond recognition.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "I'd go back in a heartbeat.",
+    "uz": "Bir zumda qaytib borardim",
+    "ex": "I'd go back in a heartbeat.",
+    "use": "Kuchli his"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Elision: sounds that disappear",
+  "items": [
+   {
+    "w": "next door",
+    "ipa": "/neks dɔː/",
+    "uz": "/t/ tushib qoladi",
+    "tip": "NEKS-dor"
+   },
+   {
+    "w": "last night",
+    "ipa": "/lɑːs naɪt/",
+    "uz": "/t/ yo'qoladi",
+    "tip": "LAHS-nait"
+   },
+   {
+    "w": "handbag",
+    "ipa": "/ˈhæmbæɡ/",
+    "uz": "/d/ yo'qoladi, /n/ → /m/",
+    "tip": "HAM-bag"
+   },
+   {
+    "w": "sandwich",
+    "ipa": "/ˈsænwɪdʒ/",
+    "uz": "d o'qilmaydi",
+    "tip": "SAN-wij"
+   },
+   {
+    "w": "different",
+    "ipa": "/ˈdɪfrənt/",
+    "uz": "o'rtadagi e tushadi, 2 bo'g'in",
+    "tip": "DIF-rənt"
+   },
+   {
+    "w": "probably",
+    "ipa": "/ˈprɒbli/",
+    "uz": "tez nutqda 'probly'",
+    "tip": "PROB-li"
+   },
+   {
+    "w": "family",
+    "ipa": "/ˈfæmli/",
+    "uz": "tez nutqda 2 bo'g'in",
+    "tip": "FAM-li"
+   },
+   {
+    "w": "must be",
+    "ipa": "/mʌs bi/",
+    "uz": "/t/ yo'qoladi",
+    "tip": "MUS-bi"
+   },
+   {
+    "w": "just now",
+    "ipa": "/dʒʌs naʊ/",
+    "uz": "/t/ yo'qoladi",
+    "tip": "JUS-nau"
+   },
+   {
+    "w": "Listening tip",
+    "ipa": "elision",
+    "uz": "Listening'da so'zlar 'yeyiladi' — kontekstga tayaning",
+    "tip": "Transkriptni o'qib tinglang"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing a strong Task 1 conclusion (or not)",
+  "items": [
+   {
+    "w": "No separate conclusion needed",
+    "syn": "overview is enough",
+    "uz": "overview bo'lsa, xulosa shart emas",
+    "ex": "Put the overview after the introduction."
+   },
+   {
+    "w": "If you write one, summarise",
+    "syn": "no new data",
+    "uz": "xulosa — yangi ma'lumotsiz",
+    "ex": "Overall, the data show a clear shift to renewables."
+   },
+   {
+    "w": "avoid 'In conclusion' + opinion",
+    "syn": "no opinion",
+    "uz": "fikr bildirmang",
+    "ex": "❌ In conclusion, I think this is good."
+   },
+   {
+    "w": "To sum up, …",
+    "syn": "In summary, …",
+    "uz": "xulosa qilib aytganda",
+    "ex": "To sum up, both countries saw growth."
+   },
+   {
+    "w": "the most notable trend",
+    "syn": "the key trend",
+    "uz": "eng diqqatga sazovor tendensiya",
+    "ex": "The most notable trend was the fall in coal."
+   },
+   {
+    "w": "in short",
+    "syn": "briefly",
+    "uz": "qisqasi",
+    "ex": "In short, demand rose across all regions."
+   },
+   {
+    "w": "restate the main contrast",
+    "syn": "key difference",
+    "uz": "asosiy farqni qayta ayting",
+    "ex": "…whereas older people preferred TV."
+   },
+   {
+    "w": "one sentence only",
+    "syn": "brief",
+    "uz": "bitta gap",
+    "ex": "Keep it to one sentence."
+   },
+   {
+    "w": "check the word count",
+    "syn": "150+",
+    "uz": "so'z sonini tekshiring",
+    "ex": "Aim for 160–190 words."
+   },
+   {
+    "w": "save 2 minutes for checking",
+    "syn": "proofread",
+    "uz": "tekshirishga 2 daqiqa",
+    "ex": "Check articles, plurals and tenses."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Artificial intelligence and automation",
+  "items": [
+   {
+    "w": "artificial intelligence (AI)",
+    "syn": "machine intelligence",
+    "uz": "sun'iy intellekt",
+    "ex": "AI is transforming many industries."
+   },
+   {
+    "w": "job displacement",
+    "syn": "job losses",
+    "uz": "ish o'rinlarining yo'qolishi",
+    "ex": "Automation may cause job displacement."
+   },
+   {
+    "w": "routine tasks",
+    "syn": "repetitive work",
+    "uz": "takroriy vazifalar",
+    "ex": "Machines can do routine tasks faster."
+   },
+   {
+    "w": "human judgement",
+    "syn": "human decisions",
+    "uz": "inson mulohazasi",
+    "ex": "Some jobs require human judgement."
+   },
+   {
+    "w": "ethical implications",
+    "syn": "moral questions",
+    "uz": "axloqiy oqibatlar",
+    "ex": "AI raises ethical implications."
+   },
+   {
+    "w": "data privacy",
+    "syn": "protection of data",
+    "uz": "ma'lumotlar maxfiyligi",
+    "ex": "AI systems threaten data privacy."
+   },
+   {
+    "w": "upskilling",
+    "syn": "learning new skills",
+    "uz": "malaka oshirish",
+    "ex": "Workers need upskilling to stay employed."
+   },
+   {
+    "w": "boost productivity",
+    "syn": "increase efficiency",
+    "uz": "unumdorlikni oshirmoq",
+    "ex": "AI can boost productivity."
+   },
+   {
+    "w": "over-reliance on technology",
+    "syn": "too much dependence",
+    "uz": "texnologiyaga haddan ortiq tayanish",
+    "ex": "Over-reliance on technology weakens skills."
+   },
+   {
+    "w": "regulate AI",
+    "syn": "control AI",
+    "uz": "AI ni tartibga solmoq",
+    "ex": "Governments are starting to regulate AI."
+   }
+  ]
+ }
+}

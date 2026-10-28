@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Adjectives: order and -ed vs -ing",
+  "items": [
+   {
+    "s": "-ed: how a person feels",
+    "uz": "his-tuyg'u (odam)",
+    "ex": "I was bored in the lecture.",
+    "use": "Speaking hissiyot"
+   },
+   {
+    "s": "-ing: what causes the feeling",
+    "uz": "sabab (narsa)",
+    "ex": "The lecture was boring.",
+    "use": "Tipik xato joyi"
+   },
+   {
+    "s": "interested / interesting",
+    "uz": "qiziqgan / qiziqarli",
+    "ex": "I'm interested in history. History is interesting.",
+    "use": "Juftlik"
+   },
+   {
+    "s": "confused / confusing",
+    "uz": "chalkashgan / chalkash",
+    "ex": "The instructions were confusing.",
+    "use": "Juftlik"
+   },
+   {
+    "s": "Adjective order: opinion-size-age-colour-origin-material",
+    "uz": "sifatlar tartibi",
+    "ex": "a beautiful old Uzbek carpet",
+    "use": "Part 2 tasvir"
+   },
+   {
+    "s": "Compound adjectives: a two-hour exam",
+    "uz": "son + ot — birlikda",
+    "ex": "It was a three-day trip.",
+    "use": "❌ three-days trip"
+   },
+   {
+    "s": "Strong adjectives: enormous, tiny, freezing",
+    "uz": "very bilan ishlatilmaydi",
+    "ex": "It was absolutely freezing.",
+    "use": "Band 7 LR"
+   },
+   {
+    "s": "❌ I'm boring in class → ✅ I'm bored in class",
+    "uz": "o'z his-tuyg'uingiz uchun -ed",
+    "ex": "I was exhausted after the mock.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Speed and time pressure",
+  "items": [
+   {
+    "t": "in a flash",
+    "uz": "bir zumda",
+    "ex": "The day went by in a flash.",
+    "use": "Tezlik"
+   },
+   {
+    "t": "at the drop of a hat",
+    "uz": "darhol, o'ylamasdan",
+    "ex": "He'd travel at the drop of a hat.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "against the clock",
+    "uz": "vaqtga qarshi poyga",
+    "ex": "We worked against the clock to finish.",
+    "use": "Imtihon"
+   },
+   {
+    "t": "in no time",
+    "uz": "juda tez",
+    "ex": "You'll improve in no time.",
+    "use": "Rag'bat"
+   },
+   {
+    "t": "drag your feet",
+    "uz": "ishni cho'zmoq",
+    "ex": "Stop dragging your feet and start writing.",
+    "use": "Tanbeh"
+   },
+   {
+    "t": "on the spur of the moment",
+    "uz": "bir lahzalik qaror bilan",
+    "ex": "We booked the trip on the spur of the moment.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "pressed for time",
+    "uz": "vaqti tig'iz",
+    "ex": "I'm a bit pressed for time today.",
+    "use": "Bandlik"
+   },
+   {
+    "t": "make up for lost time",
+    "uz": "boy berilgan vaqtni qoplamoq",
+    "ex": "I'm studying at weekends to make up for lost time.",
+    "use": "IELTS"
+   },
+   {
+    "t": "in the blink of an eye",
+    "uz": "ko'z ochib yumguncha",
+    "ex": "Prices changed in the blink of an eye.",
+    "use": "Tezlik"
+   },
+   {
+    "t": "slowly but surely",
+    "uz": "sekin, lekin ishonchli",
+    "ex": "My Writing is improving slowly but surely.",
+    "use": "Taraqqiyot"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "domain",
+    "pos": "noun",
+    "syn": "field, area, sphere",
+    "uz": "soha",
+    "ex": "Medicine is not my domain."
+   },
+   {
+    "w": "edit",
+    "pos": "verb",
+    "syn": "revise, correct, change",
+    "uz": "tahrirlamoq",
+    "ex": "She edited the report carefully."
+   },
+   {
+    "w": "enhance",
+    "pos": "verb",
+    "syn": "improve, boost, increase",
+    "uz": "yaxshilamoq, oshirmoq",
+    "ex": "Music can enhance learning."
+   },
+   {
+    "w": "estate",
+    "pos": "noun",
+    "syn": "property, land",
+    "uz": "mulk, yer-mulk",
+    "ex": "The family owned a large estate."
+   },
+   {
+    "w": "exceed",
+    "pos": "verb",
+    "syn": "go beyond, surpass",
+    "uz": "oshib ketmoq",
+    "ex": "Demand exceeded supply."
+   },
+   {
+    "w": "expert",
+    "pos": "noun/adj",
+    "syn": "specialist; skilled",
+    "uz": "mutaxassis",
+    "ex": "Experts disagree about the cause."
+   },
+   {
+    "w": "explicit",
+    "pos": "adj",
+    "syn": "clear, direct, specific",
+    "uz": "aniq, ochiq",
+    "ex": "The rules are explicit."
+   },
+   {
+    "w": "federal",
+    "pos": "adj",
+    "syn": "national, central",
+    "uz": "federal",
+    "ex": "Federal funding was cut."
+   },
+   {
+    "w": "fee",
+    "pos": "noun",
+    "syn": "charge, cost, payment",
+    "uz": "to'lov",
+    "ex": "University fees have risen."
+   },
+   {
+    "w": "flexible",
+    "pos": "adj",
+    "syn": "adaptable, adjustable",
+    "uz": "moslashuvchan",
+    "ex": "Flexible working hours suit parents."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing people's character",
+  "items": [
+   {
+    "s": "He's very easy-going.",
+    "uz": "U juda bemalol, yengil odam",
+    "ex": "My brother is very easy-going.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "She's quite outgoing.",
+    "uz": "U ancha kirishimli",
+    "ex": "She's quite outgoing and makes friends easily.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "He can be a bit stubborn at times.",
+    "uz": "U ba'zan biroz qaysar",
+    "ex": "He can be a bit stubborn at times.",
+    "use": "Yumshoq salbiy"
+   },
+   {
+    "s": "She's got a great sense of humour.",
+    "uz": "Uning hazil tuyg'usi zo'r",
+    "ex": "My teacher had a great sense of humour.",
+    "use": "Ijobiy"
+   },
+   {
+    "s": "He's the type who …",
+    "uz": "U … qiladigan turdagi odam",
+    "ex": "He's the type who never gives up.",
+    "use": "Tasvir"
+   },
+   {
+    "s": "She's incredibly hard-working.",
+    "uz": "U nihoyatda mehnatkash",
+    "ex": "My mum is incredibly hard-working.",
+    "use": "Kuchli sifat"
+   },
+   {
+    "s": "He's a bit of a perfectionist.",
+    "uz": "U biroz perfeksionist",
+    "ex": "My dad is a bit of a perfectionist.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "She always puts others first.",
+    "uz": "U doim boshqalarni birinchi o'ringa qo'yadi",
+    "ex": "My grandmother always puts others first.",
+    "use": "Hurmat"
+   },
+   {
+    "s": "We have a lot in common.",
+    "uz": "Ko'p umumiy jihatlarimiz bor",
+    "ex": "We have a lot in common, like music.",
+    "use": "Do'stlik"
+   },
+   {
+    "s": "What I respect most about him is …",
+    "uz": "Unda eng hurmat qiladiganim …",
+    "ex": "What I respect most about him is his honesty.",
+    "use": "Cleft"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Words with -ate: verb vs adjective",
+  "items": [
+   {
+    "w": "graduate (v) – graduate (n)",
+    "ipa": "/ˈɡrædʒueɪt/ – /ˈɡrædʒuət/",
+    "uz": "fe'lda -eit, otda -ət",
+    "tip": "GRAD-yu-eit / GRAD-yu-ət"
+   },
+   {
+    "w": "estimate (v) – estimate (n)",
+    "ipa": "/ˈestɪmeɪt/ – /ˈestɪmət/",
+    "uz": "baholamoq – baho",
+    "tip": "Ma'no + talaffuz"
+   },
+   {
+    "w": "separate (v) – separate (adj)",
+    "ipa": "/ˈsepəreɪt/ – /ˈseprət/",
+    "uz": "ajratmoq – alohida",
+    "tip": "Juftlik"
+   },
+   {
+    "w": "appropriate (adj)",
+    "ipa": "/əˈprəʊpriət/",
+    "uz": "sifat: -ət",
+    "tip": "ə-PROH-pri-ət"
+   },
+   {
+    "w": "approximately",
+    "ipa": "/əˈprɒksɪmətli/",
+    "uz": "Task 1 so'zi",
+    "tip": "ə-PROK-si-mət-li"
+   },
+   {
+    "w": "private",
+    "ipa": "/ˈpraɪvət/",
+    "uz": "xususiy — sifat: -ət",
+    "tip": "PRAI-vət"
+   },
+   {
+    "w": "delicate",
+    "ipa": "/ˈdelɪkət/",
+    "uz": "nozik",
+    "tip": "DEL-i-kət"
+   },
+   {
+    "w": "communicate",
+    "ipa": "/kəˈmjuːnɪkeɪt/",
+    "uz": "fe'l: -eit",
+    "tip": "kə-MYU-ni-keit"
+   },
+   {
+    "w": "accurate",
+    "ipa": "/ˈækjərət/",
+    "uz": "sifat: -ət",
+    "tip": "AK-yə-rət"
+   },
+   {
+    "w": "demonstrate",
+    "ipa": "/ˈdemənstreɪt/",
+    "uz": "1-bo'g'in urg'uli",
+    "tip": "DEM-ən-streit"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Units and large numbers",
+  "items": [
+   {
+    "w": "million / billion",
+    "syn": "1,000,000 / 1,000,000,000",
+    "uz": "million / milliard",
+    "ex": "The population reached 35 million."
+   },
+   {
+    "w": "two million (no -s)",
+    "syn": "number + million",
+    "uz": "son bilan -s qo'shilmaydi",
+    "ex": "❌ two millions → ✅ two million"
+   },
+   {
+    "w": "millions of",
+    "syn": "a large number",
+    "uz": "millionlab",
+    "ex": "Millions of people use the metro."
+   },
+   {
+    "w": "tonnes",
+    "syn": "metric tons",
+    "uz": "tonna",
+    "ex": "Exports reached 5,000 tonnes."
+   },
+   {
+    "w": "per capita",
+    "syn": "per person",
+    "uz": "aholi jon boshiga",
+    "ex": "Spending per capita was highest in Norway."
+   },
+   {
+    "w": "in thousands",
+    "syn": "unit shown on axis",
+    "uz": "mingda (o'q birligi)",
+    "ex": "Figures are given in thousands."
+   },
+   {
+    "w": "$2.5 bn",
+    "syn": "two and a half billion dollars",
+    "uz": "2,5 milliard dollar",
+    "ex": "Revenue stood at $2.5 billion."
+   },
+   {
+    "w": "degrees Celsius",
+    "syn": "°C",
+    "uz": "Selsiy darajasi",
+    "ex": "Temperatures averaged 30 degrees Celsius."
+   },
+   {
+    "w": "kilometres per hour",
+    "syn": "km/h",
+    "uz": "soatiga km",
+    "ex": "The average speed was 40 km/h."
+   },
+   {
+    "w": "a fifth / a tenth",
+    "syn": "20% / 10%",
+    "uz": "beshdan bir / o'ndan bir",
+    "ex": "A fifth of students lived on campus."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Advertising and children",
+  "items": [
+   {
+    "w": "target children",
+    "syn": "aim at kids",
+    "uz": "bolalarni nishonga olmoq",
+    "ex": "Many adverts target children."
+   },
+   {
+    "w": "pester power",
+    "syn": "children nagging parents",
+    "uz": "bolalarning 'iltimos bosimi'",
+    "ex": "Advertisers use pester power."
+   },
+   {
+    "w": "unhealthy snacks",
+    "syn": "junk food",
+    "uz": "zararli gazaklar",
+    "ex": "Adverts for unhealthy snacks should be banned."
+   },
+   {
+    "w": "impressionable",
+    "syn": "easily influenced",
+    "uz": "tez ta'sirlanuvchan",
+    "ex": "Young children are impressionable."
+   },
+   {
+    "w": "persuasive techniques",
+    "syn": "marketing tricks",
+    "uz": "ishontirish usullari",
+    "ex": "Adverts use persuasive techniques."
+   },
+   {
+    "w": "product placement",
+    "syn": "hidden advertising",
+    "uz": "yashirin reklama",
+    "ex": "Product placement is common in films."
+   },
+   {
+    "w": "ban advertising",
+    "syn": "prohibit adverts",
+    "uz": "reklamani taqiqlamoq",
+    "ex": "Some countries ban advertising to under-12s."
+   },
+   {
+    "w": "media literacy",
+    "syn": "understanding media",
+    "uz": "media savodxonlik",
+    "ex": "Schools should teach media literacy."
+   },
+   {
+    "w": "consumer awareness",
+    "syn": "informed buyers",
+    "uz": "iste'molchi xabardorligi",
+    "ex": "Consumer awareness protects families."
+   },
+   {
+    "w": "commercial interests",
+    "syn": "business profit",
+    "uz": "tijorat manfaatlari",
+    "ex": "Commercial interests should not harm children."
+   }
+  ]
+ }
+}
