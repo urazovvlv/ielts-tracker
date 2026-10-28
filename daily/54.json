@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Building band 7 complex sentences",
+  "items": [
+   {
+    "s": "Combine with a relative clause",
+    "uz": "ikki gapni which/who bilan",
+    "ex": "Tashkent is the capital. It has 3 million people. → Tashkent, which is the capital, has 3 million people.",
+    "use": "GRA"
+   },
+   {
+    "s": "Combine with a participle",
+    "uz": "-ing yoki V3 bilan",
+    "ex": "She finished her degree. She moved abroad. → Having finished her degree, she moved abroad.",
+    "use": "Band 7+"
+   },
+   {
+    "s": "Combine with although / whereas",
+    "uz": "kontrast",
+    "ex": "Although online courses are cheap, they lack interaction.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Combine with because / since + result",
+    "uz": "sabab-natija",
+    "ex": "Since fuel is expensive, many people take the bus.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Combine with if / unless",
+    "uz": "shart",
+    "ex": "Unless governments act, pollution will rise.",
+    "use": "Task 2"
+   },
+   {
+    "s": "Combine with not only … but also",
+    "uz": "qo'shimcha",
+    "ex": "Cycling not only saves money but also improves health.",
+    "use": "Task 2"
+   },
+   {
+    "s": "One idea per clause, two clauses per sentence",
+    "uz": "me'yor",
+    "ex": "Juda uzun gaplardan qoching (40+ so'z)",
+    "use": "Aniqlik"
+   },
+   {
+    "s": "Mix: simple + complex",
+    "uz": "aralashtirish",
+    "ex": "Accuracy pasaymasin — har gap murakkab bo'lishi shart emas",
+    "use": "Band 7 talabi"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Hope and optimism",
+  "items": [
+   {
+    "t": "keep your fingers crossed",
+    "uz": "omad tilab turmoq",
+    "ex": "I'm keeping my fingers crossed for 7.5.",
+    "use": "IELTS"
+   },
+   {
+    "t": "light at the end of the tunnel",
+    "uz": "tunnel oxiridagi nur",
+    "ex": "With a week left, I can see the light at the end of the tunnel.",
+    "use": "Umid"
+   },
+   {
+    "t": "see the glass half full",
+    "uz": "stakanni yarim to'la ko'rmoq",
+    "ex": "She always sees the glass half full.",
+    "use": "Optimizm"
+   },
+   {
+    "t": "hope for the best",
+    "uz": "eng yaxshisiga umid qilmoq",
+    "ex": "I've prepared well — now I hope for the best.",
+    "use": "Imtihon"
+   },
+   {
+    "t": "things are looking up",
+    "uz": "ishlar yaxshi tomonga ketyapti",
+    "ex": "My Writing scores are improving — things are looking up.",
+    "use": "Progress"
+   },
+   {
+    "t": "a glimmer of hope",
+    "uz": "umid uchquni",
+    "ex": "The new treatment offers a glimmer of hope.",
+    "use": "Part 3"
+   },
+   {
+    "t": "live in hope",
+    "uz": "umid bilan yashamoq",
+    "ex": "I haven't won yet, but I live in hope.",
+    "use": "Hazil"
+   },
+   {
+    "t": "the world is your oyster",
+    "uz": "butun dunyo sening ixtiyoringda",
+    "ex": "With good English, the world is your oyster.",
+    "use": "Imkoniyatlar"
+   },
+   {
+    "t": "on the up",
+    "uz": "yaxshilanib bormoq",
+    "ex": "Tourism in Uzbekistan is on the up.",
+    "use": "Tendensiya"
+   },
+   {
+    "t": "it's not the end of the world",
+    "uz": "dunyoning oxiri emas",
+    "ex": "If I get 7.0, it's not the end of the world.",
+    "use": "Xotirjamlik"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "conceive",
+    "pos": "verb",
+    "syn": "imagine; create; become pregnant",
+    "uz": "tasavvur qilmoq; o'ylab topmoq",
+    "ex": "The idea was conceived in 2015."
+   },
+   {
+    "w": "convince",
+    "pos": "verb",
+    "syn": "persuade, assure",
+    "uz": "ishontirmoq",
+    "ex": "The data convinced the government."
+   },
+   {
+    "w": "depress",
+    "pos": "verb",
+    "syn": "sadden; reduce",
+    "uz": "tushkunlikka solmoq; pasaytirmoq",
+    "ex": "High taxes can depress spending."
+   },
+   {
+    "w": "encounter",
+    "pos": "verb/noun",
+    "syn": "meet, face; meeting",
+    "uz": "duch kelmoq",
+    "ex": "Students encounter many difficulties."
+   },
+   {
+    "w": "enormous",
+    "pos": "adj",
+    "syn": "huge, vast",
+    "uz": "ulkan",
+    "ex": "The project cost an enormous sum."
+   },
+   {
+    "w": "forthcoming",
+    "pos": "adj",
+    "syn": "upcoming; willing to share",
+    "uz": "kelgusi; ochiq",
+    "ex": "The forthcoming election is important."
+   },
+   {
+    "w": "incline",
+    "pos": "verb/noun",
+    "syn": "tend; slope",
+    "uz": "moyil bo'lmoq; qiyalik",
+    "ex": "I'm inclined to agree."
+   },
+   {
+    "w": "integrity",
+    "pos": "noun",
+    "syn": "honesty; wholeness",
+    "uz": "halollik; yaxlitlik",
+    "ex": "Journalists must have integrity."
+   },
+   {
+    "w": "intrinsic",
+    "pos": "adj",
+    "syn": "essential, inherent",
+    "uz": "ichki, tabiiy",
+    "ex": "Learning has intrinsic value."
+   },
+   {
+    "w": "invoke",
+    "pos": "verb",
+    "syn": "call on, cite",
+    "uz": "murojaat qilmoq, tilga olmoq",
+    "ex": "The minister invoked national security."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing an event or celebration (Part 2)",
+  "items": [
+   {
+    "s": "It took place in … last …",
+    "uz": "U o'tgan … da … da bo'lib o'tdi",
+    "ex": "It took place in Samarkand last spring.",
+    "use": "Vaqt/joy"
+   },
+   {
+    "s": "It was organised by …",
+    "uz": "Uni … tashkil qildi",
+    "ex": "It was organised by my university.",
+    "use": "Passiv"
+   },
+   {
+    "s": "There must have been about … people.",
+    "uz": "Taxminan … kishi bor edi",
+    "ex": "There must have been about 300 guests.",
+    "use": "Taxmin — band 7"
+   },
+   {
+    "s": "The atmosphere was electric.",
+    "uz": "Muhit juda jo'shqin edi",
+    "ex": "The atmosphere was electric when the music started.",
+    "use": "Tasvir"
+   },
+   {
+    "s": "The highlight of the evening was …",
+    "uz": "Oqshomning eng zo'r qismi …",
+    "ex": "The highlight of the evening was the fireworks.",
+    "use": "Detal"
+   },
+   {
+    "s": "Everyone was dressed up in …",
+    "uz": "Hamma … kiyingan edi",
+    "ex": "Everyone was dressed up in traditional clothes.",
+    "use": "Tasvir"
+   },
+   {
+    "s": "It went on until late at night.",
+    "uz": "Kech tungacha davom etdi",
+    "ex": "The wedding went on until late at night.",
+    "use": "Davomiylik"
+   },
+   {
+    "s": "I felt really part of it.",
+    "uz": "O'zimni uning bir qismidek his qildim",
+    "ex": "I felt really part of the community.",
+    "use": "Hissiyot"
+   },
+   {
+    "s": "It's an event I'll remember for years.",
+    "uz": "Yillar davomida eslab qoladigan voqea",
+    "ex": "It's an event I'll remember for years.",
+    "use": "Yakun"
+   },
+   {
+    "s": "If I had the chance, I'd go again.",
+    "uz": "Imkoniyat bo'lsa, yana borardim",
+    "ex": "If I had the chance, I'd go again.",
+    "use": "Conditional"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/ð/ in everyday function words",
+  "items": [
+   {
+    "w": "the",
+    "ipa": "/ðə/ /ði/",
+    "uz": "til tishlar orasida, jarangli",
+    "tip": "ÐƏ — 'zə' yoki 'də' emas"
+   },
+   {
+    "w": "this – these",
+    "ipa": "/ðɪs/ – /ðiːz/",
+    "uz": "qisqa va uzun unli",
+    "tip": "ÐIS / ÐEEZ"
+   },
+   {
+    "w": "that – those",
+    "ipa": "/ðæt/ – /ðəʊz/",
+    "uz": "/æ/ va /əʊ/",
+    "tip": "ÐAT / ÐOUZ"
+   },
+   {
+    "w": "they – their",
+    "ipa": "/ðeɪ/ – /ðeə/",
+    "uz": "jarangli /ð/",
+    "tip": "ÐEI / ÐEƏ"
+   },
+   {
+    "w": "then – than",
+    "ipa": "/ðen/ – /ðən/",
+    "uz": "keyin – … dan (kuchsiz)",
+    "tip": "ÐEN / ðən"
+   },
+   {
+    "w": "with",
+    "ipa": "/wɪð/",
+    "uz": "oxiri jarangli /ð/",
+    "tip": "WIÐ"
+   },
+   {
+    "w": "other",
+    "ipa": "/ˈʌðə/",
+    "uz": "A-ðə",
+    "tip": "Task 2"
+   },
+   {
+    "w": "whether",
+    "ipa": "/ˈweðə/",
+    "uz": "WE-ðə",
+    "tip": "Task 2"
+   },
+   {
+    "w": "therefore",
+    "ipa": "/ˈðeəfɔː/",
+    "uz": "ÐEƏ-for",
+    "tip": "Linker"
+   },
+   {
+    "w": "Practise slowly: 'the other three'",
+    "ipa": "/ði ˈʌðə θriː/",
+    "uz": "/ð/ va /θ/ birga",
+    "tip": "Til uchi tashqarida"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Nouns of change for Task 1",
+  "items": [
+   {
+    "w": "a rise / an increase / a growth in",
+    "syn": "upward nouns",
+    "uz": "o'sish",
+    "ex": "There was a steady growth in tourism."
+   },
+   {
+    "w": "a fall / a decrease / a decline / a drop in",
+    "syn": "downward nouns",
+    "uz": "pasayish",
+    "ex": "A drop in sales followed."
+   },
+   {
+    "w": "a surge in",
+    "syn": "sudden big rise",
+    "uz": "keskin sakrash",
+    "ex": "There was a surge in demand in 2020."
+   },
+   {
+    "w": "a slump in",
+    "syn": "sudden big fall",
+    "uz": "keskin tushish",
+    "ex": "The industry suffered a slump in 2009."
+   },
+   {
+    "w": "a recovery in",
+    "syn": "return after fall",
+    "uz": "tiklanish",
+    "ex": "A recovery in prices began in 2011."
+   },
+   {
+    "w": "a plateau",
+    "syn": "flat period",
+    "uz": "barqaror tekislik",
+    "ex": "Figures reached a plateau after 2015."
+   },
+   {
+    "w": "a fluctuation in",
+    "syn": "up-and-down",
+    "uz": "tebranish",
+    "ex": "There were fluctuations in rainfall."
+   },
+   {
+    "w": "a peak / a high",
+    "syn": "top point",
+    "uz": "cho'qqi",
+    "ex": "Sales reached a peak of 900."
+   },
+   {
+    "w": "a low / a trough",
+    "syn": "bottom point",
+    "uz": "eng past nuqta",
+    "ex": "Prices hit a low in March."
+   },
+   {
+    "w": "adjective + noun combos",
+    "syn": "a sharp rise, a slight dip",
+    "uz": "sifat + ot",
+    "ex": "There was a slight dip in 2012."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: problem–solution essays",
+  "items": [
+   {
+    "w": "One of the main causes of this problem is",
+    "syn": "a key reason",
+    "uz": "Bu muammoning asosiy sabablaridan biri",
+    "ex": "One of the main causes of this problem is poor planning."
+   },
+   {
+    "w": "This issue stems from",
+    "syn": "originates in",
+    "uz": "Bu muammo … dan kelib chiqadi",
+    "ex": "This issue stems from rapid urbanisation."
+   },
+   {
+    "w": "A further contributing factor is",
+    "syn": "another cause",
+    "uz": "Yana bir omil",
+    "ex": "A further contributing factor is low wages."
+   },
+   {
+    "w": "The most effective solution would be to",
+    "syn": "the best measure",
+    "uz": "Eng samarali yechim … bo'lardi",
+    "ex": "The most effective solution would be to invest in public transport."
+   },
+   {
+    "w": "Governments could address this by",
+    "syn": "tackle this by",
+    "uz": "Hukumatlar buni … orqali hal qilishi mumkin",
+    "ex": "Governments could address this by offering subsidies."
+   },
+   {
+    "w": "On an individual level,",
+    "syn": "personally",
+    "uz": "Shaxsiy darajada",
+    "ex": "On an individual level, people can reduce waste."
+   },
+   {
+    "w": "This would lead to",
+    "syn": "result in",
+    "uz": "Bu … ga olib kelardi",
+    "ex": "This would lead to cleaner cities."
+   },
+   {
+    "w": "If these measures were implemented,",
+    "syn": "if adopted",
+    "uz": "Agar bu choralar amalga oshirilsa",
+    "ex": "If these measures were implemented, traffic would fall."
+   },
+   {
+    "w": "a long-term solution",
+    "syn": "lasting fix",
+    "uz": "uzoq muddatli yechim",
+    "ex": "Education is a long-term solution."
+   },
+   {
+    "w": "In conclusion, a combination of … and … is needed",
+    "syn": "conclusion",
+    "uz": "Xulosa: … va … ning uyg'unligi kerak",
+    "ex": "In conclusion, a combination of laws and education is needed."
+   }
+  ]
+ }
+}

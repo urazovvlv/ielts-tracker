@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Opinion structures for Task 2",
+  "items": [
+   {
+    "s": "I firmly believe that …",
+    "uz": "qat'iy fikr",
+    "ex": "I firmly believe that education should be free.",
+    "use": "Agree/disagree"
+   },
+   {
+    "s": "In my view, …",
+    "uz": "mening nazarimda",
+    "ex": "In my view, the benefits outweigh the risks.",
+    "use": "Asosiy"
+   },
+   {
+    "s": "I would argue that …",
+    "uz": "ehtiyotkor fikr",
+    "ex": "I would argue that both sides have merit.",
+    "use": "Band 7"
+   },
+   {
+    "s": "It seems to me that …",
+    "uz": "menga shunday tuyuladi",
+    "ex": "It seems to me that cities need more parks.",
+    "use": "Yumshoq"
+   },
+   {
+    "s": "I am inclined to agree that …",
+    "uz": "qo'shilishga moyilman",
+    "ex": "I am inclined to agree that tests are overused.",
+    "use": "Akademik"
+   },
+   {
+    "s": "I partly agree with this statement.",
+    "uz": "qisman roziman",
+    "ex": "I partly agree with this statement.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Keep the same opinion from intro to conclusion",
+    "uz": "izchillik",
+    "ex": "Fikrni o'rtada o'zgartirmang",
+    "use": "Task Response"
+   },
+   {
+    "s": "❌ I think in my opinion → ✅ In my opinion",
+    "uz": "takror ibora",
+    "ex": "In my opinion, this is unfair.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Worry and stress",
+  "items": [
+   {
+    "t": "on pins and needles",
+    "uz": "xavotirda, tikan ustida",
+    "ex": "I was on pins and needles waiting for my results.",
+    "use": "IELTS"
+   },
+   {
+    "t": "worried sick",
+    "uz": "juda xavotirda",
+    "ex": "My mum was worried sick when I was late.",
+    "use": "Oila"
+   },
+   {
+    "t": "at your wits' end",
+    "uz": "nima qilishni bilmay qolgan",
+    "ex": "I was at my wits' end with the noise.",
+    "use": "Muammo"
+   },
+   {
+    "t": "a bundle of nerves",
+    "uz": "juda asabiy",
+    "ex": "Before the interview I was a bundle of nerves.",
+    "use": "Hayajon"
+   },
+   {
+    "t": "bite your nails",
+    "uz": "xavotirdan tirnoq tishlamoq",
+    "ex": "I was biting my nails during the match.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "lose your head",
+    "uz": "o'zini yo'qotmoq",
+    "ex": "Don't lose your head in the exam.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "keep calm and carry on",
+    "uz": "xotirjam bo'lib davom et",
+    "ex": "If you don't know a word — keep calm and carry on.",
+    "use": "Strategiya"
+   },
+   {
+    "t": "under pressure",
+    "uz": "bosim ostida",
+    "ex": "I work well under pressure.",
+    "use": "Part 1: ish"
+   },
+   {
+    "t": "take a breather",
+    "uz": "biroz nafas rostlamoq",
+    "ex": "Take a breather between sections.",
+    "use": "Dam"
+   },
+   {
+    "t": "stressed out",
+    "uz": "stressga tushgan",
+    "ex": "I get stressed out before exams.",
+    "use": "Norasmiy"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "levy",
+    "pos": "noun/verb",
+    "syn": "tax, charge; impose",
+    "uz": "yig'im; undirmoq",
+    "ex": "A levy was placed on plastic bags."
+   },
+   {
+    "w": "likewise",
+    "pos": "adv",
+    "syn": "similarly, also",
+    "uz": "xuddi shunday",
+    "ex": "Germany cut taxes; likewise, France did."
+   },
+   {
+    "w": "nonetheless",
+    "pos": "adv",
+    "syn": "however, nevertheless",
+    "uz": "shunga qaramay",
+    "ex": "It was risky; nonetheless, they continued."
+   },
+   {
+    "w": "notwithstanding",
+    "pos": "prep",
+    "syn": "despite, in spite of",
+    "uz": "…ga qaramay (rasmiy)",
+    "ex": "Notwithstanding the cost, the plan was approved."
+   },
+   {
+    "w": "odd",
+    "pos": "adj",
+    "syn": "strange; occasional",
+    "uz": "g'alati; vaqti-vaqti bilan",
+    "ex": "He does odd jobs at weekends."
+   },
+   {
+    "w": "ongoing",
+    "pos": "adj",
+    "syn": "continuing, current",
+    "uz": "davom etayotgan",
+    "ex": "Research is ongoing."
+   },
+   {
+    "w": "panel",
+    "pos": "noun",
+    "syn": "group of experts; board",
+    "uz": "hay'at, panel",
+    "ex": "A panel of experts reviewed the plan."
+   },
+   {
+    "w": "persist",
+    "pos": "verb",
+    "syn": "continue, last",
+    "uz": "davom etmoq",
+    "ex": "Problems persist despite reforms."
+   },
+   {
+    "w": "pose",
+    "pos": "verb",
+    "syn": "present, create (a risk)",
+    "uz": "tug'dirmoq (xavf)",
+    "ex": "Plastic poses a threat to wildlife."
+   },
+   {
+    "w": "reluctance",
+    "pos": "noun",
+    "syn": "unwillingness",
+    "uz": "istamaslik",
+    "ex": "There is reluctance to change old habits."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about the environment (Part 3)",
+  "items": [
+   {
+    "s": "The biggest environmental issue in my country is …",
+    "uz": "Mamlakatimdagi eng katta ekologik muammo …",
+    "ex": "The biggest environmental issue in my country is water shortage.",
+    "use": "Mahalliy misol"
+   },
+   {
+    "s": "Individuals can only do so much.",
+    "uz": "Har bir odam qo'lidan kelgan qadar qila oladi xolos",
+    "ex": "Individuals can only do so much — governments must act.",
+    "use": "Band 7"
+   },
+   {
+    "s": "It's a global problem that needs a global solution.",
+    "uz": "Global muammo — global yechim kerak",
+    "ex": "Climate change is a global problem that needs a global solution.",
+    "use": "Fikr"
+   },
+   {
+    "s": "People are becoming more eco-conscious.",
+    "uz": "Odamlar ekologiyaga e'tiborliroq bo'lmoqda",
+    "ex": "Young people are becoming more eco-conscious.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "There's a trade-off between growth and the environment.",
+    "uz": "O'sish va ekologiya orasida murosa bor",
+    "ex": "There's a trade-off between growth and the environment.",
+    "use": "Murakkab fikr"
+   },
+   {
+    "s": "Companies should be held accountable for …",
+    "uz": "Kompaniyalar … uchun javobgar bo'lishi kerak",
+    "ex": "Companies should be held accountable for pollution.",
+    "use": "Mas'uliyat"
+   },
+   {
+    "s": "Small changes add up.",
+    "uz": "Kichik o'zgarishlar jamlanadi",
+    "ex": "Small changes like recycling add up.",
+    "use": "Shaxsiy hissa"
+   },
+   {
+    "s": "Public awareness has grown a lot.",
+    "uz": "Jamoatchilik xabardorligi ancha oshdi",
+    "ex": "Public awareness has grown a lot in recent years.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "It's not too late to …",
+    "uz": "… uchun hali kech emas",
+    "ex": "It's not too late to save the Aral Sea region.",
+    "use": "Umid"
+   },
+   {
+    "s": "Future generations will pay the price.",
+    "uz": "Kelajak avlodlar buning bahosini to'laydi",
+    "ex": "If we don't act, future generations will pay the price.",
+    "use": "Ogohlantirish"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/ɑː/ vs /æ/ and /ʌ/",
+  "items": [
+   {
+    "w": "cart – cat – cut",
+    "ipa": "/kɑːt/ – /kæt/ – /kʌt/",
+    "uz": "uch xil unli",
+    "tip": "KAHT / KAT / KAT(qisqa)"
+   },
+   {
+    "w": "heart – hat – hut",
+    "ipa": "/hɑːt/ – /hæt/ – /hʌt/",
+    "uz": "yurak – shlyapa – kulba",
+    "tip": "Farq"
+   },
+   {
+    "w": "bath",
+    "ipa": "/bɑːθ/",
+    "uz": "Britaniyada uzun /ɑː/",
+    "tip": "BAHTH"
+   },
+   {
+    "w": "class",
+    "ipa": "/klɑːs/",
+    "uz": "Britaniyada uzun",
+    "tip": "KLAHS"
+   },
+   {
+    "w": "ask",
+    "ipa": "/ɑːsk/",
+    "uz": "Britaniyada uzun",
+    "tip": "AHSK"
+   },
+   {
+    "w": "answer",
+    "ipa": "/ˈɑːnsə/",
+    "uz": "w o'qilmaydi",
+    "tip": "AHN-sə"
+   },
+   {
+    "w": "palm",
+    "ipa": "/pɑːm/",
+    "uz": "l o'qilmaydi",
+    "tip": "PAHM"
+   },
+   {
+    "w": "carry",
+    "ipa": "/ˈkæri/",
+    "uz": "qisqa /æ/",
+    "tip": "KA-ri"
+   },
+   {
+    "w": "tough",
+    "ipa": "/tʌf/",
+    "uz": "gh = /f/",
+    "tip": "TAF"
+   },
+   {
+    "w": "blood",
+    "ipa": "/blʌd/",
+    "uz": "oo = /ʌ/ (istisno)",
+    "tip": "BLAD"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing similarities in Task 1",
+  "items": [
+   {
+    "w": "similarly",
+    "syn": "in the same way",
+    "uz": "xuddi shunday",
+    "ex": "Similarly, Canada saw a rise."
+   },
+   {
+    "w": "both … and …",
+    "syn": "two items alike",
+    "uz": "… ham … ham",
+    "ex": "Both men and women preferred cars."
+   },
+   {
+    "w": "the same pattern was seen in",
+    "syn": "repeated trend",
+    "uz": "xuddi shunday holat … da kuzatildi",
+    "ex": "The same pattern was seen in Spain."
+   },
+   {
+    "w": "a comparable figure",
+    "syn": "similar number",
+    "uz": "taqqoslanadigan ko'rsatkich",
+    "ex": "Italy recorded a comparable figure."
+   },
+   {
+    "w": "mirrored",
+    "syn": "copied the trend",
+    "uz": "aks ettirdi",
+    "ex": "Exports mirrored the trend in imports."
+   },
+   {
+    "w": "in line with",
+    "syn": "matching",
+    "uz": "… ga mos ravishda",
+    "ex": "Prices rose in line with wages."
+   },
+   {
+    "w": "neither … nor … changed",
+    "syn": "both stable",
+    "uz": "na …, na … o'zgardi",
+    "ex": "Neither rent nor food prices changed."
+   },
+   {
+    "w": "likewise",
+    "syn": "also",
+    "uz": "shuningdek",
+    "ex": "Likewise, the number of buses grew."
+   },
+   {
+    "w": "as did",
+    "syn": "short comparison",
+    "uz": "… kabi",
+    "ex": "Sales rose, as did profits."
+   },
+   {
+    "w": "almost equal",
+    "syn": "nearly the same",
+    "uz": "deyarli teng",
+    "ex": "The two figures were almost equal in 2010."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: advantages and disadvantages",
+  "items": [
+   {
+    "w": "The main advantage of … is that",
+    "syn": "key benefit",
+    "uz": "… ning asosiy afzalligi",
+    "ex": "The main advantage of online learning is flexibility."
+   },
+   {
+    "w": "Another benefit is",
+    "syn": "a further plus",
+    "uz": "Yana bir foydasi",
+    "ex": "Another benefit is lower cost."
+   },
+   {
+    "w": "On the other hand, a major drawback is",
+    "syn": "a big disadvantage",
+    "uz": "Boshqa tomondan, asosiy kamchilik",
+    "ex": "On the other hand, a major drawback is isolation."
+   },
+   {
+    "w": "A further disadvantage is",
+    "syn": "another problem",
+    "uz": "Yana bir kamchilik",
+    "ex": "A further disadvantage is screen fatigue."
+   },
+   {
+    "w": "The benefits far outweigh the drawbacks",
+    "syn": "pros > cons",
+    "uz": "Foydasi zararidan ancha ko'p",
+    "ex": "In my view, the benefits far outweigh the drawbacks."
+   },
+   {
+    "w": "It could be argued that",
+    "syn": "some say",
+    "uz": "… deb da'vo qilish mumkin",
+    "ex": "It could be argued that it widens inequality."
+   },
+   {
+    "w": "This is particularly true for",
+    "syn": "especially",
+    "uz": "Bu ayniqsa … uchun to'g'ri",
+    "ex": "This is particularly true for rural students."
+   },
+   {
+    "w": "a significant downside",
+    "syn": "important con",
+    "uz": "jiddiy salbiy tomon",
+    "ex": "A significant downside is the cost."
+   },
+   {
+    "w": "on balance",
+    "syn": "overall assessment",
+    "uz": "umuman olganda",
+    "ex": "On balance, the advantages are greater."
+   },
+   {
+    "w": "If the question asks 'Do the advantages outweigh …?' give a clear answer",
+    "syn": "TR",
+    "uz": "aniq javob bering",
+    "ex": "Answer in the intro and conclusion."
+   }
+  ]
+ }
+}

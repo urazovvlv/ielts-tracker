@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Expressing probability",
+  "items": [
+   {
+    "s": "be bound to + V",
+    "uz": "albatta … bo'ladi",
+    "ex": "Prices are bound to rise.",
+    "use": "Kuchli ehtimol"
+   },
+   {
+    "s": "may well + V",
+    "uz": "ancha ehtimol",
+    "ex": "This may well become a problem.",
+    "use": "Band 7"
+   },
+   {
+    "s": "could easily + V",
+    "uz": "oson … bo'lishi mumkin",
+    "ex": "The situation could easily get worse.",
+    "use": "Ehtimol"
+   },
+   {
+    "s": "is unlikely to + V",
+    "uz": "ehtimoli kam",
+    "ex": "The trend is unlikely to change.",
+    "use": "Task 1/2"
+   },
+   {
+    "s": "There is every chance that …",
+    "uz": "… ehtimoli juda katta",
+    "ex": "There is every chance that he'll win.",
+    "use": "Kuchli"
+   },
+   {
+    "s": "In all likelihood, …",
+    "uz": "Katta ehtimol bilan, …",
+    "ex": "In all likelihood, robots will take these jobs.",
+    "use": "Akademik"
+   },
+   {
+    "s": "It is doubtful whether …",
+    "uz": "… ga shubha bor",
+    "ex": "It is doubtful whether the plan will work.",
+    "use": "Shubha"
+   },
+   {
+    "s": "❌ It will may happen → ✅ It may happen",
+    "uz": "ikki modal birga kelmaydi",
+    "ex": "It might happen next year.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Plans and goals",
+  "items": [
+   {
+    "t": "in the pipeline",
+    "uz": "tayyorlanmoqda, rejada",
+    "ex": "A new metro line is in the pipeline.",
+    "use": "Rejalar"
+   },
+   {
+    "t": "on the cards",
+    "uz": "ehtimoli bor",
+    "ex": "A trip to Japan is on the cards.",
+    "use": "Kelajak"
+   },
+   {
+    "t": "set the wheels in motion",
+    "uz": "jarayonni boshlamoq",
+    "ex": "I've set the wheels in motion for my visa.",
+    "use": "Harakat"
+   },
+   {
+    "t": "go according to plan",
+    "uz": "reja bo'yicha ketmoq",
+    "ex": "Everything went according to plan.",
+    "use": "Natija"
+   },
+   {
+    "t": "a long shot",
+    "uz": "ehtimoli past urinish",
+    "ex": "Getting band 8 is a long shot, but I'll try.",
+    "use": "Realizm"
+   },
+   {
+    "t": "aim for the stars",
+    "uz": "yuksak maqsad qo'ymoq",
+    "ex": "Aim for the stars — you might reach the moon.",
+    "use": "Motivatsiya"
+   },
+   {
+    "t": "have something in mind",
+    "uz": "nimadir rejalashtirgan",
+    "ex": "I have a few universities in mind.",
+    "use": "Reja"
+   },
+   {
+    "t": "plan B",
+    "uz": "zaxira reja",
+    "ex": "If IELTS doesn't work, I have a plan B.",
+    "use": "Strategiya"
+   },
+   {
+    "t": "a stepping stone",
+    "uz": "keyingi qadam uchun vosita",
+    "ex": "IELTS is a stepping stone to my career.",
+    "use": "Maqsad"
+   },
+   {
+    "t": "see it through",
+    "uz": "oxiriga yetkazmoq",
+    "ex": "I started this challenge and I'll see it through.",
+    "use": "Qat'iyat"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "so-called",
+    "pos": "adj",
+    "syn": "named, alleged",
+    "uz": "deb ataladigan",
+    "ex": "The so-called experts were wrong."
+   },
+   {
+    "w": "straightforward",
+    "pos": "adj",
+    "syn": "simple, easy; honest",
+    "uz": "oddiy; to'g'ri",
+    "ex": "The process is straightforward."
+   },
+   {
+    "w": "undergo",
+    "pos": "verb",
+    "syn": "experience, go through",
+    "uz": "boshdan kechirmoq",
+    "ex": "The city underwent rapid change."
+   },
+   {
+    "w": "whereby",
+    "pos": "adv",
+    "syn": "by which",
+    "uz": "shu orqali",
+    "ex": "A system whereby students pay later was introduced."
+   },
+   {
+    "w": "abundant",
+    "pos": "adj",
+    "syn": "plentiful, rich",
+    "uz": "mo'l",
+    "ex": "Sunlight is abundant in Uzbekistan."
+   },
+   {
+    "w": "adverse",
+    "pos": "adj",
+    "syn": "negative, harmful",
+    "uz": "salbiy, zararli",
+    "ex": "The drug had adverse effects."
+   },
+   {
+    "w": "alleviate",
+    "pos": "verb",
+    "syn": "ease, reduce",
+    "uz": "yengillashtirmoq",
+    "ex": "New roads alleviate traffic."
+   },
+   {
+    "w": "compelling",
+    "pos": "adj",
+    "syn": "convincing, strong",
+    "uz": "ishonarli",
+    "ex": "There is compelling evidence."
+   },
+   {
+    "w": "conventional",
+    "pos": "adj",
+    "syn": "traditional, usual",
+    "uz": "an'anaviy",
+    "ex": "Conventional teaching methods are changing."
+   },
+   {
+    "w": "curb",
+    "pos": "verb",
+    "syn": "limit, restrain",
+    "uz": "cheklamoq, jilovlamoq",
+    "ex": "Laws were passed to curb pollution."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about education (Part 3)",
+  "items": [
+   {
+    "s": "The education system in my country focuses heavily on …",
+    "uz": "Mamlakatimdagi ta'lim tizimi … ga katta e'tibor beradi",
+    "ex": "The education system in my country focuses heavily on exams.",
+    "use": "Mahalliy kontekst"
+   },
+   {
+    "s": "Teachers should act more as guides than lecturers.",
+    "uz": "O'qituvchilar ko'proq yo'l ko'rsatuvchi bo'lishi kerak",
+    "ex": "Teachers should act more as guides than lecturers.",
+    "use": "Fikr"
+   },
+   {
+    "s": "Practical skills are often neglected.",
+    "uz": "Amaliy ko'nikmalar ko'pincha e'tiborsiz qoladi",
+    "ex": "Practical skills are often neglected at school.",
+    "use": "Tanqid"
+   },
+   {
+    "s": "University isn't for everyone.",
+    "uz": "Universitet hamma uchun emas",
+    "ex": "University isn't for everyone — vocational training matters too.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Technology has transformed how students learn.",
+    "uz": "Texnologiya o'quvchilarning o'qish usulini o'zgartirdi",
+    "ex": "Technology has transformed how students learn.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "Lifelong learning is essential nowadays.",
+    "uz": "Bugun umrbod o'qish zarur",
+    "ex": "Lifelong learning is essential in a changing job market.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Smaller classes lead to better results.",
+    "uz": "Kichik sinflar yaxshiroq natija beradi",
+    "ex": "Smaller classes lead to better results.",
+    "use": "Fikr"
+   },
+   {
+    "s": "Education should prepare children for life, not just exams.",
+    "uz": "Ta'lim faqat imtihonga emas, hayotga tayyorlashi kerak",
+    "ex": "Education should prepare children for life, not just exams.",
+    "use": "Kuchli fikr"
+   },
+   {
+    "s": "Rote learning is still common.",
+    "uz": "Yodlash hali ham keng tarqalgan",
+    "ex": "Rote learning is still common in many schools.",
+    "use": "Kuzatuv"
+   },
+   {
+    "s": "Access to good education varies by region.",
+    "uz": "Sifatli ta'limga kirish hududga qarab farq qiladi",
+    "ex": "Access to good education varies by region.",
+    "use": "Tengsizlik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "/ɒ/ vs /ɔː/ and /əʊ/",
+  "items": [
+   {
+    "w": "cot – caught – coat",
+    "ipa": "/kɒt/ – /kɔːt/ – /kəʊt/",
+    "uz": "uch xil unli",
+    "tip": "KOT / KORT / KOUT"
+   },
+   {
+    "w": "not – nought – note",
+    "ipa": "/nɒt/ – /nɔːt/ – /nəʊt/",
+    "uz": "Farq",
+    "tip": "Mashq"
+   },
+   {
+    "w": "stock – stalk",
+    "ipa": "/stɒk/ – /stɔːk/",
+    "uz": "zaxira – poya",
+    "tip": "Juftlik"
+   },
+   {
+    "w": "model",
+    "ipa": "/ˈmɒdl/",
+    "uz": "'model' emas, MOD-l",
+    "tip": "Qisqa /ɒ/"
+   },
+   {
+    "w": "job",
+    "ipa": "/dʒɒb/",
+    "uz": "qisqa /ɒ/",
+    "tip": "JOB"
+   },
+   {
+    "w": "law",
+    "ipa": "/lɔː/",
+    "uz": "uzun /ɔː/",
+    "tip": "LOR (r siz)"
+   },
+   {
+    "w": "daughter",
+    "ipa": "/ˈdɔːtə/",
+    "uz": "gh o'qilmaydi, uzun /ɔː/",
+    "tip": "DOR-tə"
+   },
+   {
+    "w": "bought",
+    "ipa": "/bɔːt/",
+    "uz": "ough = /ɔː/",
+    "tip": "BORT"
+   },
+   {
+    "w": "only",
+    "ipa": "/ˈəʊnli/",
+    "uz": "'onli' emas, OUN-li",
+    "tip": "/əʊ/"
+   },
+   {
+    "w": "both",
+    "ipa": "/bəʊθ/",
+    "uz": "/əʊ/ + /θ/",
+    "tip": "BOUTH"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Overview phrase bank",
+  "items": [
+   {
+    "w": "Overall, it is clear that",
+    "syn": "general summary",
+    "uz": "Umuman olganda, aniqki",
+    "ex": "Overall, it is clear that car use increased."
+   },
+   {
+    "w": "The most noticeable trend is",
+    "syn": "key trend",
+    "uz": "Eng ko'zga tashlanadigan tendensiya",
+    "ex": "The most noticeable trend is the fall in smoking."
+   },
+   {
+    "w": "In general, … experienced …",
+    "syn": "broad statement",
+    "uz": "Umuman, … boshdan kechirdi",
+    "ex": "In general, all countries experienced growth."
+   },
+   {
+    "w": "It is evident that … while …",
+    "syn": "contrast overview",
+    "uz": "Ko'rinib turibdiki … esa …",
+    "ex": "It is evident that A rose while B fell."
+   },
+   {
+    "w": "Taken as a whole,",
+    "syn": "overall",
+    "uz": "Umuman olganda",
+    "ex": "Taken as a whole, spending doubled."
+   },
+   {
+    "w": "The data reveal that",
+    "syn": "show",
+    "uz": "Ma'lumotlar ko'rsatadiki",
+    "ex": "The data reveal that women live longer."
+   },
+   {
+    "w": "A clear upward/downward trend can be seen in",
+    "syn": "trend spotted",
+    "uz": "Aniq o'sish/pasayish tendensiyasi … da ko'rinadi",
+    "ex": "A clear upward trend can be seen in sales."
+   },
+   {
+    "w": "By far the largest … was",
+    "syn": "dominant item",
+    "uz": "Eng kattasi, shubhasiz, …",
+    "ex": "By far the largest source was coal."
+   },
+   {
+    "w": "In contrast to …, …",
+    "syn": "two groups",
+    "uz": "… dan farqli o'laroq",
+    "ex": "In contrast to cities, villages shrank."
+   },
+   {
+    "w": "Overview = 2 key features + no numbers",
+    "syn": "rule",
+    "uz": "Qoida: 2 xususiyat, raqamsiz",
+    "ex": "Practise writing it in 2 minutes."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Essay language: discuss both views",
+  "items": [
+   {
+    "w": "Some people believe that …, while others argue that …",
+    "syn": "two views intro",
+    "uz": "Ba'zilar …, boshqalar esa …",
+    "ex": "Some people believe that zoos are cruel, while others argue that they protect animals."
+   },
+   {
+    "w": "Those who support this view argue that",
+    "syn": "supporters",
+    "uz": "Bu fikr tarafdorlari … deydi",
+    "ex": "Those who support this view argue that zoos educate children."
+   },
+   {
+    "w": "On the other side of the debate,",
+    "syn": "opposing view",
+    "uz": "Munozaraning boshqa tomonida",
+    "ex": "On the other side of the debate, critics point to animal suffering."
+   },
+   {
+    "w": "Proponents of … claim that",
+    "syn": "supporters claim",
+    "uz": "… tarafdorlari … deb da'vo qiladi",
+    "ex": "Proponents of zoos claim that they save species."
+   },
+   {
+    "w": "Opponents point out that",
+    "syn": "critics note",
+    "uz": "Muxoliflar … ni ta'kidlaydi",
+    "ex": "Opponents point out that animals lose their freedom."
+   },
+   {
+    "w": "Having considered both sides, I believe",
+    "syn": "your opinion",
+    "uz": "Ikkala tomonni ko'rib chiqib, ishonamanki",
+    "ex": "Having considered both sides, I believe well-run zoos are useful."
+   },
+   {
+    "w": "Each paragraph = one view",
+    "syn": "structure",
+    "uz": "Har abzas — bitta nuqtai nazar",
+    "ex": "Body 1: view A. Body 2: view B + your view."
+   },
+   {
+    "w": "Give your own opinion clearly",
+    "syn": "TR requirement",
+    "uz": "O'z fikringizni aniq bering",
+    "ex": "The question says 'give your own opinion'."
+   },
+   {
+    "w": "Use reasons and examples for both views",
+    "syn": "balance",
+    "uz": "Ikkala tomonga ham sabab va misol",
+    "ex": "Fair discussion raises TR."
+   },
+   {
+    "w": "Conclusion: summarise both + your view",
+    "syn": "ending",
+    "uz": "Xulosa: ikkala tomon + fikringiz",
+    "ex": "In conclusion, although…, I believe…"
+   }
+  ]
+ }
+}
