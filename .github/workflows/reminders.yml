@@ -10,7 +10,7 @@ on:
       slot:
         description: 'Which reminder to send now'
         type: choice
-        options: [morning, evening, night, weekly]
+        options: [morning, evening, night, daily, weekly]
         default: morning
 
 jobs:
