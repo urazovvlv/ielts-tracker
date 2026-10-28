@@ -430,7 +430,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.8';
+const BUILD='2026-10-28.9';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -623,7 +623,7 @@ function focusSync(){
     for(const e of S.ess){const k=isoD(dateOf(e.d));if(stats[k])stats[k].e++;}
     for(const m of S.mist){const k=isoD(new Date(m.t||0));if(stats[k])stats[k].m++;}
     const mocks=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m);return o==null?null:{n,date:isoD(dateOf(n)),name:MOCKS[n],o,L:toBand(m.L,LB),R:toBand(m.R,RB),W:Number(m.W),S:Number(m.S)};}).filter(Boolean);
-    const top=topMistakes()[0],ext={top:top?mtInfo(top.sk,top.ty)[1]:'',topn:top?top.n:0,ess:S.ess.length,mist:S.mist.length,next:MOCKDAYS.filter(n=>n>t).slice(0,2).map(n=>isoD(dateOf(n))+'|'+MOCKS[n]),day:t,days:DAYS};
+    const top=topMistakes()[0],ext={top:top?mtInfo(top.sk,top.ty)[1]:'',topn:top?top.n:0,ess:S.ess.length,mist:S.mist.length,next:MOCKDAYS.filter(n=>n>t).slice(0,2).map(n=>isoD(dateOf(n))+'|'+MOCKS[n]),day:t,days:DAYS,plan:{name:PLAN.name||'',start:PLAN.start,exam:PLAN.exam||'',days:DAYS,target:TARGET},ms:Object.fromEntries(MOCKDAYS.map(n=>[n,MOCKS[n]]))};
     fetch(WORKER_URL+'/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:TG.initData,days,stats,mocks,ext}),keepalive:true}).catch(()=>{});}catch(e){}
   },2500);
 }

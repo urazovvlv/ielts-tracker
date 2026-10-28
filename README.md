@@ -1,49 +1,36 @@
 # ielts-tracker
 
-A Telegram Mini App for IELTS preparation: daily checklist, weekly exercises, mock scores, words with flashcards, a Speaking Part 2 timer, and bot reminders three times a day.
+A Telegram Mini App for IELTS preparation: daily checklist, Daily pack (6 × 10 items), words with spaced review, mock scores, Writing and Speaking practice, a mistake log, and bot reminders.
 
 ## Several people, one bot
 
 Each person opens the app from their own Telegram account. Their plan (Day 1, exam date, target band) and all their progress are saved in **their** Telegram account, so nobody sees anyone else's tracker. No login or password is needed.
 
-## Reminders for everyone
+## Reminders (Cloudflare Worker)
 
-The reminders follow each person's own plan. To add someone:
+`worker/worker.js` runs on Cloudflare (free plan) and deploys from this repo automatically (Workers Builds, `wrangler.jsonc`, KV binding `FOCUS`). Its Cron Triggers send, in Tashkent time:
 
-1. They press **Start** in the bot chat, open the app, and set up their plan.
-2. In the app: ⚙️ Settings → **Copy reminder code**, and they send the code to the bot owner.
-3. The bot owner adds the codes to the `USERS` secret (Settings → Secrets and variables → Actions) as a list:
+- 07:00 morning message: day, days left, today's focus skill, mock day, Daily pack topics
+- 19:15 evening check (mock instructions on mock days)
+- 21:15 log reminder (and a note before mock days)
+- 23:00 weekly report on the last day of each plan week
 
-```json
-[{"id":111,"name":"Xushnud","start":"2026-10-19","exam":"","days":60,"target":7.5},
- {"id":222,"name":"Ali","start":"2026-10-27","exam":"2026-12-20","days":54,"target":7}]
-```
+Anyone who presses **Start** in the bot and opens the app gets reminders for their own plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, mock scores and a small summary (no task text, no words, no essays). Requests are checked against Telegram's `initData` signature.
 
-`CHAT_ID` from the first setup still works and uses the original 60-day plan (Day 1 = 19 Oct 2026), unless the same ID is listed in `USERS`. Send a new code whenever a plan changes.
+Worker settings: secret `BOT_TOKEN` (same token as the bot). The GitHub workflow `reminders.yml` only sends a reminder by hand for testing; it needs the `BOT_TOKEN` GitHub secret.
 
 ## Files
 
 | File | What it does |
 | --- | --- |
 | `index.html` | The mini app |
-| `daily.json` | One IELTS collocation per day, with Uzbek meaning and an example |
-| `reminders.py` | Sends the reminders (same schedule rules as the app) |
-| `.github/workflows/reminders.yml` | Runs the reminders at about 06:40, 19:15 and 21:15 Tashkent time |
+| `daily/` | Daily packs (`01.json` …) and `index.json` with their count |
+| `daily.json` | Word of the day |
+| `speaking.json` | Speaking Part 1 topics and Part 3 questions |
+| `worker/worker.js`, `wrangler.jsonc` | Cloudflare Worker: sync, reminders, weekly report |
 
-Never put the bot token in a file. It goes only in the `BOT_TOKEN` secret.
+Never put the bot token in a file. It goes only in secrets.
 
 ## Updating the app
 
 Telegram caches the page. When you change `index.html`, also change `BUILD` near the top of its script and put the same value in `version.json`. Open copies then reload themselves once with the new version.
-
-## Today's focus (optional Cloudflare Worker)
-
-The 07:00 message names the skill with the most tasks on today's list. The bot can't read the app's storage, so the app sends only the skill counts (L/R/W/S/Voc per day) to a small free Cloudflare Worker: `worker/worker.js`.
-
-The Worker `ielts-tracker` deploys from this repo automatically (Cloudflare Workers Builds, `wrangler.jsonc`, KV binding `FOCUS`).
-
-1. Worker Settings → Variables and Secrets: secret `BOT_TOKEN` (same as GitHub).
-2. Put the Worker address in `WORKER_URL` in `index.html` (bump BUILD + version.json) and in `FOCUS_DEFAULT` in `reminders.py`.
-
-The reminder script signs its reads with a key derived from `BOT_TOKEN`, so no extra GitHub secret is needed.
-Without it the morning message is sent without the focus line.

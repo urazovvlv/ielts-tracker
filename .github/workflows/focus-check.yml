@@ -13,8 +13,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import datetime as dt, hashlib, hmac, os, urllib.request, urllib.error
-          import reminders
-          base = reminders.FOCUS_DEFAULT
+          base = 'https://ielts-tracker.urazovvlv.workers.dev'
           def get(url, headers=None):
               req = urllib.request.Request(url, headers={"User-Agent": "ielts-reminders", **(headers or {})})
               try:
@@ -27,14 +26,14 @@ jobs:
           print("::notice::home", *get(base + "/"))
           tok = os.environ.get("BOT_TOKEN", "").strip()
           key = hmac.new(tok.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
-          today = dt.datetime.now(reminders.TZ).date().isoformat()
+          today = (dt.datetime.utcnow() + dt.timedelta(hours=5)).date().isoformat()
           code, body = get(f"{base}/focus?ids=5020539876&date={today}", {"X-Key": key})
           print(f"::notice::focus {code} {body}")
           c2, b2 = get(f"{base}/user?ids=5020539876", {"X-Key": key})
           import json as _j
           try:
               d = (_j.loads(b2) if c2 == 200 else {}).get("5020539876") or {}
-              print(f"::notice::user {c2} keys={sorted(d.keys())} stats={len(d.get('stats') or {})} mocks={len(d.get('mocks') or [])}")
+              print(f"::notice::user {c2} keys={sorted(d.keys())} stats={len(d.get('stats') or {})} mocks={len(d.get('mocks') or [])} plan={(d.get('ext') or {}).get('plan')}")
           except Exception as ex:
               print(f"::notice::user {c2} {b2[:80]} {ex}")
           if code != 200:

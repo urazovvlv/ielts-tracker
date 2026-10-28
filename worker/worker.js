@@ -9,6 +9,9 @@
 //   Secret                READ_KEY   (optional; without it the reminder script signs its requests
 //                                     with a key derived from BOT_TOKEN, so nothing else is needed)
 //
+// Reminders: Cron Triggers in wrangler.jsonc send the 07:00 / 19:15 / 21:15 messages and the 23:00 weekly report
+// to everyone whose app has synced a plan (ext.plan). GET /run?slot=…&force=1&dry=1 (same key) runs one by hand.
+//
 // Routes:
 //   POST /sync   {initData, days:{"2026-10-28":{"L":1,"R":2,"W":0,"S":1,"V":0}, ...}}
 //   GET  /focus?ids=111,222&date=2026-10-28   header X-Key: READ_KEY or readKey(BOT_TOKEN)
@@ -116,6 +119,13 @@ function cleanExt(e) {
     top: str(e.top, 60), topn: int(e.topn, 9999), ess: int(e.ess, 9999), mist: int(e.mist, 9999),
     next: Array.isArray(e.next) ? e.next.slice(0, 3).map((x) => str(x, 90)) : [],
     day: int(e.day, 999), days: int(e.days, 999),
+    plan: e.plan && typeof e.plan === "object" && /^\d{4}-\d{2}-\d{2}$/.test(e.plan.start)
+      ? { name: str(e.plan.name, 40), start: e.plan.start, exam: /^\d{4}-\d{2}-\d{2}$/.test(e.plan.exam) ? e.plan.exam : "",
+          days: int(e.plan.days, 400), target: band(e.plan.target) || 7.5 }
+      : null,
+    ms: e.ms && typeof e.ms === "object"
+      ? Object.fromEntries(Object.entries(e.ms).slice(0, 40).filter(([k]) => /^\d{1,3}$/.test(k)).map(([k, v]) => [k, str(v, 60)]))
+      : {},
   };
 }
 
@@ -126,7 +136,162 @@ async function readAllowed(req, env) {
   return !!given && (given === env.READ_KEY || given === derived);
 }
 
+/* ---------- Reminders (Cloudflare Cron Triggers, Tashkent time) ---------- */
+const APP = "https://urazovvlv.github.io/ielts-tracker/";
+const SLOTS = { "0 2 * * *": "morning", "15 14 * * *": "evening", "15 16 * * *": "night", "0 18 * * *": "weekly" };
+const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary" };
+const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const PACK = [["idioms", "Idioms"], ["reading", "Reading words"], ["speaking", "Speaking"], ["pron", "Pronunciation"], ["task1", "Writing Task 1"], ["task2", "Writing Task 2"]];
+const esc = (t) => String(t == null ? "" : t).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+const tashToday = () => new Date(Date.now() + 5 * 3600000).toISOString().slice(0, 10);
+const dOf = (iso) => new Date(iso + "T00:00:00Z");
+const addDays = (iso, n) => new Date(dOf(iso).getTime() + n * 86400000).toISOString().slice(0, 10);
+const diffDays = (a, b) => Math.round((dOf(b) - dOf(a)) / 86400000);
+const nice = (iso, long) => { const d = dOf(iso); return `${long ? WEEKDAYS[d.getUTCDay()] : WEEKDAYS[d.getUTCDay()].slice(0, 3)} ${d.getUTCDate()} ${MON[d.getUTCMonth()]}`; };
+const b1 = (v) => Number(v).toFixed(1);
+
+async function getPack(day) {
+  try {
+    const idx = await (await fetch(APP + "daily/index.json", { cf: { cacheTtl: 600 } })).json();
+    const count = Number(idx.count) || 0;
+    if (!count) return null;
+    const k = String(((day - 1) % count) + 1).padStart(2, "0");
+    return await (await fetch(APP + `daily/${k}.json`, { cf: { cacheTtl: 600 } })).json();
+  } catch { return null; }
+}
+
+function focusLine(c) {
+  if (!c) return "";
+  const total = Object.keys(NAMES).reduce((a, k) => a + (c[k] || 0), 0);
+  const top = Math.max(...Object.keys(NAMES).map((k) => c[k] || 0));
+  if (!top) return "Today's focus: not set yet. Tag your tasks with L, R, W, S or Voc in Edit list.";
+  const best = Object.keys(NAMES).filter((k) => (c[k] || 0) === top).map((k) => NAMES[k]);
+  return `🎯 Today's focus: <b>${best.join(" + ")}</b> (${top} of ${total} tasks)`;
+}
+
+function weekly(doc, plan, day, days, today) {
+  const first = addDays(today, -6), stats = doc.stats || {};
+  const L = [`<b>Week ${Math.ceil(day / 7)} report · ${dOf(first).getUTCDate()} ${MON[dOf(first).getUTCMonth()]} – ${dOf(today).getUTCDate()} ${MON[dOf(today).getUTCMonth()]}</b>`, `Day ${day} of ${days} · ${days - day} days left`, ""];
+  const wk = (off) => {
+    const o = { t: 0, d: 0, full: 0, L: 0, R: 0, W: 0, S: 0, V: 0, e: 0, m: 0 };
+    for (let i = 0; i < 7; i++) {
+      const c = stats[addDays(today, -(off + i))];
+      if (!c) continue;
+      for (const k of ["t", "d", "L", "R", "W", "S", "V", "e", "m"]) o[k] += c[k] || 0;
+      if (c.t && c.d === c.t) o.full++;
+    }
+    return o;
+  };
+  const w = wk(0), p = wk(7);
+  if (w.t) {
+    const pct = Math.round((w.d * 100) / w.t);
+    let cmp = "";
+    if (p.t) { const pp = Math.round((p.d * 100) / p.t), df = pct - pp; cmp = ` · last week ${pp}% (${df >= 0 ? "+" : ""}${df})`; }
+    L.push(`<b>Tasks:</b> ${w.d} of ${w.t} done (${pct}%)${cmp}`, `<b>Full days:</b> ${w.full} of 7`);
+  } else L.push("<b>Tasks:</b> no tasks on your lists this week.");
+  const sk = ["L", "R", "W", "S"].map((k) => [k, w[k]]);
+  if (sk.some(([, n]) => n) || w.V) {
+    L.push("<b>By skill:</b> " + [...sk, ["V", w.V]].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${NAMES[k]} ${n}`).join(" · "));
+    const low = sk.reduce((a, b) => (b[1] < a[1] ? b : a));
+    L.push(`⚠️ Least practised: <b>${NAMES[low[0]]}</b> (${low[1]} task${low[1] === 1 ? "" : "s"}). Give it more time next week.`);
+  } else if (w.d) L.push("Tag your tasks with L, R, W or S in Edit list to see which skill gets the least practice.");
+  const mocks = (doc.mocks || []).filter((m) => m.o != null).sort((a, b) => a.n - b.n);
+  const tw = mocks.filter((m) => m.date >= first && m.date <= today);
+  L.push("");
+  if (tw.length) {
+    L.push("<b>Mocks this week:</b>");
+    for (const m of tw) L.push(`• Day ${m.n} · ${esc(m.name)}: <b>${b1(m.o)}</b> (${["L", "R", "W", "S"].filter((k) => m[k] != null).map((k) => `${k} ${b1(m[k])}`).join(" · ")})`);
+    const last = tw[tw.length - 1], before = mocks.filter((m) => m.n < last.n);
+    if (before.length) { const df = last.o - before[before.length - 1].o; L.push(`Change since your previous mock: ${df >= 0 ? "+" : ""}${b1(df)}`); }
+    const gap = plan.target - last.o;
+    L.push(`Target ${b1(plan.target)}: ${gap <= 0 ? "reached 🎯" : b1(gap) + " to go"}`);
+  } else if (mocks.length) L.push(`<b>Latest mock:</b> Day ${mocks[mocks.length - 1].n} · ${b1(mocks[mocks.length - 1].o)}`);
+  else L.push("<b>Mocks:</b> none logged yet.");
+  const ext = doc.ext || {}, extra = [];
+  if (w.e) extra.push(`${w.e} essay${w.e === 1 ? "" : "s"} saved`);
+  if (w.m) extra.push(`${w.m} mistake${w.m === 1 ? "" : "s"} logged`);
+  if (extra.length) L.push("<b>Practice:</b> " + extra.join(" · "));
+  if (ext.top) L.push(`Most repeated mistake: <b>${esc(ext.top)}</b> (${ext.topn}×). Review it before the next mock.`);
+  const up = (ext.next || []).map((x) => x.split("|")).filter(([d]) => /^\d{4}-\d{2}-\d{2}$/.test(d) && d > today).map(([d, n]) => `${nice(d)} · ${esc(n)}`);
+  if (up.length) L.push("", "<b>Next mocks:</b> " + up.join("; "));
+  return L.join("\n");
+}
+
+async function buildMessage(slot, doc, today) {
+  const ext = doc.ext || {}, plan = ext.plan;
+  if (!plan) return null;
+  const day = diffDays(plan.start, today) + 1, days = plan.days || ext.days || 60;
+  if (day < 1 || day > days) return null;
+  const ms = ext.ms || {}, hi = plan.name ? `, ${esc(plan.name)}` : "";
+  if (slot === "weekly") {
+    if (day % 7 && day !== days) return null;
+    return { text: weekly(doc, plan, day, days, today), frag: "#prog" };
+  }
+  if (slot === "morning") {
+    const left = days - day, exam = plan.exam ? diffDays(today, plan.exam) : null;
+    const L = [`<b>Good morning${hi}! Day ${day} of ${days}</b>`, `${nice(today, true)} · ${left} days left${exam != null && exam >= 0 ? ` · exam in ${exam} days` : ""}`];
+    const f = focusLine((doc.days || {})[today]);
+    if (f) L.push("", f);
+    if (ms[day]) L.push("", `Mock day: <b>${esc(ms[day])}</b>. Start at 19:00 in exam conditions, with no pauses.`);
+    const pack = await getPack(day);
+    if (pack) {
+      L.push("", "<b>Today's pack</b> · 6 × 10, full version in the app (Daily tab):");
+      for (const [k, t] of PACK) { const th = (pack[k] && pack[k].theme) || (k === "reading" ? "10 academic words" : ""); L.push(`• ${t}${th ? ": " + esc(th) : ""}`); }
+    }
+    return { text: L.join("\n"), frag: "#daily" };
+  }
+  if (slot === "evening") {
+    const L = ms[day]
+      ? [`<b>Mock time · Day ${day}</b>`, `${esc(ms[day])}: Listening 30 min, Reading 60, Writing 60, Speaking 15.`, "Phone on silent. Type your scores in the Progress tab when you finish."]
+      : [`<b>Evening check · Day ${day}</b>`, "How is your list going? Finish the tasks you planned for today before the day ends."];
+    return { text: L.join("\n"), frag: "" };
+  }
+  const L = [`<b>Log Day ${day}${hi}</b>`, "Open your tracker and tick the tasks you finished today."];
+  if (ms[day + 1]) L.push(`Tomorrow is a mock day: ${esc(ms[day + 1])}. Sleep early.`);
+  if (day === days) L.push("This was the last day of your plan. Well done. Now rest before the exam.");
+  return { text: L.join("\n"), frag: "" };
+}
+
+async function tgSend(env, chat, msg) {
+  const r = await fetch(`https://api.telegram.org/bot${String(env.BOT_TOKEN || "").trim()}/sendMessage`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chat, text: msg.text, parse_mode: "HTML", disable_web_page_preview: true,
+      reply_markup: { inline_keyboard: [[{ text: "Open tracker", web_app: { url: APP + msg.frag } }]] } }),
+  });
+  return r.ok;
+}
+
+async function runSlot(env, slot, opts = {}) {
+  const today = opts.date || tashToday(), out = [];
+  let cursor;
+  do {
+    const page = await env.FOCUS.list({ prefix: "u:", cursor });
+    for (const k of page.keys) {
+      const id = k.name.slice(2);
+      if (opts.only && opts.only !== id) continue;
+      const doc = await env.FOCUS.get(k.name, "json");
+      if (!doc) continue;
+      const msg = await buildMessage(slot, doc, today);
+      if (!msg) { out.push([id, "skip"]); continue; }
+      const mark = `sent:${id}:${today}:${slot}`;
+      if (!opts.force && (await env.FOCUS.get(mark))) { out.push([id, "already"]); continue; }
+      if (opts.dry) { out.push([id, msg.text]); continue; }
+      const ok = await tgSend(env, id, msg);
+      if (ok) await env.FOCUS.put(mark, "1", { expirationTtl: 3 * 86400 });
+      out.push([id, ok ? "sent" : "failed"]);
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  return out;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    const slot = SLOTS[event.cron];
+    if (slot) ctx.waitUntil(runSlot(env, slot));
+  },
+
   async fetch(req, env) {
     const url = new URL(req.url);
 
@@ -172,6 +337,17 @@ export default {
       const out = {};
       for (const id of ids) out[id] = await env.FOCUS.get("u:" + id, "json");
       return json(out);
+    }
+
+    if (url.pathname === "/run" && req.method === "GET") {
+      if (!(await readAllowed(req, env))) return json({ error: "wrong key" }, 403);
+      const slot = url.searchParams.get("slot") || "";
+      if (!["morning", "evening", "night", "weekly"].includes(slot)) return json({ error: "bad slot" }, 400);
+      const res = await runSlot(env, slot, {
+        force: url.searchParams.get("force") === "1", dry: url.searchParams.get("dry") === "1",
+        only: url.searchParams.get("id") || "", date: /^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get("date") || "") ? url.searchParams.get("date") : "",
+      });
+      return json(res);
     }
 
     if (url.pathname === "/") return new Response("IELTS tracker focus server is running.");

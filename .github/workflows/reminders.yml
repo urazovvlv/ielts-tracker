@@ -1,11 +1,10 @@
 name: IELTS reminders
 
+# The reminders are sent by the Cloudflare Worker (worker/worker.js) on its own schedule:
+# 07:00, 19:15 and 21:15 Tashkent, plus the weekly report at 23:00 on the last day of each plan week.
+# This workflow only sends one by hand, for testing.
+
 on:
-  schedule:
-    - cron: '0 2 * * *'     # 07:00 Tashkent
-    - cron: '15 14 * * *'   # 19:15 Tashkent
-    - cron: '15 16 * * *'   # 21:15 Tashkent
-    - cron: '0 18 * * *'    # 23:00 Tashkent: weekly report, sent only on the last day of each plan week
   workflow_dispatch:
     inputs:
       slot:
@@ -18,27 +17,23 @@ jobs:
   send:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Choose the reminder
-        id: pick
-        run: |
-          if [ -n "${{ inputs.slot }}" ]; then
-            echo "slot=${{ inputs.slot }}" >> "$GITHUB_OUTPUT"
-          else
-            case "${{ github.event.schedule }}" in
-              '0 2 * * *')   echo "slot=morning" >> "$GITHUB_OUTPUT" ;;
-              '15 14 * * *') echo "slot=evening" >> "$GITHUB_OUTPUT" ;;
-              '0 18 * * *')  echo "slot=weekly"  >> "$GITHUB_OUTPUT" ;;
-              *)             echo "slot=night"   >> "$GITHUB_OUTPUT" ;;
-            esac
-          fi
-      - name: Send it
-        run: python3 reminders.py "${{ steps.pick.outputs.slot }}"
+      - name: Ask the Worker to send it
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
-          USERS: ${{ secrets.USERS }}
-          APP_URL: ${{ secrets.APP_URL }}
-          FORCE_WEEKLY: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
-          FOCUS_URL: ${{ secrets.FOCUS_URL }}
-          READ_KEY: ${{ secrets.READ_KEY }}
+          SLOT: ${{ inputs.slot }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, hmac, json, os, urllib.request, urllib.error
+          key = hmac.new(os.environ["BOT_TOKEN"].strip().encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
+          url = f"https://ielts-tracker.urazovvlv.workers.dev/run?slot={os.environ['SLOT']}&force=1"
+          req = urllib.request.Request(url, headers={"X-Key": key, "User-Agent": "ielts-reminders"})
+          try:
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  res = json.load(r)
+          except urllib.error.HTTPError as e:
+              raise SystemExit(f"::error::Worker refused ({e.code}): {e.read()[:200]}")
+          for uid, status in res:
+              print(f"::notice::user …{uid[-3:]}: {status if len(status) < 40 else 'built (dry run)'}")
+          if not res:
+              print("::notice::No users yet: open the tracker once so it can sync your plan.")
+          PY
