@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Common errors of Uzbek speakers (1): nouns and articles",
+  "items": [
+   {
+    "s": "Missing a/an before singular nouns",
+    "uz": "o'zbek tilida artikl yo'q — shuning uchun tushib qoladi",
+    "ex": "❌ I have car → ✅ I have a car",
+    "use": "Har birlik otni tekshiring"
+   },
+   {
+    "s": "Plural after numbers and 'many'",
+    "uz": "son va many dan keyin ko'plik -s",
+    "ex": "❌ many student → ✅ many students",
+    "use": "Writing"
+   },
+   {
+    "s": "No plural after 'people'",
+    "uz": "people allaqachon ko'plik",
+    "ex": "❌ peoples are → ✅ people are",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "informations / advices / furnitures",
+    "uz": "sanalmaydigan otlarga -s yo'q",
+    "ex": "✅ information, advice, furniture",
+    "use": "Takrorlash"
+   },
+   {
+    "s": "one of the + plural",
+    "uz": "biri — ko'plik ot bilan",
+    "ex": "❌ one of the reason → ✅ one of the reasons",
+    "use": "Task 2"
+   },
+   {
+    "s": "every / each + singular",
+    "uz": "har bir — birlik",
+    "ex": "❌ every students → ✅ every student",
+    "use": "Grammatika"
+   },
+   {
+    "s": "the + superlative always",
+    "uz": "eng … — the bilan",
+    "ex": "❌ most important thing → ✅ the most important thing",
+    "use": "Speaking"
+   },
+   {
+    "s": "Possessive 's for people",
+    "uz": "egalik",
+    "ex": "❌ the car of my father → ✅ my father's car",
+    "use": "Tabiiylik"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Character and personality",
+  "items": [
+   {
+    "t": "a people person",
+    "uz": "odamlar bilan ishlashni yaxshi ko'radigan",
+    "ex": "She's a real people person.",
+    "use": "Ish"
+   },
+   {
+    "t": "have a heart of gold",
+    "uz": "oltin yurakli bo'lmoq",
+    "ex": "My grandmother has a heart of gold.",
+    "use": "Odamni tasvirlash"
+   },
+   {
+    "t": "a go-getter",
+    "uz": "maqsadiga intiluvchan odam",
+    "ex": "My cousin is a real go-getter.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "a couch potato",
+    "uz": "divanda yotib TV ko'radigan dangasa",
+    "ex": "In winter I become a couch potato.",
+    "use": "Hazil"
+   },
+   {
+    "t": "set in your ways",
+    "uz": "o'z odatlaridan voz kecha olmaydigan",
+    "ex": "My grandfather is set in his ways.",
+    "use": "Keksalar"
+   },
+   {
+    "t": "wear your heart on your sleeve",
+    "uz": "his-tuyg'ularini yashirmaydigan",
+    "ex": "He wears his heart on his sleeve.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "cool as a cucumber",
+    "uz": "juda xotirjam",
+    "ex": "She stayed cool as a cucumber in the interview.",
+    "use": "Stress"
+   },
+   {
+    "t": "a big mouth",
+    "uz": "sir saqlay olmaydigan",
+    "ex": "Don't tell him — he has a big mouth.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "a team player",
+    "uz": "jamoada yaxshi ishlaydigan",
+    "ex": "Employers want team players.",
+    "use": "Ish"
+   },
+   {
+    "t": "tough cookie",
+    "uz": "irodali, bardoshli odam",
+    "ex": "My mum is a tough cookie.",
+    "use": "Xarakter"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "restrain",
+    "pos": "verb",
+    "syn": "control, hold back",
+    "uz": "jilovlamoq",
+    "ex": "Police restrained the crowd."
+   },
+   {
+    "w": "revolution",
+    "pos": "noun",
+    "syn": "radical change; uprising",
+    "uz": "inqilob",
+    "ex": "The digital revolution changed work."
+   },
+   {
+    "w": "rigid",
+    "pos": "adj",
+    "syn": "strict, inflexible",
+    "uz": "qattiq, egiluvchan emas",
+    "ex": "The school has rigid rules."
+   },
+   {
+    "w": "route",
+    "pos": "noun",
+    "syn": "way, path",
+    "uz": "yo'nalish, marshrut",
+    "ex": "The bus route was changed."
+   },
+   {
+    "w": "scenario",
+    "pos": "noun",
+    "syn": "situation, possibility",
+    "uz": "ssenariy, holat",
+    "ex": "In the worst-case scenario, prices double."
+   },
+   {
+    "w": "sphere",
+    "pos": "noun",
+    "syn": "area, field; globe",
+    "uz": "soha; shar",
+    "ex": "Women are active in every sphere of life."
+   },
+   {
+    "w": "subordinate",
+    "pos": "adj/noun",
+    "syn": "lower in rank; junior",
+    "uz": "bo'ysunuvchi",
+    "ex": "Managers should listen to subordinates."
+   },
+   {
+    "w": "supplement",
+    "pos": "noun/verb",
+    "syn": "addition; add to",
+    "uz": "qo'shimcha; to'ldirmoq",
+    "ex": "Many students supplement their income."
+   },
+   {
+    "w": "suspend",
+    "pos": "verb",
+    "syn": "stop temporarily; hang",
+    "uz": "vaqtincha to'xtatmoq",
+    "ex": "Flights were suspended due to snow."
+   },
+   {
+    "w": "temporary",
+    "pos": "adj",
+    "syn": "short-term, not permanent",
+    "uz": "vaqtinchalik",
+    "ex": "Many seasonal jobs are temporary."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing a person who influenced you (Part 2)",
+  "items": [
+   {
+    "s": "I'd like to talk about my …, who …",
+    "uz": "… haqida gapirmoqchiman, u …",
+    "ex": "I'd like to talk about my uncle, who runs a small business.",
+    "use": "Boshlanish"
+   },
+   {
+    "s": "I've known him/her since …",
+    "uz": "Uni … dan beri bilaman",
+    "ex": "I've known her since primary school.",
+    "use": "Vaqt"
+   },
+   {
+    "s": "He's in his early forties.",
+    "uz": "U qirq yoshlarining boshida",
+    "ex": "He's in his early forties.",
+    "use": "Yosh"
+   },
+   {
+    "s": "What sets him apart is …",
+    "uz": "Uni boshqalardan ajratib turadigan narsa …",
+    "ex": "What sets him apart is his patience.",
+    "use": "Band 7"
+   },
+   {
+    "s": "He taught me the value of …",
+    "uz": "U menga … ning qadrini o'rgatdi",
+    "ex": "He taught me the value of hard work.",
+    "use": "Ta'sir"
+   },
+   {
+    "s": "She was always there when …",
+    "uz": "… paytda doim yonimda edi",
+    "ex": "She was always there when I needed advice.",
+    "use": "Hissiyot"
+   },
+   {
+    "s": "I look up to him because …",
+    "uz": "… sababli uni namuna deb bilaman",
+    "ex": "I look up to him because he never gives up.",
+    "use": "Hurmat"
+   },
+   {
+    "s": "Thanks to him, I …",
+    "uz": "U tufayli men …",
+    "ex": "Thanks to him, I started learning English.",
+    "use": "Natija"
+   },
+   {
+    "s": "I hope to be like her one day.",
+    "uz": "Bir kun u kabi bo'lishni umid qilaman",
+    "ex": "I hope to be like her one day.",
+    "use": "Yakun"
+   },
+   {
+    "s": "He has had a huge impact on my life.",
+    "uz": "U hayotimga katta ta'sir ko'rsatdi",
+    "ex": "He has had a huge impact on my life.",
+    "use": "Xulosa"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Practising difficult consonant clusters at the start",
+  "items": [
+   {
+    "w": "street",
+    "ipa": "/striːt/",
+    "uz": "'istrit' emas — str boshida",
+    "tip": "STREET"
+   },
+   {
+    "w": "spring",
+    "ipa": "/sprɪŋ/",
+    "uz": "'ispring' emas",
+    "tip": "SPRING"
+   },
+   {
+    "w": "school",
+    "ipa": "/skuːl/",
+    "uz": "'iskul' emas",
+    "tip": "SKOOL"
+   },
+   {
+    "w": "study",
+    "ipa": "/ˈstʌdi/",
+    "uz": "'istadi' emas",
+    "tip": "STA-di"
+   },
+   {
+    "w": "splash",
+    "ipa": "/splæʃ/",
+    "uz": "spl- boshida",
+    "tip": "SPLASH"
+   },
+   {
+    "w": "screen",
+    "ipa": "/skriːn/",
+    "uz": "skr- boshida",
+    "tip": "SKREEN"
+   },
+   {
+    "w": "structure",
+    "ipa": "/ˈstrʌktʃə/",
+    "uz": "Task 2 so'zi",
+    "tip": "STRAK-chə"
+   },
+   {
+    "w": "stress",
+    "ipa": "/stres/",
+    "uz": "'istres' emas",
+    "tip": "STRES"
+   },
+   {
+    "w": "specific",
+    "ipa": "/spəˈsɪfɪk/",
+    "uz": "spə-SIF-ik",
+    "tip": "Akademik"
+   },
+   {
+    "w": "Tip: hiss the s before the consonant",
+    "ipa": "s ni oldin ayting",
+    "uz": "Oldiga 'i' qo'shmang — Uzbek speakers' common habit",
+    "tip": "Mashq"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Reviewing Task 1 vocabulary: trend verbs",
+  "items": [
+   {
+    "w": "surge",
+    "syn": "rise suddenly",
+    "uz": "keskin ko'tarilmoq",
+    "ex": "Online sales surged in 2020."
+   },
+   {
+    "w": "rocket",
+    "syn": "rise very fast",
+    "uz": "osmonga chiqmoq",
+    "ex": "House prices rocketed."
+   },
+   {
+    "w": "edge up",
+    "syn": "rise slightly",
+    "uz": "sal ko'tarilmoq",
+    "ex": "Unemployment edged up to 5%."
+   },
+   {
+    "w": "slump",
+    "syn": "fall heavily",
+    "uz": "keskin pasaymoq",
+    "ex": "Car sales slumped in 2009."
+   },
+   {
+    "w": "tail off",
+    "syn": "decrease gradually at the end",
+    "uz": "oxirida asta pasaymoq",
+    "ex": "Interest tailed off after 2015."
+   },
+   {
+    "w": "bottom out",
+    "syn": "reach the lowest point and stop falling",
+    "uz": "eng past nuqtaga tushib to'xtamoq",
+    "ex": "Prices bottomed out in 2012."
+   },
+   {
+    "w": "rebound",
+    "syn": "rise again after falling",
+    "uz": "qayta ko'tarilmoq",
+    "ex": "Tourism rebounded in 2022."
+   },
+   {
+    "w": "level out",
+    "syn": "become stable",
+    "uz": "barqarorlashmoq",
+    "ex": "Growth levelled out at 3%."
+   },
+   {
+    "w": "peak",
+    "syn": "reach the highest point",
+    "uz": "cho'qqiga chiqmoq",
+    "ex": "Demand peaked in July."
+   },
+   {
+    "w": "dwindle",
+    "syn": "become smaller gradually",
+    "uz": "asta-sekin kamaymoq",
+    "ex": "The rural population dwindled."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Space exploration and big science",
+  "items": [
+   {
+    "w": "space agencies",
+    "syn": "NASA etc.",
+    "uz": "kosmik agentliklar",
+    "ex": "Space agencies cooperate on the ISS."
+   },
+   {
+    "w": "satellite technology",
+    "syn": "satellites",
+    "uz": "sun'iy yo'ldosh texnologiyasi",
+    "ex": "Satellite technology improves weather forecasts."
+   },
+   {
+    "w": "colonise other planets",
+    "syn": "settle on Mars",
+    "uz": "boshqa sayyoralarni o'zlashtirmoq",
+    "ex": "Some dream of colonising Mars."
+   },
+   {
+    "w": "space tourism",
+    "syn": "commercial space travel",
+    "uz": "kosmik turizm",
+    "ex": "Space tourism is only for the very rich."
+   },
+   {
+    "w": "a matter of national prestige",
+    "syn": "national pride",
+    "uz": "milliy obro' masalasi",
+    "ex": "Space programmes are a matter of national prestige."
+   },
+   {
+    "w": "misallocation of funds",
+    "syn": "wrong spending",
+    "uz": "mablag'ni noto'g'ri taqsimlash",
+    "ex": "Critics call it a misallocation of funds."
+   },
+   {
+    "w": "inspire the next generation",
+    "syn": "motivate young scientists",
+    "uz": "keyingi avlodni ilhomlantirmoq",
+    "ex": "Moon landings inspired the next generation."
+   },
+   {
+    "w": "international collaboration",
+    "syn": "global cooperation",
+    "uz": "xalqaro hamkorlik",
+    "ex": "Big science needs international collaboration."
+   },
+   {
+    "w": "space debris",
+    "syn": "space junk",
+    "uz": "kosmik chiqindilar",
+    "ex": "Space debris threatens satellites."
+   },
+   {
+    "w": "long-term survival of humanity",
+    "syn": "future of mankind",
+    "uz": "insoniyatning uzoq muddatli omon qolishi",
+    "ex": "Some argue space is key to the long-term survival of humanity."
+   }
+  ]
+ }
+}

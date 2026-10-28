@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Common errors of Uzbek speakers (2): verbs and word order",
+  "items": [
+   {
+    "s": "Third person -s",
+    "uz": "u/u (narsa) — fe'lga -s",
+    "ex": "❌ She work → ✅ She works",
+    "use": "Speaking va Writing"
+   },
+   {
+    "s": "Word order: subject + verb + object",
+    "uz": "ingliz tilida fe'l egadan keyin",
+    "ex": "❌ Very much I like it → ✅ I like it very much",
+    "use": "Asosiy tartib"
+   },
+   {
+    "s": "Adverb placement: not between verb and object",
+    "uz": "fe'l va to'ldiruvchi orasiga ravish qo'ymang",
+    "ex": "❌ I speak well English → ✅ I speak English well",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "Present Perfect overused or missed",
+    "uz": "aniq vaqt — Past Simple",
+    "ex": "❌ I have been there in 2019 → ✅ I went there in 2019",
+    "use": "Takrorlash"
+   },
+   {
+    "s": "make vs do confusion",
+    "uz": "do a mistake ❌",
+    "ex": "✅ make a mistake, do homework",
+    "use": "Kollokatsiya"
+   },
+   {
+    "s": "explain me ❌ → explain to me",
+    "uz": "explain + to + kishi",
+    "ex": "Could you explain it to me?",
+    "use": "Tipik xato"
+   },
+   {
+    "s": "I am agree ❌ → I agree",
+    "uz": "agree — fe'l, am kerak emas",
+    "ex": "I agree with you.",
+    "use": "Juda keng tarqalgan"
+   },
+   {
+    "s": "It depends from ❌ → depends on",
+    "uz": "predlog xatosi",
+    "ex": "It depends on the weather.",
+    "use": "Speaking"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Nature and the environment (more)",
+  "items": [
+   {
+    "t": "go green",
+    "uz": "ekologik yashashni boshlamoq",
+    "ex": "Many companies are going green.",
+    "use": "Task 2"
+   },
+   {
+    "t": "leave no trace",
+    "uz": "iz qoldirmaslik",
+    "ex": "When camping, leave no trace.",
+    "use": "Ekologiya"
+   },
+   {
+    "t": "in full bloom",
+    "uz": "to'liq gullagan",
+    "ex": "The apricot trees are in full bloom.",
+    "use": "Bahor"
+   },
+   {
+    "t": "the great outdoors",
+    "uz": "tabiat bag'ri",
+    "ex": "I love the great outdoors.",
+    "use": "Part 1"
+   },
+   {
+    "t": "back to nature",
+    "uz": "tabiatga qaytish",
+    "ex": "Camping is a way to get back to nature.",
+    "use": "Dam olish"
+   },
+   {
+    "t": "not see the wood for the trees",
+    "uz": "mayda detallar ortidan asosiyni ko'rmaslik",
+    "ex": "Stop worrying about tiny details — you can't see the wood for the trees.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "test the waters",
+    "uz": "vaziyatni sinab ko'rmoq",
+    "ex": "I tested the waters before quitting.",
+    "use": "Qaror"
+   },
+   {
+    "t": "make hay while the sun shines",
+    "uz": "imkoniyatdan foydalanib qolmoq",
+    "ex": "Study now — make hay while the sun shines.",
+    "use": "Maslahat"
+   },
+   {
+    "t": "a hot spot",
+    "uz": "mashhur joy; xavfli hudud",
+    "ex": "Charvak is a hot spot for tourists.",
+    "use": "Joy"
+   },
+   {
+    "t": "barking up the wrong tree",
+    "uz": "noto'g'ri yo'ldan ketmoq",
+    "ex": "If you think cramming works, you're barking up the wrong tree.",
+    "use": "Maslahat"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "trigger",
+    "pos": "verb/noun",
+    "syn": "cause, set off; cause",
+    "uz": "qo'zg'atmoq; sabab",
+    "ex": "Stress can trigger headaches."
+   },
+   {
+    "w": "unify",
+    "pos": "verb",
+    "syn": "unite, combine",
+    "uz": "birlashtirmoq",
+    "ex": "Sport can unify a nation."
+   },
+   {
+    "w": "violate",
+    "pos": "verb",
+    "syn": "break, breach",
+    "uz": "buzmoq",
+    "ex": "The company violated safety rules."
+   },
+   {
+    "w": "vision",
+    "pos": "noun",
+    "syn": "sight; plan for the future",
+    "uz": "ko'rish; qarash, maqsad",
+    "ex": "The president outlined his vision."
+   },
+   {
+    "w": "adjacent",
+    "pos": "adj",
+    "syn": "next to, neighbouring",
+    "uz": "qo'shni, yonma-yon",
+    "ex": "The hotel is adjacent to the station."
+   },
+   {
+    "w": "albeit",
+    "pos": "conj",
+    "syn": "although, even though",
+    "uz": "garchi",
+    "ex": "It worked, albeit slowly."
+   },
+   {
+    "w": "assemble",
+    "pos": "verb",
+    "syn": "gather; put together",
+    "uz": "yig'ilmoq; yig'moq",
+    "ex": "Cars are assembled in Asaka."
+   },
+   {
+    "w": "collapse",
+    "pos": "verb/noun",
+    "syn": "fall down, fail",
+    "uz": "qulamoq",
+    "ex": "The economy collapsed in 1998."
+   },
+   {
+    "w": "colleague",
+    "pos": "noun",
+    "syn": "co-worker",
+    "uz": "hamkasb",
+    "ex": "My colleagues helped me."
+   },
+   {
+    "w": "compile",
+    "pos": "verb",
+    "syn": "collect, put together",
+    "uz": "to'plamoq",
+    "ex": "Data were compiled from many sources."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Part 3: talking about work and careers",
+  "items": [
+   {
+    "s": "Job security matters more than salary to many people.",
+    "uz": "Ko'pchilik uchun ish barqarorligi maoshdan muhim",
+    "ex": "In my country, job security matters more than salary.",
+    "use": "Fikr"
+   },
+   {
+    "s": "The job market is very competitive.",
+    "uz": "Mehnat bozori raqobatli",
+    "ex": "The job market is very competitive for graduates.",
+    "use": "Tavsif"
+   },
+   {
+    "s": "People change careers more often now.",
+    "uz": "Odamlar endi kasbini tez-tez o'zgartiradi",
+    "ex": "People change careers more often now than in the past.",
+    "use": "O'zgarish"
+   },
+   {
+    "s": "Soft skills are just as important as qualifications.",
+    "uz": "Yumshoq ko'nikmalar diplom kabi muhim",
+    "ex": "Soft skills are just as important as qualifications.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Climbing the career ladder takes time.",
+    "uz": "Martaba zinapoyasidan ko'tarilish vaqt oladi",
+    "ex": "Climbing the career ladder takes time.",
+    "use": "Idioma"
+   },
+   {
+    "s": "Freelancing gives people more freedom.",
+    "uz": "Frilans ko'proq erkinlik beradi",
+    "ex": "Freelancing gives people more freedom but less security.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "Job satisfaction depends on …",
+    "uz": "Ishdan qoniqish … ga bog'liq",
+    "ex": "Job satisfaction depends on having good colleagues.",
+    "use": "Sabab"
+   },
+   {
+    "s": "Many graduates end up working in unrelated fields.",
+    "uz": "Ko'p bitiruvchilar boshqa sohada ishlaydi",
+    "ex": "Many graduates end up working in unrelated fields.",
+    "use": "Kuzatuv"
+   },
+   {
+    "s": "Automation will reshape the workplace.",
+    "uz": "Avtomatlashtirish ish joyini o'zgartiradi",
+    "ex": "Automation will reshape the workplace.",
+    "use": "Kelajak"
+   },
+   {
+    "s": "A good work-life balance is essential.",
+    "uz": "Ish va hayot muvozanati zarur",
+    "ex": "A good work-life balance is essential for health.",
+    "use": "Xulosa"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Sentence stress for contrast and correction",
+  "items": [
+   {
+    "w": "Not THIS one, THAT one.",
+    "ipa": "qarama-qarshilik urg'usi",
+    "uz": "ko'rsatish so'zlariga urg'u",
+    "tip": "Kontrast"
+   },
+   {
+    "w": "I said FIFteen, not FIFty.",
+    "ipa": "tuzatish",
+    "uz": "raqamga urg'u",
+    "tip": "Listening/Speaking"
+   },
+   {
+    "w": "It's not EXpensive, it's CHEAP.",
+    "ipa": "kontrast",
+    "uz": "sifatlarga urg'u",
+    "tip": "Speaking"
+   },
+   {
+    "w": "I DIDN'T say that.",
+    "ipa": "inkorga urg'u",
+    "uz": "kuchli rad",
+    "tip": "Hissiyot"
+   },
+   {
+    "w": "I like TEA, but my wife prefers COFfee.",
+    "ipa": "kontrast",
+    "uz": "ikki narsa",
+    "tip": "Part 1"
+   },
+   {
+    "w": "He ALWAYS forgets.",
+    "ipa": "chastotaga urg'u",
+    "uz": "shikoyat ohangi",
+    "tip": "Hissiyot"
+   },
+   {
+    "w": "WE did it, not THEY.",
+    "ipa": "olmoshga urg'u",
+    "uz": "ega kontrasti",
+    "tip": "Kontrast"
+   },
+   {
+    "w": "Was it on MONday or TUESday?",
+    "ipa": "tanlov",
+    "uz": "variantlarga urg'u",
+    "tip": "Savol"
+   },
+   {
+    "w": "Stress changes meaning",
+    "ipa": "ma'no o'zgaradi",
+    "uz": "I didn't TAKE it (lekin ko'rdim)",
+    "tip": "Nozik ma'no"
+   },
+   {
+    "w": "Use it in Part 3 comparisons",
+    "ipa": "taqqoslashda",
+    "uz": "In the PAST…, but NOW…",
+    "tip": "Band 7"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Paraphrasing chart labels",
+  "items": [
+   {
+    "w": "'Leisure' → free-time activities",
+    "syn": "rephrase label",
+    "uz": "bo'sh vaqt faoliyati",
+    "ex": "Spending on free-time activities rose."
+   },
+   {
+    "w": "'Under 18' → teenagers and children",
+    "syn": "age label",
+    "uz": "18 yoshgacha → bolalar va o'smirlar",
+    "ex": "Teenagers and children made up 20%."
+   },
+   {
+    "w": "'Transport' → travel costs",
+    "syn": "category label",
+    "uz": "transport → yo'l xarajatlari",
+    "ex": "Travel costs fell slightly."
+   },
+   {
+    "w": "'Households' → homes / families",
+    "syn": "unit label",
+    "uz": "uy xo'jaliklari → oilalar",
+    "ex": "Most homes had a computer."
+   },
+   {
+    "w": "'Unemployed' → people without jobs",
+    "syn": "status label",
+    "uz": "ishsizlar → ishi yo'qlar",
+    "ex": "People without jobs rose to 8%."
+   },
+   {
+    "w": "'Exports' → goods sold abroad",
+    "syn": "economic label",
+    "uz": "eksport → chetga sotilgan tovarlar",
+    "ex": "Goods sold abroad doubled."
+   },
+   {
+    "w": "'Urban/Rural' → in cities / in the countryside",
+    "syn": "location label",
+    "uz": "shahar/qishloq",
+    "ex": "People in the countryside earned less."
+   },
+   {
+    "w": "'Consumption' → use",
+    "syn": "noun swap",
+    "uz": "iste'mol → foydalanish",
+    "ex": "Water use peaked in summer."
+   },
+   {
+    "w": "'Population' → number of inhabitants",
+    "syn": "noun swap",
+    "uz": "aholi → aholi soni",
+    "ex": "The number of inhabitants grew."
+   },
+   {
+    "w": "keep key technical terms",
+    "syn": "don't change precise terms",
+    "uz": "aniq atamalarni o'zgartirmang",
+    "ex": "GDP, CO2 stay the same."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Globalisation and international trade",
+  "items": [
+   {
+    "w": "free trade",
+    "syn": "trade without barriers",
+    "uz": "erkin savdo",
+    "ex": "Free trade lowers prices."
+   },
+   {
+    "w": "trade barriers",
+    "syn": "tariffs and quotas",
+    "uz": "savdo to'siqlari",
+    "ex": "Trade barriers protect local industries."
+   },
+   {
+    "w": "outsourcing",
+    "syn": "moving work abroad",
+    "uz": "autsorsing",
+    "ex": "Outsourcing moved factory jobs to Asia."
+   },
+   {
+    "w": "global supply chains",
+    "syn": "worldwide production networks",
+    "uz": "global ta'minot zanjirlari",
+    "ex": "The pandemic disrupted global supply chains."
+   },
+   {
+    "w": "local businesses",
+    "syn": "small domestic firms",
+    "uz": "mahalliy biznes",
+    "ex": "Global brands threaten local businesses."
+   },
+   {
+    "w": "economic interdependence",
+    "syn": "countries relying on each other",
+    "uz": "iqtisodiy o'zaro bog'liqlik",
+    "ex": "Economic interdependence reduces conflict."
+   },
+   {
+    "w": "cheap labour",
+    "syn": "low wages",
+    "uz": "arzon ishchi kuchi",
+    "ex": "Companies move to countries with cheap labour."
+   },
+   {
+    "w": "foreign investment",
+    "syn": "overseas capital",
+    "uz": "xorijiy investitsiya",
+    "ex": "Foreign investment creates jobs."
+   },
+   {
+    "w": "global brands",
+    "syn": "international brands",
+    "uz": "global brendlar",
+    "ex": "Global brands are found in every city."
+   },
+   {
+    "w": "protectionism",
+    "syn": "protecting home industry",
+    "uz": "proteksionizm",
+    "ex": "Protectionism can raise consumer prices."
+   }
+  ]
+ }
+}
