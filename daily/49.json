@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Run-on sentences and fragments",
+  "items": [
+   {
+    "s": "Run-on: two sentences joined by a comma",
+    "uz": "ikki to'liq gap vergul bilan — xato",
+    "ex": "❌ Prices rose, people bought less.",
+    "use": "Comma splice"
+   },
+   {
+    "s": "Fix 1: full stop",
+    "uz": "nuqta qo'ying",
+    "ex": "Prices rose. People bought less.",
+    "use": "Oddiy yechim"
+   },
+   {
+    "s": "Fix 2: conjunction",
+    "uz": "bog'lovchi qo'shing",
+    "ex": "Prices rose, so people bought less.",
+    "use": "Compound"
+   },
+   {
+    "s": "Fix 3: subordinate clause",
+    "uz": "ergash gap",
+    "ex": "Because prices rose, people bought less.",
+    "use": "Complex — band 7"
+   },
+   {
+    "s": "Fix 4: semicolon + linker",
+    "uz": "nuqtali vergul",
+    "ex": "Prices rose; as a result, people bought less.",
+    "use": "Band 7+"
+   },
+   {
+    "s": "Fragment: no main verb",
+    "uz": "fe'lsiz gap — xato",
+    "ex": "❌ For example, the high cost of living.",
+    "use": "Fragment"
+   },
+   {
+    "s": "Fragment fix",
+    "uz": "to'liq gap qiling",
+    "ex": "For example, the cost of living is high.",
+    "use": "Tuzatish"
+   },
+   {
+    "s": "❌ However prices rose → ✅ However, prices rose.",
+    "uz": "however — yangi gap + vergul",
+    "ex": "However, prices rose.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Weather and seasons (more)",
+  "items": [
+   {
+    "t": "a heatwave",
+    "uz": "jazirama",
+    "ex": "Tashkent had a heatwave in July.",
+    "use": "Ob-havo"
+   },
+   {
+    "t": "chilly",
+    "uz": "salqin, sovuqroq",
+    "ex": "It gets chilly in the evenings.",
+    "use": "Part 1"
+   },
+   {
+    "t": "pouring with rain",
+    "uz": "jala quymoqda",
+    "ex": "It was pouring with rain all day.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "a cold snap",
+    "uz": "qisqa sovuq davr",
+    "ex": "A cold snap hit the city in March.",
+    "use": "Ob-havo"
+   },
+   {
+    "t": "under a cloud",
+    "uz": "shubha ostida",
+    "ex": "He left the job under a cloud.",
+    "use": "Idioma"
+   },
+   {
+    "t": "swamped with work",
+    "uz": "ish bilan to'lib-toshgan",
+    "ex": "I'm swamped with work this week.",
+    "use": "Bandlik"
+   },
+   {
+    "t": "weather-beaten",
+    "uz": "ob-havodan qoraygan, eskirgan",
+    "ex": "The old farmer had a weather-beaten face.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "a ray of sunshine",
+    "uz": "quvonch nuri",
+    "ex": "My niece is a ray of sunshine.",
+    "use": "Odam"
+   },
+   {
+    "t": "it never rains but it pours",
+    "uz": "baxtsizlik yolg'iz kelmaydi",
+    "ex": "First my phone broke, then my laptop — it never rains but it pours.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "a fair-weather sport",
+    "uz": "faqat yaxshi havoda qilinadigan",
+    "ex": "Cycling is a fair-weather sport for me.",
+    "use": "Sport"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "converse",
+    "pos": "verb/noun",
+    "syn": "talk; opposite",
+    "uz": "suhbatlashmoq; teskarisi",
+    "ex": "The converse is also true."
+   },
+   {
+    "w": "device",
+    "pos": "noun",
+    "syn": "gadget, tool",
+    "uz": "qurilma",
+    "ex": "Mobile devices are used for learning."
+   },
+   {
+    "w": "devote",
+    "pos": "verb",
+    "syn": "dedicate, give",
+    "uz": "bag'ishlamoq",
+    "ex": "She devoted her life to teaching."
+   },
+   {
+    "w": "diminish",
+    "pos": "verb",
+    "syn": "decrease, reduce",
+    "uz": "kamaymoq",
+    "ex": "The risk diminishes with age."
+   },
+   {
+    "w": "distort",
+    "pos": "verb",
+    "syn": "twist, misrepresent",
+    "uz": "buzib ko'rsatmoq",
+    "ex": "Media can distort the facts."
+   },
+   {
+    "w": "duration",
+    "pos": "noun",
+    "syn": "length of time",
+    "uz": "davomiylik",
+    "ex": "The duration of the course is six months."
+   },
+   {
+    "w": "erode",
+    "pos": "verb",
+    "syn": "wear away, weaken",
+    "uz": "yemirmoq",
+    "ex": "Trust in politicians has eroded."
+   },
+   {
+    "w": "ethical",
+    "pos": "adj",
+    "syn": "moral, right",
+    "uz": "axloqiy",
+    "ex": "Animal testing raises ethical questions."
+   },
+   {
+    "w": "format",
+    "pos": "noun",
+    "syn": "layout, structure",
+    "uz": "format",
+    "ex": "The test format is the same worldwide."
+   },
+   {
+    "w": "found",
+    "pos": "verb",
+    "syn": "establish, set up",
+    "uz": "asos solmoq",
+    "ex": "The university was founded in 1918."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Part 2: using the 1-minute preparation well",
+  "items": [
+   {
+    "s": "Write keywords, not sentences",
+    "uz": "faqat kalit so'zlar",
+    "ex": "Bukhara / summer 2019 / family / old town / felt proud",
+    "use": "Strategiya"
+   },
+   {
+    "s": "Note one idea per bullet point",
+    "uz": "har bandga bitta g'oya",
+    "ex": "who / when / what / why",
+    "use": "Struktura"
+   },
+   {
+    "s": "Add 2–3 good words to use",
+    "uz": "2–3 kuchli so'z",
+    "ex": "steeped in history, breathtaking",
+    "use": "LR"
+   },
+   {
+    "s": "Plan a story, not a list",
+    "uz": "ro'yxat emas, hikoya",
+    "ex": "Start → what happened → feeling → why",
+    "use": "Fluency"
+   },
+   {
+    "s": "Start speaking immediately",
+    "uz": "darhol boshlang",
+    "ex": "I'd like to talk about …",
+    "use": "Vaqt"
+   },
+   {
+    "s": "Keep going until the examiner stops you",
+    "uz": "to'xtatmaguncha gapiring",
+    "ex": "2 daqiqa to'liq",
+    "use": "Uzunlik"
+   },
+   {
+    "s": "Use past tenses for past events",
+    "uz": "o'tgan voqea — o'tgan zamon",
+    "ex": "We went, we saw, I had never …",
+    "use": "GRA"
+   },
+   {
+    "s": "If you finish early, add detail",
+    "uz": "erta tugasangiz, detal qo'shing",
+    "ex": "What I remember most clearly is …",
+    "use": "Strategiya"
+   },
+   {
+    "s": "It's fine to invent details",
+    "uz": "to'qima detal mumkin",
+    "ex": "IELTS haqiqatni tekshirmaydi",
+    "use": "Erkinlik"
+   },
+   {
+    "s": "Look at your notes, not the examiner's paper",
+    "uz": "o'z yozuvingizga qarang",
+    "ex": "Tabiiy ko'rinish",
+    "use": "Maslahat"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Sounds Uzbek speakers find hard: /w/ vs /v/ revisited",
+  "items": [
+   {
+    "w": "west – vest",
+    "ipa": "/west/ – /vest/",
+    "uz": "g'arb – nimcha",
+    "tip": "/w/ lab dumaloq, /v/ tish-lab"
+   },
+   {
+    "w": "wet – vet",
+    "ipa": "/wet/ – /vet/",
+    "uz": "ho'l – veterinar",
+    "tip": "/w/: lablar dumaloq"
+   },
+   {
+    "w": "worse – verse",
+    "ipa": "/wɜːs/ – /vɜːs/",
+    "uz": "yomonroq – she'r misrasi",
+    "tip": "Juftlik"
+   },
+   {
+    "w": "we've",
+    "ipa": "/wiːv/",
+    "uz": "ikkala tovush bir so'zda",
+    "tip": "WEEV"
+   },
+   {
+    "w": "view",
+    "ipa": "/vjuː/",
+    "uz": "/v/ — tish va lab",
+    "tip": "VYOO"
+   },
+   {
+    "w": "however",
+    "ipa": "/haʊˈevə/",
+    "uz": "/w/ emas — 'havever'",
+    "tip": "hau-E-və"
+   },
+   {
+    "w": "awareness",
+    "ipa": "/əˈweənəs/",
+    "uz": "Task 2 so'zi",
+    "tip": "ə-WEƏ-nəs"
+   },
+   {
+    "w": "environmentally",
+    "ipa": "/ɪnˌvaɪrənˈmentəli/",
+    "uz": "/v/ bilan",
+    "tip": "in-vai-rən-MEN-tə-li"
+   },
+   {
+    "w": "well-being",
+    "ipa": "/ˌwelˈbiːɪŋ/",
+    "uz": "Task 2",
+    "tip": "wel-BEE-iŋ"
+   },
+   {
+    "w": "value",
+    "ipa": "/ˈvæljuː/",
+    "uz": "VAL-yoo",
+    "tip": "Task 2"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Task 1: tables with many categories — selecting data",
+  "items": [
+   {
+    "w": "select the extremes",
+    "syn": "highest and lowest",
+    "uz": "eng yuqori va eng past",
+    "ex": "Start with the extremes."
+   },
+   {
+    "w": "group similar values",
+    "syn": "cluster",
+    "uz": "o'xshash qiymatlarni guruhlang",
+    "ex": "France, Spain and Italy all had around 30%."
+   },
+   {
+    "w": "highlight the anomaly",
+    "syn": "unusual item",
+    "uz": "g'ayrioddiy holatni ayting",
+    "ex": "Only Japan saw a decrease."
+   },
+   {
+    "w": "ignore minor details",
+    "syn": "skip small items",
+    "uz": "mayda detallarni o'tkazib yuboring",
+    "ex": "You don't need every cell."
+   },
+   {
+    "w": "compare across rows",
+    "syn": "between categories",
+    "uz": "qatorlar bo'yicha solishtiring",
+    "ex": "Men spent more on transport, women on clothing."
+   },
+   {
+    "w": "compare down columns",
+    "syn": "over time",
+    "uz": "ustunlar bo'yicha solishtiring",
+    "ex": "All figures rose between 2000 and 2010."
+   },
+   {
+    "w": "use 'respectively' carefully",
+    "syn": "order matters",
+    "uz": "tartibga e'tibor",
+    "ex": "…20% and 30% respectively."
+   },
+   {
+    "w": "approximately is fine",
+    "syn": "rounding",
+    "uz": "taxminiy raqam yetarli",
+    "ex": "around 40% (actual 39.8%)"
+   },
+   {
+    "w": "two body paragraphs by theme",
+    "syn": "organisation",
+    "uz": "mavzu bo'yicha ikki abzas",
+    "ex": "Body 1: high spenders. Body 2: low spenders."
+   },
+   {
+    "w": "don't calculate complex maths",
+    "syn": "simple comparisons",
+    "uz": "murakkab hisob kerak emas",
+    "ex": "'nearly double' is enough."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Media, news and journalism",
+  "items": [
+   {
+    "w": "news coverage",
+    "syn": "reporting",
+    "uz": "yangiliklarni yoritish",
+    "ex": "News coverage of the war was intense."
+   },
+   {
+    "w": "biased reporting",
+    "syn": "one-sided news",
+    "uz": "tarafkash xabar",
+    "ex": "Biased reporting misleads the public."
+   },
+   {
+    "w": "investigative journalism",
+    "syn": "in-depth reporting",
+    "uz": "tergov jurnalistikasi",
+    "ex": "Investigative journalism exposes corruption."
+   },
+   {
+    "w": "sensationalism",
+    "syn": "exaggeration",
+    "uz": "shov-shuvbozlik",
+    "ex": "Tabloids rely on sensationalism."
+   },
+   {
+    "w": "citizen journalism",
+    "syn": "ordinary people reporting",
+    "uz": "fuqarolik jurnalistikasi",
+    "ex": "Smartphones enabled citizen journalism."
+   },
+   {
+    "w": "public opinion",
+    "syn": "what people think",
+    "uz": "jamoatchilik fikri",
+    "ex": "The media shape public opinion."
+   },
+   {
+    "w": "the 24-hour news cycle",
+    "syn": "constant news",
+    "uz": "24 soatlik yangiliklar oqimi",
+    "ex": "The 24-hour news cycle causes anxiety."
+   },
+   {
+    "w": "reliable sources",
+    "syn": "trustworthy information",
+    "uz": "ishonchli manbalar",
+    "ex": "Students must learn to find reliable sources."
+   },
+   {
+    "w": "invasion of privacy",
+    "syn": "intrusion",
+    "uz": "shaxsiy hayotga aralashish",
+    "ex": "Paparazzi are an invasion of privacy."
+   },
+   {
+    "w": "press freedom",
+    "syn": "media independence",
+    "uz": "matbuot erkinligi",
+    "ex": "Press freedom is vital in a democracy."
+   }
+  ]
+ }
+}

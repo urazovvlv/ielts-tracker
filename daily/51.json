@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Articles: special cases",
+  "items": [
+   {
+    "s": "the + adjective = group of people",
+    "uz": "the rich, the poor, the elderly",
+    "ex": "The government should help the poor.",
+    "use": "Task 2"
+   },
+   {
+    "s": "go to school / to the school",
+    "uz": "maqsad bilan artiklsiz; bino sifatida the",
+    "ex": "Children go to school at 7. Parents went to the school for a meeting.",
+    "use": "Nozik farq"
+   },
+   {
+    "s": "in hospital / in prison / at university",
+    "uz": "muassasa vazifasi — artiklsiz (Britaniya)",
+    "ex": "My uncle is in hospital.",
+    "use": "Britaniya ingliz tili"
+   },
+   {
+    "s": "the + musical instruments",
+    "uz": "chalish haqida",
+    "ex": "I play the piano.",
+    "use": "Speaking"
+   },
+   {
+    "s": "no article + sports, meals, languages",
+    "uz": "play football, have lunch, speak English",
+    "ex": "We have lunch at 1 pm.",
+    "use": "Part 1"
+   },
+   {
+    "s": "the + rivers, seas, mountain ranges",
+    "uz": "the Amu Darya, the Alps",
+    "ex": "The Amu Darya flows into the Aral Sea.",
+    "use": "Geografiya"
+   },
+   {
+    "s": "no article + single mountains, lakes, most countries",
+    "uz": "Mount Everest, Lake Issyk-Kul",
+    "ex": "Lake Issyk-Kul is in Kyrgyzstan.",
+    "use": "Geografiya"
+   },
+   {
+    "s": "❌ The life is short → ✅ Life is short",
+    "uz": "umumiy abstrakt ot — artiklsiz",
+    "ex": "Life in the city is expensive.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Home and comfort (more)",
+  "items": [
+   {
+    "t": "make yourself at home",
+    "uz": "o'zingizni uyingizdagidek his qiling",
+    "ex": "Come in and make yourself at home.",
+    "use": "Mehmondo'stlik"
+   },
+   {
+    "t": "a homebody",
+    "uz": "uyda o'tirishni yoqtiradigan",
+    "ex": "I'm a bit of a homebody at weekends.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "house-proud",
+    "uz": "uyini toza-ozoda tutishga e'tiborli",
+    "ex": "My mother is very house-proud.",
+    "use": "Oila"
+   },
+   {
+    "t": "move house",
+    "uz": "ko'chib o'tmoq",
+    "ex": "We moved house three times.",
+    "use": "Part 1"
+   },
+   {
+    "t": "a roof over your head",
+    "uz": "boshpana",
+    "ex": "At least I have a roof over my head.",
+    "use": "Asosiy ehtiyoj"
+   },
+   {
+    "t": "hit home",
+    "uz": "yuragiga yetib bormoq",
+    "ex": "His words really hit home.",
+    "use": "Hissiyot"
+   },
+   {
+    "t": "bring home the bacon",
+    "uz": "oilani boqmoq",
+    "ex": "Both parents bring home the bacon.",
+    "use": "Oila"
+   },
+   {
+    "t": "home and dry",
+    "uz": "muvaffaqiyatni qo'lga kiritgan",
+    "ex": "One more exam and I'm home and dry.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "cosy",
+    "uz": "shinam",
+    "ex": "My room is small but cosy.",
+    "use": "Part 1: uy"
+   },
+   {
+    "t": "there's no place like home",
+    "uz": "uy kabi joy yo'q",
+    "ex": "After a month abroad: there's no place like home.",
+    "use": "Hissiyot"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "mutual",
+    "pos": "adj",
+    "syn": "shared, common, joint",
+    "uz": "o'zaro",
+    "ex": "The agreement is of mutual benefit."
+   },
+   {
+    "w": "norm",
+    "pos": "noun",
+    "syn": "standard, rule, custom",
+    "uz": "me'yor",
+    "ex": "Working from home is becoming the norm."
+   },
+   {
+    "w": "overlap",
+    "pos": "verb/noun",
+    "syn": "coincide partly",
+    "uz": "qisman ustma-ust tushmoq",
+    "ex": "The two subjects overlap a lot."
+   },
+   {
+    "w": "passive",
+    "pos": "adj",
+    "syn": "inactive, unresponsive",
+    "uz": "passiv, sust",
+    "ex": "Watching TV is a passive activity."
+   },
+   {
+    "w": "portion",
+    "pos": "noun",
+    "syn": "part, share; serving",
+    "uz": "ulush; porsiya",
+    "ex": "A large portion of income goes on rent."
+   },
+   {
+    "w": "preliminary",
+    "pos": "adj",
+    "syn": "initial, early",
+    "uz": "dastlabki",
+    "ex": "Preliminary results look promising."
+   },
+   {
+    "w": "protocol",
+    "pos": "noun",
+    "syn": "procedure, rules",
+    "uz": "protokol, tartib",
+    "ex": "Hospitals follow strict protocols."
+   },
+   {
+    "w": "qualitative",
+    "pos": "adj",
+    "syn": "descriptive, non-numerical",
+    "uz": "sifat jihatidan",
+    "ex": "The study used qualitative methods."
+   },
+   {
+    "w": "refine",
+    "pos": "verb",
+    "syn": "improve, polish; purify",
+    "uz": "takomillashtirmoq; tozalamoq",
+    "ex": "Oil is refined into petrol."
+   },
+   {
+    "w": "relax",
+    "pos": "verb",
+    "syn": "loosen; rest",
+    "uz": "yumshatmoq; dam olmoq",
+    "ex": "The rules were relaxed in 2020."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about money and spending (Part 1/3)",
+  "items": [
+   {
+    "s": "I'm quite careful with money.",
+    "uz": "Pulga ancha ehtiyotkorman",
+    "ex": "I'm quite careful with money — I track every expense.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "I tend to splash out on …",
+    "uz": "… ga pulni ayamayman",
+    "ex": "I tend to splash out on books.",
+    "use": "Sarflash"
+   },
+   {
+    "s": "I'm saving up for …",
+    "uz": "… uchun pul yig'yapman",
+    "ex": "I'm saving up for a new laptop.",
+    "use": "Maqsad"
+   },
+   {
+    "s": "It's a bit pricey, but worth it.",
+    "uz": "Biroz qimmat, lekin arziydi",
+    "ex": "The course is a bit pricey, but worth it.",
+    "use": "Baholash"
+   },
+   {
+    "s": "I live within my means.",
+    "uz": "Topganimga yarasha yashayman",
+    "ex": "I try to live within my means.",
+    "use": "Moliyaviy odat"
+   },
+   {
+    "s": "It's more affordable than …",
+    "uz": "… ga qaraganda arzonroq",
+    "ex": "Public transport is more affordable than taxis.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "I'm not a big spender.",
+    "uz": "Ko'p pul sarflamayman",
+    "ex": "I'm not a big spender, to be honest.",
+    "use": "Xarakter"
+   },
+   {
+    "s": "Money is tight at the moment.",
+    "uz": "Hozir pul tig'iz",
+    "ex": "Money is tight at the moment, so I cook at home.",
+    "use": "Hozirgi holat"
+   },
+   {
+    "s": "Young people are under financial pressure.",
+    "uz": "Yoshlar moliyaviy bosim ostida",
+    "ex": "Young people are under financial pressure because of rent.",
+    "use": "Part 3"
+   },
+   {
+    "s": "Financial literacy should be taught at school.",
+    "uz": "Moliyaviy savodxonlik maktabda o'rgatilishi kerak",
+    "ex": "Financial literacy should be taught at school.",
+    "use": "Part 3 fikr"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Linking /j/ and /w/ between vowels",
+  "items": [
+   {
+    "w": "I am",
+    "ipa": "/aɪ‿j‿æm/",
+    "uz": "unli + unli orasida /j/",
+    "tip": "AI-yam"
+   },
+   {
+    "w": "the end",
+    "ipa": "/ðiː‿j‿end/",
+    "uz": "/j/ paydo bo'ladi",
+    "tip": "ÐEE-yend"
+   },
+   {
+    "w": "three apples",
+    "ipa": "/θriː‿j‿æplz/",
+    "uz": "/j/",
+    "tip": "THREE-yaplz"
+   },
+   {
+    "w": "go away",
+    "ipa": "/ɡəʊ‿w‿əˈweɪ/",
+    "uz": "/w/ paydo bo'ladi",
+    "tip": "GOU-wə-WEI"
+   },
+   {
+    "w": "do it",
+    "ipa": "/duː‿w‿ɪt/",
+    "uz": "/w/",
+    "tip": "DOO-wit"
+   },
+   {
+    "w": "who is",
+    "ipa": "/huː‿w‿ɪz/",
+    "uz": "/w/",
+    "tip": "HOO-wiz"
+   },
+   {
+    "w": "they are",
+    "ipa": "/ðeɪ‿j‿ə/",
+    "uz": "/j/",
+    "tip": "ÐEI-yə"
+   },
+   {
+    "w": "my own",
+    "ipa": "/maɪ‿j‿əʊn/",
+    "uz": "/j/",
+    "tip": "MAI-youn"
+   },
+   {
+    "w": "too often",
+    "ipa": "/tuː‿w‿ˈɒfn/",
+    "uz": "/w/",
+    "tip": "TOO-wof-n"
+   },
+   {
+    "w": "Smooth linking = higher fluency",
+    "ipa": "ravon bog'lanish",
+    "uz": "Pronunciation va Fluency uchun foydali",
+    "tip": "Band 7"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing maps with no time change (planning maps)",
+  "items": [
+   {
+    "w": "two proposed sites",
+    "syn": "two options",
+    "uz": "ikki taklif qilingan joy",
+    "ex": "The map shows two proposed sites for a new hospital."
+   },
+   {
+    "w": "site A is located",
+    "syn": "is situated",
+    "uz": "A joy … da joylashgan",
+    "ex": "Site A is located near the motorway."
+   },
+   {
+    "w": "close to / far from",
+    "syn": "near / distant",
+    "uz": "yaqin / uzoq",
+    "ex": "Site B is far from the town centre."
+   },
+   {
+    "w": "easily accessible",
+    "syn": "easy to reach",
+    "uz": "oson yetib boriladigan",
+    "ex": "Site A is easily accessible by train."
+   },
+   {
+    "w": "on the edge of",
+    "syn": "at the border",
+    "uz": "chetida",
+    "ex": "Site B lies on the edge of a forest."
+   },
+   {
+    "w": "would require",
+    "syn": "would need",
+    "uz": "… ni talab qiladi",
+    "ex": "Site B would require a new road."
+   },
+   {
+    "w": "the main advantage of site A",
+    "syn": "benefit",
+    "uz": "A joyning asosiy afzalligi",
+    "ex": "The main advantage of site A is its location."
+   },
+   {
+    "w": "compare the two sites",
+    "syn": "contrast",
+    "uz": "ikki joyni solishtiring",
+    "ex": "Site A is closer, whereas site B is larger."
+   },
+   {
+    "w": "no opinion on which is better",
+    "syn": "objective",
+    "uz": "qaysi yaxshiligini aytmang",
+    "ex": "Describe features, not your choice."
+   },
+   {
+    "w": "use present tense and 'would'",
+    "syn": "planning language",
+    "uz": "hozirgi zamon va would",
+    "ex": "A hospital at site B would be near the river."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Happiness, money and consumer debt",
+  "items": [
+   {
+    "w": "living beyond your means",
+    "syn": "spending too much",
+    "uz": "topganidan ko'p sarflash",
+    "ex": "Credit cards encourage living beyond your means."
+   },
+   {
+    "w": "consumer debt",
+    "syn": "personal debt",
+    "uz": "iste'mol qarzi",
+    "ex": "Consumer debt is rising among young people."
+   },
+   {
+    "w": "buy now, pay later",
+    "syn": "instalment schemes",
+    "uz": "hozir ol, keyin to'la",
+    "ex": "Buy now, pay later schemes are risky."
+   },
+   {
+    "w": "financial stress",
+    "syn": "money worries",
+    "uz": "moliyaviy stress",
+    "ex": "Financial stress affects mental health."
+   },
+   {
+    "w": "budgeting skills",
+    "syn": "money management",
+    "uz": "byudjet ko'nikmalari",
+    "ex": "Schools should teach budgeting skills."
+   },
+   {
+    "w": "minimalism",
+    "syn": "living with less",
+    "uz": "minimalizm",
+    "ex": "Minimalism is popular among young people."
+   },
+   {
+    "w": "experiences over possessions",
+    "syn": "valuing experiences",
+    "uz": "buyumlardan ko'ra taassurotlar",
+    "ex": "Studies favour experiences over possessions."
+   },
+   {
+    "w": "interest rates",
+    "syn": "cost of borrowing",
+    "uz": "foiz stavkalari",
+    "ex": "High interest rates make loans expensive."
+   },
+   {
+    "w": "savings culture",
+    "syn": "habit of saving",
+    "uz": "jamg'arish madaniyati",
+    "ex": "A savings culture protects families."
+   },
+   {
+    "w": "financial independence",
+    "syn": "self-sufficiency",
+    "uz": "moliyaviy mustaqillik",
+    "ex": "Many young people want financial independence early."
+   }
+  ]
+ }
+}

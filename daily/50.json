@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Ellipsis and substitution",
+  "items": [
+   {
+    "s": "so / not after think, hope, expect",
+    "uz": "takrorlamaslik",
+    "ex": "Will it rain? — I hope not. / I think so.",
+    "use": "Speaking"
+   },
+   {
+    "s": "one / ones",
+    "uz": "ot o'rnida",
+    "ex": "I prefer the blue one.",
+    "use": "Takrordan qochish"
+   },
+   {
+    "s": "do so",
+    "uz": "fe'l iborasi o'rnida",
+    "ex": "Many want to recycle but fail to do so.",
+    "use": "Task 2"
+   },
+   {
+    "s": "the same (as)",
+    "uz": "avvalgisi bilan bir xil",
+    "ex": "The result was the same as last year.",
+    "use": "Takrordan qochish"
+   },
+   {
+    "s": "Ellipsis after auxiliaries",
+    "uz": "yordamchi fe'l bilan to'xtash",
+    "ex": "I haven't finished, but she has.",
+    "use": "Tabiiy nutq"
+   },
+   {
+    "s": "Ellipsis in comparisons",
+    "uz": "taqqoslashda tushirish",
+    "ex": "Cars are faster than buses (are).",
+    "use": "Qisqalik"
+   },
+   {
+    "s": "Short answers",
+    "uz": "qisqa javob",
+    "ex": "Do you like it? — Yes, I do.",
+    "use": "Part 1"
+   },
+   {
+    "s": "❌ I think yes → ✅ I think so",
+    "uz": "o'zbekchadan ko'chirma",
+    "ex": "Is it useful? — I think so.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Success and failure (more)",
+  "items": [
+   {
+    "t": "make it big",
+    "uz": "katta muvaffaqiyatga erishmoq",
+    "ex": "He dreams of making it big in business.",
+    "use": "Ambitsiya"
+   },
+   {
+    "t": "fall flat",
+    "uz": "muvaffaqiyatsiz chiqmoq",
+    "ex": "My joke fell flat.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "a flash in the pan",
+    "uz": "bir martalik muvaffaqiyat",
+    "ex": "The app was a flash in the pan.",
+    "use": "Biznes"
+   },
+   {
+    "t": "come up trumps",
+    "uz": "kutilmaganda muvaffaqiyat qozonmoq",
+    "ex": "My brother came up trumps in the final.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "a rising star",
+    "uz": "porloq yulduz",
+    "ex": "She's a rising star in journalism.",
+    "use": "Karyera"
+   },
+   {
+    "t": "bite the dust",
+    "uz": "barbod bo'lmoq",
+    "ex": "Another small shop has bitten the dust.",
+    "use": "Biznes"
+   },
+   {
+    "t": "hit the jackpot",
+    "uz": "katta omad topmoq",
+    "ex": "We hit the jackpot with this flat.",
+    "use": "Omad"
+   },
+   {
+    "t": "go down in history",
+    "uz": "tarixda qolmoq",
+    "ex": "This match will go down in history.",
+    "use": "Voqea"
+   },
+   {
+    "t": "learn from your mistakes",
+    "uz": "xatolardan o'rganmoq",
+    "ex": "The key is to learn from your mistakes.",
+    "use": "Falsafa"
+   },
+   {
+    "t": "on the road to recovery",
+    "uz": "tiklanish yo'lida",
+    "ex": "The economy is on the road to recovery.",
+    "use": "Iqtisod"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "inherent",
+    "pos": "adj",
+    "syn": "built-in, natural",
+    "uz": "ichki, tug'ma",
+    "ex": "Every plan has inherent risks."
+   },
+   {
+    "w": "insight",
+    "pos": "noun",
+    "syn": "understanding, awareness",
+    "uz": "chuqur tushuncha",
+    "ex": "The study gives insight into teen behaviour."
+   },
+   {
+    "w": "integral",
+    "pos": "adj",
+    "syn": "essential, basic",
+    "uz": "ajralmas",
+    "ex": "Music is an integral part of Uzbek culture."
+   },
+   {
+    "w": "intermediate",
+    "pos": "adj",
+    "syn": "middle, halfway",
+    "uz": "o'rta",
+    "ex": "She has an intermediate level of French."
+   },
+   {
+    "w": "manual",
+    "pos": "adj/noun",
+    "syn": "by hand; handbook",
+    "uz": "qo'l mehnati; qo'llanma",
+    "ex": "Manual jobs are being automated."
+   },
+   {
+    "w": "mature",
+    "pos": "adj/verb",
+    "syn": "adult, developed; grow up",
+    "uz": "yetuk; voyaga yetmoq",
+    "ex": "Girls mature earlier than boys."
+   },
+   {
+    "w": "mediate",
+    "pos": "verb",
+    "syn": "negotiate, intervene",
+    "uz": "vositachilik qilmoq",
+    "ex": "The UN mediated between the two sides."
+   },
+   {
+    "w": "medium",
+    "pos": "noun/adj",
+    "syn": "means; middle",
+    "uz": "vosita; o'rta",
+    "ex": "English is the medium of instruction."
+   },
+   {
+    "w": "military",
+    "pos": "adj/noun",
+    "syn": "armed forces",
+    "uz": "harbiy",
+    "ex": "Military spending was reduced."
+   },
+   {
+    "w": "minimal",
+    "pos": "adj",
+    "syn": "very small, least",
+    "uz": "minimal",
+    "ex": "The damage was minimal."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Paraphrasing the examiner's question",
+  "items": [
+   {
+    "s": "So you're asking whether …",
+    "uz": "Demak, … ni so'rayapsiz",
+    "ex": "So you're asking whether it's better to rent or buy?",
+    "use": "Vaqt yutish"
+   },
+   {
+    "s": "Do you mean … or …?",
+    "uz": "… yoki … ni nazarda tutyapsizmi?",
+    "ex": "Do you mean public or private transport?",
+    "use": "Aniqlashtirish"
+   },
+   {
+    "s": "Repeat the idea in your own words",
+    "uz": "o'z so'zlaringiz bilan",
+    "ex": "Q: Is TV popular? A: Watching television is still common…",
+    "use": "LR"
+   },
+   {
+    "s": "Don't repeat the question word for word",
+    "uz": "so'zma-so'z takrorlamang",
+    "ex": "Paraphrase shows vocabulary",
+    "use": "LR band 7"
+   },
+   {
+    "s": "popular → widespread / common",
+    "uz": "sinonim",
+    "ex": "It's quite widespread among teenagers.",
+    "use": "Paraphrase"
+   },
+   {
+    "s": "important → crucial / essential",
+    "uz": "sinonim",
+    "ex": "It's crucial for young people.",
+    "use": "Paraphrase"
+   },
+   {
+    "s": "good → beneficial / worthwhile",
+    "uz": "sinonim",
+    "ex": "It's really worthwhile.",
+    "use": "Paraphrase"
+   },
+   {
+    "s": "bad → harmful / damaging",
+    "uz": "sinonim",
+    "ex": "It can be quite damaging.",
+    "use": "Paraphrase"
+   },
+   {
+    "s": "people → individuals / the public",
+    "uz": "sinonim",
+    "ex": "The public tends to agree.",
+    "use": "Paraphrase"
+   },
+   {
+    "s": "nowadays → these days / at present",
+    "uz": "sinonim",
+    "ex": "These days, most people …",
+    "use": "Paraphrase"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Stress in numbers, dates and times",
+  "items": [
+   {
+    "w": "the twenty-FIRST of MARCH",
+    "ipa": "/ðə ˌtwenti ˈfɜːst əv ˈmɑːtʃ/",
+    "uz": "sanalar talaffuzi",
+    "tip": "Listening Section 1"
+   },
+   {
+    "w": "nineteen ninety-FIVE",
+    "ipa": "/ˌnaɪnˈtiːn ˌnaɪnti ˈfaɪv/",
+    "uz": "yillar ikki qism",
+    "tip": "1995"
+   },
+   {
+    "w": "two thousand and TEN",
+    "ipa": "/tuː ˈθaʊznd ən ˈten/",
+    "uz": "2010",
+    "tip": "Britaniya"
+   },
+   {
+    "w": "twenty TWENty",
+    "ipa": "/ˌtwenti ˈtwenti/",
+    "uz": "2020",
+    "tip": "Qisqa shakl"
+   },
+   {
+    "w": "half past SEVen",
+    "ipa": "/hɑːf pɑːst ˈsevn/",
+    "uz": "7:30",
+    "tip": "Vaqt"
+   },
+   {
+    "w": "a quarter to NINE",
+    "ipa": "/ə ˈkwɔːtə tə ˈnaɪn/",
+    "uz": "8:45",
+    "tip": "Vaqt"
+   },
+   {
+    "w": "double-oh-SEVen",
+    "ipa": "/ˈdʌbl əʊ ˈsevn/",
+    "uz": "telefon raqamlarida 0 = oh",
+    "tip": "Listening"
+   },
+   {
+    "w": "three point FIVE",
+    "ipa": "/θriː pɔɪnt faɪv/",
+    "uz": "3.5",
+    "tip": "O'nli kasr"
+   },
+   {
+    "w": "fifty per CENT",
+    "ipa": "/ˈfɪfti pə ˈsent/",
+    "uz": "50%",
+    "tip": "Task 1"
+   },
+   {
+    "w": "pounds / dollars after the number",
+    "ipa": "/ˈtwenti ˈpaʊndz/",
+    "uz": "£20 — 'twenty pounds'",
+    "tip": "Listening pul"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Writing a balanced Task 1 body paragraph",
+  "items": [
+   {
+    "w": "Topic sentence",
+    "syn": "the main point of the paragraph",
+    "uz": "abzasning asosiy g'oyasi",
+    "ex": "Looking first at men, spending rose in all categories."
+   },
+   {
+    "w": "Supporting data",
+    "syn": "2–3 figures",
+    "uz": "2–3 raqam bilan dalil",
+    "ex": "Transport went from $50 to $80."
+   },
+   {
+    "w": "Comparison",
+    "syn": "how it relates",
+    "uz": "taqqoslash",
+    "ex": "…which was higher than for women."
+   },
+   {
+    "w": "Exception",
+    "syn": "the odd one out",
+    "uz": "istisno",
+    "ex": "The only exception was clothing, which fell."
+   },
+   {
+    "w": "4–5 sentences per paragraph",
+    "syn": "length",
+    "uz": "abzasda 4–5 gap",
+    "ex": "Balanced paragraphs."
+   },
+   {
+    "w": "Looking at …, …",
+    "syn": "Turning to …",
+    "uz": "… ga nazar tashlasak",
+    "ex": "Looking at the second group, …"
+   },
+   {
+    "w": "With regard to …",
+    "syn": "Regarding …",
+    "uz": "… ga kelsak",
+    "ex": "With regard to exports, …"
+   },
+   {
+    "w": "Each paragraph one focus",
+    "syn": "unity",
+    "uz": "har abzas — bitta yo'nalish",
+    "ex": "Don't mix both charts randomly."
+   },
+   {
+    "w": "Numbers support statements",
+    "syn": "evidence",
+    "uz": "raqam — dalil",
+    "ex": "Sales soared, reaching 900 units."
+   },
+   {
+    "w": "End with a link if natural",
+    "syn": "transition",
+    "uz": "tabiiy bo'lsa bog'lang",
+    "ex": "This contrasts with the trend below."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Water, food security and agriculture",
+  "items": [
+   {
+    "w": "irrigation",
+    "syn": "watering crops",
+    "uz": "sug'orish",
+    "ex": "Cotton farming needs heavy irrigation."
+   },
+   {
+    "w": "crop yields",
+    "syn": "harvest amounts",
+    "uz": "hosildorlik",
+    "ex": "Climate change lowers crop yields."
+   },
+   {
+    "w": "the Aral Sea disaster",
+    "syn": "environmental catastrophe",
+    "uz": "Orol fojiasi",
+    "ex": "The Aral Sea disaster shows the cost of poor planning."
+   },
+   {
+    "w": "water management",
+    "syn": "use of water",
+    "uz": "suv boshqaruvi",
+    "ex": "Better water management saves resources."
+   },
+   {
+    "w": "drought-resistant crops",
+    "syn": "plants that survive drought",
+    "uz": "qurg'oqchilikka chidamli ekinlar",
+    "ex": "Scientists develop drought-resistant crops."
+   },
+   {
+    "w": "pesticides",
+    "syn": "chemicals for pests",
+    "uz": "pestitsidlar",
+    "ex": "Pesticides harm bees."
+   },
+   {
+    "w": "genetically modified (GM) food",
+    "syn": "GM crops",
+    "uz": "genetik modifikatsiyalangan oziq-ovqat",
+    "ex": "GM food is controversial."
+   },
+   {
+    "w": "food prices",
+    "syn": "cost of food",
+    "uz": "oziq-ovqat narxlari",
+    "ex": "Food prices rose sharply in 2022."
+   },
+   {
+    "w": "subsistence farming",
+    "syn": "farming for own needs",
+    "uz": "o'z ehtiyoji uchun dehqonchilik",
+    "ex": "Many rural families rely on subsistence farming."
+   },
+   {
+    "w": "sustainable agriculture",
+    "syn": "eco-friendly farming",
+    "uz": "barqaror qishloq xo'jaligi",
+    "ex": "Sustainable agriculture protects the soil."
+   }
+  ]
+ }
+}
