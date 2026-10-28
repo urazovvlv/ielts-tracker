@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Noun clauses",
+  "items": [
+   {
+    "s": "that-clause as object",
+    "uz": "fe'ldan keyin to'liq fikr",
+    "ex": "Many people believe that exams are unfair.",
+    "use": "Task 2"
+   },
+   {
+    "s": "It is + adj + that …",
+    "uz": "rasmiy baho",
+    "ex": "It is clear that action is needed.",
+    "use": "Akademik uslub"
+   },
+   {
+    "s": "The fact that …",
+    "uz": "… ekanligi",
+    "ex": "The fact that prices rose surprised no one.",
+    "use": "Band 7 ega"
+   },
+   {
+    "s": "what-clause as subject",
+    "uz": "… qilgan narsa",
+    "ex": "What surprised me was the cost.",
+    "use": "Cleft bilan bog'liq"
+   },
+   {
+    "s": "whether / if-clause",
+    "uz": "…mi yoki yo'qmi",
+    "ex": "It is unclear whether the plan will work.",
+    "use": "Ehtiyotkor fikr"
+   },
+   {
+    "s": "wh-clause as object",
+    "uz": "nima/qanday … ekanligi",
+    "ex": "I don't know why he left.",
+    "use": "Speaking"
+   },
+   {
+    "s": "How + adj + clause",
+    "uz": "qanchalik … ekanligi",
+    "ex": "It shows how important sleep is.",
+    "use": "Task 2"
+   },
+   {
+    "s": "❌ I don't know what is his name → ✅ what his name is",
+    "uz": "noun clause'da oddiy tartib",
+    "ex": "Nobody knows where the money went.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Quantity: a lot and a little",
+  "items": [
+   {
+    "t": "a handful of",
+    "uz": "bir hovuch, bir nechta",
+    "ex": "Only a handful of students passed.",
+    "use": "Kamlik"
+   },
+   {
+    "t": "by the dozen",
+    "uz": "o'nlab, ko'p",
+    "ex": "Tourists arrive by the dozen.",
+    "use": "Kattalik"
+   },
+   {
+    "t": "more than enough",
+    "uz": "yetarlidan ham ko'p",
+    "ex": "We had more than enough food.",
+    "use": "Ortiqcha"
+   },
+   {
+    "t": "few and far between",
+    "uz": "juda kam uchraydi",
+    "ex": "Good jobs are few and far between.",
+    "use": "Part 3"
+   },
+   {
+    "t": "a fair amount of",
+    "uz": "ancha-muncha",
+    "ex": "I spend a fair amount of time reading.",
+    "use": "Speaking"
+   },
+   {
+    "t": "tons of",
+    "uz": "juda ko'p (norasmiy)",
+    "ex": "I've got tons of homework.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "next to nothing",
+    "uz": "deyarli tekin, juda oz",
+    "ex": "I bought it for next to nothing.",
+    "use": "Narx"
+   },
+   {
+    "t": "the bare minimum",
+    "uz": "eng kam talab",
+    "ex": "He does the bare minimum at work.",
+    "use": "Tanqid"
+   },
+   {
+    "t": "in abundance",
+    "uz": "mo'l-ko'l",
+    "ex": "Fruit is available in abundance in summer.",
+    "use": "Rasmiy"
+   },
+   {
+    "t": "a stack of",
+    "uz": "bir dasta, ko'p",
+    "ex": "I have a stack of books to read.",
+    "use": "Norasmiy"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "intelligence",
+    "pos": "noun",
+    "syn": "intellect, cleverness; information",
+    "uz": "aql, intellekt; razvedka",
+    "ex": "Intelligence is partly inherited."
+   },
+   {
+    "w": "interval",
+    "pos": "noun",
+    "syn": "gap, break, period",
+    "uz": "oraliq, interval",
+    "ex": "Buses run at ten-minute intervals."
+   },
+   {
+    "w": "lecture",
+    "pos": "noun/verb",
+    "syn": "talk, speech; teach",
+    "uz": "ma'ruza",
+    "ex": "Attendance at lectures is compulsory."
+   },
+   {
+    "w": "migrate",
+    "pos": "verb",
+    "syn": "move, relocate",
+    "uz": "ko'chmoq",
+    "ex": "Birds migrate south in winter."
+   },
+   {
+    "w": "minimum",
+    "pos": "noun/adj",
+    "syn": "lowest amount; smallest",
+    "uz": "minimum, eng kam",
+    "ex": "The minimum wage was raised."
+   },
+   {
+    "w": "ministry",
+    "pos": "noun",
+    "syn": "government department",
+    "uz": "vazirlik",
+    "ex": "The Ministry of Health issued a warning."
+   },
+   {
+    "w": "motive",
+    "pos": "noun",
+    "syn": "reason, motivation",
+    "uz": "sabab, niyat",
+    "ex": "Profit was the main motive."
+   },
+   {
+    "w": "neutral",
+    "pos": "adj",
+    "syn": "impartial, unbiased",
+    "uz": "betaraf, neytral",
+    "ex": "Journalists should stay neutral."
+   },
+   {
+    "w": "overseas",
+    "pos": "adj/adv",
+    "syn": "abroad, foreign",
+    "uz": "chet elda",
+    "ex": "Many graduates work overseas."
+   },
+   {
+    "w": "precede",
+    "pos": "verb",
+    "syn": "come before, go before",
+    "uz": "oldidan kelmoq",
+    "ex": "A short talk preceded the film."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Comparing past and present (Part 3)",
+  "items": [
+   {
+    "s": "Compared to my parents' generation, …",
+    "uz": "Ota-onam avlodiga nisbatan, …",
+    "ex": "Compared to my parents' generation, we travel more.",
+    "use": "Avlodlar"
+   },
+   {
+    "s": "Back in the day, … but now …",
+    "uz": "Ilgari … hozir esa …",
+    "ex": "Back in the day, people wrote letters, but now they text.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "It used to be the case that …",
+    "uz": "Ilgari shunday edi: …",
+    "ex": "It used to be the case that only men worked.",
+    "use": "Rasmiyroq"
+   },
+   {
+    "s": "These days, it's far more common to …",
+    "uz": "Hozir … ancha keng tarqalgan",
+    "ex": "These days, it's far more common to work remotely.",
+    "use": "Tendensiya"
+   },
+   {
+    "s": "One major difference is that …",
+    "uz": "Asosiy farqlardan biri …",
+    "ex": "One major difference is that kids have phones.",
+    "use": "Taqqoslash"
+   },
+   {
+    "s": "Things have moved on since then.",
+    "uz": "O'shandan beri ko'p narsa o'zgardi",
+    "ex": "Things have moved on since then.",
+    "use": "O'tish"
+   },
+   {
+    "s": "Life was simpler in some ways.",
+    "uz": "Ba'zi jihatlardan hayot soddaroq edi",
+    "ex": "Life was simpler in some ways, but harder in others.",
+    "use": "Muvozanat"
+   },
+   {
+    "s": "We take … for granted now.",
+    "uz": "Hozir … ni oddiy narsa deb bilamiz",
+    "ex": "We take the internet for granted now.",
+    "use": "Band 7"
+   },
+   {
+    "s": "Not everything has changed for the better.",
+    "uz": "Hamma narsa ham yaxshi tomonga o'zgarmagan",
+    "ex": "Not everything has changed for the better, though.",
+    "use": "Tanqidiy"
+   },
+   {
+    "s": "The pace of life is much faster.",
+    "uz": "Hayot sur'ati ancha tez",
+    "ex": "The pace of life is much faster than it was.",
+    "use": "Klassik"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Questions: rising and falling intonation",
+  "items": [
+   {
+    "w": "Yes/No questions ↗",
+    "ipa": "ovoz ko'tariladi",
+    "uz": "Are you a student? ↗",
+    "tip": "Savol ohangi"
+   },
+   {
+    "w": "Wh- questions ↘",
+    "ipa": "ovoz tushadi",
+    "uz": "Where do you live? ↘",
+    "tip": "Ohang"
+   },
+   {
+    "w": "Statements ↘",
+    "ipa": "tasdiq gapida ovoz tushadi",
+    "uz": "I live in Tashkent. ↘",
+    "tip": "Ishonchli ohang"
+   },
+   {
+    "w": "Lists: ↗ ↗ ↘",
+    "ipa": "ro'yxatda oxirgisi tushadi",
+    "uz": "I like tea ↗, coffee ↗ and juice ↘.",
+    "tip": "Speaking"
+   },
+   {
+    "w": "Question tags: checking ↗ / agreeing ↘",
+    "ipa": "ma'no farqi",
+    "uz": "It's cold, isn't it? ↘ (rozilik kutish)",
+    "tip": "Muloqot"
+   },
+   {
+    "w": "Surprise: Really? ↗",
+    "ipa": "hayrat",
+    "uz": "Really? ↗ I didn't know that.",
+    "tip": "Reaktsiya"
+   },
+   {
+    "w": "Unfinished thought ↗",
+    "ipa": "fikr davom etadi",
+    "uz": "If I had more time ↗, I'd travel ↘.",
+    "tip": "Murakkab gap"
+   },
+   {
+    "w": "Avoid flat monotone",
+    "ipa": "bir xil ohang",
+    "uz": "Monoton ovoz pronunciation ballini tushiradi",
+    "tip": "Band 7"
+   },
+   {
+    "w": "Emphasis with pitch",
+    "ipa": "muhim so'zda ovoz ko'tariladi",
+    "uz": "It was REALLY difficult.",
+    "tip": "Hissiyot"
+   },
+   {
+    "w": "Practise with shadowing",
+    "ipa": "takrorlab mashq",
+    "uz": "Podcastdan keyin takrorlang",
+    "tip": "Mashq usuli"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Linking sentences in Task 1",
+  "items": [
+   {
+    "w": "while / whereas",
+    "syn": "contrast in one sentence",
+    "uz": "bir gapda qarama-qarshilik",
+    "ex": "Car use rose, while bus use fell."
+   },
+   {
+    "w": "In contrast, …",
+    "syn": "On the other hand, …",
+    "uz": "aksincha (yangi gap)",
+    "ex": "In contrast, rural areas saw little change."
+   },
+   {
+    "w": "Similarly, / Likewise, …",
+    "syn": "In the same way",
+    "uz": "xuddi shunday",
+    "ex": "Likewise, exports to China grew."
+   },
+   {
+    "w": "…, which …",
+    "syn": "relative clause linking",
+    "uz": "…, bu esa …",
+    "ex": "Prices doubled, which reduced demand."
+   },
+   {
+    "w": "This was followed by …",
+    "syn": "Then",
+    "uz": "Undan keyin … bo'ldi",
+    "ex": "This was followed by a sharp drop."
+   },
+   {
+    "w": "At the same time, …",
+    "syn": "Meanwhile, …",
+    "uz": "Bir vaqtning o'zida",
+    "ex": "At the same time, gas use increased."
+   },
+   {
+    "w": "…, with … -ing",
+    "syn": "with + participle",
+    "uz": "…, … bilan birga",
+    "ex": "Sales rose, with online sales leading the growth."
+   },
+   {
+    "w": "…, followed by …",
+    "syn": "then came",
+    "uz": "…, keyin …",
+    "ex": "China was first, followed by India."
+   },
+   {
+    "w": "Not every sentence needs a linker",
+    "syn": "natural flow",
+    "uz": "har gapga bog'lovchi shart emas",
+    "ex": "Overuse lowers CC score."
+   },
+   {
+    "w": "Avoid 'Firstly, Secondly' in Task 1",
+    "syn": "use data order",
+    "uz": "Task 1 da ro'yxat so'zlari kerak emas",
+    "ex": "Group by trend instead."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Museums, history and heritage",
+  "items": [
+   {
+    "w": "preserve the past",
+    "syn": "protect history",
+    "uz": "o'tmishni asrab-avaylamoq",
+    "ex": "Museums preserve the past for future generations."
+   },
+   {
+    "w": "historical monuments",
+    "syn": "ancient buildings",
+    "uz": "tarixiy obidalar",
+    "ex": "Samarkand's monuments attract tourists."
+   },
+   {
+    "w": "restoration",
+    "syn": "repair of old buildings",
+    "uz": "restavratsiya",
+    "ex": "Restoration of the madrasah took years."
+   },
+   {
+    "w": "national identity",
+    "syn": "sense of nationhood",
+    "uz": "milliy o'zlik",
+    "ex": "History shapes national identity."
+   },
+   {
+    "w": "learn from past mistakes",
+    "syn": "avoid repeating history",
+    "uz": "o'tmish xatolaridan o'rganmoq",
+    "ex": "Studying history helps us learn from past mistakes."
+   },
+   {
+    "w": "free admission",
+    "syn": "no entry fee",
+    "uz": "bepul kirish",
+    "ex": "Museums should offer free admission."
+   },
+   {
+    "w": "interactive exhibits",
+    "syn": "hands-on displays",
+    "uz": "interaktiv eksponatlar",
+    "ex": "Interactive exhibits attract children."
+   },
+   {
+    "w": "virtual tours",
+    "syn": "online visits",
+    "uz": "virtual sayohatlar",
+    "ex": "Virtual tours make museums accessible."
+   },
+   {
+    "w": "outdated",
+    "syn": "old-fashioned",
+    "uz": "eskirgan",
+    "ex": "Some see museums as outdated."
+   },
+   {
+    "w": "urban development vs heritage",
+    "syn": "modern building vs old sites",
+    "uz": "shahar qurilishi va meros",
+    "ex": "Urban development threatens heritage sites."
+   }
+  ]
+ }
+}

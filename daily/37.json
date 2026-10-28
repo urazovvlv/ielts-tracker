@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Collocations with make / do / take / have",
+  "items": [
+   {
+    "s": "make a decision / a mistake / progress",
+    "uz": "make: yaratish, natija",
+    "ex": "I've made a lot of progress.",
+    "use": "❌ do a mistake"
+   },
+   {
+    "s": "do homework / research / exercise",
+    "uz": "do: faoliyat, ish",
+    "ex": "Scientists did research on sleep.",
+    "use": "❌ make research"
+   },
+   {
+    "s": "take an exam / a break / responsibility",
+    "uz": "take: olmoq",
+    "ex": "I'm taking the exam in December.",
+    "use": "❌ pass an exam (= muvaffaqiyatli topshirish)"
+   },
+   {
+    "s": "have a look / a chance / an impact",
+    "uz": "have: ega bo'lmoq",
+    "ex": "Technology has a huge impact on us.",
+    "use": "Task 2"
+   },
+   {
+    "s": "make an effort / money / a difference",
+    "uz": "make",
+    "ex": "Small changes can make a difference.",
+    "use": "Task 2"
+   },
+   {
+    "s": "do damage / harm / good",
+    "uz": "do",
+    "ex": "Fast food does more harm than good.",
+    "use": "Task 2"
+   },
+   {
+    "s": "take action / measures / steps",
+    "uz": "take",
+    "ex": "Governments must take action.",
+    "use": "Task 2 yechim"
+   },
+   {
+    "s": "pay attention / a visit / a compliment",
+    "uz": "pay",
+    "ex": "Students should pay attention in class.",
+    "use": "❌ give attention"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Happiness and contentment",
+  "items": [
+   {
+    "t": "happy-go-lucky",
+    "uz": "beg'am, quvnoq",
+    "ex": "My uncle is a happy-go-lucky person.",
+    "use": "Xarakter"
+   },
+   {
+    "t": "in seventh heaven",
+    "uz": "yettinchi osmonda",
+    "ex": "I was in seventh heaven after the result.",
+    "use": "Kuchli quvonch"
+   },
+   {
+    "t": "tickled pink",
+    "uz": "juda mamnun",
+    "ex": "Grandma was tickled pink with the flowers.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "grin from ear to ear",
+    "uz": "qulog'igacha jilmaymoq",
+    "ex": "He was grinning from ear to ear.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "look on the bright side",
+    "uz": "ijobiy tomonini ko'rmoq",
+    "ex": "Look on the bright side — you have more time.",
+    "use": "Optimizm"
+   },
+   {
+    "t": "count your blessings",
+    "uz": "bor narsaga shukr qilmoq",
+    "ex": "We should count our blessings.",
+    "use": "Falsafiy"
+   },
+   {
+    "t": "make someone's day",
+    "uz": "kimnidir xursand qilmoq",
+    "ex": "Your message made my day.",
+    "use": "Minnatdorlik"
+   },
+   {
+    "t": "full of the joys of spring",
+    "uz": "juda quvnoq",
+    "ex": "She came in full of the joys of spring.",
+    "use": "Britaniya"
+   },
+   {
+    "t": "as happy as a clam",
+    "uz": "juda baxtli",
+    "ex": "He's as happy as a clam in his new job.",
+    "use": "Norasmiy"
+   },
+   {
+    "t": "peace of mind",
+    "uz": "xotirjamlik",
+    "ex": "Insurance gives you peace of mind.",
+    "use": "Part 3"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "contrary",
+    "pos": "adj/noun",
+    "syn": "opposite, conflicting",
+    "uz": "teskari, zid",
+    "ex": "Contrary to popular belief, bats are not blind."
+   },
+   {
+    "w": "convert",
+    "pos": "verb",
+    "syn": "change, transform",
+    "uz": "aylantirmoq",
+    "ex": "The factory was converted into flats."
+   },
+   {
+    "w": "decade",
+    "pos": "noun",
+    "syn": "ten years",
+    "uz": "o'n yillik",
+    "ex": "Prices doubled over the decade."
+   },
+   {
+    "w": "definite",
+    "pos": "adj",
+    "syn": "certain, clear, fixed",
+    "uz": "aniq, qat'iy",
+    "ex": "There is a definite link between diet and health."
+   },
+   {
+    "w": "deny",
+    "pos": "verb",
+    "syn": "reject, refuse, contradict",
+    "uz": "inkor etmoq",
+    "ex": "The minister denied the claims."
+   },
+   {
+    "w": "differentiate",
+    "pos": "verb",
+    "syn": "distinguish, tell apart",
+    "uz": "farqlamoq",
+    "ex": "Children learn to differentiate colours early."
+   },
+   {
+    "w": "dispose of",
+    "pos": "verb",
+    "syn": "get rid of, throw away",
+    "uz": "yo'q qilmoq, tashlab yubormoq",
+    "ex": "Waste must be disposed of safely."
+   },
+   {
+    "w": "dynamic",
+    "pos": "adj",
+    "syn": "energetic, active, changing",
+    "uz": "dinamik, faol",
+    "ex": "Tashkent is a dynamic city."
+   },
+   {
+    "w": "eliminate",
+    "pos": "verb",
+    "syn": "remove, get rid of",
+    "uz": "bartaraf etmoq",
+    "ex": "The aim is to eliminate poverty."
+   },
+   {
+    "w": "empirical",
+    "pos": "adj",
+    "syn": "experimental, practical",
+    "uz": "empirik, tajribaga asoslangan",
+    "ex": "There is little empirical evidence."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Describing an experience (Part 2)",
+  "items": [
+   {
+    "s": "It all started when …",
+    "uz": "Hammasi … bilan boshlandi",
+    "ex": "It all started when my friend called me.",
+    "use": "Boshlanish"
+   },
+   {
+    "s": "To set the scene, …",
+    "uz": "Vaziyatni tasvirlasam, …",
+    "ex": "To set the scene, it was a cold winter morning.",
+    "use": "Fon"
+   },
+   {
+    "s": "Little did I know that …",
+    "uz": "… ekanligini bilmasdim",
+    "ex": "Little did I know that it would change my life.",
+    "use": "Inversiya — band 8"
+   },
+   {
+    "s": "As it turned out, …",
+    "uz": "Ma'lum bo'lishicha, …",
+    "ex": "As it turned out, the museum was closed.",
+    "use": "Kutilmagan"
+   },
+   {
+    "s": "Things took an unexpected turn when …",
+    "uz": "… da ishlar kutilmaganda o'zgardi",
+    "ex": "Things took an unexpected turn when it rained.",
+    "use": "Burilish"
+   },
+   {
+    "s": "I'll never forget how …",
+    "uz": "… ni hech unutmayman",
+    "ex": "I'll never forget how kind they were.",
+    "use": "Hissiy"
+   },
+   {
+    "s": "In the end, …",
+    "uz": "Oxirida, …",
+    "ex": "In the end, we had a great time.",
+    "use": "Yakun"
+   },
+   {
+    "s": "It was one of those moments when …",
+    "uz": "Bu … bo'lgan lahzalardan biri edi",
+    "ex": "It was one of those moments when you feel proud.",
+    "use": "Band 7"
+   },
+   {
+    "s": "If I could do it again, I'd …",
+    "uz": "Qayta qila olsam, … qilardim",
+    "ex": "If I could do it again, I'd stay longer.",
+    "use": "Refleksiya"
+   },
+   {
+    "s": "It taught me a valuable lesson about …",
+    "uz": "Bu menga … haqida qimmatli saboq berdi",
+    "ex": "It taught me a valuable lesson about patience.",
+    "use": "Xulosa"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Country and nationality words",
+  "items": [
+   {
+    "w": "Japan – Japanese",
+    "ipa": "/dʒəˈpæn/ – /ˌdʒæpəˈniːz/",
+    "uz": "urg'u ko'chadi",
+    "tip": "jə-PAN / ja-pə-NEEZ"
+   },
+   {
+    "w": "China – Chinese",
+    "ipa": "/ˈtʃaɪnə/ – /ˌtʃaɪˈniːz/",
+    "uz": "-ese urg'uli",
+    "tip": "CHAI-nə / chai-NEEZ"
+   },
+   {
+    "w": "Italy – Italian",
+    "ipa": "/ˈɪtəli/ – /ɪˈtæliən/",
+    "uz": "urg'u ko'chadi",
+    "tip": "IT-ə-li / i-TAL-i-ən"
+   },
+   {
+    "w": "Canada – Canadian",
+    "ipa": "/ˈkænədə/ – /kəˈneɪdiən/",
+    "uz": "urg'u ko'chadi",
+    "tip": "KAN-ə-də / kə-NEI-di-ən"
+   },
+   {
+    "w": "Egypt – Egyptian",
+    "ipa": "/ˈiːdʒɪpt/ – /iˈdʒɪpʃn/",
+    "uz": "urg'u ko'chadi",
+    "tip": "EE-jipt / i-JIP-shn"
+   },
+   {
+    "w": "Germany",
+    "ipa": "/ˈdʒɜːməni/",
+    "uz": "'Germaniya' emas, JER-mə-ni",
+    "tip": "Task 1"
+   },
+   {
+    "w": "Australia",
+    "ipa": "/ɒˈstreɪliə/",
+    "uz": "o-STREI-li-ə",
+    "tip": "Task 1"
+   },
+   {
+    "w": "Brazil",
+    "ipa": "/brəˈzɪl/",
+    "uz": "urg'u 2-bo'g'inda",
+    "tip": "brə-ZIL"
+   },
+   {
+    "w": "Uzbekistan",
+    "ipa": "/ʊzˌbekɪˈstɑːn/",
+    "uz": "inglizcha urg'u",
+    "tip": "uz-be-ki-STAHN"
+   },
+   {
+    "w": "Asia – Asian",
+    "ipa": "/ˈeɪʒə/ – /ˈeɪʒn/",
+    "uz": "'Aziya' emas, EI-zhə",
+    "tip": "EI-zhə / EI-zhn"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Comparing countries in Task 1",
+  "items": [
+   {
+    "w": "of the five countries",
+    "syn": "among the nations shown",
+    "uz": "beshta davlat ichida",
+    "ex": "Of the five countries, Japan had the oldest population."
+   },
+   {
+    "w": "the USA led the way",
+    "syn": "was first",
+    "uz": "AQSh yetakchi edi",
+    "ex": "The USA led the way in car ownership."
+   },
+   {
+    "w": "lagged behind",
+    "syn": "was behind",
+    "uz": "ortda qoldi",
+    "ex": "India lagged behind in internet access."
+   },
+   {
+    "w": "closely followed by",
+    "syn": "with … just behind",
+    "uz": "… dan sal ortda",
+    "ex": "Germany was closely followed by France."
+   },
+   {
+    "w": "a similar figure",
+    "syn": "comparable",
+    "uz": "o'xshash ko'rsatkich",
+    "ex": "Spain recorded a similar figure."
+   },
+   {
+    "w": "European countries",
+    "syn": "nations in Europe",
+    "uz": "Yevropa davlatlari",
+    "ex": "European countries spent more on health."
+   },
+   {
+    "w": "in all countries except",
+    "syn": "apart from",
+    "uz": "… dan boshqa barcha davlatlarda",
+    "ex": "Rates rose in all countries except Italy."
+   },
+   {
+    "w": "the gap between X and Y",
+    "syn": "difference",
+    "uz": "X va Y orasidagi farq",
+    "ex": "The gap between Canada and Mexico widened."
+   },
+   {
+    "w": "the two Asian countries",
+    "syn": "group by region",
+    "uz": "ikki Osiyo davlati",
+    "ex": "The two Asian countries showed rapid growth."
+   },
+   {
+    "w": "ranked from highest to lowest",
+    "syn": "in order",
+    "uz": "eng yuqoridan pastga",
+    "ex": "Countries are ranked from highest to lowest."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Waste, plastic and recycling",
+  "items": [
+   {
+    "w": "landfill sites",
+    "syn": "rubbish dumps",
+    "uz": "chiqindixonalar",
+    "ex": "Landfill sites are running out of space."
+   },
+   {
+    "w": "recycling facilities",
+    "syn": "recycling centres",
+    "uz": "qayta ishlash inshootlari",
+    "ex": "Many towns lack recycling facilities."
+   },
+   {
+    "w": "plastic packaging",
+    "syn": "plastic wrapping",
+    "uz": "plastik qadoq",
+    "ex": "Supermarkets use too much plastic packaging."
+   },
+   {
+    "w": "a deposit scheme",
+    "syn": "bottle return system",
+    "uz": "depozit tizimi",
+    "ex": "A deposit scheme encourages recycling."
+   },
+   {
+    "w": "biodegradable",
+    "syn": "breaks down naturally",
+    "uz": "tabiiy parchalanadigan",
+    "ex": "Biodegradable bags are better for the planet."
+   },
+   {
+    "w": "marine pollution",
+    "syn": "ocean pollution",
+    "uz": "dengiz ifloslanishi",
+    "ex": "Plastic causes marine pollution."
+   },
+   {
+    "w": "reduce, reuse, recycle",
+    "syn": "3R",
+    "uz": "kamaytir, qayta ishlat, qayta ishla",
+    "ex": "Schools teach reduce, reuse, recycle."
+   },
+   {
+    "w": "a circular economy",
+    "syn": "no-waste economy",
+    "uz": "aylanma iqtisodiyot",
+    "ex": "A circular economy minimises waste."
+   },
+   {
+    "w": "impose a levy on",
+    "syn": "tax",
+    "uz": "… ga yig'im joriy qilmoq",
+    "ex": "The government imposed a levy on plastic bags."
+   },
+   {
+    "w": "consumer habits",
+    "syn": "buying behaviour",
+    "uz": "iste'molchi odatlari",
+    "ex": "Changing consumer habits takes time."
+   }
+  ]
+ }
+}

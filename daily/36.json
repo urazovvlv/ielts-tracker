@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Word formation: suffixes",
+  "items": [
+   {
+    "s": "-tion / -ment / -ness / -ity → nouns",
+    "uz": "ot yasovchi qo'shimchalar",
+    "ex": "develop → development, aware → awareness",
+    "use": "Nominalisation"
+   },
+   {
+    "s": "-al / -ive / -ous / -ful / -less → adjectives",
+    "uz": "sifat yasovchi",
+    "ex": "effect → effective, danger → dangerous",
+    "use": "LR xilma-xillik"
+   },
+   {
+    "s": "-ise / -ify / -en → verbs",
+    "uz": "fe'l yasovchi",
+    "ex": "modern → modernise, wide → widen",
+    "use": "Task 2"
+   },
+   {
+    "s": "-ly → adverbs",
+    "uz": "ravish yasovchi",
+    "ex": "significant → significantly",
+    "use": "Task 1"
+   },
+   {
+    "s": "Word family: economy, economic, economical, economist",
+    "uz": "so'z oilasi",
+    "ex": "The economic situation is poor.",
+    "use": "Tipik chalkashlik"
+   },
+   {
+    "s": "economic vs economical",
+    "uz": "iqtisodiy vs tejamkor",
+    "ex": "This car is very economical.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "-er / -or / -ist → people",
+    "uz": "shaxs bildiruvchi",
+    "ex": "employ → employer/employee",
+    "use": "employer vs employee"
+   },
+   {
+    "s": "❌ The develop of cities → ✅ The development of cities",
+    "uz": "ot kerak joyda ot shakli",
+    "ex": "The growth of cities is rapid.",
+    "use": "Tipik xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Quality and standards",
+  "items": [
+   {
+    "t": "second to none",
+    "uz": "tengi yo'q",
+    "ex": "The service there is second to none.",
+    "use": "Maqtov"
+   },
+   {
+    "t": "up to scratch",
+    "uz": "talabga javob beradigan",
+    "ex": "My essay isn't up to scratch yet.",
+    "use": "O'z-o'zini baholash"
+   },
+   {
+    "t": "a cut above",
+    "uz": "boshqalardan ancha yaxshi",
+    "ex": "This restaurant is a cut above the rest.",
+    "use": "Taqqoslash"
+   },
+   {
+    "t": "run-of-the-mill",
+    "uz": "oddiy, o'rtacha",
+    "ex": "It was just a run-of-the-mill hotel.",
+    "use": "Tasvir"
+   },
+   {
+    "t": "the real deal",
+    "uz": "haqiqiy, asl",
+    "ex": "This plov is the real deal.",
+    "use": "Maqtov"
+   },
+   {
+    "t": "not up to par",
+    "uz": "kutilgan darajada emas",
+    "ex": "My Speaking was not up to par today.",
+    "use": "Baholash"
+   },
+   {
+    "t": "top-notch",
+    "uz": "eng yuqori sifatli",
+    "ex": "The university has top-notch facilities.",
+    "use": "Maqtov"
+   },
+   {
+    "t": "leave a lot to be desired",
+    "uz": "ancha kamchiligi bor",
+    "ex": "The bus service leaves a lot to be desired.",
+    "use": "Tanqid"
+   },
+   {
+    "t": "raise the bar",
+    "uz": "standartni ko'tarmoq",
+    "ex": "The new teacher raised the bar for everyone.",
+    "use": "Ish"
+   },
+   {
+    "t": "cut-price",
+    "uz": "arzonlashtirilgan",
+    "ex": "We stayed in a cut-price hotel.",
+    "use": "Narx"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "utilise",
+    "pos": "verb",
+    "syn": "use, employ",
+    "uz": "foydalanmoq",
+    "ex": "Resources should be utilised efficiently."
+   },
+   {
+    "w": "adapt",
+    "pos": "verb",
+    "syn": "adjust, modify",
+    "uz": "moslashmoq",
+    "ex": "Animals adapt to their environment."
+   },
+   {
+    "w": "advocate",
+    "pos": "verb/noun",
+    "syn": "support, recommend; supporter",
+    "uz": "himoya qilmoq; tarafdor",
+    "ex": "Doctors advocate regular exercise."
+   },
+   {
+    "w": "aid",
+    "pos": "noun/verb",
+    "syn": "help, assistance",
+    "uz": "yordam",
+    "ex": "Foreign aid was sent after the earthquake."
+   },
+   {
+    "w": "channel",
+    "pos": "noun/verb",
+    "syn": "route, means; direct",
+    "uz": "kanal; yo'naltirmoq",
+    "ex": "Money was channelled into education."
+   },
+   {
+    "w": "chemical",
+    "pos": "noun/adj",
+    "syn": "substance; chemistry-related",
+    "uz": "kimyoviy modda",
+    "ex": "Farmers use fewer chemicals now."
+   },
+   {
+    "w": "classic",
+    "pos": "adj/noun",
+    "syn": "typical, traditional; masterpiece",
+    "uz": "klassik, tipik",
+    "ex": "This is a classic example of poor planning."
+   },
+   {
+    "w": "comprehensive",
+    "pos": "adj",
+    "syn": "complete, thorough, full",
+    "uz": "keng qamrovli",
+    "ex": "The report is comprehensive."
+   },
+   {
+    "w": "comprise",
+    "pos": "verb",
+    "syn": "consist of, include, make up",
+    "uz": "…dan iborat bo'lmoq",
+    "ex": "The course comprises ten units."
+   },
+   {
+    "w": "confirm",
+    "pos": "verb",
+    "syn": "verify, prove, establish",
+    "uz": "tasdiqlamoq",
+    "ex": "The test confirmed the diagnosis."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Ending your answers naturally",
+  "items": [
+   {
+    "s": "…, so yeah, that's about it.",
+    "uz": "…, mana shu",
+    "ex": "I love it, so yeah, that's about it.",
+    "use": "Norasmiy Part 1"
+   },
+   {
+    "s": "…, and that's why I …",
+    "uz": "…, shuning uchun men …",
+    "ex": "…, and that's why I chose it.",
+    "use": "Yakun"
+   },
+   {
+    "s": "That's pretty much it.",
+    "uz": "Asosan shu",
+    "ex": "That's pretty much it, really.",
+    "use": "Part 2 oxiri"
+   },
+   {
+    "s": "Overall, I'd say …",
+    "uz": "Umuman olganda, …",
+    "ex": "Overall, I'd say it was worth it.",
+    "use": "Xulosa"
+   },
+   {
+    "s": "So, all things considered, …",
+    "uz": "Hammasini hisobga olsak, …",
+    "ex": "So, all things considered, I'd go again.",
+    "use": "Band 7"
+   },
+   {
+    "s": "At the end of the day, …",
+    "uz": "Oxir-oqibat, …",
+    "ex": "At the end of the day, health matters most.",
+    "use": "Idiomatik"
+   },
+   {
+    "s": "Anyway, that's my take on it.",
+    "uz": "Xullas, mening fikrim shu",
+    "ex": "Anyway, that's my take on it.",
+    "use": "Part 3"
+   },
+   {
+    "s": "…, if you see what I mean.",
+    "uz": "…, nima demoqchiligimni tushunsangiz",
+    "ex": "It's useful, if you see what I mean.",
+    "use": "Tabiiy"
+   },
+   {
+    "s": "I hope that answers your question.",
+    "uz": "Bunday demang — sun'iy eshitiladi",
+    "ex": "Instead say: So that's my view on it.",
+    "use": "Ishlatmaslik kerak"
+   },
+   {
+    "s": "Don't say 'That's all.'",
+    "uz": "too abrupt",
+    "ex": "'That's all' juda keskin",
+    "use": "Yaxshiroq: That's about it."
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Linking with /r/ (British English)",
+  "items": [
+   {
+    "w": "far away",
+    "ipa": "/fɑːr‿əˈweɪ/",
+    "uz": "r faqat keyin unli kelsa o'qiladi",
+    "tip": "FAR-ə-WEI"
+   },
+   {
+    "w": "car",
+    "ipa": "/kɑː/",
+    "uz": "yolg'iz so'zda r o'qilmaydi",
+    "tip": "KAH"
+   },
+   {
+    "w": "car engine",
+    "ipa": "/kɑːr‿ˈendʒɪn/",
+    "uz": "unli oldidan r qaytadi",
+    "tip": "KAH-ren-jin"
+   },
+   {
+    "w": "better",
+    "ipa": "/ˈbetə/",
+    "uz": "oxiri ə, r yo'q",
+    "tip": "BE-tə"
+   },
+   {
+    "w": "better off",
+    "ipa": "/ˈbetər‿ɒf/",
+    "uz": "unli oldidan r",
+    "tip": "BE-tə-rof"
+   },
+   {
+    "w": "four",
+    "ipa": "/fɔː/",
+    "uz": "r yo'q",
+    "tip": "FOR (r siz)"
+   },
+   {
+    "w": "four o'clock",
+    "ipa": "/fɔːr‿əˈklɒk/",
+    "uz": "r qaytadi",
+    "tip": "FOR-rə-KLOK"
+   },
+   {
+    "w": "here and there",
+    "ipa": "/hɪər‿ən ðeə/",
+    "uz": "linking r",
+    "tip": "HIƏ-rən-ÐEƏ"
+   },
+   {
+    "w": "water",
+    "ipa": "/ˈwɔːtə/",
+    "uz": "Britaniyada r yo'q",
+    "tip": "WOR-tə"
+   },
+   {
+    "w": "Either accent is fine",
+    "ipa": "British or American",
+    "uz": "Bir aksentda izchil bo'ling",
+    "tip": "Izchillik muhim"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing pie charts precisely",
+  "items": [
+   {
+    "w": "the pie chart is divided into",
+    "syn": "is split into",
+    "uz": "… bo'laklarga bo'lingan",
+    "ex": "The pie chart is divided into six categories."
+   },
+   {
+    "w": "the largest proportion",
+    "syn": "the biggest slice",
+    "uz": "eng katta ulush",
+    "ex": "The largest proportion went on rent."
+   },
+   {
+    "w": "a slice / segment / sector",
+    "syn": "part",
+    "uz": "bo'lak",
+    "ex": "The smallest segment represented 'other'."
+   },
+   {
+    "w": "accounted for just under a third",
+    "syn": "about 30%",
+    "uz": "uchdan birdan sal kam",
+    "ex": "Transport accounted for just under a third."
+   },
+   {
+    "w": "together made up",
+    "syn": "combined",
+    "uz": "birgalikda tashkil etdi",
+    "ex": "Food and rent together made up 60%."
+   },
+   {
+    "w": "was twice the size of",
+    "syn": "double",
+    "uz": "… dan ikki baravar katta",
+    "ex": "The rent segment was twice the size of food."
+   },
+   {
+    "w": "the proportions were reversed",
+    "syn": "swapped",
+    "uz": "ulushlar teskari bo'ldi",
+    "ex": "By 2020, the proportions were reversed."
+   },
+   {
+    "w": "an equal share",
+    "syn": "the same proportion",
+    "uz": "teng ulush",
+    "ex": "Gas and oil had an equal share."
+   },
+   {
+    "w": "the rest was divided among",
+    "syn": "remaining",
+    "uz": "qolgani … orasida bo'lindi",
+    "ex": "The rest was divided among three sources."
+   },
+   {
+    "w": "compare pies across years",
+    "syn": "two pies",
+    "uz": "yillar bo'yicha solishtiring",
+    "ex": "Compare each slice in 2000 and 2020."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Tradition vs modernity",
+  "items": [
+   {
+    "w": "traditional values",
+    "syn": "old customs",
+    "uz": "an'anaviy qadriyatlar",
+    "ex": "Traditional values are important in Uzbek families."
+   },
+   {
+    "w": "modernisation",
+    "syn": "becoming modern",
+    "uz": "modernizatsiya",
+    "ex": "Modernisation changed rural life."
+   },
+   {
+    "w": "outdated customs",
+    "syn": "old-fashioned practices",
+    "uz": "eskirgan urf-odatlar",
+    "ex": "Some outdated customs should be dropped."
+   },
+   {
+    "w": "Westernisation",
+    "syn": "adopting Western culture",
+    "uz": "g'arblashuv",
+    "ex": "Westernisation affects fashion and food."
+   },
+   {
+    "w": "keep traditions alive",
+    "syn": "maintain customs",
+    "uz": "an'analarni yashatmoq",
+    "ex": "Festivals keep traditions alive."
+   },
+   {
+    "w": "handicrafts",
+    "syn": "traditional crafts",
+    "uz": "hunarmandchilik",
+    "ex": "Tourism supports local handicrafts."
+   },
+   {
+    "w": "in harmony with",
+    "syn": "balanced with",
+    "uz": "… bilan uyg'un",
+    "ex": "Progress should be in harmony with tradition."
+   },
+   {
+    "w": "lose touch with your roots",
+    "syn": "forget your origins",
+    "uz": "ildizlardan uzilmoq",
+    "ex": "Young people may lose touch with their roots."
+   },
+   {
+    "w": "progressive",
+    "syn": "forward-thinking",
+    "uz": "ilg'or",
+    "ex": "Progressive laws protect women."
+   },
+   {
+    "w": "a blend of old and new",
+    "syn": "mix",
+    "uz": "eski va yangining uyg'unligi",
+    "ex": "Tashkent is a blend of old and new."
+   }
+  ]
+ }
+}

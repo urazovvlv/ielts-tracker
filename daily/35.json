@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Word formation: prefixes",
+  "items": [
+   {
+    "s": "un- / in- / im- / il- / ir-",
+    "uz": "inkor: unhappy, inefficient, impossible, illegal, irregular",
+    "ex": "Smoking in public is illegal.",
+    "use": "LR band 7"
+   },
+   {
+    "s": "dis- / mis-",
+    "uz": "dis = teskari, mis = noto'g'ri",
+    "ex": "People often misunderstand the rule.",
+    "use": "So'z boyligi"
+   },
+   {
+    "s": "over- / under-",
+    "uz": "haddan ortiq / yetarli emas",
+    "ex": "Doctors are overworked and underpaid.",
+    "use": "Task 2"
+   },
+   {
+    "s": "re-",
+    "uz": "qayta",
+    "ex": "Old buildings were redeveloped.",
+    "use": "Task 1 maps"
+   },
+   {
+    "s": "pre- / post-",
+    "uz": "oldin / keyin",
+    "ex": "post-war economy, pre-school children",
+    "use": "Akademik"
+   },
+   {
+    "s": "multi- / inter-",
+    "uz": "ko'p / o'zaro",
+    "ex": "multinational companies, international trade",
+    "use": "Task 2"
+   },
+   {
+    "s": "anti- / pro-",
+    "uz": "qarshi / tarafdor",
+    "ex": "anti-social behaviour",
+    "use": "Task 2: crime"
+   },
+   {
+    "s": "❌ unpossible, inlegal → ✅ impossible, illegal",
+    "uz": "m/p oldidan im-, l oldidan il-, r oldidan ir-",
+    "ex": "irresponsible, immature, illogical",
+    "use": "Imlo qoidasi"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Difficulty and ease",
+  "items": [
+   {
+    "t": "an uphill battle",
+    "uz": "juda qiyin kurash",
+    "ex": "Learning Chinese was an uphill battle.",
+    "use": "Qiyinchilik"
+   },
+   {
+    "t": "a walk in the park",
+    "uz": "juda oson",
+    "ex": "The Listening test was a walk in the park.",
+    "use": "Osonlik"
+   },
+   {
+    "t": "no picnic",
+    "uz": "oson emas",
+    "ex": "Working and studying is no picnic.",
+    "use": "Qiyinchilik"
+   },
+   {
+    "t": "plain sailing",
+    "uz": "muammosiz",
+    "ex": "After the first week, it was plain sailing.",
+    "use": "Jarayon"
+   },
+   {
+    "t": "a tough nut to crack",
+    "uz": "yechish qiyin muammo",
+    "ex": "Task 2 is a tough nut to crack.",
+    "use": "Muammo"
+   },
+   {
+    "t": "child's play",
+    "uz": "bolalar o'yini (oson)",
+    "ex": "For him, maths is child's play.",
+    "use": "Osonlik"
+   },
+   {
+    "t": "between a rock and a hard place",
+    "uz": "ikki o'tning orasida",
+    "ex": "I was between a rock and a hard place.",
+    "use": "Qaror"
+   },
+   {
+    "t": "easier said than done",
+    "uz": "aytish oson, qilish qiyin",
+    "ex": "Waking up at 6 is easier said than done.",
+    "use": "Realizm"
+   },
+   {
+    "t": "hit a brick wall",
+    "uz": "boshi berk ko'chaga kirib qolmoq",
+    "ex": "My Writing score has hit a brick wall.",
+    "use": "Progress"
+   },
+   {
+    "t": "take it in your stride",
+    "uz": "xotirjam qabul qilmoq",
+    "ex": "She took the bad news in her stride.",
+    "use": "Xarakter"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "presume",
+    "pos": "verb",
+    "syn": "assume, suppose",
+    "uz": "taxmin qilmoq",
+    "ex": "I presume the results are accurate."
+   },
+   {
+    "w": "rational",
+    "pos": "adj",
+    "syn": "logical, reasonable",
+    "uz": "oqilona, mantiqiy",
+    "ex": "We need a rational discussion."
+   },
+   {
+    "w": "recover",
+    "pos": "verb",
+    "syn": "get better, regain",
+    "uz": "tiklanmoq",
+    "ex": "The economy recovered quickly."
+   },
+   {
+    "w": "reveal",
+    "pos": "verb",
+    "syn": "show, disclose, uncover",
+    "uz": "ochib bermoq",
+    "ex": "The survey revealed high levels of stress."
+   },
+   {
+    "w": "scope",
+    "pos": "noun",
+    "syn": "range, extent; opportunity",
+    "uz": "ko'lam; imkoniyat",
+    "ex": "The scope of the study was limited."
+   },
+   {
+    "w": "subsidy",
+    "pos": "noun",
+    "syn": "grant, financial support",
+    "uz": "subsidiya",
+    "ex": "Farmers receive government subsidies."
+   },
+   {
+    "w": "trace",
+    "pos": "verb/noun",
+    "syn": "track, find; mark",
+    "uz": "izini topmoq; iz",
+    "ex": "The disease was traced to dirty water."
+   },
+   {
+    "w": "transform",
+    "pos": "verb",
+    "syn": "change completely, convert",
+    "uz": "tubdan o'zgartirmoq",
+    "ex": "The internet transformed shopping."
+   },
+   {
+    "w": "transport",
+    "pos": "noun/verb",
+    "syn": "transportation; carry",
+    "uz": "transport; tashimoq",
+    "ex": "Public transport is cheap in Tashkent."
+   },
+   {
+    "w": "underlie",
+    "pos": "verb",
+    "syn": "be the basis of, cause",
+    "uz": "asosida yotmoq",
+    "ex": "Poverty underlies many social problems."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Talking about the future of society (Part 3)",
+  "items": [
+   {
+    "s": "I can foresee a time when …",
+    "uz": "… vaqti kelishini oldindan ko'ryapman",
+    "ex": "I can foresee a time when cars drive themselves.",
+    "use": "Band 7+"
+   },
+   {
+    "s": "It's only a matter of time before …",
+    "uz": "… faqat vaqt masalasi",
+    "ex": "It's only a matter of time before cash disappears.",
+    "use": "Bashorat"
+   },
+   {
+    "s": "In years to come, …",
+    "uz": "Kelgusi yillarda, …",
+    "ex": "In years to come, robots will do most jobs.",
+    "use": "Kelajak"
+   },
+   {
+    "s": "If current trends continue, …",
+    "uz": "Hozirgi tendensiyalar davom etsa, …",
+    "ex": "If current trends continue, cities will double.",
+    "use": "Mantiqiy bashorat"
+   },
+   {
+    "s": "I doubt that … will ever …",
+    "uz": "… hech qachon … bo'lishiga shubha qilaman",
+    "ex": "I doubt that books will ever disappear.",
+    "use": "Shubha"
+   },
+   {
+    "s": "We're likely to see …",
+    "uz": "Ehtimol, … ni ko'ramiz",
+    "ex": "We're likely to see more online schools.",
+    "use": "Ehtimol"
+   },
+   {
+    "s": "Who knows what … will look like in …?",
+    "uz": "… yilda … qanday bo'lishini kim biladi?",
+    "ex": "Who knows what jobs will look like in 2050?",
+    "use": "Ritorik savol"
+   },
+   {
+    "s": "There's bound to be …",
+    "uz": "Albatta … bo'ladi",
+    "ex": "There's bound to be resistance at first.",
+    "use": "Ishonch"
+   },
+   {
+    "s": "The way things are going, …",
+    "uz": "Ishlarning ketishiga qaraganda, …",
+    "ex": "The way things are going, rent will keep rising.",
+    "use": "Norasmiy"
+   },
+   {
+    "s": "Hopefully, … will …",
+    "uz": "Umid qilamanki, …",
+    "ex": "Hopefully, education will become free.",
+    "use": "Umid"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Commonly confused word pairs",
+  "items": [
+   {
+    "w": "desert – dessert",
+    "ipa": "/ˈdezət/ – /dɪˈzɜːt/",
+    "uz": "cho'l – shirinlik; urg'u farqi",
+    "tip": "DEZ-ət / di-ZERT"
+   },
+   {
+    "w": "advice – advise",
+    "ipa": "/ədˈvaɪs/ – /ədˈvaɪz/",
+    "uz": "maslahat (ot) – maslahat bermoq",
+    "tip": "/s/ vs /z/"
+   },
+   {
+    "w": "loose – lose",
+    "ipa": "/luːs/ – /luːz/",
+    "uz": "bo'sh – yo'qotmoq",
+    "tip": "/s/ vs /z/"
+   },
+   {
+    "w": "cloth – clothes",
+    "ipa": "/klɒθ/ – /kləʊðz/",
+    "uz": "mato – kiyim; unli va oxiri farqli",
+    "tip": "KLOTH / KLƏUÐZ"
+   },
+   {
+    "w": "costume – custom",
+    "ipa": "/ˈkɒstjuːm/ – /ˈkʌstəm/",
+    "uz": "kostyum – urf-odat",
+    "tip": "Ma'no farqi"
+   },
+   {
+    "w": "receipt",
+    "ipa": "/rɪˈsiːt/",
+    "uz": "p o'qilmaydi",
+    "tip": "ri-SEET"
+   },
+   {
+    "w": "suite – sweet",
+    "ipa": "/swiːt/",
+    "uz": "bir xil o'qiladi",
+    "tip": "Homofon"
+   },
+   {
+    "w": "bear – beer",
+    "ipa": "/beə/ – /bɪə/",
+    "uz": "ayiq – pivo",
+    "tip": "/eə/ vs /ɪə/"
+   },
+   {
+    "w": "live (v) – live (adj)",
+    "ipa": "/lɪv/ – /laɪv/",
+    "uz": "yashamoq – jonli",
+    "tip": "live music /laɪv/"
+   },
+   {
+    "w": "affect – effect",
+    "ipa": "/əˈfekt/ – /ɪˈfekt/",
+    "uz": "ta'sir qilmoq (fe'l) – ta'sir (ot)",
+    "tip": "Writing'da ko'p adashtiriladi"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Bar charts over time",
+  "items": [
+   {
+    "w": "each year is shown as a bar",
+    "syn": "annual bars",
+    "uz": "har yil alohida ustun",
+    "ex": "Treat it like a line graph: look for trends."
+   },
+   {
+    "w": "grew year on year",
+    "syn": "increased every year",
+    "uz": "yildan-yilga o'sdi",
+    "ex": "Membership grew year on year."
+   },
+   {
+    "w": "apart from",
+    "syn": "except for",
+    "uz": "… dan tashqari",
+    "ex": "Apart from 2015, sales rose every year."
+   },
+   {
+    "w": "the tallest bar was in",
+    "syn": "peak year",
+    "uz": "eng baland ustun … yilda",
+    "ex": "The peak came in 2018."
+   },
+   {
+    "w": "a consistent pattern",
+    "syn": "regular trend",
+    "uz": "barqaror naqsh",
+    "ex": "A consistent pattern can be seen for all groups."
+   },
+   {
+    "w": "from one year to the next",
+    "syn": "annually",
+    "uz": "bir yildan keyingisiga",
+    "ex": "Figures varied from one year to the next."
+   },
+   {
+    "w": "an exception to this trend",
+    "syn": "unusual case",
+    "uz": "bu tendensiyadan istisno",
+    "ex": "The only exception to this trend was 2012."
+   },
+   {
+    "w": "the overall trend was upward",
+    "syn": "general rise",
+    "uz": "umumiy tendensiya o'sish edi",
+    "ex": "Despite dips, the overall trend was upward."
+   },
+   {
+    "w": "the two groups",
+    "syn": "both categories",
+    "uz": "ikkala guruh",
+    "ex": "The two groups followed opposite trends."
+   },
+   {
+    "w": "in every year shown",
+    "syn": "throughout",
+    "uz": "ko'rsatilgan har bir yilda",
+    "ex": "Men outnumbered women in every year shown."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "University education vs work experience",
+  "items": [
+   {
+    "w": "higher education",
+    "syn": "university study",
+    "uz": "oliy ta'lim",
+    "ex": "Higher education opens career doors."
+   },
+   {
+    "w": "practical experience",
+    "syn": "hands-on experience",
+    "uz": "amaliy tajriba",
+    "ex": "Employers value practical experience."
+   },
+   {
+    "w": "academic qualifications",
+    "syn": "degrees",
+    "uz": "akademik malaka",
+    "ex": "Academic qualifications are not enough alone."
+   },
+   {
+    "w": "internship",
+    "syn": "work placement",
+    "uz": "amaliyot",
+    "ex": "An internship helps graduates find jobs."
+   },
+   {
+    "w": "graduate unemployment",
+    "syn": "jobless graduates",
+    "uz": "bitiruvchilar ishsizligi",
+    "ex": "Graduate unemployment is rising."
+   },
+   {
+    "w": "student debt",
+    "syn": "loans for study",
+    "uz": "talaba qarzi",
+    "ex": "Student debt discourages poor students."
+   },
+   {
+    "w": "on-the-job training",
+    "syn": "learning at work",
+    "uz": "ish joyida o'qitish",
+    "ex": "Many skills are learned through on-the-job training."
+   },
+   {
+    "w": "a gap year",
+    "syn": "a year off",
+    "uz": "bir yillik tanaffus",
+    "ex": "A gap year can build independence."
+   },
+   {
+    "w": "theoretical knowledge",
+    "syn": "theory",
+    "uz": "nazariy bilim",
+    "ex": "Universities focus on theoretical knowledge."
+   },
+   {
+    "w": "career-oriented",
+    "syn": "job-focused",
+    "uz": "kasbga yo'naltirilgan",
+    "ex": "Vocational courses are more career-oriented."
+   }
+  ]
+ }
+}

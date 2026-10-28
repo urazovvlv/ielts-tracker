@@ -1,0 +1,454 @@
+{
+ "grammar": {
+  "theme": "Adverbs: position and degree",
+  "items": [
+   {
+    "s": "Manner adverbs after the object",
+    "uz": "qanday qilinganini bildiradi",
+    "ex": "She speaks English fluently.",
+    "use": "❌ She speaks fluently English"
+   },
+   {
+    "s": "Degree: extremely / fairly / quite / rather",
+    "uz": "darajani bildiradi",
+    "ex": "The test was fairly easy.",
+    "use": "Speaking nuanslari"
+   },
+   {
+    "s": "quite + gradable vs absolutely + extreme",
+    "uz": "quite good, absolutely amazing",
+    "ex": "The view was absolutely stunning.",
+    "use": "❌ very amazing"
+   },
+   {
+    "s": "Sentence adverbs: Clearly, Surprisingly, Interestingly",
+    "uz": "butun gapga baho",
+    "ex": "Interestingly, women spent more than men.",
+    "use": "Task 1/2 band 7"
+   },
+   {
+    "s": "Time adverbs at the end",
+    "uz": "yesterday, recently, lately",
+    "ex": "I've been busy lately.",
+    "use": "Joylashuv"
+   },
+   {
+    "s": "hard vs hardly",
+    "uz": "qattiq vs deyarli … emas",
+    "ex": "I work hard. I hardly sleep.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "late vs lately",
+    "uz": "kech vs so'nggi paytlarda",
+    "ex": "I arrived late. I haven't slept well lately.",
+    "use": "Ma'no farqi"
+   },
+   {
+    "s": "❌ I very like it → ✅ I really like it / I like it very much",
+    "uz": "very fe'l oldidan kelmaydi",
+    "ex": "I really enjoy cooking.",
+    "use": "O'zbekchadan ko'chirma xato"
+   }
+  ]
+ },
+ "idioms": {
+  "theme": "Beginnings and endings",
+  "items": [
+   {
+    "t": "get the ball rolling",
+    "uz": "ishni boshlab yubormoq",
+    "ex": "Let's get the ball rolling with the first task.",
+    "use": "Ish"
+   },
+   {
+    "t": "start from scratch",
+    "uz": "noldan boshlamoq",
+    "ex": "I lost my notes and had to start from scratch.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "off to a good start",
+    "uz": "yaxshi boshlanish",
+    "ex": "The challenge got off to a good start.",
+    "use": "IELTS"
+   },
+   {
+    "t": "the beginning of the end",
+    "uz": "oxirning boshlanishi",
+    "ex": "That mistake was the beginning of the end.",
+    "use": "Hikoya"
+   },
+   {
+    "t": "wrap up",
+    "uz": "yakunlamoq",
+    "ex": "Let's wrap up the meeting.",
+    "use": "Ish"
+   },
+   {
+    "t": "call it quits",
+    "uz": "tashlamoq, to'xtatmoq",
+    "ex": "After ten years, he called it quits.",
+    "use": "Qaror"
+   },
+   {
+    "t": "come full circle",
+    "uz": "boshlagan joyga qaytmoq",
+    "ex": "My career has come full circle.",
+    "use": "Part 2"
+   },
+   {
+    "t": "the end of an era",
+    "uz": "bir davrning tugashi",
+    "ex": "Closing the old cinema was the end of an era.",
+    "use": "O'zgarish"
+   },
+   {
+    "t": "all good things come to an end",
+    "uz": "har bir yaxshi narsaning oxiri bor",
+    "ex": "The holiday finished — all good things come to an end.",
+    "use": "Falsafiy"
+   },
+   {
+    "t": "from start to finish",
+    "uz": "boshidan oxirigacha",
+    "ex": "The film was exciting from start to finish.",
+    "use": "Baholash"
+   }
+  ]
+ },
+ "reading": {
+  "items": [
+   {
+    "w": "gender",
+    "pos": "noun",
+    "syn": "sex, male or female",
+    "uz": "jins (ijtimoiy)",
+    "ex": "Pay should not depend on gender."
+   },
+   {
+    "w": "ignorant",
+    "pos": "adj",
+    "syn": "uninformed, unaware",
+    "uz": "bexabar, johil",
+    "ex": "Many people are ignorant of the risks."
+   },
+   {
+    "w": "incentive",
+    "pos": "noun",
+    "syn": "motivation, reward",
+    "uz": "rag'bat",
+    "ex": "Tax cuts are an incentive to invest."
+   },
+   {
+    "w": "incidence",
+    "pos": "noun",
+    "syn": "rate, frequency, occurrence",
+    "uz": "uchrash darajasi",
+    "ex": "The incidence of diabetes is rising."
+   },
+   {
+    "w": "incorporate",
+    "pos": "verb",
+    "syn": "include, integrate",
+    "uz": "o'z ichiga olmoq",
+    "ex": "The course incorporates online tests."
+   },
+   {
+    "w": "index",
+    "pos": "noun",
+    "syn": "indicator, measure; list",
+    "uz": "indeks, ko'rsatkich",
+    "ex": "The price index rose by 3%."
+   },
+   {
+    "w": "inhibit",
+    "pos": "verb",
+    "syn": "prevent, restrict, slow",
+    "uz": "to'sqinlik qilmoq",
+    "ex": "Stress can inhibit learning."
+   },
+   {
+    "w": "initiate",
+    "pos": "verb",
+    "syn": "begin, start, launch",
+    "uz": "boshlamoq, tashabbus ko'rsatmoq",
+    "ex": "The government initiated a new programme."
+   },
+   {
+    "w": "input",
+    "pos": "noun",
+    "syn": "contribution, data put in",
+    "uz": "hissa; kiritilgan ma'lumot",
+    "ex": "We need input from teachers."
+   },
+   {
+    "w": "instruct",
+    "pos": "verb",
+    "syn": "order, direct; teach",
+    "uz": "ko'rsatma bermoq; o'qitmoq",
+    "ex": "Staff were instructed to leave."
+   }
+  ]
+ },
+ "speaking": {
+  "theme": "Part 3: the extended answer (PEEL)",
+  "items": [
+   {
+    "s": "Point: I think … mainly because …",
+    "uz": "Fikr: Menimcha … asosan … sababli",
+    "ex": "I think it's harmful, mainly because it's addictive.",
+    "use": "Javob boshi"
+   },
+   {
+    "s": "Explain: What I mean by that is …",
+    "uz": "Tushuntirish: Bu bilan … demoqchiman",
+    "ex": "What I mean by that is people can't stop scrolling.",
+    "use": "Rivojlantirish"
+   },
+   {
+    "s": "Example: Take my cousin, for instance.",
+    "uz": "Misol: Masalan, amakivachchamni oling",
+    "ex": "Take my cousin, for instance — he's online all day.",
+    "use": "Shaxsiy misol"
+   },
+   {
+    "s": "Link back: So that's why I believe …",
+    "uz": "Qaytish: Shuning uchun ishonamanki …",
+    "ex": "So that's why I believe limits are needed.",
+    "use": "Yakun"
+   },
+   {
+    "s": "Add the other side: Of course, some would argue …",
+    "uz": "Boshqa tomon: Albatta, ba'zilar … deyishi mumkin",
+    "ex": "Of course, some would argue it's useful for news.",
+    "use": "Band 7+ muvozanat"
+   },
+   {
+    "s": "Aim for 4–6 sentences",
+    "uz": "40–60 soniya",
+    "ex": "Part 3 javobi qisqa bo'lmasin",
+    "use": "Uzunlik"
+   },
+   {
+    "s": "Don't memorise answers",
+    "uz": "yodlangan javob sezildi",
+    "ex": "Examiner yodlangan javobni sezadi",
+    "use": "Tabiiylik"
+   },
+   {
+    "s": "Use general examples too",
+    "uz": "society, not only you",
+    "ex": "Part 3 — jamiyat haqida ham gapiring",
+    "use": "In many countries…"
+   },
+   {
+    "s": "Speculate about the future",
+    "uz": "kelajak haqida fikr",
+    "ex": "In the future, this will probably…",
+    "use": "Kenglik"
+   },
+   {
+    "s": "It's fine to pause briefly",
+    "uz": "qisqa to'xtash normal",
+    "ex": "Let me think… is natural",
+    "use": "Fluency"
+   }
+  ]
+ },
+ "pron": {
+  "theme": "Contractions in natural speech",
+  "items": [
+   {
+    "w": "I'm / you're / they're",
+    "ipa": "/aɪm/ /jɔː/ /ðeə/",
+    "uz": "Speaking'da qisqa shakl tabiiy",
+    "tip": "I AM emas, I'M"
+   },
+   {
+    "w": "I've / we've",
+    "ipa": "/aɪv/ /wiːv/",
+    "uz": "Present Perfect qisqa",
+    "tip": "I've been"
+   },
+   {
+    "w": "I'd",
+    "ipa": "/aɪd/",
+    "uz": "I would yoki I had",
+    "tip": "Kontekstdan aniqlanadi"
+   },
+   {
+    "w": "won't",
+    "ipa": "/wəʊnt/",
+    "uz": "will not; 'want' bilan adashtirmang",
+    "tip": "/wəʊnt/ vs /wɒnt/"
+   },
+   {
+    "w": "can't",
+    "ipa": "/kɑːnt/",
+    "uz": "Britaniyada cho'ziq /ɑː/",
+    "tip": "KAHNT"
+   },
+   {
+    "w": "shouldn't",
+    "ipa": "/ˈʃʊdnt/",
+    "uz": "SHUD-nt",
+    "tip": "Maslahat"
+   },
+   {
+    "w": "it's",
+    "ipa": "/ɪts/",
+    "uz": "it is / it has",
+    "tip": "Kontekst"
+   },
+   {
+    "w": "there's",
+    "ipa": "/ðeəz/",
+    "uz": "there is",
+    "tip": "Speaking"
+   },
+   {
+    "w": "let's",
+    "ipa": "/lets/",
+    "uz": "let us",
+    "tip": "Taklif"
+   },
+   {
+    "w": "Writing: no contractions",
+    "ipa": "do not, cannot",
+    "uz": "Writing'da to'liq shakl yozing",
+    "tip": "Rasmiy uslub"
+   }
+  ]
+ },
+ "task1": {
+  "theme": "Describing percentages naturally",
+  "items": [
+   {
+    "w": "a quarter of / 25%",
+    "syn": "one in four",
+    "uz": "to'rtdan bir",
+    "ex": "A quarter of households owned a car."
+   },
+   {
+    "w": "almost half",
+    "syn": "nearly 50%",
+    "uz": "deyarli yarmi",
+    "ex": "Almost half of respondents agreed."
+   },
+   {
+    "w": "three in ten",
+    "syn": "30%",
+    "uz": "o'ndan uch",
+    "ex": "Three in ten workers were part-time."
+   },
+   {
+    "w": "the vast majority",
+    "syn": "about 90%",
+    "uz": "mutlaq ko'pchilik",
+    "ex": "The vast majority preferred online banking."
+   },
+   {
+    "w": "a small minority",
+    "syn": "under 10%",
+    "uz": "kichik ozchilik",
+    "ex": "A small minority disagreed."
+   },
+   {
+    "w": "a significant proportion",
+    "syn": "a large share",
+    "uz": "katta qismi",
+    "ex": "A significant proportion lived alone."
+   },
+   {
+    "w": "percentage points",
+    "syn": "difference between %",
+    "uz": "foiz punkt",
+    "ex": "It rose from 20% to 25% — five percentage points."
+   },
+   {
+    "w": "doubled from 10% to 20%",
+    "syn": "twice as high",
+    "uz": "ikki baravar oshdi",
+    "ex": "The rate doubled from 10% to 20%."
+   },
+   {
+    "w": "per cent (after number) / percentage (noun)",
+    "syn": "usage",
+    "uz": "son bilan per cent, alohida percentage",
+    "ex": "❌ The per cent of → ✅ The percentage of"
+   },
+   {
+    "w": "vary the expressions",
+    "syn": "mix forms",
+    "uz": "har xil ifodalarni aralashtiring",
+    "ex": "Use fractions and percentages."
+   }
+  ]
+ },
+ "task2": {
+  "theme": "Space, science and research funding",
+  "items": [
+   {
+    "w": "pure research",
+    "syn": "basic science",
+    "uz": "fundamental tadqiqot",
+    "ex": "Pure research has long-term benefits."
+   },
+   {
+    "w": "applied research",
+    "syn": "practical science",
+    "uz": "amaliy tadqiqot",
+    "ex": "Applied research solves immediate problems."
+   },
+   {
+    "w": "scientific literacy",
+    "syn": "understanding science",
+    "uz": "ilmiy savodxonlik",
+    "ex": "Scientific literacy helps people judge claims."
+   },
+   {
+    "w": "research and development (R&D)",
+    "syn": "innovation spending",
+    "uz": "ilmiy-tadqiqot ishlari",
+    "ex": "R&D drives economic growth."
+   },
+   {
+    "w": "public funding vs private funding",
+    "syn": "state vs company money",
+    "uz": "davlat va xususiy moliya",
+    "ex": "Private funding can bias research."
+   },
+   {
+    "w": "technological advances",
+    "syn": "progress",
+    "uz": "texnologik yutuqlar",
+    "ex": "Technological advances improved medicine."
+   },
+   {
+    "w": "peer review",
+    "syn": "expert checking",
+    "uz": "ekspert tekshiruvi",
+    "ex": "Studies must pass peer review."
+   },
+   {
+    "w": "brain power",
+    "syn": "intellectual talent",
+    "uz": "intellektual salohiyat",
+    "ex": "Countries compete for brain power."
+   },
+   {
+    "w": "long-term investment",
+    "syn": "future benefit",
+    "uz": "uzoq muddatli sarmoya",
+    "ex": "Science is a long-term investment."
+   },
+   {
+    "w": "practical applications",
+    "syn": "real-world uses",
+    "uz": "amaliy qo'llanilishi",
+    "ex": "The discovery had many practical applications."
+   }
+  ]
+ }
+}
