@@ -150,6 +150,9 @@ function cleanSv(sv) {
   return out;
 }
 
+// Private: only these Telegram user IDs may sync or get reminders (wrangler.jsonc vars.ALLOWED_IDS, comma-separated).
+const allowedIds = (env) => String(env.ALLOWED_IDS || "5020539876").split(",").map((x) => x.trim()).filter(Boolean);
+
 async function readAllowed(req, env) {
   const given = req.headers.get("X-Key") || "";
   const token = String(env.BOT_TOKEN || "").trim();
@@ -321,6 +324,7 @@ async function runSlot(env, slot, opts = {}) {
     for (const k of page.keys) {
       const id = k.name.slice(2);
       if (opts.only && opts.only !== id) continue;
+      if (!allowedIds(env).includes(id)) continue;
       const doc = await env.FOCUS.get(k.name, "json");
       if (!doc) continue;
       const msg = await buildMessage(slot, doc, today);
@@ -357,6 +361,7 @@ export default {
       }
       const id = await checkInitData(String(body.initData || ""), String(env.BOT_TOKEN || "").trim());
       if (!id) return json({ ok: false, error: "not from Telegram" }, 403, cors);
+      if (!allowedIds(env).includes(id)) return json({ ok: false, error: "private" }, 403, cors);
       const key = "u:" + id;
       const old = (await env.FOCUS.get(key, "json")) || {};
       const days = Object.assign({}, old.days, cleanDays(body.days));

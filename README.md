@@ -2,9 +2,9 @@
 
 A Telegram Mini App for IELTS preparation: daily checklist, Daily pack (6 × 10 items), words with spaced review, mock scores, Writing and Speaking practice, a mistake log, and bot reminders.
 
-## Several people, one bot
+## Private
 
-Each person opens the app from their own Telegram account. Their plan (Day 1, exam date, target band) and all their progress are saved in **their** Telegram account, so nobody sees anyone else's tracker. No login or password is needed.
+Only the Telegram accounts in `OWNER_IDS` (`index.html`) and `ALLOWED_IDS` (`wrangler.jsonc`) can use the app; everyone else sees "This tracker is private", and the Worker refuses their sync and sends them no reminders. Data is saved in the owner's own Telegram account.
 
 ## Reminders (Cloudflare Worker)
 
@@ -15,7 +15,7 @@ Each person opens the app from their own Telegram account. Their plan (Day 1, ex
 - 21:15 log reminder (and a note before mock days)
 - 23:00 daily report (tasks done / not done) with a link to the daily survey, plus the weekly report on the last day of each plan week
 
-Anyone who presses **Start** in the bot and opens the app gets reminders for their own plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, today's and yesterday's task names with done marks, daily survey answers, mock scores and a small summary (no saved words or essays). Requests are checked against Telegram's `initData` signature.
+The owner gets reminders for their plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, today's and yesterday's task names with done marks, daily survey answers, mock scores and a small summary (no saved words or essays). Requests are checked against Telegram's `initData` signature.
 
 Worker settings: secret `BOT_TOKEN` (same token as the bot). The GitHub workflow `reminders.yml` only sends a reminder by hand for testing; it needs the `BOT_TOKEN` GitHub secret.
 

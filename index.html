@@ -440,7 +440,7 @@ h3{font-size:var(--fs-m)}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.11';
+const BUILD='2026-10-28.12';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1818,7 +1818,18 @@ document.addEventListener('submit',e=>{
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'){for(const k in timers){clearTimeout(timers[k]);const o=getObj(k);if(o)put(k,JSON.stringify(o));}}else{renderHeader();}});
 
 /* ---------- boot ---------- */
+/* Private app: only these Telegram accounts can use it (the Worker enforces the same list). */
+const OWNER_IDS=[5020539876];
+const TG_UID=inTG&&TG.initDataUnsafe&&TG.initDataUnsafe.user?Number(TG.initDataUnsafe.user.id):null;
+const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
 (async()=>{
+  if(!ALLOWED){
+    document.getElementById('hdr').innerHTML='<div class="hdr-top"><div class="eyebrow">IELTS tracker</div></div><div class="hdr-day"><div class="day">Private app</div></div>';
+    document.getElementById('tabs').hidden=true;
+    document.getElementById('view').innerHTML=`<div class="wrap"><section class="card"><h2>This tracker is private</h2><p class="note" style="margin:0">${inTG?'It belongs to one person and is not open to other Telegram accounts.':'Open it from its Telegram bot.'}</p></section></div>`;
+    try{if(inTG)TG.ready();}catch(e){}
+    return;
+  }
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
   await loadDailyIndex();

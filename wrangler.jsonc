@@ -5,6 +5,7 @@
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
   "keep_vars": true,
+  "vars": { "ALLOWED_IDS": "5020539876" },
   "triggers": { "crons": ["0 2 * * *", "15 14 * * *", "15 16 * * *", "0 18 * * *"] },
   "kv_namespaces": [{ "binding": "FOCUS", "id": "14379a0c624e4a56a3dfc99b02a3f4f4" }]
 }
