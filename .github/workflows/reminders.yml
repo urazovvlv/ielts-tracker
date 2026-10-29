@@ -12,6 +12,10 @@ on:
         type: choice
         options: [morning, evening, night, daily, weekly, cambridge]
         default: morning
+      date:
+        description: 'Plan date to build it for, YYYY-MM-DD (empty = today)'
+        required: false
+        default: ''
 
 jobs:
   send:
@@ -21,11 +25,13 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           SLOT: ${{ inputs.slot }}
+          DATE: ${{ inputs.date }}
         run: |
           python3 - <<'PY'
           import hashlib, hmac, json, os, urllib.request, urllib.error
           key = hmac.new(os.environ["BOT_TOKEN"].strip().encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
           url = f"https://ielts-tracker.urazovvlv.workers.dev/run?slot={os.environ['SLOT']}&force=1"
+          if os.environ.get("DATE", "").strip(): url += "&date=" + os.environ["DATE"].strip()
           req = urllib.request.Request(url, headers={"X-Key": key, "User-Agent": "ielts-reminders"})
           try:
               with urllib.request.urlopen(req, timeout=60) as r:

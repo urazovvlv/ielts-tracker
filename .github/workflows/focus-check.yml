@@ -33,6 +33,8 @@ jobs:
           import json as _j
           try:
               d = (_j.loads(b2) if c2 == 200 else {}).get("5020539876") or {}
+              for k in sorted((d.get('sv') or {}).keys())[-3:]: print(f"::notice::sv {k} {_j.dumps(d['sv'][k], ensure_ascii=False)[:600]}")
+              for k in sorted((d.get('tl') or {}).keys()): print(f"::notice::tl {k} {_j.dumps(d['tl'][k], ensure_ascii=False)[:600]}")
               print(f"::notice::user {c2} keys={sorted(d.keys())} stats={len(d.get('stats') or {})} mocks={len(d.get('mocks') or [])} plan={(d.get('ext') or {}).get('plan')}")
           except Exception as ex:
               print(f"::notice::user {c2} {b2[:80]} {ex}")
