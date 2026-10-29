@@ -1,7 +1,7 @@
 name: IELTS reminders
 
 # The reminders are sent by the Cloudflare Worker (worker/worker.js) on its own schedule:
-# 07:00, 19:15 and 21:15 Tashkent, plus the weekly report at 23:00 on the last day of each plan week.
+# 07:00, 19:15 and 21:15 Tashkent, 12:00 on Tue/Thu/Sat (Cambridge vocabulary), plus the weekly report at 23:00 on the last day of each plan week.
 # This workflow only sends one by hand, for testing.
 
 on:
@@ -10,7 +10,7 @@ on:
       slot:
         description: 'Which reminder to send now'
         type: choice
-        options: [morning, evening, night, daily, weekly]
+        options: [morning, evening, night, daily, weekly, cambridge]
         default: morning
 
 jobs:
