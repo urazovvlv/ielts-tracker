@@ -581,6 +581,38 @@ input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--muted) 75
 .sheet-bg{background:rgba(3,7,18,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
 .toast{border-radius:14px;background:var(--ink);color:var(--bg);font-weight:600;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
 @media (prefers-reduced-motion:reduce){.btn:active{transform:none}.tabs button::before{transition:none}}
+
+/* Cambridge sets */
+.bset .bbody{display:flex;flex-direction:column;gap:12px;padding:14px 16px 16px}
+.bp-h{display:flex;flex-direction:column;gap:2px}
+.bp-h b{font-size:var(--fs-m)}
+.bwl{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.bw{border-bottom:1px solid var(--line)}
+.bw summary{list-style:none;cursor:pointer;padding:10px 0;display:flex;flex-direction:column;gap:2px}
+.bw summary::-webkit-details-marker{display:none}
+.bw-h{display:flex;align-items:center;gap:8px}
+.bw-h b{font-size:15.5px;line-height:1.3}
+.bw-h .di-pos{padding-top:0;flex:1}
+.bw-h .di-btn{margin:-4px 0;width:34px;height:34px}
+.bw-uz{font-size:14px;color:var(--muted)}
+.bw[open] .bw-uz{color:var(--ink);font-weight:600}
+.bw-b{display:flex;flex-direction:column;gap:4px;padding:0 0 12px}
+.bw-iz{font-size:var(--fs-s);line-height:1.45}
+.btypes{display:flex;flex-direction:column;gap:2px;font-size:var(--fs-s);color:var(--muted)}
+.btypes b{color:var(--ink);font-weight:700;margin-right:4px}
+.bkl{display:flex;flex-direction:column;gap:10px}
+.bk{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;background:var(--sunk)}
+.bk-h{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.bk-q{font-weight:800;font-size:14px}
+.bk-a{border:1px dashed var(--line);background:none;border-radius:8px;padding:5px 10px;font-size:12.5px;font-weight:700;color:var(--muted);min-height:32px}
+.bk-a.on{border:0;background:var(--teal-soft);color:var(--teal)}
+.bk-p{display:flex;flex-direction:column;gap:3px}
+.bk-p+.bk-p{border-top:1px solid var(--line);padding-top:8px}
+.bk-r{display:flex;gap:8px;font-size:14px;line-height:1.4}
+.bk-r i{flex:none;font-style:normal;font-size:10.5px;font-weight:800;width:18px;height:18px;border-radius:5px;display:grid;place-items:center;background:var(--raised);color:var(--muted);margin-top:1px}
+.bk-r i.ps{background:var(--teal-soft);color:var(--teal)}
+.bk-r span{flex:1}
+.bk-uz{font-size:var(--fs-xs);color:var(--muted);padding-left:26px}
 </style>
 </head>
 <body>
@@ -594,7 +626,7 @@ input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--muted) 75
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-28.13';
+const BUILD='2026-10-29.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -695,7 +727,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};
 let DAILY=[];
-let tab=/^#daily/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#(daily|books)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -1501,6 +1533,11 @@ function dItem(sec,x,i){
     ${x.use?`<div class="di-use">${esc(x.use)}</div>`:''}${x.tip?`<div class="di-use">${esc(x.tip)}</div>`:''}</li>`;
 }
 function viewDaily(){
+  const dseg=`<div class="seg pseg" role="tablist">${[['pack','Daily pack'],['book','Cambridge']].map(([k,l])=>`<button data-dmode="${k}" class="${dMode===k?'on':''}" role="tab" aria-selected="${dMode===k}">${l}</button>`).join('')}</div>`;
+  if(dMode==='book')return `<div class="wrap">${dseg}${viewBooks()}</div>`;
+  return viewPack().replace('<div class="wrap">','<div class="wrap">'+dseg);
+}
+function viewPack(){
   const today=clampDay(todayIdx());if(dSel==null)dSel=today;
   const n=clampDay(dSel),k=packNo(n),p=DPACK[k];
   if(DCOUNT&&!p&&!dLoading){dLoading=true;getPack(n).then(()=>{dLoading=false;if(tab==='daily')renderView();});}
@@ -1519,6 +1556,54 @@ function viewDaily(){
   return `<div class="wrap">${head}${secs}</div>`;
 }
 function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=0.85;const v=speechSynthesis.getVoices().find(v=>/^en-GB/i.test(v.lang))||speechSynthesis.getVoices().find(v=>/^en/i.test(v.lang));if(v)u.voice=v;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+
+
+/* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
+let dMode=/^#books/.test(location.hash)?'book':'pack',BIDX=null;
+const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
+document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
+  if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
+  if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
+async function loadBooks(){
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok)BIDX=(await r.json()).sets||[];}catch(e){}
+  if(!BIDX)BIDX=[];
+  if(BIDX.length&&!bOpen.size){const last=BIDX[BIDX.length-1].id;bOpen.add(last);getBook(last);}
+  if(tab==='daily'&&dMode==='book')renderView();
+}
+async function getBook(id){
+  if(BSET[id])return BSET[id];
+  try{const r=await fetch(`books/${id}.json`,{cache:'no-cache'});if(r.ok)BSET[id]=await r.json();}catch(e){}
+  if(tab==='daily'&&dMode==='book')renderView();return BSET[id];
+}
+const hasWord=w=>S.words.some(y=>y.w.toLowerCase()===String(w).toLowerCase());
+function bWord(id,pi,x,i){
+  const key=`${id}:${pi}:${i}`,saved=hasWord(x.w);
+  return `<details class="bw" data-bw="${key}" ${bWOpen.has(key)?'open':''}><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos)}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w.replace(/ … /g,', '))}" aria-label="Listen to ${esc(x.w)}">🔊</button>`:''}<button class="di-btn ${saved?'on':''}" data-bsave="${key}" aria-label="Save to my words">${saved?'✓':'+'}</button></div>
+    <div class="bw-uz">${esc(x.uz)}</div></summary>
+    <div class="bw-b"><div class="di-ipa">${esc(x.ipa)}</div><div class="bw-iz">${esc(x.iz)}</div><div class="di-ex">${esc(x.ex)}</div></div></details>`;
+}
+function bKey(id,pi,k,j){
+  const key=`${id}:${pi}:${j}`,show=bRev.has(key);
+  return `<div class="bk"><div class="bk-h"><span class="bk-q">Q${esc(k.q)}</span><button class="bk-a ${show?'on':''}" data-bans="${key}" aria-label="${show?'Hide':'Show'} answer">${show?esc(k.a):'Show answer'}</button></div>
+    ${k.p.map(x=>`<div class="bk-p"><div class="bk-r"><i>Q</i><span>${esc(x.qw)}</span></div><div class="bk-r"><i class="ps">P</i><span>${esc(x.pw)}</span></div><div class="bk-uz">${esc(x.uz)}</div></div>`).join('')}</div>`;
+}
+function viewBooks(){
+  if(BIDX===null)return `<section class="card"><p class="note" style="margin:0">Loading…</p></section>`;
+  if(!BIDX.length)return `<section class="card"><p class="note" style="margin:0">No Cambridge sets yet.</p></section>`;
+  return BIDX.slice().reverse().map(st=>{
+    const b=BSET[st.id],open=bOpen.has(st.id);
+    let body='<p class="note" style="margin:0;padding:16px">Loading…</p>';
+    if(b){const pi=bPas[st.id]||0,P=b.passages[pi],t=bTab[st.id]||'vocab',all=P.vocab.every(x=>hasWord(x.w));
+      body=`<div class="bbody"><div class="seg" role="tablist">${b.passages.map((x,i)=>`<button data-bpas="${st.id}:${i}" class="${i===pi?'on':''}" role="tab" aria-selected="${i===pi}">Passage ${x.n}</button>`).join('')}</div>
+        <div class="bp-h"><b>${esc(P.title)}</b><span class="note">Questions ${esc(P.qs)}</span></div>
+        <div class="seg" role="tablist"><button data-btab="${st.id}:vocab" class="${t==='vocab'?'on':''}">Vocabulary · ${P.vocab.length}</button><button data-btab="${st.id}:keys" class="${t==='keys'?'on':''}">Keywords · ${P.keys.length}</button></div>
+        ${t==='vocab'?`<div class="bwl">${P.vocab.map((x,i)=>bWord(st.id,pi,x,i)).join('')}</div>
+          <button class="btn block ${all?'':'primary'}" data-bsaveall="${st.id}:${pi}" ${all?'disabled':''}>${all?'All saved to My words ✓':`Add all ${P.vocab.length} to My words`}</button>`
+        :`<div class="btypes">${P.types.map(([q,n])=>`<span><b>${esc(q)}</b> ${esc(n)}</span>`).join('')}</div><div class="bkl">${P.keys.map((k,j)=>bKey(st.id,pi,k,j)).join('')}</div>
+          <p class="note" style="margin:0">Q = question wording · P = how the passage says it</p>`}</div>`;}
+    return `<details class="card dsec bset" data-bset="${st.id}" ${open?'open':''}><summary><span class="dsec-t"><span class="skb sk-R">R</span><b>Day ${st.day} · ${esc(st.title)}</b></span><span class="note">3 passages · ${st.words} words · keyword tables</span></summary>${body}</details>`;
+  }).join('');
+}
 
 /* ---------- Lists stored in chunks (mistakes, essays), same scheme as words ---------- */
 const listN={mist:0,ess:0};
@@ -1855,7 +1940,16 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-addsk]'))){const kd=el.dataset.addsk,v=el.dataset.val;addSk[kd]=addSk[kd]===v?'':v;const nm=document.getElementById(`add-${kd}-name`),nv=nm?nm.value:'',nt=document.getElementById(`add-${kd}-note`),tv=nt?nt.value:'';renderView();const a=document.getElementById(`add-${kd}-name`);if(a){a.value=nv;document.getElementById(`add-${kd}-note`).value=tv;}return;}
   if((el=g('[data-dnav]'))){const v=Number(el.dataset.dnav),today=clampDay(todayIdx());dSel=v===0?today:clampDay((dSel||today)+v);dOpen.clear();haptic('sel');renderView();scrollTo(0,0);return;}
   if((el=g('[data-dlearn]'))){const n=clampDay(dSel||todayIdx()),sk=el.dataset.dlearn,dl=Object.assign({},dayDoc(n).dl);dl[sk]=!dl[sk];setDay(n,{dl});haptic(dl[sk]?'ok':'light');if(dl[sk])toast('Section learned');renderView();return;}
-  if((el=g('[data-say]'))){sayText(el.dataset.say);return;}
+  if((el=g('[data-say]'))){e.preventDefault();sayText(el.dataset.say);return;}
+  if((el=g('[data-dmode]'))){dMode=el.dataset.dmode;haptic('sel');if(dMode==='book'&&BIDX===null)loadBooks();renderView();scrollTo(0,0);return;}
+  if((el=g('[data-bpas]'))){const [id,i]=el.dataset.bpas.split(':');bPas[id]=Number(i);haptic('sel');renderView();return;}
+  if((el=g('[data-btab]'))){const [id,t]=el.dataset.btab.split(':');bTab[id]=t;haptic('sel');renderView();return;}
+  if((el=g('[data-bans]'))){const k=el.dataset.bans;bRev.has(k)?bRev.delete(k):bRev.add(k);haptic('sel');renderView();return;}
+  if((el=g('[data-bsave]'))){e.preventDefault();const [id,pi,i]=el.dataset.bsave.split(':'),b=BSET[id],x=b&&b.passages[Number(pi)].vocab[Number(i)];
+    if(x&&!hasWord(x.w)){S.words.push({id:'w'+Date.now().toString(36),w:x.w,m:x.uz,ex:x.ex,k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}return;}
+  if((el=g('[data-bsaveall]'))){const [id,pi]=el.dataset.bsaveall.split(':'),b=BSET[id];if(!b)return;let n=0;const t=Date.now();
+    b.passages[Number(pi)].vocab.forEach((x,i)=>{if(!hasWord(x.w)){S.words.push({id:'w'+(t+i).toString(36),w:x.w,m:x.uz,ex:x.ex,k:0});n++;}});
+    if(n){saveWords();haptic('ok');toast(`${n} words saved`);renderView();}return;}
   if((el=g('[data-dsave]'))){const [sec,i]=el.dataset.dsave.split(':'),p=DPACK[packNo(clampDay(dSel||todayIdx()))];const x=p&&p[sec]&&p[sec].items[Number(i)];
     if(x){const w=sec==='idioms'?x.t:x.w;if(!S.words.some(y=>y.w.toLowerCase()===w.toLowerCase())){S.words.push({id:'w'+Date.now().toString(36),w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}}return;}
   if((el=g('[data-mexp]'))){mockOpen.add(Number(el.dataset.mexp));renderView();return;}
@@ -1989,6 +2083,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
   await loadDailyIndex();
+  loadBooks();
   await loadSpeaking();
   await load();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}

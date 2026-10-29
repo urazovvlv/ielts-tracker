@@ -1,6 +1,6 @@
 # ielts-tracker
 
-A Telegram Mini App for IELTS preparation: daily checklist, Daily pack (6 × 10 items), words with spaced review, mock scores, Writing and Speaking practice, a mistake log, and bot reminders.
+A Telegram Mini App for IELTS preparation: daily checklist, Daily pack (grammar + 6 × 10 items), Cambridge reading vocabulary and keyword tables (`books/`), words with spaced review, mock scores, Writing and Speaking practice, a mistake log, and bot reminders.
 
 ## Private
 
