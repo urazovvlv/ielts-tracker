@@ -626,7 +626,7 @@ input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--muted) 75
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-29.1';
+const BUILD='2026-10-29.2';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -683,8 +683,16 @@ function buildSchedule(p){
 }
 const FOCUS=['Writing Task 2 essay','Reading: full test, 60 min','Writing Task 1 report','Reading: question types','Writing Task 2 essay','Speaking: full test, recorded','Review the week'];
 const phaseOf=n=>PHASES.find(p=>n>=p.a&&n<=p.b)||(n<1?PHASES[0]:PHASES[PHASES.length-1]);
+/* Cambridge vocabulary day: every Tue, Thu and Sat gets one task (session 1 = first such day of the plan = set "Day 1"). */
+const isCamDay=n=>[2,4,6].includes(dateOf(n).getDay());
+function camSession(n){if(n<1||!isCamDay(n))return 0;let s=0;for(let d=1;d<=n;d++)if(isCamDay(d))s++;return s;}
+function camTask(n){
+  const s=camSession(n);if(!s)return null;
+  const st=(BIDX||[]).find(x=>x.day===s);
+  return {k:'cam',label:st?`Cambridge vocabulary · Day ${s} · ${st.title.replace('Cambridge ','C')}`:`Cambridge vocabulary · Day ${s}`,sub:st?`${st.words} words + keyword tables · Daily → Cambridge`:'Review the earlier sets · Daily → Cambridge',sk:'V'};
+}
 function baseTasks(n){
-  return []; /* Lists start empty: everyone adds their own tasks with Edit list. */
+  const c=camTask(n);return c?[c]:[]; /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -1568,7 +1576,7 @@ async function loadBooks(){
   try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok)BIDX=(await r.json()).sets||[];}catch(e){}
   if(!BIDX)BIDX=[];
   if(BIDX.length&&!bOpen.size){const last=BIDX[BIDX.length-1].id;bOpen.add(last);getBook(last);}
-  if(tab==='daily'&&dMode==='book')renderView();
+  if(PLAN&&!WZ&&(tab==='today'||(tab==='daily'&&dMode==='book')))renderView();
 }
 async function getBook(id){
   if(BSET[id])return BSET[id];
@@ -2083,9 +2091,9 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   renderHeader();renderTabs();
   try{const r=await fetch('daily.json',{cache:'no-cache'});if(r.ok)DAILY=await r.json();}catch(e){}
   await loadDailyIndex();
-  loadBooks();
   await loadSpeaking();
   await load();
+  loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   sel=clampDay(todayIdx());
   if(svHash){const q=survDoc(clampDay(todayIdx()));svOpen=!(q&&q.h!=null);}

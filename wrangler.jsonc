@@ -6,6 +6,6 @@
   "workers_dev": true,
   "keep_vars": true,
   "vars": { "ALLOWED_IDS": "5020539876" },
-  "triggers": { "crons": ["0 2 * * *", "15 14 * * *", "15 16 * * *", "0 18 * * *"] },
+  "triggers": { "crons": ["0 2 * * *", "15 14 * * *", "15 16 * * *", "0 18 * * *", "0 7 * * TUE,THU,SAT"] },
   "kv_namespaces": [{ "binding": "FOCUS", "id": "14379a0c624e4a56a3dfc99b02a3f4f4" }]
 }

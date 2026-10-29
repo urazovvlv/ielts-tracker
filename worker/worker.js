@@ -162,7 +162,7 @@ async function readAllowed(req, env) {
 
 /* ---------- Reminders (Cloudflare Cron Triggers, Tashkent time) ---------- */
 const APP = "https://urazovvlv.github.io/ielts-tracker/";
-const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"] };
+const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"], "0 7 * * TUE,THU,SAT": ["cambridge"] };
 const RATE = ["", "Bad", "Weak", "OK", "Good", "Great"];
 const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary", G: "Grammar" };
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -281,6 +281,19 @@ async function buildMessage(slot, doc, today) {
   if (slot === "weekly") {
     if (day % 7 && day !== days) return null;
     return { text: weekly(doc, plan, day, days, today), frag: "#prog" };
+  }
+  if (slot === "cambridge") {
+    const wd = (d) => new Date(d + "T00:00:00Z").getUTCDay();
+    if (![2, 4, 6].includes(wd(today))) return null;
+    let s = 0;
+    for (let i = 0; i < day; i++) if ([2, 4, 6].includes(wd(addDays(plan.start, i)))) s++;
+    let st = null;
+    try { const r = await fetch(APP + "books/index.json", { cf: { cacheTtl: 300 } }); if (r.ok) st = ((await r.json()).sets || []).find((x) => x.day === s) || null; } catch (e) {}
+    const L = [`<b>📘 Cambridge vocabulary · Day ${s}</b>`];
+    if (st) L.push(`${esc(st.title)}: ${st.words} words and keyword tables.`, "", "1. Learn the words passage by passage (🔊 for pronunciation).", "2. Open Keywords: see how each question paraphrases the passage.", "3. Tap + to send the hard words to My words for review.");
+    else L.push("No new set today. Review the earlier sets and their keyword tables.");
+    L.push("", "It is on today's list in the tracker. Tick it when you finish.");
+    return { text: L.join("\n"), frag: "#books", button: "Open Cambridge" };
   }
   if (slot === "morning") {
     const left = days - day, exam = plan.exam ? diffDays(today, plan.exam) : null;
@@ -401,7 +414,7 @@ export default {
     if (url.pathname === "/run" && req.method === "GET") {
       if (!(await readAllowed(req, env))) return json({ error: "wrong key" }, 403);
       const slot = url.searchParams.get("slot") || "";
-      if (!["morning", "evening", "night", "daily", "weekly"].includes(slot)) return json({ error: "bad slot" }, 400);
+      if (!["morning", "evening", "night", "daily", "weekly", "cambridge"].includes(slot)) return json({ error: "bad slot" }, 400);
       const res = await runSlot(env, slot, {
         force: url.searchParams.get("force") === "1", dry: url.searchParams.get("dry") === "1",
         only: url.searchParams.get("id") || "", date: /^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get("date") || "") ? url.searchParams.get("date") : "",
