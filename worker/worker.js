@@ -425,9 +425,10 @@ export default {
     if (url.pathname === "/book" && req.method === "GET") {
       const name = url.searchParams.get("f") || "";
       if (!/^[a-z0-9-]{1,60}$/.test(name)) return json({ error: "bad name" }, 400, cors);
-      const id = await checkInitData(req.headers.get("X-Init") || "", String(env.BOT_TOKEN || "").trim());
+      const byKey = req.headers.get("X-Key") ? await readAllowed(req, env) : false;
+      const id = byKey ? "key" : await checkInitData(req.headers.get("X-Init") || "", String(env.BOT_TOKEN || "").trim());
       if (!id) return json({ error: "not from Telegram" }, 403, cors);
-      if (!allowedIds(env).includes(id)) return json({ error: "private" }, 403, cors);
+      if (!byKey && !allowedIds(env).includes(id)) return json({ error: "private" }, 403, cors);
       let text = null;
       try { text = await openBook(env, name); } catch (e) { return json({ error: "cannot open" }, 500, cors); }
       if (!text) return json({ error: "not found" }, 404, cors);
