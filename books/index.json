@@ -1,1 +1,126 @@
-{"sets": [{"id": "c15t1", "day": 1, "title": "Cambridge 15 · Test 1", "words": 144}]}
+{
+ "sets": [
+  {
+   "id": "c15t1",
+   "day": 1,
+   "title": "Cambridge 15 · Test 1",
+   "words": 144
+  }
+ ],
+ "books": [
+  {
+   "week": 2,
+   "skill": "L",
+   "id": "collins-listening",
+   "title": "Collins · Listening for IELTS",
+   "days": []
+  },
+  {
+   "week": 2,
+   "skill": "R",
+   "id": "collins-reading",
+   "title": "Collins · Reading for IELTS",
+   "days": []
+  },
+  {
+   "week": 2,
+   "skill": "W",
+   "id": "collins-writing",
+   "title": "Collins · Writing for IELTS",
+   "days": []
+  },
+  {
+   "week": 2,
+   "skill": "S",
+   "id": "collins-speaking",
+   "title": "Collins · Speaking for IELTS",
+   "days": []
+  },
+  {
+   "week": 3,
+   "skill": "L",
+   "id": "improve-ls-l",
+   "title": "Macmillan · Improve Your IELTS Listening and Speaking Skills (Listening)",
+   "days": []
+  },
+  {
+   "week": 3,
+   "skill": "R",
+   "id": "improve-reading",
+   "title": "Macmillan · Improve Your IELTS Reading Skills",
+   "days": []
+  },
+  {
+   "week": 3,
+   "skill": "W",
+   "id": "improve-writing",
+   "title": "Macmillan · Improve Your IELTS Writing Skills",
+   "days": []
+  },
+  {
+   "week": 3,
+   "skill": "S",
+   "id": "improve-ls-s",
+   "title": "Macmillan · Improve Your IELTS Listening and Speaking Skills (Speaking)",
+   "days": []
+  },
+  {
+   "week": 4,
+   "skill": "L",
+   "id": "advantage-sl-l",
+   "title": "Delta · IELTS Advantage: Speaking & Listening Skills (Listening)",
+   "days": []
+  },
+  {
+   "week": 4,
+   "skill": "R",
+   "id": "advantage-reading",
+   "title": "Delta · IELTS Advantage: Reading Skills",
+   "days": []
+  },
+  {
+   "week": 4,
+   "skill": "W",
+   "id": "advantage-writing",
+   "title": "Delta · IELTS Advantage: Writing Skills",
+   "days": []
+  },
+  {
+   "week": 4,
+   "skill": "S",
+   "id": "advantage-sl-s",
+   "title": "Delta · IELTS Advantage: Speaking & Listening Skills (Speaking)",
+   "days": []
+  },
+  {
+   "week": 5,
+   "skill": "G",
+   "id": "cam-grammar-65",
+   "title": "Cambridge · IELTS Grammar for Bands 6.5 and above",
+   "days": []
+  },
+  {
+   "week": 6,
+   "skill": "V",
+   "id": "cam-vocab-65",
+   "title": "Cambridge · IELTS Vocabulary for Bands 6.5 and above",
+   "days": []
+  },
+  {
+   "week": 7,
+   "skill": "T",
+   "id": "cam16-20-a",
+   "title": "Cambridge IELTS 16–20 · test practice by skill",
+   "days": [],
+   "note": "Tests by skill + error analysis"
+  },
+  {
+   "week": 8,
+   "skill": "T",
+   "id": "cam16-20-b",
+   "title": "Cambridge IELTS 16–20 · test practice by skill",
+   "days": [],
+   "note": "Tests by skill + error analysis"
+  }
+ ]
+}

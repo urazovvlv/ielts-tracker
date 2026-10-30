@@ -25,8 +25,8 @@ const KEEP_DAYS = 21;
 
 const cors = {
   "Access-Control-Allow-Origin": ORIGIN,
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, X-Init",
   "Access-Control-Max-Age": "86400",
 };
 
@@ -354,6 +354,32 @@ async function runSlot(env, slot, opts = {}) {
   return out;
 }
 
+// Private book content. The repo (public) holds only books/<name>.enc = {k, iv, ct} (base64):
+// ct is AES-256-GCM, k is that AES key wrapped with this Worker's RSA-OAEP public key.
+// The key pair is made once and kept in KV ("bookkey"); GET /pubkey shows the public half.
+// GET /book?f=<name> with header X-Init: <Telegram initData> → the decrypted JSON, only for ALLOWED_IDS.
+const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+async function bookKeys(env) {
+  let k = await env.FOCUS.get("bookkey", "json");
+  if (!k) {
+    const kp = await crypto.subtle.generateKey({ name: "RSA-OAEP", modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: "SHA-256" }, true, ["encrypt", "decrypt"]);
+    k = { pub: await crypto.subtle.exportKey("jwk", kp.publicKey), priv: await crypto.subtle.exportKey("jwk", kp.privateKey) };
+    await env.FOCUS.put("bookkey", JSON.stringify(k));
+  }
+  return k;
+}
+async function openBook(env, name) {
+  const r = await fetch(`${APP}books/${name}.enc?t=${Date.now()}`);
+  if (!r.ok) return null;
+  const box = await r.json();
+  const keys = await bookKeys(env);
+  const priv = await crypto.subtle.importKey("jwk", keys.priv, { name: "RSA-OAEP", hash: "SHA-256" }, false, ["decrypt"]);
+  const raw = await crypto.subtle.decrypt({ name: "RSA-OAEP" }, priv, b64(box.k));
+  const aes = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(box.iv) }, aes, b64(box.ct));
+  return new TextDecoder().decode(pt);
+}
+
 export default {
   async scheduled(event, env, ctx) {
     const slots = SLOTS[event.cron] || [];
@@ -389,6 +415,23 @@ export default {
       const ext = cleanExt(body.ext) || old.ext || null;
       await env.FOCUS.put(key, JSON.stringify({ days, stats, mocks, ext, tl, sv, ts: Date.now() }));
       return json({ ok: true }, 200, cors);
+    }
+
+    if (url.pathname === "/pubkey" && req.method === "GET") {
+      const k = await bookKeys(env);
+      return json({ kty: k.pub.kty, n: k.pub.n, e: k.pub.e, alg: k.pub.alg });
+    }
+
+    if (url.pathname === "/book" && req.method === "GET") {
+      const name = url.searchParams.get("f") || "";
+      if (!/^[a-z0-9-]{1,60}$/.test(name)) return json({ error: "bad name" }, 400, cors);
+      const id = await checkInitData(req.headers.get("X-Init") || "", String(env.BOT_TOKEN || "").trim());
+      if (!id) return json({ error: "not from Telegram" }, 403, cors);
+      if (!allowedIds(env).includes(id)) return json({ error: "private" }, 403, cors);
+      let text = null;
+      try { text = await openBook(env, name); } catch (e) { return json({ error: "cannot open" }, 500, cors); }
+      if (!text) return json({ error: "not found" }, 404, cors);
+      return new Response(text, { headers: { "Content-Type": "application/json", "Cache-Control": "private, no-store", ...cors } });
     }
 
     if (url.pathname === "/focus" && req.method === "GET") {

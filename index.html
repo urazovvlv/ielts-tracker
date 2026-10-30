@@ -671,7 +671,41 @@ body{background:var(--bg)}
 ::selection{background:rgba(155,168,171,.4)}
 button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline-color:#9BA8AB}
 /* Skill tags: muted to sit in the slate palette, still told apart */
-.sk-L{background:#46698C}.sk-R{background:#3F7566}.sk-W{background:#8B7247}.sk-S{background:#6B5C88}.sk-V{background:#4A5C6A}.sk-G{background:#8A5560}
+.sk-L{background:#46698C}.sk-R{background:#3F7566}.sk-W{background:#8B7247}.sk-S{background:#6B5C88}.sk-V{background:#4A5C6A}.sk-G{background:#8A5560}.sk-T{background:#253745}
+
+/* Skill books */
+.kweek.now{border-color:color-mix(in srgb,var(--teal) 35%,var(--line))}
+.kbook{border-top:1px solid var(--line)}
+.kbook summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:12px 0}
+.kbook summary::-webkit-details-marker{display:none}
+.kb-t{display:flex;flex-direction:column;gap:1px;flex:1}
+.kb-t b{font-size:15px;line-height:1.3}
+.kb-t small{font-size:var(--fs-xs);color:var(--muted)}
+.kdays{display:flex;gap:6px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.kdays .chip{flex:none;min-height:38px;padding:8px 12px;font-size:13px}
+.kbody{display:flex;flex-direction:column;gap:14px;padding:6px 0 14px}
+.kunit{display:flex;flex-direction:column;gap:12px}
+.kunit h3{margin:4px 0 0;font-size:var(--fs-l)}
+.klesson{display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:12px;background:var(--sunk)}
+.klesson p{margin:0;line-height:1.5;font-size:14.5px}
+.kex{margin:0;padding-left:18px;font-size:14px;font-style:italic;color:var(--muted)}
+.ktip{font-size:13px;font-weight:600;color:var(--navy);background:var(--navy-soft);padding:6px 10px;border-radius:8px}
+.kexer{display:flex;flex-direction:column;gap:10px;padding:12px;border:1px solid var(--line);border-radius:12px}
+.kexer-h{display:flex;justify-content:space-between;align-items:center}
+.kscore{font-weight:800;color:var(--teal)}
+.kaudio{margin:0;font-size:13px;color:var(--muted)}
+.kitems{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.kitem{display:block}
+.kitem>*+*{margin-top:6px}
+.kq{font-size:14.5px;line-height:1.45}
+.kin{width:100%;box-sizing:border-box;padding:9px 11px;border-radius:10px;border:1px solid var(--line);background:var(--sunk);color:var(--ink);font:inherit;font-size:15px}
+.kitem.ok .kin{border-color:var(--good)}.kitem.no .kin{border-color:var(--bad)}
+.kopts{display:flex;flex-wrap:wrap;gap:6px}
+.kfb{font-size:13px;display:flex;flex-direction:column;gap:2px}
+.kitem.ok .kfb{color:var(--good)}.kitem.no .kfb{color:var(--bad)}
+.kfb span{color:var(--muted)}
+.kvoc{display:flex;flex-direction:column}
+.kvoc>b{margin-bottom:4px}
 </style>
 </head>
 <body>
@@ -685,7 +719,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-30.1';
+const BUILD='2026-10-31.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -751,7 +785,7 @@ function camTask(n){
   return {k:'cam',label:st?`Cambridge vocabulary · Day ${s} · ${st.title.replace('Cambridge ','C')}`:`Cambridge vocabulary · Day ${s}`,sub:st?`${st.words} words + keyword tables · Daily → Cambridge`:'Review the earlier sets · Daily → Cambridge',sk:'V'};
 }
 function baseTasks(n){
-  const c=camTask(n);return c?[c]:[]; /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
+  const c=camTask(n);return (c?[c]:[]).concat(bookTasks(n)); /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -794,7 +828,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};
 let DAILY=[];
-let tab=/^#(daily|books)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#(daily|books|kb)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -904,12 +938,7 @@ function balanceBlock(n){
   if(!list.some(x=>x.sk))return `<p class="note" style="margin:0">Tip: tag tasks with a skill (Edit list) to see your daily balance.</p>`;
   const chips=TAGS.map(([k,nm])=>{const all=list.filter(x=>x.sk===k),done=all.filter(x=>t[x.k]).length;
     return `<span class="bal ${all.length?'':'zero'} ${all.length&&done===all.length?'full':''}" title="${nm}"><span class="skb sk-${k}">${k}</span><b class="num">${done}/${all.length}</b></span>`;}).join('');
-  const today=todayIdx(),warn=[];
-  if(n===today&&today>=1&&anyTagged(today)){
-    for(const [k,nm] of TAGS.slice(0,4)){const last=lastPractised(k,today),gap=last?today-last:today-1;
-      if(gap>=3)warn.push(`<li>${skb(k)}<span><b>${nm}</b>: ${last?`no practice for ${gap} days (last on ${short(dateOf(last))})`:`not practised yet in this plan`}</span></li>`);}
-  }
-  return `<div class="bals">${chips}</div>${warn.length?`<ul class="warn">${warn.join('')}</ul>`:''}`;
+  return `<div class="bals">${chips}</div>`;
 }
 function applyMods(list,m){
   m=m||{};const hid=new Set(m.hidden||[]);const rn=m.rename||{};
@@ -1600,8 +1629,9 @@ function dItem(sec,x,i){
     ${x.use?`<div class="di-use">${esc(x.use)}</div>`:''}${x.tip?`<div class="di-use">${esc(x.tip)}</div>`:''}</li>`;
 }
 function viewDaily(){
-  const dseg=`<div class="seg pseg" role="tablist">${[['pack','Daily pack'],['book','Cambridge']].map(([k,l])=>`<button data-dmode="${k}" class="${dMode===k?'on':''}" role="tab" aria-selected="${dMode===k}">${l}</button>`).join('')}</div>`;
+  const dseg=`<div class="seg pseg" role="tablist">${[['pack','Daily pack'],['book','Cambridge'],['kb','Books']].map(([k,l])=>`<button data-dmode="${k}" class="${dMode===k?'on':''}" role="tab" aria-selected="${dMode===k}">${l}</button>`).join('')}</div>`;
   if(dMode==='book')return `<div class="wrap">${dseg}${viewBooks()}</div>`;
+  if(dMode==='kb')return `<div class="wrap">${dseg}${viewSkillBooks()}</div>`;
   return viewPack().replace('<div class="wrap">','<div class="wrap">'+dseg);
 }
 function viewPack(){
@@ -1626,20 +1656,20 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 
 
 /* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
-let dMode=/^#books/.test(location.hash)?'book':'pack',BIDX=null;
+let dMode=/^#books/.test(location.hash)?'book':/^#kb/.test(location.hash)?'kb':'pack',BIDX=null,BOOKS=[];
 const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
   if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
 async function loadBooks(){
-  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok)BIDX=(await r.json()).sets||[];}catch(e){}
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];}}catch(e){}
   if(!BIDX)BIDX=[];
   if(BIDX.length&&!bOpen.size){const last=BIDX[BIDX.length-1].id;bOpen.add(last);getBook(last);}
-  if(PLAN&&!WZ&&(tab==='today'||(tab==='daily'&&dMode==='book')))renderView();
+  if(PLAN&&!WZ&&(tab==='today'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
 async function getBook(id){
   if(BSET[id])return BSET[id];
-  try{const r=await fetch(`books/${id}.json`,{cache:'no-cache'});if(r.ok)BSET[id]=await r.json();}catch(e){}
+  const d=await privFetch(id);if(d)BSET[id]=d;else BERR.add(id);
   if(tab==='daily'&&dMode==='book')renderView();return BSET[id];
 }
 const hasWord=w=>S.words.some(y=>y.w.toLowerCase()===String(w).toLowerCase());
@@ -1659,7 +1689,7 @@ function viewBooks(){
   if(!BIDX.length)return `<section class="card"><p class="note" style="margin:0">No Cambridge sets yet.</p></section>`;
   return BIDX.slice().reverse().map(st=>{
     const b=BSET[st.id],open=bOpen.has(st.id);
-    let body='<p class="note" style="margin:0;padding:16px">Loading…</p>';
+    let body=`<p class="note" style="margin:0;padding:16px">${BERR.has(st.id)?privMsg():'Loading…'}</p>`;
     if(b){const pi=bPas[st.id]||0,P=b.passages[pi],t=bTab[st.id]||'vocab',all=P.vocab.every(x=>hasWord(x.w));
       body=`<div class="bbody"><div class="seg" role="tablist">${b.passages.map((x,i)=>`<button data-bpas="${st.id}:${i}" class="${i===pi?'on':''}" role="tab" aria-selected="${i===pi}">Passage ${x.n}</button>`).join('')}</div>
         <div class="bp-h"><b>${esc(P.title)}</b><span class="note">Questions ${esc(P.qs)}</span></div>
@@ -1670,6 +1700,58 @@ function viewBooks(){
           <p class="note" style="margin:0">Q = question wording · P = how the passage says it</p>`}</div>`;}
     return `<details class="card dsec bset" data-bset="${st.id}" ${open?'open':''}><summary><span class="dsec-t"><span class="skb sk-R">R</span><b>Day ${st.day} · ${esc(st.title)}</b></span><span class="note">3 passages · ${st.words} words · keyword tables</span></summary>${body}</details>`;
   }).join('');
+}
+
+
+/* ---------- Private book content: the repo holds only encrypted files (books/*.enc); the Worker opens them for the owner's Telegram account ---------- */
+const PRIV={},PRIVP={},BERR=new Set();
+const privMsg=()=>inTG?'Could not open this content. Check your internet and try again.':'Book content opens only inside the Telegram app.';
+function privFetch(f){
+  if(PRIV[f])return Promise.resolve(PRIV[f]);
+  if(!inTG)return Promise.resolve(null);
+  if(!PRIVP[f])PRIVP[f]=fetch(`${WORKER_URL}/book?f=${encodeURIComponent(f)}&v=${BUILD}`,{headers:{'X-Init':TG.initData},cache:'no-store'})
+    .then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{if(d)PRIV[f]=d;else delete PRIVP[f];return d;});
+  return PRIVP[f];
+}
+
+/* ---------- Skill books (one book per skill per week): lesson + interactive exercises + vocabulary ---------- */
+const KO=new Set(),KDAY={},KERR=new Set(),KCHK=new Set();
+let KANS={};try{KANS=JSON.parse(lsGet('kans')||'{}')||{};}catch(e){KANS={};}
+let kansT=null;const saveKans=()=>{clearTimeout(kansT);kansT=setTimeout(()=>{try{localStorage.setItem(LS+'kans',JSON.stringify(KANS));}catch(e){}},400);};
+document.addEventListener('toggle',e=>{const d=e.target;if(d&&d.dataset&&d.dataset.kbook){d.open?KO.add(d.dataset.kbook):KO.delete(d.dataset.kbook);}},true);
+const SKN={T:'Tests',L:'Listening',R:'Reading',W:'Writing',S:'Speaking',V:'Vocabulary',G:'Grammar'};
+function bookTasks(n){
+  const out=[];
+  for(const b of BOOKS)for(const d of (b.days||[]))if(d.day===n)out.push({k:'bk-'+d.f,label:`${b.title} · ${d.label}`,sub:'Daily → Books',sk:b.skill});
+  return out;
+}
+const kNorm=v=>String(v||'').toLowerCase().replace(/[’']/g,"'").replace(/[.,;:!?"]+$/g,'').replace(/\s+/g,' ').trim();
+function kDayView(f){
+  const D=PRIV[f];
+  if(!D){if(!KERR.has(f))privFetch(f).then(d=>{if(!d)KERR.add(f);if(tab==='daily'&&dMode==='kb')renderView();});
+    return `<p class="note" style="margin:0">${KERR.has(f)?privMsg():'Loading…'}</p>`;}
+  return (D.units||[]).map((u,ui)=>`<div class="kunit"><h3>${esc(u.name)}</h3>
+    ${(u.lesson||[]).map(l=>`<div class="klesson">${l.h?`<b>${esc(l.h)}</b>`:''}${(l.p||[]).map(t=>`<p>${esc(t)}</p>`).join('')}${(l.ex||[]).length?`<ul class="kex">${l.ex.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${(l.tips||[]).map(t=>`<div class="ktip">${esc(t)}</div>`).join('')}</div>`).join('')}
+    ${(u.ex||[]).map((x,ei)=>{const key=`${f}|${ui}|${ei}`,chk=KCHK.has(key);let ok=0;
+      const items=(x.items||[]).map((it,ii)=>{const ak=`${key}|${ii}`,val=KANS[ak]||'',good=(it.a||[]).some(a=>kNorm(a)===kNorm(val));if(chk&&good)ok++;
+        const field=it.opts&&it.opts.length?`<div class="kopts">${it.opts.map(o=>`<button type="button" class="chip ${val===o?'on':''}" data-kc="${esc(ak)}" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div>`
+          :`<input type="text" class="kin" data-ka="${esc(ak)}" value="${esc(val)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Answer ${ii+1}">`;
+        return `<li class="kitem ${chk?(good?'ok':'no'):''}"><div class="kq">${esc(it.q)}</div>${field}${chk?`<div class="kfb">${good?'✓ Correct':`✗ Answer: <b>${esc((it.a||[])[0]||'')}</b>`}${it.why?`<span>${esc(it.why)}</span>`:''}</div>`:''}</li>`;}).join('');
+      return `<div class="kexer"><div class="kexer-h"><b>${esc(x.n||'Exercise '+(ei+1))}</b>${chk?`<span class="kscore">${ok}/${(x.items||[]).length}</span>`:''}</div>${x.instr?`<p class="note" style="margin:0">${esc(x.instr)}</p>`:''}${x.audio?`<p class="kaudio">🎧 ${esc(x.audio)}</p>`:''}
+        <ol class="kitems">${items}</ol><div class="grid2"><button class="btn block" data-kreset="${esc(key)}">Clear</button><button class="btn block primary" data-kcheck="${esc(key)}">${chk?'Check again':'Check'}</button></div></div>`;}).join('')}
+    ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}<button class="di-btn ${saved?'on':''}" data-ksave="${esc(f)}|${ui}|${vi}" aria-label="Save to my words">${saved?'✓':'+'}</button></div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
+  </div>`).join('');
+}
+function viewSkillBooks(){
+  if(BIDX===null)return `<section class="card"><p class="note" style="margin:0">Loading…</p></section>`;
+  if(!BOOKS.length)return `<section class="card"><p class="note" style="margin:0">No books planned yet.</p></section>`;
+  const cw=Math.max(1,Math.ceil(clampDay(todayIdx())/7)),weeks=[...new Set(BOOKS.map(b=>b.week))].sort((a,b)=>a-b);
+  return weeks.map(w=>{const list=BOOKS.filter(b=>b.week===w),a=(w-1)*7+1,z=Math.min(DAYS,w*7);
+    return `<section class="card kweek ${w===cw?'now':''}"><div class="card-h"><h2>Week ${w}</h2><span class="note">Day ${a}–${z}${w===cw?' · this week':''}</span></div>
+      ${list.map(b=>{const ready=(b.days||[]).length,open=KO.has(b.id)||(ready&&w===cw&&!KO.size&&b===list.find(x=>(x.days||[]).length)),sel=KDAY[b.id]||((b.days||[]).find(d=>d.day===clampDay(todayIdx()))||(b.days||[])[0]||{}).f;
+        if(open)KO.add(b.id);
+        return `<details class="kbook" data-kbook="${esc(b.id)}" ${open&&ready?'open':''}><summary><span class="skb sk-${b.skill}">${b.skill}</span><span class="kb-t"><b>${esc(b.title)}</b><small>${ready?`${ready} day${ready>1?'s':''} ready`:(b.note?esc(b.note):'Waiting for the book')}</small></span></summary>
+          ${ready?`<div class="kdays">${b.days.map(d=>`<button type="button" class="chip ${d.f===sel?'on':''}" data-kday="${esc(b.id)}|${esc(d.f)}">Day ${d.day} · ${esc(d.label)}</button>`).join('')}</div><div class="kbody">${sel?kDayView(sel):''}</div>`:''}</details>`;}).join('')}</section>`;}).join('');
 }
 
 /* ---------- Lists stored in chunks (mistakes, essays), same scheme as words ---------- */
@@ -2008,7 +2090,13 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-dnav]'))){const v=Number(el.dataset.dnav),today=clampDay(todayIdx());dSel=v===0?today:clampDay((dSel||today)+v);dOpen.clear();haptic('sel');renderView();scrollTo(0,0);return;}
   if((el=g('[data-dlearn]'))){const n=clampDay(dSel||todayIdx()),sk=el.dataset.dlearn,dl=Object.assign({},dayDoc(n).dl);dl[sk]=!dl[sk];setDay(n,{dl});haptic(dl[sk]?'ok':'light');if(dl[sk])toast('Section learned');renderView();return;}
   if((el=g('[data-say]'))){e.preventDefault();sayText(el.dataset.say);return;}
-  if((el=g('[data-dmode]'))){dMode=el.dataset.dmode;haptic('sel');if(dMode==='book'&&BIDX===null)loadBooks();renderView();scrollTo(0,0);return;}
+  if((el=g('[data-dmode]'))){dMode=el.dataset.dmode;haptic('sel');if(dMode!=='pack'&&BIDX===null)loadBooks();renderView();scrollTo(0,0);return;}
+  if((el=g('[data-kday]'))){const [id,f]=el.dataset.kday.split('|');KDAY[id]=f;haptic('sel');renderView();return;}
+  if((el=g('[data-kc]'))){const k=el.dataset.kc;KANS[k]=KANS[k]===el.dataset.v?'':el.dataset.v;saveKans();haptic('sel');renderView();return;}
+  if((el=g('[data-kcheck]'))){const k=el.dataset.kcheck;KCHK.add(k);haptic('ok');renderView();return;}
+  if((el=g('[data-kreset]'))){const k=el.dataset.kreset;KCHK.delete(k);for(const x of Object.keys(KANS))if(x.startsWith(k+'|'))delete KANS[x];saveKans();renderView();return;}
+  if((el=g('[data-ksave]'))){e.preventDefault();const [f,ui,vi]=el.dataset.ksave.split('|'),x=PRIV[f]&&PRIV[f].units[Number(ui)].vocab[Number(vi)];
+    if(x&&!hasWord(x.w)){S.words.push({id:'w'+Date.now().toString(36),w:x.w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}return;}
   if((el=g('[data-bpas]'))){const [id,i]=el.dataset.bpas.split(':');bPas[id]=Number(i);haptic('sel');renderView();return;}
   if((el=g('[data-btab]'))){const [id,t]=el.dataset.btab.split(':');bTab[id]=t;haptic('sel');renderView();return;}
   if((el=g('[data-bans]'))){const k=el.dataset.bans;bRev.has(k)?bRev.delete(k):bRev.add(k);haptic('sel');renderView();return;}
@@ -2091,6 +2179,7 @@ document.addEventListener('change',e=>{
   if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked)haptic('light');renderHeader();renderView();return;}
 });
 document.addEventListener('input',e=>{
+  if(e.target&&e.target.dataset&&e.target.dataset.ka){KANS[e.target.dataset.ka]=e.target.value.slice(0,200);saveKans();return;}
   const t=e.target;
   if(WZ){
     if(t.dataset.w){WZ.d[t.dataset.w]=t.type==='date'||t.type==='text'?t.value:Number(t.value);return;}

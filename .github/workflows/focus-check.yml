@@ -24,6 +24,7 @@ jobs:
               except Exception as e:
                   return 0, repr(e)[:120]
           print("::notice::home", *get(base + "/"))
+          print("::notice::pubkey", get(base + "/pubkey")[1])
           tok = os.environ.get("BOT_TOKEN", "").strip()
           key = hmac.new(tok.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
           today = (dt.datetime.utcnow() + dt.timedelta(hours=5)).date().isoformat()
