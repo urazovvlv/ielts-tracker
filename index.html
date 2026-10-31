@@ -706,6 +706,13 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .kfb span{color:var(--muted)}
 .kvoc{display:flex;flex-direction:column}
 .kvoc>b{margin-bottom:4px}
+
+.blist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.brow{display:grid;grid-template-columns:minmax(0,1.3fr) 1fr auto;align-items:center;gap:10px;font-size:14px}
+.brow-l{display:flex;align-items:center;gap:2px;min-width:0}
+.brow-bar{height:8px;border-radius:4px;background:var(--sunk);overflow:hidden}
+.brow-bar i{display:block;height:100%;border-radius:4px;background:var(--navy)}
+.mcause{font-size:11px;font-weight:700;padding:1px 7px;border-radius:99px;background:var(--teal-soft);color:var(--teal);vertical-align:1px}
 </style>
 </head>
 <body>
@@ -719,7 +726,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-31.3';
+const BUILD='2026-10-31.4';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -886,6 +893,7 @@ function readWords(src){
   for(let i=0;i<meta.n;i++){try{out.push(...JSON.parse(src['words_'+i]||'[]'));}catch(e){}}
   return {n:meta.n,ts:meta._ts||0,list:out};
 }
+let LOADOK=false;
 async function load(){
   const local=lsAll();let cloud={},cloudOk=false;
   if(CLOUD){try{cloud=await cloudAll();cloudOk=true;}catch(e){setSync('err');}}
@@ -903,6 +911,7 @@ async function load(){
   for(const name of ['mist','ess']){const c=readList(name,cloud),l=readList(name,local),x=(l&&(!c||l.ts>c.ts))?l:c;
     if(x){S[name]=x.list;S.listTs[name]=x.ts;listN[name]=x.n;if(cloudOk&&x===l)saveList(name);}}
   if(CLOUD&&cloudOk&&!q.size)setSync('ok');
+  LOADOK=!CLOUD||cloudOk;
 }
 
 /* ---------- derived ---------- */
@@ -1114,7 +1123,7 @@ function mockSections(){
     const has=['L','R','W','S'].some(k=>m[k]!==''&&m[k]!=null);
     if(!has&&n!==next&&n>t&&!mockOpen.has(n))return `<button class="mrow" data-mexp="${n}"><span><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}</small></span><span class="mrow-go" aria-hidden="true">›</span></button>`;
     const inp=(k,max,step,ph,tab)=>`<label>${{L:'List.',R:'Read.',W:'Writ.',S:'Speak.'}[k]}<input class="sc" type="number" inputmode="decimal" id="mk-${n}-${k}" data-mock="${n}" data-k="${k}" min="0" max="${max}" step="${step}" value="${m[k]??''}" placeholder="${ph}"><span class="bh" id="bh-${n}-${k}">${tab&&m[k]!==''&&m[k]!=null?'Band '+toBand(m[k],tab):''}</span></label>`;
-    return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small></div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div></div>`;}).join('');
+    return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small>${m.note?`<small>${esc(m.note)}</small>`:''}</div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div></div>`;}).join('');
   return `<section class="card"><h2>Overall band by mock</h2><div class="chart" id="mockChart">${mockChart()}</div><p class="note" style="margin:0">Listening and Reading: type correct answers out of 40, and the band is worked out for you. Writing and Speaking: type the band. Overall uses official IELTS rounding.</p></section>
   <section class="card"><h2>Mock scores</h2>${cards}</section>`;
 }
@@ -1869,6 +1878,7 @@ const MT={
      ['info','Matching information','Kalit so\'zlarning sinonimini qidiring; javoblar matnda tartib bo\'yicha kelmaydi.'],
      ['comp','Sentence / summary completion','Bo\'sh joydan oldin va keyin qanday so\'z turi (ot, fe\'l, sifat) kerakligini aniqlang.'],
      ['mcq','Multiple choice','Har bir variantni matn bilan tekshiring; "always", "only" kabi kuchli so\'zlar ko\'pincha xato variantda bo\'ladi.'],
+     ['feat','Matching features (people)','Savol gapini 3–4 bo\'lakka bo\'ling; har bir mutaxassis so\'zlarida hamma bo\'lak bo\'lishi kerak. Bitta-ikkita mos kelgani – tuzoq.'],
      ['para','Missed the paraphrase','Savoldagi so\'z matnda boshqacha yozilgan bo\'ladi. Daily\'dagi Reading so\'zlari va sinonimlarini takrorlang.'],
      ['time','Ran out of time','Har passage uchun 20 daqiqa. Qiyin savolda 1,5 daqiqadan ortiq turmang, taxmin qilib o\'ting.'],
      ['limit','Word limit / copied wrongly','So\'zni matndan aynan ko\'chiring, imlosini tekshiring va so\'z cheklovidan oshmang.']],
@@ -1895,6 +1905,17 @@ const MT={
      ['fill','Too many fillers (umm, like)','Filler o\'rniga qisqa pauza qiling yoki "Well," bilan boshlang.']]
 };
 const MTAG={L:'Listening',R:'Reading',W:'Writing',S:'Speaking'};
+const MC=[['att','Inattention','E\'tiborsizlik: javobni gap bilan qayta o\'qing, bo\'sh joy vazifasini aniqlang (kim? kimga? nima?).'],['haste','Rushing','Shoshilish: aynan bir xil so\'z ko\'rsangiz to\'xtang – javob odatda sinonim bilan beriladi.'],['vocab','Vocabulary','Lug\'at: notanish akademik so\'zlarni Words\'ga qo\'shib takrorlang.'],['strat','Strategy','Strategiya: variantni bo\'laklarga ajrating; Y/N/NG da fe\'l va muallif bahosini tekshiring.']];
+const mcInfo=c=>MC.find(x=>x[0]===c)||null;
+function breakdownCard(){
+  if(!S.mist.length)return '';
+  const by=(f)=>{const o={};for(const m of S.mist){const k=f(m);if(!k)continue;o[k]=(o[k]||0)+(Number(m.n)||1);}return Object.entries(o).sort((a,b)=>b[1]-a[1]);};
+  const qt=by(m=>m.sk+':'+m.ty),cs=by(m=>m.c||''),max=Math.max(1,...qt.map(x=>x[1]),...cs.map(x=>x[1]));
+  const row=(lab,n,badge)=>`<li class="brow"><span class="brow-l">${badge||''}${esc(lab)}</span><span class="brow-bar"><i style="width:${n/max*100}%"></i></span><b class="num">${n}</b></li>`;
+  return `<section class="card"><div class="card-h"><h2>Mistakes by type</h2><span class="note">${S.mist.reduce((a,m)=>a+(Number(m.n)||1),0)} in total</span></div>
+    <div class="label">Question type</div><ul class="blist">${qt.map(([k,n])=>{const [sk,ty]=k.split(':');return row(mtInfo(sk,ty)[1],n,`<span class="skb sk-${sk}">${sk}</span>`);}).join('')}</ul>
+    ${cs.length?`<div class="label">Cause</div><ul class="blist">${cs.map(([c,n])=>row((mcInfo(c)||[c,c])[1],n,'')).join('')}</ul>${cs.slice(0,1).map(([c])=>mcInfo(c)?`<p class="note" style="margin:0">${esc(mcInfo(c)[2])}</p>`:'').join('')}`:''}</section>`;
+}
 const mtInfo=(sk,ty)=>(MT[sk]||[]).find(x=>x[0]===ty)||[ty,ty,''];
 let mAdd={sk:'R',ty:''};
 function topMistakes(){
@@ -1914,18 +1935,43 @@ function viewMistakes(){
   const groups={};for(const m of S.mist.slice().reverse()){(groups[m.src]=groups[m.src]||[]).push(m);}
   const order=Object.keys(groups).map(Number).sort((a,b)=>b-a);
   const srcName=s=>s>0?`Day ${s} mock · ${MOCKS[s]||''}`:'Practice';
-  return `${topCard('Your top mistakes','Review these before every mock')}
+  return `${breakdownCard()}${topCard('Your top mistakes','Review these before every mock')}
   <section class="card"><div class="card-h"><h2>Add a mistake</h2><span class="note">${S.mist.length} logged</span></div>
     <form class="addrow" data-addmist="1">
       <div class="seg">${['L','R','W','S'].map(k=>`<button type="button" data-msk="${k}" class="${mAdd.sk===k?'on':''}">${MTAG[k]}</button>`).join('')}</div>
       <div class="chips" role="group" aria-label="Mistake type">${types.map(([k,l])=>`<button type="button" class="chip ${mAdd.ty===k?'on':''}" data-mty="${k}">${esc(l)}</button>`).join('')}</div>
-      <input id="mNote" type="text" maxlength="160" placeholder="Example: wrote 'accomodation' → accommodation">
+      <div class="chips" role="group" aria-label="Cause">${MC.map(([k,l])=>`<button type="button" class="chip ${mAdd.c===k?'on':''}" data-mc="${k}">${esc(l)}</button>`).join('')}</div>
+      <input id="mQ" type="text" maxlength="12" placeholder="Question number (optional), e.g. 26">
+      <input id="mNote" type="text" maxlength="200" placeholder="Example: wrote 'accomodation' → accommodation">
       <div class="mrow2"><label class="label" for="mN">How many</label><input id="mN" class="sc" type="number" inputmode="numeric" min="1" max="40" value="1">
         <select id="mSrc" aria-label="From">${[0,...MOCKDAYS.filter(n=>n<=Math.max(t,1)+0)].reverse().map(s=>`<option value="${s}" ${mAdd.src===s?'selected':''}>${s>0?`Day ${s} mock`:'Practice'}</option>`).join('')}</select></div>
       <button class="btn primary" type="submit">Add mistake</button></form></section>
   <section class="card"><div class="card-h"><h2>Mistake log</h2></div>
-    ${order.length?order.map(s=>`<div class="mgroup"><div class="label">${esc(srcName(s))}</div><ul class="wlist">${groups[s].map(m=>`<li class="witem"><div class="tx"><b><span class="skb sk-${m.sk}">${m.sk}</span> ${esc(mtInfo(m.sk,m.ty)[1])}${Number(m.n)>1?` <span class="mtop-n">${m.n}×</span>`:''}</b>${m.note?`<small>${esc(m.note)}</small>`:''}</div><button class="rm" data-mdel="${m.id}" aria-label="Delete">×</button></li>`).join('')}</ul></div>`).join(''):'<div class="empty"><b>No mistakes logged yet</b><span class="note">After each mock, check your answers and add every mistake here by type. The app then shows the 3 types you repeat most.</span></div>'}
+    ${order.length?order.map(s=>`<div class="mgroup"><div class="label">${esc(srcName(s))}</div><ul class="wlist">${groups[s].map(m=>`<li class="witem"><div class="tx"><b><span class="skb sk-${m.sk}">${m.sk}</span> ${m.q?`Q${esc(m.q)} · `:''}${esc(mtInfo(m.sk,m.ty)[1])}${m.c&&mcInfo(m.c)?` <span class="mcause">${esc(mcInfo(m.c)[1])}</span>`:''}${Number(m.n)>1?` <span class="mtop-n">${m.n}×</span>`:''}</b>${m.note?`<small>${esc(m.note)}</small>`:''}</div><button class="rm" data-mdel="${m.id}" aria-label="Delete">×</button></li>`).join('')}</ul></div>`).join(''):'<div class="empty"><b>No mistakes logged yet</b><span class="note">After each mock, check your answers and add every mistake here by type. The app then shows the 3 types you repeat most.</span></div>'}
   </section>`;
+}
+
+
+/* ---------- One-time imports the owner asked for (applied once, marked in the mock doc) ---------- */
+function applySeeds(){
+  if(!LOADOK||!PLAN||!MOCKDAYS.includes(7))return;
+  const m=mockDoc(7);if(m.sd)return;
+  const base={sd:1,note:'Reading: Cambridge 21 · Test 1 (31 Oct)'};if(m.R===''||m.R==null)base.R=30;
+  S.mocks.m07=Object.assign({},m,base);touch('m07');
+  const t0=Date.parse('2026-10-31T17:10:00+05:00');
+  const L=[['3','comp','haste',"Q3: 'advice' → notes. 'making extensive notes' = 'took lengthy notes'. Savoldagi 'took' matnda aynan takrorlangan joy – tuzoq."],
+    ['5','comp','att',"Q5: Paris → Venice. 'showed places in' = rasmda tasvirlangan joy, sotib olingan joy emas."],
+    ['7','comp','att',"Q7: friend → friends. 'any … who were' ko'plik talab qiladi."],
+    ['26','feat','strat',"Q26: B → C (Ben-Soussan). Tashqi+ichki sukunat, anglash va to'g'ri munosabat – hammasi faqat C'da."],
+    ['30','mcq','strat',"Q30: D → A. Faqat oxirgi abzas; 'marketing' matnda yo'q. 'do without' = unnecessary."],
+    ['33','comp','att',"Q33: A → I. 'involved ___ who were eager…' – kim? = powerful individuals and businesses."],
+    ['34','comp','att',"Q34: I → A. 'influence on ___' – kimga? = national governments (Cuba … major role in politics)."],
+    ['37','ynng','vocab',"Q37: NO → YES. 'ubiquitous' = hamma joyda bor = available in large quantities."],
+    ['38','ynng','strat',"Q38: YES → NOT GIVEN. 'regarded as a luxury' ≠ 'marketed as a luxury' – fe'lni tekshiring."],
+    ['39','ynng','strat',"Q39: NOT GIVEN → NO. Muallif bahosi 'worrying' ↔ 'positive'."]];
+  let added=0;
+  L.forEach(([q,ty,c,note],i)=>{const id='mc21t1q'+q;if(S.mist.some(x=>x.id===id))return;S.mist.push({id,sk:'R',ty,n:1,note,src:7,t:t0+i*1000,c,q});added++;});
+  if(added)saveList('mist');
 }
 
 /* ---------- Spaced review for Words ---------- */
@@ -2101,6 +2147,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-ksave]'))){e.preventDefault();const [f,ui,vi]=el.dataset.ksave.split('|'),x=PRIV[f]&&PRIV[f].units[Number(ui)].vocab[Number(vi)];
     if(x&&!hasWord(x.w)){S.words.push({id:'w'+Date.now().toString(36),w:x.w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}return;}
   if((el=g('[data-bretry]'))){const id=el.dataset.bretry;BERR.delete(id);getBook(id);renderView();return;}
+  if((el=g('[data-mc]'))){mAdd.c=mAdd.c===el.dataset.mc?'':el.dataset.mc;haptic('sel');renderView();return;}
   if((el=g('[data-bpas]'))){const [id,i]=el.dataset.bpas.split(':');bPas[id]=Number(i);haptic('sel');renderView();return;}
   if((el=g('[data-btab]'))){const [id,t]=el.dataset.btab.split(':');bTab[id]=t;haptic('sel');renderView();return;}
   if((el=g('[data-bans]'))){const k=el.dataset.bans;bRev.has(k)?bRev.delete(k):bRev.add(k);haptic('sel');renderView();return;}
@@ -2220,8 +2267,9 @@ document.addEventListener('submit',e=>{
     svOpen=false;svDraft=null;haptic('ok');toast('Survey saved');renderView();const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});return;}
   if(f.dataset.addmist){if(!mAdd.ty){toast('Choose the mistake type');return;}
     const n=Math.max(1,Math.min(40,Number(document.getElementById('mN').value)||1)),note=document.getElementById('mNote').value.trim();
-    S.mist.push({id:'m'+Date.now().toString(36),sk:mAdd.sk,ty:mAdd.ty,n,note,src:Number(mAdd.src)||0,t:Date.now()});saveList('mist');
-    haptic('ok');toast('Mistake added');mAdd.ty='';renderView();return;}
+    const q=(document.getElementById('mQ')||{}).value||'';
+    S.mist.push(Object.assign({id:'m'+Date.now().toString(36),sk:mAdd.sk,ty:mAdd.ty,n,note,src:Number(mAdd.src)||0,t:Date.now()},mAdd.c?{c:mAdd.c}:{},q.trim()?{q:q.trim()}:{}));saveList('mist');
+    haptic('ok');toast('Mistake added');mAdd.ty='';mAdd.c='';renderView();return;}
   if(f.dataset.addword){const w=document.getElementById('nwW').value.trim();if(!w)return;
     S.words.push({id:'w'+Date.now().toString(36),w,m:document.getElementById('nwM').value.trim(),ex:document.getElementById('nwE').value.trim(),k:0});saveWords();haptic('ok');toast('Word saved');renderHeader();renderView();const again=document.getElementById('nwW');if(again)again.focus();}
 });
@@ -2247,6 +2295,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   await load();
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
+  try{applySeeds();}catch(e){}
   sel=clampDay(todayIdx());
   if(svHash){const q=survDoc(clampDay(todayIdx()));svOpen=!(q&&q.h!=null);}
   renderAll();focusSync();ensurePacks();wTimerLoop();
