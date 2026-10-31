@@ -719,7 +719,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-31.1';
+const BUILD='2026-10-31.2';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1664,7 +1664,7 @@ document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return
 async function loadBooks(){
   try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];}}catch(e){}
   if(!BIDX)BIDX=[];
-  if(BIDX.length&&!bOpen.size){const last=BIDX[BIDX.length-1].id;bOpen.add(last);getBook(last);}
+  if(BIDX.length&&!bOpen.size){const s=camSession(clampDay(todayIdx())),cur=(BIDX.find(x=>x.day===s)||BIDX[BIDX.length-1]).id;bOpen.add(cur);getBook(cur);}
   if(PLAN&&!WZ&&(tab==='today'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
 async function getBook(id){
@@ -1689,7 +1689,7 @@ function viewBooks(){
   if(!BIDX.length)return `<section class="card"><p class="note" style="margin:0">No Cambridge sets yet.</p></section>`;
   return BIDX.slice().reverse().map(st=>{
     const b=BSET[st.id],open=bOpen.has(st.id);
-    let body=`<p class="note" style="margin:0;padding:16px">${BERR.has(st.id)?privMsg():'Loading…'}</p>`;
+    let body=`<p class="note" style="margin:0;padding:16px">${BERR.has(st.id)?privMsg(st.id)+` <button class="btn" data-bretry="${st.id}">Try again</button>`:'Loading…'}</p>`;
     if(b){const pi=bPas[st.id]||0,P=b.passages[pi],t=bTab[st.id]||'vocab',all=P.vocab.every(x=>hasWord(x.w));
       body=`<div class="bbody"><div class="seg" role="tablist">${b.passages.map((x,i)=>`<button data-bpas="${st.id}:${i}" class="${i===pi?'on':''}" role="tab" aria-selected="${i===pi}">Passage ${x.n}</button>`).join('')}</div>
         <div class="bp-h"><b>${esc(P.title)}</b><span class="note">Questions ${esc(P.qs)}</span></div>
@@ -1704,13 +1704,13 @@ function viewBooks(){
 
 
 /* ---------- Private book content: the repo holds only encrypted files (books/*.enc); the Worker opens them for the owner's Telegram account ---------- */
-const PRIV={},PRIVP={},BERR=new Set();
-const privMsg=()=>inTG?'Could not open this content. Check your internet and try again.':'Book content opens only inside the Telegram app.';
+const PRIV={},PRIVP={},PERR={},BERR=new Set();
+const privMsg=f=>inTG?`Could not open this content${f&&PERR[f]?` (${PERR[f]})`:''}. Pull down to reload or try again later.`:'Book content opens only inside the Telegram app.';
 function privFetch(f){
   if(PRIV[f])return Promise.resolve(PRIV[f]);
   if(!inTG)return Promise.resolve(null);
   if(!PRIVP[f])PRIVP[f]=fetch(`${WORKER_URL}/book?f=${encodeURIComponent(f)}&v=${BUILD}`,{headers:{'X-Init':TG.initData},cache:'no-store'})
-    .then(r=>r.ok?r.json():null).catch(()=>null).then(d=>{if(d)PRIV[f]=d;else delete PRIVP[f];return d;});
+    .then(r=>{if(!r.ok){PERR[f]='server '+r.status;return null;}return r.json();}).catch(e=>{PERR[f]='network';return null;}).then(d=>{if(d){PRIV[f]=d;delete PERR[f];}else delete PRIVP[f];return d;});
   return PRIVP[f];
 }
 
@@ -1729,7 +1729,7 @@ const kNorm=v=>String(v||'').toLowerCase().replace(/[’']/g,"'").replace(/[.,;:
 function kDayView(f){
   const D=PRIV[f];
   if(!D){if(!KERR.has(f))privFetch(f).then(d=>{if(!d)KERR.add(f);if(tab==='daily'&&dMode==='kb')renderView();});
-    return `<p class="note" style="margin:0">${KERR.has(f)?privMsg():'Loading…'}</p>`;}
+    return `<p class="note" style="margin:0">${KERR.has(f)?privMsg(f):'Loading…'}</p>`;}
   return (D.units||[]).map((u,ui)=>`<div class="kunit"><h3>${esc(u.name)}</h3>
     ${(u.lesson||[]).map(l=>`<div class="klesson">${l.h?`<b>${esc(l.h)}</b>`:''}${(l.p||[]).map(t=>`<p>${esc(t)}</p>`).join('')}${(l.ex||[]).length?`<ul class="kex">${l.ex.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${(l.tips||[]).map(t=>`<div class="ktip">${esc(t)}</div>`).join('')}</div>`).join('')}
     ${(u.ex||[]).map((x,ei)=>{const key=`${f}|${ui}|${ei}`,chk=KCHK.has(key);let ok=0;
@@ -2097,6 +2097,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-kreset]'))){const k=el.dataset.kreset;KCHK.delete(k);for(const x of Object.keys(KANS))if(x.startsWith(k+'|'))delete KANS[x];saveKans();renderView();return;}
   if((el=g('[data-ksave]'))){e.preventDefault();const [f,ui,vi]=el.dataset.ksave.split('|'),x=PRIV[f]&&PRIV[f].units[Number(ui)].vocab[Number(vi)];
     if(x&&!hasWord(x.w)){S.words.push({id:'w'+Date.now().toString(36),w:x.w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}return;}
+  if((el=g('[data-bretry]'))){const id=el.dataset.bretry;BERR.delete(id);getBook(id);renderView();return;}
   if((el=g('[data-bpas]'))){const [id,i]=el.dataset.bpas.split(':');bPas[id]=Number(i);haptic('sel');renderView();return;}
   if((el=g('[data-btab]'))){const [id,t]=el.dataset.btab.split(':');bTab[id]=t;haptic('sel');renderView();return;}
   if((el=g('[data-bans]'))){const k=el.dataset.bans;bRev.has(k)?bRev.delete(k):bRev.add(k);haptic('sel');renderView();return;}

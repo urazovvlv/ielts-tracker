@@ -28,7 +28,7 @@ jobs:
           tok = os.environ.get("BOT_TOKEN", "").strip()
           key = hmac.new(tok.encode(), b"ielts-focus-read", hashlib.sha256).hexdigest()
           today = (dt.datetime.utcnow() + dt.timedelta(hours=5)).date().isoformat()
-          bc, bb = get(f"{base}/book?f=c15t1", {"X-Key": key})
+          bc, bb = get(f"{base}/book?f=c15t2", {"X-Key": key})
           print(f"::notice::book {bc} {bb[:90]}")
           code, body = get(f"{base}/focus?ids=5020539876&date={today}", {"X-Key": key})
           print(f"::notice::focus {code} {body}")
