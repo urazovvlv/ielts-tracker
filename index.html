@@ -726,7 +726,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-10-31.4';
+const BUILD='2026-11-02.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1871,7 +1871,9 @@ const MT={
      ['lost','Lost my place','Savollarni oldindan o\'qing va kalit so\'zlarni belgilang; o\'tib ketgan savolga qaytmang, keyingisiga o\'ting.'],
      ['limit','Word limit broken','"NO MORE THAN TWO WORDS" ni har safar o\'qing; a/the ham so\'z hisoblanadi.'],
      ['map','Map / plan labelling','Kirish joyini toping va yo\'nalish so\'zlarini (opposite, next to, behind) oldindan takrorlang.'],
-     ['mcq','Multiple choice','Hamma variant tilga olinadi; savoldagi aniq fikrga mos kelganini tanlang, shunchaki eshitilganini emas.']],
+     ['mcq','Multiple choice','Hamma variant tilga olinadi; savoldagi aniq fikrga mos kelganini tanlang, shunchaki eshitilganini emas.'],
+     ['form','Form / note completion','Ikkala gapiruvchini ham tinglang; "Yes" eshitilsa savoldagi so\'z javob. Paraphrase – javob emas, javob uning yonida.'],
+     ['match','Matching (opinions)','Rozilik signallari (me too, Absolutely, Yes, and…) va rad signallari (Mm. But…, though) ni tinglang; baho idiomalarini yodlang.']],
   R:[['tfng','True / False / Not Given','False = matn teskarisini aytadi. Not Given = matnda bu haqda ma\'lumot yo\'q. O\'z bilimingizdan foydalanmang.'],
      ['ynng','Yes / No / Not Given','Bu muallif fikri haqida. Faktni emas, muallif nima deb hisoblashini qidiring.'],
      ['head','Matching headings','Abzasning birinchi va oxirgi gapini o\'qing; asosiy fikrni toping, mayda detalga aldanmang.'],
@@ -1905,14 +1907,16 @@ const MT={
      ['fill','Too many fillers (umm, like)','Filler o\'rniga qisqa pauza qiling yoki "Well," bilan boshlang.']]
 };
 const MTAG={L:'Listening',R:'Reading',W:'Writing',S:'Speaking'};
-const MC=[['att','Inattention','E\'tiborsizlik: javobni gap bilan qayta o\'qing, bo\'sh joy vazifasini aniqlang (kim? kimga? nima?).'],['haste','Rushing','Shoshilish: aynan bir xil so\'z ko\'rsangiz to\'xtang – javob odatda sinonim bilan beriladi.'],['vocab','Vocabulary','Lug\'at: notanish akademik so\'zlarni Words\'ga qo\'shib takrorlang.'],['strat','Strategy','Strategiya: variantni bo\'laklarga ajrating; Y/N/NG da fe\'l va muallif bahosini tekshiring.']];
+const MC=[['att','Inattention','E\'tiborsizlik: javobni gap bilan qayta o\'qing, bo\'sh joy vazifasini aniqlang (kim? kimga? nima?).'],['haste','Rushing','Shoshilish: aynan bir xil so\'z ko\'rsangiz to\'xtang – javob odatda sinonim bilan beriladi.'],['vocab','Vocabulary','Lug\'at: notanish akademik so\'zlarni Words\'ga qo\'shib takrorlang.'],['strat','Strategy','Strategiya: variantni bo\'laklarga ajrating; Y/N/NG da fe\'l va muallif bahosini tekshiring.'],['hear','Audio not caught','Eshitilmadi: har kuni 10 daqiqa diktant – so\'zma-so\'z yozib, transkript bilan solishtiring.']];
 const mcInfo=c=>MC.find(x=>x[0]===c)||null;
+let mFilter='all';
+const mList=()=>mFilter==='all'?S.mist:S.mist.filter(m=>m.sk===mFilter);
 function breakdownCard(){
-  if(!S.mist.length)return '';
-  const by=(f)=>{const o={};for(const m of S.mist){const k=f(m);if(!k)continue;o[k]=(o[k]||0)+(Number(m.n)||1);}return Object.entries(o).sort((a,b)=>b[1]-a[1]);};
+  const LST=mList();if(!LST.length)return '';
+  const by=(f)=>{const o={};for(const m of LST){const k=f(m);if(!k)continue;o[k]=(o[k]||0)+(Number(m.n)||1);}return Object.entries(o).sort((a,b)=>b[1]-a[1]);};
   const qt=by(m=>m.sk+':'+m.ty),cs=by(m=>m.c||''),max=Math.max(1,...qt.map(x=>x[1]),...cs.map(x=>x[1]));
   const row=(lab,n,badge)=>`<li class="brow"><span class="brow-l">${badge||''}${esc(lab)}</span><span class="brow-bar"><i style="width:${n/max*100}%"></i></span><b class="num">${n}</b></li>`;
-  return `<section class="card"><div class="card-h"><h2>Mistakes by type</h2><span class="note">${S.mist.reduce((a,m)=>a+(Number(m.n)||1),0)} in total</span></div>
+  return `<section class="card"><div class="card-h"><h2>Mistakes by type</h2><span class="note">${LST.reduce((a,m)=>a+(Number(m.n)||1),0)} ${mFilter==='all'?'in total':MTAG[mFilter]}</span></div>
     <div class="label">Question type</div><ul class="blist">${qt.map(([k,n])=>{const [sk,ty]=k.split(':');return row(mtInfo(sk,ty)[1],n,`<span class="skb sk-${sk}">${sk}</span>`);}).join('')}</ul>
     ${cs.length?`<div class="label">Cause</div><ul class="blist">${cs.map(([c,n])=>row((mcInfo(c)||[c,c])[1],n,'')).join('')}</ul>${cs.slice(0,1).map(([c])=>mcInfo(c)?`<p class="note" style="margin:0">${esc(mcInfo(c)[2])}</p>`:'').join('')}`:''}</section>`;
 }
@@ -1932,10 +1936,12 @@ function viewMistakes(){
   const t=todayIdx(),past=MOCKDAYS.filter(n=>n<=t),defSrc=past.length?past[past.length-1]:0;
   if(mAdd.src==null)mAdd.src=defSrc;
   const types=MT[mAdd.sk];
-  const groups={};for(const m of S.mist.slice().reverse()){(groups[m.src]=groups[m.src]||[]).push(m);}
+  const groups={};for(const m of mList().slice().reverse()){(groups[m.src]=groups[m.src]||[]).push(m);}
+  const cnt=k=>(k==='all'?S.mist:S.mist.filter(m=>m.sk===k)).length;
+  const fchips=S.mist.length?`<div class="chips" role="group" aria-label="Show">${[['all','All'],['L','Listening'],['R','Reading'],['W','Writing'],['S','Speaking']].filter(([k])=>k==='all'||cnt(k)).map(([k,l])=>`<button type="button" class="chip ${mFilter===k?'on':''}" data-mfil="${k}">${l} · ${cnt(k)}</button>`).join('')}</div>`:'';
   const order=Object.keys(groups).map(Number).sort((a,b)=>b-a);
   const srcName=s=>s>0?`Day ${s} mock · ${MOCKS[s]||''}`:'Practice';
-  return `${breakdownCard()}${topCard('Your top mistakes','Review these before every mock')}
+  return `${fchips?`<section class="card"><div class="card-h"><h2>Mistakes</h2><span class="note">Filter by skill</span></div>${fchips}</section>`:''}${breakdownCard()}${topCard('Your top mistakes','Review these before every mock')}
   <section class="card"><div class="card-h"><h2>Add a mistake</h2><span class="note">${S.mist.length} logged</span></div>
     <form class="addrow" data-addmist="1">
       <div class="seg">${['L','R','W','S'].map(k=>`<button type="button" data-msk="${k}" class="${mAdd.sk===k?'on':''}">${MTAG[k]}</button>`).join('')}</div>
@@ -1955,8 +1961,31 @@ function viewMistakes(){
 /* ---------- One-time imports the owner asked for (applied once, marked in the mock doc) ---------- */
 function applySeeds(){
   if(!LOADOK||!PLAN||!MOCKDAYS.includes(7))return;
-  const m=mockDoc(7);if(m.sd)return;
-  const base={sd:1,note:'Reading: Cambridge 21 · Test 1 (31 Oct)'};if(m.R===''||m.R==null)base.R=30;
+  let m=mockDoc(7);
+  if(!m.sdL){const b={sdL:1,note:'Reading + Listening: Cambridge 21 · Test 1 (31 Oct, 2 Nov)'};if(m.L===''||m.L==null)b.L=24;
+    S.mocks.m07=Object.assign({},m,b);touch('m07');m=mockDoc(7);
+    const tl=Date.parse('2026-11-02T13:30:00+05:00');
+    const LL=[['7','form','vocab',"Q7: tow → towel. towel = sochiq. Javobni erkak aytgan: 'And a towel?' – ayol 'Yes' dedi."],
+      ['8','form','att',"Q8: snacks → café. Erkak: 'is there a café at the club?' – ayol 'Yes'. 'There is a ___' – birlik ot kerak."],
+      ['10','form','att',"Q10: rooms → lockers. Erkak so'radi, ayol 'Yes' dedi. 'changing rooms' – lockerlar turgan joy, tuzoq."],
+      ['11','mcq','vocab',"Q11: B → A. 'working for free' → wage emas; 'unlikely to be any catering' → meals emas; transport costs covered = travel expenses."],
+      ['13','mcq','strat',"Q13: C → A. 'very few times … bored' = deyarli hech qachon; impatient directors = difficult directors."],
+      ['15','mcq','vocab',"Q15: B → A. 'just the essentials will do' = faqat eng zarurlari yetadi; at all times = always."],
+      ['22','mcq','strat',"Q22: E → B. 'Mm. But that's just at a national level' – e'tiroz. Global examples + 'Yes, me too' – rozilik."],
+      ['23','mcq','strat',"Q23: B → C. new technology = tracking systems, robots, robotics; 'Yes, and…' + 'Absolutely'."],
+      ['25','match','hear',"Q25: C → G. 'probably true, but didn't provide much information to explain why' = insufficient evidence."],
+      ['26','match','vocab',"Q26: D → B. 'it was showing its age' = outdated."],
+      ['27','match','vocab',"Q27: B → F. 'stating the obvious' = predictable (outdated emas)."],
+      ['30','match','vocab',"Q30: F → E. 'one-sided' = not balanced."],
+      ['33','form','att',"Q33: crops → demand. 'rising or falling' = increasing or decreasing; nima o'zgaradi? – demand."],
+      ['34','form','hear',"Q34: mountain → equator. 'amount of' → 'mountain' bo'lib eshitildi; equator = ekvator (notanish edi)."],
+      ['36','form','vocab',"Q36: devistation → fungus. fungus = zamburug'. To'g'ri joydagi notanish so'zni eshitganingizcha yozing."],
+      ['40','form','hear',"Q40: reach → soil. rich = good (paraphrase); javob uning yonida – soil. rich /ɪ/ ≠ reach /iː/."]];
+    let addL=0;
+    LL.forEach(([q,ty,c,note],i)=>{const id='mc21t1L'+q;if(S.mist.some(x=>x.id===id))return;S.mist.push({id,sk:'L',ty,n:1,note,src:7,t:tl+i*1000,c,q});addL++;});
+    if(addL)saveList('mist');}
+  if(m.sd)return;
+  const base={sd:1};if(m.R===''||m.R==null)base.R=30;
   S.mocks.m07=Object.assign({},m,base);touch('m07');
   const t0=Date.parse('2026-10-31T17:10:00+05:00');
   const L=[['3','comp','haste',"Q3: 'advice' → notes. 'making extensive notes' = 'took lengthy notes'. Savoldagi 'took' matnda aynan takrorlangan joy – tuzoq."],
@@ -2147,6 +2176,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-ksave]'))){e.preventDefault();const [f,ui,vi]=el.dataset.ksave.split('|'),x=PRIV[f]&&PRIV[f].units[Number(ui)].vocab[Number(vi)];
     if(x&&!hasWord(x.w)){S.words.push({id:'w'+Date.now().toString(36),w:x.w,m:x.uz,ex:x.ex||'',k:0});saveWords();haptic('ok');toast('Saved to my words');renderView();}return;}
   if((el=g('[data-bretry]'))){const id=el.dataset.bretry;BERR.delete(id);getBook(id);renderView();return;}
+  if((el=g('[data-mfil]'))){mFilter=el.dataset.mfil;haptic('sel');renderView();return;}
   if((el=g('[data-mc]'))){mAdd.c=mAdd.c===el.dataset.mc?'':el.dataset.mc;haptic('sel');renderView();return;}
   if((el=g('[data-bpas]'))){const [id,i]=el.dataset.bpas.split(':');bPas[id]=Number(i);haptic('sel');renderView();return;}
   if((el=g('[data-btab]'))){const [id,t]=el.dataset.btab.split(':');bTab[id]=t;haptic('sel');renderView();return;}
