@@ -36,9 +36,16 @@
   {
    "week": 2,
    "skill": "R",
-   "id": "collins-reading",
-   "title": "Collins · Reading for IELTS",
-   "days": []
+   "id": "improve-skills-reading",
+   "title": "Macmillan · Improve your Skills: Reading for IELTS 6.0–7.5",
+   "days": [
+    {
+     "day": 8,
+     "label": "Unit 1–2",
+     "f": "improve-reading-d8"
+    }
+   ],
+   "note": "Day 9 Unit 3 · Day 10 Unit 4 · Day 11 Unit 5–6 · Day 12 Unit 7 · Day 13 Unit 8 · Day 14 Unit 9–10"
   },
   {
    "week": 2,
