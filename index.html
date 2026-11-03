@@ -713,6 +713,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .brow-bar{height:8px;border-radius:4px;background:var(--sunk);overflow:hidden}
 .brow-bar i{display:block;height:100%;border-radius:4px;background:var(--navy)}
 .mcause{font-size:11px;font-weight:700;padding:1px 7px;border-radius:99px;background:var(--teal-soft);color:var(--teal);vertical-align:1px}
+.kseg{display:grid;grid-template-columns:repeat(3,1fr)}
+.kseg button{min-height:38px;font-size:13px;padding:6px 2px}
 </style>
 </head>
 <body>
@@ -726,7 +728,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-03.2';
+const BUILD='2026-11-03.3';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1753,11 +1755,15 @@ function kDayView(f){
     ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}</div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
   </div>`).join('');
 }
+const KSK=[['R','Reading'],['L','Listening'],['W','Writing'],['S','Speaking'],['V','Vocabulary'],['G','Grammar']];
+let kSkill='R';try{const v=localStorage.getItem('r75:kskill');if(KSK.some(x=>x[0]===v))kSkill=v;}catch(e){}
 function viewSkillBooks(){
   if(BIDX===null)return `<section class="card"><p class="note" style="margin:0">Loading…</p></section>`;
   if(!BOOKS.length)return `<section class="card"><p class="note" style="margin:0">No books planned yet.</p></section>`;
-  const cw=Math.max(1,Math.ceil(clampDay(todayIdx())/7)),weeks=[...new Set(BOOKS.map(b=>b.week))].sort((a,b)=>a-b);
-  return weeks.map(w=>{const list=BOOKS.filter(b=>b.week===w),a=(w-1)*7+1,z=Math.min(DAYS,w*7);
+  const cw=Math.max(1,Math.ceil(clampDay(todayIdx())/7)),mine=BOOKS.filter(b=>b.skill===kSkill||(b.skill==='T'&&'LRWS'.includes(kSkill))),weeks=[...new Set(mine.map(b=>b.week))].sort((a,b)=>a-b);
+  const seg=`<div class="seg kseg" role="tablist">${KSK.map(([k,l])=>`<button data-kskill="${k}" class="${kSkill===k?'on':''}" role="tab" aria-selected="${kSkill===k}">${l}</button>`).join('')}</div>`;
+  if(!weeks.length)return seg+`<section class="card"><p class="note" style="margin:0">No ${esc((KSK.find(x=>x[0]===kSkill)||[,''])[1])} book planned yet.</p></section>`;
+  return seg+weeks.map(w=>{const list=mine.filter(b=>b.week===w),a=(w-1)*7+1,z=Math.min(DAYS,w*7);
     return `<section class="card kweek ${w===cw?'now':''}"><div class="card-h"><h2>Week ${w}</h2><span class="note">Day ${a}–${z}${w===cw?' · this week':''}</span></div>
       ${list.map(b=>{const ready=(b.days||[]).length,open=KO.has(b.id)||(ready&&w===cw&&!KO.size&&b===list.find(x=>(x.days||[]).length)),sel=KDAY[b.id]||((b.days||[]).find(d=>d.day===clampDay(todayIdx()))||(b.days||[])[0]||{}).f;
         if(open)KO.add(b.id);
@@ -2167,6 +2173,7 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-dnav]'))){const v=Number(el.dataset.dnav),today=clampDay(todayIdx());dSel=v===0?today:clampDay((dSel||today)+v);dOpen.clear();haptic('sel');renderView();scrollTo(0,0);return;}
   if((el=g('[data-dlearn]'))){const n=clampDay(dSel||todayIdx()),sk=el.dataset.dlearn,dl=Object.assign({},dayDoc(n).dl);dl[sk]=!dl[sk];setDay(n,{dl});haptic(dl[sk]?'ok':'light');if(dl[sk])toast('Section learned');renderView();return;}
   if((el=g('[data-say]'))){e.preventDefault();sayText(el.dataset.say);return;}
+  if((el=g('[data-kskill]'))){kSkill=el.dataset.kskill;try{localStorage.setItem('r75:kskill',kSkill);}catch(e){}haptic('sel');renderView();return;}
   if((el=g('[data-dmode]'))){dMode=el.dataset.dmode;haptic('sel');if(dMode!=='pack'&&BIDX===null)loadBooks();renderView();scrollTo(0,0);return;}
   if((el=g('[data-kday]'))){const [id,f]=el.dataset.kday.split('|');KDAY[id]=f;haptic('sel');renderView();return;}
   if((el=g('[data-kc]'))){const k=el.dataset.kc;KANS[k]=KANS[k]===el.dataset.v?'':el.dataset.v;saveKans();haptic('sel');renderView();return;}
