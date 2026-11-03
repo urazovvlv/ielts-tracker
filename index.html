@@ -726,7 +726,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-02.1';
+const BUILD='2026-11-03.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1026,7 +1026,7 @@ function renderHeader(){
   if(document.querySelector('.ruler'))setTimeout(()=>{rulerShown=true;},50);
 }
 function renderTabs(){
-  const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['words','Words'],['speak','Practice']];
+  const T=[['today','Today'],['daily','Daily'],['prog','Progress'],['speak','Practice']];
   document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k==='speak'?'pen':k)}${l}</button>`).join('');
 }
 
@@ -1040,7 +1040,7 @@ function editPanel(list,kind){
 }
 function wotdCard(n){
   const w=DAILY.length?DAILY[(clampDay(n)-1)%DAILY.length]:null;if(!w)return '';
-  return `<section class="card wotd"><div class="label">Word of the day · Day ${clampDay(n)}</div><div class="w">${esc(w.w)}</div><div class="uz">${esc(w.uz)}</div><div class="ex">${esc(w.ex)}</div><button class="btn" data-saveword="${clampDay(n)}">${S.words.some(x=>x.w.toLowerCase()===w.w.toLowerCase())?'Saved to my words':'Save to my words'}</button></section>`;
+  return `<section class="card wotd"><div class="label">Word of the day · Day ${clampDay(n)}</div><div class="w">${esc(w.w)}</div><div class="uz">${esc(w.uz)}</div><div class="ex">${esc(w.ex)}</div></section>`;
 }
 function suggestCard(n){
   const have=new Set(listFor(n).map(x=>x.label));
@@ -1632,7 +1632,7 @@ function dItem(sec,x,i){
   const save=['idioms','reading','task1','task2'].includes(sec);
   const head=sec==='idioms'?x.t:(sec==='speaking'||sec==='grammar')?x.s:x.w;
   const saved=save&&S.words.some(w=>w.w.toLowerCase()===String(head).toLowerCase());
-  return `<li class="di"><div class="di-h"><b>${esc(head)}</b>${x.pos?`<span class="di-pos">${esc(x.pos)}</span>`:''}${sec==='pron'&&ttsOK()?`<button class="di-btn" data-say="${esc(head.replace(/ – /g,', '))}" aria-label="Listen">🔊</button>`:''}${save?`<button class="di-btn ${saved?'on':''}" data-dsave="${sec}:${i}" aria-label="Save to my words">${saved?'✓':'+'}</button>`:''}</div>
+  return `<li class="di"><div class="di-h"><b>${esc(head)}</b>${x.pos?`<span class="di-pos">${esc(x.pos)}</span>`:''}${sec==='pron'&&ttsOK()?`<button class="di-btn" data-say="${esc(head.replace(/ – /g,', '))}" aria-label="Listen">🔊</button>`:''}</div>
     ${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}
     ${x.syn&&x.syn!=='—'?`<div class="di-syn">≈ ${esc(x.syn)}</div>`:''}
     <div class="di-uz">${esc(x.uz)}</div>
@@ -1686,7 +1686,7 @@ async function getBook(id){
 const hasWord=w=>S.words.some(y=>y.w.toLowerCase()===String(w).toLowerCase());
 function bWord(id,pi,x,i){
   const key=`${id}:${pi}:${i}`,saved=hasWord(x.w);
-  return `<details class="bw" data-bw="${key}" ${bWOpen.has(key)?'open':''}><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos)}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w.replace(/ … /g,', '))}" aria-label="Listen to ${esc(x.w)}">🔊</button>`:''}<button class="di-btn ${saved?'on':''}" data-bsave="${key}" aria-label="Save to my words">${saved?'✓':'+'}</button></div>
+  return `<details class="bw" data-bw="${key}" ${bWOpen.has(key)?'open':''}><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos)}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w.replace(/ … /g,', '))}" aria-label="Listen to ${esc(x.w)}">🔊</button>`:''}</div>
     <div class="bw-uz">${esc(x.uz)}</div></summary>
     <div class="bw-b"><div class="di-ipa">${esc(x.ipa)}</div><div class="bw-iz">${esc(x.iz)}</div><div class="di-ex">${esc(x.ex)}</div></div></details>`;
 }
@@ -1706,8 +1706,7 @@ function viewBooks(){
       body=`<div class="bbody"><div class="seg" role="tablist">${b.passages.map((x,i)=>`<button data-bpas="${st.id}:${i}" class="${i===pi?'on':''}" role="tab" aria-selected="${i===pi}">Passage ${x.n}</button>`).join('')}</div>
         <div class="bp-h"><b>${esc(P.title)}</b><span class="note">Questions ${esc(P.qs)}</span></div>
         <div class="seg" role="tablist"><button data-btab="${st.id}:vocab" class="${t==='vocab'?'on':''}">Vocabulary · ${P.vocab.length}</button><button data-btab="${st.id}:keys" class="${t==='keys'?'on':''}">Keywords · ${P.keys.length}</button></div>
-        ${t==='vocab'?`<div class="bwl">${P.vocab.map((x,i)=>bWord(st.id,pi,x,i)).join('')}</div>
-          <button class="btn block ${all?'':'primary'}" data-bsaveall="${st.id}:${pi}" ${all?'disabled':''}>${all?'All saved to My words ✓':`Add all ${P.vocab.length} to My words`}</button>`
+        ${t==='vocab'?`<div class="bwl">${P.vocab.map((x,i)=>bWord(st.id,pi,x,i)).join('')}</div>`
         :`<div class="btypes">${P.types.map(([q,n])=>`<span><b>${esc(q)}</b> ${esc(n)}</span>`).join('')}</div><div class="bkl">${P.keys.map((k,j)=>bKey(st.id,pi,k,j)).join('')}</div>
           <p class="note" style="margin:0">Q = question wording · P = how the passage says it</p>`}</div>`;}
     return `<details class="card dsec bset" data-bset="${st.id}" ${open?'open':''}><summary><span class="dsec-t"><span class="skb sk-R">R</span><b>Day ${st.day} · ${esc(st.title)}</b></span><span class="note">${up&&od?`Upcoming · ${fmt(dateOf(od))} · `:''}3 passages · ${st.words} words · keyword tables</span></summary>${body}</details>`;
@@ -1751,7 +1750,7 @@ function kDayView(f){
         return `<li class="kitem ${chk?(good?'ok':'no'):''}"><div class="kq">${esc(it.q)}</div>${field}${chk?`<div class="kfb">${good?'✓ Correct':`✗ Answer: <b>${esc((it.a||[])[0]||'')}</b>`}${it.why?`<span>${esc(it.why)}</span>`:''}</div>`:''}</li>`;}).join('');
       return `<div class="kexer"><div class="kexer-h"><b>${esc(x.n||'Exercise '+(ei+1))}</b>${chk?`<span class="kscore">${ok}/${(x.items||[]).length}</span>`:''}</div>${x.instr?`<p class="note" style="margin:0">${esc(x.instr)}</p>`:''}${x.audio?`<p class="kaudio">🎧 ${esc(x.audio)}</p>`:''}
         <ol class="kitems">${items}</ol><div class="grid2"><button class="btn block" data-kreset="${esc(key)}">Clear</button><button class="btn block primary" data-kcheck="${esc(key)}">${chk?'Check again':'Check'}</button></div></div>`;}).join('')}
-    ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}<button class="di-btn ${saved?'on':''}" data-ksave="${esc(f)}|${ui}|${vi}" aria-label="Save to my words">${saved?'✓':'+'}</button></div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
+    ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}</div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
   </div>`).join('');
 }
 function viewSkillBooks(){
@@ -2090,7 +2089,7 @@ function studyCard(){
 function renderView(){
   const v=document.getElementById('view');
   if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
-  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():tab==='words'?viewWords():viewPractice();
+  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():viewPractice();
   updateBack();
 }
 /* What the Telegram back arrow should close, newest layer first. */
