@@ -36,9 +36,38 @@
      "day": 8,
      "label": "Unit 1–2",
      "f": "improve-reading-d8"
+    },
+    {
+     "day": 9,
+     "label": "Unit 3–4",
+     "f": "improve-reading-d9"
+    },
+    {
+     "day": 10,
+     "label": "Unit 5–6",
+     "f": "improve-reading-d10"
+    },
+    {
+     "day": 11,
+     "label": "Unit 7–8",
+     "f": "improve-reading-d11"
+    },
+    {
+     "day": 12,
+     "label": "Unit 9–10",
+     "f": "improve-reading-d12"
+    },
+    {
+     "day": 13,
+     "label": "Review + practice test",
+     "f": "improve-reading-d13"
+    },
+    {
+     "day": 14,
+     "label": "Passage 3 practice + review",
+     "f": "improve-reading-d14"
     }
-   ],
-   "note": "Day 9 Unit 3 · Day 10 Unit 4 · Day 11 Unit 5–6 · Day 12 Unit 7 · Day 13 Unit 8 · Day 14 Unit 9–10"
+   ]
   }
  ]
 }

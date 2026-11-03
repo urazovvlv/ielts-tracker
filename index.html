@@ -715,6 +715,12 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .mcause{font-size:11px;font-weight:700;padding:1px 7px;border-radius:99px;background:var(--teal-soft);color:var(--teal);vertical-align:1px}
 .kseg{display:grid;grid-template-columns:repeat(3,1fr)}
 .kseg button{min-height:38px;font-size:13px;padding:6px 2px}
+.kimg{margin:8px 0;text-align:center}.kimg img{max-width:100%;border-radius:10px;background:#fff}.kimg figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+.ktblw{overflow-x:auto;margin:8px 0}.ktbl{border-collapse:collapse;font-size:13px;width:100%}.ktbl th,.ktbl td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}.ktbl th{background:var(--sunk)}
+.kfold>summary{cursor:pointer;list-style:none;padding:4px 0}.kfold>summary::before{content:'▸ ';color:var(--muted)}.kfold[open]>summary::before{content:'▾ '}
+.kta{width:100%;resize:vertical;min-height:52px;font:inherit}
+.kfam{font-size:13px;color:var(--muted);line-height:1.45}
+.kfam b{color:var(--ink);font-weight:600}
 </style>
 </head>
 <body>
@@ -728,7 +734,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-03.3';
+const BUILD='2026-11-03.4';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1744,15 +1750,19 @@ function kDayView(f){
   if(!D){if(!KERR.has(f))privFetch(f).then(d=>{if(!d)KERR.add(f);if(tab==='books')renderView();});
     return `<p class="note" style="margin:0">${KERR.has(f)?privMsg(f):'Loading…'}</p>`;}
   return (D.units||[]).map((u,ui)=>`<div class="kunit"><h3>${esc(u.name)}</h3>
-    ${(u.lesson||[]).map(l=>`<div class="klesson">${l.h?`<b>${esc(l.h)}</b>`:''}${(l.p||[]).map(t=>`<p>${esc(t)}</p>`).join('')}${(l.ex||[]).length?`<ul class="kex">${l.ex.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${(l.tips||[]).map(t=>`<div class="ktip">${esc(t)}</div>`).join('')}</div>`).join('')}
+    ${(u.lesson||[]).map(l=>{const body=`${(l.p||[]).map(t=>`<p>${esc(t)}</p>`).join('')}${l.img&&/^data:image\//.test(l.img)?`<figure class="kimg"><img src="${esc(l.img)}" alt="${esc(l.cap||l.h||'')}" loading="lazy">${l.cap?`<figcaption>${esc(l.cap)}</figcaption>`:''}</figure>`:''}${(l.tbl||[]).length?`<div class="ktblw"><table class="ktbl">${l.tbl.map((r,ri)=>`<tr>${r.map(c=>ri===0?`<th>${esc(c)}</th>`:`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`:''}${(l.ex||[]).length?`<ul class="kex">${l.ex.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${(l.tips||[]).map(t=>`<div class="ktip">${esc(t)}</div>`).join('')}`;
+      return l.fold?`<details class="klesson kfold"><summary><b>${esc(l.h||'Text')}</b></summary>${body}</details>`:`<div class="klesson">${l.h?`<b>${esc(l.h)}</b>`:''}${body}</div>`;}).join('')}
     ${(u.ex||[]).map((x,ei)=>{const key=`${f}|${ui}|${ei}`,chk=KCHK.has(key);let ok=0;
-      const items=(x.items||[]).map((it,ii)=>{const ak=`${key}|${ii}`,val=KANS[ak]||'',good=(it.a||[]).some(a=>kNorm(a)===kNorm(val));if(chk&&good)ok++;
+      const graded=(x.items||[]).filter(it=>!it.open).length;
+      const items=(x.items||[]).map((it,ii)=>{const ak=`${key}|${ii}`,val=KANS[ak]||'';
+        if(it.open)return `<li class="kitem kopen"><div class="kq">${esc(it.q)}</div><textarea class="kin kta" data-ka="${esc(ak)}" rows="2" aria-label="Answer ${ii+1}">${esc(val)}</textarea>${chk?`<div class="kfb">Model answer: <b>${esc((it.a||[])[0]||'')}</b>${it.why?`<span>${esc(it.why)}</span>`:''}</div>`:''}</li>`;
+        const good=(it.a||[]).some(a=>kNorm(a)===kNorm(val));if(chk&&good)ok++;
         const field=it.opts&&it.opts.length?`<div class="kopts">${it.opts.map(o=>`<button type="button" class="chip ${val===o?'on':''}" data-kc="${esc(ak)}" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div>`
           :`<input type="text" class="kin" data-ka="${esc(ak)}" value="${esc(val)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Answer ${ii+1}">`;
         return `<li class="kitem ${chk?(good?'ok':'no'):''}"><div class="kq">${esc(it.q)}</div>${field}${chk?`<div class="kfb">${good?'✓ Correct':`✗ Answer: <b>${esc((it.a||[])[0]||'')}</b>`}${it.why?`<span>${esc(it.why)}</span>`:''}</div>`:''}</li>`;}).join('');
-      return `<div class="kexer"><div class="kexer-h"><b>${esc(x.n||'Exercise '+(ei+1))}</b>${chk?`<span class="kscore">${ok}/${(x.items||[]).length}</span>`:''}</div>${x.instr?`<p class="note" style="margin:0">${esc(x.instr)}</p>`:''}${x.audio?`<p class="kaudio">🎧 ${esc(x.audio)}</p>`:''}
+      return `<div class="kexer"><div class="kexer-h"><b>${esc(x.n||'Exercise '+(ei+1))}</b>${chk&&graded?`<span class="kscore">${ok}/${graded}</span>`:''}</div>${x.instr?`<p class="note" style="margin:0">${esc(x.instr)}</p>`:''}${x.audio?`<p class="kaudio">🎧 ${esc(x.audio)}</p>`:''}${x.img&&/^data:image\//.test(x.img)?`<figure class="kimg"><img src="${esc(x.img)}" alt="${esc(x.n||'')}" loading="lazy"></figure>`:''}${(x.tbl||[]).length?`<div class="ktblw"><table class="ktbl">${x.tbl.map((r,ri)=>`<tr>${r.map(c=>ri===0?`<th>${esc(c)}</th>`:`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`:''}
         <ol class="kitems">${items}</ol><div class="grid2"><button class="btn block" data-kreset="${esc(key)}">Clear</button><button class="btn block primary" data-kcheck="${esc(key)}">${chk?'Check again':'Check'}</button></div></div>`;}).join('')}
-    ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}</div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
+    ${(u.vocab||[]).length?`<div class="kvoc"><b>Vocabulary · ${u.vocab.length}</b>${u.vocab.map((x,vi)=>{const saved=hasWord(x.w);return `<details class="bw"><summary><div class="bw-h"><b>${esc(x.w)}</b><span class="di-pos">${esc(x.pos||'')}</span>${ttsOK()?`<button class="di-btn" data-say="${esc(x.w)}" aria-label="Listen">🔊</button>`:''}</div><div class="bw-uz">${esc(x.uz)}</div></summary><div class="bw-b">${x.ipa?`<div class="di-ipa">${esc(x.ipa)}</div>`:''}${x.iz?`<div class="bw-iz">${esc(x.iz)}</div>`:''}${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}${x.exuz?`<div class="bw-iz">${esc(x.exuz)}</div>`:''}${x.fam?`<div class="kfam"><b>Word family:</b> ${esc(x.fam)}</div>`:''}${x.ielts?`<div class="kfam"><b>IELTS:</b> ${esc(x.ielts)}</div>`:''}</div></details>`;}).join('')}</div>`:''}
   </div>`).join('');
 }
 const KSK=[['R','Reading'],['L','Listening'],['W','Writing'],['S','Speaking'],['V','Vocabulary'],['G','Grammar']];
@@ -2266,7 +2276,7 @@ document.addEventListener('change',e=>{
   if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked)haptic('light');renderHeader();renderView();return;}
 });
 document.addEventListener('input',e=>{
-  if(e.target&&e.target.dataset&&e.target.dataset.ka){KANS[e.target.dataset.ka]=e.target.value.slice(0,200);saveKans();return;}
+  if(e.target&&e.target.dataset&&e.target.dataset.ka){KANS[e.target.dataset.ka]=e.target.value.slice(0,800);saveKans();return;}
   const t=e.target;
   if(WZ){
     if(t.dataset.w){WZ.d[t.dataset.w]=t.type==='date'||t.type==='text'?t.value:Number(t.value);return;}
