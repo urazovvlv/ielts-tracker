@@ -140,6 +140,14 @@
    "title": "S. Hafizov, O. Abdullayev · Ingliz tili grammatikasi",
    "days": [],
    "note": "Weeks 2–5 · daily pages are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "W",
+   "id": "colwr",
+   "title": "Collins · Writing for IELTS (Anneli Williams)",
+   "days": [],
+   "note": "Daily units are in the to-do list"
   }
  ],
  "tasks": [
@@ -885,6 +893,147 @@
    "sk": "G",
    "label": "Grammar · Hafizov · Conjunctions (p. 227–233)",
    "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 2",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (line graph) + Task 2 (opinion (agree/disagree))",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    9
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 3",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    9
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (bar chart) + Task 2 (discussion (both views + your opinion))",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    10
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 4",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    10
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (pie chart) + Task 2 (advantages / disadvantages)",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    11
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 5",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    11
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (table) + Task 2 (problem / solution)",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    12
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 6",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    12
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (process diagram) + Task 2 (two-part question)",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    13
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 7",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    13
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (map) + Task 2 (opinion (agree/disagree))",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-book",
+   "days": [
+    14
+   ],
+   "sk": "W",
+   "label": "Writing · Collins Writing for IELTS · Unit 8",
+   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    14
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 (mixed charts) + Task 2 (discussion (both views + your opinion))",
+   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "W",
+   "label": "Writing: analyse one Band 9 sample",
+   "sub": "How the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
   }
  ]
 }
