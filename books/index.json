@@ -97,6 +97,69 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Exam conditions, no pauses · then every mistake into Mistakes with question type + cause · write the paraphrases"
+  },
+  {
+   "k": "l80",
+   "days": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 1–5 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    9
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 6–13 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    10
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 14–20 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    11
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 61–68 (Part 4)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    12
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 69–76 (Part 4)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    13
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 77–80 + 41–44 (Part 4 + Part 3)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l80",
+   "days": [
+    14
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 45–52 (Part 3)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
   }
  ]
 }
