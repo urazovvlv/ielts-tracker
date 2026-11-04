@@ -68,6 +68,14 @@
      "f": "improve-reading-d14"
     }
    ]
+  },
+  {
+   "week": 2,
+   "skill": "L",
+   "id": "l80",
+   "title": "Proper English School · 80 IELTS Listening Tests",
+   "days": [],
+   "note": "Daily tests are in the to-do list"
   }
  ],
  "tasks": [
@@ -160,6 +168,36 @@
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 45–52 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "L",
+   "label": "Listening: dictation (15 min)",
+   "sub": "1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript, mark what you missed"
+  },
+  {
+   "k": "l-ted",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "L",
+   "label": "Listening: TED talk / podcast + analysis",
+   "sub": "TED / BBC 6 Minute English / BBC Global News · write the main idea in 2–3 sentences · 5 new words or phrases with meaning"
   }
  ]
 }
