@@ -33,37 +33,37 @@
    "title": "Macmillan · Improve your Skills: Reading for IELTS 6.0–7.5",
    "days": [
     {
-     "day": 8,
+     "day": 9,
      "label": "Unit 1–2",
      "f": "improve-reading-d8"
     },
     {
-     "day": 9,
+     "day": 10,
      "label": "Unit 3–4",
      "f": "improve-reading-d9"
     },
     {
-     "day": 10,
+     "day": 11,
      "label": "Unit 5–6",
      "f": "improve-reading-d10"
     },
     {
-     "day": 11,
+     "day": 12,
      "label": "Unit 7–8",
      "f": "improve-reading-d11"
     },
     {
-     "day": 12,
+     "day": 13,
      "label": "Unit 9–10",
      "f": "improve-reading-d12"
     },
     {
-     "day": 13,
+     "day": 14,
      "label": "Review + practice test",
      "f": "improve-reading-d13"
     },
     {
-     "day": 14,
+     "day": 15,
      "label": "Passage 3 practice + review",
      "f": "improve-reading-d14"
     }
@@ -154,7 +154,6 @@
   {
    "k": "r-article",
    "days": [
-    8,
     9,
     10,
     11,
@@ -169,7 +168,6 @@
   {
    "k": "r-test",
    "days": [
-    8,
     10,
     12,
     14
@@ -181,7 +179,7 @@
   {
    "k": "l80",
    "days": [
-    8
+    9
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 1–5 (Part 1)",
@@ -190,7 +188,7 @@
   {
    "k": "l80",
    "days": [
-    9
+    10
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 6–13 (Part 1)",
@@ -199,7 +197,7 @@
   {
    "k": "l80",
    "days": [
-    10
+    11
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 14–20 (Part 1)",
@@ -208,7 +206,7 @@
   {
    "k": "l80",
    "days": [
-    11
+    12
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 61–68 (Part 4)",
@@ -217,7 +215,7 @@
   {
    "k": "l80",
    "days": [
-    12
+    13
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 69–76 (Part 4)",
@@ -226,7 +224,7 @@
   {
    "k": "l80",
    "days": [
-    13
+    14
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 77–80 + 41–44 (Part 4 + Part 3)",
@@ -235,7 +233,7 @@
   {
    "k": "l80",
    "days": [
-    14
+    15
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 45–52 (Part 3)",
@@ -244,7 +242,6 @@
   {
    "k": "l-dict",
    "days": [
-    8,
     9,
     10,
     11,
@@ -259,7 +256,6 @@
   {
    "k": "l-ted",
    "days": [
-    8,
     9,
     10,
     11,
@@ -285,7 +281,7 @@
   {
    "k": "v-ess",
    "days": [
-    8
+    9
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–5",
@@ -294,7 +290,7 @@
   {
    "k": "v-ess",
    "days": [
-    9
+    10
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
@@ -303,7 +299,7 @@
   {
    "k": "v-ess",
    "days": [
-    10
+    11
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
@@ -312,7 +308,7 @@
   {
    "k": "v-ess",
    "days": [
-    11
+    12
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
@@ -321,7 +317,7 @@
   {
    "k": "v-ess",
    "days": [
-    12
+    13
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
@@ -330,7 +326,7 @@
   {
    "k": "v-ess",
    "days": [
-    13
+    14
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 26–30",
@@ -339,7 +335,7 @@
   {
    "k": "v-ess",
    "days": [
-    14
+    15
    ],
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Review Units 1–30",
@@ -363,7 +359,7 @@
   {
    "k": "v-col",
    "days": [
-    8
+    9
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 1 What is a collocation?",
@@ -372,7 +368,7 @@
   {
    "k": "v-col",
    "days": [
-    9
+    10
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
@@ -381,7 +377,7 @@
   {
    "k": "v-col",
    "days": [
-    10
+    11
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
@@ -390,7 +386,7 @@
   {
    "k": "v-col",
    "days": [
-    11
+    12
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
@@ -399,7 +395,7 @@
   {
    "k": "v-col",
    "days": [
-    12
+    13
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 5 Register",
@@ -408,7 +404,7 @@
   {
    "k": "v-col",
    "days": [
-    13
+    14
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 6 Intensifying adverbs",
@@ -417,7 +413,7 @@
   {
    "k": "v-col",
    "days": [
-    14
+    15
    ],
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
@@ -426,7 +422,7 @@
   {
    "k": "v-dest",
    "days": [
-    8
+    9
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Units 3, 6, 9 · Fun and games · Learning and doing · Coming and going",
@@ -435,7 +431,7 @@
   {
    "k": "v-dest",
    "days": [
-    9
+    10
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Units 12, 15, 18 · Friends and relations · Buying and selling · Inventions and discoveries",
@@ -444,7 +440,7 @@
   {
    "k": "v-dest",
    "days": [
-    10
+    11
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Units 21, 24, 27 · Sending and receiving · People and daily life · Working and earning",
@@ -453,7 +449,7 @@
   {
    "k": "v-dest",
    "days": [
-    11
+    12
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Units 30, 33, 36 · Body and lifestyle · Creating and building · Nature and the universe",
@@ -462,7 +458,7 @@
   {
    "k": "v-dest",
    "days": [
-    12
+    13
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Units 39, 42 · Laughing and crying · Problems and solutions",
@@ -471,7 +467,7 @@
   {
    "k": "v-dest",
    "days": [
-    13
+    14
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Phrasal verbs (p. 202–205)",
@@ -480,7 +476,7 @@
   {
    "k": "v-dest",
    "days": [
-    14
+    15
    ],
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Prepositional phrases, word patterns, word formation (p. 206–215)",
@@ -489,7 +485,7 @@
   {
    "k": "s-book",
    "days": [
-    8
+    9
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 1–2",
@@ -498,7 +494,7 @@
   {
    "k": "s-book",
    "days": [
-    9
+    10
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 3–4",
@@ -507,7 +503,7 @@
   {
    "k": "s-book",
    "days": [
-    10
+    11
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 5–6",
@@ -516,7 +512,7 @@
   {
    "k": "s-book",
    "days": [
-    11
+    12
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 7–8",
@@ -525,7 +521,7 @@
   {
    "k": "s-book",
    "days": [
-    12
+    13
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 9–10",
@@ -534,7 +530,7 @@
   {
    "k": "s-book",
    "days": [
-    13
+    14
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 11–12",
@@ -543,7 +539,7 @@
   {
    "k": "s-book",
    "days": [
-    14
+    15
    ],
    "sk": "S",
    "label": "Speaking · full mock (11–14 min), recorded",
@@ -552,7 +548,6 @@
   {
    "k": "s-qs",
    "days": [
-    8,
     9,
     10,
     11,
@@ -567,7 +562,6 @@
   {
    "k": "s-shadow",
    "days": [
-    8,
     9,
     10,
     11,
@@ -582,7 +576,7 @@
   {
    "k": "s-pron",
    "days": [
-    8
+    9
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): word stress (phoTOgraphy, deVElopment)",
@@ -591,7 +585,7 @@
   {
    "k": "s-pron",
    "days": [
-    9
+    10
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): -ed endings: /t/ /d/ /ɪd/",
@@ -600,7 +594,7 @@
   {
    "k": "s-pron",
    "days": [
-    10
+    11
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): -s endings: /s/ /z/ /ɪz/ + th /θ ð/",
@@ -609,7 +603,7 @@
   {
    "k": "s-pron",
    "days": [
-    11
+    12
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): /v/ vs /w/, short vs long vowels (ship–sheep, full–fool)",
@@ -618,7 +612,7 @@
   {
    "k": "s-pron",
    "days": [
-    12
+    13
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): sentence stress + weak forms (to, of, can /kən/)",
@@ -627,7 +621,7 @@
   {
    "k": "s-pron",
    "days": [
-    13
+    14
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): linking: consonant + vowel (an_apple, turn_off)",
@@ -636,7 +630,7 @@
   {
    "k": "s-pron",
    "days": [
-    14
+    15
    ],
    "sk": "S",
    "label": "Pronunciation (10 min): intonation: lists, questions, finishing a point",
@@ -645,7 +639,7 @@
   {
    "k": "g-haf",
    "days": [
-    8
+    9
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Present Simple, Present Continuous (p. 18–25)",
@@ -654,7 +648,7 @@
   {
    "k": "g-haf",
    "days": [
-    9
+    10
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
@@ -663,7 +657,7 @@
   {
    "k": "g-haf",
    "days": [
-    10
+    11
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
@@ -672,7 +666,7 @@
   {
    "k": "g-haf",
    "days": [
-    11
+    12
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
@@ -681,7 +675,7 @@
   {
    "k": "g-haf",
    "days": [
-    12
+    13
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
@@ -690,7 +684,7 @@
   {
    "k": "g-haf",
    "days": [
-    13
+    14
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Passive voice (p. 46–53)",
@@ -699,7 +693,7 @@
   {
    "k": "g-haf",
    "days": [
-    14
+    15
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Table of tenses, subject–verb agreement, causative (p. 54–59)",
@@ -708,7 +702,7 @@
   {
    "k": "g-haf",
    "days": [
-    15
+    16
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Direct and reported speech (p. 60–64)",
@@ -717,7 +711,7 @@
   {
    "k": "g-haf",
    "days": [
-    16
+    17
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Conditionals (1, 2, 3, mixed, inversion) (p. 65–68)",
@@ -726,7 +720,7 @@
   {
    "k": "g-haf",
    "days": [
-    17
+    18
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Wish, as if / as though; modals: can, could, may, might (p. 69–74)",
@@ -735,7 +729,7 @@
   {
    "k": "g-haf",
    "days": [
-    18
+    19
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Modals: should, need, must, have to, would, had better, be to (p. 75–81)",
@@ -744,7 +738,7 @@
   {
    "k": "g-haf",
    "days": [
-    19
+    20
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Probability (must/can't/may have done); gerund (p. 82–86)",
@@ -753,7 +747,7 @@
   {
    "k": "g-haf",
    "days": [
-    20
+    21
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Infinitive (p. 87–96)",
@@ -762,7 +756,7 @@
   {
    "k": "g-haf",
    "days": [
-    21
+    22
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Participles; question types; agreement (So do I / Neither do I) (p. 97–105)",
@@ -771,7 +765,7 @@
   {
    "k": "g-haf",
    "days": [
-    22
+    23
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Nouns: countable / uncountable, plurals (p. 106–109)",
@@ -780,7 +774,7 @@
   {
    "k": "g-haf",
    "days": [
-    23
+    24
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Nouns: special cases (p. 110–119)",
@@ -789,7 +783,7 @@
   {
    "k": "g-haf",
    "days": [
-    24
+    25
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Nouns: measure words, abstract, compound, collective, possessive, suffixes (p. 120–127)",
@@ -798,7 +792,7 @@
   {
    "k": "g-haf",
    "days": [
-    25
+    26
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Adjectives: degrees, comparison, -ing/-ed, order (p. 128–138)",
@@ -807,7 +801,7 @@
   {
    "k": "g-haf",
    "days": [
-    26
+    27
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Adverbs (p. 139–149)",
@@ -816,7 +810,7 @@
   {
    "k": "g-haf",
    "days": [
-    27
+    28
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Pronouns: personal → some / any / no / none (p. 150–160)",
@@ -825,7 +819,7 @@
   {
    "k": "g-haf",
    "days": [
-    28
+    29
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Pronouns: much / many → there / it (p. 161–172)",
@@ -834,7 +828,7 @@
   {
    "k": "g-haf",
    "days": [
-    29
+    30
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Complex sentences, relative clauses; numerals (p. 173–181)",
@@ -843,7 +837,7 @@
   {
    "k": "g-haf",
    "days": [
-    30
+    31
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Articles 1: a/an, the with common nouns, zero article (p. 182–188)",
@@ -852,7 +846,7 @@
   {
    "k": "g-haf",
    "days": [
-    31
+    32
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Articles 2: proper and geographical names, special cases (p. 189–197)",
@@ -861,7 +855,7 @@
   {
    "k": "g-haf",
    "days": [
-    32
+    33
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Prepositions: at → for (p. 198–206)",
@@ -870,7 +864,7 @@
   {
    "k": "g-haf",
    "days": [
-    33
+    34
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Prepositions: from → without (p. 207–219)",
@@ -879,7 +873,7 @@
   {
    "k": "g-haf",
    "days": [
-    34
+    35
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Prepositions: compared, compound, fixed phrases (p. 220–226)",
@@ -888,29 +882,11 @@
   {
    "k": "g-haf",
    "days": [
-    35
+    36
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Conjunctions (p. 227–233)",
    "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
-  },
-  {
-   "k": "w-book",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing · Collins Writing for IELTS · Unit 2",
-   "sub": "Read the unit, do every exercise, check with the key · note useful phrases"
-  },
-  {
-   "k": "w-tasks",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing: Task 1 (line graph) + Task 2 (opinion (agree/disagree))",
-   "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
   },
   {
    "k": "w-book",
@@ -1023,7 +999,6 @@
   {
    "k": "w-model",
    "days": [
-    8,
     9,
     10,
     11,
@@ -1034,6 +1009,42 @@
    "sk": "W",
    "label": "Writing: analyse one Band 9 sample",
    "sub": "How the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "w-l1",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 1 · Collins Writing for IELTS, Unit 2 (Task 1 part)",
+   "sub": "Read the Task 1 section, do its exercises, check with the key"
+  },
+  {
+   "k": "w-t1",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 essay (line graph) + analysis with Claude",
+   "sub": "20 min, 150+ words · Practice → Copy for Claude · rewrite after the feedback"
+  },
+  {
+   "k": "w-l2",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 2 · Collins Writing for IELTS, Unit 2 (Task 2 part)",
+   "sub": "Read the Task 2 section, do its exercises, check with the key"
+  },
+  {
+   "k": "w-t2",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: Task 2 essay (opinion) + analysis with Claude",
+   "sub": "40 min, 250+ words · Practice → Copy for Claude · rewrite after the feedback"
   }
  ],
  "wtasks": [
@@ -1043,8 +1054,8 @@
     2
    ],
    "sk": "R",
-   "label": "Improve your Skills Reading: Units 1–10 + review days",
-   "sub": "Days 8–14 in Books → Reading"
+   "label": "Improve your Skills Reading: Units 1–10 + review",
+   "sub": "Days 9–14 in Books → Reading (Passage 3 practice on Day 15)"
   },
   {
    "k": "w2-r2",
@@ -1052,8 +1063,8 @@
     2
    ],
    "sk": "R",
-   "label": "4 full Reading tests, analysed",
-   "sub": "Days 8, 10, 12, 14 · every mistake in Mistakes"
+   "label": "3 full Reading tests, analysed",
+   "sub": "Days 10, 12, 14 · every mistake in Mistakes"
   },
   {
    "k": "w2-r3",
@@ -1061,7 +1072,7 @@
     2
    ],
    "sk": "R",
-   "label": "7 articles + their new words",
+   "label": "6 articles + their new words",
    "sub": "8–10 words each, with your own sentences"
   },
   {
@@ -1070,8 +1081,8 @@
     2
    ],
    "sk": "L",
-   "label": "80 Listening Tests: 51 tests",
-   "sub": "1–20 (Part 1), 61–80 (Part 4), 41–52 (Part 3)"
+   "label": "80 Listening Tests: 43 tests",
+   "sub": "1–20 (Part 1), 61–80 (Part 4), 41–44 (Part 3)"
   },
   {
    "k": "w2-l2",
@@ -1088,7 +1099,7 @@
     2
    ],
    "sk": "L",
-   "label": "7 dictations + 7 TED talks / podcasts",
+   "label": "6 dictations + 6 TED talks / podcasts",
    "sub": "Mark the words you missed"
   },
   {
@@ -1098,7 +1109,7 @@
    ],
    "sk": "V",
    "label": "4000 Essential English Words 4: Units 1–30",
-   "sub": "Day 14 = review of unknown words"
+   "sub": "Review of unknown words on Day 15"
   },
   {
    "k": "w2-v2",
@@ -1106,8 +1117,8 @@
     2
    ],
    "sk": "V",
-   "label": "Destination B1: all 14 vocabulary units + reference pages",
-   "sub": "Units 3–42, phrasal verbs, word formation"
+   "label": "Destination B1: all 14 vocabulary units + phrasal verbs",
+   "sub": "Prepositional phrases / word formation on Day 15"
   },
   {
    "k": "w2-v3",
@@ -1115,7 +1126,7 @@
     2
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 1–7",
+   "label": "Collocations in Use: Units 1–6",
    "sub": "5 collocations a unit in your notebook"
   },
   {
@@ -1125,7 +1136,7 @@
    ],
    "sk": "S",
    "label": "Collins Speaking for IELTS: Units 1–12",
-   "sub": "2 units a day, Days 8–13"
+   "sub": "2 units a day, Days 9–14"
   },
   {
    "k": "w2-s2",
@@ -1133,8 +1144,8 @@
     2
    ],
    "sk": "S",
-   "label": "7 Part 2 answers with feedback + full Speaking mock",
-   "sub": "Transcripts sent to Claude · mock on Day 14"
+   "label": "6 Part 2 answers with feedback",
+   "sub": "Transcripts sent to Claude · full Speaking mock on Day 15"
   },
   {
    "k": "w2-w1",
@@ -1160,7 +1171,7 @@
     2
    ],
    "sk": "G",
-   "label": "Hafizov: pages 18–59 (tenses, passive, agreement, causative)",
+   "label": "Hafizov: pages 18–53 (tenses, passive)",
    "sub": "+ 5 sentences a day, corrected by Claude"
   },
   {
