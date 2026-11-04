@@ -108,6 +108,38 @@
    "title": "Collins · Speaking for IELTS (Karen Kovacs)",
    "days": [],
    "note": "Daily units are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "G",
+   "id": "hafizov-w2",
+   "title": "S. Hafizov, O. Abdullayev · Ingliz tili grammatikasi",
+   "days": [],
+   "note": "Weeks 2–5 · daily pages are in the to-do list"
+  },
+  {
+   "week": 3,
+   "skill": "G",
+   "id": "hafizov-w3",
+   "title": "S. Hafizov, O. Abdullayev · Ingliz tili grammatikasi",
+   "days": [],
+   "note": "Weeks 2–5 · daily pages are in the to-do list"
+  },
+  {
+   "week": 4,
+   "skill": "G",
+   "id": "hafizov-w4",
+   "title": "S. Hafizov, O. Abdullayev · Ingliz tili grammatikasi",
+   "days": [],
+   "note": "Weeks 2–5 · daily pages are in the to-do list"
+  },
+  {
+   "week": 5,
+   "skill": "G",
+   "id": "hafizov-w5",
+   "title": "S. Hafizov, O. Abdullayev · Ingliz tili grammatikasi",
+   "days": [],
+   "note": "Weeks 2–5 · daily pages are in the to-do list"
   }
  ],
  "tasks": [
@@ -601,6 +633,258 @@
    "sk": "S",
    "label": "Pronunciation (10 min): intonation: lists, questions, finishing a point",
    "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    8
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Present Simple, Present Continuous (p. 18–25)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    9
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    10
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    11
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    12
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    13
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Passive voice (p. 46–53)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    14
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Table of tenses, subject–verb agreement, causative (p. 54–59)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    15
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Direct and reported speech (p. 60–64)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    16
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Conditionals (1, 2, 3, mixed, inversion) (p. 65–68)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    17
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Wish, as if / as though; modals: can, could, may, might (p. 69–74)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    18
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Modals: should, need, must, have to, would, had better, be to (p. 75–81)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    19
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Probability (must/can't/may have done); gerund (p. 82–86)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    20
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Infinitive (p. 87–96)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    21
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Participles; question types; agreement (So do I / Neither do I) (p. 97–105)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    22
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Nouns: countable / uncountable, plurals (p. 106–109)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    23
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Nouns: special cases (p. 110–119)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    24
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Nouns: measure words, abstract, compound, collective, possessive, suffixes (p. 120–127)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    25
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Adjectives: degrees, comparison, -ing/-ed, order (p. 128–138)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    26
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Adverbs (p. 139–149)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    27
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Pronouns: personal → some / any / no / none (p. 150–160)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    28
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Pronouns: much / many → there / it (p. 161–172)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    29
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Complex sentences, relative clauses; numerals (p. 173–181)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    30
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Articles 1: a/an, the with common nouns, zero article (p. 182–188)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    31
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Articles 2: proper and geographical names, special cases (p. 189–197)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    32
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Prepositions: at → for (p. 198–206)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    33
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Prepositions: from → without (p. 207–219)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    34
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Prepositions: compared, compound, fixed phrases (p. 220–226)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    35
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Conjunctions (p. 227–233)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
   }
  ]
 }
