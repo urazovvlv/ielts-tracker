@@ -734,7 +734,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-03.4';
+const BUILD='2026-11-04.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1675,13 +1675,13 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 
 
 /* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
-let dMode=/^#books/.test(location.hash)?'book':'pack',BIDX=null,BOOKS=[];
+let dMode=/^#books/.test(location.hash)?'book':'pack',BIDX=null,BOOKS=[],RTASKS=[];
 const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
   if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
 async function loadBooks(){
-  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];}}catch(e){}
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];}}catch(e){}
   if(!BIDX)BIDX=[];
   if(BIDX.length&&!bOpen.size){const s=camSession(clampDay(todayIdx())),cur=(BIDX.find(x=>x.day===s)||BIDX[BIDX.length-1]).id;bOpen.add(cur);getBook(cur);}
   if(PLAN&&!WZ&&(tab==='today'||tab==='books'||(tab==='daily'&&dMode!=='pack')))renderView();
@@ -1742,6 +1742,7 @@ const SKN={T:'Tests',L:'Listening',R:'Reading',W:'Writing',S:'Speaking',V:'Vocab
 function bookTasks(n){
   const out=[];
   for(const b of BOOKS)for(const d of (b.days||[]))if(d.day===n)out.push({k:'bk-'+d.f,label:`${b.title} · ${d.label}`,sub:'Books tab',sk:b.skill});
+  for(const t of RTASKS)if((t.days||[]).includes(n))out.push({k:t.k,label:t.label,sub:t.sub||'',sk:t.sk||''});
   return out;
 }
 const kNorm=v=>String(v||'').toLowerCase().replace(/[’']/g,"'").replace(/[.,;:!?"]+$/g,'').replace(/\s+/g,' ').trim();
