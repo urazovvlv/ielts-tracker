@@ -76,6 +76,22 @@
    "title": "Proper English School · 80 IELTS Listening Tests",
    "days": [],
    "note": "Daily tests are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "V",
+   "id": "ess4",
+   "title": "4000 Essential English Words · Book 4",
+   "days": [],
+   "note": "Daily units are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "V",
+   "id": "colu",
+   "title": "English Collocations in Use · Intermediate (2nd ed.)",
+   "days": [],
+   "note": "Daily units are in the to-do list"
   }
  ],
  "tasks": [
@@ -209,6 +225,147 @@
    "sk": "L",
    "label": "Full Listening test (30 min) + analysis",
    "sub": "Exam conditions, one listen, no pauses · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    8
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–5",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 26–30",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    14
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Review Units 1–30",
+   "sub": "Only the words you didn't know · say the meaning, then make a sentence"
+  },
+  {
+   "k": "v-daily",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Daily pack",
+   "sub": "Daily tab → Daily pack"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    8
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 1 What is a collocation?",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 6 Intensifying adverbs",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    14
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
   }
  ]
 }
