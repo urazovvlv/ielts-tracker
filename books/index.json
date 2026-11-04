@@ -1035,5 +1035,142 @@
    "label": "Writing: analyse one Band 9 sample",
    "sub": "How the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
   }
+ ],
+ "wtasks": [
+  {
+   "k": "w2-r1",
+   "weeks": [
+    2
+   ],
+   "sk": "R",
+   "label": "Improve your Skills Reading: Units 1–10 + review days",
+   "sub": "Days 8–14 in Books → Reading"
+  },
+  {
+   "k": "w2-r2",
+   "weeks": [
+    2
+   ],
+   "sk": "R",
+   "label": "4 full Reading tests, analysed",
+   "sub": "Days 8, 10, 12, 14 · every mistake in Mistakes"
+  },
+  {
+   "k": "w2-r3",
+   "weeks": [
+    2
+   ],
+   "sk": "R",
+   "label": "7 articles + their new words",
+   "sub": "8–10 words each, with your own sentences"
+  },
+  {
+   "k": "w2-l1",
+   "weeks": [
+    2
+   ],
+   "sk": "L",
+   "label": "80 Listening Tests: 51 tests",
+   "sub": "1–20 (Part 1), 61–80 (Part 4), 41–52 (Part 3)"
+  },
+  {
+   "k": "w2-l2",
+   "weeks": [
+    2
+   ],
+   "sk": "L",
+   "label": "3 full Listening tests, analysed",
+   "sub": "Days 9, 11, 13 · every mistake in Mistakes"
+  },
+  {
+   "k": "w2-l3",
+   "weeks": [
+    2
+   ],
+   "sk": "L",
+   "label": "7 dictations + 7 TED talks / podcasts",
+   "sub": "Mark the words you missed"
+  },
+  {
+   "k": "w2-v1",
+   "weeks": [
+    2
+   ],
+   "sk": "V",
+   "label": "4000 Essential English Words 4: Units 1–30",
+   "sub": "Day 14 = review of unknown words"
+  },
+  {
+   "k": "w2-v2",
+   "weeks": [
+    2
+   ],
+   "sk": "V",
+   "label": "Destination B1: all 14 vocabulary units + reference pages",
+   "sub": "Units 3–42, phrasal verbs, word formation"
+  },
+  {
+   "k": "w2-v3",
+   "weeks": [
+    2
+   ],
+   "sk": "V",
+   "label": "Collocations in Use: Units 1–7",
+   "sub": "5 collocations a unit in your notebook"
+  },
+  {
+   "k": "w2-s1",
+   "weeks": [
+    2
+   ],
+   "sk": "S",
+   "label": "Collins Speaking for IELTS: Units 1–12",
+   "sub": "2 units a day, Days 8–13"
+  },
+  {
+   "k": "w2-s2",
+   "weeks": [
+    2
+   ],
+   "sk": "S",
+   "label": "7 Part 2 answers with feedback + full Speaking mock",
+   "sub": "Transcripts sent to Claude · mock on Day 14"
+  },
+  {
+   "k": "w2-w1",
+   "weeks": [
+    2
+   ],
+   "sk": "W",
+   "label": "Collins Writing for IELTS: Units 2–8",
+   "sub": "One unit a day"
+  },
+  {
+   "k": "w2-w2",
+   "weeks": [
+    2
+   ],
+   "sk": "W",
+   "label": "7 Task 1 + 7 Task 2, each with feedback and a rewrite",
+   "sub": "Every Task 1 and Task 2 type at least once"
+  },
+  {
+   "k": "w2-g1",
+   "weeks": [
+    2
+   ],
+   "sk": "G",
+   "label": "Hafizov: pages 18–59 (tenses, passive, agreement, causative)",
+   "sub": "+ 5 sentences a day, corrected by Claude"
+  },
+  {
+   "k": "w2-rev",
+   "weeks": [
+    2
+   ],
+   "sk": "",
+   "label": "Week review with Claude → Week 3 plan",
+   "sub": "Day 14 evening: what got done, what didn't"
+  }
  ]
 }

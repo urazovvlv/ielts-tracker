@@ -965,7 +965,7 @@ function applyMods(list,m){
     .map(x=>rn[x.k]?Object.assign({},x,{label:rn[x.k].label??x.label,sub:rn[x.k].sub??x.sub,sk:rn[x.k].sk??x.sk}):x);
 }
 const listFor=n=>applyMods(applyMods(baseTasks(n),S.cfg.day),dayDoc(n));
-const weekList=w=>applyMods(applyMods(WEEKTASKS,S.cfg.week),weekDoc(w));
+const weekList=w=>applyMods(applyMods(WEEKTASKS.concat(WTASKS.filter(t=>(t.weeks||[]).includes(w)).map(t=>({k:t.k,label:t.label,sub:t.sub||'',sk:t.sk||''}))),S.cfg.week),weekDoc(w));
 const doneCount=n=>{const t=dayDoc(n).t||{};return listFor(n).filter(x=>t[x.k]).length;};
 const totalCount=n=>listFor(n).length;
 const frac=n=>{const t=totalCount(n);return t?doneCount(n)/t:0;};
@@ -1673,13 +1673,13 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 
 
 /* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
-let dMode='pack',BIDX=null,BOOKS=[],RTASKS=[];
+let dMode='pack',BIDX=null,BOOKS=[],RTASKS=[],WTASKS=[];
 const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
   if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
 async function loadBooks(){
-  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];}}catch(e){}
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];WTASKS=j.wtasks||[];}}catch(e){}
   if(!BIDX)BIDX=[];
   if(PLAN&&!WZ&&(tab==='today'||tab==='books'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
