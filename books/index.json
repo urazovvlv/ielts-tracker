@@ -198,6 +198,17 @@
    "sk": "L",
    "label": "Listening: TED talk / podcast + analysis",
    "sub": "TED / BBC 6 Minute English / BBC Global News · write the main idea in 2–3 sentences · 5 new words or phrases with meaning"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    9,
+    11,
+    13
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Exam conditions, one listen, no pauses · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   }
  ]
 }
