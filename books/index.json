@@ -100,6 +100,14 @@
    "title": "Macmillan · Destination B1 Grammar & Vocabulary (Vocabulary units)",
    "days": [],
    "note": "Daily units are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "S",
+   "id": "colsp",
+   "title": "Collins · Speaking for IELTS (Karen Kovacs)",
+   "days": [],
+   "note": "Daily units are in the to-do list"
   }
  ],
  "tasks": [
@@ -437,6 +445,162 @@
    "sk": "V",
    "label": "Vocabulary · Destination B1 · Prepositional phrases, word patterns, word formation (p. 206–215)",
    "sub": "Reference section · mark the ones you don't know · make a sentence with each"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    8
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 1–2",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    9
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 3–4",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    10
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 5–6",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    11
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 7–8",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    12
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 9–10",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    13
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 11–12",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    14
+   ],
+   "sk": "S",
+   "label": "Speaking · full mock (11–14 min), recorded",
+   "sub": "Part 1 → Part 2 → Part 3 without stopping · listen back · send me the transcript"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 × 5 · Part 2 × 1 · Part 3 × 3",
+   "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record the Part 2 after fixing"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute video",
+   "sub": "Same clip 3×: listen, then read along with the transcript, then speak with the speaker half a second behind"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    8
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): word stress (phoTOgraphy, deVElopment)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    9
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): -ed endings: /t/ /d/ /ɪd/",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    10
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): -s endings: /s/ /z/ /ɪz/ + th /θ ð/",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    11
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): /v/ vs /w/, short vs long vowels (ship–sheep, full–fool)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    12
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): sentence stress + weak forms (to, of, can /kən/)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    13
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): linking: consonant + vowel (an_apple, turn_off)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    14
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): intonation: lists, questions, finishing a point",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
   }
  ]
 }
