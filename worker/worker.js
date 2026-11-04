@@ -162,7 +162,7 @@ async function readAllowed(req, env) {
 
 /* ---------- Reminders (Cloudflare Cron Triggers, Tashkent time) ---------- */
 const APP = "https://urazovvlv.github.io/ielts-tracker/";
-const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"], "0 7 * * TUE,THU,SAT": ["cambridge"] };
+const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"] };
 const RATE = ["", "Bad", "Weak", "OK", "Good", "Great"];
 const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary", G: "Grammar" };
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

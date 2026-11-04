@@ -734,7 +734,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-04.1';
+const BUILD='2026-11-04.2';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -802,7 +802,7 @@ function camTask(n){
   return {k:'cam',label:st?`Cambridge vocabulary · Day ${s} · ${st.title.replace('Cambridge ','C')}`:`Cambridge vocabulary · Day ${s}`,sub:st?`${st.words} words + keyword tables · Daily → Cambridge`:'Review the earlier sets · Daily → Cambridge',sk:'V'};
 }
 function baseTasks(n){
-  const c=camTask(n);return (c?[c]:[]).concat(bookTasks(n)); /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
+  const c=n<8?camTask(n):null;return (c?[c]:[]).concat(bookTasks(n)); /* Cambridge vocabulary dropped from Day 8 on; past days keep theirs. */ /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -1649,9 +1649,7 @@ function dItem(sec,x,i){
     ${x.use?`<div class="di-use">${esc(x.use)}</div>`:''}${x.tip?`<div class="di-use">${esc(x.tip)}</div>`:''}</li>`;
 }
 function viewDaily(){
-  const dseg=`<div class="seg pseg" role="tablist">${[['pack','Daily pack'],['book','Cambridge']].map(([k,l])=>`<button data-dmode="${k}" class="${dMode===k?'on':''}" role="tab" aria-selected="${dMode===k}">${l}</button>`).join('')}</div>`;
-  if(dMode==='book')return `<div class="wrap">${dseg}${viewBooks()}</div>`;
-  return viewPack().replace('<div class="wrap">','<div class="wrap">'+dseg);
+  return viewPack();
 }
 function viewPack(){
   const today=clampDay(todayIdx());if(dSel==null)dSel=today;
@@ -1675,7 +1673,7 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 
 
 /* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
-let dMode=/^#books/.test(location.hash)?'book':'pack',BIDX=null,BOOKS=[],RTASKS=[];
+let dMode='pack',BIDX=null,BOOKS=[],RTASKS=[];
 const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
@@ -1683,7 +1681,6 @@ document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return
 async function loadBooks(){
   try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];}}catch(e){}
   if(!BIDX)BIDX=[];
-  if(BIDX.length&&!bOpen.size){const s=camSession(clampDay(todayIdx())),cur=(BIDX.find(x=>x.day===s)||BIDX[BIDX.length-1]).id;bOpen.add(cur);getBook(cur);}
   if(PLAN&&!WZ&&(tab==='today'||tab==='books'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
 async function getBook(id){
