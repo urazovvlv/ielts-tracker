@@ -92,6 +92,14 @@
    "title": "English Collocations in Use · Intermediate (2nd ed.)",
    "days": [],
    "note": "Daily units are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "V",
+   "id": "destb1",
+   "title": "Macmillan · Destination B1 Grammar & Vocabulary (Vocabulary units)",
+   "days": [],
+   "note": "Daily units are in the to-do list"
   }
  ],
  "tasks": [
@@ -366,6 +374,69 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
    "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    8
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Units 3, 6, 9 · Fun and games · Learning and doing · Coming and going",
+   "sub": "All exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Units 12, 15, 18 · Friends and relations · Buying and selling · Inventions and discoveries",
+   "sub": "All exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Units 21, 24, 27 · Sending and receiving · People and daily life · Working and earning",
+   "sub": "All exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Units 30, 33, 36 · Body and lifestyle · Creating and building · Nature and the universe",
+   "sub": "All exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Units 39, 42 · Laughing and crying · Problems and solutions",
+   "sub": "All exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Phrasal verbs (p. 202–205)",
+   "sub": "Reference section · mark the ones you don't know · make a sentence with each"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    14
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Prepositional phrases, word patterns, word formation (p. 206–215)",
+   "sub": "Reference section · mark the ones you don't know · make a sentence with each"
   }
  ]
 }
