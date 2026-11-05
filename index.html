@@ -734,7 +734,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-04.2';
+const BUILD='2026-11-05.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -2340,8 +2340,9 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}
-  sel=clampDay(todayIdx());
-  if(svHash){const q=survDoc(clampDay(todayIdx()));svOpen=!(q&&q.h!=null);}
+  const svDay=(location.hash.match(/^#survey-(\d+)/)||[])[1];
+  sel=svDay?clampDay(Math.min(+svDay,todayIdx())):clampDay(todayIdx());
+  if(svHash){const q=survDoc(sel);svOpen=!(q&&q.h!=null);}
   renderAll();focusSync();ensurePacks();wTimerLoop();
   if(svHash)setTimeout(()=>{const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});},50);
   let last=todayIdx();setInterval(()=>{const t=todayIdx();if(t!==last){last=t;sel=clampDay(t);renderAll();}},60000);

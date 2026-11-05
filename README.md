@@ -12,9 +12,7 @@ Only the Telegram accounts in `OWNER_IDS` (`index.html`) and `ALLOWED_IDS` (`wra
 
 - 12:00 on Tuesday, Thursday and Saturday: Cambridge vocabulary day (the same task is added to that day's list)
 - 07:00 morning message: day, days left, today's focus skill, mock day, Daily pack topics
-- 19:15 evening check (mock instructions on mock days)
-- 21:15 log reminder (and a note before mock days)
-- 23:00 daily report (tasks done / not done) with a link to the daily survey, plus the weekly report on the last day of each plan week
+- 00:00 report for the day that just ended (tasks done / not done) with a link to the daily survey, plus the weekly report on the last day of each plan week
 
 The owner gets reminders for their plan: the app sends the Worker its plan, mock dates, per-day task counts by skill, today's and yesterday's task names with done marks, daily survey answers, mock scores and a small summary (no saved words or essays). Requests are checked against Telegram's `initData` signature.
 

@@ -9,7 +9,7 @@
 //   Secret                READ_KEY   (optional; without it the reminder script signs its requests
 //                                     with a key derived from BOT_TOKEN, so nothing else is needed)
 //
-// Reminders: Cron Triggers in wrangler.jsonc send the 07:00 / 19:15 / 21:15 messages, the 23:00 daily report + survey prompt, and the weekly report
+// Reminders: Cron Triggers in wrangler.jsonc send the 07:00 message and, at 00:00, the report for the day that just ended + survey prompt, and the weekly report
 // to everyone whose app has synced a plan (ext.plan). GET /run?slot=…&force=1&dry=1 (same key) runs one by hand.
 //
 // Routes:
@@ -162,7 +162,9 @@ async function readAllowed(req, env) {
 
 /* ---------- Reminders (Cloudflare Cron Triggers, Tashkent time) ---------- */
 const APP = "https://urazovvlv.github.io/ielts-tracker/";
-const SLOTS = { "0 2 * * *": ["morning"], "15 14 * * *": ["evening"], "15 16 * * *": ["night"], "0 18 * * *": ["daily", "weekly"] };
+/* 07:00 morning message; 00:00 daily report (+ weekly) for the day that just ended. */
+const SLOTS = { "0 2 * * *": ["morning"], "0 19 * * *": ["daily", "weekly"] };
+const PREV_DAY = { "0 19 * * *": true };
 const RATE = ["", "Bad", "Weak", "OK", "Good", "Great"];
 const NAMES = { L: "Listening", R: "Reading", W: "Writing", S: "Speaking", V: "Vocabulary", G: "Grammar" };
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -276,7 +278,7 @@ async function buildMessage(slot, doc, today) {
   const ms = ext.ms || {}, hi = plan.name ? `, ${esc(plan.name)}` : "";
   if (slot === "daily") {
     const filled = !!(doc.sv || {})[today];
-    return { text: dailyReport(doc, plan, day, days, today), frag: filled ? "#prog" : "#survey", button: filled ? "Open tracker" : "Fill in today's survey" };
+    return { text: dailyReport(doc, plan, day, days, today), frag: filled ? "#prog" : `#survey-${day}`, button: filled ? "Open tracker" : `Fill in the Day ${day} survey` };
   }
   if (slot === "weekly") {
     if (day % 7 && day !== days) return null;
@@ -383,7 +385,8 @@ async function openBook(env, name) {
 export default {
   async scheduled(event, env, ctx) {
     const slots = SLOTS[event.cron] || [];
-    ctx.waitUntil((async () => { for (const s of slots) await runSlot(env, s); })());
+    const opts = PREV_DAY[event.cron] ? { date: addDays(tashToday(), -1) } : {};
+    ctx.waitUntil((async () => { for (const s of slots) await runSlot(env, s, opts); })());
   },
 
   async fetch(req, env) {
