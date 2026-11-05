@@ -141,8 +141,11 @@
   {
    "k": "r-test",
    "days": [
+    9,
     10,
+    11,
     12,
+    13,
     14
    ],
    "sk": "R",
@@ -1090,8 +1093,8 @@
     2
    ],
    "sk": "R",
-   "label": "3 full Reading tests, analysed",
-   "sub": "Days 10, 12, 14 · every mistake in Mistakes"
+   "label": "6 full Reading tests, analysed",
+   "sub": "Every day, Days 9–14 · every mistake in Mistakes"
   },
   {
    "k": "w2-r3",
