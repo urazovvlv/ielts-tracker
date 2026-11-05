@@ -95,14 +95,6 @@
   },
   {
    "week": 2,
-   "skill": "V",
-   "id": "destb1",
-   "title": "Macmillan · Destination B1 Grammar & Vocabulary (Vocabulary units)",
-   "days": [],
-   "note": "Daily units are in the to-do list"
-  },
-  {
-   "week": 2,
    "skill": "S",
    "id": "colsp",
    "title": "Collins · Speaking for IELTS (Karen Kovacs)",
@@ -148,6 +140,30 @@
    "title": "Collins · Writing for IELTS (Anneli Williams)",
    "days": [],
    "note": "Daily units are in the to-do list"
+  },
+  {
+   "week": 2,
+   "skill": "V",
+   "id": "destb1-w2",
+   "title": "Macmillan · Destination B1 · Vocabulary units",
+   "days": [],
+   "note": "Units 3, 6, 9, 12, 15, 18 · one unit a day (Days 9–14)"
+  },
+  {
+   "week": 3,
+   "skill": "V",
+   "id": "destb1-w3",
+   "title": "Macmillan · Destination B1 · Vocabulary units",
+   "days": [],
+   "note": "Units 21, 24, 27, 30, 33, 36, 39 · one unit a day (Days 15–21)"
+  },
+  {
+   "week": 4,
+   "skill": "V",
+   "id": "destb1-w4",
+   "title": "Macmillan · Destination B1 · Vocabulary units",
+   "days": [],
+   "note": "Unit 42 · Problems and solutions (Day 22)"
   }
  ],
  "tasks": [
@@ -418,69 +434,6 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
    "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    9
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Units 3, 6, 9 · Fun and games · Learning and doing · Coming and going",
-   "sub": "All exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    10
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Units 12, 15, 18 · Friends and relations · Buying and selling · Inventions and discoveries",
-   "sub": "All exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    11
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Units 21, 24, 27 · Sending and receiving · People and daily life · Working and earning",
-   "sub": "All exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    12
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Units 30, 33, 36 · Body and lifestyle · Creating and building · Nature and the universe",
-   "sub": "All exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    13
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Units 39, 42 · Laughing and crying · Problems and solutions",
-   "sub": "All exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    14
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Phrasal verbs (p. 202–205)",
-   "sub": "Reference section · mark the ones you don't know · make a sentence with each"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    15
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Prepositional phrases, word patterns, word formation (p. 206–215)",
-   "sub": "Reference section · mark the ones you don't know · make a sentence with each"
   },
   {
    "k": "s-book",
@@ -1045,6 +998,132 @@
    "sk": "W",
    "label": "Writing: Task 2 essay (opinion) + analysis with Claude",
    "sub": "40 min, 250+ words · Practice → Copy for Claude · rewrite after the feedback"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 3 · Fun and games",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 6 · Learning and doing",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 9 · Coming and going",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 12 · Friends and relations",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 15 · Buying and selling",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    14
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 18 · Inventions and discoveries",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    15
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 21 · Sending and receiving",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    16
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 24 · People and daily life",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    17
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 27 · Working and earning",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    18
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 30 · Body and lifestyle",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    19
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 33 · Creating and building",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    20
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 36 · Nature and the universe",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    21
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 39 · Laughing and crying",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    22
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 42 · Problems and solutions",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
   }
  ],
  "wtasks": [
@@ -1117,8 +1196,8 @@
     2
    ],
    "sk": "V",
-   "label": "Destination B1: all 14 vocabulary units + phrasal verbs",
-   "sub": "Prepositional phrases / word formation on Day 15"
+   "label": "Destination B1: vocabulary Units 3, 6, 9, 12, 15, 18",
+   "sub": "One unit a day · continues in Week 3"
   },
   {
    "k": "w2-v3",
