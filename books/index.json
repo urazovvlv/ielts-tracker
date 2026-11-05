@@ -28,49 +28,6 @@
  "books": [
   {
    "week": 2,
-   "skill": "R",
-   "id": "improve-skills-reading",
-   "title": "Macmillan · Improve your Skills: Reading for IELTS 6.0–7.5",
-   "days": [
-    {
-     "day": 9,
-     "label": "Unit 1–2",
-     "f": "improve-reading-d8"
-    },
-    {
-     "day": 10,
-     "label": "Unit 3–4",
-     "f": "improve-reading-d9"
-    },
-    {
-     "day": 11,
-     "label": "Unit 5–6",
-     "f": "improve-reading-d10"
-    },
-    {
-     "day": 12,
-     "label": "Unit 7–8",
-     "f": "improve-reading-d11"
-    },
-    {
-     "day": 13,
-     "label": "Unit 9–10",
-     "f": "improve-reading-d12"
-    },
-    {
-     "day": 14,
-     "label": "Review + practice test",
-     "f": "improve-reading-d13"
-    },
-    {
-     "day": 15,
-     "label": "Passage 3 practice + review",
-     "f": "improve-reading-d14"
-    }
-   ]
-  },
-  {
-   "week": 2,
    "skill": "L",
    "id": "l80",
    "title": "Proper English School · 80 IELTS Listening Tests",
@@ -1127,15 +1084,6 @@
   }
  ],
  "wtasks": [
-  {
-   "k": "w2-r1",
-   "weeks": [
-    2
-   ],
-   "sk": "R",
-   "label": "Improve your Skills Reading: Units 1–10 + review",
-   "sub": "Days 9–14 in Books → Reading (Passage 3 practice on Day 15)"
-  },
   {
    "k": "w2-r2",
    "weeks": [
