@@ -26,6 +26,7 @@ Worker settings: secret `BOT_TOKEN` (same token as the bot). The GitHub workflow
 | `daily/` | Daily packs (`01.json` …) and `index.json` with their count |
 | `daily.json` | Word of the day |
 | `speaking.json` | Speaking Part 1 topics and Part 3 questions |
+| `commute/` | Daily → Metro and Bus: 160 handbook flashcards (`data.json`), micro drills, chart images (`figs/`) and bus audio tracks (`audio/*.mp3`, `audio/index.json`) |
 | `worker/worker.js`, `wrangler.jsonc` | Cloudflare Worker: sync, reminders, weekly report |
 
 Never put the bot token in a file. It goes only in secrets.

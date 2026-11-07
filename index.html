@@ -721,6 +721,22 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .kta{width:100%;resize:vertical;min-height:52px;font:inherit}
 .kfam{font-size:13px;color:var(--muted);line-height:1.45}
 .kfam b{color:var(--ink);font-weight:600}
+.cm-more{display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.5}
+.cm-more .cm-uz{color:var(--muted);font-style:italic}
+.cm-use b,.cm-more b{color:var(--navy)}
+.cm-lab{margin:0;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.cm-q{margin:0;font-size:17px;line-height:1.5;font-weight:600}
+.cm-bad{color:#B23B37}.cm-good{color:#2E7D5B}
+[data-theme="dark"] .cm-bad{color:#F08A84}[data-theme="dark"] .cm-good{color:#7FD3A8}
+.cm-ans{border-left:4px solid var(--navy);background:var(--navy-soft);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.cm-fig{width:100%;border-radius:10px;background:#fff;border:1px solid var(--line)}
+.cm-tbl{overflow-x:auto}.cm-tbl table{border-collapse:collapse;font-size:13px;width:100%}.cm-tbl th{background:var(--navy);color:var(--card);padding:5px 6px;font-weight:600}.cm-tbl td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:center}.cm-tbl td:first-child{text-align:left;font-weight:600}
+.cm-ctl{display:flex;justify-content:center;align-items:center;gap:10px}
+.cm-play{width:64px;height:64px;border-radius:50%;font-size:22px;padding:0}
+#auSeek{width:100%;accent-color:var(--navy);height:28px}
+.cm-trk{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);background:var(--sunk);border-radius:12px;padding:10px 12px;color:var(--ink);min-height:48px;font:inherit}
+.cm-trk.on{border-color:var(--navy);background:var(--navy-soft)}
+.cm-trk small{display:block;color:var(--muted);font-size:12px;font-weight:400}
 </style>
 </head>
 <body>
@@ -734,7 +750,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-05.1';
+const BUILD='2026-11-07.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -843,9 +859,9 @@ const CUES=[
 ];
 
 /* ---------- state ---------- */
-let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};
+let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}}};
 let DAILY=[];
-let tab=/^#kb/.test(location.hash)?'books':/^#(daily|books)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#kb/.test(location.hash)?'books':/^#(daily|books|metro|bus)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -872,12 +888,12 @@ async function kick(){
 function getObj(k){
   if(k==='plan')return PLAN;
   if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];if(/^sv\d{2,3}$/.test(k))return S.surv[k];
-  if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;return null;
+  if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;if(k==='hb')return S.hb;return null;
 }
 function setObj(k,o){
   if(k==='plan'){if(o&&o.start)PLAN=o;}
   else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;else if(/^sv\d{2,3}$/.test(k))S.surv[k]=o;
-  else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;
+  else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;else if(k==='hb')S.hb=Object.assign({c:{}},o);
 }
 const timers={};
 function touch(k,later){
@@ -1376,7 +1392,7 @@ async function fullWipe(){
   q.clear();for(const k in timers)clearTimeout(timers[k]);
   while(busy)await sleep(100);
   for(const k of Object.keys(lsAll()))lsSet(k,null);
-  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
+  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
   if(CLOUD){
     let keys=await cs('getKeys');
     for(let i=0;i<keys.length;i+=40)await cs('removeItems',keys.slice(i,i+40));
@@ -1648,8 +1664,133 @@ function dItem(sec,x,i){
     ${x.ex?`<div class="di-ex">${esc(x.ex)}</div>`:''}
     ${x.use?`<div class="di-use">${esc(x.use)}</div>`:''}${x.tip?`<div class="di-use">${esc(x.tip)}</div>`:''}</li>`;
 }
+/* ---------- Commute: Metro (cards + micro drills) and Bus (audio). Content: "Xushnud uchun Writing 7.5" handbook (commute/). ---------- */
+let dView=/^#bus/.test(location.hash)?'bus':/^#metro/.test(location.hash)?'metro':'pack';
+let CM=null,CMA=null,cmLoading=false,cmErr=false,hbRv=null,cmDrill=null,drT=null;
+const HB_NEW=16;
+async function loadCommute(){
+  if(CM||cmLoading)return;cmLoading=true;cmErr=false;
+  try{const [a,b]=await Promise.all([fetch('commute/data.json',{cache:'no-cache'}),fetch('commute/audio/index.json',{cache:'no-cache'})]);
+    if(a.ok)CM=await a.json();else cmErr=true;if(b.ok)CMA=(await b.json()).tracks||[];}catch(e){cmErr=true;}
+  cmLoading=false;if(tab==='daily'&&dView!=='pack')renderView();
+}
 function viewDaily(){
-  return viewPack();
+  const seg=`<div class="seg pseg" role="tablist">${[['pack','Daily pack'],['metro','Metro'],['bus','Bus']].map(([k,l])=>`<button type="button" data-dview="${k}" class="${dView===k?'on':''}" role="tab" aria-selected="${dView===k}">${l}</button>`).join('')}</div>`;
+  if(dView==='pack')return viewPack().replace('<div class="wrap">','<div class="wrap">'+seg);
+  if(!CM){if(!cmLoading&&!cmErr)loadCommute();
+    return `<div class="wrap">${seg}<section class="card"><p class="note" style="margin:0">${cmErr?'Could not load. Check your internet and tap again.':'Loading…'}</p>${cmErr?'<button class="btn" data-dview="'+dView+'">Try again</button>':''}</section></div>`;}
+  return `<div class="wrap">${seg}${dView==='metro'?viewMetro():viewBus()}</div>`;
+}
+/* --- flashcards (spaced review, 16 new a day, same intervals as My words) --- */
+const hbDir=()=>lsGet('hbdir')==='uz'?'uz':'en';
+function hbQueue(){
+  const t=dnum(),c=(S.hb&&S.hb.c)||{},due=[],fresh=[];
+  CM.words.forEach((w,i)=>{const v=c[i];if(v){if(v[1]<=t)due.push(i);}else fresh.push(i);});
+  due.sort((a,b)=>c[a][1]-c[b][1]);
+  const nd=S.hb&&S.hb.nd&&S.hb.nd[0]===t?S.hb.nd[1]:0;
+  return {due,fresh:fresh.slice(0,Math.max(0,HB_NEW-nd)),left:fresh.length,known:Object.keys(c).length};
+}
+function hbGrade(i,knew){
+  const t=dnum();S.hb=Object.assign({c:{}},S.hb);const c=Object.assign({},S.hb.c),cur=c[i];
+  if(!cur)S.hb.nd=[t,(S.hb.nd&&S.hb.nd[0]===t?S.hb.nd[1]:0)+1];
+  const lv=knew?Math.min((cur?cur[0]:0)+1,INT.length-1):0;
+  c[i]=[lv,t+(knew?INT[lv]:1)];S.hb.c=c;touch('hb',true);
+}
+function hbCard(){
+  const i=hbRv.q[hbRv.i],w=CM.words[i];
+  if(w==null)return `<h3 style="margin:0">Done for today</h3><p class="note" style="margin:0">You reviewed ${hbRv.done} card${hbRv.done===1?'':'s'}.</p><button class="btn block" data-hbrv="stop">Close</button>`;
+  const en=hbRv.dir==='en',st=(S.hb&&S.hb.c&&S.hb.c[i])||null,nxt=INT[Math.min((st?st[0]:0)+1,INT.length-1)];
+  const front=en?`<div class="fw">${esc(w.w)}</div>`:`<div class="fw" style="font-size:21px">${esc(w.uz)}</div>`;
+  const back=`${en?`<div class="fm">${esc(w.uz)}</div>`:`<div class="fm">${esc(w.w)}</div>`}<div class="fe" style="font-style:normal">${esc(w.ipa)}</div><div class="fe">${esc(w.ex)}</div>`;
+  return `<div class="pline"><div class="pbar"><i style="width:${hbRv.i/hbRv.q.length*100}%"></i></div><b class="num">${hbRv.i+1}/${hbRv.q.length}</b></div>
+    <div class="flash" data-hbflip="1" role="button" aria-label="Show answer">${front}${hbRv.show?back:`<div class="hint">${st?'Review':'New'} · Day ${w.day} · tap to check</div>`}</div>
+    ${hbRv.show?`<div class="cm-more"><div><b>So‘z oilasi:</b> ${esc(w.fam)}</div><div class="cm-uz">${esc(w.exuz)}</div><div class="cm-use"><b>IELTS:</b> ${w.use}</div></div>
+    <div class="grid2"><button class="btn block" data-hbrv="again">Again · tomorrow</button><button class="btn block primary" data-hbrv="knew">I knew it · ${nxt} d</button></div>`:''}
+    <button class="btn ghost" data-hbrv="stop">Stop</button>`;
+}
+/* --- micro drills: 5 items, about 2–3 minutes --- */
+const CM_DRILLS=[['err','Find the mistake','Xatoni toping'],['para','Paraphrase','Boshqacha ayting'],['ov','Task 1 overview','Grafikka overview'],['t2','Task 2 plan','1 daqiqada reja']];
+function drillPool(k){return k==='err'?CM.errs:k==='para'?CM.para:k==='ov'?CM.overview:CM.t2;}
+function startDrill(k){
+  const pool=drillPool(k),n=k==='ov'?Math.min(3,pool.length):5,idx=[...pool.keys()];
+  for(let i=idx.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]];}
+  cmDrill={k,items:idx.slice(0,n),i:0,show:false,t0:Date.now()};
+}
+function drillBody(){
+  const it=drillPool(cmDrill.k)[cmDrill.items[cmDrill.i]],name=(CM_DRILLS.find(d=>d[0]===cmDrill.k)||[])[1];
+  if(!it)return `<h3 style="margin:0">Done ✓</h3><p class="note" style="margin:0">${cmDrill.items.length} items in ${Math.max(1,Math.round((Date.now()-cmDrill.t0)/60000))} min.</p><div class="grid2"><button class="btn block" data-drill="stop">Close</button><button class="btn block primary" data-drill="${cmDrill.k}">Again</button></div>`;
+  let q='',a='';
+  if(cmDrill.k==='err'){q=`<p class="cm-lab">Find and fix the mistake</p><p class="cm-q cm-bad">${esc(it.w)}</p>`;a=`<p class="cm-q cm-good">${it.r}</p>${it.why?`<p class="note" style="margin:0">${esc(it.why)}</p>`:''}`;}
+  else if(cmDrill.k==='para'){q=`<p class="cm-lab">${it.kind==='combine'?'Combine into one sentence':'Say it in a more academic way'}</p><p class="cm-q">${esc(it.q)}</p>`;a=`<p class="cm-q cm-good">${esc(it.a)}</p>`;}
+  else if(cmDrill.k==='ov'){q=`<p class="cm-lab">Say the overview (2 sentences, no numbers)</p><p class="note" style="margin:0">${esc(it.task)}</p>${it.fig?`<img class="cm-fig" src="commute/figs/${it.fig}" alt="Task 1 chart">`:`<div class="cm-tbl">${it.table||''}</div>`}`;a=`<p class="cm-q cm-good">${esc(it.overview)}</p>`;}
+  else{const left=Math.max(0,60-Math.floor((Date.now()-cmDrill.t0q)/1000));q=`<p class="cm-lab">Position + 2 ideas + 1 example · <span id="drT" class="num">${cmDrill.show?'':left+' s'}</span></p><p class="cm-q">${esc(it.q)}</p>`;
+    a=it.ideas?`<p class="cm-lab">G‘oyalar</p><p class="note" style="margin:0">${esc(it.ideas)}</p>`:it.plan?`<p class="cm-lab">Band 8 introduction</p><p class="note" style="margin:0">${esc(it.plan)}</p>`:`<p class="note" style="margin:0">Write the plan in your head: position, reason 1 + example, reason 2 + example.</p>`;}
+  return `<div class="pline"><span class="label">${name}</span><div class="pbar"><i style="width:${cmDrill.i/cmDrill.items.length*100}%"></i></div><b class="num">${cmDrill.i+1}/${cmDrill.items.length}</b></div>
+    ${q}${cmDrill.show?`<div class="cm-ans">${a}</div><button class="btn block primary" data-drill="next">Next</button>`:`<button class="btn block primary" data-drill="show">Show answer</button>`}
+    <button class="btn ghost" data-drill="stop">Stop</button>`;
+}
+function drTick(){clearInterval(drT);if(!cmDrill||cmDrill.k!=='t2'||cmDrill.show)return;
+  drT=setInterval(()=>{const el=document.getElementById('drT');if(!el||!cmDrill||cmDrill.show){clearInterval(drT);return;}
+    const left=Math.max(0,60-Math.floor((Date.now()-cmDrill.t0q)/1000));el.textContent=left+' s';if(!left){clearInterval(drT);haptic('ok');}},500);}
+function viewMetro(){
+  const Q=hbQueue(),n=Q.due.length+Q.fresh.length,learned=Q.known;
+  const cards=hbRv?hbCard():`<p class="note" style="margin:0">160 words and collocations from the Writing 7.5 handbook. ${HB_NEW} new a day; known words come back after 3, 7, 14 and 30 days.</p>
+    <div class="seg" role="group" aria-label="Direction"><button type="button" data-hbdir="en" class="${hbDir()==='en'?'on':''}">English → Uzbek</button><button type="button" data-hbdir="uz" class="${hbDir()==='uz'?'on':''}">Uzbek → English</button></div>
+    ${n?`<div class="duebox"><div><b class="num">${n}</b><span>for today</span><small>${Q.due.length} to repeat · ${Q.fresh.length} new</small></div><button class="btn primary" data-hbrv="start">Start</button></div>`
+      :`<div class="duebox"><div><b class="num">0</b><span>for today</span><small>${Q.left?'New words again tomorrow':'All 160 words started'}</small></div></div>`}
+    <div class="pline"><span class="label">Started</span><div class="pbar"><i style="width:${learned/CM.words.length*100}%"></i></div><b class="num">${learned}/${CM.words.length}</b></div>`;
+  const drills=cmDrill?drillBody():`<p class="note" style="margin:0">One drill fits between two or three stations.</p><div class="chips col">${CM_DRILLS.map(([k,l,u])=>`<button type="button" class="chip" data-drill="${k}"><b>${l}</b> <span class="note">· ${u}</span></button>`).join('')}</div>`;
+  return `<section class="card"><div class="card-h"><h2>Flashcards</h2><span class="note">Writing 7.5</span></div>${cards}</section>
+    <section class="card"><div class="card-h"><h2>Micro drills</h2><span class="note">2–3 min</span></div>${drills}</section>`;
+}
+/* --- bus: audio tracks (commute/audio). The <audio> element lives outside #view so playback survives re-renders. --- */
+const AU=document.createElement('audio');AU.preload='none';document.body.appendChild(AU);
+let auId=null,auAuto=lsGet('auauto')!=='0';
+const AGROUPS=[['words','Words','So‘z → pauza → misol. Pauzada ma’nosini eslang.'],['essays','Band 8 model answers','Qo‘llanmadagi namuna javoblar.'],['shadow','Shadowing','To‘g‘ri gaplar: eshiting va pauzada takrorlang.'],['speak','Speaking questions','Savol → pauza → javob bering.']];
+const cmTime=s=>{s=Math.max(0,Math.round(s||0));return Math.floor(s/60)+':'+pad(s%60);};
+const auPlayed=()=>{try{return new Set(JSON.parse(lsGet('auplayed')||'[]'));}catch(e){return new Set();}};
+function auMark(id){const p=auPlayed();p.add(id);lsSet('auplayed',JSON.stringify([...p]));}
+function auTrack(id){return (CMA||[]).find(t=>t.id===id)||null;}
+function auLoad(id,play){
+  const t=auTrack(id);if(!t)return;auId=id;AU.src='commute/audio/'+t.file;AU.playbackRate=Number(lsGet('aurate'))||1;
+  try{const p=JSON.parse(lsGet('aupos')||'null');if(p&&p.id===id&&p.t>5&&p.t<t.sec-5)AU.currentTime=p.t;}catch(e){}
+  if('mediaSession' in navigator){try{navigator.mediaSession.metadata=new MediaMetadata({title:t.title,artist:'IELTS tracker',album:'Bus'});}catch(e){}}
+  if(play)AU.play().catch(()=>{});
+}
+function auStep(d){if(!auId)return;const t=auTrack(auId),list=(CMA||[]).filter(x=>x.group===t.group),i=list.findIndex(x=>x.id===auId),n=list[i+d];if(n){auLoad(n.id,true);if(tab==='daily'&&dView==='bus')renderView();}}
+function auUi(){
+  const b=document.getElementById('auBtn'),s=document.getElementById('auSeek'),tm=document.getElementById('auTime');
+  if(b)b.textContent=AU.paused?'▶':'❚❚';
+  if(s&&!s.matches(':active')){s.max=String(Math.round(AU.duration||auTrack(auId)?.sec||0));s.value=String(Math.round(AU.currentTime));}
+  if(tm)tm.textContent=cmTime(AU.currentTime)+' / '+cmTime(AU.duration||auTrack(auId)?.sec);
+}
+let auSaveT=0;
+AU.addEventListener('timeupdate',()=>{auUi();if(Date.now()-auSaveT>4000&&auId){auSaveT=Date.now();lsSet('aupos',JSON.stringify({id:auId,t:Math.round(AU.currentTime)}));}
+  const t=auTrack(auId);if(t&&AU.currentTime>t.sec*0.9)auMark(auId);});
+AU.addEventListener('play',auUi);AU.addEventListener('pause',auUi);
+AU.addEventListener('ended',()=>{if(auId){auMark(auId);lsSet('aupos',JSON.stringify({id:auId,t:0}));}if(auAuto)auStep(1);else auUi();});
+if('mediaSession' in navigator){try{
+  navigator.mediaSession.setActionHandler('play',()=>AU.play());navigator.mediaSession.setActionHandler('pause',()=>AU.pause());
+  navigator.mediaSession.setActionHandler('nexttrack',()=>auStep(1));navigator.mediaSession.setActionHandler('previoustrack',()=>auStep(-1));
+  navigator.mediaSession.setActionHandler('seekbackward',()=>{AU.currentTime=Math.max(0,AU.currentTime-10);});
+  navigator.mediaSession.setActionHandler('seekforward',()=>{AU.currentTime=AU.currentTime+10;});}catch(e){}}
+function viewBus(){
+  if(!CMA||!CMA.length)return `<section class="card"><p class="note" style="margin:0">Audio list could not load.</p></section>`;
+  if(!auId){let p=null;try{p=JSON.parse(lsGet('aupos')||'null');}catch(e){}auId=p&&auTrack(p.id)?p.id:CMA[0].id;}
+  const cur=auTrack(auId),played=auPlayed(),rate=Number(lsGet('aurate'))||1;
+  const player=`<section class="card cm-player"><div class="card-h"><div><span class="label">${esc((AGROUPS.find(g=>g[0]===cur.group)||[])[1]||'')}</span><h2 style="margin:2px 0 0">${esc(cur.title)}</h2></div></div>
+    <input id="auSeek" type="range" min="0" max="${cur.sec}" value="0" step="1" aria-label="Position">
+    <div class="pline" style="justify-content:space-between"><span class="note num" id="auTime">0:00 / ${cmTime(cur.sec)}</span><span class="note">${esc(cur.sub)}</span></div>
+    <div class="cm-ctl"><button class="btn icon" data-au="prev" aria-label="Previous track">⏮</button><button class="btn icon" data-au="back" aria-label="Back 10 seconds">−10</button>
+      <button class="btn primary cm-play" id="auBtn" data-au="toggle" aria-label="Play or pause">▶</button>
+      <button class="btn icon" data-au="fwd" aria-label="Forward 10 seconds">+10</button><button class="btn icon" data-au="next" aria-label="Next track">⏭</button></div>
+    <div class="chips" role="group" aria-label="Speed">${[0.85,1,1.15].map(r=>`<button type="button" class="chip ${rate===r?'on':''}" data-aurate="${r}">${r}×</button>`).join('')}<button type="button" class="chip ${auAuto?'on':''}" data-au="auto">Auto next</button></div>
+    <p class="note" style="margin:0">Telefon cho‘ntakda tursa ham eshitiladi. Ba’zi telefonlarda Telegram yopilsa yoki ekran qulflansa ovoz to‘xtashi mumkin — u holda MP3 fayllarni Telegram “Saved Messages”ga saqlab, o‘sha yerdan eshiting.</p></section>`;
+  const lists=AGROUPS.map(([g,l,u])=>{const ts=CMA.filter(t=>t.group===g);if(!ts.length)return '';
+    return `<details class="card" ${cur.group===g?'open':''}><summary><b>${l}</b> <span class="note">· ${ts.length} · ${Math.round(ts.reduce((a,t)=>a+t.sec,0)/60)} min</span></summary><p class="note">${u}</p>
+      <ul class="wlist">${ts.map(t=>`<li><button type="button" class="cm-trk ${t.id===auId?'on':''}" data-trk="${t.id}"><span><b>${esc(t.title)}</b><small>${esc(t.sub)}</small></span><span class="num note">${played.has(t.id)?'✓ ':''}${cmTime(t.sec)}</span></button></li>`).join('')}</ul></details>`;}).join('');
+  setTimeout(auUi,0);
+  return player+lists;
 }
 function viewPack(){
   const today=clampDay(todayIdx());if(dSel==null)dSel=today;
@@ -2111,6 +2252,7 @@ function backTarget(){
   if(document.querySelector('.sheet'))return 'sheet';
   if(WZ&&(PLAN||WZ.step>0))return 'wizard';
   if(editDay||editWeek)return 'edit';
+  if(tab==='daily'&&(hbRv||cmDrill))return 'commute';
   return null;
 }
 const MAINB=inTG&&ver('7.10')&&!!TG.MainButton&&typeof TG.MainButton.setParams==='function';
@@ -2127,6 +2269,7 @@ function onBack(){
   if(t==='sheet')closeSheet();
   else if(t==='wizard'){if(window.speechSynthesis)try{speechSynthesis.cancel();}catch(x){}if(PLAN&&WZ.step===0){WZ=null;renderAll();}else{WZ.step=Math.max(0,WZ.step-1);renderView();}scrollTo(0,0);}
   else if(t==='edit'){editDay=false;editWeek=false;resetArm=null;renderView();}
+  else if(t==='commute'){hbRv=null;cmDrill=null;clearInterval(drT);renderView();}
   haptic('light');
 }
 if(BACK){try{TG.BackButton.onClick(onBack);}catch(e){}}
@@ -2240,6 +2383,29 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-svsk],[data-svr],[data-svdis]'))){svReadForm();if(el.dataset.svsk)svDraft.sk=svDraft.sk===el.dataset.svsk?'':el.dataset.svsk;
     else if(el.dataset.svr)svDraft.r=Number(el.dataset.svr);else{const k=el.dataset.svdis;svDraft.dis=svDraft.dis.includes(k)?svDraft.dis.filter(x=>x!==k):(k==='none'?['none']:[...svDraft.dis.filter(x=>x!=='none'),k]);}
     haptic('sel');const y=scrollY;renderView();scrollTo(0,y);return;}
+  if((el=g('[data-dview]'))){dView=el.dataset.dview;hbRv=null;cmDrill=null;clearInterval(drT);if(dView!=='pack'&&!CM){cmErr=false;loadCommute();}haptic('sel');renderView();scrollTo(0,0);return;}
+  if((el=g('[data-hbdir]'))){lsSet('hbdir',el.dataset.hbdir);haptic('sel');renderView();return;}
+  if((el=g('[data-hbrv]'))){const a=el.dataset.hbrv;
+    if(a==='start'){const Q=hbQueue();hbRv={q:[...Q.due,...Q.fresh],i:0,show:false,done:0,re:{},dir:hbDir()};}
+    else if(a==='stop')hbRv=null;
+    else if(hbRv){const i=hbRv.q[hbRv.i];if(i!=null){hbGrade(i,a==='knew');if(a==='again'&&!hbRv.re[i]){hbRv.re[i]=1;hbRv.q.push(i);}hbRv.i++;hbRv.done++;hbRv.show=false;}haptic(a==='knew'?'ok':'light');}
+    renderView();return;}
+  if((el=g('[data-hbflip]'))){if(hbRv){hbRv.show=!hbRv.show;haptic('sel');renderView();}return;}
+  if((el=g('[data-drill]'))){const a=el.dataset.drill;
+    if(a==='stop'){cmDrill=null;clearInterval(drT);}
+    else if(a==='show'){if(cmDrill){cmDrill.show=true;clearInterval(drT);}}
+    else if(a==='next'){if(cmDrill){cmDrill.i++;cmDrill.show=false;cmDrill.t0q=Date.now();}}
+    else{startDrill(a);cmDrill.t0q=Date.now();}
+    haptic('sel');renderView();drTick();return;}
+  if((el=g('[data-trk]'))){const id=el.dataset.trk;if(id===auId&&AU.getAttribute('src')){AU.paused?AU.play().catch(()=>{}):AU.pause();}else auLoad(id,true);haptic('sel');renderView();return;}
+  if((el=g('[data-aurate]'))){const r=Number(el.dataset.aurate);lsSet('aurate',String(r));AU.playbackRate=r;haptic('sel');renderView();return;}
+  if((el=g('[data-au]'))){const a=el.dataset.au;
+    if(a==='toggle'){if(!AU.getAttribute('src'))auLoad(auId,true);else AU.paused?AU.play().catch(()=>{}):AU.pause();}
+    else if(a==='back')AU.currentTime=Math.max(0,AU.currentTime-10);
+    else if(a==='fwd')AU.currentTime=AU.currentTime+10;
+    else if(a==='prev')auStep(-1);else if(a==='next')auStep(1);
+    else if(a==='auto'){auAuto=!auAuto;lsSet('auauto',auAuto?'1':'0');renderView();}
+    haptic('light');return;}
   if((el=g('[data-wf]'))){wFilter=el.dataset.wf;review=null;haptic('sel');renderView();return;}
   if((el=g('[data-rv]'))){const a=el.dataset.rv;
     if(a==='start'){review={q:dueOf(wordPool()).map(x=>x.id),i:0,show:false,done:0,re:{}};scrollTo(0,0);}
@@ -2273,7 +2439,8 @@ document.addEventListener('change',e=>{
   const wt=e.target.dataset.wtask;
   if(wt){const w=Math.ceil(sel/7),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked)haptic('light');renderHeader();renderView();return;}
 });
-document.addEventListener('input',e=>{
+document.addEventListener('input',e=>{if(e.target&&e.target.id==='auSeek'){AU.currentTime=Number(e.target.value)||0;return;}
+
   if(e.target&&e.target.dataset&&e.target.dataset.ka){KANS[e.target.dataset.ka]=e.target.value.slice(0,800);saveKans();return;}
   const t=e.target;
   if(WZ){

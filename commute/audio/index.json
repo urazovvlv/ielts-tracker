@@ -1,0 +1,382 @@
+{
+"tracks": [
+{
+"id": "words-d01",
+"group": "words",
+"title": "1-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d01.mp3",
+"sec": 196,
+"bytes": 511514
+},
+{
+"id": "words-d02",
+"group": "words",
+"title": "2-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d02.mp3",
+"sec": 196,
+"bytes": 511694
+},
+{
+"id": "words-d03",
+"group": "words",
+"title": "3-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d03.mp3",
+"sec": 196,
+"bytes": 495386
+},
+{
+"id": "words-d04",
+"group": "words",
+"title": "4-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d04.mp3",
+"sec": 192,
+"bytes": 489410
+},
+{
+"id": "words-d05",
+"group": "words",
+"title": "5-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d05.mp3",
+"sec": 194,
+"bytes": 486782
+},
+{
+"id": "words-d06",
+"group": "words",
+"title": "6-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d06.mp3",
+"sec": 196,
+"bytes": 503054
+},
+{
+"id": "words-d07",
+"group": "words",
+"title": "7-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d07.mp3",
+"sec": 195,
+"bytes": 500534
+},
+{
+"id": "words-d08",
+"group": "words",
+"title": "8-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d08.mp3",
+"sec": 197,
+"bytes": 511010
+},
+{
+"id": "words-d09",
+"group": "words",
+"title": "9-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d09.mp3",
+"sec": 190,
+"bytes": 476810
+},
+{
+"id": "words-d10",
+"group": "words",
+"title": "10-kun so‘zlari",
+"sub": "16 ta so‘z · so‘z → pauza → misol",
+"file": "words-d10.mp3",
+"sec": 200,
+"bytes": 527499
+},
+{
+"id": "essay-d01-t1",
+"group": "essays",
+"title": "1-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d01-t1.mp3",
+"sec": 83,
+"bytes": 358198
+},
+{
+"id": "essay-d01-t2",
+"group": "essays",
+"title": "1-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d01-t2.mp3",
+"sec": 118,
+"bytes": 511378
+},
+{
+"id": "essay-d02-t1",
+"group": "essays",
+"title": "2-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d02-t1.mp3",
+"sec": 77,
+"bytes": 330046
+},
+{
+"id": "essay-d02-t2",
+"group": "essays",
+"title": "2-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d02-t2.mp3",
+"sec": 126,
+"bytes": 552130
+},
+{
+"id": "essay-d03-t1",
+"group": "essays",
+"title": "3-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d03-t1.mp3",
+"sec": 81,
+"bytes": 345742
+},
+{
+"id": "essay-d03-t2",
+"group": "essays",
+"title": "3-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d03-t2.mp3",
+"sec": 125,
+"bytes": 546946
+},
+{
+"id": "essay-d04-t1",
+"group": "essays",
+"title": "4-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d04-t1.mp3",
+"sec": 87,
+"bytes": 382174
+},
+{
+"id": "essay-d04-t2",
+"group": "essays",
+"title": "4-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d04-t2.mp3",
+"sec": 116,
+"bytes": 493522
+},
+{
+"id": "essay-d05-t1",
+"group": "essays",
+"title": "5-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d05-t1.mp3",
+"sec": 98,
+"bytes": 421846
+},
+{
+"id": "essay-d05-t2",
+"group": "essays",
+"title": "5-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d05-t2.mp3",
+"sec": 118,
+"bytes": 509218
+},
+{
+"id": "essay-d06-t1",
+"group": "essays",
+"title": "6-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d06-t1.mp3",
+"sec": 66,
+"bytes": 278782
+},
+{
+"id": "essay-d06-t2",
+"group": "essays",
+"title": "6-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d06-t2.mp3",
+"sec": 125,
+"bytes": 537838
+},
+{
+"id": "essay-d07-t1",
+"group": "essays",
+"title": "7-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d07-t1.mp3",
+"sec": 64,
+"bytes": 272878
+},
+{
+"id": "essay-d07-t2",
+"group": "essays",
+"title": "7-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d07-t2.mp3",
+"sec": 117,
+"bytes": 508066
+},
+{
+"id": "essay-d08-t1",
+"group": "essays",
+"title": "8-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d08-t1.mp3",
+"sec": 95,
+"bytes": 409642
+},
+{
+"id": "essay-d08-t2",
+"group": "essays",
+"title": "8-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d08-t2.mp3",
+"sec": 128,
+"bytes": 560374
+},
+{
+"id": "essay-d09-t1",
+"group": "essays",
+"title": "9-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d09-t1.mp3",
+"sec": 70,
+"bytes": 288934
+},
+{
+"id": "essay-d09-t2",
+"group": "essays",
+"title": "9-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d09-t2.mp3",
+"sec": 126,
+"bytes": 551842
+},
+{
+"id": "essay-d10-t1",
+"group": "essays",
+"title": "10-kun · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d10-t1.mp3",
+"sec": 67,
+"bytes": 277847
+},
+{
+"id": "essay-d10-t2",
+"group": "essays",
+"title": "10-kun · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-d10-t2.mp3",
+"sec": 116,
+"bytes": 494747
+},
+{
+"id": "essay-mock-t1",
+"group": "essays",
+"title": "Mock test · Task 1 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-mock-t1.mp3",
+"sec": 82,
+"bytes": 356654
+},
+{
+"id": "essay-mock-t2",
+"group": "essays",
+"title": "Mock test · Task 2 (Band 8)",
+"sub": "Namuna javob",
+"file": "essay-mock-t2.mp3",
+"sec": 109,
+"bytes": 476966
+},
+{
+"id": "shadow-1",
+"group": "shadow",
+"title": "To‘g‘ri gaplar · 1-qism",
+"sub": "35 ta gap · eshiting va takrorlang",
+"file": "shadow-1.mp3",
+"sec": 239,
+"bytes": 556058
+},
+{
+"id": "shadow-2",
+"group": "shadow",
+"title": "To‘g‘ri gaplar · 2-qism",
+"sub": "35 ta gap · eshiting va takrorlang",
+"file": "shadow-2.mp3",
+"sec": 271,
+"bytes": 635330
+},
+{
+"id": "shadow-3",
+"group": "shadow",
+"title": "To‘g‘ri gaplar · 3-qism",
+"sub": "35 ta gap · eshiting va takrorlang",
+"file": "shadow-3.mp3",
+"sec": 263,
+"bytes": 626006
+},
+{
+"id": "shadow-4",
+"group": "shadow",
+"title": "To‘g‘ri gaplar · 4-qism",
+"sub": "15 ta gap · eshiting va takrorlang",
+"file": "shadow-4.mp3",
+"sec": 102,
+"bytes": 234866
+},
+{
+"id": "speak-p1-1",
+"group": "speak",
+"title": "Speaking Part 1 · 1-to‘plam",
+"sub": "32 ta savol · 14 soniya pauza",
+"file": "speak-p1-1.mp3",
+"sec": 539,
+"bytes": 823144
+},
+{
+"id": "speak-p1-2",
+"group": "speak",
+"title": "Speaking Part 1 · 2-to‘plam",
+"sub": "32 ta savol · 14 soniya pauza",
+"file": "speak-p1-2.mp3",
+"sec": 541,
+"bytes": 837292
+},
+{
+"id": "speak-p3-1",
+"group": "speak",
+"title": "Speaking Part 3 · 1-to‘plam",
+"sub": "20 ta savol · 30 soniya pauza",
+"file": "speak-p3-1.mp3",
+"sec": 668,
+"bytes": 873976
+},
+{
+"id": "speak-p3-2",
+"group": "speak",
+"title": "Speaking Part 3 · 2-to‘plam",
+"sub": "20 ta savol · 30 soniya pauza",
+"file": "speak-p3-2.mp3",
+"sec": 662,
+"bytes": 846508
+},
+{
+"id": "speak-p3-3",
+"group": "speak",
+"title": "Speaking Part 3 · 3-to‘plam",
+"sub": "20 ta savol · 30 soniya pauza",
+"file": "speak-p3-3.mp3",
+"sec": 664,
+"bytes": 852736
+},
+{
+"id": "speak-p3-4",
+"group": "speak",
+"title": "Speaking Part 3 · 4-to‘plam",
+"sub": "20 ta savol · 30 soniya pauza",
+"file": "speak-p3-4.mp3",
+"sec": 663,
+"bytes": 850720
+}
+]
+}
