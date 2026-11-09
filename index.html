@@ -750,7 +750,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-07.1';
+const BUILD='2026-11-09.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -861,7 +861,7 @@ const CUES=[
 /* ---------- state ---------- */
 let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}}};
 let DAILY=[];
-let tab=/^#kb/.test(location.hash)?'books':/^#(daily|books|metro|bus)/.test(location.hash)?'daily':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
+let tab=/^#kb/.test(location.hash)?'books':/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
 
 /* ---------- storage: Telegram CloudStorage, mirrored in this device ---------- */
@@ -1051,7 +1051,7 @@ function renderHeader(){
   if(document.querySelector('.ruler'))setTimeout(()=>{rulerShown=true;},50);
 }
 function renderTabs(){
-  const T=[['today','Today'],['daily','Daily'],['books','Books'],['prog','Progress'],['speak','Practice']];
+  const T=[['today','Today'],['books','Books'],['prog','Progress'],['speak','Practice']];
   document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k==='speak'?'pen':k)}${l}</button>`).join('');
 }
 
@@ -2244,7 +2244,7 @@ function studyCard(){
 function renderView(){
   const v=document.getElementById('view');
   if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
-  v.innerHTML=tab==='today'?viewToday():tab==='daily'?viewDaily():tab==='prog'?viewProgress():tab==='books'?`<div class="wrap">${viewSkillBooks()}</div>`:viewPractice();
+  v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():tab==='books'?`<div class="wrap">${viewSkillBooks()}</div>`:viewPractice();
   updateBack();
 }
 /* What the Telegram back arrow should close, newest layer first. */

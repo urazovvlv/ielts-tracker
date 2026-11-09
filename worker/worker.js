@@ -303,12 +303,7 @@ async function buildMessage(slot, doc, today) {
     const f = focusLine((doc.days || {})[today]);
     if (f) L.push("", f);
     if (ms[day]) L.push("", `Mock day: <b>${esc(ms[day])}</b>. Start at 19:00 in exam conditions, with no pauses.`);
-    const pack = await getPack(day);
-    if (pack) {
-      L.push("", "<b>Today's pack</b> · full version in the app (Daily tab):");
-      for (const [k, t] of PACK) { const th = (pack[k] && pack[k].theme) || (k === "reading" ? "10 academic words" : ""); L.push(`• ${t}${th ? ": " + esc(th) : ""}`); }
-    }
-    return { text: L.join("\n"), frag: "#daily" };
+    return { text: L.join("\n"), frag: "" };
   }
   if (slot === "evening") {
     const L = ms[day]

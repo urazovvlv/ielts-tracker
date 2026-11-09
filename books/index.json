@@ -318,21 +318,6 @@
    "sub": "Only the words you didn't know · say the meaning, then make a sentence"
   },
   {
-   "k": "v-daily",
-   "days": [
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Daily pack",
-   "sub": "Daily tab → Daily pack"
-  },
-  {
    "k": "v-col",
    "days": [
     9
