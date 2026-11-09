@@ -125,20 +125,6 @@
  ],
  "tasks": [
   {
-   "k": "r-article",
-   "days": [
-    9,
-    10,
-    11,
-    12,
-    13,
-    14
-   ],
-   "sk": "R",
-   "label": "Reading: one article + 8–10 new words",
-   "sub": "BBC Future / Guardian / Aeon / The Conversation, 700–900 words · a one-line heading for every paragraph · each word: meaning, sentence from the text, your own sentence"
-  },
-  {
    "k": "r-test",
    "days": [
     9,
@@ -1080,15 +1066,6 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed",
    "sub": "Every day, Days 9–14 · every mistake in Mistakes"
-  },
-  {
-   "k": "w2-r3",
-   "weeks": [
-    2
-   ],
-   "sk": "R",
-   "label": "6 articles + their new words",
-   "sub": "8–10 words each, with your own sentences"
   },
   {
    "k": "w2-l1",
