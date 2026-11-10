@@ -682,6 +682,33 @@
    "sub": "Go through the Week 3 goals and daily lists · say what to cut or move · fix the times for each block around work and classes"
   },
   {
+   "k": "l80",
+   "days": [
+    15
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    15
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    15
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     15
@@ -689,6 +716,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    16
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    16
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    16
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -700,6 +754,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "l-test",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     17
@@ -707,6 +797,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    18
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    18
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    18
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -718,6 +835,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "l-test",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     20
@@ -725,6 +878,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -736,6 +916,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "l80",
+   "days": [
+    22
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    22
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    22
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     22
@@ -743,6 +950,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -754,6 +997,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    24
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    24
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    24
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     24
@@ -761,6 +1031,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    25
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    25
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    25
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -772,6 +1069,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     27
@@ -779,6 +1103,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    28
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    28
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    28
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -790,6 +1141,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l-test",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     29
@@ -797,6 +1184,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    30
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    30
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    30
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -808,6 +1222,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     31
@@ -815,6 +1256,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    32
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    32
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    32
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    32
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -826,6 +1303,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    34
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    34
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    34
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     34
@@ -833,6 +1337,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -844,6 +1384,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    36
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    36
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    36
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     36
@@ -851,6 +1418,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    37
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    37
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    37
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -862,6 +1456,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l-test",
+   "days": [
+    38
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    38
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    38
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    38
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     38
@@ -869,6 +1499,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    39
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    39
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    39
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -880,6 +1537,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l-test",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     41
@@ -887,6 +1580,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    42
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    42
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    42
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -898,6 +1618,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    43
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    43
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    43
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     43
@@ -905,6 +1652,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    44
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    44
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    44
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    44
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -916,6 +1699,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    45
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    45
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    45
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     45
@@ -923,6 +1733,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    46
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    46
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    46
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -934,6 +1771,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    48
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    48
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    48
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     48
@@ -941,6 +1805,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    49
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    49
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    49
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -952,6 +1843,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l-test",
+   "days": [
+    50
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    50
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    50
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    50
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     50
@@ -959,6 +1886,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l80",
+   "days": [
+    51
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    51
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    51
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -970,6 +1924,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l80",
+   "days": [
+    52
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    52
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    52
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     52
@@ -979,6 +1960,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "l-test",
+   "days": [
+    53
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    53
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    53
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    53
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
    "k": "r-test",
    "days": [
     53
@@ -986,6 +2003,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "l-test",
+   "days": [
+    56
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · keyword table: question word → what the speaker said (paraphrase), wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    56
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · up to 10 tests, from where you stopped",
+   "sub": "Up to 10 — do as many as you can, 10 is not a rule · one listen, no pauses · check with the key · replay every mistake and write what you hear · cause: spelling / number / plural -s / word limit / not heard · skip once the book is finished"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    56
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    56
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · 1 unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
   },
   {
    "k": "r-test",
@@ -1013,8 +2066,8 @@
     2
    ],
    "sk": "L",
-   "label": "80 Listening Tests: 43 tests",
-   "sub": "1–20 (Part 1), 61–80 (Part 4), 41–44 (Part 3)"
+   "label": "80 Listening Tests: up to 10 a day, as many as you can",
+   "sub": ""
   },
   {
    "k": "w2-l2",
@@ -1116,6 +2169,42 @@
    "sub": "Day 14 evening: what got done, what didn't"
   },
   {
+   "k": "w3-l1",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "80 Listening Tests: up to 10 a day, as many as you can",
+   "sub": ""
+  },
+  {
+   "k": "w3-l2",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "2 full Listening tests, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w3-l3",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w3-l4",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
+  },
+  {
    "k": "w3-r",
    "weeks": [
     3
@@ -1123,6 +2212,42 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed, with keyword tables",
    "sub": "+ Reading in the Sunday mock"
+  },
+  {
+   "k": "w4-l1",
+   "weeks": [
+    4
+   ],
+   "sk": "L",
+   "label": "80 Listening Tests: up to 10 a day, as many as you can",
+   "sub": ""
+  },
+  {
+   "k": "w4-l2",
+   "weeks": [
+    4
+   ],
+   "sk": "L",
+   "label": "1 full Listening test, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w4-l3",
+   "weeks": [
+    4
+   ],
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w4-l4",
+   "weeks": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
   },
   {
    "k": "w4-r",
@@ -1134,6 +2259,33 @@
    "sub": "Mistake causes logged"
   },
   {
+   "k": "w5-l1",
+   "weeks": [
+    5
+   ],
+   "sk": "L",
+   "label": "3 full Listening tests, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w5-l2",
+   "weeks": [
+    5
+   ],
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w5-l3",
+   "weeks": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
+  },
+  {
    "k": "w5-r",
    "weeks": [
     5
@@ -1141,6 +2293,33 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed",
    "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w6-l1",
+   "weeks": [
+    6
+   ],
+   "sk": "L",
+   "label": "2 full Listening tests, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w6-l2",
+   "weeks": [
+    6
+   ],
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w6-l3",
+   "weeks": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
   },
   {
    "k": "w6-r",
@@ -1152,6 +2331,33 @@
    "sub": "Mistake causes logged"
   },
   {
+   "k": "w7-l1",
+   "weeks": [
+    7
+   ],
+   "sk": "L",
+   "label": "1 full Listening test, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w7-l2",
+   "weeks": [
+    7
+   ],
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w7-l3",
+   "weeks": [
+    7
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
+  },
+  {
    "k": "w7-r",
    "weeks": [
     7
@@ -1159,6 +2365,33 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed",
    "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w8-l1",
+   "weeks": [
+    8
+   ],
+   "sk": "L",
+   "label": "3 full Listening tests, analysed, with keyword tables",
+   "sub": ""
+  },
+  {
+   "k": "w8-l2",
+   "weeks": [
+    8
+   ],
+   "sk": "L",
+   "label": "5 Cambridge sections dictated",
+   "sub": ""
+  },
+  {
+   "k": "w8-l3",
+   "weeks": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 5 units",
+   "sub": ""
   },
   {
    "k": "w8-r",
