@@ -682,6 +682,15 @@
    "sub": "Go through the Week 3 goals and daily lists · say what to cut or move · fix the times for each block around work and classes"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    15
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Exam format + band criteria (p. 5–11) · Day 1 Part 2: describing a person (p. 12–23)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
    "k": "s-shadow",
    "days": [
     15
@@ -696,8 +705,8 @@
     15
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Hometown · Home) · Part 2 (Describe a place in your city you like to visit) · Part 3 (Cities and urban life) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -772,6 +781,24 @@
    "sub": "Do the 10-min diagnostic first: the topics you get wrong get extra time this week · Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    16
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 2 Part 1 + a person you respect (p. 24–35)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "s-sp75-1",
+   "days": [
+    16
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 3 Telling a story: object + event (p. 36–45)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
    "k": "s-shadow",
    "days": [
     16
@@ -786,8 +813,8 @@
     16
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Work or study · Daily routine) · Part 2 (Describe a skill you learned that is useful) · Part 3 (Education and learning skills) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -871,6 +898,24 @@
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 4 Part 3: building and supporting an opinion (p. 46–56)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "s-sp75-1",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 5 Two sides: advantages + disadvantages (p. 57–66)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
    "k": "s-shadow",
    "days": [
     17
@@ -885,8 +930,8 @@
     17
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Technology · Phone and internet) · Part 2 (Describe a piece of technology you use every day) · Part 3 (Technology and society) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -979,6 +1024,24 @@
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    18
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 6 Hypothetical questions + new people (p. 67–76)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "s-sp75-1",
+   "days": [
+    18
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 7 Problem + solution: success (p. 77–86)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
    "k": "s-shadow",
    "days": [
     18
@@ -993,8 +1056,8 @@
     18
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Free time · Sport) · Part 2 (Describe a memorable trip you took) · Part 3 (Travel and tourism) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1105,6 +1168,24 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 8 Comparing: traditions, past and now (p. 87–96)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "s-sp75-1",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 9 Future + probability: creativity and crafts (p. 97–106)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
    "k": "s-shadow",
    "days": [
     20
@@ -1119,8 +1200,8 @@
     20
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Friends · Family) · Part 2 (Describe a person who has influenced you) · Part 3 (Family, role models and generations) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -1213,6 +1294,24 @@
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
+   "k": "s-sp75-0",
+   "days": [
+    21
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Day 10 Agreeing, stress + exam-day strategy (p. 107–116)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "s-sp75-1",
+   "days": [
+    21
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Full mock test + self-assessment (p. 117–120)",
+   "sub": "Record the whole test (11–14 min) without stopping · score yourself with the table · send me the transcript"
+  },
+  {
    "k": "s-shadow",
    "days": [
     21
@@ -1227,8 +1326,8 @@
     21
    ],
    "sk": "S",
-   "label": "Speaking: Part 1 (Food · Shopping) · Part 2 (Describe an important decision you made) · Part 3 (Choices, consumers and advertising) + self-recording",
-   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
+   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -2565,12 +2664,21 @@
    "sub": "Day 14 evening: what got done, what didn't"
   },
   {
+   "k": "w3-s0",
+   "weeks": [
+    3
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5: all 10 lessons + mock test",
+   "sub": "Review plan from p. 121 starts in Week 4"
+  },
+  {
    "k": "w3-s1",
    "weeks": [
     3
    ],
    "sk": "S",
-   "label": "6 topic sets (Parts 1–3) recorded, with feedback",
+   "label": "6 topic sets (Parts 1–3) on the lesson topics, recorded, with feedback",
    "sub": ""
   },
   {
