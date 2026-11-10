@@ -768,8 +768,8 @@
     15
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -867,8 +867,8 @@
     16
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -948,8 +948,8 @@
     17
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -1038,8 +1038,8 @@
     18
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -1164,8 +1164,8 @@
     20
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -1245,8 +1245,8 @@
     21
    ],
    "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
    "k": "v-col",
@@ -4109,8 +4109,8 @@
     3
    ],
    "sk": "R",
-   "label": "6 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "label": "6 full Reading tests, analysed, with keyword tables",
+   "sub": "+ Reading in the Sunday mock"
   },
   {
    "k": "w3-10",
