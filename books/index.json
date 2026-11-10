@@ -655,58 +655,22 @@
    "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
   },
   {
-   "k": "w-t1",
+   "k": "mock",
    "days": [
     14
    ],
-   "sk": "W",
-   "label": "Writing: Task 1 · line graph · rewrite",
-   "sub": "20 min, 150+ words · overview first · Practice → Copy for Claude → feedback · rewrite after the feedback (10 min)"
+   "sk": "",
+   "label": "Full mock · exam conditions (L 30 · R 60 · W 60 · S 15)",
+   "sub": "Next unused Cambridge test · no pauses · record the Speaking"
   },
   {
-   "k": "s-qs",
+   "k": "mock-send",
    "days": [
     14
    ],
-   "sk": "S",
-   "label": "Speaking: Part 2 × 1 · Part 3 × 3",
-   "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
-  },
-  {
-   "k": "l80",
-   "days": [
-    14
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 1–3 (Part 1)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
-  },
-  {
-   "k": "r-test",
-   "days": [
-    14
-   ],
-   "sk": "R",
-   "label": "Full Reading test (60 min) + analysis",
-   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
-  },
-  {
-   "k": "v-col",
-   "days": [
-    14
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 1 What is a collocation?",
-   "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
-  },
-  {
-   "k": "g-haf",
-   "days": [
-    14
-   ],
-   "sk": "G",
-   "label": "Grammar · Hafizov · Present Simple, Present Continuous (p. 18–25)",
-   "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
+   "sk": "",
+   "label": "Mock: send Writing + Speaking to Claude · type all scores in Progress",
+   "sub": "Writing: Copy for Claude · Speaking: transcript · Listening/Reading mistakes into Mistakes"
   },
   {
    "k": "w-t2",
@@ -768,7 +732,7 @@
     15
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 4–8 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 1–5 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -804,7 +768,7 @@
     15
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
+   "label": "Vocabulary · Collocations in Use · Unit 1 What is a collocation?",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -813,7 +777,7 @@
     15
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
+   "label": "Grammar · Hafizov · Present Simple, Present Continuous (p. 18–25)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -867,7 +831,7 @@
     16
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 9–13 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 6–10 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -903,7 +867,7 @@
     16
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
+   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -912,7 +876,7 @@
     16
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
+   "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -948,7 +912,7 @@
     17
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 14–18 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 11–15 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -984,7 +948,7 @@
     17
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
+   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -993,7 +957,7 @@
     17
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
+   "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1038,7 +1002,7 @@
     18
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 19–23 (Parts 1–2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 16–20 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1074,7 +1038,7 @@
     18
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
+   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1083,7 +1047,7 @@
     18
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
+   "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1164,7 +1128,7 @@
     20
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 24–28 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 21–25 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1200,7 +1164,7 @@
     20
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 6 Intensifying adverbs",
+   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1209,7 +1173,7 @@
     20
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Passive voice (p. 46–53)",
+   "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1245,7 +1209,7 @@
     21
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 29–33 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 26–30 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1281,7 +1245,7 @@
     21
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
+   "label": "Vocabulary · Collocations in Use · Unit 6 Intensifying adverbs",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1290,7 +1254,7 @@
     21
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Table of tenses, subject–verb agreement, causative (p. 54–59)",
+   "label": "Grammar · Hafizov · Passive voice (p. 46–53)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1344,7 +1308,7 @@
     22
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 34–38 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 31–35 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1380,7 +1344,7 @@
     22
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 8 Everyday verbs 2",
+   "label": "Vocabulary · Collocations in Use · Unit 7 Everyday verbs 1",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1389,7 +1353,7 @@
     22
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Direct and reported speech (p. 60–64)",
+   "label": "Grammar · Hafizov · Table of tenses, subject–verb agreement, causative (p. 54–59)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1452,7 +1416,7 @@
     23
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 39–43 (Parts 2–3)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 36–40 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1488,7 +1452,7 @@
     23
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 9 Everyday verbs 3",
+   "label": "Vocabulary · Collocations in Use · Unit 8 Everyday verbs 2",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1497,7 +1461,7 @@
     23
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Conditionals (1, 2, 3, mixed, inversion) (p. 65–68)",
+   "label": "Grammar · Hafizov · Direct and reported speech (p. 60–64)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1524,7 +1488,7 @@
     24
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 44–48 (Part 3)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 41–45 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1560,7 +1524,7 @@
     24
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 10 Synonyms and confusable words 1",
+   "label": "Vocabulary · Collocations in Use · Unit 9 Everyday verbs 3",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1569,7 +1533,7 @@
     24
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Wish, as if / as though; modals: can, could, may, might (p. 69–74)",
+   "label": "Grammar · Hafizov · Conditionals (1, 2, 3, mixed, inversion) (p. 65–68)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1623,7 +1587,7 @@
     25
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 49–53 (Part 3)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 46–50 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1659,7 +1623,7 @@
     25
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 11 Synonyms and confusable words 2",
+   "label": "Vocabulary · Collocations in Use · Unit 10 Synonyms and confusable words 1",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1668,7 +1632,7 @@
     25
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Modals: should, need, must, have to, would, had better, be to (p. 75–81)",
+   "label": "Grammar · Hafizov · Wish, as if / as though; modals: can, could, may, might (p. 69–74)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1758,7 +1722,7 @@
     27
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 54–58 (Part 3)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 51–55 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1794,7 +1758,7 @@
     27
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 12 Metaphor",
+   "label": "Vocabulary · Collocations in Use · Unit 11 Synonyms and confusable words 2",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1803,7 +1767,7 @@
     27
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Probability (must/can't/may have done); gerund (p. 82–86)",
+   "label": "Grammar · Hafizov · Modals: should, need, must, have to, would, had better, be to (p. 75–81)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1830,7 +1794,7 @@
     28
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 59–63 (Parts 3–4)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 56–60 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1866,7 +1830,7 @@
     28
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 13 Weather",
+   "label": "Vocabulary · Collocations in Use · Unit 12 Metaphor",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1875,7 +1839,7 @@
     28
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Infinitive (p. 87–96)",
+   "label": "Grammar · Hafizov · Probability (must/can't/may have done); gerund (p. 82–86)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -1938,7 +1902,7 @@
     29
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 64–68 (Part 4)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 61–65 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1974,7 +1938,7 @@
     29
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 14 Travel",
+   "label": "Vocabulary · Collocations in Use · Unit 13 Weather",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -1983,7 +1947,7 @@
     29
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Participles; question types; agreement (So do I / Neither do I) (p. 97–105)",
+   "label": "Grammar · Hafizov · Infinitive (p. 87–96)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2037,7 +2001,7 @@
     30
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 69–73 (Part 4)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 66–70 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -2073,7 +2037,7 @@
     30
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 15 Countryside",
+   "label": "Vocabulary · Collocations in Use · Unit 14 Travel",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2082,7 +2046,7 @@
     30
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Nouns: countable / uncountable, plurals (p. 106–109)",
+   "label": "Grammar · Hafizov · Participles; question types; agreement (So do I / Neither do I) (p. 97–105)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2118,7 +2082,7 @@
     31
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 74–78 (Part 4)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 71–75 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -2154,7 +2118,7 @@
     31
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 16 Towns and cities",
+   "label": "Vocabulary · Collocations in Use · Unit 15 Countryside",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2163,7 +2127,7 @@
     31
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Nouns: special cases (p. 110–119)",
+   "label": "Grammar · Hafizov · Nouns: countable / uncountable, plurals (p. 106–109)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2208,7 +2172,7 @@
     32
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 79–80 (Part 4)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 76–80 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -2244,7 +2208,7 @@
     32
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 17 People: character and behaviour",
+   "label": "Vocabulary · Collocations in Use · Unit 16 Towns and cities",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2253,7 +2217,7 @@
     32
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Nouns: measure words, abstract, compound, collective, possessive, suffixes (p. 120–127)",
+   "label": "Grammar · Hafizov · Nouns: special cases (p. 110–119)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2361,7 +2325,7 @@
     34
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 18 People: physical appearance",
+   "label": "Vocabulary · Collocations in Use · Unit 17 People: character and behaviour",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2370,7 +2334,7 @@
     34
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Adjectives: degrees, comparison, -ing/-ed, order (p. 128–138)",
+   "label": "Grammar · Hafizov · Nouns: measure words, abstract, compound, collective, possessive, suffixes (p. 120–127)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2433,7 +2397,7 @@
     35
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 19 Families",
+   "label": "Vocabulary · Collocations in Use · Unit 18 People: physical appearance",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2442,7 +2406,7 @@
     35
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Adverbs (p. 139–149)",
+   "label": "Grammar · Hafizov · Adjectives: degrees, comparison, -ing/-ed, order (p. 128–138)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2514,7 +2478,7 @@
     36
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 20 Relationships",
+   "label": "Vocabulary · Collocations in Use · Unit 19 Families",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2523,7 +2487,7 @@
     36
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Pronouns: personal → some / any / no / none (p. 150–160)",
+   "label": "Grammar · Hafizov · Adverbs (p. 139–149)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2604,7 +2568,7 @@
     37
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 21 Houses, flats and rooms",
+   "label": "Vocabulary · Collocations in Use · Unit 20 Relationships",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2613,7 +2577,7 @@
     37
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Pronouns: much / many → there / it (p. 161–172)",
+   "label": "Grammar · Hafizov · Pronouns: personal → some / any / no / none (p. 150–160)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2667,7 +2631,7 @@
     38
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 22 Eating and drinking",
+   "label": "Vocabulary · Collocations in Use · Unit 21 Houses, flats and rooms",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2676,7 +2640,7 @@
     38
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Complex sentences, relative clauses; numerals (p. 173–181)",
+   "label": "Grammar · Hafizov · Pronouns: much / many → there / it (p. 161–172)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2748,7 +2712,7 @@
     39
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 23 Films and books",
+   "label": "Vocabulary · Collocations in Use · Unit 22 Eating and drinking",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2757,7 +2721,7 @@
     39
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Articles 1: a/an, the with common nouns, zero article (p. 182–188)",
+   "label": "Grammar · Hafizov · Complex sentences, relative clauses; numerals (p. 173–181)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2865,7 +2829,7 @@
     41
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 24 Music",
+   "label": "Vocabulary · Collocations in Use · Unit 23 Films and books",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2874,7 +2838,7 @@
     41
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Articles 2: proper and geographical names, special cases (p. 189–197)",
+   "label": "Grammar · Hafizov · Articles 1: a/an, the with common nouns, zero article (p. 182–188)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -2928,7 +2892,7 @@
     42
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 25 Sport",
+   "label": "Vocabulary · Collocations in Use · Unit 24 Music",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -2937,7 +2901,7 @@
     42
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Prepositions: at → for (p. 198–206)",
+   "label": "Grammar · Hafizov · Articles 2: proper and geographical names, special cases (p. 189–197)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -3018,7 +2982,7 @@
     43
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 26 Health and illness",
+   "label": "Vocabulary · Collocations in Use · Unit 25 Sport",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3027,7 +2991,7 @@
     43
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Prepositions: from → without (p. 207–219)",
+   "label": "Grammar · Hafizov · Prepositions: at → for (p. 198–206)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -3099,7 +3063,7 @@
     44
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 27 Using the Internet",
+   "label": "Vocabulary · Collocations in Use · Unit 26 Health and illness",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3108,7 +3072,7 @@
     44
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Prepositions: compared, compound, fixed phrases (p. 220–226)",
+   "label": "Grammar · Hafizov · Prepositions: from → without (p. 207–219)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -3171,7 +3135,7 @@
     45
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 28 Study and learning",
+   "label": "Vocabulary · Collocations in Use · Unit 27 Using the Internet",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3180,7 +3144,7 @@
     45
    ],
    "sk": "G",
-   "label": "Grammar · Hafizov · Conjunctions (p. 227–233)",
+   "label": "Grammar · Hafizov · Prepositions: compared, compound, fixed phrases (p. 220–226)",
    "sub": "15 min · read every rule and example · write 5 sentences of your own (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -3243,8 +3207,17 @@
     46
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 29 Presentations",
+   "label": "Vocabulary · Collocations in Use · Unit 28 Study and learning",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    46
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Conjunctions (p. 227–233)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
   },
   {
    "k": "mock",
@@ -3342,7 +3315,7 @@
     48
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 30 Work",
+   "label": "Vocabulary · Collocations in Use · Unit 29 Presentations",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3405,7 +3378,7 @@
     49
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 31 Business",
+   "label": "Vocabulary · Collocations in Use · Unit 30 Work",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3477,7 +3450,7 @@
     50
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 32 Academic writing 1",
+   "label": "Vocabulary · Collocations in Use · Unit 31 Business",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3558,7 +3531,7 @@
     51
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 33 Academic writing 2",
+   "label": "Vocabulary · Collocations in Use · Unit 32 Academic writing 1",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3612,7 +3585,7 @@
     52
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 34 Laws and punishments",
+   "label": "Vocabulary · Collocations in Use · Unit 33 Academic writing 2",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -3684,7 +3657,7 @@
     53
    ],
    "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 35 Crime",
+   "label": "Vocabulary · Collocations in Use · Unit 34 Laws and punishments",
    "sub": "15 min · left page, then all exercises · check with the key · 5 collocations into your notebook with your own example · review them on the metro"
   },
   {
@@ -4091,7 +4064,7 @@
     3
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 4–33",
+   "label": "80 Listening Tests: Tests 1–30",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -4136,7 +4109,7 @@
     3
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 2–7",
+   "label": "Collocations in Use: Units 1–6",
    "sub": ""
   },
   {
@@ -4199,7 +4172,7 @@
     4
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 34–63",
+   "label": "80 Listening Tests: Tests 31–60",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -4244,7 +4217,7 @@
     4
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 8–13",
+   "label": "Collocations in Use: Units 7–12",
    "sub": ""
   },
   {
@@ -4307,7 +4280,7 @@
     5
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 64–80",
+   "label": "80 Listening Tests: Tests 61–80",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -4352,7 +4325,7 @@
     5
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 14–19",
+   "label": "Collocations in Use: Units 13–18",
    "sub": ""
   },
   {
@@ -4433,7 +4406,7 @@
     6
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 20–25",
+   "label": "Collocations in Use: Units 19–24",
    "sub": ""
   },
   {
@@ -4514,7 +4487,7 @@
     7
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 26–31",
+   "label": "Collocations in Use: Units 25–30",
    "sub": ""
   },
   {
@@ -4523,7 +4496,7 @@
     7
    ],
    "sk": "G",
-   "label": "Hafizov: 3 topics, 5 own sentences each",
+   "label": "Hafizov: 4 topics, 5 own sentences each",
    "sub": "Sent to Claude for correction"
   },
   {
@@ -4595,7 +4568,7 @@
     8
    ],
    "sk": "V",
-   "label": "Collocations in Use: Units 32–35",
+   "label": "Collocations in Use: Units 31–34",
    "sub": ""
   },
   {
