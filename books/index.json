@@ -125,6 +125,42 @@
  ],
  "tasks": [
   {
+   "k": "w-l1",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 1 · Collins Writing for IELTS, Unit 2 (Task 1 part)",
+   "sub": "Read the Task 1 section, do its exercises, check with the key"
+  },
+  {
+   "k": "w-t1",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 essay (line graph) + analysis with Claude",
+   "sub": "20 min, 150+ words · Practice → Copy for Claude · rewrite after the feedback"
+  },
+  {
+   "k": "w-l2",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 2 · Collins Writing for IELTS, Unit 2 (Task 2 part)",
+   "sub": "Read the Task 2 section, do its exercises, check with the key"
+  },
+  {
+   "k": "w-t2",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: Task 2 essay (opinion) + analysis with Claude",
+   "sub": "40 min, 250+ words · Practice → Copy for Claude · rewrite after the feedback"
+  },
+  {
    "k": "r-test",
    "days": [
     9,
@@ -144,42 +180,6 @@
    ],
    "sk": "L",
    "label": "Listening · 80 IELTS Listening Tests · Test 1–5 (Part 1)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
-  },
-  {
-   "k": "l80",
-   "days": [
-    10
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 6–13 (Part 1)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
-  },
-  {
-   "k": "l80",
-   "days": [
-    11
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 14–20 (Part 1)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
-  },
-  {
-   "k": "l80",
-   "days": [
-    12
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 61–68 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
-  },
-  {
-   "k": "l80",
-   "days": [
-    13
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 69–76 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
   },
   {
@@ -229,42 +229,6 @@
    "sub": "Skip words you already know · for each new word: meaning + your own sentence"
   },
   {
-   "k": "v-ess",
-   "days": [
-    10
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
-   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    11
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
-   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    12
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
-   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    13
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
-   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
-  },
-  {
    "k": "v-col",
    "days": [
     9
@@ -274,84 +238,12 @@
    "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
   },
   {
-   "k": "v-col",
-   "days": [
-    10
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
-   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
-  },
-  {
-   "k": "v-col",
-   "days": [
-    11
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
-   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
-  },
-  {
-   "k": "v-col",
-   "days": [
-    12
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
-   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
-  },
-  {
-   "k": "v-col",
-   "days": [
-    13
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
-   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
-  },
-  {
    "k": "s-book",
    "days": [
     9
    ],
    "sk": "S",
    "label": "Speaking · Collins Speaking for IELTS · Units 1–2",
-   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
-  },
-  {
-   "k": "s-book",
-   "days": [
-    10
-   ],
-   "sk": "S",
-   "label": "Speaking · Collins Speaking for IELTS · Units 3–4",
-   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
-  },
-  {
-   "k": "s-book",
-   "days": [
-    11
-   ],
-   "sk": "S",
-   "label": "Speaking · Collins Speaking for IELTS · Units 5–6",
-   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
-  },
-  {
-   "k": "s-book",
-   "days": [
-    12
-   ],
-   "sk": "S",
-   "label": "Speaking · Collins Speaking for IELTS · Units 7–8",
-   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
-  },
-  {
-   "k": "s-book",
-   "days": [
-    13
-   ],
-   "sk": "S",
-   "label": "Speaking · Collins Speaking for IELTS · Units 9–10",
    "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
   },
   {
@@ -390,84 +282,12 @@
    "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
   },
   {
-   "k": "s-pron",
-   "days": [
-    10
-   ],
-   "sk": "S",
-   "label": "Pronunciation (10 min): -ed endings: /t/ /d/ /ɪd/",
-   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
-  },
-  {
-   "k": "s-pron",
-   "days": [
-    11
-   ],
-   "sk": "S",
-   "label": "Pronunciation (10 min): -s endings: /s/ /z/ /ɪz/ + th /θ ð/",
-   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
-  },
-  {
-   "k": "s-pron",
-   "days": [
-    12
-   ],
-   "sk": "S",
-   "label": "Pronunciation (10 min): /v/ vs /w/, short vs long vowels (ship–sheep, full–fool)",
-   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
-  },
-  {
-   "k": "s-pron",
-   "days": [
-    13
-   ],
-   "sk": "S",
-   "label": "Pronunciation (10 min): sentence stress + weak forms (to, of, can /kən/)",
-   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
-  },
-  {
    "k": "g-haf",
    "days": [
     9
    ],
    "sk": "G",
    "label": "Grammar · Hafizov · Present Simple, Present Continuous (p. 18–25)",
-   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
-  },
-  {
-   "k": "g-haf",
-   "days": [
-    10
-   ],
-   "sk": "G",
-   "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
-   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
-  },
-  {
-   "k": "g-haf",
-   "days": [
-    11
-   ],
-   "sk": "G",
-   "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
-   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
-  },
-  {
-   "k": "g-haf",
-   "days": [
-    12
-   ],
-   "sk": "G",
-   "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
-   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
-  },
-  {
-   "k": "g-haf",
-   "days": [
-    13
-   ],
-   "sk": "G",
-   "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
    "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
   },
   {
@@ -489,6 +309,82 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
   },
   {
+   "k": "w-model",
+   "days": [
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "sk": "W",
+   "label": "Writing: analyse one Band 9 sample",
+   "sub": "How the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 3 · Fun and games",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "l80",
+   "days": [
+    10
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 6–13 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    10
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 3–4",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    10
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): -ed endings: /t/ /d/ /ɪd/",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    10
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Present Perfect, Present Perfect Continuous, have got (p. 26–31)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
    "k": "w-book",
    "days": [
     10
@@ -505,6 +401,69 @@
    "sk": "W",
    "label": "Writing: Task 1 (pie chart) + Task 2 (advantages / disadvantages)",
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    10
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 6 · Learning and doing",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "l80",
+   "days": [
+    11
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 14–20 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    11
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 5–6",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    11
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): -s endings: /s/ /z/ /ɪz/ + th /θ ð/",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    11
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Past Simple, used to, be/get used to, Past Continuous (p. 32–35)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
   },
   {
    "k": "w-book",
@@ -525,6 +484,69 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
   },
   {
+   "k": "v-dest",
+   "days": [
+    11
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 9 · Coming and going",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "l80",
+   "days": [
+    12
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 61–68 (Part 4)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    12
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 7–8",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    12
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): /v/ vs /w/, short vs long vowels (ship–sheep, full–fool)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    12
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Past Perfect (+ Continuous), Future Simple, be going to, be about to (p. 36–40)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
    "k": "w-book",
    "days": [
     12
@@ -543,6 +565,69 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
   },
   {
+   "k": "v-dest",
+   "days": [
+    12
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 12 · Friends and relations",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "l80",
+   "days": [
+    13
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 69–76 (Part 4)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / changed answer / not heard"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    13
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
+   "sub": "Left page, then all exercises · check with the key · write 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "s-book",
+   "days": [
+    13
+   ],
+   "sk": "S",
+   "label": "Speaking · Collins Speaking for IELTS · Units 9–10",
+   "sub": "Vocabulary, model answers (audio), all exercises · say every practice answer out loud"
+  },
+  {
+   "k": "s-pron",
+   "days": [
+    13
+   ],
+   "sk": "S",
+   "label": "Pronunciation (10 min): sentence stress + weak forms (to, of, can /kən/)",
+   "sub": "Listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare with the model"
+  },
+  {
+   "k": "g-haf",
+   "days": [
+    13
+   ],
+   "sk": "G",
+   "label": "Grammar · Hafizov · Future Continuous, Future Perfect (+ Continuous), Future in the Past (p. 41–45)",
+   "sub": "Read every rule and example · write 5 sentences of your own on today's topic (IELTS themes) · send them to Claude for correction"
+  },
+  {
    "k": "w-book",
    "days": [
     13
@@ -559,91 +644,6 @@
    "sk": "W",
    "label": "Writing: Task 1 (map) + Task 2 (opinion (agree/disagree))",
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · Practice → Copy for Claude → feedback · rewrite after the feedback"
-  },
-  {
-   "k": "w-model",
-   "days": [
-    9,
-    10,
-    11,
-    12,
-    13
-   ],
-   "sk": "W",
-   "label": "Writing: analyse one Band 9 sample",
-   "sub": "How the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
-  },
-  {
-   "k": "w-l1",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing · learn Task 1 · Collins Writing for IELTS, Unit 2 (Task 1 part)",
-   "sub": "Read the Task 1 section, do its exercises, check with the key"
-  },
-  {
-   "k": "w-t1",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing: Task 1 essay (line graph) + analysis with Claude",
-   "sub": "20 min, 150+ words · Practice → Copy for Claude · rewrite after the feedback"
-  },
-  {
-   "k": "w-l2",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing · learn Task 2 · Collins Writing for IELTS, Unit 2 (Task 2 part)",
-   "sub": "Read the Task 2 section, do its exercises, check with the key"
-  },
-  {
-   "k": "w-t2",
-   "days": [
-    8
-   ],
-   "sk": "W",
-   "label": "Writing: Task 2 essay (opinion) + analysis with Claude",
-   "sub": "40 min, 250+ words · Practice → Copy for Claude · rewrite after the feedback"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    9
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Unit 3 · Fun and games",
-   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    10
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Unit 6 · Learning and doing",
-   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    11
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Unit 9 · Coming and going",
-   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
-  },
-  {
-   "k": "v-dest",
-   "days": [
-    12
-   ],
-   "sk": "V",
-   "label": "Vocabulary · Destination B1 · Unit 12 · Friends and relations",
-   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
   },
   {
    "k": "v-dest",
@@ -754,12 +754,21 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
+   "k": "l-test",
+   "days": [
+    15
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     15
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 4–6 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 4–8 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -768,8 +777,26 @@
     15
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    15
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    15
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -835,13 +862,40 @@
    "sub": "10 min · same 3-minute clip 3×: listen, read along with the transcript, then speak half a second behind"
   },
   {
-   "k": "l-test",
+   "k": "l80",
    "days": [
     16
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening · 80 IELTS Listening Tests · Test 9–13 (Part 1)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    16
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    16
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    16
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -880,13 +934,40 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
+   "k": "l-test",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     17
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 7–9 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 14–18 (Part 1)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    17
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -957,7 +1038,7 @@
     18
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 10–13 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 19–23 (Parts 1–2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -966,8 +1047,26 @@
     18
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    18
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    18
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1060,13 +1159,40 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l-test",
+   "k": "l80",
    "days": [
     20
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening · 80 IELTS Listening Tests · Test 24–28 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    20
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    20
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1105,13 +1231,40 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
+   "k": "l-test",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     21
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 14–16 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 29–33 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    21
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -1191,7 +1344,7 @@
     22
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 17–19 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 34–38 (Part 2)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1200,8 +1353,26 @@
     22
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    22
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    22
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1276,6 +1447,42 @@
    "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
+   "k": "l80",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 39–43 (Parts 2–3)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    23
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    23
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
    "k": "v-col",
    "days": [
     23
@@ -1317,8 +1524,26 @@
     24
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 20–22 (Part 1)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 44–48 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    24
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    24
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -1384,12 +1609,21 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
+   "k": "l-test",
+   "days": [
+    25
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     25
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 23–26 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 49–53 (Part 3)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1398,8 +1632,26 @@
     25
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    25
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    25
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1501,6 +1753,42 @@
    "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
+   "k": "l80",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Test 54–58 (Part 3)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    27
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    27
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
    "k": "v-col",
    "days": [
     27
@@ -1542,8 +1830,26 @@
     28
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 27–29 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 59–63 (Parts 3–4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    28
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    28
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -1618,12 +1924,21 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
+   "k": "l-test",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     29
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 30–32 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 64–68 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1632,8 +1947,26 @@
     29
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    29
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    29
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1699,13 +2032,40 @@
    "sub": "10 min · same 3-minute clip 3×: listen, read along with the transcript, then speak half a second behind"
   },
   {
-   "k": "l-test",
+   "k": "l80",
    "days": [
     30
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening · 80 IELTS Listening Tests · Test 69–73 (Part 4)",
+   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    30
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    30
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    30
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1744,13 +2104,40 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
+   "k": "l-test",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
    "k": "l80",
    "days": [
     31
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 33–35 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 74–78 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    31
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -1821,7 +2208,7 @@
     32
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 36–39 (Part 2)",
+   "label": "Listening · 80 IELTS Listening Tests · Test 79–80 (Part 4)",
    "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
   },
   {
@@ -1830,8 +2217,26 @@
     32
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    32
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    32
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1924,13 +2329,31 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l-test",
+   "k": "l-dict",
    "days": [
     34
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    34
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    34
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -1969,13 +2392,31 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     35
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 40–42 (Part 2)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    35
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2041,22 +2482,31 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l80",
-   "days": [
-    36
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 43–45 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
-  },
-  {
    "k": "l-dict",
    "days": [
     36
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    36
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    36
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2122,6 +2572,33 @@
    "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
+   "k": "l-dict",
+   "days": [
+    37
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    37
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    37
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
    "k": "v-col",
    "days": [
     37
@@ -2158,13 +2635,22 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-dict",
    "days": [
     38
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 46–48 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    38
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2221,13 +2707,13 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     39
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 49–52 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
    "k": "l-dict",
@@ -2235,8 +2721,26 @@
     39
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    39
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    39
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2329,6 +2833,33 @@
    "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
+   "k": "l-dict",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    41
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    41
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
    "k": "v-col",
    "days": [
     41
@@ -2365,13 +2896,22 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-dict",
    "days": [
     42
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 53–55 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    42
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2437,13 +2977,13 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     43
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 56–58 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
    "k": "l-dict",
@@ -2451,8 +2991,26 @@
     43
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    43
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    43
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2509,13 +3067,31 @@
    "sub": "10 min · same 3-minute clip 3×: listen, read along with the transcript, then speak half a second behind"
   },
   {
-   "k": "l-test",
+   "k": "l-dict",
    "days": [
     44
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    44
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    44
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2554,13 +3130,31 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     45
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 59–61 (Part 3)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    45
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    45
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2617,22 +3211,31 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
-   "days": [
-    46
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 62–65 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
-  },
-  {
    "k": "l-dict",
    "days": [
     46
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    46
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    46
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2707,13 +3310,31 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l-test",
+   "k": "l-dict",
    "days": [
     48
    ],
    "sk": "L",
-   "label": "Full Listening test (30 min) + analysis",
-   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    48
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    48
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2743,13 +3364,31 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     49
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 66–68 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    49
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    49
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2806,22 +3445,31 @@
    "sub": "10 min · listen on Cambridge Dictionary → repeat 10 words / 5 sentences → record → compare"
   },
   {
-   "k": "l80",
-   "days": [
-    50
-   ],
-   "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 69–71 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
-  },
-  {
    "k": "l-dict",
    "days": [
     50
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    50
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    50
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -2878,6 +3526,33 @@
    "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
+   "k": "l-dict",
+   "days": [
+    51
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    51
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    51
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
    "k": "v-col",
    "days": [
     51
@@ -2905,13 +3580,22 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-dict",
    "days": [
     52
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 72–74 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    52
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
   },
   {
    "k": "r-test",
@@ -2959,13 +3643,13 @@
    "sub": "Record in Practice · Part 2: 1 min prep, 2 min talk · transcribe and send me for band feedback · re-record after fixing"
   },
   {
-   "k": "l80",
+   "k": "l-test",
    "days": [
     53
    ],
    "sk": "L",
-   "label": "Listening · 80 IELTS Listening Tests · Test 75–78 (Part 4)",
-   "sub": "One listen, no pauses · check with the key · replay every mistake 3× and write what you hear · cause: spelling / number / plural -s / word limit / not heard"
+   "label": "Full Listening test (30 min) + analysis",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake into Mistakes with question type + cause · replay the missed parts with the transcript"
   },
   {
    "k": "l-dict",
@@ -2973,8 +3657,26 @@
     53
    ],
    "sk": "L",
-   "label": "Listening: dictation (10 min)",
-   "sub": "10 min · 1–2 min of a Cambridge Part 3/4 audio · write word by word, max 3 plays per sentence · check with the transcript"
+   "label": "Listening: dictation · one Cambridge section",
+   "sub": "One Cambridge section you've already done · write it word by word, max 3 plays per sentence · check with the transcript · list the words you missed and why (linking, weak forms, unknown word)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    53
+   ],
+   "sk": "L",
+   "label": "Listening: podcast + analysis",
+   "sub": "20–30 min (on the bus is fine) · BBC 6 Minute English, TED or an IELTS-topic podcast · then write 3–5 lines: main idea, 5 new words/phrases, 1 sentence you couldn't catch"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    53
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
    "k": "v-col",
@@ -3389,7 +4091,7 @@
     3
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 4–16",
+   "label": "80 Listening Tests: Tests 4–33",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -3398,20 +4100,38 @@
     3
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w3-7",
    "weeks": [
     3
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w3-8",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "6 podcasts with a short analysis",
+   "sub": ""
+  },
+  {
+   "k": "w3-9",
+   "weeks": [
+    3
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w3-10",
    "weeks": [
     3
    ],
@@ -3420,7 +4140,7 @@
    "sub": ""
   },
   {
-   "k": "w3-9",
+   "k": "w3-11",
    "weeks": [
     3
    ],
@@ -3429,7 +4149,7 @@
    "sub": "Sent to Claude for correction"
   },
   {
-   "k": "w3-10",
+   "k": "w3-12",
    "weeks": [
     3
    ],
@@ -3479,7 +4199,7 @@
     4
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 17–29",
+   "label": "80 Listening Tests: Tests 34–63",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -3488,20 +4208,38 @@
     4
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w4-7",
    "weeks": [
     4
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w4-8",
+   "weeks": [
+    4
+   ],
+   "sk": "L",
+   "label": "6 podcasts with a short analysis",
+   "sub": ""
+  },
+  {
+   "k": "w4-9",
+   "weeks": [
+    4
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w4-10",
    "weeks": [
     4
    ],
@@ -3510,7 +4248,7 @@
    "sub": ""
   },
   {
-   "k": "w4-9",
+   "k": "w4-11",
    "weeks": [
     4
    ],
@@ -3519,7 +4257,7 @@
    "sub": "Sent to Claude for correction"
   },
   {
-   "k": "w4-10",
+   "k": "w4-12",
    "weeks": [
     4
    ],
@@ -3569,7 +4307,7 @@
     5
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 30–42",
+   "label": "80 Listening Tests: Tests 64–80",
    "sub": "Every mistake replayed 3×"
   },
   {
@@ -3578,20 +4316,38 @@
     5
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w5-7",
    "weeks": [
     5
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "6 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w5-8",
+   "weeks": [
+    5
+   ],
+   "sk": "L",
+   "label": "6 podcasts with a short analysis",
+   "sub": ""
+  },
+  {
+   "k": "w5-9",
+   "weeks": [
+    5
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w5-10",
    "weeks": [
     5
    ],
@@ -3600,7 +4356,7 @@
    "sub": ""
   },
   {
-   "k": "w5-9",
+   "k": "w5-11",
    "weeks": [
     5
    ],
@@ -3609,7 +4365,7 @@
    "sub": "Sent to Claude for correction"
   },
   {
-   "k": "w5-10",
+   "k": "w5-12",
    "weeks": [
     5
    ],
@@ -3641,8 +4397,8 @@
     6
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 43–55",
-   "sub": "Every mistake replayed 3×"
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w6-4",
@@ -3650,20 +4406,29 @@
     6
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "6 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w6-5",
    "weeks": [
     6
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "6 podcasts with a short analysis",
+   "sub": ""
   },
   {
    "k": "w6-6",
+   "weeks": [
+    6
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w6-7",
    "weeks": [
     6
    ],
@@ -3672,7 +4437,7 @@
    "sub": ""
   },
   {
-   "k": "w6-7",
+   "k": "w6-8",
    "weeks": [
     6
    ],
@@ -3681,7 +4446,7 @@
    "sub": "Sent to Claude for correction"
   },
   {
-   "k": "w6-8",
+   "k": "w6-9",
    "weeks": [
     6
    ],
@@ -3713,8 +4478,8 @@
     7
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 56–68",
-   "sub": "Every mistake replayed 3×"
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w7-4",
@@ -3722,20 +4487,29 @@
     7
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "6 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w7-5",
    "weeks": [
     7
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "6 podcasts with a short analysis",
+   "sub": ""
   },
   {
    "k": "w7-6",
+   "weeks": [
+    7
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w7-7",
    "weeks": [
     7
    ],
@@ -3744,7 +4518,7 @@
    "sub": ""
   },
   {
-   "k": "w7-7",
+   "k": "w7-8",
    "weeks": [
     7
    ],
@@ -3753,7 +4527,7 @@
    "sub": "Sent to Claude for correction"
   },
   {
-   "k": "w7-8",
+   "k": "w7-9",
    "weeks": [
     7
    ],
@@ -3785,8 +4559,8 @@
     8
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 69–78",
-   "sub": "Every mistake replayed 3×"
+   "label": "3 full Listening tests, analysed",
+   "sub": "Odd days"
   },
   {
    "k": "w8-4",
@@ -3794,20 +4568,29 @@
     8
    ],
    "sk": "L",
-   "label": "2 full Listening tests, analysed",
-   "sub": ""
+   "label": "4 Cambridge sections dictated",
+   "sub": "Missed words listed with the reason"
   },
   {
    "k": "w8-5",
    "weeks": [
     8
    ],
-   "sk": "R",
-   "label": "2 full Reading tests, analysed",
-   "sub": "Mistake causes logged"
+   "sk": "L",
+   "label": "4 podcasts with a short analysis",
+   "sub": ""
   },
   {
    "k": "w8-6",
+   "weeks": [
+    8
+   ],
+   "sk": "R",
+   "label": "5 full Reading tests, analysed",
+   "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w8-7",
    "weeks": [
     8
    ],
@@ -3816,7 +4599,7 @@
    "sub": ""
   },
   {
-   "k": "w8-7",
+   "k": "w8-8",
    "weeks": [
     8
    ],
