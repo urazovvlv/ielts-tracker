@@ -682,6 +682,51 @@
    "sub": "Go through the Week 3 goals and daily lists · say what to cut or move · fix the times for each block around work and classes"
   },
   {
+   "k": "w-b75",
+   "days": [
+    15
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · How to use + exam format, criteria, strategies, Uzbek learners' mistakes, Task 1 language (p. 2–15) · Day 1 Trends + clear position (p. 16–25)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    15
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · What Task 1 is + how it's marked (p. 3–5) · Change graphs (p. 6–13)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    15
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · What Task 2 is + how it's marked (p. 3–5) · Position first (p. 6–8)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    15
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    15
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
+  },
+  {
    "k": "s-sp75-0",
    "days": [
     15
@@ -779,6 +824,51 @@
    "sk": "G",
    "label": "Grammar 7.5 · Intro + diagnostic test (p. 5–9) · Day 1 Tenses (p. 10–21)",
    "sub": "Do the 10-min diagnostic first: the topics you get wrong get extra time this week · Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · Day 2 Comparing + discussing both sides (p. 26–35) · Day 3 Proportions + 'which is better?' (p. 36–45)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · No-change charts (p. 14–19)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · Domino paragraph (p. 9–11) · Fuse paragraph (p. 12–14)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
   },
   {
    "k": "s-sp75-0",
@@ -896,6 +986,51 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 3 Nouns, determiners, articles (p. 33–42)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    17
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · Day 4 Tables + problem–solution (p. 46–54) · Day 5 Two charts + two-part question (p. 55–63)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    17
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · Maps & plans (p. 20–25)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    17
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · Cause + solution essays (p. 15–18) · Mixed questions (p. 19–20)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    17
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    17
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
   },
   {
    "k": "s-sp75-0",
@@ -1022,6 +1157,51 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 5 Passive + causative (p. 53–61)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · Day 6 Process + 'positive or negative?' (p. 64–72) · Day 7 Map changes + city life (p. 73–81)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · Processes (p. 26–32)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · Sample essays for every type (p. 21–25)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
   },
   {
    "k": "s-sp75-0",
@@ -1168,6 +1348,51 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "w-b75",
+   "days": [
+    20
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · Day 8 Future predictions + social problems (p. 82–90) · Day 9 Natural process + two-sided analysis (p. 91–100)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    20
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · Mixed charts (p. 33–34) · Band 7+ grammar (p. 35–36) · Vocabulary superbank (p. 37–38)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    20
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · Band 7+ grammar (p. 26–28) · Cohesion + academic style (p. 29–31)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    20
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    20
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
+  },
+  {
    "k": "s-sp75-0",
    "days": [
     20
@@ -1292,6 +1517,51 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 9 Adjectives/adverbs, comparison, pronouns, cohesion (p. 90–99)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · Day 10 Future plan + full review, mock answers (p. 101–112)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · 20 typical mistakes (p. 39) · Day 01 full analysis (p. 40–41) · 60-day tracker (p. 42–46)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · Ideas + vocabulary bank, 12 topics (p. 32–36) · 25 typical mistakes (p. 37–38) · Day 01 full analysis (p. 39–41)",
+   "sub": "Read the lesson, do every exercise, check with the key · note useful phrases"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 + Task 2 · feedback from Claude · rewrite",
+   "sub": "Use the Task 1 and Task 2 questions from today's Writing 7.5 lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker one"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 sample",
+   "sub": "One Band 9 Task 1 or Task 2 sample (the handbooks' samples are fine) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook to reuse"
   },
   {
    "k": "s-sp75-0",
@@ -2662,6 +2932,33 @@
    "sk": "",
    "label": "Week review with Claude → Week 3 plan",
    "sub": "Day 14 evening: what got done, what didn't"
+  },
+  {
+   "k": "w3-w1",
+   "weeks": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 + Task 1 Handbook + Task 2 Handbook: finished",
+   "sub": ""
+  },
+  {
+   "k": "w3-w2",
+   "weeks": [
+    3
+   ],
+   "sk": "W",
+   "label": "6 Task 1 + 6 Task 2 with Claude feedback and rewrites",
+   "sub": ""
+  },
+  {
+   "k": "w3-w3",
+   "weeks": [
+    3
+   ],
+   "sk": "W",
+   "label": "6 Band 9 samples analysed",
+   "sub": ""
   },
   {
    "k": "w3-s0",
