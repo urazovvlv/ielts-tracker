@@ -750,7 +750,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-10.2';
+const BUILD='2026-11-10.3';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -798,13 +798,13 @@ function buildSchedule(p){
   const N=DAYS,f1=Math.round(N*14/60),f2=Math.round(N*35/60),f3=N>=30?N-8:Math.round(N*52/60);
   PHASES=[{n:'Foundation',a:1,b:f1,c:'--ph1'},{n:'Build',a:f1+1,b:f2,c:'--ph2'},{n:'Simulate',a:f2+1,b:f3,c:'--ph3'},{n:'Peak',a:f3+1,b:N,c:'--ph4'}].filter(x=>x.a<=x.b);
   /* First full mock at the end of week 1 (day 7). Up to 10 Nov 2026 mocks ran every 3–4 days (kept, so logged scores stay);
-     from 11 Nov 2026 (and from day 8 in newer plans) one full mock every Sunday until 4 days before the end. */
+     from 11 Nov 2026 (and from day 8 in newer plans) one full mock every Sunday, the last one at least 4 days before the exam. */
   let days=[Math.min(7,N)];
   let d=days[0],step=3;
   while(d+step<=N-4){d+=step;days.push(d);step=step===3?4:3;}
   const CUT=Math.max(8,dayDiff(p.start,'2026-11-11')+1);
   days=days.filter(n=>n<CUT);
-  for(let n=CUT;n<=N-4;n++)if(dateOf(n).getDay()===0)days.push(n);
+  for(let n=CUT;n<=N-3;n++)if(dateOf(n).getDay()===0)days.push(n);
   MOCKS={};let e=0,l=0;
   for(const n of days)MOCKS[n]=n<=f2?(EARLY[e++]||`Practice test ${e}`):(LATE[l++]||EARLY[e++]||`Practice test ${l}`);
   MOCKDAYS=days;
