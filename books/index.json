@@ -718,6 +718,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "v-ess",
+   "days": [
+    15
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–5",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    15
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 3 · Fun and games",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    15
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 1–2 (What is a collocation? · Finding, recording and learning collocations)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
    "k": "l80",
    "days": [
     16
@@ -752,6 +779,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    16
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    16
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 6 · Learning and doing",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    16
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 3–4 (Using your dictionary · Types of collocation)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
    "k": "l-test",
@@ -799,6 +853,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "v-ess",
+   "days": [
+    17
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    17
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 9 · Coming and going",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    17
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 5–6 (Register · Intensifying adverbs)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
    "k": "l80",
    "days": [
     18
@@ -833,6 +914,60 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    18
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    18
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 12 · Friends and relations",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    18
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 7–8 (Everyday verbs 1 · Everyday verbs 2)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    19
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    19
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 15 · Buying and selling",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    19
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 9–10 (Everyday verbs 3 · Synonyms and confusable words 1)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
    "k": "l-test",
@@ -880,6 +1015,33 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
   },
   {
+   "k": "v-ess",
+   "days": [
+    20
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 26–30",
+   "sub": "Skip words you already know · for each new word: meaning + your own sentence · on the metro: reread yesterday's words"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    20
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 18 · Inventions and discoveries",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    20
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 11–12 (Synonyms and confusable words 2 · Metaphor)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
    "k": "l80",
    "days": [
     21
@@ -914,6 +1076,33 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word (paraphrase) for every question, wrong ones first"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    21
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Review Units 1–30",
+   "sub": "Cover the meanings, test yourself on every word · mark the ones you forgot and write a new sentence for each"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    21
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · Unit 21 · Sending and receiving",
+   "sub": "Vocabulary unit only · all exercises · check with the key · new words and phrases into your notebook"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    21
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Units 13–14 (Weather · Travel)",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
    "k": "l80",
@@ -2212,6 +2401,33 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed, with keyword tables",
    "sub": "+ Reading in the Sunday mock"
+  },
+  {
+   "k": "w3-v1",
+   "weeks": [
+    3
+   ],
+   "sk": "V",
+   "label": "4000 Essential English Words 4: finish Units 1–30 + review",
+   "sub": ""
+  },
+  {
+   "k": "w3-v2",
+   "weeks": [
+    3
+   ],
+   "sk": "V",
+   "label": "Destination B1: 7 vocabulary units (Units 3–21)",
+   "sub": ""
+  },
+  {
+   "k": "w3-v3",
+   "weeks": [
+    3
+   ],
+   "sk": "V",
+   "label": "Collocations in Use: Units 1–14",
+   "sub": ""
   },
   {
    "k": "w4-l1",
