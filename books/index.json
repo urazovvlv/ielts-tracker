@@ -745,6 +745,15 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "g-g75-0",
+   "days": [
+    15
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Intro + diagnostic test (p. 5–9) · Day 1 Tenses (p. 10–21)",
+   "sub": "Do the 10-min diagnostic first: the topics you get wrong get extra time this week · Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     16
@@ -806,6 +815,24 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Units 3–4 (Using your dictionary · Types of collocation)",
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
+   "k": "g-g75-0",
+   "days": [
+    16
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 2 Task 1 tenses, agreement, numbers (p. 22–32)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "g-g75-1",
+   "days": [
+    16
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 3 Nouns, determiners, articles (p. 33–42)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
    "k": "l-test",
@@ -880,6 +907,24 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "g-g75-0",
+   "days": [
+    17
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 4 Prepositions (p. 43–52)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "g-g75-1",
+   "days": [
+    17
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 5 Passive + causative (p. 53–61)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     18
@@ -941,6 +986,24 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Units 7–8 (Everyday verbs 1 · Everyday verbs 2)",
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
+   "k": "g-g75-0",
+   "days": [
+    18
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 6 Conditionals, wish, modals, hedging (p. 62–71)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "g-g75-1",
+   "days": [
+    18
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 7 Relative, participle, noun clauses (p. 72–80)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
   },
   {
    "k": "v-ess",
@@ -1042,6 +1105,24 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "g-g75-0",
+   "days": [
+    20
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 8 Gerund/infinitive, verb patterns, reported speech (p. 81–89)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "g-g75-1",
+   "days": [
+    20
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 9 Adjectives/adverbs, comparison, pronouns, cohesion (p. 90–99)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     21
@@ -1103,6 +1184,24 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Units 13–14 (Weather · Travel)",
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
+  },
+  {
+   "k": "g-g75-0",
+   "days": [
+    21
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Day 10 Band 8 structures (p. 100–109)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "g-g75-1",
+   "days": [
+    21
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Final test + self-assessment (p. 114–117)",
+   "sub": "Exam conditions · check with the key · the topics you lose points on go into Week 4 review (plan on p. 123) · phrasal verbs p. 110–113 and the cheat sheet p. 118 are for reference"
   },
   {
    "k": "l80",
@@ -2428,6 +2527,15 @@
    "sk": "V",
    "label": "Collocations in Use: Units 1–14",
    "sub": ""
+  },
+  {
+   "k": "w3-g1",
+   "weeks": [
+    3
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5: all 10 lessons + final test",
+   "sub": "Mistakes from the final test → Week 4 review"
   },
   {
    "k": "w4-l1",
