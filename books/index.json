@@ -682,6 +682,24 @@
    "sub": "Go through the Week 3 goals and daily lists · say what to cut or move · fix the times for each block around work and classes"
   },
   {
+   "k": "s-shadow",
+   "days": [
+    15
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    15
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Hometown · Home) · Part 2 (Describe a place in your city you like to visit) · Part 3 (Cities and urban life) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     15
@@ -752,6 +770,24 @@
    "sk": "G",
    "label": "Grammar 7.5 · Intro + diagnostic test (p. 5–9) · Day 1 Tenses (p. 10–21)",
    "sub": "Do the 10-min diagnostic first: the topics you get wrong get extra time this week · Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    16
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    16
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Work or study · Daily routine) · Part 2 (Describe a skill you learned that is useful) · Part 3 (Education and learning skills) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -833,6 +869,24 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 3 Nouns, determiners, articles (p. 33–42)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Technology · Phone and internet) · Part 2 (Describe a piece of technology you use every day) · Part 3 (Technology and society) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -923,6 +977,24 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 5 Passive + causative (p. 53–61)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    18
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    18
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Free time · Sport) · Part 2 (Describe a memorable trip you took) · Part 3 (Travel and tourism) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1033,6 +1105,24 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations per unit into your notebook with your own example"
   },
   {
+   "k": "s-shadow",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Friends · Family) · Part 2 (Describe a person who has influenced you) · Part 3 (Family, role models and generations) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l-test",
    "days": [
     20
@@ -1121,6 +1211,24 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 9 Adjectives/adverbs, comparison, pronouns, cohesion (p. 90–99)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    21
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
+  },
+  {
+   "k": "s-qs",
+   "days": [
+    21
+   ],
+   "sk": "S",
+   "label": "Speaking: Part 1 (Food · Shopping) · Part 2 (Describe an important decision you made) · Part 3 (Choices, consumers and advertising) + self-recording",
+   "sub": "Part 1 × 5 questions · Part 2: 1 min notes, 2 min talk · Part 3 × 3 questions · record everything in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -2455,6 +2563,24 @@
    "sk": "",
    "label": "Week review with Claude → Week 3 plan",
    "sub": "Day 14 evening: what got done, what didn't"
+  },
+  {
+   "k": "w3-s1",
+   "weeks": [
+    3
+   ],
+   "sk": "S",
+   "label": "6 topic sets (Parts 1–3) recorded, with feedback",
+   "sub": ""
+  },
+  {
+   "k": "w3-s2",
+   "weeks": [
+    3
+   ],
+   "sk": "S",
+   "label": "6 shadowing sessions",
+   "sub": ""
   },
   {
    "k": "w3-l1",
