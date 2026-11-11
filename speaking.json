@@ -1,42 +1,1744 @@
 {
  "part1": [
-  {"t": "Work or studies", "q": ["Do you work or are you a student?", "What do you like most about your studies?", "Is there anything you would like to change about your course?", "What do you plan to do after you graduate?"]},
-  {"t": "Hometown", "q": ["Where is your hometown?", "What do you like about it?", "Has your hometown changed much in recent years?", "Would you like to live there in the future?"]},
-  {"t": "Home and accommodation", "q": ["Do you live in a house or an apartment?", "Which room do you spend the most time in?", "What would you change about your home?", "Would you prefer to live alone or with other people?"]},
-  {"t": "Daily routine", "q": ["What is the busiest part of your day?", "Do you usually follow the same routine every day?", "Are you a morning person or an evening person?", "Has your routine changed since you were a child?"]},
-  {"t": "Mobile phones", "q": ["How often do you use your phone?", "What do you mainly use it for?", "Could you live without your phone for a week?", "Do you think people use their phones too much?"]},
-  {"t": "Reading", "q": ["Do you like reading?", "What kind of books do you enjoy?", "Do you prefer paper books or e-books?", "Did you read a lot when you were a child?"]},
-  {"t": "Music", "q": ["What kind of music do you like?", "When do you usually listen to music?", "Have you ever learned to play an instrument?", "Has your taste in music changed over the years?"]},
-  {"t": "Food and cooking", "q": ["What is your favourite food?", "Do you enjoy cooking?", "Do you prefer eating at home or in restaurants?", "Is there any food you didn't like as a child but like now?"]},
-  {"t": "Weather and seasons", "q": ["What is the weather like in your country?", "Which season do you like best?", "Does the weather affect your mood?", "Do you check the weather forecast every day?"]},
-  {"t": "Sport and exercise", "q": ["Do you do any sport?", "How often do you exercise?", "Did you play sports at school?", "Do you prefer watching sport or doing it?"]},
-  {"t": "Friends", "q": ["How often do you see your friends?", "What do you usually do together?", "Is it easy for you to make new friends?", "Do you prefer having a few close friends or many friends?"]},
-  {"t": "Shopping", "q": ["Do you enjoy shopping?", "Do you prefer shopping online or in shops?", "What was the last thing you bought?", "Do you usually plan what to buy before you go shopping?"]},
-  {"t": "Travel and holidays", "q": ["Do you like travelling?", "Where did you go on your last holiday?", "Do you prefer travelling alone or with others?", "Is there a place you would really like to visit?"]},
-  {"t": "Social media", "q": ["Which social media apps do you use?", "How much time do you spend on social media?", "Do you post things often or mostly read?", "Do you think social media has changed how people communicate?"]},
-  {"t": "Learning English", "q": ["How long have you been learning English?", "What is the most difficult part of English for you?", "How do you practise speaking?", "Do you think English will be useful in your career?"]},
-  {"t": "Free time", "q": ["What do you do in your free time?", "Do you have more free time now than before?", "Do you prefer relaxing at home or going out?", "Is there a hobby you would like to start?"]}
+  {
+   "t": "Work or studies",
+   "q": [
+    "Do you work or are you a student?",
+    "What do you like most about your studies?",
+    "Is there anything you would like to change about your course?",
+    "What do you plan to do after you graduate?"
+   ]
+  },
+  {
+   "t": "Hometown",
+   "q": [
+    "Where is your hometown?",
+    "What do you like about it?",
+    "Has your hometown changed much in recent years?",
+    "Would you like to live there in the future?"
+   ]
+  },
+  {
+   "t": "Home and accommodation",
+   "q": [
+    "Do you live in a house or an apartment?",
+    "Which room do you spend the most time in?",
+    "What would you change about your home?",
+    "Would you prefer to live alone or with other people?"
+   ]
+  },
+  {
+   "t": "Daily routine",
+   "q": [
+    "What is the busiest part of your day?",
+    "Do you usually follow the same routine every day?",
+    "Are you a morning person or an evening person?",
+    "Has your routine changed since you were a child?"
+   ]
+  },
+  {
+   "t": "Mobile phones",
+   "q": [
+    "How often do you use your phone?",
+    "What do you mainly use it for?",
+    "Could you live without your phone for a week?",
+    "Do you think people use their phones too much?"
+   ]
+  },
+  {
+   "t": "Reading",
+   "q": [
+    "Do you like reading?",
+    "What kind of books do you enjoy?",
+    "Do you prefer paper books or e-books?",
+    "Did you read a lot when you were a child?"
+   ]
+  },
+  {
+   "t": "Music",
+   "q": [
+    "What kind of music do you like?",
+    "When do you usually listen to music?",
+    "Have you ever learned to play an instrument?",
+    "Has your taste in music changed over the years?"
+   ]
+  },
+  {
+   "t": "Food and cooking",
+   "q": [
+    "What is your favourite food?",
+    "Do you enjoy cooking?",
+    "Do you prefer eating at home or in restaurants?",
+    "Is there any food you didn't like as a child but like now?"
+   ]
+  },
+  {
+   "t": "Weather and seasons",
+   "q": [
+    "What is the weather like in your country?",
+    "Which season do you like best?",
+    "Does the weather affect your mood?",
+    "Do you check the weather forecast every day?"
+   ]
+  },
+  {
+   "t": "Sport and exercise",
+   "q": [
+    "Do you do any sport?",
+    "How often do you exercise?",
+    "Did you play sports at school?",
+    "Do you prefer watching sport or doing it?"
+   ]
+  },
+  {
+   "t": "Friends",
+   "q": [
+    "How often do you see your friends?",
+    "What do you usually do together?",
+    "Is it easy for you to make new friends?",
+    "Do you prefer having a few close friends or many friends?"
+   ]
+  },
+  {
+   "t": "Shopping",
+   "q": [
+    "Do you enjoy shopping?",
+    "Do you prefer shopping online or in shops?",
+    "What was the last thing you bought?",
+    "Do you usually plan what to buy before you go shopping?"
+   ]
+  },
+  {
+   "t": "Travel and holidays",
+   "q": [
+    "Do you like travelling?",
+    "Where did you go on your last holiday?",
+    "Do you prefer travelling alone or with others?",
+    "Is there a place you would really like to visit?"
+   ]
+  },
+  {
+   "t": "Social media",
+   "q": [
+    "Which social media apps do you use?",
+    "How much time do you spend on social media?",
+    "Do you post things often or mostly read?",
+    "Do you think social media has changed how people communicate?"
+   ]
+  },
+  {
+   "t": "Learning English",
+   "q": [
+    "How long have you been learning English?",
+    "What is the most difficult part of English for you?",
+    "How do you practise speaking?",
+    "Do you think English will be useful in your career?"
+   ]
+  },
+  {
+   "t": "Free time",
+   "q": [
+    "What do you do in your free time?",
+    "Do you have more free time now than before?",
+    "Do you prefer relaxing at home or going out?",
+    "Is there a hobby you would like to start?"
+   ]
+  }
  ],
  "part3": [
-  ["Why do fewer young people read books nowadays?", "Should schools make students read more fiction?", "Will printed books disappear in the future?", "How can parents encourage children to read?"],
-  ["Who influences young people more today: parents or celebrities?", "What qualities make someone a good role model?", "Do famous people have a responsibility to behave well?", "How has the influence of family changed in your country?"],
-  ["Why do people like to visit famous places?", "What are the negative effects of tourism on a city?", "Should governments limit the number of tourists?", "How will travel change in the next twenty years?"],
-  ["Which skills are most important for young people today?", "Is it better to learn skills at school or by yourself?", "Do older people find it harder to learn new skills?", "How has the internet changed the way people learn?"],
-  ["Why do some people enjoy helping others?", "Should helping in the community be compulsory for students?", "Do people help their neighbours less than in the past?", "Who should help poor people: the government or individuals?"],
-  ["Why do people prefer different types of transport?", "What problems do traffic jams cause in big cities?", "Should public transport be free?", "How can cities encourage people to cycle more?"],
-  ["How has technology changed the way people work?", "Do older people find modern technology difficult?", "Are we too dependent on technology?", "What technology will be most important in the future?"],
-  ["Why is it important to set goals?", "Do young people today have different goals from their parents?", "Is success more about hard work or luck?", "Should schools teach students how to plan their future?"],
-  ["Why are traditional festivals important?", "Are festivals becoming too commercial?", "How have celebrations changed in your country?", "Should children learn about the festivals of other cultures?"],
-  ["What makes a good teacher?", "Will technology ever replace teachers?", "Should teachers be paid more?", "Is it better to study in large or small classes?"],
-  ["Why do some people find it hard to make decisions?", "Should parents make important decisions for their children?", "Do people make better decisions alone or in groups?", "How do young people make decisions about their careers?"],
-  ["How has the internet changed the way people get information?", "Is all information online reliable?", "Should children's use of the internet be controlled?", "Will online shopping replace shops completely?"],
-  ["Why are people busier today than in the past?", "Is it good to have a busy lifestyle?", "How can people balance work and free time?", "Do employers expect too much from their workers?"],
-  ["Why do people give gifts?", "Is it better to give money or a present?", "Do people spend too much money on gifts?", "How have gift-giving customs changed in your country?"],
-  ["Why do people eat out more than before?", "Is fast food a serious problem for health?", "Should the government control what restaurants sell?", "How do eating habits differ between young and old people?"],
-  ["Why don't some people do enough exercise?", "Should sport be compulsory at school?", "Do professional athletes earn too much money?", "How can governments encourage people to be more active?"],
-  ["Why are people afraid of making mistakes?", "Can mistakes be useful for learning?", "Should schools punish students for mistakes?", "Do adults learn more from mistakes than children?"],
-  ["Is face-to-face conversation better than talking online?", "Why do some people find it hard to talk to strangers?", "Are people losing the ability to have long conversations?", "What topics do people in your country like to discuss?"],
-  ["What are the advantages of running your own business?", "Why do many small businesses fail?", "Should the government support small businesses?", "Are big companies good or bad for a country?"],
-  ["Why is patience important in life?", "Are people less patient today than in the past?", "Does technology make people more impatient?", "How can children learn to be patient?"]
- ]
+  [
+   "Why do fewer young people read books nowadays?",
+   "Should schools make students read more fiction?",
+   "Will printed books disappear in the future?",
+   "How can parents encourage children to read?"
+  ],
+  [
+   "Who influences young people more today: parents or celebrities?",
+   "What qualities make someone a good role model?",
+   "Do famous people have a responsibility to behave well?",
+   "How has the influence of family changed in your country?"
+  ],
+  [
+   "Why do people like to visit famous places?",
+   "What are the negative effects of tourism on a city?",
+   "Should governments limit the number of tourists?",
+   "How will travel change in the next twenty years?"
+  ],
+  [
+   "Which skills are most important for young people today?",
+   "Is it better to learn skills at school or by yourself?",
+   "Do older people find it harder to learn new skills?",
+   "How has the internet changed the way people learn?"
+  ],
+  [
+   "Why do some people enjoy helping others?",
+   "Should helping in the community be compulsory for students?",
+   "Do people help their neighbours less than in the past?",
+   "Who should help poor people: the government or individuals?"
+  ],
+  [
+   "Why do people prefer different types of transport?",
+   "What problems do traffic jams cause in big cities?",
+   "Should public transport be free?",
+   "How can cities encourage people to cycle more?"
+  ],
+  [
+   "How has technology changed the way people work?",
+   "Do older people find modern technology difficult?",
+   "Are we too dependent on technology?",
+   "What technology will be most important in the future?"
+  ],
+  [
+   "Why is it important to set goals?",
+   "Do young people today have different goals from their parents?",
+   "Is success more about hard work or luck?",
+   "Should schools teach students how to plan their future?"
+  ],
+  [
+   "Why are traditional festivals important?",
+   "Are festivals becoming too commercial?",
+   "How have celebrations changed in your country?",
+   "Should children learn about the festivals of other cultures?"
+  ],
+  [
+   "What makes a good teacher?",
+   "Will technology ever replace teachers?",
+   "Should teachers be paid more?",
+   "Is it better to study in large or small classes?"
+  ],
+  [
+   "Why do some people find it hard to make decisions?",
+   "Should parents make important decisions for their children?",
+   "Do people make better decisions alone or in groups?",
+   "How do young people make decisions about their careers?"
+  ],
+  [
+   "How has the internet changed the way people get information?",
+   "Is all information online reliable?",
+   "Should children's use of the internet be controlled?",
+   "Will online shopping replace shops completely?"
+  ],
+  [
+   "Why are people busier today than in the past?",
+   "Is it good to have a busy lifestyle?",
+   "How can people balance work and free time?",
+   "Do employers expect too much from their workers?"
+  ],
+  [
+   "Why do people give gifts?",
+   "Is it better to give money or a present?",
+   "Do people spend too much money on gifts?",
+   "How have gift-giving customs changed in your country?"
+  ],
+  [
+   "Why do people eat out more than before?",
+   "Is fast food a serious problem for health?",
+   "Should the government control what restaurants sell?",
+   "How do eating habits differ between young and old people?"
+  ],
+  [
+   "Why don't some people do enough exercise?",
+   "Should sport be compulsory at school?",
+   "Do professional athletes earn too much money?",
+   "How can governments encourage people to be more active?"
+  ],
+  [
+   "Why are people afraid of making mistakes?",
+   "Can mistakes be useful for learning?",
+   "Should schools punish students for mistakes?",
+   "Do adults learn more from mistakes than children?"
+  ],
+  [
+   "Is face-to-face conversation better than talking online?",
+   "Why do some people find it hard to talk to strangers?",
+   "Are people losing the ability to have long conversations?",
+   "What topics do people in your country like to discuss?"
+  ],
+  [
+   "What are the advantages of running your own business?",
+   "Why do many small businesses fail?",
+   "Should the government support small businesses?",
+   "Are big companies good or bad for a country?"
+  ],
+  [
+   "Why is patience important in life?",
+   "Are people less patient today than in the past?",
+   "Does technology make people more impatient?",
+   "How can children learn to be patient?"
+  ]
+ ],
+ "startDay": 15,
+ "days": [
+  {
+   "n": 1,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Do you work or are you a student?",
+      "What is your major?",
+      "Why did you choose this subject?",
+      "What do you plan to do after you finish your studies?"
+     ]
+    },
+    {
+     "t": "Emails",
+     "q": [
+      "Do you often send emails?",
+      "Do you prefer emails or text messages?",
+      "Who do you usually write emails to?",
+      "Will people still use email in the future?"
+     ]
+    },
+    {
+     "t": "Singing",
+     "q": [
+      "Do you like singing?",
+      "When did you last sing?",
+      "Did you sing at school?",
+      "Do people in your country sing at celebrations?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a happy person you know.",
+    "b": [
+     "who this person is",
+     "how you know them",
+     "what they usually do",
+     "and explain why you think this person is happy"
+    ],
+    "r": "Are you a happy person?"
+   },
+   "p3": [
+    "Are people today happier than people in the past?",
+    "What makes people happy in your country?",
+    "Can money make people happy?",
+    "Why is it important for children to grow up in a happy family?",
+    "Why do some people stay positive in difficult situations?"
+   ]
+  },
+  {
+   "n": 2,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you live in a house or an apartment?",
+      "Who do you live with?",
+      "Which room do you spend the most time in?",
+      "What would you like to change about your home?"
+     ]
+    },
+    {
+     "t": "Relatives",
+     "q": [
+      "Do you have a big family?",
+      "Which relative do you see most often?",
+      "Do you spend a lot of time with your relatives?",
+      "Are you closer to your mother's or your father's side of the family?"
+     ]
+    },
+    {
+     "t": "Social media",
+     "q": [
+      "Which social media do you use most?",
+      "How much time do you spend on social media?",
+      "Do you post a lot or mostly watch?",
+      "Has social media changed the way you communicate?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe someone older than you whom you admire.",
+    "b": [
+     "who this person is",
+     "how you know them",
+     "what they are like",
+     "and explain why you admire them"
+    ],
+    "r": "Do you often spend time with older people?"
+   },
+   "p3": [
+    "What can young people learn from older people?",
+    "Do older people in your country usually live with their families?",
+    "What problems do elderly people face today?",
+    "Should companies hire more older workers?",
+    "How is the role of grandparents changing?"
+   ]
+  },
+  {
+   "n": 3,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Where is your hometown?",
+      "What do you like most about your hometown?",
+      "Has your hometown changed much in recent years?",
+      "Is it a good place for young people?"
+     ]
+    },
+    {
+     "t": "Collection",
+     "q": [
+      "Do you collect anything?",
+      "Did you collect anything when you were a child?",
+      "Why do people like collecting things?",
+      "Is collecting things an expensive hobby?"
+     ]
+    },
+    {
+     "t": "Street markets",
+     "q": [
+      "Are there street markets in your city?",
+      "What do people buy there?",
+      "Do you prefer markets or supermarkets?",
+      "Did you go to markets as a child?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a piece of local news that people are interested in.",
+    "b": [
+     "what the news was",
+     "when and how you heard about it",
+     "why people were interested in it",
+     "and explain how you felt about it"
+    ],
+    "r": "Do you often follow local news?"
+   },
+   "p3": [
+    "How do people in your country usually get their news?",
+    "Is local news more important than international news?",
+    "Do you trust news on social media?",
+    "Why do some people avoid the news?",
+    "Should news always be free?"
+   ]
+  },
+  {
+   "n": 4,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Would you like to change your major?",
+      "Do you prefer to study in the morning or in the afternoon?",
+      "Are you looking forward to working?",
+      "How many hours a week do you study?"
+     ]
+    },
+    {
+     "t": "Websites",
+     "q": [
+      "What websites do you visit most often?",
+      "What kind of websites are popular in your country?",
+      "Have you ever made your own website?",
+      "Do you trust information on websites?"
+     ]
+    },
+    {
+     "t": "Talking to older people",
+     "q": [
+      "Do you often talk to older people?",
+      "What do you talk about with them?",
+      "Is it easy for young people to talk to older people?",
+      "What have you learned from older people?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a person you only met once recently and want to know more about.",
+    "b": [
+     "who this person is",
+     "where you met them",
+     "what you talked about",
+     "and explain why you want to know more about them"
+    ],
+    "r": "Do you find it easy to talk to strangers?"
+   },
+   "p3": [
+    "Is it harder to make friends as an adult?",
+    "Where do young people usually meet new people?",
+    "Are first impressions reliable?",
+    "How has the internet changed the way people meet?",
+    "Why are some people shy with strangers?"
+   ]
+  },
+  {
+   "n": 5,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you plan to live there for a long time?",
+      "What can you see from your window?",
+      "Is your home a good place to relax?",
+      "What kind of home would you like to live in in the future?"
+     ]
+    },
+    {
+     "t": "Paper letters",
+     "q": [
+      "When did you last write a letter by hand?",
+      "Do people in your country still send paper letters?",
+      "Do you prefer to receive a letter or an email?",
+      "Is handwriting still important today?"
+     ]
+    },
+    {
+     "t": "Teachers",
+     "q": [
+      "Do you remember your first teacher?",
+      "What makes a good teacher?",
+      "Would you like to be a teacher?",
+      "Have you ever taught anyone anything?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a time when the electricity went out.",
+    "b": [
+     "when it happened",
+     "where you were",
+     "what you did",
+     "and explain how you felt about it"
+    ],
+    "r": "Are power cuts common where you live?"
+   },
+   "p3": [
+    "How important is electricity in modern life?",
+    "What would happen if a city had no electricity for a week?",
+    "How can people save electricity at home?",
+    "Should governments invest more in renewable energy?",
+    "Has technology made people too dependent on electricity?"
+   ]
+  },
+  {
+   "n": 6,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Would you like to live there in the future?",
+      "What is your hometown famous for?",
+      "How often do you go back to your hometown?",
+      "What would you recommend a visitor to do there?"
+     ]
+    },
+    {
+     "t": "Garbage",
+     "q": [
+      "Do you sort your rubbish at home?",
+      "How often is rubbish collected where you live?",
+      "Is there a lot of litter in your city?",
+      "What can people do to produce less waste?"
+     ]
+    },
+    {
+     "t": "Tidiness",
+     "q": [
+      "Are you a tidy person?",
+      "How often do you clean your room?",
+      "Were you tidy as a child?",
+      "Does a tidy place help you work better?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a traditional celebration in your country.",
+    "b": [
+     "what it is",
+     "when it takes place",
+     "what people do",
+     "and explain why it is important"
+    ],
+    "r": "Did you celebrate it last year?"
+   },
+   "p3": [
+    "Why are traditional celebrations important?",
+    "Are young people less interested in traditions than older people?",
+    "How have celebrations changed compared with the past?",
+    "Is it a problem that some festivals have become commercial?",
+    "Should schools teach children about traditions?"
+   ]
+  },
+  {
+   "n": 7,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Is there anything you would like to change about your university?",
+      "What is the most difficult part of your studies?",
+      "Do you study alone or with other students?",
+      "Which subject did you enjoy most at school?"
+     ]
+    },
+    {
+     "t": "Computer",
+     "q": [
+      "How often do you use a computer?",
+      "What do you mainly use a computer for?",
+      "When did you first use a computer?",
+      "Do you prefer a laptop or a desktop computer?"
+     ]
+    },
+    {
+     "t": "Feeling tired",
+     "q": [
+      "When do you usually feel tired?",
+      "What do you do when you feel tired?",
+      "Do you feel more tired now than when you were a child?",
+      "Does the weather make you feel tired?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe someone you know who did something difficult but was successful.",
+    "b": [
+     "who this person is",
+     "what they did",
+     "why it was difficult",
+     "and explain how you feel about what they did"
+    ],
+    "r": "Would you like to do the same thing?"
+   },
+   "p3": [
+    "What does success mean to young people today?",
+    "Is hard work more important than talent?",
+    "Should children be praised for effort or for results?",
+    "Why do some people give up easily?",
+    "Do successful people have a duty to help others?"
+   ]
+  },
+  {
+   "n": 8,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you prefer living alone or with other people?",
+      "How long have you lived there?",
+      "Is it easy to find a home to rent in your city?",
+      "What do you usually do at home in the evening?"
+     ]
+    },
+    {
+     "t": "Traveling",
+     "q": [
+      "Do you like travelling?",
+      "Where did you go on your last trip?",
+      "Do you prefer to travel alone or with others?",
+      "Where would you like to travel in the future?"
+     ]
+    },
+    {
+     "t": "Watches",
+     "q": [
+      "Do you wear a watch?",
+      "Have you ever received a watch as a gift?",
+      "Why do some people wear expensive watches?",
+      "Do you think watches will disappear because of phones?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a person you know who is interested in history.",
+    "b": [
+     "who this person is",
+     "how you know them",
+     "what kind of history they are interested in",
+     "and explain why they like history"
+    ],
+    "r": "Are you interested in history?"
+   },
+   "p3": [
+    "Should children begin learning history at a young age?",
+    "What age is suitable for children to start learning history?",
+    "Who can teach children history before they start school?",
+    "Is it important to learn how people lived in the past?",
+    "Should people study ancient history before modern history?"
+   ]
+  },
+  {
+   "n": 9,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Is it better to grow up in a small town or a big city?",
+      "What is the weather like in your hometown?",
+      "Are there any problems in your hometown?",
+      "Do you know your neighbours in your hometown?"
+     ]
+    },
+    {
+     "t": "Advertisements",
+     "q": [
+      "Do you often notice advertisements?",
+      "Have you ever bought something because of an advert?",
+      "What kind of adverts do you like?",
+      "Are there too many adverts on social media?"
+     ]
+    },
+    {
+     "t": "Weather",
+     "q": [
+      "What is the weather like today?",
+      "What is your favourite season?",
+      "Does the weather affect your mood?",
+      "Has the weather in your country changed?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a person in your life who really likes taking photos.",
+    "b": [
+     "who this person is",
+     "what kind of photos they take",
+     "how often they take photos",
+     "and explain why they like taking photos"
+    ],
+    "r": "Do you like taking photos?"
+   },
+   "p3": [
+    "Why do people take so many photos today?",
+    "Are photos taken with phones as good as professional photos?",
+    "Should people be allowed to take photos everywhere?",
+    "Do people still print photos?",
+    "How has social media changed photography?"
+   ]
+  },
+  {
+   "n": 10,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Do you work or are you a student?",
+      "What is your major?",
+      "Why did you choose this subject?",
+      "What do you plan to do after you finish your studies?"
+     ]
+    },
+    {
+     "t": "Boring",
+     "q": [
+      "What do you do when you feel bored?",
+      "Did you often feel bored as a child?",
+      "What kind of things do you find boring?",
+      "Is it good to feel bored sometimes?"
+     ]
+    },
+    {
+     "t": "Sleep",
+     "q": [
+      "How many hours do you usually sleep?",
+      "Do you ever sleep during the day?",
+      "What do you do if you can't sleep?",
+      "Did you sleep more as a child?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe something that was broken in your home and then repaired.",
+    "b": [
+     "what it was",
+     "how it was broken",
+     "who repaired it",
+     "and explain how you felt about it"
+    ],
+    "r": "Can you fix things yourself?"
+   },
+   "p3": [
+    "Do people repair things less than in the past?",
+    "Why do people buy new things instead of repairing old ones?",
+    "Should schools teach practical skills like repairing?",
+    "Is repair work a good job?",
+    "How does throwing things away affect the environment?"
+   ]
+  },
+  {
+   "n": 11,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you live in a house or an apartment?",
+      "Who do you live with?",
+      "Which room do you spend the most time in?",
+      "What would you like to change about your home?"
+     ]
+    },
+    {
+     "t": "Car",
+     "q": [
+      "Do you have a car?",
+      "Do you like travelling by car?",
+      "Is it expensive to own a car in your country?",
+      "Would you like to buy an electric car?"
+     ]
+    },
+    {
+     "t": "Friends",
+     "q": [
+      "Do you have many friends?",
+      "How often do you meet your friends?",
+      "What do you usually do together?",
+      "Is it easy to make new friends?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe an activity you usually do that wastes your time.",
+    "b": [
+     "what the activity is",
+     "when you do it",
+     "why you do it",
+     "and explain how you feel about it"
+    ],
+    "r": "Do you plan your time carefully?"
+   },
+   "p3": [
+    "What activities do people waste time on nowadays?",
+    "Is it bad for young people to spend a lot of time online?",
+    "How can people manage their time better?",
+    "Do people have more free time than in the past?",
+    "Should employers limit phone use at work?"
+   ]
+  },
+  {
+   "n": 12,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Where is your hometown?",
+      "What do you like most about your hometown?",
+      "Has your hometown changed much in recent years?",
+      "Is it a good place for young people?"
+     ]
+    },
+    {
+     "t": "Clothing",
+     "q": [
+      "What kind of clothes do you usually wear?",
+      "Do you wear different clothes at work and at home?",
+      "Do you like shopping for clothes?",
+      "Have your clothing tastes changed over the years?"
+     ]
+    },
+    {
+     "t": "Birthdays",
+     "q": [
+      "How do you usually celebrate your birthday?",
+      "Which birthday do you remember best?",
+      "Are birthdays important in your country?",
+      "Do you prefer big or small birthday parties?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a person who makes special things by hand or with technology.",
+    "b": [
+     "who this person is",
+     "what they make",
+     "how they make it",
+     "and explain why these things are special"
+    ],
+    "r": "Have you ever made something by hand?"
+   },
+   "p3": [
+    "Are handmade products better than machine-made ones?",
+    "Why are handmade things often more expensive?",
+    "Will traditional crafts disappear in the future?",
+    "Should the government support craftspeople?",
+    "How has technology changed the way things are made?"
+   ]
+  },
+  {
+   "n": 13,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Would you like to change your major?",
+      "Do you prefer to study in the morning or in the afternoon?",
+      "Are you looking forward to working?",
+      "How many hours a week do you study?"
+     ]
+    },
+    {
+     "t": "Comedy",
+     "q": [
+      "Do you like comedy films or shows?",
+      "Who is your favourite comedian?",
+      "Do you like making people laugh?",
+      "Is humour different in different countries?"
+     ]
+    },
+    {
+     "t": "Mornings",
+     "q": [
+      "Are you a morning person?",
+      "What do you usually do in the morning?",
+      "Do you have breakfast every day?",
+      "Has your morning routine changed recently?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a childhood friend.",
+    "b": [
+     "who this friend is",
+     "how you met",
+     "what you did together",
+     "and explain whether you are still friends"
+    ],
+    "r": "Do you keep in touch with your old friends?"
+   },
+   "p3": [
+    "How are childhood friendships different from adult friendships?",
+    "Why do people lose contact with old friends?",
+    "Is it important for children to have many friends?",
+    "How do children make friends today?",
+    "Can social media help people keep friendships?"
+   ]
+  },
+  {
+   "n": 14,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you plan to live there for a long time?",
+      "What can you see from your window?",
+      "Is your home a good place to relax?",
+      "What kind of home would you like to live in in the future?"
+     ]
+    },
+    {
+     "t": "Dreams",
+     "q": [
+      "Do you often remember your dreams?",
+      "Do you ever tell other people about your dreams?",
+      "Do you think dreams have meanings?",
+      "What did you dream of becoming as a child?"
+     ]
+    },
+    {
+     "t": "Public holidays",
+     "q": [
+      "What is the most important public holiday in your country?",
+      "How do you usually spend public holidays?",
+      "Do you prefer to stay home or go out on holidays?",
+      "Should there be more public holidays?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe an important decision you made.",
+    "b": [
+     "what the decision was",
+     "when you made it",
+     "how you made it",
+     "and explain how it changed your life"
+    ],
+    "r": "Do you usually make decisions quickly?"
+   },
+   "p3": [
+    "What important decisions do young people have to make?",
+    "Should parents make decisions for their children?",
+    "Why do some people find it hard to make decisions?",
+    "Is it better to decide alone or to ask others for advice?",
+    "Which decisions should governments make for citizens?"
+   ]
+  },
+  {
+   "n": 15,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Would you like to live there in the future?",
+      "What is your hometown famous for?",
+      "How often do you go back to your hometown?",
+      "What would you recommend a visitor to do there?"
+     ]
+    },
+    {
+     "t": "Fixing things",
+     "q": [
+      "Are you good at fixing things?",
+      "What was the last thing you repaired?",
+      "Who usually fixes things in your home?",
+      "Do you prefer to repair things or buy new ones?"
+     ]
+    },
+    {
+     "t": "Public transport",
+     "q": [
+      "How do you usually travel around your city?",
+      "Is public transport good where you live?",
+      "Do you prefer the bus or the metro?",
+      "How could public transport be improved?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a skill you learned that was difficult.",
+    "b": [
+     "what the skill is",
+     "when you learned it",
+     "how you learned it",
+     "and explain why it was difficult"
+    ],
+    "r": "Would you like to learn another skill?"
+   },
+   "p3": [
+    "What skills are most useful for young people today?",
+    "Is it better to learn from a teacher or online?",
+    "Are practical skills more important than academic knowledge?",
+    "Why do adults find it harder to learn new skills?",
+    "Which skills will be important in the future?"
+   ]
+  },
+  {
+   "n": 16,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Is there anything you would like to change about your university?",
+      "What is the most difficult part of your studies?",
+      "Do you study alone or with other students?",
+      "Which subject did you enjoy most at school?"
+     ]
+    },
+    {
+     "t": "Growing vegetables",
+     "q": [
+      "Have you ever grown vegetables?",
+      "Do people in your country grow their own food?",
+      "Did your family grow vegetables when you were a child?",
+      "Is home-grown food better than food from shops?"
+     ]
+    },
+    {
+     "t": "Gifts",
+     "q": [
+      "Do you like giving gifts?",
+      "What was the last gift you received?",
+      "Is it difficult to choose gifts for others?",
+      "Do people in your country give money as a gift?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a plan you have that is not related to work or study.",
+    "b": [
+     "what the plan is",
+     "when you made it",
+     "how you will achieve it",
+     "and explain why it is important to you"
+    ],
+    "r": "Do you usually make plans?"
+   },
+   "p3": [
+    "Is it important to make plans?",
+    "Do young people plan more than older people?",
+    "Should children learn how to plan?",
+    "Why do plans often fail?",
+    "Are long-term plans better than short-term plans?"
+   ]
+  },
+  {
+   "n": 17,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you prefer living alone or with other people?",
+      "How long have you lived there?",
+      "Is it easy to find a home to rent in your city?",
+      "What do you usually do at home in the evening?"
+     ]
+    },
+    {
+     "t": "Hobby",
+     "q": [
+      "What is your hobby?",
+      "How much time do you spend on it?",
+      "Did you have the same hobby as a child?",
+      "Is there a hobby you would like to start?"
+     ]
+    },
+    {
+     "t": "Noise",
+     "q": [
+      "Is your home noisy?",
+      "What kind of noise do you dislike?",
+      "Do you prefer quiet or busy places?",
+      "Is noise a problem in your city?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe your perfect job.",
+    "b": [
+     "what the job is",
+     "what qualifications you would need",
+     "what you would do",
+     "and explain why it would be perfect for you"
+    ],
+    "r": "Do you think you will get this job one day?"
+   },
+   "p3": [
+    "What jobs are popular among young people in your country?",
+    "Is salary the most important thing when choosing a job?",
+    "Should people do a job they love even if it pays less?",
+    "How will artificial intelligence change jobs?",
+    "Is it better to work for a big company or for yourself?"
+   ]
+  },
+  {
+   "n": 18,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Is it better to grow up in a small town or a big city?",
+      "What is the weather like in your hometown?",
+      "Are there any problems in your hometown?",
+      "Do you know your neighbours in your hometown?"
+     ]
+    },
+    {
+     "t": "Lost things",
+     "q": [
+      "Do you often lose things?",
+      "What was the last thing you lost?",
+      "What do you do when you lose something important?",
+      "Have you ever found something that someone else lost?"
+     ]
+    },
+    {
+     "t": "Patience",
+     "q": [
+      "Are you a patient person?",
+      "When do you lose your patience?",
+      "Were you patient as a child?",
+      "Is patience an important quality at work?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe an interview you had.",
+    "b": [
+     "when it was",
+     "what it was for",
+     "what you were asked",
+     "and explain how you felt about it"
+    ],
+    "r": "Do you get nervous at interviews?"
+   },
+   "p3": [
+    "How should people prepare for a job interview?",
+    "Are interviews the best way to choose employees?",
+    "What qualities do employers look for?",
+    "Are online interviews as effective as face-to-face ones?",
+    "Why do some people perform badly in interviews?"
+   ]
+  },
+  {
+   "n": 19,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Do you work or are you a student?",
+      "What is your major?",
+      "Why did you choose this subject?",
+      "What do you plan to do after you finish your studies?"
+     ]
+    },
+    {
+     "t": "Music",
+     "q": [
+      "What kind of music do you like?",
+      "When do you usually listen to music?",
+      "Did you learn a musical instrument at school?",
+      "Has your taste in music changed?"
+     ]
+    },
+    {
+     "t": "Plants",
+     "q": [
+      "Do you have any plants at home?",
+      "Do you know how to look after plants?",
+      "Did you grow plants as a child?",
+      "Why do people like having plants?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a time when you worked in a group.",
+    "b": [
+     "when it was",
+     "what the task was",
+     "what you did",
+     "and explain how you felt about working in this group"
+    ],
+    "r": "Do you prefer working alone or in a team?"
+   },
+   "p3": [
+    "What makes a good team leader?",
+    "What are the advantages of group work at school?",
+    "Why do conflicts happen in teams?",
+    "Should children do more group projects at school?",
+    "Is teamwork more important now than in the past?"
+   ]
+  },
+  {
+   "n": 20,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you live in a house or an apartment?",
+      "Who do you live with?",
+      "Which room do you spend the most time in?",
+      "What would you like to change about your home?"
+     ]
+    },
+    {
+     "t": "Outer space",
+     "q": [
+      "Are you interested in space?",
+      "Would you like to travel into space?",
+      "Did you learn about space at school?",
+      "Do you think people will live on other planets?"
+     ]
+    },
+    {
+     "t": "Rain",
+     "q": [
+      "Does it rain a lot where you live?",
+      "What do you like to do on rainy days?",
+      "Did you like rain as a child?",
+      "Is rain good for your city?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a website you often visit.",
+    "b": [
+     "what the website is",
+     "how you found it",
+     "what you use it for",
+     "and explain why it is useful to you"
+    ],
+    "r": "How much time do you spend online every day?"
+   },
+   "p3": [
+    "What kinds of websites are popular in your country?",
+    "Should children be allowed to use the internet freely?",
+    "Is information online reliable?",
+    "Will online shopping replace shops?",
+    "How can people protect their privacy online?"
+   ]
+  },
+  {
+   "n": 21,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Where is your hometown?",
+      "What do you like most about your hometown?",
+      "Has your hometown changed much in recent years?",
+      "Is it a good place for young people?"
+     ]
+    },
+    {
+     "t": "Park",
+     "q": [
+      "Do you often go to parks?",
+      "What do people do in parks in your city?",
+      "Did you go to parks as a child?",
+      "Should cities have more parks?"
+     ]
+    },
+    {
+     "t": "Films",
+     "q": [
+      "What kind of films do you like?",
+      "Do you prefer watching films at home or at the cinema?",
+      "What was the last film you watched?",
+      "Do you watch films in English?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a piece of technology you would like to own (not a phone).",
+    "b": [
+     "what it is",
+     "how much it costs",
+     "what you would use it for",
+     "and explain why you would like to own it"
+    ],
+    "r": "Are you good with technology?"
+   },
+   "p3": [
+    "How has technology changed daily life?",
+    "Why do some elderly people find technology difficult?",
+    "Is technology making people lazy?",
+    "Which technology has changed education the most?",
+    "Should children use tablets at school?"
+   ]
+  },
+  {
+   "n": 22,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Would you like to change your major?",
+      "Do you prefer to study in the morning or in the afternoon?",
+      "Are you looking forward to working?",
+      "How many hours a week do you study?"
+     ]
+    },
+    {
+     "t": "Pets and animals",
+     "q": [
+      "Do you have a pet?",
+      "What is your favourite animal?",
+      "Are pets popular in your country?",
+      "Did you have a pet as a child?"
+     ]
+    },
+    {
+     "t": "Neighbours",
+     "q": [
+      "Do you know your neighbours?",
+      "How often do you talk to them?",
+      "Are neighbours important in your culture?",
+      "Have you ever helped a neighbour?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a successful company you know.",
+    "b": [
+     "what the company is",
+     "how you know about it",
+     "what it does",
+     "and explain why it is successful"
+    ],
+    "r": "Would you like to work for this company?"
+   },
+   "p3": [
+    "What makes a company successful?",
+    "Is it better to work for a small company or a big one?",
+    "Should big companies pay more tax?",
+    "Why do some companies fail?",
+    "How important is advertising for a business?"
+   ]
+  },
+  {
+   "n": 23,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you plan to live there for a long time?",
+      "What can you see from your window?",
+      "Is your home a good place to relax?",
+      "What kind of home would you like to live in in the future?"
+     ]
+    },
+    {
+     "t": "Being polite",
+     "q": [
+      "Is it important to be polite?",
+      "How do people show politeness in your country?",
+      "Did your parents teach you to be polite?",
+      "Are young people less polite than in the past?"
+     ]
+    },
+    {
+     "t": "Learning languages",
+     "q": [
+      "What languages can you speak?",
+      "Why are you learning English?",
+      "What is the most difficult part of learning English?",
+      "Would you like to learn another language?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a new law you would like to introduce.",
+    "b": [
+     "what the law is",
+     "why you would like to introduce it",
+     "how it would work",
+     "and explain how people would react to it"
+    ],
+    "r": "Do you think people would follow it?"
+   },
+   "p3": [
+    "Why do people break laws?",
+    "Should laws change as society changes?",
+    "Are strict punishments effective?",
+    "Should young people learn about the law at school?",
+    "Who should be responsible for making laws?"
+   ]
+  },
+  {
+   "n": 24,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Would you like to live there in the future?",
+      "What is your hometown famous for?",
+      "How often do you go back to your hometown?",
+      "What would you recommend a visitor to do there?"
+     ]
+    },
+    {
+     "t": "Being punctual",
+     "q": [
+      "Are you usually on time?",
+      "How do you feel when other people are late?",
+      "Is being on time important in your culture?",
+      "What do you do to avoid being late?"
+     ]
+    },
+    {
+     "t": "Cooking",
+     "q": [
+      "Can you cook?",
+      "Who usually cooks in your family?",
+      "What dish can you cook best?",
+      "Would you like to take cooking lessons?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a person you know who works in the medical field.",
+    "b": [
+     "who this person is",
+     "what job they do",
+     "how you know them",
+     "and explain how you feel about their work"
+    ],
+    "r": "Would you like to work in medicine?"
+   },
+   "p3": [
+    "Why do people want to become doctors?",
+    "Should healthcare be free for everyone?",
+    "Are doctors and nurses paid enough?",
+    "How can people stay healthy?",
+    "Will technology ever replace doctors?"
+   ]
+  },
+  {
+   "n": 25,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Is there anything you would like to change about your university?",
+      "What is the most difficult part of your studies?",
+      "Do you study alone or with other students?",
+      "Which subject did you enjoy most at school?"
+     ]
+    },
+    {
+     "t": "Reading",
+     "q": [
+      "Do you like reading?",
+      "What kind of books do you read?",
+      "Do you prefer paper books or e-books?",
+      "Did you read a lot when you were a child?"
+     ]
+    },
+    {
+     "t": "Tea and coffee",
+     "q": [
+      "Do you prefer tea or coffee?",
+      "How many cups do you drink a day?",
+      "Is tea important in your culture?",
+      "Where do you usually have coffee with friends?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a sport you would like to try in the future.",
+    "b": [
+     "what the sport is",
+     "where you would do it",
+     "how you would learn it",
+     "and explain why you would like to try it"
+    ],
+    "r": "Do you do any sport now?"
+   },
+   "p3": [
+    "Why do people like watching sports?",
+    "Should physical education be compulsory at school?",
+    "Are professional athletes paid too much?",
+    "What are the benefits of team sports for children?",
+    "How can governments encourage people to do more sport?"
+   ]
+  },
+  {
+   "n": 26,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you prefer living alone or with other people?",
+      "How long have you lived there?",
+      "Is it easy to find a home to rent in your city?",
+      "What do you usually do at home in the evening?"
+     ]
+    },
+    {
+     "t": "Remembering names",
+     "q": [
+      "Are you good at remembering names?",
+      "How do you remember people's names?",
+      "Have you ever forgotten someone's name?",
+      "Is it rude to forget someone's name?"
+     ]
+    },
+    {
+     "t": "Walking",
+     "q": [
+      "Do you like walking?",
+      "Where do you usually go for a walk?",
+      "Did you walk to school as a child?",
+      "Is your city good for walking?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a place you visited that you would like to visit again.",
+    "b": [
+     "where it is",
+     "when you went there",
+     "what you did there",
+     "and explain why you would like to go back"
+    ],
+    "r": "Do you travel often?"
+   },
+   "p3": [
+    "Why do people like visiting the same place again?",
+    "Is tourism good for local people?",
+    "Should famous places limit the number of visitors?",
+    "Is it better to travel in your own country or abroad?",
+    "How has travel changed in recent years?"
+   ]
+  },
+  {
+   "n": 27,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Is it better to grow up in a small town or a big city?",
+      "What is the weather like in your hometown?",
+      "Are there any problems in your hometown?",
+      "Do you know your neighbours in your hometown?"
+     ]
+    },
+    {
+     "t": "Science",
+     "q": [
+      "Did you like science at school?",
+      "Which science subject do you find most interesting?",
+      "Do you read about science in the news?",
+      "How has science changed our lives?"
+     ]
+    },
+    {
+     "t": "Maps",
+     "q": [
+      "Do you use maps on your phone?",
+      "Can you read a paper map?",
+      "Have you ever got lost?",
+      "Did you learn to use maps at school?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a tall building you like or dislike.",
+    "b": [
+     "where it is",
+     "what it looks like",
+     "what it is used for",
+     "and explain why you like or dislike it"
+    ],
+    "r": "Would you like to live in a tall building?"
+   },
+   "p3": [
+    "Why are there more tall buildings in cities today?",
+    "What are the advantages and disadvantages of living in a high-rise?",
+    "Should old buildings be protected?",
+    "Who should decide what new buildings look like?",
+    "How will cities look in 50 years?"
+   ]
+  },
+  {
+   "n": 28,
+   "p1": [
+    {
+     "t": "Study",
+     "q": [
+      "Do you work or are you a student?",
+      "What is your major?",
+      "Why did you choose this subject?",
+      "What do you plan to do after you finish your studies?"
+     ]
+    },
+    {
+     "t": "Secondary school",
+     "q": [
+      "What was your secondary school like?",
+      "What was your favourite subject there?",
+      "Do you still keep in touch with your classmates?",
+      "What did you learn there that is still useful?"
+     ]
+    },
+    {
+     "t": "Colours",
+     "q": [
+      "What is your favourite colour?",
+      "Do you wear the same colours most of the time?",
+      "What colours do you have in your room?",
+      "Do colours affect your mood?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a memorable meal you had.",
+    "b": [
+     "where you had it",
+     "who you were with",
+     "what you ate",
+     "and explain why it was memorable"
+    ],
+    "r": "Do you like eating out?"
+   },
+   "p3": [
+    "Is eating together as a family important?",
+    "How have eating habits changed in your country?",
+    "Is fast food a serious problem?",
+    "Should schools teach children how to cook?",
+    "Why do people eat out more nowadays?"
+   ]
+  },
+  {
+   "n": 29,
+   "p1": [
+    {
+     "t": "Home",
+     "q": [
+      "Do you live in a house or an apartment?",
+      "Who do you live with?",
+      "Which room do you spend the most time in?",
+      "What would you like to change about your home?"
+     ]
+    },
+    {
+     "t": "Shoes",
+     "q": [
+      "What kind of shoes do you usually wear?",
+      "How often do you buy shoes?",
+      "Do you prefer comfortable or fashionable shoes?",
+      "Do you buy shoes online or in shops?"
+     ]
+    },
+    {
+     "t": "Time management",
+     "q": [
+      "Are you good at managing your time?",
+      "Do you make a to-do list?",
+      "What wastes most of your time?",
+      "Did you manage your time well at school?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a cake you made or bought for someone.",
+    "b": [
+     "what the occasion was",
+     "what kind of cake it was",
+     "who it was for",
+     "and explain how you felt about it"
+    ],
+    "r": "Do you like sweet food?"
+   },
+   "p3": [
+    "Why do people have cakes at celebrations?",
+    "Is it better to buy a cake or to make one?",
+    "Do people eat too much sugar today?",
+    "Should governments tax sugary food?",
+    "How has celebration food changed in your country?"
+   ]
+  },
+  {
+   "n": 30,
+   "p1": [
+    {
+     "t": "Hometown",
+     "q": [
+      "Where is your hometown?",
+      "What do you like most about your hometown?",
+      "Has your hometown changed much in recent years?",
+      "Is it a good place for young people?"
+     ]
+    },
+    {
+     "t": "Shopping",
+     "q": [
+      "Do you like shopping?",
+      "Do you prefer shopping online or in shops?",
+      "Who do you usually go shopping with?",
+      "Has shopping changed in recent years?"
+     ]
+    },
+    {
+     "t": "Sunny days",
+     "q": [
+      "Do you like sunny days?",
+      "What do you do on a sunny day?",
+      "Do you prefer hot or cold weather?",
+      "Is sunny weather good for your mood?"
+     ]
+    }
+   ],
+   "p2": {
+    "c": "Describe a drawing or painting you like.",
+    "b": [
+     "what it is",
+     "where you saw it",
+     "what it looks like",
+     "and explain why you like it"
+    ],
+    "r": "Did you draw when you were a child?"
+   },
+   "p3": [
+    "Should children learn to draw at school?",
+    "Is art important in society?",
+    "Why do people visit art galleries?",
+    "Can art made by AI be called real art?",
+    "Should the government spend money on art?"
+   ]
+  }
+ ],
+ "source": "Part 2 topics and many Part 1 topics: IELTS Speaking Sep–Dec 2026 reports (examword.com); exact wording in the exam may differ."
 }

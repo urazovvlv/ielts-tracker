@@ -736,6 +736,15 @@
    "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
   },
   {
+   "k": "s-set",
+   "days": [
+    15
+   ],
+   "sk": "S",
+   "label": "Speaking set 1: Part 1 (Study · Emails · Singing) · Part 2 (Describe a happy person you know) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     15
@@ -743,15 +752,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    15
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -889,6 +889,15 @@
    "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
   },
   {
+   "k": "s-set",
+   "days": [
+    16
+   ],
+   "sk": "S",
+   "label": "Speaking set 2: Part 1 (Home · Relatives · Social media) · Part 2 (Describe someone older than you whom you admire) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     16
@@ -896,15 +905,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    16
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1051,6 +1051,15 @@
    "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
   },
   {
+   "k": "s-set",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking set 3: Part 1 (Hometown · Collection · Street markets) · Part 2 (Describe a piece of local news that people are interested in) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     17
@@ -1058,15 +1067,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    17
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -1222,6 +1222,15 @@
    "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
   },
   {
+   "k": "s-set",
+   "days": [
+    18
+   ],
+   "sk": "S",
+   "label": "Speaking set 4: Part 1 (Study · Websites · Talking to older people) · Part 2 (Describe a person you only met once recently and want to know more about) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     18
@@ -1229,15 +1238,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    18
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1319,6 +1319,15 @@
    "sk": "G",
    "label": "Grammar 7.5 · Day 7 Relative, participle, noun clauses (p. 72–80)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own per topic and send them to Claude"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    19
+   ],
+   "sk": "S",
+   "label": "Speaking set 5: Part 1 (Home · Paper letters · Teachers) · Part 2 (Describe a time when the electricity went out) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "v-ess",
@@ -1411,6 +1420,15 @@
    "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
   },
   {
+   "k": "s-set",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking set 6: Part 1 (Hometown · Garbage · Tidiness) · Part 2 (Describe a traditional celebration in your country) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     20
@@ -1418,15 +1436,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    20
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -1582,6 +1591,15 @@
    "sub": "Record the whole test (11–14 min) without stopping · score yourself with the table · send me the transcript"
   },
   {
+   "k": "s-set",
+   "days": [
+    21
+   ],
+   "sk": "S",
+   "label": "Speaking set 7: Part 1 (Study · Computer · Feeling tired) · Part 2 (Describe someone you know who did something difficult but was successful) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "s-shadow",
    "days": [
     21
@@ -1589,15 +1607,6 @@
    "sk": "S",
    "label": "Speaking: shadowing, 3-minute clip",
    "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · 1) listen 2) read along with the transcript 3) speak half a second behind, 3 times · copy stress, linking and intonation"
-  },
-  {
-   "k": "s-qs",
-   "days": [
-    21
-   ],
-   "sk": "S",
-   "label": "Speaking: Parts 1–3 on today's lesson topics + self-recording",
-   "sub": "Use the topics from today's lessons · Part 1 × 5 · Part 2: 1 min notes, 2 min talk · Part 3 × 3 · record in Practice · listen back, note 3 mistakes (grammar, word, pronunciation) · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1681,6 +1690,15 @@
    "sub": "Exam conditions · check with the key · the topics you lose points on go into Week 4 review (plan on p. 123) · phrasal verbs p. 110–113 and the cheat sheet p. 118 are for reference"
   },
   {
+   "k": "s-set",
+   "days": [
+    22
+   ],
+   "sk": "S",
+   "label": "Speaking set 8: Part 1 (Home · Traveling · Watches) · Part 2 (Describe a person you know who is interested in history) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     22
@@ -1715,6 +1733,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    23
+   ],
+   "sk": "S",
+   "label": "Speaking set 9: Part 1 (Hometown · Advertisements · Weather) · Part 2 (Describe a person in your life who really likes taking photos) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -1760,6 +1787,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    24
+   ],
+   "sk": "S",
+   "label": "Speaking set 10: Part 1 (Study · Boring · Sleep) · Part 2 (Describe something that was broken in your home and then repaired) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1798,6 +1834,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    25
+   ],
+   "sk": "S",
+   "label": "Speaking set 11: Part 1 (Home · Car · Friends) · Part 2 (Describe an activity you usually do that wastes your time) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     25
@@ -1832,6 +1877,24 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    26
+   ],
+   "sk": "S",
+   "label": "Speaking set 12: Part 1 (Hometown · Clothing · Birthdays) · Part 2 (Describe a person who makes special things by hand or with technology) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    27
+   ],
+   "sk": "S",
+   "label": "Speaking set 13: Part 1 (Study · Comedy · Mornings) · Part 2 (Describe a childhood friend) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1870,6 +1933,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    28
+   ],
+   "sk": "S",
+   "label": "Speaking set 14: Part 1 (Home · Dreams · Public holidays) · Part 2 (Describe an important decision you made) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     28
@@ -1904,6 +1976,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    29
+   ],
+   "sk": "S",
+   "label": "Speaking set 15: Part 1 (Hometown · Fixing things · Public transport) · Part 2 (Describe a skill you learned that was difficult) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -1949,6 +2030,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    30
+   ],
+   "sk": "S",
+   "label": "Speaking set 16: Part 1 (Study · Growing vegetables · Gifts) · Part 2 (Describe a plan you have that is not related to work or study) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l80",
@@ -1987,6 +2077,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    31
+   ],
+   "sk": "S",
+   "label": "Speaking set 17: Part 1 (Home · Hobby · Noise) · Part 2 (Describe your perfect job) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     31
@@ -2021,6 +2120,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    32
+   ],
+   "sk": "S",
+   "label": "Speaking set 18: Part 1 (Hometown · Lost things · Patience) · Part 2 (Describe an interview you had) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -2068,6 +2176,24 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    33
+   ],
+   "sk": "S",
+   "label": "Speaking set 19: Part 1 (Study · Music · Plants) · Part 2 (Describe a time when you worked in a group) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    34
+   ],
+   "sk": "S",
+   "label": "Speaking set 20: Part 1 (Home · Outer space · Rain) · Part 2 (Describe a website you often visit) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     34
@@ -2102,6 +2228,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    35
+   ],
+   "sk": "S",
+   "label": "Speaking set 21: Part 1 (Hometown · Park · Films) · Part 2 (Describe a piece of technology you would like to own (not a phone)) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -2149,6 +2284,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    36
+   ],
+   "sk": "S",
+   "label": "Speaking set 22: Part 1 (Study · Pets and animals · Neighbours) · Part 2 (Describe a successful company you know) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     36
@@ -2185,6 +2329,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    37
+   ],
+   "sk": "S",
+   "label": "Speaking set 23: Part 1 (Home · Being polite · Learning languages) · Part 2 (Describe a new law you would like to introduce) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     37
@@ -2219,6 +2372,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    38
+   ],
+   "sk": "S",
+   "label": "Speaking set 24: Part 1 (Hometown · Being punctual · Cooking) · Part 2 (Describe a person you know who works in the medical field) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -2266,6 +2428,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    39
+   ],
+   "sk": "S",
+   "label": "Speaking set 25: Part 1 (Study · Reading · Tea and coffee) · Part 2 (Describe a sport you would like to try in the future) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     39
@@ -2300,6 +2471,24 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    40
+   ],
+   "sk": "S",
+   "label": "Speaking set 26: Part 1 (Home · Remembering names · Walking) · Part 2 (Describe a place you visited that you would like to visit again) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    41
+   ],
+   "sk": "S",
+   "label": "Speaking set 27: Part 1 (Hometown · Science · Maps) · Part 2 (Describe a tall building you like or dislike) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -2347,6 +2536,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    42
+   ],
+   "sk": "S",
+   "label": "Speaking set 28: Part 1 (Study · Secondary school · Colours) · Part 2 (Describe a memorable meal you had) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     42
@@ -2383,6 +2581,15 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
   },
   {
+   "k": "s-set",
+   "days": [
+    43
+   ],
+   "sk": "S",
+   "label": "Speaking set 29: Part 1 (Home · Shoes · Time management) · Part 2 (Describe a cake you made or bought for someone) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     43
@@ -2417,6 +2624,15 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · locate + confirm every answer · every mistake into Mistakes with cause: attention / strategy / vocabulary / time"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    44
+   ],
+   "sk": "S",
+   "label": "Speaking set 30: Part 1 (Hometown · Shopping · Sunny days) · Part 2 (Describe a drawing or painting you like) · Part 3 + self-recording",
+   "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
    "k": "l-test",
@@ -2961,6 +3177,15 @@
    "sub": ""
   },
   {
+   "k": "w3-sset",
+   "weeks": [
+    3
+   ],
+   "sk": "S",
+   "label": "Speaking sets 1–7, recorded, with feedback",
+   "sub": "Practice → Speaking"
+  },
+  {
    "k": "w3-s0",
    "weeks": [
     3
@@ -2968,15 +3193,6 @@
    "sk": "S",
    "label": "Speaking 7.5: all 10 lessons + mock test",
    "sub": "Review plan from p. 121 starts in Week 4"
-  },
-  {
-   "k": "w3-s1",
-   "weeks": [
-    3
-   ],
-   "sk": "S",
-   "label": "6 topic sets (Parts 1–3) on the lesson topics, recorded, with feedback",
-   "sub": ""
   },
   {
    "k": "w3-s2",
@@ -3069,6 +3285,15 @@
    "sub": "Mistakes from the final test → Week 4 review"
   },
   {
+   "k": "w4-sset",
+   "weeks": [
+    4
+   ],
+   "sk": "S",
+   "label": "Speaking sets 8–14, recorded, with feedback",
+   "sub": "Practice → Speaking"
+  },
+  {
    "k": "w4-l1",
    "weeks": [
     4
@@ -3114,6 +3339,15 @@
    "sub": "Mistake causes logged"
   },
   {
+   "k": "w5-sset",
+   "weeks": [
+    5
+   ],
+   "sk": "S",
+   "label": "Speaking sets 15–21, recorded, with feedback",
+   "sub": "Practice → Speaking"
+  },
+  {
    "k": "w5-l1",
    "weeks": [
     5
@@ -3150,6 +3384,15 @@
    "sub": "Mistake causes logged"
   },
   {
+   "k": "w6-sset",
+   "weeks": [
+    6
+   ],
+   "sk": "S",
+   "label": "Speaking sets 22–28, recorded, with feedback",
+   "sub": "Practice → Speaking"
+  },
+  {
    "k": "w6-l1",
    "weeks": [
     6
@@ -3184,6 +3427,15 @@
    "sk": "R",
    "label": "6 full Reading tests, analysed",
    "sub": "Mistake causes logged"
+  },
+  {
+   "k": "w7-sset",
+   "weeks": [
+    7
+   ],
+   "sk": "S",
+   "label": "Speaking sets 29–30, recorded, with feedback",
+   "sub": "Practice → Speaking"
   },
   {
    "k": "w7-l1",

@@ -250,6 +250,8 @@ textarea{min-height:70px;resize:vertical;background:var(--sunk)}
 /* speaking timer */
 .cue{background:var(--sunk);border:1px solid var(--line);border-radius:14px;padding:14px}
 .cue h3{font-size:18px;margin-bottom:6px}
+.setbar{display:flex;align-items:center;gap:8px;margin:0 0 10px}.setbar .setlbl{flex:1;display:flex;flex-direction:column;min-width:0}.setbar .btn{flex:none}
+.sp-t{font-size:14px;margin:12px 0 4px;color:var(--muted);font-weight:600}
 .cue ul{margin:6px 0 0;padding-left:18px;color:var(--muted)}
 .ring{display:grid;place-items:center;position:relative;margin:4px auto 0;width:200px;max-width:70vw;aspect-ratio:1/1}
 .ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
@@ -750,7 +752,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-10.12';
+const BUILD='2026-11-11.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1218,7 +1220,13 @@ const wordItems=list=>list.length?list.slice(0,300).map(w=>`<li class="witem"><d
 
 /* ---------- Speak ---------- */
 /* ---------- Speaking: question bank (speaking.json) + recorder (recordings stay on this device, IndexedDB) ---------- */
-let SPK={part1:[],part3:[]},spPart=2,spT=0,spQ=0;
+let SPK={part1:[],part3:[]},spPart=2,spT=0,spQ=0,spSet='auto';
+/* Daily exam-format sets (speaking.json days[]): set 1 = plan day SPK.startDay. spSet=null → free practice. */
+const spToday=()=>{const n=(SPK.days||[]).length,i=todayIdx()-(SPK.startDay||1);return n&&i>=0&&i<n?i:null;};
+const curSet=()=>spSet==='auto'?spToday():spSet;
+const SET=()=>{const i=curSet();return i!=null&&SPK.days?SPK.days[i]:null;};
+const p1Qs=()=>{const st=SET();return st?st.p1.flatMap(t=>t.q):((SPK.part1[spT]||{}).q||[]);};
+const p3Qs=()=>{const st=SET();return st?st.p3:((SPK.part3||[])[timer.cue]||[]);};
 async function loadSpeaking(){try{const r=await fetch('speaking.json',{cache:'no-cache'});if(r.ok)SPK=await r.json();}catch(e){}spT=Math.floor(Math.random()*Math.max(1,(SPK.part1||[]).length));}
 const MIC=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
 let recAuto=(()=>{try{return localStorage.getItem('r75pref:recauto')!=='0';}catch(e){return true;}})();
@@ -1248,8 +1256,8 @@ async function recSave(type){
   if(blob.size){recs.unshift(Object.assign({url:URL.createObjectURL(blob)},item));await idbPut(item);
     if(recs.length>30){for(const o of recs.splice(30)){try{URL.revokeObjectURL(o.url);}catch(e){}idbDel(o.id);}}
     toast('Recording saved');haptic('ok');
-    if(part===1){const n=((SPK.part1[spT]||{}).q||[]).length;if(n)spQ=Math.min(spQ+1,n-1);}
-    if(part===3){const n=(SPK.part3[timer.cue]||[]).length;if(n)spQ=Math.min(spQ+1,n-1);}}
+    if(part===1){const n=p1Qs().length;if(n)spQ=Math.min(spQ+1,n-1);}
+    if(part===3){const n=p3Qs().length;if(n)spQ=Math.min(spQ+1,n-1);}}
   speakRerender();
 }
 function idb(){return new Promise((res,rej)=>{try{const r=indexedDB.open('r75rec',1);r.onupgradeneeded=()=>r.result.createObjectStore('rec',{keyPath:'id'});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}catch(e){rej(e);}});}
@@ -1274,24 +1282,31 @@ function qList(qs,part){return `<ol class="qlist">${qs.map((q,i)=>`<li><button t
 function viewSpeak(){
   loadRecs();
   const seg=`<div class="seg">${[1,2,3].map(n=>`<button data-spp="${n}" class="${spPart===n?'on':''}">Part ${n}</button>`).join('')}</div>`;
+  const st=SET(),N=(SPK.days||[]).length,td=spToday(),si=curSet();
+  const bar=N?`<div class="setbar">${st?`<button class="btn" data-spset="-1" ${si<=0?'disabled':''} aria-label="Previous set">‹</button><div class="setlbl"><b>Set ${si+1} of ${N}</b><span class="note">${si===td?'Today':`Day ${si+(SPK.startDay||1)}`}</span></div><button class="btn" data-spset="1" ${si>=N-1?'disabled':''} aria-label="Next set">›</button><button class="btn" data-spset="free">Free practice</button>`
+    :`<div class="setlbl"><b>Free practice</b><span class="note">Random topics</span></div><button class="btn" data-spset="day">Daily sets</button>`}</div>`:'';
   let body='';
-  if(spPart===1){const tp=(SPK.part1||[])[spT];
+  if(spPart===1&&st){let k=0;
+    body=`<section class="card"><div class="card-h"><div><h2>Part 1 · ${st.p1.map(t=>esc(t.t)).join(' · ')}</h2><span class="note">Real exam: 3 topics, about 12 questions, 4–5 minutes · 2–3 sentences each</span></div></div>
+      ${st.p1.map(t=>`<h3 class="sp-t">${esc(t.t)}</h3><ol class="qlist">${t.q.map(q=>{const i=k++;return `<li><button type="button" class="${i===spQ?'on':''}" data-spq="${i}" aria-pressed="${i===spQ}">${esc(q)}</button></li>`;}).join('')}</ol>`).join('')}
+      ${recBlock(1,`Part 1 · ${p1Qs()[spQ]||''}`)}</section>`;}
+  else if(spPart===1){const tp=(SPK.part1||[])[spT];
     body=tp?`<section class="card"><div class="card-h"><div><h2>${esc(tp.t)}</h2><span class="note">Part 1 · answer in 2–3 sentences, 20–30 seconds</span></div><button class="btn" data-sptopic="1">New topic</button></div>
       ${qList(tp.q,1)}${recBlock(1,`Part 1 · ${tp.q[spQ]||''}`)}</section>`:'<section class="card"><p class="note">Loading questions…</p></section>';}
-  else if(spPart===3){const c=CUES[timer.cue],qs=(SPK.part3||[])[timer.cue]||[];
-    body=`<section class="card"><div class="card-h"><div><h2>Discussion</h2><span class="note">Part 3 · linked to: ${esc(c[0])}</span></div><button class="btn" data-cue="next">New topic</button></div>
+  else if(spPart===3){const c=st?[st.p2.c,st.p2.b]:CUES[timer.cue],qs=p3Qs();
+    body=`<section class="card"><div class="card-h"><div><h2>Discussion</h2><span class="note">Part 3 · linked to: ${esc(c[0])}${st?' · real exam: 4–6 questions, 4–5 minutes':''}</span></div>${st?'':'<button class="btn" data-cue="next">New topic</button>'}</div>
       <p class="note" style="margin:0">Give a longer answer: your opinion, a reason, an example, and the other side. About 40–60 seconds.</p>
       ${qs.length?qList(qs,3):'<p class="note">Loading questions…</p>'}${qs.length?recBlock(3,`Part 3 · ${qs[spQ]||''}`):''}</section>`;}
-  else{const c=CUES[timer.cue];
-    body=`<section class="card"><div class="card-h"><h2>Part 2 practice</h2><button class="btn" data-cue="next">New card</button></div>
-  <div class="cue"><div class="label">Cue card</div><h3>${esc(c[0])}</h3><span class="note">You should say:</span><ul>${c[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+  else{const c=st?[st.p2.c,st.p2.b]:CUES[timer.cue];
+    body=`<section class="card"><div class="card-h"><h2>Part 2 practice</h2>${st?'':'<button class="btn" data-cue="next">New card</button>'}</div>
+  <div class="cue"><div class="label">Cue card</div><h3>${esc(c[0])}</h3><span class="note">You should say:</span><ul>${c[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${st&&st.p2.r?`<p class="note" style="margin:8px 0 0">Follow-up question: ${esc(st.p2.r)}</p>`:''}</div>
   <div class="ring" id="ring">${ringSvg()}<div><div class="t" id="tt">${timeLeftText()}</div><div class="p" id="tp">${phaseText()}</div></div></div>
   ${rec.state==='rec'&&rec.part===2?`<div class="recbox"><span class="recdot" aria-hidden="true"></span><b class="num" id="recT">${mmss(Date.now()-rec.start)}</b><span class="note rec-l">Recording your answer</span></div>`:''}
   <div id="tctrl">${timerCtrls()}</div>
   ${MIC?`<label class="wc"><input type="checkbox" data-recauto="1" ${recAuto?'checked':''}><span>Record my 2-minute answer automatically</span></label>`:''}
   ${rec.err&&spPart===2?`<p class="note recnote">${rec.err==='denied'?'Microphone access is blocked. Allow the microphone for Telegram in your phone settings, then try again.':'Could not start recording on this device.'}</p>`:''}
   <p class="note" style="margin:0">Real exam: 1 minute to prepare and make notes, then speak for 2 minutes.${MIC?' Your answer is recorded so you can listen back below.':' Record yourself on your phone and listen back for pauses, repeated words and grammar slips.'}</p></section>`;}
-  return seg+body+recList();
+  return bar+seg+body+recList();
 }
 
 function timeLeft(){if(timer.phase==='prep'||timer.phase==='speak')return Math.max(0,timer.end-Date.now());if(timer.phase==='done')return 0;return 60000;}
@@ -2420,6 +2435,9 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-spp]'))){spPart=Number(el.dataset.spp);spQ=0;rec.err='';haptic('sel');renderView();return;}
   if((el=g('[data-sptopic]'))){let n;do{n=Math.floor(Math.random()*SPK.part1.length);}while(n===spT&&SPK.part1.length>1);spT=n;spQ=0;haptic('sel');renderView();return;}
   if((el=g('[data-spq]'))){spQ=Number(el.dataset.spq);haptic('sel');renderView();return;}
+  if((el=g('[data-spset]'))){const v=el.dataset.spset,N=(SPK.days||[]).length;
+    if(v==='free')spSet=null;else if(v==='day'){const t=spToday();spSet=t!=null?t:0;}else spSet=Math.max(0,Math.min(N-1,(curSet()||0)+Number(v)));
+    spQ=0;if(timer.phase!=='speak'&&timer.phase!=='prep')timer.phase='idle';haptic('sel');renderView();return;}
   if((el=g('[data-rec]'))){if(el.dataset.rec==='stop')recStop();else recStart(Number(el.dataset.part),el.dataset.label);return;}
   if((el=g('[data-rdel]'))){const id=el.dataset.rdel,r=recs.find(x=>x.id===id);recs=recs.filter(x=>x.id!==id);if(r)try{URL.revokeObjectURL(r.url);}catch(x){}idbDel(id);haptic('light');renderView();return;}
   if((el=g('[data-cue]'))){spQ=0;let n;do{n=Math.floor(Math.random()*CUES.length);}while(n===timer.cue&&CUES.length>1);timer.cue=n;if(timer.phase!=='speak'&&timer.phase!=='prep')timer.phase='idle';renderView();return;}
