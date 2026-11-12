@@ -880,13 +880,13 @@
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
   },
   {
-   "k": "r-tfng",
+   "k": "r-test",
    "days": [
     16
    ],
    "sk": "R",
-   "label": "Reading: one True / False / Not Given test + mini analysis",
-   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
   },
   {
    "k": "v-col",
@@ -905,6 +905,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units, from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    16
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · next lesson (from where you stopped)",
+   "sub": "Grammar 7.5 lessons in order: intro + diagnostic test (p. 5–9) → Day 1 Tenses (p. 10–21) → Day 2 Task 1 tenses, agreement, numbers (22–32) → Day 3 Nouns, articles (33–42) → Day 4 Prepositions (43–52) → Day 5 Passive (53–61) → Day 6 Conditionals, modals (62–71) → Day 7 Clauses (72–80) → Day 8 Verb patterns (81–89) → Day 9 Comparison, cohesion (90–99) → Day 10 Band 8 structures (100–109) → final test (114–117) · all exercises, check with the key · 3 sentences of your own per topic → send to Claude"
   },
   {
    "k": "w-task",
@@ -934,13 +943,22 @@
    "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
-   "k": "l80",
+   "k": "s-sp75",
+   "days": [
+    17
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · next lesson (from where you stopped)",
+   "sub": "Speaking 7.5 lessons in order: format + criteria (p. 5–11) → Day 1 Describing a person (12–23) → Day 2 Part 1 + a person you respect (24–35) → Day 3 Object + event (36–45) → Day 4 Part 3 opinions (46–56) → Day 5 Pros + cons (57–66) → Day 6 Hypotheticals (67–76) → Day 7 Problem + solution (77–86) → Day 8 Comparing (87–96) → Day 9 Future (97–106) → Day 10 Exam day (107–116) → mock (117–120) · do every exercise out loud"
+  },
+  {
+   "k": "l-test",
    "days": [
     17
    ],
    "sk": "L",
-   "label": "Listening · 80 Tests · 3 tests from Part 2–3 + trap analysis",
-   "sub": "Next 3 tests from Tests 21–60 (Part 2–3) · one listen · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence"
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake: question type + trap type · keyword table: question word → what the speaker said, wrong ones first"
   },
   {
    "k": "l-dict",
@@ -986,6 +1004,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units, from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    17
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · next vocabulary unit",
+   "sub": "Vocabulary units only (Unit 3, 6, 9, 12 … 42) · next one from where you stopped · all exercises · new words into your notebook"
   },
   {
    "k": "w-task",
@@ -1042,13 +1069,13 @@
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
   },
   {
-   "k": "r-tfng",
+   "k": "r-test",
    "days": [
     18
    ],
    "sk": "R",
-   "label": "Reading: one True / False / Not Given test + mini analysis",
-   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
   },
   {
    "k": "v-col",
@@ -1067,6 +1094,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units, from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    18
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · next lesson (from where you stopped)",
+   "sub": "Grammar 7.5 lessons in order: intro + diagnostic test (p. 5–9) → Day 1 Tenses (p. 10–21) → Day 2 Task 1 tenses, agreement, numbers (22–32) → Day 3 Nouns, articles (33–42) → Day 4 Prepositions (43–52) → Day 5 Passive (53–61) → Day 6 Conditionals, modals (62–71) → Day 7 Clauses (72–80) → Day 8 Verb patterns (81–89) → Day 9 Comparison, cohesion (90–99) → Day 10 Band 8 structures (100–109) → final test (114–117) · all exercises, check with the key · 3 sentences of your own per topic → send to Claude"
   },
   {
    "k": "mock",
@@ -1132,13 +1168,22 @@
    "sub": "Practice → Speaking shows today's set · Part 1: all questions, 2–3 sentences each · Part 2: 1 min notes, 2 min talk + the follow-up question · Part 3: 5 questions, 40–60 sec each · record, listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
   },
   {
-   "k": "l80",
+   "k": "s-sp75",
+   "days": [
+    20
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · next lesson (from where you stopped)",
+   "sub": "Speaking 7.5 lessons in order: format + criteria (p. 5–11) → Day 1 Describing a person (12–23) → Day 2 Part 1 + a person you respect (24–35) → Day 3 Object + event (36–45) → Day 4 Part 3 opinions (46–56) → Day 5 Pros + cons (57–66) → Day 6 Hypotheticals (67–76) → Day 7 Problem + solution (77–86) → Day 8 Comparing (87–96) → Day 9 Future (97–106) → Day 10 Exam day (107–116) → mock (117–120) · do every exercise out loud"
+  },
+  {
+   "k": "l-test",
    "days": [
     20
    ],
    "sk": "L",
-   "label": "Listening · 80 Tests · 3 tests from Part 2–3 + trap analysis",
-   "sub": "Next 3 tests from Tests 21–60 (Part 2–3) · one listen · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence"
+   "label": "Full Listening test (30 min) + analysis + keyword table",
+   "sub": "Cambridge, exam conditions, one listen · check with the key · every mistake: question type + trap type · keyword table: question word → what the speaker said, wrong ones first"
   },
   {
    "k": "l-dict",
@@ -1184,6 +1229,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units, from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "v-dest",
+   "days": [
+    20
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Destination B1 · next vocabulary unit",
+   "sub": "Vocabulary units only (Unit 3, 6, 9, 12 … 42) · next one from where you stopped · all exercises · new words into your notebook"
   },
   {
    "k": "w-task",
@@ -1240,13 +1294,13 @@
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
   },
   {
-   "k": "r-tfng",
+   "k": "r-test",
    "days": [
     21
    ],
    "sk": "R",
-   "label": "Reading: one True / False / Not Given test + mini analysis",
-   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
   },
   {
    "k": "v-col",
@@ -1265,6 +1319,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units, from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    21
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · next lesson (from where you stopped)",
+   "sub": "Grammar 7.5 lessons in order: intro + diagnostic test (p. 5–9) → Day 1 Tenses (p. 10–21) → Day 2 Task 1 tenses, agreement, numbers (22–32) → Day 3 Nouns, articles (33–42) → Day 4 Prepositions (43–52) → Day 5 Passive (53–61) → Day 6 Conditionals, modals (62–71) → Day 7 Clauses (72–80) → Day 8 Verb patterns (81–89) → Day 9 Comparison, cohesion (90–99) → Day 10 Band 8 structures (100–109) → final test (114–117) · all exercises, check with the key · 3 sentences of your own per topic → send to Claude"
   },
   {
    "k": "s-set",
@@ -2759,7 +2822,7 @@
     3
    ],
    "sk": "L",
-   "label": "15 tests from Part 2–3 with trap analysis",
+   "label": "9 tests from Part 2–3 with trap analysis",
    "sub": ""
   },
   {
@@ -2777,7 +2840,7 @@
     3
    ],
    "sk": "R",
-   "label": "5 True / False / Not Given tests analysed",
+   "label": "2 True / False / Not Given tests analysed",
    "sub": ""
   },
   {
@@ -2787,6 +2850,51 @@
    ],
    "sk": "V",
    "label": "Collocations: 5 units · Essential 4: 15 units",
+   "sub": ""
+  },
+  {
+   "k": "w3-a1",
+   "weeks": [
+    3
+   ],
+   "sk": "R",
+   "label": "3 full Reading tests with keyword tables",
+   "sub": "Tue · Thu · Sat"
+  },
+  {
+   "k": "w3-a2",
+   "weeks": [
+    3
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5: 3 lessons",
+   "sub": ""
+  },
+  {
+   "k": "w3-b1",
+   "weeks": [
+    3
+   ],
+   "sk": "L",
+   "label": "2 full Listening tests with keyword tables",
+   "sub": "Mon · Fri (+ Sunday mock)"
+  },
+  {
+   "k": "w3-b2",
+   "weeks": [
+    3
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5: 2 lessons",
+   "sub": ""
+  },
+  {
+   "k": "w3-b3",
+   "weeks": [
+    3
+   ],
+   "sk": "V",
+   "label": "Destination B1: 2 vocabulary units",
    "sub": ""
   },
   {
