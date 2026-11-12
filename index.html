@@ -739,6 +739,22 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .cm-trk{width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;border:1px solid var(--line);background:var(--sunk);border-radius:12px;padding:10px 12px;color:var(--ink);min-height:48px;font:inherit}
 .cm-trk.on{border-color:var(--navy);background:var(--navy-soft)}
 .cm-trk small{display:block;color:var(--muted);font-size:12px;font-weight:400}
+.goals{padding:14px;gap:10px}
+.goals .gh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.goals .gh h2{font-size:15px;margin:0}
+.stairs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:end;padding-top:6px}
+.step{border-radius:14px;color:#fff;padding:10px 8px 9px;display:flex;flex-direction:column;gap:6px;position:relative;min-width:0;box-shadow:0 6px 16px -10px rgba(5,12,40,.7)}
+.step.s1{background:linear-gradient(160deg,#3B5BB0,#2A4796);min-height:128px}
+.step.s2{background:linear-gradient(160deg,#21419A,#16307A);min-height:150px;box-shadow:inset 0 0 0 2px #F0B947,0 6px 16px -10px rgba(5,12,40,.7)}
+.step.s3{background:linear-gradient(160deg,#122A6E,#0A1B4E);min-height:172px}
+.step .tl{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.82;font-weight:700}
+.step .ov{font-family:var(--f-display);font-weight:800;font-size:34px;line-height:1;letter-spacing:-.02em;display:flex;flex-direction:column}
+.step .ov small{font-size:10.5px;font-weight:700;opacity:.7;letter-spacing:.04em;margin-top:3px;font-family:var(--f-body)}
+.step .sk4{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:auto}
+.step .sk4 span{background:rgba(255,255,255,.13);border-radius:7px;padding:3px 0;text-align:center;font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.step .sk4 span i{font-style:normal;opacity:.65;font-weight:600;margin-right:3px}
+.step .tag{position:absolute;top:-9px;right:8px;background:#F0B947;color:#2A1B00;font-size:10px;font-weight:800;border-radius:99px;padding:2px 7px;letter-spacing:.04em}
+.goals .gn{font-size:12px;margin:0}
 </style>
 </head>
 <body>
@@ -752,7 +768,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-12.3';
+const BUILD='2026-11-12.4';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1080,10 +1096,21 @@ function suggestCard(n){
   return `<details class="card sugg"><summary><b>Tutor suggestions for this day</b><span class="note">Based on your check · tap + to add</span></summary>
     <ul class="tasks">${sug.map((x,i)=>`<li class="task"><div class="tx"><b>${esc(x.label)}</b><small>${esc(x.sub)}</small></div><button class="rm" data-sugg="${i}" aria-label="Add ${esc(x.label)}" style="color:var(--navy);font-weight:700">+</button></li>`).join('')}</ul></details>`;
 }
+/* Exam targets shown on Today (overall = mean of the four skills, rounded to the nearest .5, .25 → up). */
+const TARGETS=[['Minimum','s1',{R:7.5,L:7.5,W:6,S:6}],['Average','s2',{R:8,L:8,W:6.5,S:6.5}],['Maximum','s3',{R:8.5,L:8.5,W:7,S:7}]];
+const ovBand=o=>{const m=(o.R+o.L+o.W+o.S)/4;return Math.floor(m*2+0.5)/2;};
+const b1=x=>Number.isInteger(x)?x.toFixed(1):String(x);
+function viewGoals(){
+  const ex=PLAN&&PLAN.exam?`Exam · ${short(parseD(PLAN.exam))}`:'';
+  return `<section class="card goals" aria-label="Exam targets"><div class="gh"><h2>My IELTS targets</h2><span class="note">${ex}</span></div>
+  <div class="stairs">${TARGETS.map(([n,c,o])=>`<div class="step ${c}">${c==='s2'?'<span class="tag">GOAL</span>':''}<span class="tl">${n}</span><span class="ov num">${b1(ovBand(o))}<small>OVERALL</small></span>
+    <div class="sk4">${['R','L','W','S'].map(k=>`<span><i>${k}</i>${b1(o[k])}</span>`).join('')}</div></div>`).join('')}</div>
+  <p class="note gn">Overall = average of R, L, W and S, rounded to the nearest 0.5.</p></section>`;
+}
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
   const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(w),wd=WL.filter(x=>wt[x.k]).length;
-  return `<div class="wrap">
+  return `<div class="wrap">${viewGoals()}
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
