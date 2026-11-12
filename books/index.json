@@ -835,6 +835,15 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
   },
   {
+   "k": "w-task1",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 · feedback from Claude · rewrite",
+   "sub": "20 min, 150+ words · overview first · on the computer · Practice → Copy for Claude → feedback · rewrite the weaker parts"
+  },
+  {
    "k": "w-sample",
    "days": [
     16
@@ -842,6 +851,33 @@
    "sk": "W",
    "label": "Writing: analyse a Band 9 Task 2 sample",
    "sub": "One Band 9 sample of the same task type (the Task 1 / Task 2 handbooks have them) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · next lesson (from where you stopped)",
+   "sub": "Writing 7.5 in order: how to use + exam, criteria, strategies (p. 2–15) → Day 1 Trends + clear position (16–25) → Day 2 Comparing + both sides (26–35) → Day 3 Proportions + 'which is better' (36–45) → Day 4 Tables + problem–solution (46–54) → Day 5 Two charts + two-part question (55–63) → Day 6 Process + positive/negative (64–72) → Day 7 Maps + city life (73–81) → Day 8 Predictions + social problems (82–90) → Day 9 Natural process + two-sided (91–100) → Day 10 Review + mock (101–112) · read, do every exercise, check with the key"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · next section",
+   "sub": "Task 1 Handbook in order: what Task 1 is + marking (p. 3–5) → change graphs (6–13) → no-change charts (14–19) → maps + plans (20–25) → processes (26–32) → mixed (33–34) → grammar (35–36) → vocabulary superbank (37–38) → 20 typical mistakes (39) → Day 01 analysis (40–41) · one section per session"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    16
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · next section",
+   "sub": "Task 2 Handbook in order: what Task 2 is + marking (p. 3–5) → position first (6–8) → domino paragraph (9–11) → fuse paragraph (12–14) → cause + solution (15–18) → mixed questions (19–20) → sample essays by type (21–25) → grammar (26–28) → cohesion + style (29–31) → ideas bank, 12 topics (32–36) → 25 typical mistakes (37–38) → Day 01 analysis (39–41) · one section per session"
   },
   {
    "k": "s-set",
@@ -878,6 +914,15 @@
    "sk": "L",
    "label": "Listening: podcast (bus)",
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    16
+   ],
+   "sk": "R",
+   "label": "Reading: one True / False / Not Given test + mini analysis",
+   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
   },
   {
    "k": "r-test",
@@ -1024,6 +1069,15 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
   },
   {
+   "k": "w-task1",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 · feedback from Claude · rewrite",
+   "sub": "20 min, 150+ words · overview first · on the computer · Practice → Copy for Claude → feedback · rewrite the weaker parts"
+  },
+  {
    "k": "w-sample",
    "days": [
     18
@@ -1031,6 +1085,33 @@
    "sk": "W",
    "label": "Writing: analyse a Band 9 Task 2 sample",
    "sub": "One Band 9 sample of the same task type (the Task 1 / Task 2 handbooks have them) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · next lesson (from where you stopped)",
+   "sub": "Writing 7.5 in order: how to use + exam, criteria, strategies (p. 2–15) → Day 1 Trends + clear position (16–25) → Day 2 Comparing + both sides (26–35) → Day 3 Proportions + 'which is better' (36–45) → Day 4 Tables + problem–solution (46–54) → Day 5 Two charts + two-part question (55–63) → Day 6 Process + positive/negative (64–72) → Day 7 Maps + city life (73–81) → Day 8 Predictions + social problems (82–90) → Day 9 Natural process + two-sided (91–100) → Day 10 Review + mock (101–112) · read, do every exercise, check with the key"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · next section",
+   "sub": "Task 1 Handbook in order: what Task 1 is + marking (p. 3–5) → change graphs (6–13) → no-change charts (14–19) → maps + plans (20–25) → processes (26–32) → mixed (33–34) → grammar (35–36) → vocabulary superbank (37–38) → 20 typical mistakes (39) → Day 01 analysis (40–41) · one section per session"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    18
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · next section",
+   "sub": "Task 2 Handbook in order: what Task 2 is + marking (p. 3–5) → position first (6–8) → domino paragraph (9–11) → fuse paragraph (12–14) → cause + solution (15–18) → mixed questions (19–20) → sample essays by type (21–25) → grammar (26–28) → cohesion + style (29–31) → ideas bank, 12 topics (32–36) → 25 typical mistakes (37–38) → Day 01 analysis (39–41) · one section per session"
   },
   {
    "k": "s-set",
@@ -1067,6 +1148,15 @@
    "sk": "L",
    "label": "Listening: podcast (bus)",
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    18
+   ],
+   "sk": "R",
+   "label": "Reading: one True / False / Not Given test + mini analysis",
+   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
   },
   {
    "k": "r-test",
@@ -1249,6 +1339,15 @@
    "sub": "Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
   },
   {
+   "k": "w-task1",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Writing: Task 1 · feedback from Claude · rewrite",
+   "sub": "20 min, 150+ words · overview first · on the computer · Practice → Copy for Claude → feedback · rewrite the weaker parts"
+  },
+  {
    "k": "w-sample",
    "days": [
     21
@@ -1256,6 +1355,33 @@
    "sk": "W",
    "label": "Writing: analyse a Band 9 Task 2 sample",
    "sub": "One Band 9 sample of the same task type (the Task 1 / Task 2 handbooks have them) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "w-b75",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Writing 7.5 · next lesson (from where you stopped)",
+   "sub": "Writing 7.5 in order: how to use + exam, criteria, strategies (p. 2–15) → Day 1 Trends + clear position (16–25) → Day 2 Comparing + both sides (26–35) → Day 3 Proportions + 'which is better' (36–45) → Day 4 Tables + problem–solution (46–54) → Day 5 Two charts + two-part question (55–63) → Day 6 Process + positive/negative (64–72) → Day 7 Maps + city life (73–81) → Day 8 Predictions + social problems (82–90) → Day 9 Natural process + two-sided (91–100) → Day 10 Review + mock (101–112) · read, do every exercise, check with the key"
+  },
+  {
+   "k": "w-bt1",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Task 1 Handbook · next section",
+   "sub": "Task 1 Handbook in order: what Task 1 is + marking (p. 3–5) → change graphs (6–13) → no-change charts (14–19) → maps + plans (20–25) → processes (26–32) → mixed (33–34) → grammar (35–36) → vocabulary superbank (37–38) → 20 typical mistakes (39) → Day 01 analysis (40–41) · one section per session"
+  },
+  {
+   "k": "w-bt2",
+   "days": [
+    21
+   ],
+   "sk": "W",
+   "label": "Task 2 Handbook · next section",
+   "sub": "Task 2 Handbook in order: what Task 2 is + marking (p. 3–5) → position first (6–8) → domino paragraph (9–11) → fuse paragraph (12–14) → cause + solution (15–18) → mixed questions (19–20) → sample essays by type (21–25) → grammar (26–28) → cohesion + style (29–31) → ideas bank, 12 topics (32–36) → 25 typical mistakes (37–38) → Day 01 analysis (39–41) · one section per session"
   },
   {
    "k": "s-set",
@@ -1292,6 +1418,15 @@
    "sk": "L",
    "label": "Listening: podcast (bus)",
    "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    21
+   ],
+   "sk": "R",
+   "label": "Reading: one True / False / Not Given test + mini analysis",
+   "sub": "Cambridge, one True / False / Not Given set · timed · for every answer: the line in the text + why T, F or NG · mistakes into Mistakes with cause"
   },
   {
    "k": "r-test",
@@ -2795,7 +2930,7 @@
     3
    ],
    "sk": "W",
-   "label": "5 Writing tasks (Task 1 + Task 2) with Claude feedback and rewrites",
+   "label": "8 Writing tasks (5 × Task 2 or 1 on daily slots + 3 extra Task 1) with Claude feedback",
    "sub": ""
   },
   {
@@ -2840,7 +2975,7 @@
     3
    ],
    "sk": "R",
-   "label": "2 True / False / Not Given tests analysed",
+   "label": "5 True / False / Not Given tests analysed",
    "sub": ""
   },
   {
@@ -2851,6 +2986,15 @@
    "sk": "V",
    "label": "Collocations: 5 units · Essential 4: 15 units",
    "sub": ""
+  },
+  {
+   "k": "w3-a0",
+   "weeks": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing 7.5, Task 1 + Task 2 Handbooks: 3 sessions each",
+   "sub": "Tue · Thu · Sat"
   },
   {
    "k": "w3-a1",
