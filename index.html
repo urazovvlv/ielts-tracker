@@ -768,7 +768,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-12.4';
+const BUILD='2026-11-14.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -814,7 +814,8 @@ function planDays(p){return Math.max(7,Math.min(180,p.exam?dayDiff(p.start,p.exa
 function buildSchedule(p){
   PLAN=p;START=parseD(p.start);DAYS=planDays(p);TARGET=Number(p.target)||7.5;
   const N=DAYS,f1=Math.round(N*14/60),f2=Math.round(N*35/60),f3=N>=30?N-8:Math.round(N*52/60);
-  PHASES=[{n:'Foundation',a:1,b:f1,c:'--ph1'},{n:'Build',a:f1+1,b:f2,c:'--ph2'},{n:'Simulate',a:f2+1,b:f3,c:'--ph3'},{n:'Peak',a:f3+1,b:N,c:'--ph4'}].filter(x=>x.a<=x.b);
+  PHASES=(p.start>=RS.to?[{n:'Challenge',a:1,b:Math.min(30,N),c:'--ph2'},{n:'Focus',a:31,b:N,c:'--ph4'}]
+    :[{n:'Foundation',a:1,b:f1,c:'--ph1'},{n:'Build',a:f1+1,b:f2,c:'--ph2'},{n:'Simulate',a:f2+1,b:f3,c:'--ph3'},{n:'Peak',a:f3+1,b:N,c:'--ph4'}]).filter(x=>x.a<=x.b);
   /* First full mock at the end of week 1 (day 7). Up to 10 Nov 2026 mocks ran every 3–4 days (kept, so logged scores stay);
      from 11 Nov 2026 (and from day 8 in newer plans) one full mock every Sunday, the last one at least 4 days before the exam. */
   let days=[Math.min(7,N)];
@@ -840,7 +841,7 @@ function camTask(n){
   return {k:'cam',label:st?`Cambridge vocabulary · Day ${s} · ${st.title.replace('Cambridge ','C')}`:`Cambridge vocabulary · Day ${s}`,sub:st?`${st.words} words + keyword tables · Daily → Cambridge`:'Review the earlier sets · Daily → Cambridge',sk:'V'};
 }
 function baseTasks(n){
-  const c=n<8?camTask(n):null;return (c?[c]:[]).concat(bookTasks(n)); /* Cambridge vocabulary dropped from Day 8 on; past days keep theirs. */ /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
+  const c=n<8&&PLAN&&PLAN.start<RS.to?camTask(n):null;return (c?[c]:[]).concat(bookTasks(n)); /* Cambridge vocabulary dropped from Day 8 on; past days keep theirs. */ /* Otherwise lists start empty: everyone adds their own tasks with Edit list. */
   const wd=(dateOf(n).getDay()+6)%7;
   return [
     {k:'main',label:MOCKS[n]?`Full mock · ${MOCKS[n]}`:FOCUS[wd],sub:MOCKS[n]?'L 30 · R 60 · W 60 · S 15 min, exam conditions':'Morning deep block, 07:00–08:30',main:true},
@@ -881,7 +882,7 @@ const CUES=[
 ];
 
 /* ---------- state ---------- */
-let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}}};
+let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}},arch:{}};
 let DAILY=[];
 let tab=/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
@@ -909,11 +910,13 @@ async function kick(){
 }
 function getObj(k){
   if(k==='plan')return PLAN;
+  if(/^x(d|m|sv)\d{2,3}$|^xw\d{1,2}$/.test(k))return S.arch[k];
   if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];if(/^sv\d{2,3}$/.test(k))return S.surv[k];
   if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;if(k==='hb')return S.hb;return null;
 }
 function setObj(k,o){
   if(k==='plan'){if(o&&o.start)PLAN=o;}
+  else if(/^x(d|m|sv)\d{2,3}$|^xw\d{1,2}$/.test(k))S.arch[k]=o;
   else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;else if(/^sv\d{2,3}$/.test(k))S.surv[k]=o;
   else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;else if(k==='hb')S.hb=Object.assign({c:{}},o);
 }
@@ -938,6 +941,22 @@ function readWords(src){
   if(!meta)return null;const out=[];
   for(let i=0;i<meta.n;i++){try{out.push(...JSON.parse(src['words_'+i]||'[]'));}catch(e){}}
   return {n:meta.n,ts:meta._ts||0,list:out};
+}
+/* Restart (Nov 2026): the challenge was re-based from 28 Oct to Mon 16 Nov 2026, exam Sun 10 Jan 2027 (last study day 9 Jan).
+   Old day/week/mock/survey docs are kept under x-prefixed keys (archive), not deleted; essays move with their dates. */
+const RS={id:'r1',from:'2026-10-28',to:'2026-11-16',exam:'2027-01-10',off:19};
+function restartMigrate(){
+  const done=S.settings&&S.settings[RS.id];
+  if(done){ /* another device already migrated: drop stale local copies of old docs */
+    for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];if(o&&(o._ts||0)<done){delete b[k];lsSet(k,null);put(k,null);}}
+    return;
+  }
+  if(!PLAN||PLAN.start!==RS.from)return;
+  for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];delete b[k];lsSet(k,null);put(k,null);if(o){S.arch['x'+k]=o;touch('x'+k);}}
+  let moved=false;for(const e of S.ess)if(typeof e.d==='number'){e.d-=RS.off;moved=true;}
+  if(moved)saveList('ess');
+  PLAN=Object.assign({},PLAN,{start:RS.to,exam:RS.exam});touch('plan');
+  S.settings=Object.assign({},S.settings,{[RS.id]:Date.now()});touch('settings');
 }
 let LOADOK=false;
 async function load(){
@@ -1438,7 +1457,7 @@ async function fullWipe(){
   q.clear();for(const k in timers)clearTimeout(timers[k]);
   while(busy)await sleep(100);
   for(const k of Object.keys(lsAll()))lsSet(k,null);
-  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
+  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}},arch:{}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
   if(CLOUD){
     let keys=await cs('getKeys');
     for(let i=0;i<keys.length;i+=40)await cs('removeItems',keys.slice(i,i+40));
@@ -2160,7 +2179,7 @@ function viewMistakes(){
 
 /* ---------- One-time imports the owner asked for (applied once, marked in the mock doc) ---------- */
 function applySeeds(){
-  if(!LOADOK||!PLAN||!MOCKDAYS.includes(7))return;
+  if(!LOADOK||!PLAN||PLAN.start>=RS.to||!MOCKDAYS.includes(7))return; /* seeds belong to the 28 Oct plan (now archived) */
   let m=mockDoc(7);
   if(!m.sdL){const b={sdL:1,note:'Reading + Listening: Cambridge 21 · Test 1 (31 Oct, 2 Nov)'};if(m.L===''||m.L==null)b.L=24;
     S.mocks.m07=Object.assign({},m,b);touch('m07');m=mockDoc(7);
@@ -2553,6 +2572,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   await loadDailyIndex();
   await loadSpeaking();
   await load();
+  try{restartMigrate();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}
