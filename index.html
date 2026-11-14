@@ -768,7 +768,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-14.2';
+const BUILD='2026-11-14.3';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -957,6 +957,12 @@ function restartMigrate(){
   if(moved)saveList('ess');
   PLAN=Object.assign({},PLAN,{start:RS.to,exam:RS.exam});touch('plan');
   S.settings=Object.assign({},S.settings,{[RS.id]:Date.now()});touch('settings');
+}
+/* 14 Nov 2026: Mistakes list emptied for the new plan; the old entries are kept as an archive list (amist_*). */
+function archiveMistakes(){
+  if(!LOADOK||(S.settings&&S.settings.r2)||!PLAN||PLAN.start<RS.to)return;
+  if(S.mist.length){S.amist=S.mist.slice();S.listTs.amist=0;saveList('amist');S.mist=[];saveList('mist');}
+  S.settings=Object.assign({},S.settings,{r2:Date.now()});touch('settings');
 }
 let LOADOK=false;
 async function load(){
@@ -1986,7 +1992,7 @@ function viewSkillBooks(){
 }
 
 /* ---------- Lists stored in chunks (mistakes, essays), same scheme as words ---------- */
-const listN={mist:0,ess:0};
+const listN={mist:0,ess:0,amist:0};
 function saveList(name){
   S.listTs[name]=Date.now();const chunks=[];let cur=[],len=2;
   for(const it of S[name]){const s=JSON.stringify(it);if(len+s.length+1>3600&&cur.length){chunks.push(cur);cur=[];len=2;}cur.push(it);len+=s.length+1;}
@@ -2573,6 +2579,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   await loadSpeaking();
   await load();
   try{restartMigrate();}catch(e){}
+  try{archiveMistakes();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}
