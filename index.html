@@ -768,7 +768,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-14.1';
+const BUILD='2026-11-14.2';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1166,9 +1166,9 @@ function viewProgress(){
   return `<div class="wrap">
   <section class="card band-card">${(()=>{const cb=currentBand(),pct=Math.max(3,Math.min(100,(cb.band-4)/(TARGET-4)*100));
     return `<div class="card-h"><h2>Band</h2><span class="note">Target ${TARGET.toFixed(1)}</span></div>
-    <div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
-    <div class="band-bar"><i style="width:${pct}%"></i></div>
-    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:'<p class="note" style="margin:0">Starting level. Log a full mock below to update it.</p>'}`;})()}</section>
+    ${cb.m?`<div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
+    <div class="band-bar"><i style="width:${pct}%"></i></div>`:`<div class="band-now"><b>0.0</b><span>No mock yet</span></div><div class="band-bar"><i style="width:0%"></i></div>`}
+    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:`<p class="note" style="margin:0">${MOCKDAYS.length?`Current band comes from the first full mock · Day ${MOCKDAYS[0]}, ${fmt(dateOf(MOCKDAYS[0]))}`:'Log a full mock below to see your band.'}</p>`}`;})()}</section>
   ${studyCard()}
   ${mockSections()}
   <section class="card"><div class="card-h"><h2>Progress</h2></div>
