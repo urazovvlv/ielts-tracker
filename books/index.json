@@ -28,6 +28,42 @@
  "books": [],
  "tasks": [
   {
+   "k": "l80",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 21–23 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
+  },
+  {
    "k": "r-tfng",
    "days": [
     1
@@ -44,6 +80,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 24–26 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
   },
   {
    "k": "r-tfng",
@@ -64,6 +136,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
   },
   {
+   "k": "l80",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 27–29 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
+  },
+  {
    "k": "r-tfng",
    "days": [
     3
@@ -80,6 +188,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 30–32 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
   },
   {
    "k": "r-tfng",
@@ -100,6 +244,42 @@
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
   },
   {
+   "k": "l80",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 33–35 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
+  },
+  {
    "k": "r-tfng",
    "days": [
     5
@@ -116,6 +296,42 @@
    "sk": "R",
    "label": "Full Reading test (60 min) + analysis + keyword table",
    "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "l80",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 36–38 (Part 2)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…) · list the words you missed and why"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast · afterwards: main idea + 3 new phrases"
   },
   {
    "k": "r-tfng",
@@ -137,6 +353,42 @@
   }
  ],
  "wtasks": [
+  {
+   "k": "w1-l1",
+   "weeks": [
+    1
+   ],
+   "sk": "L",
+   "label": "80 Listening Tests: Tests 21–38 with trap analysis",
+   "sub": ""
+  },
+  {
+   "k": "w1-l2",
+   "weeks": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening Strategies: 6 units",
+   "sub": ""
+  },
+  {
+   "k": "w1-l3",
+   "weeks": [
+    1
+   ],
+   "sk": "L",
+   "label": "6 Part 3 dictations",
+   "sub": ""
+  },
+  {
+   "k": "w1-l4",
+   "weeks": [
+    1
+   ],
+   "sk": "L",
+   "label": "6 podcasts",
+   "sub": ""
+  },
   {
    "k": "w1-r1",
    "weeks": [
