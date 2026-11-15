@@ -26,6 +26,134 @@
   }
  ],
  "books": [],
- "tasks": [],
- "wtasks": []
+ "tasks": [
+  {
+   "k": "r-tfng",
+   "days": [
+    1
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 1–17",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    1
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    2
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 18–34",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    2
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    3
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 35–51",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    3
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    4
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 52–68",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    4
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    5
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 69–85",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    5
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    6
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 86–100",
+   "sub": "Read the statement first, find the line in the passage, then decide · for each: write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page → Telegram) · every wrong one into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    6
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause: attention / strategy / vocabulary / time · keyword table: question word → passage word, wrong ones first"
+  }
+ ],
+ "wtasks": [
+  {
+   "k": "w1-r1",
+   "weeks": [
+    1
+   ],
+   "sk": "R",
+   "label": "TFNG book: all 100 exercises",
+   "sub": "Days 1–6"
+  },
+  {
+   "k": "w1-r2",
+   "weeks": [
+    1
+   ],
+   "sk": "R",
+   "label": "6 full Reading tests, analysed, with keyword tables",
+   "sub": "+ Reading in the Sunday mock"
+  }
+ ]
 }
