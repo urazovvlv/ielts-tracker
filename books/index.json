@@ -100,6 +100,15 @@
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
   },
   {
+   "k": "g-g75",
+   "days": [
+    1
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Intro + diagnostic test (p. 5–9) · Lesson 1 Tenses (p. 10–21)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     2
@@ -170,6 +179,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    2
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 2 Task 1 tenses, agreement, numbers (p. 22–32)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
   },
   {
    "k": "l80",
@@ -244,6 +262,15 @@
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
   },
   {
+   "k": "g-g75",
+   "days": [
+    3
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 3 Nouns, determiners, articles (p. 33–42)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     4
@@ -314,6 +341,15 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    4
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 4 Prepositions (p. 43–52)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
   },
   {
    "k": "l80",
@@ -388,6 +424,15 @@
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
   },
   {
+   "k": "g-g75",
+   "days": [
+    5
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 5 Passive + causative (p. 53–61)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
    "k": "l80",
    "days": [
     6
@@ -458,6 +503,60 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence · reread yesterday's words on the metro"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    6
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 6 Conditionals, wish, modals, hedging (p. 62–71)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    8
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 7 Relative, participle, noun clauses (p. 72–80)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    9
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 8 Gerund/infinitive, verb patterns, reported speech (p. 81–89)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    10
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 9 Adjectives/adverbs, comparison, pronouns, cohesion (p. 90–99)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    11
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 10 Band 8 structures (p. 100–109)",
+   "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    12
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Final test + self-assessment (p. 114–117)",
+   "sub": "Exam conditions · check with the key · topics you lose points on → review plan (p. 123)"
   }
  ],
  "wtasks": [
@@ -531,6 +630,24 @@
    ],
    "sk": "V",
    "label": "Essential 4: 18 units",
+   "sub": ""
+  },
+  {
+   "k": "w1-g1",
+   "weeks": [
+    1
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5: diagnostic test + Lessons 1–6",
+   "sub": ""
+  },
+  {
+   "k": "w2-g1",
+   "weeks": [
+    2
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5: Lessons 7–10 + final test",
    "sub": ""
   }
  ]
