@@ -28,6 +28,33 @@
  "books": [],
  "tasks": [
   {
+   "k": "w-learn",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Line graph (change over time) · Task 2 Opinion (agree / disagree)",
+   "sub": "Writing 7.5 Lesson 1 Trends + clear position (p. 16–25) · Task 1 Handbook: change graphs (p. 6–13) · Task 2 Handbook: position first (p. 6–8) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Line graph (change over time)) + Task 2 (Opinion (agree / disagree)) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
    "k": "l80",
    "days": [
     1
@@ -107,6 +134,33 @@
    "sk": "G",
    "label": "Grammar 7.5 · Intro + diagnostic test (p. 5–9) · Lesson 1 Tenses (p. 10–21)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "w-learn",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Bar chart (comparison) · Task 2 Discussion (both views + your opinion)",
+   "sub": "Writing 7.5 Lesson 2 Comparing + both sides (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · Task 2 Handbook: domino paragraph (p. 9–11) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Bar chart (comparison)) + Task 2 (Discussion (both views + your opinion)) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
   },
   {
    "k": "l80",
@@ -190,6 +244,33 @@
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
   },
   {
+   "k": "w-learn",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Pie charts (proportions) · Task 2 Which is better / advantages vs disadvantages",
+   "sub": "Writing 7.5 Lesson 3 Proportions + 'which is better' (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Pie charts (proportions)) + Task 2 (Which is better / advantages vs disadvantages) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
    "k": "l80",
    "days": [
     3
@@ -269,6 +350,33 @@
    "sk": "G",
    "label": "Grammar 7.5 · Lesson 3 Nouns, determiners, articles (p. 33–42)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "w-learn",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Table · Task 2 Problem / solution (cause / solution)",
+   "sub": "Writing 7.5 Lesson 4 Tables + problem–solution (p. 46–54) · Task 2 Handbook: cause + solution essays (p. 15–18) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Table) + Task 2 (Problem / solution (cause / solution)) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
   },
   {
    "k": "l80",
@@ -352,6 +460,33 @@
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
   },
   {
+   "k": "w-learn",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Two charts (mixed) · Task 2 Two-part question",
+   "sub": "Writing 7.5 Lesson 5 Two charts + two-part question (p. 55–63) · Task 1 Handbook: mixed (p. 33–34) · Task 2 Handbook: mixed questions (p. 19–20) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Two charts (mixed)) + Task 2 (Two-part question) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
    "k": "l80",
    "days": [
     5
@@ -431,6 +566,33 @@
    "sk": "G",
    "label": "Grammar 7.5 · Lesson 5 Passive + causative (p. 53–61)",
    "sub": "Theory → Writing/Speaking use → common mistakes → all exercises → check with the key → self-check · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "w-learn",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing · learn today's types: Task 1 Process diagram · Task 2 Positive or negative development",
+   "sub": "Writing 7.5 Lesson 6 Process + positive/negative (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · Read the sections, do every exercise, check with the key · note 5 phrases for today's two essays"
+  },
+  {
+   "k": "w-tasks",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Process diagram) + Task 2 (Positive or negative development) · feedback from Claude",
+   "sub": "Use a question of today's types from the lesson · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing: analyse Band 9 samples of today's types",
+   "sub": "One Band 9 Task 1 and one Band 9 Task 2 of today's types (Task 2 Handbook samples p. 21–25, the lesson's model answers) · how the question is paraphrased · paragraph plan · linking · 5 phrases into your notebook"
   },
   {
    "k": "l80",
@@ -560,6 +722,24 @@
   }
  ],
  "wtasks": [
+  {
+   "k": "w1-w1",
+   "weeks": [
+    1
+   ],
+   "sk": "W",
+   "label": "6 Task 1 + 6 Task 2 types learned and written, with Claude feedback",
+   "sub": "Maps come in Week 2"
+  },
+  {
+   "k": "w1-w2",
+   "weeks": [
+    1
+   ],
+   "sk": "W",
+   "label": "Band 9 samples of every type analysed",
+   "sub": ""
+  },
   {
    "k": "w1-l1",
    "weeks": [
