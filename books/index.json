@@ -127,6 +127,15 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
+   "k": "l-pod",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
+  },
+  {
    "k": "r-learn",
    "days": [
     2
@@ -224,6 +233,15 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
   },
   {
    "k": "r-learn",
@@ -325,6 +343,15 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
+   "k": "l-pod",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
+  },
+  {
    "k": "r-learn",
    "days": [
     4
@@ -422,6 +449,15 @@
    "sk": "V",
    "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
   },
   {
    "k": "r-learn",
@@ -523,6 +559,15 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
+   "k": "l-pod",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
+  },
+  {
    "k": "r-learn",
    "days": [
     6
@@ -622,6 +667,15 @@
    "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
+   "k": "l-pod",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases"
+  },
+  {
    "k": "mock",
    "days": [
     7
@@ -665,7 +719,7 @@
     1
    ],
    "sk": "L",
-   "label": "Listening: 6 question types learned · 18 tests from 80 Tests",
+   "label": "Listening: 6 question types learned · 18 tests from 80 Tests · 6 podcasts",
    "sub": ""
   },
   {
