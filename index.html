@@ -768,7 +768,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-16.1';
+const BUILD='2026-11-20.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -819,11 +819,14 @@ function buildSchedule(p){
   /* First full mock at the end of week 1 (day 7). Up to 10 Nov 2026 mocks ran every 3–4 days (kept, so logged scores stay);
      from 11 Nov 2026 (and from day 8 in newer plans) one full mock every Sunday, the last one at least 4 days before the exam. */
   let days=[Math.min(7,N)];
+  if(p.start>=RS2.to){days=[];for(let n=8;n<=N-3;n++)if(dateOf(n).getDay()===0)days.push(n);} /* 20 Nov plan: first mock Sun 29 Nov (Day 10), then every Sunday */
+  else{
   let d=days[0],step=3;
   while(d+step<=N-4){d+=step;days.push(d);step=step===3?4:3;}
   const CUT=Math.max(8,dayDiff(p.start,'2026-11-11')+1);
   days=days.filter(n=>n<CUT);
   for(let n=CUT;n<=N-3;n++)if(dateOf(n).getDay()===0)days.push(n);
+  }
   MOCKS={};let e=0,l=0;
   for(const n of days)MOCKS[n]=n<=f2?(EARLY[e++]||`Practice test ${e}`):(LATE[l++]||EARLY[e++]||`Practice test ${l}`);
   MOCKDAYS=days;
@@ -908,15 +911,16 @@ async function kick(){
     setSync(failed?'err':'ok');
   }finally{busy=false;}
 }
+const ARCHK=/^[xy](d|m|sv)\d{2,3}$|^[xy]w\d{1,2}$|^y(cfg_day|cfg_week|hb)$/;
 function getObj(k){
   if(k==='plan')return PLAN;
-  if(/^x(d|m|sv)\d{2,3}$|^xw\d{1,2}$/.test(k))return S.arch[k];
+  if(ARCHK.test(k))return S.arch[k];
   if(/^d\d{2,3}$/.test(k))return S.days[k];if(/^w\d{1,2}$/.test(k))return S.weeks[k];if(/^m\d{2,3}$/.test(k))return S.mocks[k];if(/^sv\d{2,3}$/.test(k))return S.surv[k];
   if(k==='cfg_day')return S.cfg.day;if(k==='cfg_week')return S.cfg.week;if(k==='settings')return S.settings;if(k==='hb')return S.hb;return null;
 }
 function setObj(k,o){
   if(k==='plan'){if(o&&o.start)PLAN=o;}
-  else if(/^x(d|m|sv)\d{2,3}$|^xw\d{1,2}$/.test(k))S.arch[k]=o;
+  else if(ARCHK.test(k))S.arch[k]=o;
   else if(/^d\d{2,3}$/.test(k))S.days[k]=o;else if(/^w\d{1,2}$/.test(k))S.weeks[k]=o;else if(/^m\d{2,3}$/.test(k))S.mocks[k]=o;else if(/^sv\d{2,3}$/.test(k))S.surv[k]=o;
   else if(k==='cfg_day')S.cfg.day=o;else if(k==='cfg_week')S.cfg.week=o;else if(k==='settings')S.settings=o;else if(k==='hb')S.hb=Object.assign({c:{}},o);
 }
@@ -963,6 +967,26 @@ function archiveMistakes(){
   if(!LOADOK||(S.settings&&S.settings.r2)||!PLAN||PLAN.start<RS.to)return;
   if(S.mist.length){S.amist=S.mist.slice();S.listTs.amist=0;saveList('amist');S.mist=[];saveList('mist');}
   S.settings=Object.assign({},S.settings,{r2:Date.now()});touch('settings');
+}
+/* Restart 2 (19 Nov 2026): Day 1 moves to Fri 20 Nov 2026, exam stays Sun 10 Jan 2027. Everything logged since 16 Nov
+   (ticks, notes, week goals, mocks, surveys, custom list edits, flashcard progress, mistakes, essays, words) moves to a hidden archive:
+   docs under y-prefixed keys, lists under b-prefixed lists (bmist_*, bess_*, bwords_*). Nothing is deleted. */
+const RS2={id:'r3',from:'2026-11-16',to:'2026-11-20',exam:'2027-01-10'};
+function restart2(){
+  if(!LOADOK)return;
+  const done=S.settings&&S.settings[RS2.id];
+  if(done){
+    for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];if(o&&(o._ts||0)<done){delete b[k];lsSet(k,null);put(k,null);}}
+    return;
+  }
+  if(!PLAN||PLAN.start!==RS2.from)return;
+  for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];delete b[k];lsSet(k,null);put(k,null);if(o){S.arch['y'+k]=o;touch('y'+k);}}
+  for(const [k,o] of [['cfg_day',S.cfg.day],['cfg_week',S.cfg.week],['hb',S.hb]])if(o&&Object.keys(o).filter(x=>x!=='_ts').length){S.arch['y'+k]=o;touch('y'+k);}
+  S.cfg.day={};touch('cfg_day');S.cfg.week={};touch('cfg_week');S.hb={c:{}};touch('hb');
+  for(const [name,arc] of [['mist','bmist'],['ess','bess'],['words','bwords']])if(S[name]&&S[name].length){S[arc]=S[name].slice();S.listTs[arc]=0;listN[arc]=0;saveList(arc);}
+  S.mist=[];saveList('mist');S.ess=[];saveList('ess');S.words=[];saveWords();
+  PLAN=Object.assign({},PLAN,{start:RS2.to,exam:RS2.exam});touch('plan');
+  S.settings=Object.assign({},S.settings,{[RS2.id]:Date.now()});touch('settings');
 }
 let LOADOK=false;
 async function load(){
@@ -1992,7 +2016,7 @@ function viewSkillBooks(){
 }
 
 /* ---------- Lists stored in chunks (mistakes, essays), same scheme as words ---------- */
-const listN={mist:0,ess:0,amist:0};
+const listN={mist:0,ess:0,amist:0,bmist:0,bess:0,bwords:0};
 function saveList(name){
   S.listTs[name]=Date.now();const chunks=[];let cur=[],len=2;
   for(const it of S[name]){const s=JSON.stringify(it);if(len+s.length+1>3600&&cur.length){chunks.push(cur);cur=[];len=2;}cur.push(it);len+=s.length+1;}
@@ -2580,6 +2604,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   await load();
   try{restartMigrate();}catch(e){}
   try{archiveMistakes();}catch(e){}
+  try{restart2();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}

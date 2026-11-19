@@ -105,7 +105,7 @@
     1
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 1–17",
+   "label": "Reading · TFNG book · Exercises 1–12",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -231,7 +231,7 @@
     2
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 18–34",
+   "label": "Reading · TFNG book · Exercises 13–23",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -330,7 +330,7 @@
     3
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 35–51",
+   "label": "Reading · TFNG book · Exercises 24–34",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -456,7 +456,7 @@
     4
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 52–68",
+   "label": "Reading · TFNG book · Exercises 35–45",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -555,7 +555,7 @@
     5
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 69–85",
+   "label": "Reading · TFNG book · Exercises 46–56",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -681,7 +681,7 @@
     6
    ],
    "sk": "R",
-   "label": "Reading · TFNG book · Exercises 86–100",
+   "label": "Reading · TFNG book · Exercises 57–67",
    "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
   },
   {
@@ -703,18 +703,351 @@
    "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence"
   },
   {
-   "k": "mock",
+   "k": "w-learn",
    "days": [
     7
    ],
+   "sk": "W",
+   "label": "Writing · learn Task 1: Table",
+   "sub": "Writing 7.5 Lesson 4, Task 1 part (p. 46–54) · Read the sections, do every exercise, check with the key · note 5 phrases to use in today's essay"
+  },
+  {
+   "k": "w-task",
+   "days": [
+    7
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Table) · feedback from Claude",
+   "sub": "A question of today's type (from the lesson) · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    7
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 Task 1 sample (Table)",
+   "sub": "One Band 9 sample of today's type (lesson model answers, Task 2 Handbook samples p. 21–25) · paraphrase of the question · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    7
+   ],
+   "sk": "S",
+   "label": "Speaking set 7: answers + recording · Part 1 (Study · Computer · Feeling tired) · Part 2 (Describe someone you know who did something difficult but was successful) · Part 3",
+   "sub": "Practice → Speaking shows today's set · write short answers first (key ideas + 3–4 phrases, not a full script) · then record Part 1, Part 2 (1 min notes, 2 min talk) and Part 3 without reading · listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    7
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · listen → read along with the transcript → speak half a second behind, 3 times"
+  },
+  {
+   "k": "l80",
+   "days": [
+    7
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 39–41 (Part 2 + Part 3)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    7
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    7
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    7
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 68–78",
+   "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    7
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    7
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · 2 units",
+   "sub": "Next 2 units from where you stopped · all exercises, check with the key · 5 collocations per unit into your notebook · review on the metro"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    7
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 4 Prepositions (p. 43–52)",
+   "sub": "Theory → all exercises → check with the key · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "w-learn",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 2: Problem / solution (cause / solution)",
+   "sub": "Writing 7.5 Lesson 4, Task 2 part (p. 46–54) · Task 2 Handbook: cause + solution essays (p. 15–18) · Read the sections, do every exercise, check with the key · note 5 phrases to use in today's essay"
+  },
+  {
+   "k": "w-task",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 2 (Problem / solution (cause / solution)) · feedback from Claude",
+   "sub": "A question of today's type (from the lesson) · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    8
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 Task 2 sample (Problem / solution (cause / solution))",
+   "sub": "One Band 9 sample of today's type (lesson model answers, Task 2 Handbook samples p. 21–25) · paraphrase of the question · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    8
+   ],
+   "sk": "S",
+   "label": "Speaking set 8: answers + recording · Part 1 (Home · Traveling · Watches) · Part 2 (Describe a person you know who is interested in history) · Part 3",
+   "sub": "Practice → Speaking shows today's set · write short answers first (key ideas + 3–4 phrases, not a full script) · then record Part 1, Part 2 (1 min notes, 2 min talk) and Part 3 without reading · listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    8
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · listen → read along with the transcript → speak half a second behind, 3 times"
+  },
+  {
+   "k": "s-sp75",
+   "days": [
+    8
+   ],
+   "sk": "S",
+   "label": "Speaking 7.5 · Lesson 4 Part 3: building an opinion (p. 46–56)",
+   "sub": "Read the strategy, learn the vocabulary, do every exercise out loud · record the model task in Practice"
+  },
+  {
+   "k": "l80",
+   "days": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 42–44 (Part 3)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "l-strat",
+   "days": [
+    8
+   ],
+   "sk": "L",
+   "label": "Listening Strategies · next unit",
+   "sub": "Read the unit, do every exercise with the audio, check with the key · write the one strategy you will use in the next test"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    8
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 79–89",
+   "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    8
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · 2 units",
+   "sub": "Next 2 units from where you stopped · all exercises, check with the key · 5 collocations per unit into your notebook · review on the metro"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    8
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · 3 units",
+   "sub": "Next 3 units from where you stopped · new words: meaning + your own sentence"
+  },
+  {
+   "k": "w-learn",
+   "days": [
+    9
+   ],
+   "sk": "W",
+   "label": "Writing · learn Task 1: Two charts (mixed)",
+   "sub": "Writing 7.5 Lesson 5, Task 1 part (p. 55–63) · Task 1 Handbook: mixed (p. 33–34) · Read the sections, do every exercise, check with the key · note 5 phrases to use in today's essay"
+  },
+  {
+   "k": "w-task",
+   "days": [
+    9
+   ],
+   "sk": "W",
+   "label": "Writing: write Task 1 (Two charts (mixed)) · feedback from Claude",
+   "sub": "A question of today's type (from the lesson) · Task 1: 20 min, 150+ words · Task 2: 40 min, 250+ words · on the computer · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weaker parts"
+  },
+  {
+   "k": "w-model",
+   "days": [
+    9
+   ],
+   "sk": "W",
+   "label": "Writing: analyse a Band 9 Task 1 sample (Two charts (mixed))",
+   "sub": "One Band 9 sample of today's type (lesson model answers, Task 2 Handbook samples p. 21–25) · paraphrase of the question · paragraph plan · linking · 5 phrases into your notebook"
+  },
+  {
+   "k": "s-set",
+   "days": [
+    9
+   ],
+   "sk": "S",
+   "label": "Speaking set 9: answers + recording · Part 1 (Hometown · Advertisements · Weather) · Part 2 (Describe a person in your life who really likes taking photos) · Part 3",
+   "sub": "Practice → Speaking shows today's set · write short answers first (key ideas + 3–4 phrases, not a full script) · then record Part 1, Part 2 (1 min notes, 2 min talk) and Part 3 without reading · listen back, note 3 mistakes · re-record Part 2 · send the transcript to Claude"
+  },
+  {
+   "k": "s-shadow",
+   "days": [
+    9
+   ],
+   "sk": "S",
+   "label": "Speaking: shadowing, 3-minute clip",
+   "sub": "10–15 min · one 3-minute clip (IELTS Speaking sample or TED) · listen → read along with the transcript → speak half a second behind, 3 times"
+  },
+  {
+   "k": "l80",
+   "days": [
+    9
+   ],
+   "sk": "L",
+   "label": "Listening · 80 IELTS Listening Tests · Tests 45–47 (Part 3)",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap type: later-mentioned / negated / 'unlike' or 'but' / personal exception / didn't check the sentence · replay the missed part with the transcript"
+  },
+  {
+   "k": "l-dict",
+   "days": [
+    9
+   ],
+   "sk": "L",
+   "label": "Listening: dictation · one Part 3 section",
+   "sub": "One Part 3 section from a Cambridge test you've done · word by word, max 3 plays per sentence · check with the transcript · mark where the speaker changes direction (but, actually, unlike…)"
+  },
+  {
+   "k": "l-pod",
+   "days": [
+    9
+   ],
+   "sk": "L",
+   "label": "Listening: podcast (bus)",
+   "sub": "20–30 min, audio only, on the bus is fine · BBC 6 Minute English, TED or an IELTS-topic podcast"
+  },
+  {
+   "k": "r-tfng",
+   "days": [
+    9
+   ],
+   "sk": "R",
+   "label": "Reading · TFNG book · Exercises 90–100",
+   "sub": "Read the statement first, find the line in the passage, then decide · write T / F / NG + the exact words that prove it (for NG: what is missing) · check with the answers (QR on the last page) · wrong ones into Mistakes with the reason"
+  },
+  {
+   "k": "r-test",
+   "days": [
+    9
+   ],
+   "sk": "R",
+   "label": "Full Reading test (60 min) + analysis + keyword table",
+   "sub": "Cambridge, 60 min (P1 17 · P2 20 · P3 23) · check with the key · every mistake into Mistakes with cause · keyword table: question word → passage word, wrong ones first"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    9
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · 2 units",
+   "sub": "Next 2 units from where you stopped · all exercises, check with the key · 5 collocations per unit into your notebook · review on the metro"
+  },
+  {
+   "k": "g-g75",
+   "days": [
+    9
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 · Lesson 5 Passive + causative (p. 53–61)",
+   "sub": "Theory → all exercises → check with the key · write 3 sentences of your own and send them to Claude"
+  },
+  {
+   "k": "mock",
+   "days": [
+    10
+   ],
    "sk": "",
    "label": "Full mock · exam conditions, start 09:30 (L 30 · R 60 · W 60 · S 15)",
-   "sub": "Next unused Cambridge test · no pauses · Speaking: use Speaking set 7 and record it"
+   "sub": "Sun 29 Nov · next unused Cambridge test · no pauses · Speaking: use Speaking set 10 and record it"
   },
   {
    "k": "mock-send",
    "days": [
-    7
+    10
    ],
    "sk": "",
    "label": "Mock: send Listening/Reading mistakes, Writing and Speaking to Claude · scores into Progress",
@@ -723,10 +1056,10 @@
   {
    "k": "rev",
    "days": [
-    7
+    10
    ],
    "sk": "",
-   "label": "Week 1 review with Claude → plan Week 2",
+   "label": "Days 1–9 review with Claude → plan Days 11–17",
    "sub": "What got done, scores, what to change"
   }
  ],
@@ -737,8 +1070,8 @@
     1
    ],
    "sk": "W",
-   "label": "3 Task 1 + 3 Task 2 types learned and written, with Claude feedback",
-   "sub": "Every day"
+   "label": "4 Task 1 + 3 Task 2 types learned and written, with Claude feedback",
+   "sub": "Line, Bar, Pie, Table · Opinion, Discussion, Which is better"
   },
   {
    "k": "w1-2",
@@ -746,7 +1079,7 @@
     1
    ],
    "sk": "W",
-   "label": "6 Band 9 samples analysed",
+   "label": "7 Band 9 samples analysed",
    "sub": ""
   },
   {
@@ -755,7 +1088,7 @@
     1
    ],
    "sk": "S",
-   "label": "Speaking sets 1–6: answers, recordings, feedback",
+   "label": "Speaking sets 1–7: answers, recordings, feedback",
    "sub": ""
   },
   {
@@ -773,7 +1106,7 @@
     1
    ],
    "sk": "S",
-   "label": "6 shadowing sessions",
+   "label": "7 shadowing sessions",
    "sub": ""
   },
   {
@@ -782,7 +1115,7 @@
     1
    ],
    "sk": "L",
-   "label": "80 Listening Tests: Tests 21–38 with trap analysis",
+   "label": "80 Listening Tests: Tests 21–41 with trap analysis",
    "sub": ""
   },
   {
@@ -791,7 +1124,7 @@
     1
    ],
    "sk": "L",
-   "label": "6 Part 3 dictations + 6 podcasts",
+   "label": "7 Part 3 dictations + 7 podcasts",
    "sub": ""
   },
   {
@@ -809,7 +1142,7 @@
     1
    ],
    "sk": "R",
-   "label": "TFNG book: all 100 exercises",
+   "label": "TFNG book: Exercises 1–78",
    "sub": ""
   },
   {
@@ -818,8 +1151,8 @@
     1
    ],
    "sk": "R",
-   "label": "3 full Reading tests with keyword tables",
-   "sub": "Odd days + Sunday mock"
+   "label": "4 full Reading tests with keyword tables",
+   "sub": "Odd days"
   },
   {
    "k": "w1-11",
@@ -827,7 +1160,7 @@
     1
    ],
    "sk": "V",
-   "label": "Collocations in Use: 12 units · Essential 4: 9 units",
+   "label": "Collocations in Use: 14 units · Essential 4: 9 units",
    "sub": ""
   },
   {
@@ -836,17 +1169,62 @@
     1
    ],
    "sk": "G",
-   "label": "Grammar 7.5: diagnostic test + Lessons 1–3",
+   "label": "Grammar 7.5: diagnostic test + Lessons 1–4",
    "sub": "Odd days"
   },
   {
-   "k": "w1-13",
+   "k": "w2-1",
    "weeks": [
-    1
+    2
+   ],
+   "sk": "W",
+   "label": "Problem/solution (Task 2) + Two charts (Task 1) learned and written",
+   "sub": "Days 8–9"
+  },
+  {
+   "k": "w2-2",
+   "weeks": [
+    2
+   ],
+   "sk": "R",
+   "label": "TFNG book finished (Exercises 79–100) + full Reading test on Day 9",
+   "sub": ""
+  },
+  {
+   "k": "w2-3",
+   "weeks": [
+    2
+   ],
+   "sk": "L",
+   "label": "80 Listening Tests 42–47 · Listening Strategies 1 unit",
+   "sub": ""
+  },
+  {
+   "k": "w2-4",
+   "weeks": [
+    2
+   ],
+   "sk": "S",
+   "label": "Speaking sets 8–9 · Speaking 7.5 Lesson 4",
+   "sub": ""
+  },
+  {
+   "k": "w2-5",
+   "weeks": [
+    2
+   ],
+   "sk": "G",
+   "label": "Grammar 7.5 Lesson 5",
+   "sub": ""
+  },
+  {
+   "k": "w2-6",
+   "weeks": [
+    2
    ],
    "sk": "",
-   "label": "Full mock on Sunday 09:30 + week review",
-   "sub": ""
+   "label": "First full mock: Sun 29 Nov, 09:30 + review → plan Days 11–17",
+   "sub": "Day 10"
   }
  ]
 }
