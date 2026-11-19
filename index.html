@@ -873,6 +873,43 @@ option{background:#1A1513;color:#F4EFEB}
 .toast{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 .task .tx b,.mrow b,.witem b{font-weight:500}
 .seg button,.chip,.btn{font-weight:500}
+
+/* 7-week journey */
+.journey{padding:18px 0 16px;gap:14px;overflow:hidden}
+.journey>.card-h{padding:0 18px}
+.jw-cnt{font-family:var(--f-display);font-weight:300;font-size:30px;letter-spacing:-.03em;line-height:1}
+.jw-cnt small{font-size:15px;color:var(--muted);margin-left:2px}
+.jrail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 18px 6px;scroll-padding:0 18px;scrollbar-width:none}
+.jrail::-webkit-scrollbar{display:none}
+.jw{flex:none;width:min(78%,300px);scroll-snap-align:start;text-align:left;display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:22px;position:relative;overflow:hidden;color:var(--ink);
+  background:radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--h2) 38%,transparent),transparent 62%),linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.07);transition:transform .15s ease}
+.jw:active{transform:scale(.985)}
+.jw.now{border-color:color-mix(in srgb,var(--h2) 70%,transparent);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 14px 34px -16px color-mix(in srgb,var(--h2) 90%,transparent)}
+.jw.done{opacity:.72}
+.jw-top{display:flex;justify-content:space-between;align-items:center}
+.jw-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.jw-pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:var(--muted)}
+.jw.now .jw-pill{background:color-mix(in srgb,var(--h2) 30%,transparent);border-color:color-mix(in srgb,var(--h2) 60%,transparent);color:#FFF4EA}
+.jw.done .jw-pill{background:rgba(123,211,137,.14);border-color:rgba(123,211,137,.3);color:#8FE09B}
+.jw-num{font-family:var(--f-display);font-weight:300;font-size:64px;line-height:.95;letter-spacing:-.05em;background:linear-gradient(180deg,var(--h1),var(--h2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:2px}
+.jw-nm{font-family:var(--f-display);font-size:22px;font-weight:400;letter-spacing:-.02em;line-height:1.15}
+.jw-dt{font-size:12.5px;color:var(--muted)}
+.jw-ln{font-size:13.5px;line-height:1.4;color:rgba(244,239,235,.86);min-height:38px}
+.jw-sk{display:flex;gap:4px}.jw-sk .skb{margin:0}
+.jw-dots{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:4px}
+.jd{display:flex;flex-direction:column;align-items:center;gap:3px}
+.jd i{width:100%;height:26px;border-radius:9px;background:linear-gradient(0deg,var(--h2) var(--f),rgba(255,255,255,.07) var(--f));border:1px solid rgba(255,255,255,.08)}
+.jd.mk i{border-color:color-mix(in srgb,var(--h1) 70%,transparent);border-style:dashed}
+.jd.is i{outline:2px solid var(--h1);outline-offset:1px}
+.jd em{font-style:normal;font-size:10px;color:var(--muted);font-weight:600}
+.jd.mk em{color:var(--h1)}
+.jw-ft{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:4px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07)}
+.jw-ft b{color:var(--h1);font-weight:400}
+.jbar{display:flex;gap:4px;padding:0 18px}
+.jbar i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.1)}
+.jbar i.past{background:var(--h2);opacity:.6}.jbar i.now{background:var(--h2)}
+.wk-nm{font-weight:300}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.card{background:#1A1513}.tabs{background:#211A17}}
 </style>
 </head>
@@ -887,7 +924,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.4';
+const BUILD='2026-11-20.5';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1281,6 +1318,37 @@ function suggestCard(n){
 const TARGETS=[['Minimum','s1',{R:7.5,L:7.5,W:6,S:6}],['Average','s2',{R:8,L:8,W:6.5,S:6.5}],['Maximum','s3',{R:8.5,L:8.5,W:7,S:7}]];
 const ovBand=o=>{const m=(o.R+o.L+o.W+o.S)/4;return Math.floor(m*2+0.5)/2;};
 const b1=x=>Number.isInteger(x)?x.toFixed(1):String(x);
+/* ---------- 7-week journey: one card per plan week, each with its own name, approach and colour ---------- */
+const WHUE=[['#F6D3A8','#E9A766'],['#F4B47A','#E07C3E'],['#F29A5B','#D4602A'],['#EE8448','#BF4B1F'],['#E66E3A','#A93B17'],['#D9592E','#8E2E12'],['#FFE2B8','#F6A13A']];
+const weekInfo=w=>WEEKS.find(x=>x.w===w)||{};
+function viewJourney(selW){
+  const nW=Math.ceil(DAYS/7),t=todayIdx(),cw=t<1?1:Math.min(nW,Math.ceil(t/7));
+  const cards=[];
+  for(let w=1;w<=nW;w++){
+    const a=(w-1)*7+1,z=Math.min(w*7,DAYS),I=weekInfo(w),[h1,h2]=WHUE[(w-1)%WHUE.length];
+    let tot=0,dn=0;for(let n=a;n<=z;n++){tot+=totalCount(n);dn+=doneCount(n);}
+    const wl=weekList(w),wt=weekDoc(w).t||{},gd=wl.filter(x=>wt[x.k]).length;
+    const st=t>z?'done':w===cw?(t<1?'soon':'now'):w===cw+1?'next':'later';
+    const pill={done:'Done',now:'This week',soon:`Starts ${short(dateOf(1))}`,next:'Next',later:`In ${Math.ceil((a-Math.max(t,1))/7)} wk`}[st];
+    const mk=MOCKDAYS.find(n=>n>=a&&n<=z);
+    const dots=[];for(let n=a;n<=z;n++){const f=frac(n),is=n===t;
+      dots.push(`<span class="jd ${MOCKS[n]?'mk':''} ${is?'is':''} ${n<t?'past':''}" title="Day ${n}"><i style="--f:${Math.round(f*100)}%"></i><em>${WD[(dateOf(n).getDay()+6)%7][0]}</em></span>`);}
+    cards.push(`<button type="button" class="jw ${st}" data-day="${st==='now'?Math.max(1,t):a}" style="--h1:${h1};--h2:${h2}" aria-label="Week ${w}${I.name?', '+esc(I.name):''}, ${short(dateOf(a))} to ${short(dateOf(z))}">
+      <span class="jw-top"><span class="jw-lbl">Week</span><span class="jw-pill">${pill}</span></span>
+      <span class="jw-num">${String(w).padStart(2,'0')}</span>
+      <span class="jw-nm">${esc(I.name||'Week '+w)}</span>
+      <span class="jw-dt">${short(dateOf(a))} – ${short(dateOf(z))} · Day ${a}–${z}</span>
+      ${I.line?`<span class="jw-ln">${esc(I.line)}</span>`:''}
+      ${(I.focus||[]).length?`<span class="jw-sk">${I.focus.map(k=>`<span class="skb sk-${k}">${k}</span>`).join('')}</span>`:''}
+      <span class="jw-dots">${dots.join('')}</span>
+      <span class="jw-ft"><span>${mk?`<b>◆</b> Mock · ${fmt(dateOf(mk))}`:z===DAYS?'Rest before the exam':'No mock'}</span><span class="num">${tot?`${dn}/${tot} tasks`:'Plan together'}${wl.length?` · ${gd}/${wl.length} goals`:''}</span></span>
+    </button>`);
+  }
+  return `<section class="card journey" aria-label="Seven-week plan"><div class="card-h"><div><h2>${nW} weeks to the exam</h2><span class="note">Each week has its own approach · swipe</span></div><span class="jw-cnt num">${Math.min(cw,nW)}<small>/${nW}</small></span></div>
+    <div class="jrail" id="jrail" data-cw="${cw}">${cards.join('')}</div>
+    <div class="jbar">${Array.from({length:nW},(_,i)=>`<i class="${i+1<cw?'past':i+1===cw?'now':''}" style="--h2:${WHUE[i%WHUE.length][1]}"></i>`).join('')}</div></section>`;
+}
+function scrollJourney(){const r=document.getElementById('jrail');if(!r||r.dataset.done)return;const c=r.children[Number(r.dataset.cw)-1];if(c)r.scrollLeft=c.offsetLeft-r.offsetLeft-4;r.dataset.done='1';}
 function viewGoals(){
   const ex=PLAN&&PLAN.exam?`Exam · ${short(parseD(PLAN.exam))}`:'';
   return `<section class="card goals" aria-label="Exam targets"><div class="gh"><h2>My IELTS targets</h2><span class="note">${ex}</span></div>
@@ -1291,7 +1359,7 @@ function viewGoals(){
 function viewToday(){
   const n=sel,d=dayDoc(n),t=d.t||{},list=listFor(n),c=doneCount(n),tot=list.length,isToday=n===todayIdx();
   const w=Math.ceil(n/7),wt=weekDoc(w).t||{},WL=weekList(w),wd=WL.filter(x=>wt[x.k]).length;
-  return `<div class="wrap">${viewGoals()}
+  return `<div class="wrap">${viewGoals()}${viewJourney(w)}
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
@@ -1303,7 +1371,7 @@ function viewToday(){
   ${isToday&&MOCKS[n]?topCard('Before tonight\'s mock','Your most repeated mistakes'):''}
   ${n<=todayIdx()?surveyCard(n):''}
   <section class="card">
-    <div class="card-h"><div><h2>Week ${w}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}</span></div><button class="btn ${editWeek?'primary edit-done':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
+    <div class="card-h"><div><h2>Week ${w}${weekInfo(w).name?` · <span class="wk-nm">${esc(weekInfo(w).name)}</span>`:''}</h2><span class="note">${short(dateOf((w-1)*7+1))} – ${short(dateOf(Math.min(w*7,DAYS)))}${weekInfo(w).line?' · '+esc(weekInfo(w).line):''}</span></div><button class="btn ${editWeek?'primary edit-done':''}" data-edit="week">${editWeek?'Done':'Edit list'}</button></div>
     <div class="pline"><span class="label">Weekly</span><div class="pbar"><i style="width:${WL.length?wd/WL.length*100:0}%"></i></div><b class="num">${wd}/${WL.length}</b></div>
     ${editWeek?editPanel(WL,'week'):!WL.length?`<div class="empty"><b>No weekly tasks yet</b><span class="note">Add your own goals for the week. Choose "Every week" to repeat them each week.</span><button class="btn primary" data-edit="week">+ Add weekly tasks</button></div>`:`<ul class="tasks">${WL.map(x=>`<li class="task ${wt[x.k]?'done':''}"><input type="checkbox" id="wk-${x.k}" data-wtask="${x.k}" ${wt[x.k]?'checked':''}><label class="tx" for="wk-${x.k}"><b>${skb(x.sk)}${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
   </section></div>`;
@@ -2041,13 +2109,13 @@ function sayText(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u
 
 
 /* ---------- Cambridge books: passage vocabulary + keyword tables (books/*.json) ---------- */
-let dMode='pack',BIDX=null,BOOKS=[],RTASKS=[],WTASKS=[];
+let dMode='pack',BIDX=null,BOOKS=[],RTASKS=[],WTASKS=[],WEEKS=[];
 const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
   if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
 async function loadBooks(){
-  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];WTASKS=j.wtasks||[];}}catch(e){}
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];WTASKS=j.wtasks||[];WEEKS=j.weeks||[];}}catch(e){}
   if(!BIDX)BIDX=[];
   if(PLAN&&!WZ&&(tab==='today'||tab==='books'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
@@ -2472,8 +2540,10 @@ function renderView(){
   const v=document.getElementById('view');
   if(WZ||!PLAN){if(!WZ)initWizard();v.innerHTML=viewWizard();updateBack();return;}
   v.innerHTML=tab==='today'?viewToday():tab==='prog'?viewProgress():viewPractice();
+  const jr=document.getElementById('jrail');if(jr){if(JR!=null)jr.scrollLeft=JR;else scrollJourney();}
   updateBack();
 }
+let JR=null;document.addEventListener('scroll',e=>{if(e.target&&e.target.id==='jrail')JR=e.target.scrollLeft;},true);
 /* What the Telegram back arrow should close, newest layer first. */
 function backTarget(){
   if(document.querySelector('.sheet'))return 'sheet';

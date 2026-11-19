@@ -27,5 +27,70 @@
  ],
  "books": [],
  "tasks": [],
- "wtasks": []
+ "wtasks": [],
+ "weeks": [
+  {
+   "w": 1,
+   "name": "Baseline",
+   "line": "Learn every format, find your starting point",
+   "focus": [
+    "L",
+    "R",
+    "W",
+    "S"
+   ]
+  },
+  {
+   "w": 2,
+   "name": "Foundations",
+   "line": "Question types, Task 1 + Task 2 structures, core grammar",
+   "focus": [
+    "R",
+    "W",
+    "G"
+   ]
+  },
+  {
+   "w": 3,
+   "name": "Speed",
+   "line": "Timed sections: Reading in 60, Listening in one play",
+   "focus": [
+    "L",
+    "R"
+   ]
+  },
+  {
+   "w": 4,
+   "name": "Band 7 language",
+   "line": "Collocations, linking, paraphrase for Writing and Speaking",
+   "focus": [
+    "W",
+    "S",
+    "V"
+   ]
+  },
+  {
+   "w": 5,
+   "name": "Weak spots",
+   "line": "Attack the most repeated mistakes from mocks 1–4",
+   "focus": []
+  },
+  {
+   "w": 6,
+   "name": "Simulation",
+   "line": "Exam conditions every day, in the 09:30 slot",
+   "focus": [
+    "L",
+    "R",
+    "W",
+    "S"
+   ]
+  },
+  {
+   "w": 7,
+   "name": "Peak",
+   "line": "Light review, sleep, exam-day plan. Exam Sun 10 Jan",
+   "focus": []
+  }
+ ]
 }
