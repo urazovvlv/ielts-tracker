@@ -942,6 +942,41 @@ option{background:#1A1513;color:#F4EFEB}
 .wk-link{background:var(--glass)!important;border:1px solid var(--glass-b)!important;border-radius:20px!important}
 .tabs{gap:8px}
 .tabs button{width:52px;height:52px}
+
+/* core / extra groups */
+.tgrp{display:flex;align-items:baseline;gap:8px;margin:2px 0 -4px}
+.tg-h{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F6A13A}
+.tg-h.ex{color:var(--muted)}
+.task.core{border-color:rgba(238,154,98,.28);background:linear-gradient(90deg,rgba(226,83,27,.08),rgba(255,255,255,.03))}
+.task.core.done{background:transparent}
+.pbar.core i{background:linear-gradient(90deg,#7BD389,#B6E58B)}
+/* question types + writing scores */
+.qt-weak{font-size:13.5px;padding:8px 12px;border-radius:12px;background:rgba(255,126,110,.1);border:1px solid rgba(255,126,110,.25)}
+.qtl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.qt{display:grid;grid-template-columns:1fr auto;gap:3px 10px;align-items:center}
+.qt-n{font-size:14px}
+.qt-v{font-family:var(--f-display);font-weight:400;font-size:17px}
+.qt small{grid-column:1/-1;font-size:11.5px;color:var(--muted)}
+.qt-b{grid-column:1/-1;display:block;height:6px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}
+.qt-b i{display:block;height:100%;border-radius:3px;background:#9A9089}
+.qt.good .qt-b i{background:linear-gradient(90deg,#4FAE62,#7BD389)}.qt.good .qt-v{color:#8FE09B}
+.qt.mid .qt-b i{background:linear-gradient(90deg,#D99A2B,#F4B04E)}.qt.mid .qt-v{color:#F4B04E}
+.qt.low .qt-b i{background:linear-gradient(90deg,#C8442F,#FF7E6E)}.qt.low .qt-v{color:#FF8E80}
+.qt.none .qt-n{color:var(--muted)}
+.ws-last{font-family:var(--f-display);font-weight:300;font-size:34px;letter-spacing:-.03em;display:flex;flex-direction:column;align-items:flex-end;line-height:1}
+.ws-last small{font-size:11px;color:var(--muted);font-family:var(--f-body)}
+.ws-av{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ws-av>div{display:flex;flex-direction:column;gap:5px;padding:10px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);position:relative}
+.ws-av span{font-size:11.5px;color:var(--muted);font-weight:600}
+.ws-av b{font-family:var(--f-display);font-weight:300;font-size:24px;letter-spacing:-.03em;line-height:1}
+.ws-av .qt-b i{background:linear-gradient(90deg,#E2531B,#F6A13A)}
+.ws-av .weak{border-color:rgba(255,126,110,.45);background:rgba(255,126,110,.08)}
+.ws-av .weak .qt-b i{background:linear-gradient(90deg,#C8442F,#FF7E6E)}
+.ws-av em{font-style:normal;font-size:10px;font-weight:700;color:#FF8E80;text-transform:uppercase;letter-spacing:.06em}
+.ws-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.ws-grid label{display:flex;flex-direction:column;gap:4px}
+.ws-grid select{width:100%;min-height:44px;border-radius:12px;padding:0 6px}
+#qtT,#wsTy{min-height:44px;border-radius:12px;padding:0 10px;width:100%}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.card{background:#1A1513}.tabs{background:#211A17}}
 </style>
 </head>
@@ -956,7 +991,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.7';
+const BUILD='2026-11-20.8';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1074,7 +1109,7 @@ const CUES=[
 ];
 
 /* ---------- state ---------- */
-let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}},arch:{}};
+let S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],qtr:[],wsc:[],listTs:{mist:0,ess:0,qtr:0,wsc:0},surv:{},hb:{c:{}},arch:{}};
 let DAILY=[];
 let tab=/^#survey/.test(location.hash)?'today':/^#prog/.test(location.hash)?'prog':'today',sel=clampDay(todayIdx()),editDay=false,editScope='day',editWeek=false,editWScope='week',resetArm=null,syncState=CLOUD?'busy':'local';
 let review=null,wordQuery='',timer={phase:'idle',end:0,dur:0,cue:Math.floor(Math.random()*CUES.length)},wipeArm=false,restoreOpen=false;
@@ -1193,7 +1228,7 @@ let LOADOK=false;
 async function load(){
   const local=lsAll();let cloud={},cloudOk=false;
   if(CLOUD){try{cloud=await cloudAll();cloudOk=true;}catch(e){setSync('err');}}
-  const keys=new Set([...Object.keys(local),...Object.keys(cloud)].filter(k=>!/^(words|mist|ess)_/.test(k)));
+  const keys=new Set([...Object.keys(local),...Object.keys(cloud)].filter(k=>!/^(words|mist|ess|qtr|wsc|amist|bmist|bess|bwords)_/.test(k)));
   for(const k of keys){
     let a=null,b=null;try{a=JSON.parse(cloud[k]||'null');}catch(e){}try{b=JSON.parse(local[k]||'null');}catch(e){}
     const pick=(b&&(!a||(b._ts||0)>(a._ts||0)))?b:a;if(!pick||typeof pick!=='object')continue;
@@ -1204,7 +1239,7 @@ async function load(){
   const wc=readWords(cloud),wl=readWords(local);
   const w=(wl&&(!wc||wl.ts>wc.ts))?wl:wc;
   if(w){S.words=w.list;S.wordsTs=w.ts;wordsN=w.n;if(cloudOk&&w===wl)saveWords();}
-  for(const name of ['mist','ess']){const c=readList(name,cloud),l=readList(name,local),x=(l&&(!c||l.ts>c.ts))?l:c;
+  for(const name of ['mist','ess','qtr','wsc']){const c=readList(name,cloud),l=readList(name,local),x=(l&&(!c||l.ts>c.ts))?l:c;
     if(x){S[name]=x.list;S.listTs[name]=x.ts;listN[name]=x.n;if(cloudOk&&x===l)saveList(name);}}
   if(CLOUD&&cloudOk&&!q.size)setSync('ok');
   LOADOK=!CLOUD||cloudOk;
@@ -1257,7 +1292,10 @@ const weekList=w=>applyMods(applyMods(WEEKTASKS.concat(WTASKS.filter(t=>(t.weeks
 const doneCount=n=>{const t=dayDoc(n).t||{};return listFor(n).filter(x=>t[x.k]).length;};
 const totalCount=n=>listFor(n).length;
 const frac=n=>{const t=totalCount(n);return t?doneCount(n)/t:0;};
-const dayOk=n=>{const t=totalCount(n);return t>0&&doneCount(n)===t;};
+/* A day counts as done when every core task is ticked (or, with no core tasks, every task). */
+const coreOf=n=>listFor(n).filter(x=>x.core);
+const coreDone=n=>{const t=dayDoc(n).t||{};return coreOf(n).filter(x=>t[x.k]).length;};
+const dayOk=n=>{const c=coreOf(n);if(c.length)return coreDone(n)===c.length;const t=totalCount(n);return t>0&&doneCount(n)===t;};
 const num=v=>Number(v)||0;
 function overall(m){
   const L=toBand(m.L,LB),R=toBand(m.R,RB);
@@ -1422,9 +1460,12 @@ function viewToday(){
   <section class="card">
     <div class="card-h"><div class="dayline"><div class="badge-day">Day<b class="num">${n}</b></div><div><h2>${isToday?'Today':fmt(dateOf(n))}</h2><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="note">${isToday?fmt(dateOf(n))+' · ':''}Week ${w}</span><span class="tag">${phaseOf(n).n}</span></div></div></div>
     <div class="daynav"><button class="btn icon" data-nav="-1" aria-label="Previous day">‹</button><button class="btn icon" data-nav="1" aria-label="Next day">›</button></div></div>
-    <div class="pline"><span class="label">Checklist</span><div class="pbar"><i style="width:${tot?c/tot*100:0}%"></i></div><b class="num">${c}/${tot}</b></div>
+    ${(()=>{const cl=coreOf(n),cd=coreDone(n);return cl.length?`<div class="pline"><span class="label">Core</span><div class="pbar core"><i style="width:${cd/cl.length*100}%"></i></div><b class="num">${cd}/${cl.length}</b></div>`:'';})()}
+    <div class="pline"><span class="label">${coreOf(n).length?'All':'Checklist'}</span><div class="pbar"><i style="width:${tot?c/tot*100:0}%"></i></div><b class="num">${c}/${tot}</b></div>
     ${editDay?'':balanceBlock(n)}
-    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:`<ul class="tasks">${list.map(x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${skb(x.sk)}${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`).join('')}</ul>`}
+    ${editDay?editPanel(list,'day'):!list.length?`<div class="empty"><b>No tasks for this day yet</b><span class="note">Add your own tasks. Choose "Every day" to use the same list each day.</span><button class="btn primary" data-edit="day">+ Add tasks</button></div>`:(()=>{const li=x=>`<li class="task ${t[x.k]?'done':''} ${x.main?'main':''} ${x.core?'core':''}"><input type="checkbox" id="tk-${x.k}" data-task="${x.k}" ${t[x.k]?'checked':''}><label class="tx" for="tk-${x.k}"><b>${skb(x.sk)}${esc(x.label)}</b>${x.sub?`<small>${esc(x.sub)}</small>`:''}</label></li>`;
+      const co=list.filter(x=>x.core),ex=list.filter(x=>!x.core);
+      return co.length?`<div class="tgrp"><span class="tg-h">Core</span><span class="note">Tick these and the day counts</span></div><ul class="tasks">${co.map(li).join('')}</ul>${ex.length?`<div class="tgrp"><span class="tg-h ex">Extra</span><span class="note">If you have time</span></div><ul class="tasks">${ex.map(li).join('')}</ul>`:''}`:`<ul class="tasks">${list.map(li).join('')}</ul>`;})()}
     <div style="display:flex;gap:8px">${isToday?'':'<button class="btn" data-nav="0">Back to today</button>'}<button class="btn ${editDay?'primary edit-done':''}" data-edit="day" style="margin-left:auto">${editDay?'Done':'Edit list'}</button></div>
   </section>
   ${isToday&&MOCKS[n]?topCard('Before tonight\'s mock','Your most repeated mistakes'):''}
@@ -1455,6 +1496,8 @@ function viewProgress(){
     ${cb.m?`<div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
     <div class="band-bar"><i style="width:${pct}%"></i></div>`:`<div class="band-now"><b>0.0</b><span>No mock yet</span></div><div class="band-bar"><i style="width:0%"></i></div>`}
     ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:`<p class="note" style="margin:0">${MOCKDAYS.length?`Current band comes from the first full mock · Day ${MOCKDAYS[0]}, ${fmt(dateOf(MOCKDAYS[0]))}`:'Log a full mock below to see your band.'}</p>`}`;})()}</section>
+  ${qtCard()}
+  ${wsCard()}
   ${studyCard()}
   ${mockSections()}
   <section class="card"><div class="card-h"><h2>Progress</h2></div>
@@ -1476,6 +1519,60 @@ function hoursChart(H,t){
   let xl='';for(let n=1;n<=DAYS;n+=Math.max(7,Math.round(DAYS/4/7)*7))xl+=`<text x="${l+(n-1)*bw+bw/2}" y="${Ht-5}" text-anchor="middle" font-size="9" fill="var(--muted)">D${n}</text>`;
   const ty=y(3.5);
   return `<svg viewBox="0 0 ${W} ${Ht}" role="img" aria-label="Study hours per day">${g}${bars}<line x1="${l}" x2="${W-r}" y1="${ty}" y2="${ty}" stroke="var(--gold)" stroke-dasharray="4 3"/><text x="${W-r}" y="${ty-4}" text-anchor="end" font-size="9.5" font-weight="700" fill="var(--gold)">Target 3.5 h</text>${xl}${H.some(Boolean)?'':`<text x="${W/2}" y="${y(ymax/2)}" text-anchor="middle" font-size="11" fill="var(--muted)">Log your hours on the Today tab</text>`}</svg>`;
+}
+
+/* ---------- Question-type results (Reading + Listening) ---------- */
+const QT={R:[['tfng','True / False / Not Given'],['ynng','Yes / No / Not Given'],['head','Matching headings'],['minfo','Matching information'],['mfeat','Matching features'],['mend','Matching sentence endings'],['mcq','Multiple choice'],['sent','Sentence completion'],['summ','Summary / note / table / flow-chart'],['label','Diagram / map labelling'],['short','Short-answer questions']],
+  L:[['form','Form / note / table completion'],['mcq','Multiple choice'],['match','Matching'],['map','Map / plan / diagram labelling'],['sent','Sentence / summary / flow-chart'],['short','Short-answer questions']]};
+let qtS='R',qtT='';
+const qtName=(sk,t)=>((QT[sk]||[]).find(x=>x[0]===t)||[t,t])[1];
+const accCls=p=>p==null?'none':p>=80?'good':p>=60?'mid':'low';
+function qtCard(){
+  const E=S.qtr.filter(x=>x.s===qtS),rows=QT[qtS].map(([k,l])=>{const e=E.filter(x=>x.t===k),c=e.reduce((a,x)=>a+x.c,0),n=e.reduce((a,x)=>a+x.n,0),p=n?Math.round(c/n*100):null;return {k,l,c,n,p,tries:e.length};});
+  const tried=rows.filter(r=>r.p!=null).sort((a,b)=>a.p-b.p),weak=tried.length>1?tried[0]:null;
+  const recent=S.qtr.slice().sort((a,b)=>b.ts-a.ts).slice(0,4);
+  return `<section class="card qtc"><div class="card-h"><div><h2>Question types</h2><span class="note">Accuracy per type · red &lt;60% · amber 60–79% · green 80%+</span></div></div>
+  <div class="seg">${[['R','Reading'],['L','Listening']].map(([k,l])=>`<button type="button" data-qts="${k}" class="${qtS===k?'on':''}">${l} · ${S.qtr.filter(x=>x.s===k).length}</button>`).join('')}</div>
+  ${weak?`<div class="qt-weak">Weakest: <b>${esc(weak.l)}</b> · ${weak.p}%</div>`:''}
+  <ul class="qtl">${rows.map(r=>`<li class="qt ${accCls(r.p)}"><span class="qt-n">${esc(r.l)}</span><span class="qt-v num">${r.p==null?'—':r.p+'%'}</span><i class="qt-b"><i style="width:${r.p||0}%"></i></i><small>${r.n?`${r.c}/${r.n} correct · ${r.tries} ${r.tries>1?'tries':'try'}`:'Not tried yet'}</small></li>`).join('')}</ul>
+  <form class="addrow" data-addqt="1"><span class="label">Add a result</span>
+    <select id="qtT" aria-label="Question type"><option value="">Question type…</option>${QT[qtS].map(([k,l])=>`<option value="${k}" ${qtT===k?'selected':''}>${esc(l)}</option>`).join('')}</select>
+    <div class="mrow2"><label class="label" for="qtC">Correct</label><input id="qtC" class="sc" type="number" inputmode="numeric" min="0" max="60"><label class="label" for="qtN">of</label><input id="qtN" class="sc" type="number" inputmode="numeric" min="1" max="60"></div>
+    <button class="btn primary" type="submit">Add result</button></form>
+  ${recent.length?`<ul class="wlist">${recent.map(x=>`<li class="witem"><div class="tx"><b><span class="skb sk-${x.s}">${x.s}</span> ${esc(qtName(x.s,x.t))}</b><small>${x.c}/${x.n} · ${Math.round(x.c/x.n*100)}% · Day ${x.d}</small></div><button class="rm" data-qtdel="${x.ts}" aria-label="Delete">×</button></li>`).join('')}</ul>`:''}
+  </section>`;
+}
+
+/* ---------- Writing scores (4 criteria) ---------- */
+const WTY={1:[['line','Line graph'],['bar','Bar chart'],['pie','Pie charts'],['table','Table'],['process','Process'],['map','Map'],['mixed','Mixed charts']],
+  2:[['opinion','Opinion'],['discuss','Discussion'],['advdis','Adv / disadv'],['problem','Problem / solution'],['two','Two-part'],['posneg','Positive / negative']]};
+const WCR=[['tr','TR/TA','Task Response / Achievement'],['cc','CC','Coherence and Cohesion'],['lr','LR','Lexical Resource'],['gra','GRA','Grammatical Range and Accuracy']];
+let wsTask=1;
+const wsOverall=x=>Math.floor((x.tr+x.cc+x.lr+x.gra)/4*2)/2;
+function wsChart(E){
+  if(E.length<2)return '';
+  const W=340,H=130,l=24,r=8,tp=10,b=18,x=i=>l+(W-l-r)*(E.length===1?0:i/(E.length-1)),y=v=>tp+(H-tp-b)*(1-(v-4)/5);
+  let g='';for(let v=4;v<=9;v++)g+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${l-5}" y="${y(v)+3.5}" text-anchor="end" font-size="9" fill="var(--muted)">${v}</text>`;
+  const col={tr:'#F6A13A',cc:'#7BD389',lr:'#8FB0FF',gra:'#FF7E6E'};
+  const lines=WCR.map(([k])=>`<polyline fill="none" stroke="${col[k]}" stroke-width="2" stroke-linejoin="round" points="${E.map((e,i)=>`${x(i)},${y(e[k])}`).join(' ')}"/>`).join('');
+  return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Writing criteria over time">${g}${lines}${E.map((e,i)=>`<text x="${x(i)}" y="${H-4}" text-anchor="middle" font-size="9" fill="var(--muted)">${e.task===1?'T1':'T2'}</text>`).join('')}</svg>
+  <div class="legend">${WCR.map(([k,a])=>`<span><i style="background:${col[k]};height:4px;vertical-align:3px"></i>${a}</span>`).join('')}</div></div>`;
+}
+function wsCard(){
+  const E=S.wsc.slice().sort((a,b)=>a.ts-b.ts),avg=k=>E.length?E.reduce((a,x)=>a+x[k],0)/E.length:null;
+  const av=WCR.map(([k,a,f])=>({k,a,f,v:avg(k)})),weak=E.length?av.slice().sort((p,q)=>p.v-q.v)[0]:null;
+  const last=E[E.length-1];
+  const opts=`${[4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9].map(v=>`<option value="${v}" ${v===6?'selected':''}>${v.toFixed(1)}</option>`).join('')}`;
+  return `<section class="card wsc"><div class="card-h"><div><h2>Writing scores</h2><span class="note">Claude's marks on the 4 criteria</span></div>${last?`<span class="ws-last num">${wsOverall(last).toFixed(1)}<small>last</small></span>`:''}</div>
+  ${E.length?`<div class="ws-av">${av.map(c=>`<div class="${weak&&c.k===weak.k?'weak':''}"><span>${c.a}</span><b class="num">${c.v.toFixed(1)}</b><i class="qt-b"><i style="width:${(c.v-4)/5*100}%"></i></i>${weak&&c.k===weak.k?'<em>Weakest</em>':''}</div>`).join('')}</div>
+    ${weak?`<p class="note" style="margin:0">Lowest on average: <b>${weak.f}</b>. Focus the rewrite on it.</p>`:''}${wsChart(E)}`:`<p class="note" style="margin:0">After each report or essay, type in the 4 marks I give you. The weakest criterion shows here.</p>`}
+  <form class="addrow" data-addws="1"><span class="label">Add a score</span>
+    <div class="seg">${[1,2].map(k=>`<button type="button" data-wst="${k}" class="${wsTask===k?'on':''}">Task ${k}</button>`).join('')}</div>
+    <select id="wsTy" aria-label="Question type">${WTY[wsTask].map(([k,l])=>`<option value="${k}">${esc(l)}</option>`).join('')}</select>
+    <div class="ws-grid">${WCR.map(([k,a])=>`<label><span class="label">${wsTask===1&&k==='tr'?'TA':a}</span><select id="ws-${k}">${opts}</select></label>`).join('')}</div>
+    <button class="btn primary" type="submit">Add score</button></form>
+  ${E.length?`<ul class="wlist">${E.slice().reverse().slice(0,6).map(x=>`<li class="witem"><div class="tx"><b><span class="skb sk-W">T${x.task}</span> ${esc(((WTY[x.task]||[]).find(y=>y[0]===x.ty)||['',x.ty])[1])} · ${wsOverall(x).toFixed(1)}</b><small>${WCR.map(([k,a])=>`${x.task===1&&k==='tr'?'TA':a} ${x[k]}`).join(' · ')} · Day ${x.d}</small></div><button class="rm" data-wsdel="${x.ts}" aria-label="Delete">×</button></li>`).join('')}</ul>`:''}
+  </section>`;
 }
 
 /* ---------- Mocks ---------- */
@@ -1743,7 +1840,7 @@ async function fullWipe(){
   q.clear();for(const k in timers)clearTimeout(timers[k]);
   while(busy)await sleep(100);
   for(const k of Object.keys(lsAll()))lsSet(k,null);
-  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],listTs:{mist:0,ess:0},surv:{},hb:{c:{}},arch:{}};wordsN=0;listN.mist=0;listN.ess=0;PLAN=null;
+  S={days:{},weeks:{},mocks:{},cfg:{day:{},week:{}},words:[],wordsTs:0,settings:{},mist:[],ess:[],qtr:[],wsc:[],listTs:{mist:0,ess:0,qtr:0,wsc:0},surv:{},hb:{c:{}},arch:{}};wordsN=0;listN.mist=0;listN.ess=0;listN.qtr=0;listN.wsc=0;PLAN=null;
   if(CLOUD){
     let keys=await cs('getKeys');
     for(let i=0;i<keys.length;i+=40)await cs('removeItems',keys.slice(i,i+40));
@@ -2231,7 +2328,7 @@ const SKN={T:'Tests',L:'Listening',R:'Reading',W:'Writing',S:'Speaking',V:'Vocab
 function bookTasks(n){
   const out=[];
   for(const b of BOOKS)for(const d of (b.days||[]))if(d.day===n)out.push({k:'bk-'+d.f,label:`${b.title} · ${d.label}`,sub:'Books tab',sk:b.skill});
-  for(const t of RTASKS)if((t.days||[]).includes(n))out.push({k:t.k,label:t.label,sub:t.sub||'',sk:t.sk||''});
+  for(const t of RTASKS)if((t.days||[]).includes(n))out.push({k:t.k,label:t.label,sub:t.sub||'',sk:t.sk||'',core:!!t.core});
   return out;
 }
 const kNorm=v=>String(v||'').toLowerCase().replace(/[’']/g,"'").replace(/[.,;:!?"]+$/g,'').replace(/\s+/g,' ').trim();
@@ -2272,7 +2369,7 @@ function viewSkillBooks(){
 }
 
 /* ---------- Lists stored in chunks (mistakes, essays), same scheme as words ---------- */
-const listN={mist:0,ess:0,amist:0,bmist:0,bess:0,bwords:0};
+const listN={mist:0,ess:0,amist:0,bmist:0,bess:0,bwords:0,qtr:0,wsc:0};
 function saveList(name){
   S.listTs[name]=Date.now();const chunks=[];let cur=[],len=2;
   for(const it of S[name]){const s=JSON.stringify(it);if(len+s.length+1>3600&&cur.length){chunks.push(cur);cur=[];len=2;}cur.push(it);len+=s.length+1;}
@@ -2730,6 +2827,10 @@ document.addEventListener('click',async e=>{
   if((el=g('[data-msk]'))){mAdd.sk=el.dataset.msk;mAdd.ty='';haptic('sel');renderView();return;}
   if((el=g('[data-mty]'))){mAdd.ty=mAdd.ty===el.dataset.mty?'':el.dataset.mty;haptic('sel');
     document.querySelectorAll('[data-mty]').forEach(b=>b.classList.toggle('on',b.dataset.mty===mAdd.ty));return;}
+  if((el=g('[data-qts]'))){qtS=el.dataset.qts;qtT='';haptic('sel');renderView();return;}
+  if((el=g('[data-qtdel]'))){S.qtr=S.qtr.filter(x=>String(x.ts)!==el.dataset.qtdel);saveList('qtr');haptic('light');renderView();return;}
+  if((el=g('[data-wst]'))){wsTask=Number(el.dataset.wst);haptic('sel');renderView();return;}
+  if((el=g('[data-wsdel]'))){S.wsc=S.wsc.filter(x=>String(x.ts)!==el.dataset.wsdel);saveList('wsc');haptic('light');renderView();return;}
   if((el=g('[data-mdel]'))){S.mist=S.mist.filter(x=>x.id!==el.dataset.mdel);saveList('mist');haptic('light');renderView();return;}
   if((el=g('[data-sv]'))){const a=el.dataset.sv;if(a==='cancel'){svOpen=false;svDraft=null;}else{svOpen=true;svDraft=null;}haptic('sel');renderView();
     if(svOpen){const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});}return;}
@@ -2791,7 +2892,7 @@ document.addEventListener('change',e=>{
   if(e.target.id==='mSrc'){mAdd.src=Number(e.target.value);return;}
   const tk=e.target.dataset.task;
   if(tk){setDay(sel,{t:Object.assign({},dayDoc(sel).t,{[tk]:e.target.checked})});const c=doneCount(sel),tot=totalCount(sel);
-    if(e.target.checked){haptic(c===tot?'ok':'light');if(c===tot)toast(`Day ${sel} complete`);}renderHeader();renderView();return;}
+    if(e.target.checked){const cl=coreOf(sel).length,cd=coreDone(sel);const coreJust=cl&&cd===cl&&coreOf(sel).some(x=>x.k===tk);haptic(c===tot||coreJust?'ok':'light');if(c===tot)toast(`Day ${sel} complete`);else if(coreJust)toast(`Core done · Day ${sel} counts`);}renderHeader();renderView();return;}
   const wt=e.target.dataset.wtask;
   if(wt){const w=WSEL(),k='w'+w;S.weeks[k]=Object.assign({},weekDoc(w),{t:Object.assign({},weekDoc(w).t,{[wt]:e.target.checked})});touch(k);if(e.target.checked)haptic('light');renderHeader();renderView();return;}
 });
@@ -2832,6 +2933,11 @@ document.addEventListener('submit',e=>{
   if(f.dataset.svform){svReadForm();const n=Number(f.dataset.svform),d=svDraft;if(d.h===''){toast('Enter your study hours');return;}
     setSurv(n,{h:Math.max(0,Math.min(16,Number(d.h)||0)),w:Math.max(0,Math.min(500,Math.round(Number(d.w)||0))),sk:d.sk||'',r:d.r||0,good:d.good.trim(),bad:d.bad.trim(),tmr:d.tmr.trim(),dis:d.dis,at:Date.now()});
     svOpen=false;svDraft=null;haptic('ok');toast('Survey saved');renderView();const c=document.getElementById('survey');if(c)c.scrollIntoView({block:'start'});return;}
+  if(f.dataset.addqt){const t=document.getElementById('qtT').value,c=Number(document.getElementById('qtC').value),n=Number(document.getElementById('qtN').value);
+    if(!t){toast('Choose the question type');return;}if(!n||n<1||!(c>=0)||c>n){toast('Check the numbers: correct ≤ total');return;}
+    S.qtr.push({s:qtS,t,c,n,d:Math.max(1,Math.min(todayIdx(),DAYS)),ts:Date.now()});qtT=t;saveList('qtr');haptic('ok');toast(`${qtName(qtS,t)}: ${Math.round(c/n*100)}%`);renderView();return;}
+  if(f.dataset.addws){const v=k=>Number(document.getElementById('ws-'+k).value);const x={task:wsTask,ty:document.getElementById('wsTy').value,tr:v('tr'),cc:v('cc'),lr:v('lr'),gra:v('gra'),d:Math.max(1,Math.min(todayIdx(),DAYS)),ts:Date.now()};
+    S.wsc.push(x);saveList('wsc');haptic('ok');toast(`Task ${x.task}: ${wsOverall(x).toFixed(1)}`);renderView();return;}
   if(f.dataset.addmist){if(!mAdd.ty){toast('Choose the mistake type');return;}
     const n=Math.max(1,Math.min(40,Number(document.getElementById('mN').value)||1)),note=document.getElementById('mNote').value.trim();
     const q=(document.getElementById('mQ')||{}).value||'';
