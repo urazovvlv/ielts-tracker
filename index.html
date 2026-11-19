@@ -887,7 +887,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.3';
+const BUILD='2026-11-20.4';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -938,7 +938,8 @@ function buildSchedule(p){
   /* First full mock at the end of week 1 (day 7). Up to 10 Nov 2026 mocks ran every 3–4 days (kept, so logged scores stay);
      from 11 Nov 2026 (and from day 8 in newer plans) one full mock every Sunday, the last one at least 4 days before the exam. */
   let days=[Math.min(7,N)];
-  if(p.start>=RS2.to){days=[];for(let n=8;n<=N-3;n++)if(dateOf(n).getDay()===0)days.push(n);} /* 20 Nov plan: first mock Sun 29 Nov (Day 10), then every Sunday */
+  if(p.start>=RS3.to){days=[];for(let n=7;n<=N-3;n+=7)days.push(n);} /* 22 Nov plan: mock on the last day of each plan week (Saturday), none on the eve of the exam */
+  else if(p.start>=RS2.to){days=[];for(let n=8;n<=N-3;n++)if(dateOf(n).getDay()===0)days.push(n);} /* 20 Nov plan: first mock Sun 29 Nov (Day 10), then every Sunday */
   else{
   let d=days[0],step=3;
   while(d+step<=N-4){d+=step;days.push(d);step=step===3?4:3;}
