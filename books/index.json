@@ -26,13 +26,582 @@
   }
  ],
  "books": [],
- "tasks": [],
- "wtasks": [],
+ "tasks": [
+  {
+   "k": "r-learn",
+   "days": [
+    1
+   ],
+   "sk": "R",
+   "label": "Reading · learn: True / False / Not Given + Yes / No / Not Given",
+   "sub": "Rules: TFNG = facts in the text · YNNG = the writer's views · NG = the text says nothing about it · Improve Your Skills: Reading Unit 1, TFNG part (p. 6–13) · Unit 8, YNNG part (p. 62–69): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    1
+   ],
+   "sk": "R",
+   "label": "Reading · practise: True / False / Not Given + Yes / No / Not Given",
+   "sub": "TFNG book: Exercises 1–20 · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Form / note / table completion (Part 1)",
+   "sub": "Rules: Read the form first and predict each gap · letters, numbers, plurals · the speaker often corrects himself · Listening Strategies Unit 1 (the HTML page): spelling, numbers, addresses, times"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Form / note / table completion (Part 1) · 80 Tests 11, 13, 14",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Line graph + Band 9 sample",
+   "sub": "Writing 7.5 Day 1, Task 1 part (p. 16–25) · Task 1 Handbook: what Task 1 is (p. 3–5) + change graphs (p. 6–13) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Opinion (agree / disagree) + Band 9 sample",
+   "sub": "Writing 7.5 Day 1, Task 2 part (p. 16–25) · Task 2 Handbook: what Task 2 is (p. 3–5) + position first (p. 6–8) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    1
+   ],
+   "sk": "W",
+   "label": "Writing: write a line graph report (20 min) + a opinion essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    1
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Exam format, the 4 criteria, the 12 rules for Band 7–8",
+   "sub": "Speaking 7.5: exam format + criteria (p. 5–11) · what is allowed (asking to repeat, short pauses) and what loses points (memorised answers, one-word answers, going off topic)"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    1
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 5.5 / 6.5 / 7.5 answers to the same question (p. 5–11): read aloud, note what changed · send the transcript to Claude"
+  },
+  {
+   "k": "r-learn",
+   "days": [
+    2
+   ],
+   "sk": "R",
+   "label": "Reading · learn: Matching headings",
+   "sub": "Rules: Read the headings first · main idea of each paragraph, not one word · cross out used headings · Improve Your Skills: Reading Unit 4, headings part (p. 30–37): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    2
+   ],
+   "sk": "R",
+   "label": "Reading · practise: Matching headings",
+   "sub": "Improve Your Skills: Reading Unit 1, headings part (p. 6–13) · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Multiple choice",
+   "sub": "Rules: Underline the key words in the question, not the options · all options are usually mentioned · wait for the final answer"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    2
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Multiple choice · 80 Tests 41, 50, 54",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Bar chart + Band 9 sample",
+   "sub": "Writing 7.5 Day 2, Task 1 part (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Discussion (both views + opinion) + Band 9 sample",
+   "sub": "Writing 7.5 Day 2, Task 2 part (p. 26–35) · Task 2 Handbook: domino paragraph (p. 9–11) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    2
+   ],
+   "sk": "W",
+   "label": "Writing: write a bar chart report (20 min) + a discussion essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    2
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 1: rules, answer length, what to say and what not to say",
+   "sub": "Speaking 7.5 Day 2 strategy (p. 24–26): answer + reason + example, 2–3 sentences · no 'yes/no' only, no long speeches"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    2
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 30–33): read aloud, then record 3 Part 1 answers of your own · send the transcript to Claude"
+  },
+  {
+   "k": "r-learn",
+   "days": [
+    3
+   ],
+   "sk": "R",
+   "label": "Reading · learn: Matching information + matching features",
+   "sub": "Rules: Information: scan for the detail, paragraphs can repeat · Features: underline names, find each in the text · Improve Your Skills: Reading Unit 2, matching information (p. 14–21): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    3
+   ],
+   "sk": "R",
+   "label": "Reading · practise: Matching information + matching features",
+   "sub": "Improve Your Skills: Reading Unit 5, matching features (p. 38–45) · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Matching",
+   "sub": "Rules: Read the list of options first · answers come in question order, options don't · paraphrase, not the same words"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    3
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Matching · 80 Tests 42, 57, 66",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Pie charts + Band 9 sample",
+   "sub": "Writing 7.5 Day 3, Task 1 part (p. 36–45) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Advantages / disadvantages, which is better + Band 9 sample",
+   "sub": "Writing 7.5 Day 3, Task 2 part (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    3
+   ],
+   "sk": "W",
+   "label": "Writing: write a pie charts report (20 min) + a advantages / disadvantages, which is better essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    3
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 2: the cue card, 1-minute notes, the 6-part structure",
+   "sub": "Speaking 7.5 Day 1 strategy (p. 12–14): notes in keywords, cover every bullet, talk the full 2 minutes"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    3
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 19–22): read aloud, then record one 2-minute talk · send the transcript to Claude"
+  },
+  {
+   "k": "r-learn",
+   "days": [
+    4
+   ],
+   "sk": "R",
+   "label": "Reading · learn: Multiple choice + matching sentence endings",
+   "sub": "Rules: Questions follow text order · the right option is paraphrased · endings must fit grammar AND meaning · Improve Your Skills: Reading Unit 6 (p. 46–53): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    4
+   ],
+   "sk": "R",
+   "label": "Reading · practise: Multiple choice + matching sentence endings",
+   "sub": "Improve Your Skills: Reading Unit 2, multiple-choice part (p. 14–21) · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Map / plan / diagram labelling",
+   "sub": "Rules: Find the start point and the compass · learn direction language: opposite, next to, to the left of, at the far end"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    4
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Map / plan / diagram labelling · 80 Tests 36, 38, 40",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Table + Band 9 sample",
+   "sub": "Writing 7.5 Day 4, Task 1 part (p. 46–54) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Problem / solution, causes / solutions + Band 9 sample",
+   "sub": "Writing 7.5 Day 4, Task 2 part (p. 46–54) · Task 2 Handbook: causes + solutions (p. 15–18) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing: write a table report (20 min) + a problem / solution, causes / solutions essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    4
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 2: telling a story about an object or an event",
+   "sub": "Speaking 7.5 Day 3 strategy (p. 36–37): past tenses, time linkers, feelings at the end"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    4
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 41–44): read aloud, then record one story · send the transcript to Claude"
+  },
+  {
+   "k": "r-learn",
+   "days": [
+    5
+   ],
+   "sk": "R",
+   "label": "Reading · learn: Completion: sentence, summary, note, table, flow-chart",
+   "sub": "Rules: Check the word limit · predict the word type (noun/verb/number) · copy the spelling from the text · Improve Your Skills: Reading Unit 3, table + flow-chart (p. 22–29): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    5
+   ],
+   "sk": "R",
+   "label": "Reading · practise: Completion: sentence, summary, note, table, flow-chart",
+   "sub": "Improve Your Skills: Reading Unit 7, summary completion (p. 54–61) · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Sentence, summary and flow-chart completion",
+   "sub": "Rules: Word limit · the missing word must fit the grammar of the sentence · flow-chart follows the order of the talk"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    5
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Sentence, summary and flow-chart completion · 80 Tests 49, 56, 61",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Process diagram + Band 9 sample",
+   "sub": "Writing 7.5 Day 6, Task 1 part (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Two-part question + Band 9 sample",
+   "sub": "Writing 7.5 Day 5, Task 2 part (p. 55–63) · Task 2 Handbook: mixed questions (p. 19–20) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing: write a process diagram report (20 min) + a two-part question essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    5
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 3: building and supporting an opinion",
+   "sub": "Speaking 7.5 Day 4 strategy (p. 46–48): opinion → reason → example → other side · what not to say: 'I don't know', personal stories only"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    5
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 52–55): read aloud, then record 3 Part 3 answers · send the transcript to Claude"
+  },
+  {
+   "k": "r-learn",
+   "days": [
+    6
+   ],
+   "sk": "R",
+   "label": "Reading · learn: Diagram / map labelling + short-answer questions",
+   "sub": "Rules: Find the part of the text that describes the picture · short answers: word limit, words from the text · Improve Your Skills: Reading Unit 9, map + short answer (p. 70–77): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook"
+  },
+  {
+   "k": "r-prac",
+   "days": [
+    6
+   ],
+   "sk": "R",
+   "label": "Reading · practise: Diagram / map labelling + short-answer questions",
+   "sub": "Improve Your Skills: Reading Unit 10, short answer (p. 78–88) · timed, then check · every wrong answer: find the proof line in the text"
+  },
+  {
+   "k": "l-learn",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening · learn: Note completion (Part 4) + short-answer questions",
+   "sub": "Rules: Part 4 has no break: read all the notes before it starts · headings in the notes = signposts in the talk"
+  },
+  {
+   "k": "l-prac",
+   "days": [
+    6
+   ],
+   "sk": "L",
+   "label": "Listening · practise: Note completion (Part 4) + short-answer questions · 80 Tests 46, 62, 64",
+   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript"
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Map (changes) + Band 9 sample",
+   "sub": "Writing 7.5 Day 7, Task 1 part (p. 73–81) · Task 1 Handbook: maps & plans (p. 20–25) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook"
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Positive or negative development + Band 9 sample",
+   "sub": "Writing 7.5 Day 6, Task 2 part (p. 64–72) · Task 2 Handbook: sample essays (p. 21–25) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases"
+  },
+  {
+   "k": "w-write",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing: write a map (changes) report (20 min) + a positive or negative development essay (40 min)",
+   "sub": "On the computer, no spell-check · Practice → Copy for Claude → feedback on the 4 criteria · rewrite the weakest paragraph"
+  },
+  {
+   "k": "s-learn",
+   "days": [
+    6
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 3: pros and cons + hypothetical and difficult questions",
+   "sub": "Speaking 7.5 Day 5 + Day 6 strategies (p. 57–58, 67–68): two sides, conditionals, buying time politely"
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    6
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 62–65, 72–75): read aloud, then record 3 answers · send the transcript to Claude"
+  },
+  {
+   "k": "mock",
+   "days": [
+    7
+   ],
+   "sk": "",
+   "label": "Full mock · exam conditions, start 09:30 (L 30 · R 60 · W 60 · S 15)",
+   "sub": "Sat 28 Nov · next unused Cambridge test · no pauses · record the Speaking · this is your first band"
+  },
+  {
+   "k": "mock-send",
+   "days": [
+    7
+   ],
+   "sk": "",
+   "label": "Mock: send Listening/Reading mistakes, Writing and Speaking to Claude · scores into Progress",
+   "sub": ""
+  },
+  {
+   "k": "rev",
+   "days": [
+    7
+   ],
+   "sk": "",
+   "label": "Week 1 review with Claude → plan Week 2",
+   "sub": "Which question types were hardest · what to change next week"
+  }
+ ],
+ "wtasks": [
+  {
+   "k": "w1-r",
+   "weeks": [
+    1
+   ],
+   "sk": "R",
+   "label": "Reading: all 11 question types learned and practised",
+   "sub": "6 groups, one a day"
+  },
+  {
+   "k": "w1-l",
+   "weeks": [
+    1
+   ],
+   "sk": "L",
+   "label": "Listening: 6 question types learned · 18 tests from 80 Tests",
+   "sub": ""
+  },
+  {
+   "k": "w1-w1",
+   "weeks": [
+    1
+   ],
+   "sk": "W",
+   "label": "Task 1: 6 types learned, 6 reports written with feedback",
+   "sub": "Line, bar, pie, table, process, map"
+  },
+  {
+   "k": "w1-w2",
+   "weeks": [
+    1
+   ],
+   "sk": "W",
+   "label": "Task 2: 6 types learned, 6 essays written with feedback",
+   "sub": "Opinion, discussion, adv/disadv, problem/solution, two-part, positive/negative"
+  },
+  {
+   "k": "w1-s",
+   "weeks": [
+    1
+   ],
+   "sk": "S",
+   "label": "Speaking: format, criteria, rules, Parts 1–3 + recordings",
+   "sub": ""
+  },
+  {
+   "k": "w1-m",
+   "weeks": [
+    1
+   ],
+   "sk": "",
+   "label": "First full mock Sat 28 Nov, 09:30 + review",
+   "sub": "Day 7"
+  }
+ ],
  "weeks": [
   {
    "w": 1,
-   "name": "Baseline",
-   "line": "Learn every format, find your starting point",
+   "name": "Base",
+   "line": "Every question type, every part: learn the rules, practise, write",
    "focus": [
     "L",
     "R",
