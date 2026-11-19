@@ -887,7 +887,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.2';
+const BUILD='2026-11-20.3';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1030,7 +1030,7 @@ async function kick(){
     setSync(failed?'err':'ok');
   }finally{busy=false;}
 }
-const ARCHK=/^[xy](d|m|sv)\d{2,3}$|^[xy]w\d{1,2}$|^y(cfg_day|cfg_week|hb)$/;
+const ARCHK=/^[xyz](d|m|sv)\d{2,3}$|^[xyz]w\d{1,2}$|^y(cfg_day|cfg_week|hb)$/;
 function getObj(k){
   if(k==='plan')return PLAN;
   if(ARCHK.test(k))return S.arch[k];
@@ -1106,6 +1106,18 @@ function restart2(){
   S.mist=[];saveList('mist');S.ess=[];saveList('ess');S.words=[];saveWords();
   PLAN=Object.assign({},PLAN,{start:RS2.to,exam:RS2.exam});touch('plan');
   S.settings=Object.assign({},S.settings,{[RS2.id]:Date.now()});touch('settings');
+}
+/* Restart 3 (20 Nov 2026): Day 1 moves to Sun 22 Nov so the 7 plan weeks end on Sat 9 Jan; exam stays Sun 10 Jan.
+   Day/week/mock/survey docs logged on the 20 Nov plan move to z-prefixed archive keys. */
+const RS3={id:'r4',from:'2026-11-20',to:'2026-11-22',exam:'2027-01-10'};
+function restart3(){
+  if(!LOADOK)return;
+  const done=S.settings&&S.settings[RS3.id];
+  if(done){for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];if(o&&(o._ts||0)<done){delete b[k];lsSet(k,null);put(k,null);}}return;}
+  if(!PLAN||PLAN.start!==RS3.from)return;
+  for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];delete b[k];lsSet(k,null);put(k,null);if(o){S.arch['z'+k]=o;touch('z'+k);}}
+  PLAN=Object.assign({},PLAN,{start:RS3.to,exam:RS3.exam});touch('plan');
+  S.settings=Object.assign({},S.settings,{[RS3.id]:Date.now()});touch('settings');
 }
 let LOADOK=false;
 async function load(){
@@ -2724,6 +2736,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   try{restartMigrate();}catch(e){}
   try{archiveMistakes();}catch(e){}
   try{restart2();}catch(e){}
+  try{restart3();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}
