@@ -109,6 +109,24 @@
    "sub": "Band 5.5 / 6.5 / 7.5 answers to the same question (p. 5–11): read aloud, note what changed · send the transcript to Claude"
   },
   {
+   "k": "v-ess",
+   "days": [
+    1
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–5",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    1
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 1 What is a collocation?",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
    "k": "r-learn",
    "days": [
     2
@@ -188,6 +206,24 @@
    "sk": "S",
    "label": "Speaking · samples + recording",
    "sub": "Band 8 samples (p. 30–33): read aloud, then record 3 Part 1 answers of your own · send the transcript to Claude"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    2
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    2
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 2 Finding, recording and learning collocations",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
    "k": "r-learn",
@@ -271,6 +307,24 @@
    "sub": "Band 8 samples (p. 19–22): read aloud, then record one 2-minute talk · send the transcript to Claude"
   },
   {
+   "k": "v-ess",
+   "days": [
+    3
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    3
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 3 Using your dictionary",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
    "k": "r-learn",
    "days": [
     4
@@ -350,6 +404,24 @@
    "sk": "S",
    "label": "Speaking · samples + recording",
    "sub": "Band 8 samples (p. 41–44): read aloud, then record one story · send the transcript to Claude"
+  },
+  {
+   "k": "v-ess",
+   "days": [
+    4
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    4
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 4 Types of collocation",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
   },
   {
    "k": "r-learn",
@@ -433,6 +505,24 @@
    "sub": "Band 8 samples (p. 52–55): read aloud, then record 3 Part 3 answers · send the transcript to Claude"
   },
   {
+   "k": "v-ess",
+   "days": [
+    5
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    5
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 5 Register",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
    "k": "r-learn",
    "days": [
     6
@@ -514,6 +604,24 @@
    "sub": "Band 8 samples (p. 62–65, 72–75): read aloud, then record 3 answers · send the transcript to Claude"
   },
   {
+   "k": "v-ess",
+   "days": [
+    6
+   ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 26–30",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus"
+  },
+  {
+   "k": "v-col",
+   "days": [
+    6
+   ],
+   "sk": "V",
+   "label": "Vocabulary · Collocations in Use · Unit 6 Intensifying adverbs",
+   "sub": "Left page, then all exercises · check with the key · 5 collocations into your notebook with your own example"
+  },
+  {
    "k": "mock",
    "days": [
     7
@@ -586,6 +694,15 @@
    "sk": "S",
    "label": "Speaking: format, criteria, rules, Parts 1–3 + recordings",
    "sub": ""
+  },
+  {
+   "k": "w1-v",
+   "weeks": [
+    1
+   ],
+   "sk": "V",
+   "label": "Vocabulary: Essential Words 4 Units 1–30 · Collocations in Use Units 1–6",
+   "sub": "5 + 1 units a day"
   },
   {
    "k": "w1-m",
