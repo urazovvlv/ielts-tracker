@@ -956,7 +956,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.6';
+const BUILD='2026-11-20.7';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1297,6 +1297,7 @@ const I={
   books:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 5v16"/>',
   clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/>',
   medal:'<circle cx="12" cy="14" r="5.5"/><path d="M8 3l2 6M16 3l-2 6"/>',
+  mist:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5.5"/><circle cx="12" cy="16.3" r=".6" fill="currentColor"/>',
   weeks:'<rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/>',
   star:'<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/>'
 };
@@ -1324,8 +1325,8 @@ function renderHeader(){
   if(document.querySelector('.ruler'))setTimeout(()=>{rulerShown=true;},50);
 }
 function renderTabs(){
-  const T=[['today','Today'],['weeks','Weeks'],['prog','Progress'],['speak','Practice']];
-  document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k==='speak'?'pen':k)}${l}</button>`).join('');
+  const T=[['today','Today'],['weeks','Weeks'],['prog','Progress'],['speak','Mistakes']];
+  document.getElementById('tabs').innerHTML=T.map(([k,l])=>`<button data-tab="${k}" class="${tab===k?'on':''}" aria-current="${tab===k?'page':'false'}">${ico(k==='speak'?'mist':k)}${l}</button>`).join('');
 }
 
 /* ---------- Today ---------- */
@@ -2290,12 +2291,10 @@ const listTimers={};
 function saveListLater(name){clearTimeout(listTimers[name]);listTimers[name]=setTimeout(()=>saveList(name),700);}
 
 /* ---------- Practice tab: Writing · Speaking · Mistakes ---------- */
-let pSeg='write';
+let pSeg='mist'; /* Writing and Speaking practice removed (20 Nov 2026): the tab shows Mistakes only */
 const onSpeak=()=>tab==='speak'&&pSeg==='speak';
 function viewPractice(){
-  const seg=`<div class="seg pseg" role="tablist">${[['write','Writing'],['speak','Speaking'],['mist','Mistakes']].map(([k,l])=>`<button data-pseg="${k}" class="${pSeg===k?'on':''}" role="tab" aria-selected="${pSeg===k}">${l}</button>`).join('')}</div>`;
-  const body=pSeg==='write'?viewWriting():pSeg==='mist'?viewMistakes():viewSpeak();
-  return `<div class="wrap">${seg}${body}</div>`;
+  return `<div class="wrap">${viewMistakes()}</div>`;
 }
 
 /* ---------- Writing ---------- */
