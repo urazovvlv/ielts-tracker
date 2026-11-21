@@ -977,6 +977,22 @@ option{background:#1A1513;color:#F4EFEB}
 .ws-grid label{display:flex;flex-direction:column;gap:4px}
 .ws-grid select{width:100%;min-height:44px;border-radius:12px;padding:0 6px}
 #qtT,#wsTy{min-height:44px;border-radius:12px;padding:0 10px;width:100%}
+
+/* mock targets */
+.wh-mt{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:16px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.08)}
+.wh-mth{display:flex;justify-content:space-between;align-items:center}
+.linkbtn{background:none;border:0;color:#F6A13A;font:500 13px var(--f-body);padding:4px 0;min-height:32px}
+.mtt{width:100%;border-collapse:collapse;font-size:14px;text-align:center}
+.mtt th{font-weight:500;padding:0 0 6px}
+.mtt th .skb{margin:0}
+.mtt td{padding:6px 2px;border-top:1px solid rgba(255,255,255,.07);font-family:var(--f-display);font-size:17px;font-weight:300;line-height:1.1}
+.mtt td:first-child{text-align:left;font-family:var(--f-body);font-size:12px;color:var(--muted);font-weight:500}
+.mtt td small{display:block;font-family:var(--f-body);font-size:10.5px;font-weight:600;margin-top:2px}
+.mt-ok{color:#8FE09B}.mt-no{color:#FF8E80}.mt-na{color:var(--muted)}
+.mt-all{font-weight:500!important}
+.mt-wrap{margin-top:10px;padding:10px 12px;border-radius:14px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.07)}
+.mt-okc{color:#8FE09B}.mt-noc{color:#FF8E80}
+.bh:empty::before{content:attr(data-tg);color:var(--muted)}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.card{background:#1A1513}.tabs{background:#211A17}}
 </style>
 </head>
@@ -991,7 +1007,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-20.8';
+const BUILD='2026-11-21.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1423,6 +1439,20 @@ function viewJourney(selW){
 let wsel=null;
 const curWeek=()=>Math.min(Math.ceil(DAYS/7),Math.max(1,Math.ceil(Math.max(todayIdx(),1)/7)));
 const WSEL=()=>wsel||curWeek();
+/* ---------- Mock targets per week (books/index.json weeks[].mock) ---------- */
+const mockTarget=n=>{const I=weekInfo(Math.ceil(n/7));return I.mock||null;};
+const tgtOverall=t=>t?ovBand(t):null;
+const mockParts=m=>({L:toBand(m.L,LB),R:toBand(m.R,RB),W:m.W===''||m.W==null?null:Number(m.W),S:m.S===''||m.S==null?null:Number(m.S)});
+function mtHTML(n){
+  const tg=mockTarget(n);if(!tg)return '';
+  const m=mockDoc(n),pr=mockParts(m),o=overall(m),to=tgtOverall(tg),K=['R','L','W','S'];
+  const any=K.some(k=>pr[k]!=null);
+  const cell=(v,t)=>{if(v==null)return '<td class="mt-na">—</td>';const d=v-t;return `<td class="${d>=0?'mt-ok':'mt-no'}">${v.toFixed(1)}<small>${d>0?'▲'+d.toFixed(1):d<0?'▼'+Math.abs(d).toFixed(1):'✓'}</small></td>`;};
+  return `<table class="mtt"><thead><tr><th></th>${K.map(k=>`<th><span class="skb sk-${k}">${k}</span></th>`).join('')}<th>All</th></tr></thead><tbody>
+    <tr class="mt-t"><td>Target</td>${K.map(k=>`<td>${tg[k].toFixed(1)}</td>`).join('')}<td><b>${to.toFixed(1)}</b></td></tr>
+    ${any?`<tr><td>Result</td>${K.map(k=>cell(pr[k],tg[k])).join('')}${o==null?'<td class="mt-na">—</td>':cell(o,to).replace('<td class="','<td class="mt-all ')}</tr>`:''}
+  </tbody></table>`;
+}
 function viewWeeks(){
   const w=WSEL(),a=(w-1)*7+1,z=Math.min(w*7,DAYS),I=weekInfo(w),[h1,h2]=WHUE[(w-1)%WHUE.length],t=todayIdx();
   const wt=weekDoc(w).t||{},WL=weekList(w),wd=WL.filter(x=>wt[x.k]).length;
@@ -1436,6 +1466,7 @@ function viewWeeks(){
     <div class="wh-row"><span class="jw-num">${String(w).padStart(2,'0')}</span><div><h2 class="wh-nm">${esc(I.name||'Week '+w)}</h2>${I.line?`<p class="wh-ln">${esc(I.line)}</p>`:''}</div></div>
     ${(I.focus||[]).length?`<div class="jw-sk">${I.focus.map(k=>`<span class="skb sk-${k}">${k}</span>`).join('')}</div>`:''}
     <div class="wh-stats"><div><b class="num">${dn}<small>/${tot}</small></b><span>Tasks</span></div><div><b class="num">${wd}<small>/${WL.length}</small></b><span>Goals</span></div><div><b class="num">${(()=>{const m=MOCKDAYS.find(n=>n>=a&&n<=z);return m?WD[(dateOf(m).getDay()+6)%7]+' '+dateOf(m).getDate():'—';})()}</b><span>Mock</span></div></div>
+    ${(()=>{const mk=MOCKDAYS.find(n=>n>=a&&n<=z);if(!mk||!mockTarget(mk))return '';return `<div class="wh-mt"><div class="wh-mth"><span class="jw-lbl">Mock target · ${fmt(dateOf(mk))}</span><button type="button" class="linkbtn" data-tab="prog">Enter results ›</button></div>${mtHTML(mk)}</div>`;})()}
   </section>
   <section class="card"><div class="card-h"><h2>Days</h2><span class="note">Tap a day to open it</span></div><div class="wdays">${rows.join('')}</div></section>
     <section class="card">
@@ -1495,7 +1526,7 @@ function viewProgress(){
     return `<div class="card-h"><h2>Band</h2><span class="note">Target ${TARGET.toFixed(1)}</span></div>
     ${cb.m?`<div class="band-now"><b>${cb.band.toFixed(1)}</b><span>${cb.band<TARGET?`${(TARGET-cb.band).toFixed(1)} to go`:'Target reached'}</span></div>
     <div class="band-bar"><i style="width:${pct}%"></i></div>`:`<div class="band-now"><b>0.0</b><span>No mock yet</span></div><div class="band-bar"><i style="width:0%"></i></div>`}
-    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock</p>`:`<p class="note" style="margin:0">${MOCKDAYS.length?`Current band comes from the first full mock · Day ${MOCKDAYS[0]}, ${fmt(dateOf(MOCKDAYS[0]))}`:'Log a full mock below to see your band.'}</p>`}`;})()}</section>
+    ${cb.m?`<div class="band-parts">${['L','R','W','S'].map(k=>`<span><span class="skb sk-${k}">${k}</span><b class="num">${cb.parts[k]}</b></span>`).join('')}</div><p class="note" style="margin:0">From the Day ${cb.day} mock${(()=>{const tg=mockTarget(cb.day);if(!tg)return '';const to=tgtOverall(tg);return ` · Week ${Math.ceil(cb.day/7)} target ${to.toFixed(1)} ${cb.band>=to?'<b class="mt-okc">✓</b>':'<b class="mt-noc">✗</b>'}`;})()}</p>`:`<p class="note" style="margin:0">${MOCKDAYS.length?`Current band comes from the first full mock · Day ${MOCKDAYS[0]}, ${fmt(dateOf(MOCKDAYS[0]))}${mockTarget(MOCKDAYS[0])?` · target ${tgtOverall(mockTarget(MOCKDAYS[0])).toFixed(1)}`:''}`:'Log a full mock below to see your band.'}</p>`}`;})()}</section>
   ${qtCard()}
   ${wsCard()}
   ${studyCard()}
@@ -1582,8 +1613,8 @@ function mockSections(){
   const cards=MOCKDAYS.map(n=>{const m=mockDoc(n),o=overall(m),cls=o==null?'':o>=TARGET?'hit':o>=7?'c1':'low';
     const has=['L','R','W','S'].some(k=>m[k]!==''&&m[k]!=null);
     if(!has&&n!==next&&n>t&&!mockOpen.has(n))return `<button class="mrow" data-mexp="${n}"><span><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}</small></span><span class="mrow-go" aria-hidden="true">›</span></button>`;
-    const inp=(k,max,step,ph,tab)=>`<label>${{L:'List.',R:'Read.',W:'Writ.',S:'Speak.'}[k]}<input class="sc" type="number" inputmode="decimal" id="mk-${n}-${k}" data-mock="${n}" data-k="${k}" min="0" max="${max}" step="${step}" value="${m[k]??''}" placeholder="${ph}"><span class="bh" id="bh-${n}-${k}">${tab&&m[k]!==''&&m[k]!=null?'Band '+toBand(m[k],tab):''}</span></label>`;
-    return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small>${m.note?`<small>${esc(m.note)}</small>`:''}</div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div></div>`;}).join('');
+    const inp=(k,max,step,ph,tab)=>`<label>${{L:'List.',R:'Read.',W:'Writ.',S:'Speak.'}[k]}<input class="sc" type="number" inputmode="decimal" id="mk-${n}-${k}" data-mock="${n}" data-k="${k}" min="0" max="${max}" step="${step}" value="${m[k]??''}" placeholder="${ph}"><span class="bh" id="bh-${n}-${k}" data-tg="${mockTarget(n)?'target '+mockTarget(n)[k].toFixed(1):''}">${tab&&m[k]!==''&&m[k]!=null?'Band '+toBand(m[k],tab):''}</span></label>`;
+    return `<div class="mock ${n===next?'next':''}"><div class="mock-h"><div><b>Day ${n} · ${fmt(dateOf(n))}</b><small>${MOCKS[n]}${n===next?' · next mock':''}</small>${m.note?`<small>${esc(m.note)}</small>`:''}</div><span class="pill ${cls}" id="ov-${n}">${o==null?'—':o.toFixed(1)}</span></div><div class="sc4">${inp('L',40,1,'/40',LB)}${inp('R',40,1,'/40',RB)}${inp('W',9,.5,'band',null)}${inp('S',9,.5,'band',null)}</div>${mockTarget(n)?`<div class="mt-wrap" id="mt-${n}">${mtHTML(n)}</div>`:''}</div>`;}).join('');
   return `<section class="card"><h2>Overall band by mock</h2><div class="chart" id="mockChart">${mockChart()}</div><p class="note" style="margin:0">Listening and Reading: type correct answers out of 40, and the band is worked out for you. Writing and Speaking: type the band. Overall uses official IELTS rounding.</p></section>
   <section class="card"><h2>Mock scores</h2>${cards}</section>`;
 }
@@ -2919,6 +2950,7 @@ document.addEventListener('input',e=>{if(e.target&&e.target.id==='auSeek'){AU.cu
     S.mocks[mk]=Object.assign({},S.mocks[mk],{[k]:v});touch(mk,true);
     const tab2=k==='L'?LB:k==='R'?RB:null;if(tab2){const h=document.getElementById(`bh-${n}-${k}`);if(h)h.textContent=v===''?'':'Band '+toBand(v,tab2);}
     const o=overall(S.mocks[mk]),p=document.getElementById('ov-'+n);if(p){p.textContent=o==null?'—':o.toFixed(1);p.className='pill '+(o==null?'':o>=TARGET?'hit':o>=7?'c1':'low');}
+    const mt=document.getElementById('mt-'+n);if(mt)mt.innerHTML=mtHTML(n);
     document.getElementById('mockChart').innerHTML=mockChart();renderHeader();
   }
 });
