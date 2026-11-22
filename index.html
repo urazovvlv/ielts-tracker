@@ -1007,7 +1007,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-21.1';
+const BUILD='2026-11-22.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -1239,6 +1239,15 @@ function restart3(){
   for(const b of [S.days,S.weeks,S.mocks,S.surv])for(const k of Object.keys(b)){const o=b[k];delete b[k];lsSet(k,null);put(k,null);if(o){S.arch['z'+k]=o;touch('z'+k);}}
   PLAN=Object.assign({},PLAN,{start:RS3.to,exam:RS3.exam});touch('plan');
   S.settings=Object.assign({},S.settings,{[RS3.id]:Date.now()});touch('settings');
+}
+/* Restart 4 (22 Nov 2026): Day 1 moves one day later to Mon 23 Nov; day docs keep their numbers (nothing logged on 22 Nov is lost).
+   Plan = 48 days, mocks on Days 7..42 (Sundays), exam stays Sun 10 Jan. */
+const RS4={id:'r5',from:'2026-11-22',to:'2026-11-23',exam:'2027-01-10'};
+function restart4(){
+  if(!LOADOK||(S.settings&&S.settings[RS4.id]))return;
+  if(!PLAN||PLAN.start!==RS4.from)return;
+  PLAN=Object.assign({},PLAN,{start:RS4.to,exam:RS4.exam});touch('plan');
+  S.settings=Object.assign({},S.settings,{[RS4.id]:Date.now()});touch('settings');
 }
 let LOADOK=false;
 async function load(){
@@ -3002,6 +3011,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   try{archiveMistakes();}catch(e){}
   try{restart2();}catch(e){}
   try{restart3();}catch(e){}
+  try{restart4();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}
