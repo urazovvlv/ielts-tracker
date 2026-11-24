@@ -78,6 +78,16 @@
    "core": true
   },
   {
+   "k": "r-tfng",
+   "sk": "R",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
+   "days": [
+    1
+   ],
+   "core": false
+  },
+  {
    "k": "l-pod",
    "days": [
     1
@@ -105,16 +115,6 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–3",
    "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
-   "core": false
-  },
-  {
-   "k": "r-tfng",
-   "sk": "R",
-   "label": "Reading · extra practice: TFNG book, 10 exercises",
-   "sub": "Timed · check with the key · every wrong answer: find the proof line",
-   "days": [
-    1
-   ],
    "core": false
   },
   {
@@ -158,16 +158,6 @@
    "core": true
   },
   {
-   "k": "s-samp",
-   "days": [
-    2
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 30–33): read aloud, then record 3 Part 1 answers of your own · send the transcript to Claude",
-   "core": false
-  },
-  {
    "k": "l-pod",
    "days": [
     2
@@ -175,6 +165,26 @@
    "sk": "L",
    "label": "Listening: podcast, 20–30 min",
    "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "core": false
+  },
+  {
+   "k": "l-more",
+   "sk": "L",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    2
+   ],
+   "core": false
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    2
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 30–33): read aloud, then record 3 Part 1 answers of your own · send the transcript to Claude",
    "core": false
   },
   {
@@ -195,16 +205,6 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 4–6",
    "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
-   "core": false
-  },
-  {
-   "k": "l-more",
-   "sk": "L",
-   "label": "Listening · extra: one more 80 Tests test of today's types",
-   "sub": "One listen, no pauses · log the score in the app",
-   "days": [
-    2
-   ],
    "core": false
   },
   {
@@ -258,6 +258,16 @@
    "core": true
   },
   {
+   "k": "r-tfng",
+   "sk": "R",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
+   "days": [
+    3
+   ],
+   "core": false
+  },
+  {
    "k": "l-pod",
    "days": [
     3
@@ -288,16 +298,6 @@
    "core": false
   },
   {
-   "k": "r-tfng",
-   "sk": "R",
-   "label": "Reading · extra practice: TFNG book, 10 exercises",
-   "sub": "Timed · check with the key · every wrong answer: find the proof line",
-   "days": [
-    3
-   ],
-   "core": false
-  },
-  {
    "k": "l-learn",
    "days": [
     4
@@ -315,6 +315,26 @@
    "sk": "L",
    "label": "Listening · learn + practise: Map / plan / diagram labelling",
    "sub": "Rules: Find the start point and the compass · learn direction language: opposite, next to, to the left of, at the far end · Practice: 80 Tests, Test 36 only (one listen) · log the score in the app",
+   "core": true
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Process diagram + Band 9 sample",
+   "sub": "Writing 7.5 Day 6, Task 1 part (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook · learn only this week: you write this type in Week 2",
+   "core": true
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    4
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Problem / solution, causes / solutions + Band 9 sample",
+   "sub": "Writing 7.5 Day 4, Task 2 part (p. 46–54) · Task 2 Handbook: causes + solutions (p. 15–18) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
    "core": true
   },
   {
@@ -338,16 +358,6 @@
    "core": true
   },
   {
-   "k": "s-samp",
-   "days": [
-    4
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 41–44): read aloud, then record one story · send the transcript to Claude",
-   "core": false
-  },
-  {
    "k": "l-pod",
    "days": [
     4
@@ -355,6 +365,26 @@
    "sk": "L",
    "label": "Listening: podcast, 20–30 min",
    "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "core": false
+  },
+  {
+   "k": "l-more",
+   "sk": "L",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    4
+   ],
+   "core": false
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    4
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 41–44): read aloud, then record one story · send the transcript to Claude",
    "core": false
   },
   {
@@ -375,16 +405,6 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 10–12",
    "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
-   "core": false
-  },
-  {
-   "k": "l-more",
-   "sk": "L",
-   "label": "Listening · extra: one more 80 Tests test of today's types",
-   "sub": "One listen, no pauses · log the score in the app",
-   "days": [
-    4
-   ],
    "core": false
   },
   {
@@ -438,6 +458,26 @@
    "core": true
   },
   {
+   "k": "w2-learn2",
+   "days": [
+    5
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Two-part question + Band 9 sample",
+   "sub": "Writing 7.5 Day 5, Task 2 part (p. 55–63) · Task 2 Handbook: mixed questions (p. 19–20) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
+   "core": true
+  },
+  {
+   "k": "r-tfng",
+   "sk": "R",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
+   "days": [
+    5
+   ],
+   "core": false
+  },
+  {
    "k": "l-pod",
    "days": [
     5
@@ -468,16 +508,6 @@
    "core": false
   },
   {
-   "k": "r-tfng",
-   "sk": "R",
-   "label": "Reading · extra practice: TFNG book, 10 exercises",
-   "sub": "Timed · check with the key · every wrong answer: find the proof line",
-   "days": [
-    5
-   ],
-   "core": false
-  },
-  {
    "k": "l-learn",
    "days": [
     6
@@ -495,6 +525,26 @@
    "sk": "L",
    "label": "Listening · learn + practise: Note completion (Part 4) + short-answer questions",
    "sub": "Rules: Part 4 has no break: read all the notes before it starts · headings in the notes = signposts in the talk · Practice: 80 Tests, Test 46 only (one listen) · log the score in the app",
+   "core": true
+  },
+  {
+   "k": "w1-learn",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing Task 1 · learn: Map (changes) + Band 9 sample",
+   "sub": "Writing 7.5 Day 7, Task 1 part (p. 73–81) · Task 1 Handbook: maps & plans (p. 20–25) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook · learn only this week: you write this type in Week 2",
+   "core": true
+  },
+  {
+   "k": "w2-learn",
+   "days": [
+    6
+   ],
+   "sk": "W",
+   "label": "Writing Task 2 · learn: Positive or negative development + Band 9 sample",
+   "sub": "Writing 7.5 Day 6, Task 2 part (p. 64–72) · Task 2 Handbook: sample essays (p. 21–25) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
    "core": true
   },
   {
@@ -518,16 +568,6 @@
    "core": true
   },
   {
-   "k": "s-samp",
-   "days": [
-    6
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 62–65, 72–75): read aloud, then record 3 answers · send the transcript to Claude",
-   "core": false
-  },
-  {
    "k": "l-pod",
    "days": [
     6
@@ -535,6 +575,26 @@
    "sk": "L",
    "label": "Listening: podcast, 20–30 min",
    "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "core": false
+  },
+  {
+   "k": "l-more",
+   "sk": "L",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    6
+   ],
+   "core": false
+  },
+  {
+   "k": "s-samp",
+   "days": [
+    6
+   ],
+   "sk": "S",
+   "label": "Speaking · samples + recording",
+   "sub": "Band 8 samples (p. 62–65, 72–75): read aloud, then record 3 answers · send the transcript to Claude",
    "core": false
   },
   {
@@ -555,16 +615,6 @@
    "sk": "V",
    "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–18",
    "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
-   "core": false
-  },
-  {
-   "k": "l-more",
-   "sk": "L",
-   "label": "Listening · extra: one more 80 Tests test of today's types",
-   "sub": "One listen, no pauses · log the score in the app",
-   "days": [
-    6
-   ],
    "core": false
   },
   {
@@ -623,8 +673,8 @@
     1
    ],
    "sk": "W",
-   "label": "Task 1: line, bar + pie, table learned · 3 reports with feedback",
-   "sub": "Process, map, mixed → Week 2"
+   "label": "Task 1: all 6 types learned (line, bar + pie, table, process, map) · 3 reports written",
+   "sub": "Process + map: learn only, write in Week 2"
   },
   {
    "k": "w1-w2",
@@ -632,8 +682,8 @@
     1
    ],
    "sk": "W",
-   "label": "Task 2: opinion, discussion, adv/disadv learned · 3 essays with feedback",
-   "sub": "Problem/solution, two-part, positive/negative → Week 2"
+   "label": "Task 2: all 6 types learned · 3 essays written (opinion, discussion, adv/disadv)",
+   "sub": "Problem/solution, two-part, positive/negative: learn only, write in Week 2"
   },
   {
    "k": "w1-s",
