@@ -33,39 +33,19 @@
     1
    ],
    "sk": "R",
-   "label": "Reading · learn: True / False / Not Given + Yes / No / Not Given",
-   "sub": "Rules: TFNG = facts in the text · YNNG = the writer's views · NG = the text says nothing about it · Improve Your Skills: Reading Unit 1, TFNG part (p. 6–13) · Unit 8, YNNG part (p. 62–69): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
+   "label": "Reading · learn + practise: True / False / Not Given + Yes / No / Not Given",
+   "sub": "Rules: TFNG = facts in the text · YNNG = the writer's views · NG = the text says nothing about it · Improve Your Skills: Reading Unit 1, TFNG part (p. 6–13) · Unit 8, YNNG part (p. 62–69): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: True / False / Not Given + Yes / No / Not Given — TFNG book: Exercises 1–20 · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
   },
   {
-   "k": "r-prac",
+   "k": "r-learn2",
    "days": [
     1
    ],
    "sk": "R",
-   "label": "Reading · practise: True / False / Not Given + Yes / No / Not Given",
-   "sub": "TFNG book: Exercises 1–20 · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "l-learn",
-   "days": [
-    1
-   ],
-   "sk": "L",
-   "label": "Listening · learn: Form / note / table completion (Part 1)",
-   "sub": "Rules: Read the form first and predict each gap · letters, numbers, plurals · the speaker often corrects himself · Listening Strategies Unit 1 (the HTML page): spelling, numbers, addresses, times",
+   "label": "Reading · learn + practise: Matching headings",
+   "sub": "Rules: Read the headings first · main idea of each paragraph, not one word · cross out used headings · Improve Your Skills: Reading Unit 4, headings part (p. 30–37): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: Matching headings — Improve Your Skills: Reading Unit 1, headings part (p. 6–13) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
-  },
-  {
-   "k": "l-prac",
-   "days": [
-    1
-   ],
-   "sk": "L",
-   "label": "Listening · practise: Form / note / table completion (Part 1) · 80 Tests 11, 13, 14",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
   },
   {
    "k": "w1-learn",
@@ -98,33 +78,13 @@
    "core": true
   },
   {
-   "k": "s-learn",
+   "k": "l-pod",
    "days": [
     1
    ],
-   "sk": "S",
-   "label": "Speaking · learn: Exam format, the 4 criteria, the 12 rules for Band 7–8",
-   "sub": "Speaking 7.5: exam format + criteria (p. 5–11) · what is allowed (asking to repeat, short pauses) and what loses points (memorised answers, one-word answers, going off topic)",
-   "core": true
-  },
-  {
-   "k": "s-samp",
-   "days": [
-    1
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 5.5 / 6.5 / 7.5 answers to the same question (p. 5–11): read aloud, note what changed · send the transcript to Claude",
-   "core": false
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    1
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–5",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -138,33 +98,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     1
    ],
-   "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 1–3",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
    "core": false
   },
   {
-   "k": "r-learn",
-   "days": [
-    2
-   ],
+   "k": "r-tfng",
    "sk": "R",
-   "label": "Reading · learn: Matching headings",
-   "sub": "Rules: Read the headings first · main idea of each paragraph, not one word · cross out used headings · Improve Your Skills: Reading Unit 4, headings part (p. 30–37): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
-   "core": true
-  },
-  {
-   "k": "r-prac",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
    "days": [
-    2
+    1
    ],
-   "sk": "R",
-   "label": "Reading · practise: Matching headings",
-   "sub": "Improve Your Skills: Reading Unit 1, headings part (p. 6–13) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": false
   },
   {
@@ -173,52 +123,32 @@
     2
    ],
    "sk": "L",
-   "label": "Listening · learn: Multiple choice",
-   "sub": "Rules: Underline the key words in the question, not the options · all options are usually mentioned · wait for the final answer",
+   "label": "Listening · learn + practise: Form / note / table completion (Part 1)",
+   "sub": "Rules: Read the form first and predict each gap · letters, numbers, plurals · the speaker often corrects himself · Listening Strategies Unit 1 (the HTML page): spelling, numbers, addresses, times · Practice: 80 Tests, Test 11 only (one listen) · log the score in the app",
    "core": true
   },
   {
-   "k": "l-prac",
+   "k": "l-learn2",
    "days": [
     2
    ],
    "sk": "L",
-   "label": "Listening · practise: Multiple choice · 80 Tests 41, 50, 54",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "w1-learn",
-   "days": [
-    2
-   ],
-   "sk": "W",
-   "label": "Writing Task 1 · learn: Bar chart + Band 9 sample",
-   "sub": "Writing 7.5 Day 2, Task 1 part (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
-   "core": true
-  },
-  {
-   "k": "w2-learn",
-   "days": [
-    2
-   ],
-   "sk": "W",
-   "label": "Writing Task 2 · learn: Discussion (both views + opinion) + Band 9 sample",
-   "sub": "Writing 7.5 Day 2, Task 2 part (p. 26–35) · Task 2 Handbook: domino paragraph (p. 9–11) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
-   "core": true
-  },
-  {
-   "k": "w-write",
-   "days": [
-    2
-   ],
-   "sk": "W",
-   "label": "Writing: write a bar chart report (20 min) + a discussion essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
+   "label": "Listening · learn + practise: Multiple choice",
+   "sub": "Rules: Underline the key words in the question, not the options · all options are usually mentioned · wait for the final answer · Practice: 80 Tests, Test 41 only (one listen) · log the score in the app",
    "core": true
   },
   {
    "k": "s-learn",
+   "days": [
+    2
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Exam format, the 4 criteria, the 12 rules for Band 7–8",
+   "sub": "Speaking 7.5: exam format + criteria (p. 5–11) · what is allowed (asking to repeat, short pauses) and what loses points (memorised answers, one-word answers, going off topic)",
+   "core": true
+  },
+  {
+   "k": "s-learn2",
    "days": [
     2
    ],
@@ -238,13 +168,13 @@
    "core": false
   },
   {
-   "k": "v-ess",
+   "k": "l-pod",
    "days": [
     2
    ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 6–10",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -258,13 +188,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     2
    ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 4–6",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "core": false
+  },
+  {
+   "k": "l-more",
    "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    2
+   ],
    "core": false
   },
   {
@@ -273,39 +213,19 @@
     3
    ],
    "sk": "R",
-   "label": "Reading · learn: Matching information + matching features",
-   "sub": "Rules: Information: scan for the detail, paragraphs can repeat · Features: underline names, find each in the text · Improve Your Skills: Reading Unit 2, matching information (p. 14–21): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
+   "label": "Reading · learn + practise: Matching information + matching features",
+   "sub": "Rules: Information: scan for the detail, paragraphs can repeat · Features: underline names, find each in the text · Improve Your Skills: Reading Unit 2, matching information (p. 14–21): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: Matching information + matching features — Improve Your Skills: Reading Unit 5, matching features (p. 38–45) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
   },
   {
-   "k": "r-prac",
+   "k": "r-learn2",
    "days": [
     3
    ],
    "sk": "R",
-   "label": "Reading · practise: Matching information + matching features",
-   "sub": "Improve Your Skills: Reading Unit 5, matching features (p. 38–45) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "l-learn",
-   "days": [
-    3
-   ],
-   "sk": "L",
-   "label": "Listening · learn: Matching",
-   "sub": "Rules: Read the list of options first · answers come in question order, options don't · paraphrase, not the same words",
+   "label": "Reading · learn + practise: Multiple choice + matching sentence endings",
+   "sub": "Rules: Questions follow text order · the right option is paraphrased · endings must fit grammar AND meaning · Improve Your Skills: Reading Unit 6 (p. 46–53): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: Multiple choice + matching sentence endings — Improve Your Skills: Reading Unit 2, multiple-choice part (p. 14–21) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
-  },
-  {
-   "k": "l-prac",
-   "days": [
-    3
-   ],
-   "sk": "L",
-   "label": "Listening · practise: Matching · 80 Tests 42, 57, 66",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
   },
   {
    "k": "w1-learn",
@@ -313,8 +233,8 @@
     3
    ],
    "sk": "W",
-   "label": "Writing Task 1 · learn: Pie charts + Band 9 sample",
-   "sub": "Writing 7.5 Day 3, Task 1 part (p. 36–45) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
+   "label": "Writing Task 1 · learn: Bar chart + pie charts + Band 9 sample",
+   "sub": "Writing 7.5 Day 2, Task 1 part (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · Writing 7.5 Day 3, Task 1 part (p. 36–45) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
    "core": true
   },
   {
@@ -323,8 +243,8 @@
     3
    ],
    "sk": "W",
-   "label": "Writing Task 2 · learn: Advantages / disadvantages, which is better + Band 9 sample",
-   "sub": "Writing 7.5 Day 3, Task 2 part (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
+   "label": "Writing Task 2 · learn: Discussion (both views + opinion) + Band 9 sample",
+   "sub": "Writing 7.5 Day 2, Task 2 part (p. 26–35) · Task 2 Handbook: domino paragraph (p. 9–11) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
    "core": true
   },
   {
@@ -333,38 +253,18 @@
     3
    ],
    "sk": "W",
-   "label": "Writing: write a pie charts report (20 min) + an advantages / disadvantages, which is better essay (40 min)",
+   "label": "Writing: write a bar chart report (20 min) + a discussion essay (40 min)",
    "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
    "core": true
   },
   {
-   "k": "s-learn",
+   "k": "l-pod",
    "days": [
     3
    ],
-   "sk": "S",
-   "label": "Speaking · learn: Part 2: the cue card, 1-minute notes, the 6-part structure",
-   "sub": "Speaking 7.5 Day 1 strategy (p. 12–14): notes in keywords, cover every bullet, talk the full 2 minutes",
-   "core": true
-  },
-  {
-   "k": "s-samp",
-   "days": [
-    3
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 19–22): read aloud, then record one 2-minute talk · send the transcript to Claude",
-   "core": false
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    3
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 11–15",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -378,33 +278,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     3
    ],
-   "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 7–9",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
    "core": false
   },
   {
-   "k": "r-learn",
-   "days": [
-    4
-   ],
+   "k": "r-tfng",
    "sk": "R",
-   "label": "Reading · learn: Multiple choice + matching sentence endings",
-   "sub": "Rules: Questions follow text order · the right option is paraphrased · endings must fit grammar AND meaning · Improve Your Skills: Reading Unit 6 (p. 46–53): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
-   "core": true
-  },
-  {
-   "k": "r-prac",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
    "days": [
-    4
+    3
    ],
-   "sk": "R",
-   "label": "Reading · practise: Multiple choice + matching sentence endings",
-   "sub": "Improve Your Skills: Reading Unit 2, multiple-choice part (p. 14–21) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": false
   },
   {
@@ -413,52 +303,32 @@
     4
    ],
    "sk": "L",
-   "label": "Listening · learn: Map / plan / diagram labelling",
-   "sub": "Rules: Find the start point and the compass · learn direction language: opposite, next to, to the left of, at the far end",
+   "label": "Listening · learn + practise: Matching",
+   "sub": "Rules: Read the list of options first · answers come in question order, options don't · paraphrase, not the same words · Practice: 80 Tests, Test 42 only (one listen) · log the score in the app",
    "core": true
   },
   {
-   "k": "l-prac",
+   "k": "l-learn2",
    "days": [
     4
    ],
    "sk": "L",
-   "label": "Listening · practise: Map / plan / diagram labelling · 80 Tests 36, 38, 40",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "w1-learn",
-   "days": [
-    4
-   ],
-   "sk": "W",
-   "label": "Writing Task 1 · learn: Table + Band 9 sample",
-   "sub": "Writing 7.5 Day 4, Task 1 part (p. 46–54) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
-   "core": true
-  },
-  {
-   "k": "w2-learn",
-   "days": [
-    4
-   ],
-   "sk": "W",
-   "label": "Writing Task 2 · learn: Problem / solution, causes / solutions + Band 9 sample",
-   "sub": "Writing 7.5 Day 4, Task 2 part (p. 46–54) · Task 2 Handbook: causes + solutions (p. 15–18) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
-   "core": true
-  },
-  {
-   "k": "w-write",
-   "days": [
-    4
-   ],
-   "sk": "W",
-   "label": "Writing: write a table report (20 min) + a problem / solution, causes / solutions essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
+   "label": "Listening · learn + practise: Map / plan / diagram labelling",
+   "sub": "Rules: Find the start point and the compass · learn direction language: opposite, next to, to the left of, at the far end · Practice: 80 Tests, Test 36 only (one listen) · log the score in the app",
    "core": true
   },
   {
    "k": "s-learn",
+   "days": [
+    4
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 2: the cue card, 1-minute notes, the 6-part structure",
+   "sub": "Speaking 7.5 Day 1 strategy (p. 12–14): notes in keywords, cover every bullet, talk the full 2 minutes",
+   "core": true
+  },
+  {
+   "k": "s-learn2",
    "days": [
     4
    ],
@@ -478,13 +348,13 @@
    "core": false
   },
   {
-   "k": "v-ess",
+   "k": "l-pod",
    "days": [
     4
    ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–20",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -498,13 +368,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     4
    ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 10–12",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "core": false
+  },
+  {
+   "k": "l-more",
    "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    4
+   ],
    "core": false
   },
   {
@@ -513,39 +393,19 @@
     5
    ],
    "sk": "R",
-   "label": "Reading · learn: Completion: sentence, summary, note, table, flow-chart",
-   "sub": "Rules: Check the word limit · predict the word type (noun/verb/number) · copy the spelling from the text · Improve Your Skills: Reading Unit 3, table + flow-chart (p. 22–29): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
+   "label": "Reading · learn + practise: Completion: sentence, summary, note, table, flow-chart",
+   "sub": "Rules: Check the word limit · predict the word type (noun/verb/number) · copy the spelling from the text · Improve Your Skills: Reading Unit 3, table + flow-chart (p. 22–29): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: Completion: sentence, summary, note, table, flow-chart — Improve Your Skills: Reading Unit 7, summary completion (p. 54–61) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
   },
   {
-   "k": "r-prac",
+   "k": "r-learn2",
    "days": [
     5
    ],
    "sk": "R",
-   "label": "Reading · practise: Completion: sentence, summary, note, table, flow-chart",
-   "sub": "Improve Your Skills: Reading Unit 7, summary completion (p. 54–61) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "l-learn",
-   "days": [
-    5
-   ],
-   "sk": "L",
-   "label": "Listening · learn: Sentence, summary and flow-chart completion",
-   "sub": "Rules: Word limit · the missing word must fit the grammar of the sentence · flow-chart follows the order of the talk",
+   "label": "Reading · learn + practise: Diagram / map labelling + short-answer questions",
+   "sub": "Rules: Find the part of the text that describes the picture · short answers: word limit, words from the text · Improve Your Skills: Reading Unit 9, map + short answer (p. 70–77): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook · Practice: Diagram / map labelling + short-answer questions — Improve Your Skills: Reading Unit 10, short answer (p. 78–88) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": true
-  },
-  {
-   "k": "l-prac",
-   "days": [
-    5
-   ],
-   "sk": "L",
-   "label": "Listening · practise: Sentence, summary and flow-chart completion · 80 Tests 49, 56, 61",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
   },
   {
    "k": "w1-learn",
@@ -553,8 +413,8 @@
     5
    ],
    "sk": "W",
-   "label": "Writing Task 1 · learn: Process diagram + Band 9 sample",
-   "sub": "Writing 7.5 Day 6, Task 1 part (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
+   "label": "Writing Task 1 · learn: Table + Band 9 sample",
+   "sub": "Writing 7.5 Day 4, Task 1 part (p. 46–54) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
    "core": true
   },
   {
@@ -563,8 +423,8 @@
     5
    ],
    "sk": "W",
-   "label": "Writing Task 2 · learn: Two-part question + Band 9 sample",
-   "sub": "Writing 7.5 Day 5, Task 2 part (p. 55–63) · Task 2 Handbook: mixed questions (p. 19–20) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
+   "label": "Writing Task 2 · learn: Advantages / disadvantages, which is better + Band 9 sample",
+   "sub": "Writing 7.5 Day 3, Task 2 part (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
    "core": true
   },
   {
@@ -573,38 +433,18 @@
     5
    ],
    "sk": "W",
-   "label": "Writing: write a process diagram report (20 min) + a two-part question essay (40 min)",
+   "label": "Writing: write a table report (20 min) + an advantages / disadvantages essay (40 min)",
    "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
    "core": true
   },
   {
-   "k": "s-learn",
+   "k": "l-pod",
    "days": [
     5
    ],
-   "sk": "S",
-   "label": "Speaking · learn: Part 3: building and supporting an opinion",
-   "sub": "Speaking 7.5 Day 4 strategy (p. 46–48): opinion → reason → example → other side · what not to say: 'I don't know', personal stories only",
-   "core": true
-  },
-  {
-   "k": "s-samp",
-   "days": [
-    5
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 52–55): read aloud, then record 3 Part 3 answers · send the transcript to Claude",
-   "core": false
-  },
-  {
-   "k": "v-ess",
-   "days": [
-    5
-   ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 21–25",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -618,33 +458,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     5
    ],
-   "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 13–15",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
    "core": false
   },
   {
-   "k": "r-learn",
-   "days": [
-    6
-   ],
+   "k": "r-tfng",
    "sk": "R",
-   "label": "Reading · learn: Diagram / map labelling + short-answer questions",
-   "sub": "Rules: Find the part of the text that describes the picture · short answers: word limit, words from the text · Improve Your Skills: Reading Unit 9, map + short answer (p. 70–77): read the strategy, do the exercises, check with the key (p. 89–96) · write 3 traps into your notebook",
-   "core": true
-  },
-  {
-   "k": "r-prac",
+   "label": "Reading · extra practice: TFNG book, 10 exercises",
+   "sub": "Timed · check with the key · every wrong answer: find the proof line",
    "days": [
-    6
+    5
    ],
-   "sk": "R",
-   "label": "Reading · practise: Diagram / map labelling + short-answer questions",
-   "sub": "Improve Your Skills: Reading Unit 10, short answer (p. 78–88) · timed, then check · every wrong answer: find the proof line in the text · log the score in Progress → Question types",
    "core": false
   },
   {
@@ -653,52 +483,32 @@
     6
    ],
    "sk": "L",
-   "label": "Listening · learn: Note completion (Part 4) + short-answer questions",
-   "sub": "Rules: Part 4 has no break: read all the notes before it starts · headings in the notes = signposts in the talk",
+   "label": "Listening · learn + practise: Sentence, summary and flow-chart completion",
+   "sub": "Rules: Word limit · the missing word must fit the grammar of the sentence · flow-chart follows the order of the talk · Practice: 80 Tests, Test 49 only (one listen) · log the score in the app",
    "core": true
   },
   {
-   "k": "l-prac",
+   "k": "l-learn2",
    "days": [
     6
    ],
    "sk": "L",
-   "label": "Listening · practise: Note completion (Part 4) + short-answer questions · 80 Tests 46, 62, 64",
-   "sub": "One listen, no pauses · check with the key · for every mistake write the trap · replay the missed part with the transcript · log the score in Progress → Question types",
-   "core": false
-  },
-  {
-   "k": "w1-learn",
-   "days": [
-    6
-   ],
-   "sk": "W",
-   "label": "Writing Task 1 · learn: Map (changes) + Band 9 sample",
-   "sub": "Writing 7.5 Day 7, Task 1 part (p. 73–81) · Task 1 Handbook: maps & plans (p. 20–25) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
-   "core": true
-  },
-  {
-   "k": "w2-learn",
-   "days": [
-    6
-   ],
-   "sk": "W",
-   "label": "Writing Task 2 · learn: Positive or negative development + Band 9 sample",
-   "sub": "Writing 7.5 Day 6, Task 2 part (p. 64–72) · Task 2 Handbook: sample essays (p. 21–25) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
-   "core": true
-  },
-  {
-   "k": "w-write",
-   "days": [
-    6
-   ],
-   "sk": "W",
-   "label": "Writing: write a map (changes) report (20 min) + a positive or negative development essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
+   "label": "Listening · learn + practise: Note completion (Part 4) + short-answer questions",
+   "sub": "Rules: Part 4 has no break: read all the notes before it starts · headings in the notes = signposts in the talk · Practice: 80 Tests, Test 46 only (one listen) · log the score in the app",
    "core": true
   },
   {
    "k": "s-learn",
+   "days": [
+    6
+   ],
+   "sk": "S",
+   "label": "Speaking · learn: Part 3: building and supporting an opinion",
+   "sub": "Speaking 7.5 Day 4 strategy (p. 46–48): opinion → reason → example → other side · what not to say: 'I don't know', personal stories only",
+   "core": true
+  },
+  {
+   "k": "s-learn2",
    "days": [
     6
    ],
@@ -718,13 +528,13 @@
    "core": false
   },
   {
-   "k": "v-ess",
+   "k": "l-pod",
    "days": [
     6
    ],
-   "sk": "V",
-   "label": "Vocabulary · 4000 Essential English Words 4 · Units 26–30",
-   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "sk": "L",
+   "label": "Listening: podcast, 20–30 min",
+   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
    "core": false
   },
   {
@@ -738,13 +548,23 @@
    "core": false
   },
   {
-   "k": "l-pod",
+   "k": "v-ess",
    "days": [
     6
    ],
+   "sk": "V",
+   "label": "Vocabulary · 4000 Essential English Words 4 · Units 16–18",
+   "sub": "20 words a unit: meaning, your own sentence, then the unit exercises and the story · check with the key · reread yesterday's words on the bus",
+   "core": false
+  },
+  {
+   "k": "l-more",
    "sk": "L",
-   "label": "Listening: podcast, 20–30 min",
-   "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
+   "label": "Listening · extra: one more 80 Tests test of today's types",
+   "sub": "One listen, no pauses · log the score in the app",
+   "days": [
+    6
+   ],
    "core": false
   },
   {
@@ -786,7 +606,7 @@
    ],
    "sk": "R",
    "label": "Reading: all 11 question types learned and practised",
-   "sub": "6 groups, one a day"
+   "sub": "Mon · Wed · Fri, two type groups a day"
   },
   {
    "k": "w1-l",
@@ -794,8 +614,8 @@
     1
    ],
    "sk": "L",
-   "label": "Listening: 6 question types learned · 18 tests from 80 Tests · 6 podcasts",
-   "sub": ""
+   "label": "Listening: 6 question types learned, one test each",
+   "sub": "Tue · Thu · Sat"
   },
   {
    "k": "w1-w1",
@@ -803,8 +623,8 @@
     1
    ],
    "sk": "W",
-   "label": "Task 1: 6 types learned, 6 reports written with feedback",
-   "sub": "Line, bar, pie, table, process, map"
+   "label": "Task 1: line, bar + pie, table learned · 3 reports with feedback",
+   "sub": "Process, map, mixed → Week 2"
   },
   {
    "k": "w1-w2",
@@ -812,8 +632,8 @@
     1
    ],
    "sk": "W",
-   "label": "Task 2: 6 types learned, 6 essays written with feedback",
-   "sub": "Opinion, discussion, adv/disadv, problem/solution, two-part, positive/negative"
+   "label": "Task 2: opinion, discussion, adv/disadv learned · 3 essays with feedback",
+   "sub": "Problem/solution, two-part, positive/negative → Week 2"
   },
   {
    "k": "w1-s",
@@ -821,8 +641,8 @@
     1
    ],
    "sk": "S",
-   "label": "Speaking: format, criteria, rules, Parts 1–3 + recordings",
-   "sub": ""
+   "label": "Speaking: format, rules, Parts 1–3 + recordings",
+   "sub": "Tue · Thu · Sat"
   },
   {
    "k": "w1-v",
@@ -830,8 +650,8 @@
     1
    ],
    "sk": "V",
-   "label": "Vocabulary: Essential Words 4 Units 1–30 · Collocations in Use Units 1–6",
-   "sub": "5 + 1 units a day"
+   "label": "Vocabulary: Collocations Units 1–6 · Essential Words 4 Units 1–18",
+   "sub": "Extra, as time allows"
   },
   {
    "k": "w1-m",
@@ -847,7 +667,7 @@
   {
    "w": 1,
    "name": "Base",
-   "line": "Every question type, every part: learn the rules, practise, write",
+   "line": "Reading + Writing on Mon/Wed/Fri, Listening + Speaking on Tue/Thu/Sat",
    "focus": [
     "L",
     "R",
