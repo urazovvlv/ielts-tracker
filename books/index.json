@@ -48,36 +48,6 @@
    "core": true
   },
   {
-   "k": "w1-learn",
-   "days": [
-    1
-   ],
-   "sk": "W",
-   "label": "Writing Task 1 · learn: Line graph + Band 9 sample",
-   "sub": "Writing 7.5 Day 1, Task 1 part (p. 16–25) · Task 1 Handbook: what Task 1 is (p. 3–5) + change graphs (p. 6–13) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
-   "core": true
-  },
-  {
-   "k": "w2-learn",
-   "days": [
-    1
-   ],
-   "sk": "W",
-   "label": "Writing Task 2 · learn: Opinion (agree / disagree) + Band 9 sample",
-   "sub": "Writing 7.5 Day 1, Task 2 part (p. 16–25) · Task 2 Handbook: what Task 2 is (p. 3–5) + position first (p. 6–8) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
-   "core": true
-  },
-  {
-   "k": "w-write",
-   "days": [
-    1
-   ],
-   "sk": "W",
-   "label": "Writing: write a line graph report (20 min) + an opinion essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
-   "core": true
-  },
-  {
    "k": "r-tfng",
    "sk": "R",
    "label": "Reading · extra practice: TFNG book, 10 exercises",
@@ -118,16 +88,6 @@
    "core": false
   },
   {
-   "k": "l-learn",
-   "days": [
-    2
-   ],
-   "sk": "L",
-   "label": "Listening · learn + practise: Form / note / table completion (Part 1)",
-   "sub": "Rules: Read the form first and predict each gap · letters, numbers, plurals · the speaker often corrects himself · Listening Strategies Unit 1 (the HTML page): spelling, numbers, addresses, times · Practice: 80 Tests, Test 11 only (one listen) · log the score in the app",
-   "core": true
-  },
-  {
    "k": "l-learn2",
    "days": [
     2
@@ -138,26 +98,6 @@
    "core": true
   },
   {
-   "k": "s-learn",
-   "days": [
-    2
-   ],
-   "sk": "S",
-   "label": "Speaking · learn: Exam format, the 4 criteria, the 12 rules for Band 7–8",
-   "sub": "Speaking 7.5: exam format + criteria (p. 5–11) · what is allowed (asking to repeat, short pauses) and what loses points (memorised answers, one-word answers, going off topic)",
-   "core": true
-  },
-  {
-   "k": "s-learn2",
-   "days": [
-    2
-   ],
-   "sk": "S",
-   "label": "Speaking · learn: Part 1: rules, answer length, what to say and what not to say",
-   "sub": "Speaking 7.5 Day 2 strategy (p. 24–26): answer + reason + example, 2–3 sentences · no 'yes/no' only, no long speeches",
-   "core": true
-  },
-  {
    "k": "l-pod",
    "days": [
     2
@@ -165,26 +105,6 @@
    "sk": "L",
    "label": "Listening: podcast, 20–30 min",
    "sub": "Audio only, on the bus is fine · BBC 6 Minute English, BBC Learning English or an IELTS-topic podcast · write down 3 new phrases",
-   "core": false
-  },
-  {
-   "k": "l-more",
-   "sk": "L",
-   "label": "Listening · extra: one more 80 Tests test of today's types",
-   "sub": "One listen, no pauses · log the score in the app",
-   "days": [
-    2
-   ],
-   "core": false
-  },
-  {
-   "k": "s-samp",
-   "days": [
-    2
-   ],
-   "sk": "S",
-   "label": "Speaking · samples + recording",
-   "sub": "Band 8 samples (p. 30–33): read aloud, then record 3 Part 1 answers of your own · send the transcript to Claude",
    "core": false
   },
   {
@@ -233,8 +153,8 @@
     3
    ],
    "sk": "W",
-   "label": "Writing Task 1 · learn: Bar chart + pie charts + Band 9 sample",
-   "sub": "Writing 7.5 Day 2, Task 1 part (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · Writing 7.5 Day 3, Task 1 part (p. 36–45) · Task 1 Handbook: no-change charts (p. 14–19) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
+   "label": "Writing Task 1 · learn: Line graph + bar & pie charts + Band 9 sample",
+   "sub": "Writing 7.5 Day 1, Task 1 part (p. 16–25) · Task 1 Handbook: what Task 1 is (p. 3–5) + change graphs (p. 6–13) · Writing 7.5 Day 2, Task 1 part (p. 26–35) · Task 1 Handbook: no-change charts (p. 14–19) · Writing 7.5 Day 3, Task 1 part (p. 36–45) · Task 1 Handbook: no-change charts (p. 14–19) · trends language (line) vs comparison language (bar, pie) · 5 phrases",
    "core": true
   },
   {
@@ -243,8 +163,8 @@
     3
    ],
    "sk": "W",
-   "label": "Writing Task 2 · learn: Discussion (both views + opinion) + Band 9 sample",
-   "sub": "Writing 7.5 Day 2, Task 2 part (p. 26–35) · Task 2 Handbook: domino paragraph (p. 9–11) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
+   "label": "Writing Task 2 · learn: Opinion + Discussion essays + Band 9 sample",
+   "sub": "Writing 7.5 Day 1, Task 2 part (p. 16–25) · Task 2 Handbook: what Task 2 is (p. 3–5) + position first (p. 6–8) · Writing 7.5 Day 2, Task 2 part (p. 26–35) · Task 2 Handbook: domino paragraph (p. 9–11) · how the two plans differ · 5 phrases",
    "core": true
   },
   {
@@ -253,8 +173,8 @@
     3
    ],
    "sk": "W",
-   "label": "Writing: write a bar chart report (20 min) + a discussion essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
+   "label": "Writing: write a line graph report (20 min) + an opinion essay (40 min)",
+   "sub": "On the computer (Notepad, no spell-check), with a timer · send the question and your answer to Claude → feedback on the 4 criteria · type the 4 marks into the app",
    "core": true
   },
   {
@@ -324,7 +244,7 @@
    ],
    "sk": "W",
    "label": "Writing Task 1 · learn: Process diagram + Band 9 sample",
-   "sub": "Writing 7.5 Day 6, Task 1 part (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook · learn only this week: you write this type in Week 2",
+   "sub": "Writing 7.5 Day 6, Task 1 part (p. 64–72) · Task 1 Handbook: processes (p. 26–32) · learn only, written in Week 2",
    "core": true
   },
   {
@@ -333,8 +253,8 @@
     4
    ],
    "sk": "W",
-   "label": "Writing Task 2 · learn: Problem / solution, causes / solutions + Band 9 sample",
-   "sub": "Writing 7.5 Day 4, Task 2 part (p. 46–54) · Task 2 Handbook: causes + solutions (p. 15–18) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
+   "label": "Writing Task 2 · learn: Problem / solution + Band 9 sample",
+   "sub": "Writing 7.5 Day 4, Task 2 part (p. 46–54) · Task 2 Handbook: causes + solutions (p. 15–18) · learn only, written in Week 2",
    "core": true
   },
   {
@@ -343,8 +263,8 @@
     4
    ],
    "sk": "S",
-   "label": "Speaking · learn: Part 2: the cue card, 1-minute notes, the 6-part structure",
-   "sub": "Speaking 7.5 Day 1 strategy (p. 12–14): notes in keywords, cover every bullet, talk the full 2 minutes",
+   "label": "Speaking · learn: exam format, 4 criteria, rules + Part 1",
+   "sub": "Speaking 7.5: exam format + criteria (p. 5–11) · what is allowed (asking to repeat, short pauses) and what loses points (memorised answers, one-word answers, going off topic) · Speaking 7.5 Day 2 strategy (p. 24–26): answer + reason + example, 2–3 sentences · no 'yes/no' only, no long speeches",
    "core": true
   },
   {
@@ -353,8 +273,8 @@
     4
    ],
    "sk": "S",
-   "label": "Speaking · learn: Part 2: telling a story about an object or an event",
-   "sub": "Speaking 7.5 Day 3 strategy (p. 36–37): past tenses, time linkers, feelings at the end",
+   "label": "Speaking · learn: Part 2, cue card + telling a story",
+   "sub": "Speaking 7.5 Day 1 strategy (p. 12–14): notes in keywords, cover every bullet, talk the full 2 minutes · Speaking 7.5 Day 3 strategy (p. 36–37): past tenses, time linkers, feelings at the end",
    "core": true
   },
   {
@@ -434,7 +354,7 @@
    ],
    "sk": "W",
    "label": "Writing Task 1 · learn: Table + Band 9 sample",
-   "sub": "Writing 7.5 Day 4, Task 1 part (p. 46–54) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook",
+   "sub": "Writing 7.5 Day 4, Task 1 part (p. 46–54)",
    "core": true
   },
   {
@@ -443,8 +363,8 @@
     5
    ],
    "sk": "W",
-   "label": "Writing Task 2 · learn: Advantages / disadvantages, which is better + Band 9 sample",
-   "sub": "Writing 7.5 Day 3, Task 2 part (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases",
+   "label": "Writing Task 2 · learn: Advantages / disadvantages + Two-part question + Band 9 sample",
+   "sub": "Writing 7.5 Day 3, Task 2 part (p. 36–45) · Task 2 Handbook: fuse paragraph (p. 12–14) · Writing 7.5 Day 5, Task 2 part (p. 55–63) · Task 2 Handbook: mixed questions (p. 19–20)",
    "core": true
   },
   {
@@ -453,18 +373,8 @@
     5
    ],
    "sk": "W",
-   "label": "Writing: write a table report (20 min) + an advantages / disadvantages essay (40 min)",
-   "sub": "On the computer (Notepad, no spell-check), with a timer · paste the question and your answer to Claude → feedback on the 4 criteria · rewrite the weakest paragraph · type my 4 marks into Progress → Writing scores",
-   "core": true
-  },
-  {
-   "k": "w2-learn2",
-   "days": [
-    5
-   ],
-   "sk": "W",
-   "label": "Writing Task 2 · learn: Two-part question + Band 9 sample",
-   "sub": "Writing 7.5 Day 5, Task 2 part (p. 55–63) · Task 2 Handbook: mixed questions (p. 19–20) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
+   "label": "Writing: write a bar chart or table report (20 min) + a discussion essay (40 min)",
+   "sub": "On the computer, with a timer · send to Claude → feedback on the 4 criteria · type the 4 marks into the app",
    "core": true
   },
   {
@@ -513,8 +423,8 @@
     6
    ],
    "sk": "L",
-   "label": "Listening · learn + practise: Sentence, summary and flow-chart completion",
-   "sub": "Rules: Word limit · the missing word must fit the grammar of the sentence · flow-chart follows the order of the talk · Practice: 80 Tests, Test 49 only (one listen) · log the score in the app",
+   "label": "Listening · learn + practise: Form / note completion (Part 1) + Note completion (Part 4)",
+   "sub": "Rules: Read the form first and predict each gap · letters, numbers, plurals · the speaker often corrects himself · Listening Strategies Unit 1 (the HTML page): spelling, numbers, addresses, times · Practice: 80 Tests, Test 11 (Part 1) and Test 62 (Part 4) (one listen) · log the score in the app",
    "core": true
   },
   {
@@ -523,8 +433,8 @@
     6
    ],
    "sk": "L",
-   "label": "Listening · learn + practise: Note completion (Part 4) + short-answer questions",
-   "sub": "Rules: Part 4 has no break: read all the notes before it starts · headings in the notes = signposts in the talk · Practice: 80 Tests, Test 46 only (one listen) · log the score in the app",
+   "label": "Listening · learn + practise: Sentence, summary and flow-chart completion",
+   "sub": "Rules: Word limit · the missing word must fit the grammar of the sentence · flow-chart follows the order of the talk · Practice: 80 Tests, Test 49 only (one listen) · log the score in the app",
    "core": true
   },
   {
@@ -534,7 +444,7 @@
    ],
    "sk": "W",
    "label": "Writing Task 1 · learn: Map (changes) + Band 9 sample",
-   "sub": "Writing 7.5 Day 7, Task 1 part (p. 73–81) · Task 1 Handbook: maps & plans (p. 20–25) · structure, key language, one Band 9 sample analysed: overview, grouping, comparisons, 5 phrases into your notebook · learn only this week: you write this type in Week 2",
+   "sub": "Writing 7.5 Day 7, Task 1 part (p. 73–81) · Task 1 Handbook: maps & plans (p. 20–25) · learn only, written in Week 2",
    "core": true
   },
   {
@@ -544,7 +454,7 @@
    ],
    "sk": "W",
    "label": "Writing Task 2 · learn: Positive or negative development + Band 9 sample",
-   "sub": "Writing 7.5 Day 6, Task 2 part (p. 64–72) · Task 2 Handbook: sample essays (p. 21–25) · paragraph plan, position, one Band 9 sample analysed: paraphrase, topic sentences, linking, 5 phrases · learn only this week: you write this type in Week 2",
+   "sub": "Writing 7.5 Day 6, Task 2 part (p. 64–72) · Task 2 Handbook: sample essays (p. 21–25) · learn only, written in Week 2",
    "core": true
   },
   {
@@ -553,18 +463,8 @@
     6
    ],
    "sk": "S",
-   "label": "Speaking · learn: Part 3: building and supporting an opinion",
-   "sub": "Speaking 7.5 Day 4 strategy (p. 46–48): opinion → reason → example → other side · what not to say: 'I don't know', personal stories only",
-   "core": true
-  },
-  {
-   "k": "s-learn2",
-   "days": [
-    6
-   ],
-   "sk": "S",
-   "label": "Speaking · learn: Part 3: pros and cons + hypothetical and difficult questions",
-   "sub": "Speaking 7.5 Day 5 + Day 6 strategies (p. 57–58, 67–68): two sides, conditionals, buying time politely",
+   "label": "Speaking · learn: Part 3, opinion, pros and cons, hypothetical questions",
+   "sub": "Speaking 7.5 Day 4 strategy (p. 46–48): opinion → reason → example → other side · what not to say: 'I don't know', personal stories only · Speaking 7.5 Day 5 + Day 6 strategies (p. 57–58, 67–68): two sides, conditionals, buying time politely",
    "core": true
   },
   {
