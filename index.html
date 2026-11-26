@@ -1007,7 +1007,7 @@ option{background:#1A1513;color:#F4EFEB}
 (function(){
 'use strict';
 /* ---------- self-update: Telegram caches pages hard, so check version.json and reload with a fresh URL ---------- */
-const BUILD='2026-11-22.1';
+const BUILD='2026-11-26.1';
 (async()=>{try{
   const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const v=await r.json();
   const tried=(()=>{try{return sessionStorage.getItem('r75:upd');}catch(e){return null;}})();
@@ -2307,8 +2307,21 @@ const BSET={},bPas={},bTab={},bRev=new Set(),bOpen=new Set(),bWOpen=new Set();
 document.addEventListener('toggle',e=>{const d=e.target;if(!d||!d.dataset)return;
   if(d.dataset.bset){const id=d.dataset.bset;d.open?bOpen.add(id):bOpen.delete(id);if(d.open&&!BSET[id])getBook(id);}
   if(d.dataset.bw){d.open?bWOpen.add(d.dataset.bw):bWOpen.delete(d.dataset.bw);}},true);
+/* Inbox: results Claude logs for the user (books/index.json "inbox"), imported once per id into the synced lists. */
+let INBOX=[];
+function applyInbox(){
+  if(!LOADOK||!INBOX.length)return;
+  const seen=new Set((S.settings&&S.settings.inb)||[]);let ch=false;const lists=new Set();
+  for(const x of INBOX){if(!x||!x.id||seen.has(x.id)||!['qtr','wsc','mist'].includes(x.list))continue;
+    S[x.list].push(Object.assign({},x.item,{ts:Date.now()+lists.size}));lists.add(x.list);seen.add(x.id);ch=true;}
+  if(!ch)return;
+  for(const l of lists)saveList(l);
+  S.settings=Object.assign({},S.settings,{inb:[...seen]});touch('settings');
+  if(tab==='prog')renderView();
+}
 async function loadBooks(){
-  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];WTASKS=j.wtasks||[];WEEKS=j.weeks||[];}}catch(e){}
+  try{const r=await fetch('books/index.json',{cache:'no-cache'});if(r.ok){const j=await r.json();BIDX=j.sets||[];BOOKS=j.books||[];RTASKS=j.tasks||[];WTASKS=j.wtasks||[];WEEKS=j.weeks||[];INBOX=j.inbox||[];}}catch(e){}
+  try{applyInbox();}catch(e){}
   if(!BIDX)BIDX=[];
   if(PLAN&&!WZ&&(tab==='today'||tab==='books'||(tab==='daily'&&dMode!=='pack')))renderView();
 }
@@ -3012,6 +3025,7 @@ const ALLOWED=TG_UID!=null&&OWNER_IDS.includes(TG_UID);
   try{restart2();}catch(e){}
   try{restart3();}catch(e){}
   try{restart4();}catch(e){}
+  try{applyInbox();}catch(e){}
   loadBooks();
   if(PLAN)buildSchedule(PLAN);else{buildSchedule(planDefaults());PLAN=null;}
   try{applySeeds();}catch(e){}

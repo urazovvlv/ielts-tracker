@@ -683,5 +683,31 @@
    "line": "Light review, sleep, exam-day plan. Exam Sun 10 Jan",
    "focus": []
   }
+ ],
+ "inbox": [
+  {
+   "id": "qtr-20261124-head",
+   "list": "qtr",
+   "item": {
+    "s": "R",
+    "t": "head",
+    "c": 7,
+    "n": 7,
+    "d": 2
+   },
+   "note": "Tea and the Industrial Revolution (Cambridge 10), matching headings, 24 Nov"
+  },
+  {
+   "id": "qtr-20261126-minfo",
+   "list": "qtr",
+   "item": {
+    "s": "R",
+    "t": "minfo",
+    "c": 4,
+    "n": 7,
+    "d": 4
+   },
+   "note": "Street trees passage, matching information, 26 Nov"
+  }
  ]
 }
